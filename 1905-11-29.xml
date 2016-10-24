@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
+<?xml-model href="https://raw.githubusercontent.com/dig-eg-gaz/resources/master/out/egSchema.rnc" type="application/relax-ng-compact-syntax"
+?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title level="m" type="main">Egyptian Gazette</title>
                 <title level="m" type="sub">An encoded transcription</title>
-                <principal>Samantha Lappin</principal>
+                <editor>Samantha Lappin</editor>
+                <principal>Will Hanley</principal>
             </titleStmt>
             <editionStmt>
                 <edition>
-                    <date>2016</date>
+                    <date when="2016-09-19">2016-10-23</date>
                 </edition>
             </editionStmt>
             <publicationStmt>
@@ -20,7 +22,7 @@
             <sourceDesc>
                 <bibl>
                     <title>Egyptian Gazette</title>
-                    <date>29 November 1905</date>
+                    <date when="1905-01-01">1905-11-29</date>
                 </bibl>
             </sourceDesc>
         </fileDesc>
@@ -28,7 +30,9 @@
     <text>
         <body>
             <div type="page" n="1">
-                
+                <head>THE EGYPTIAN GAZETTE</head>
+                <head type="sub">No. 7357] ALEXANDRIA, WEDNESDAY, NOVEMBER 29, 1905. [EIGHT PAGES P.T. 1. </head>
+                <div type="section" scope="advertisement"> </div>
             </div>
             <div type="page" n="2">
                 
@@ -36,24 +40,24 @@
             <div type="page" n="3">
                 <head>THE EGYPTIAN GAZETTE, WEDNESDAY, NOVEMBER 29 1905</head>
                 <cb n="1"/>
-                <div>
+                <div type="item">
                     <head>RUSSIAN REVOLUTION.
                         SERIOUS SITUATION AT SEVASTOPOL.
                         ARMY IN REVOLT.</head>
-                    <div>
+                    <div type="item">
                         <head>St. Petersburg, November 27.</head>
                         <p>The latest accounts from Sevastopol vary as
                             regards details, but they seem to indicate that
                             the mutiny is subsiding.</p>
                         <p>(Reuter)</p>
                     </div>
-                    <div>
+                    <div type="item">
                         <head>St. Petersburg, November 27.</head>
                         <p>The events at Sevastopol exceed in gravity
                             all recent events.</p>
                         <p>(Havas)</p>
                     </div>
-                    <div>
+                    <div type="item">
                         <head>St. Petersburg, November 28.</head>
                         <p>The situation at Sevastopol is very obscure,
                             but it appears that the mutiny is of a revolu-
@@ -73,7 +77,7 @@
                             ed to fire upon them.</p>
                         <p>(Reuter)</p>
                     </div>
-                    <div>
+                    <div type="item">
                         <head>Sevastopol, November 28.</head>
                         <p>The Panteleimon is now in the hands of the
                             authorities, but the mutinied crew and soldiers
@@ -84,7 +88,7 @@
                             make common cause with the mutineers.</p>
                         <p>(Reuter)</p>
                     </div>
-                    <div>
+                    <div type="item">
                         <head>Moscow, November 28.</head>
                         <p>The president and numerous members of
                             the peasants congress here have been arrested
@@ -92,7 +96,7 @@
                             General has been dismissed for allowing them.</p>
                         <p>(Reuter)</p>
                     </div>
-                    <div>
+                    <div type="item">
                         <head>St. Petersburg, November 28.</head>
                         <p>The attitude of the army is the most serious
                             feature in the situation. It is admitted here
@@ -105,7 +109,7 @@
                             at a standstill.</p>
                         <p>(Reuter)</p>
                     </div>
-                    <div>
+                    <div type="item">
                         <head>Vladivostok, November 27.</head>
                         <p>Thousands of Russian prisoners who have
                             arrived from Japan have mutinied. They at-
@@ -115,10 +119,10 @@
                         <p>(Reuter)</p>
                     </div>
                 </div>
-                <div>
+                <div type="item">
                     <head>UNIVERSAL SUFFRAGE IN AUSTRIA
                         HUGE DEMONSTRATION.</head>
-                    <div>
+                    <div type="item">
                         <head>Vienna, November 28.</head>
                         <p>To-day the Socialists organised a huge or-
                             derly universal suffrage demonstration on the
@@ -128,7 +132,7 @@
                             vernment.</p>
                         <p>(Reuter)</p>
                     </div>
-                    <div>
+                    <div type="item">
                         <head>Vienna, November 28.</head>
                         <p>A demonstration, in which, it is estimated,
                             200.000 persons took part, has been held
@@ -137,10 +141,10 @@
                         <p>(Havas)</p>
                     </div>
                 </div>
-                <div>
+                <div type="item">
                     <head>HOME POLITICS.
                     "NO GOVERNMENT CRISIS."</head>
-                    <div>
+                    <div type="item">
                         <head>London, November 28.</head>
                         <p>Mr. Austin Chamberlan, speaking at Red-
                         ditch, said that, so far as his experiences went,
@@ -148,7 +152,7 @@
                         was there a crisis in the party.</p>
                         <p>(Reuter)</p>
                     </div>
-                    <div>
+                    <div type="item">
                         <head>London, November 28.</head>
                         <p>Speaking at Newcastle under Lyne, Sir E.
                         Grey said that there would be no substantial
@@ -160,7 +164,7 @@
                         dict of 1895 as to Home Rule.</p>
                         <p>(Reuter)</p>
                     </div>
-                    <div>
+                    <div type="item">
                         <head>London, November 28.</head>
                         <p>The "Daily News" is confident concerning
                         the situation, and delcares that it is relieved
@@ -171,37 +175,37 @@
                         <p>(Reuter)</p>
                     </div>
                 </div>
-                <div>
+                <div type="item">
                     <head>GERMAN WEST AFRICA.
                     HOTTENTOT LEADER SURRANDERS.</head>
-                    <div>
+                    <div type="item">
                         <head>Cape Town, November 27.</head>
                         <p>The Hottentot leader Isask Witboi and 17
                         chiefs have surrendered to the Germans.</p>
                         <p>(Reuter)</p>
                     </div>
                 </div>
-                <div>
+                <div type="item">
                     <head>KING GEORGE LEAVES LONDON.</head>
-                    <div>
+                    <div type="item">
                         <head>London, November 27.</head>
                         <p>The King of Greece has started for home.</p>
                         <p>(Reuter)</p>
                     </div>
                 </div>
                 <cb n="2"/>
-                <div>
+                <div type="item">
                     <head>MACEDONIAN CRISIS.
                     DETACHMENS DISEMBARKED
                     AT MITYLENE.
                     CUSTOM HOUSE SEIZED.</head>
-                    <div>
+                    <div type="item">
                         <head>Smyrna, November 27.</head>
                         <p>The International Squadron has arrived at
                         Mitylene.</p>
                         <p>(Reuter)</p>
                     </div>
-                    <div>
+                    <div type="item">
                         <head>Mitylene, November 27.</head>
                         <p>The International Squadron has entered the
                         port. 400 men landed and occupied the Cus-
@@ -209,14 +213,14 @@
                         barracks.</p>
                         <p>(Havas)</p>
                     </div>
-                    <div>
+                    <div type="item">
                         <head>Mitylene, November 28.</head>
                         <p>The International Fleet has disembarked
                         detachments which have seized the Custom
                         House.</p>
                         <p>(Reuter)</p>
                     </div>
-                    <div>
+                    <div type="item">
                         <head>Mitylene, November 28.</head>
                         <p>The International Fleet will not take any
                         further action pending the Beyrem festival,
@@ -227,10 +231,10 @@
                         <p>(Reuter)</p>
                     </div>
                 </div>
-                <div>
+                <div type="item">
                     <head>THE KAISER AND PEACE.
                     SPEECH AT THE PEICHSTAG.</head>
-                    <div>
+                    <div type="item">
                         <head>Berlin, November 28.</head>
                         <p>The significant passage of the Emperor
                         William's speech at the opening of the Reich-
@@ -248,7 +252,7 @@
                         defences against unrighteous attacks.</p>
                         <p>(Reuter)</p>
                     </div>
-                    <div>
+                    <div type="item">
                         <head>Berlin, November 28.</head>
                         <p>In his speech at the opening of the Reich-
                         stag, the Emperor William said that he was
@@ -258,73 +262,73 @@
                         <p>(Havas)</p>
                     </div>
                 </div>
-                <div>
+                <div type="item">
                     <head>LOCAL AND GENERAL</head>
-                    <div>
+                    <div type="item">
                         <head>Sheep-pox.</head>
                         <p>Sheep-pox is reported to be prevalent in the
                         Minieh district.</p>
                     </div>
-                    <div>
+                    <div type="item">
                         <head>Abyssinian Bank.</head>
                         <p>The personnel of the Abyssinian Bank, thir-
                         teen strong, leaves for Adis Abeba on Friday
                         next.</p>
                     </div>
-                    <div>
+                    <div type="item">
                         <head>Statistical Bureau.</head>
                         <p>The new Statistical Bureau will be composed
                         of one director, one inspector, and the usual
                         subordinate staff.</p>
                     </div>
-                    <div>
+                    <div type="item">
                         <head>New Time-Table.</head>
                         <p>The State Railway Administration has issued
                         a new time-table which comes into force on
                         December 1.</p>
                     </div>
-                    <div>
+                    <div type="item">
                         <head>The Mail.</head>
                         <p>The Brindisi mail will arrive at Alexandria
                         this afternoon and will be distributed at the
                         G.P.O. at 5 p.m.</p>
                     </div>
-                    <div>
+                    <div type="item">
                         <head>Pharmacies Inspectorate.</head>
                         <p>An inspectorate for phramacies has been
                         created. It will consist of one first-class phar-
                         macist, one head clerk, and one subordinate
                         clerk.</p>
                     </div>
-                    <div>
+                    <div type="item">
                         <head>The Opera Season.</head>
                         <p>The Italian opera company which is to per-
                         form at Alexandria and Cairo this season is
                         expected to arrive by the Italian steamer on
                         Sunday.</p>
                     </div>
-                    <div>
+                    <div type="item">
                         <head>Moslem Benevolent Society.</head>
                         <p>The Moslem Benevolent Society has already
                         distributed a sum of P.T. 22,500 among indi-
                         gent Moslems to aid them to share in the
                         festivites of Beyram.</p>
                     </div>
-                    <div>
+                    <div type="item">
                         <head>Lots Turcs.</head>
                         <p>The Imperial Ottoman Bank informs us that
                         bond No. 874,650 was the winner of the "gro
                         lot" in Monday's drawing of the Ottoman
                         Railway Lottery.</p>
                     </div>
-                    <div>
+                    <div type="item">
                         <head>Wives Poison their Husband.</head>
                         <p>Two women of Nag Hamadi have been
                         arrested on the charge of having caused their
                         spouse's death by introducing poison into
                         cakes which they made for him to eat.</p>
                     </div>
-                    <div>
+                    <div type="item">
                         <head>British Warships.</head>
                         <p>Another British man-of-war is expected at
                         Alexandria from Port Said during the course
@@ -332,7 +336,7 @@
                         yesterday on the occasion of Beyram, as did
                         also several other vessels in port.</p>
                     </div>
-                    <div>
+                    <div type="item">
                         <head>Staff Ride.</head>
                         <p>A Staff ride will be held in Cairo between
                         the 3rd and 7th December next. Brig.- General
@@ -341,7 +345,7 @@
                         Blue force, and Lieut.-Colonel Markham of the
                         Red force.</p>
                     </div>
-                    <div>
+                    <div type="item">
                         <head>Suez Canal.</head>
                         <p>Sixteen ships passed through the Canal on
                         the 24th and 25th inst., of which 10 were
@@ -351,7 +355,7 @@
                         8,252,010.43.</p>
                     </div>
                 </div>
-                <div>
+                <div type="item">
                     <head>THE BEYRAM FESTIVAL.
                     CELEBRATIONS IN CAIRO.</head>
                     <p>Full hotels, swarms of uniforms, and a
@@ -398,7 +402,7 @@
                     escence in all that is, makes him indifferent to
                     a cold and wet Beyram.</p>
                 </div>
-                <div>
+                <div type="item">
                     <head>THE KHEDIVE.</head>
                     <p>H.H. the Khedive stayed at Koubbeh
                     Palace on Sunday and Monday and came to
@@ -410,7 +414,7 @@
                     <p>The Khedive left Koubbeh for Montazah
                     early to-day.</p>
                 </div>
-                <div>
+                <div type="item">
                     <head>THE KHEDIVIAL HOUSEHOLD.</head>
                     <p>Ahmed Bay Khairy, Master of Ceremonies
                     to H.H. the Khedive, has resigned his position
@@ -422,7 +426,7 @@
                     who had done good service to the Khedivial
                     House.</p>
                 </div>
-                <div>
+                <div type="item">
                     <head>COUNCIL OF MINISTERS.</head>
                     <p>Among the decisions taken by the Council
                     of Ministers, which met under the presidency
@@ -439,7 +443,7 @@
                     Fayoum, and for the enlargement of the same
                     department's store houses at Zifta.</p>
                 </div>
-                <div>
+                <div type="item">
                     <head>LORD CROMER AND THE MISSION.</head>
                     <p>We have the pleasure to announce to our
                     readers, says "Al Moayad," that Lord Cromer
@@ -463,7 +467,7 @@
                     Egypt and that they will learn to be peaceful
                     in future.</p>
                 </div>
-                <div>
+                <div type="item">
                     <head>ZIZINIA THEATRE.</head>
                     <p>The Lambert company gave a repeat per-
                     formance of Corneille's Le Cid, before leaving
@@ -473,10 +477,10 @@
                     mance itself, it goes without saying, was worthy
                     of the best traditions of the French stage.</p>
                 </div>
-                <div>
+                <div type="item">
                     <head>JOSEPH COMAS. (ad)</head>
                 </div>
-                <div>
+                <div type="item">
                     <head>TRAIN TRAFFIC INTERRUPTED
                     WASH-OUT ON UPPER EGYPT LINE.</head>
                     <p>The Traffic Manager of the State Railways
@@ -493,7 +497,7 @@
                     strongly recommended not to travel until
                     the bridge is repaired.</p>
                 </div>
-                <div>
+                <div type="item">
                     <head>STOP PRESS TELEGRAM.</head>
                     <p>Owing to accidental failure of irrigation
                     bank, a railway bridge south of Ghizreh endan-
@@ -513,7 +517,7 @@
                     ros to stations south of it or vice versa cannot
                     be accepted until further notice.</p>
                 </div>
-                <div>
+                <div type="item">
                     <head>REDUCED LIGHTHOUSE DUES.</head>
                     <p>From January 1, the lighthouse dues will
                     be reduced from 14 to 10 milliemes per ton
@@ -521,14 +525,14 @@
                     milliemes per ton on every ton above 800 tons
                     displacement.</p>
                 </div>
-                <div>
+                <div type="item">
                     <head>STATE CONTENTIEUX.</head>
                     <p>Mr. W.G. Hayter, Substitute to the Conten-
                     tieux at the Ministry of Justice, has been
                     appointed Substitute to the State Conten-
                     tieux in place of the late Maitre Molteni.</p>
                 </div>
-                <div>
+                <div type="item">
                     <head>ASSIZE COURTS.</head>
                     <p>The degree authorising the establishment
                     of Assize Courts in each of the districts of the
@@ -536,7 +540,7 @@
                     been made public. Each Court will sit for
                     the first time in January.</p>
                 </div>
-                <div>
+                <div type="item">
                     <head>THE SUDAN BUDGET.</head>
                     <p>The Sudan Budget Estimates for 1906
                     amount to L.E. 1,001,706 for revenue against
@@ -547,7 +551,7 @@
                     Egyptian War Office for the maintenance of
                     the Egyptian troops in the Sudan.</p>
                 </div>
-                <div>
+                <div type="item">
                     <head>NOTES FROM SUAKIN.
                     (FROM OUR CORRESPONDENT.)</head>
                     <p>Suakin, Nov. 22.</p>
@@ -570,7 +574,7 @@
                     being spent. The orchestra consists of 14 per-
                     formers, all males, under Bandmaster Coke.</p>
                 </div>
-                <div>
+                <div type="item">
                     <head>IRRIGATION.</head>
                     <p>Our Tahta Correspondent writes that there
                     is no sharaki land whatever in the Tahta
@@ -582,7 +586,7 @@
                     directerate, who, with his able staff, has
                     worked wonders.</p>
                 </div>
-                <div>
+                <div type="item">
                     <head>A STORMY VOYAGE.</head>
                     <p>The captain of the S.S. Cit yof Cambridge,
                     which arrived at Alexandria on Monday, re-
@@ -591,7 +595,7 @@
                     boats, etc., and also swept overboard the deck
                     cargo.</p>
                 </div>
-                <div>
+                <div type="item">
                     <head>STEAMER MOVEMENTS.</head>
                     <p>The Ellerman S.S. Avon arrived at Liver-
                     pool on Sunday.</p>
@@ -606,7 +610,7 @@
                     Monday from Liverpool, Lisbon, Gibralter,
                     and Malta.</p>
                 </div>
-                <div>
+                <div type="item">
                     <head>SHEPHEARD'S SMALL DANCE.
                     OPENING OF THE SEASON.</head>
                     <p>Quite a number of peopl took part in the
@@ -648,29 +652,29 @@
                     cream; and there were one or two handsome
                     cream satin gowns draped with lace.</p>
                 </div>
-                <div>
+                <div type="item">
                     <head>L'EAU A ALEXANDRIE</head>
                     <p>Lots o' French</p>
                 </div>
-                <div>
+                <div type="item">
                     <head>BULLETIN DE LA BOURSE</head>
                     <p>Lots o' French</p>
                 </div>
-                <div>
+                <div type="item">
                     <head>PERSONAL AND SOCIAL.</head>
-                    <div>
+                    <div type="item">
                         <p>H.H. Prince Djemil Pasha Toursoun left for
                         Paris on Monday.</p>
                     </div>
-                    <div>
+                    <div type="item">
                         <p>H.H. Prince Fazil Ozman is staying at Shep-
                         heard's Hotel.</p>
                     </div>
-                    <div>
+                    <div type="item">
                         <p>H.E. Mustapha Pasha Fehmy is spending
                         Beyram at Mena House.</p>
                     </div>
-                    <div>
+                    <div type="item">
                         <p>There was a large number of well-known
                         arrivals by the Hohenzoilern yesterday from
                         Europe, including H.H. Princess Ismail,
@@ -678,44 +682,44 @@
                         N. Siradino, etc. A full list of passengers will
                         be published to-morrow.</p>
                     </div>
-                    <div>
+                    <div type="item">
                         <p>The marriage arranged between Mr. Percy
                         Machell and Countess Victoria Glechen will
                         take place at the Chapel Royal, St. James's
                         Palace, on the 7th December, at twelve o'clock.</p>
                     </div>
-                    <div>
+                    <div type="item">
                         <p>Sir William Garstin will return to Cairo at
                         the end of December.</p>
                     </div>
-                    <div>
+                    <div type="item">
                         <p>Saba Pasha and Chitty Bey have arrived at
                         Cairo from Alexandria.</p>
                     </div>
-                    <div>
+                    <div type="item">
                         <p>M. Maspero will leave for a tour in Upper
                         Egypt between the 8th and 10th prox.</p>
                     </div>
-                    <div>
+                    <div type="item">
                         <p>Mr. Somers-Clarke, the well-known architect,
                         is leaving for Mehimed this evening.</p>
                     </div>
-                    <div>
+                    <div type="item">
                         <p>Professor Flinders Petrie and Mrs. Petris
                         are staying at the Hotel du Nil, Cairo.</p>
                     </div>
-                    <div>
+                    <div type="item">
                         <p>M. de Hoelske, Russian Commis ioner on
                         the Caisse de la Dette has returned to Cairo.</p>
                     </div>
-                    <div>
+                    <div type="item">
                         <p>We regret to hear of the death of the wife
                         of Mr. Philemon Hallam Tuck, brother of
                         Judge Tuck, of which sad event information
                         has just come by cable from Baltimore, Mary-
                         land, U.S.A.</p>
                     </div>
-                    <div>
+                    <div type="item">
                         <p>The Hon. Mrs. Lindley, wife of the Second
                         Secretary in the Diplomatic Service, who has
                         spent most of the autumn in Invernesshire, has
@@ -723,20 +727,20 @@
                         her baby in the Highlands, but her elder little
                         girl comes out to Egypt with her.</p>
                     </div>
-                    <div>
+                    <div type="item">
                         <p>The Hon. Francis Lindley is expecting an
                         appointment in the newly-constituted British
                         Embassy at Tokyo, in which case he will prob-
                         ably be stationed in Japan for several years.</p>
                     </div>
-                    <div>
+                    <div type="item">
                         <p>Among others who are coming out to Egypt
                         are Major F.I. Ricarde-Seaver, Lord and Lady
                         Talbot de Malahide, and the Earl and Count-
                         ess of Leitrir. The latter party leave Mar-
                         seille on December 15.</p>
                     </div>
-                    <div>
+                    <div type="item">
                         <p>The Baron and Baronness of Zoylem have left
                         Cairo for Tunis, where they propose to make
                         a short stay. The Baron and Baroness have
@@ -744,7 +748,7 @@
                         the execrable raod- in Palestine in a 24 h.p. de
                         Dion motor car.</p>
                     </div>
-                    <div>
+                    <div type="item">
                         <p>The marriage of Miss Cohen and Mr. Elward
                         Frieman of Constantinople, took place yes-
                         terday at Cairo, followed by a reception at the
@@ -757,20 +761,20 @@
                         happy pair, and many fresh and elaborate
                         gowns graced the occasion.</p>
                     </div>
-                    <div>
+                    <div type="item">
                         <p>Prof. and Mrs. Simpson, who arrived yester-
                         day by the Hohenzollern, are going up river
                         with a party on the dahabieh Serapis.</p>
                     </div>
-                    <div>
+                    <div type="item">
                         <p>Sir Ernest Cassel has contributed £2,000 to
                         Queen Alexandra's Fund for the relief of the
                         unemployed.</p>
                     </div>
                 </div>
-                <div>
+                <div type="item">
                     <head>PASSENGER LIST.</head>
-                    <div>
+                    <div type="item">
                         <head>ARRIVALS</head>
                         <p>Per S.S. City of Cambridge, arrived from
                         Liverpool and Malta on Monday: Miss A.
@@ -782,7 +786,7 @@
                         Sciortino, Miss Sciortino, Mr. and Mrs. Cu-
                         mesux, Miss Cumeaux and Miss Cumeaux.</p>
                     </div>
-                    <div>
+                    <div type="item">
                         <head>DEPARTURES.</head>
                         <p>Per S.S. Semiramis sailed Saturday for
                         Trieste:- Mr. and Mrs. Cramwell, M.P.
