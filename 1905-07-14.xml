@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/dig-eg-gaz/resources/master/egSchema.rnc" type="application/relax-ng-compact-syntax"
+<?xml-model href="https://raw.githubusercontent.com/dig-eg-gaz/resources/master/out/egSchema.rnc" type="application/relax-ng-compact-syntax"
 ?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
@@ -394,7 +394,7 @@
                             </row>
                         </table>
                         <p>From Port-Said £2 less Homeward, and £2 more Outward. Second class, two
-                            thirds of 1st Class Fares. </p>
+                            thirds of 1st Class Fares.</p>
                         <p>Agents at PORT SAID, for the London, Calcutta and Persian Gulf Lines,
                             Messrs. Worms &amp; Co. </p>
                         <p>Agents at PORT SAID, for the London and Queensland Line, Messrs. Wills
@@ -992,7 +992,7 @@
                             31-12-904</p>
                     </div>
                     <div type="item" scope="advertisement">
-                        <p>The Cigarettes Manufactured by</p>
+                        <head>The Cigarettes Manufactured by</head>
                         <head>The Cleopatra Cigarette Co.</head>
                         <p>G. NUNGOYICH</p>
                         <p>are on sale at the Company's establishment by Grand Contental Hotel,
@@ -1250,7 +1250,7 @@
                 </div>
                 <cb n="5"/>
                 <div type="item" scope="advertisement">
-                    <p>IMPORTANT NOTICE.</p>
+                    <head>IMPORTANT NOTICE.</head>
                     <head>MARTELL COGNAC.</head>
                     <p>M. H. DEMIRGIAN BEY, General Agent for this important House, warns the public
                         to beware of Imitations, and to examine the labels, corks, and capsules.</p>
@@ -1553,89 +1553,113 @@
             </div>
             <div type="page" n="3">
                 <div type="section" scope="international" source="wire">
-                    <div type="subsection">
-                        <head>THE ENTENTE CORDIALE. THE BREST FESTIVITIES. PAPERS DISCUSS ALLIANCE. </head>
-                        <div type="item">
-                            <dateline>PARIS, July 13.</dateline>
-                            <p>The festivities and good feeling at Brest induce the papers to
-                                discuss the possibility of developing the entente into an alliance.
-                                They point out that the naval combination would be irresistible. </p>
+                    <div type="item">
+                        <head>THE ENTENTE CORDIALE. THE <placeName>BREST</placeName> FESTIVITIES.
+                            PAPERS DISCUSS ALLIANCE.</head>
+                        <div type="wireReport">
+                            <dateline><placeName>PARIS</placeName>, July 13.</dateline>
+                            <p>The festivities and good feeling at <placeName>Brest</placeName>
+                                induce the papers to discuss the possibility of developing the
+                                entente into an alliance. They point out that the naval combination
+                                would be irresistible. </p>
                             <p>200 British naval officers have arrived to-day in small groups.
                                 (Reuter.) </p>
                         </div>
-                        <div type="item">
-                            <dateline>PARIS, July 13.</dateline>
-                            <p>The Municipal Council has accepted the invitation of the London
-                                County Council to visit London in October. (Reuter.) </p>
+                        <div type="wireReport">
+                            <dateline><placeName>PARIS</placeName>, July 13.</dateline>
+                            <p>The Municipal Council has accepted the invitation of the
+                                    <placeName>London</placeName> County Council to visit
+                                    <placeName>London</placeName> in October. (Reuter.) </p>
                         </div>
                     </div>
-                    <div type="subsection">
+                    <div type="item">
                         <head>THE PEACE CONFERENCE. NO QUESTION OF ARMISTICE. </head>
-                        <div type="item">
-                            <dateline>ST. PETERSBURG, July 13.</dateline>
-                            <p>M. Mouravieff has resigned his appointment as peace plenipotentiary,
-                                ostensibly on account of his health. M. Witte has been appointed to
-                                replace him. (Reuter.) </p>
+                        <div type="wireReport">
+                            <dateline><placeName>ST. PETERSBURG</placeName>, July 13.</dateline>
+                            <p><persName>M. Mouravieff</persName> has resigned his appointment as
+                                peace plenipotentiary, ostensibly on account of his health.
+                                    <persName ref="https://www.wikidata.org/wiki/Q155329">M.
+                                    Witte</persName> has been appointed to replace him. (Reuter.)
+                            </p>
                         </div>
-                        <div type="item">
-                            <dateline>TOKIO, July 13.</dateline>
+                        <div type="wireReport">
+                            <dateline><placeName>TOKIO</placeName>, July 13.</dateline>
                             <p>Russia has been given distinctly to understand that there can be no
                                 question of an armistice until the bases of peace are accepted. </p>
-                            <p>The appointment of M. Witte as chief of the plenipotentiaries in
-                                place of M. Mouravieff, whose attitude at the Hague Conference
-                                offended Japan, is regarded as highly satisfactory. (Reuter.) </p>
+                            <p>The appointment of <persName>M. Witte</persName> as chief of the
+                                plenipotentiaries in place of <persName>M. Mouravieff</persName>,
+                                whose attitude at the Hague Conference offended
+                                    <placeName>Japan</placeName>, is regarded as highly
+                                satisfactory. (Reuter.) </p>
                         </div>
-                        <div type="item">
-                            <dateline>ST. PETERSBURG, July 13.</dateline>
-                            <p>The appointment of M. Witte as chief peace plenipotentiary is
-                                officially announced. (R.) </p>
+                        <div type="wireReport">
+                            <dateline><placeName>ST. PETERSBURG</placeName>, July 13.</dateline>
+                            <p>The appointment of <persName>M. Witte</persName> as chief peace
+                                plenipotentiary is officially announced. (R.) </p>
                         </div>
                     </div>
-                    <div type="subsection">
+                    <div type="item">
                         <head>THE RUSSIAN FLEET. BUILDING IT UP. </head>
-                        <dateline>ST. PETERSBURG, July 13.</dateline>
-                        <p>The Tsar, in appointing Admiral Birileff Minister of Marine, directs him
-                            first to provide for the defence of the coasts and then to gradually
-                            build up a fleet. He is to pay particular attention to the education and
-                            training of the personnel. (Reuter.) </p>
+                        <div type="wireReport">
+                            <dateline><placeName>ST. PETERSBURG</placeName>, July 13.</dateline>
+                            <p><persName>The Tsar</persName>, in appointing <persName>Admiral
+                                    Birileff</persName> Minister of Marine, directs him first to
+                                provide for the defence of the coasts and then to gradually build up
+                                a fleet. He is to pay particular attention to the education and
+                                training of the personnel. (Reuter.) </p>
+                        </div>
                     </div>
-                    <div type="subsection">
+                    <div type="item">
                         <head>THE ODESSA RIOTS. MUTINEERS HANGED. </head>
-                        <dateline>ODESSA, July 13.</dateline>
-                        <p>Twenty-four ringleaders in the naval mutiny have been hanged. On the
-                            other hand, the municipal magistrates have acquitted seventy-four
-                            persons arrested for robbery and incendiarism on the occasion of the
-                            great conflagration. Other twenty-eight were sentenced to six weeks’
-                            imprisonment. This is regarded as a political demonstration against
-                            bureaucracy. ( Reuter.)</p>
+                        <div type="wireReport">
+                            <dateline><placeName>ODESSA</placeName>, July 13.</dateline>
+                            <p>Twenty-four ringleaders in the naval mutiny have been hanged. On the
+                                other hand, the municipal magistrates have acquitted seventy-four
+                                persons arrested for robbery and incendiarism on the occasion of the
+                                great conflagration. Other twenty-eight were sentenced to six weeks’
+                                imprisonment. This is regarded as a political demonstration against
+                                bureaucracy. ( Reuter.)</p>
+                        </div>
                     </div>
-                    <div type="subsection">
-                        <head>CONFLICT WITH TROOPS IN CRETE. BRITISH SOLDIERS WOUNDED. </head>
-                        <dateline>CANEA, July 13.</dateline>
-                        <p>The Cretan insurgents ordered the gendarmes to leave a village in the
-                            Candia district. A British detachment was sent to support the gendarmes
-                            and a conflict ensued. Two British soldiers were wounded. (Reuter.) </p>
+                    <div type="item">
+                        <head>CONFLICT WITH TROOPS IN <placeName>CRETE</placeName>. BRITISH SOLDIERS
+                            WOUNDED. </head>
+                        <div type="wireReport">
+                            <dateline><placeName>CANEA</placeName>, July 13.</dateline>
+                            <p>The Cretan insurgents ordered the gendarmes to leave a village in the
+                                    <placeName>Candia</placeName> district. A British detachment was
+                                sent to support the gendarmes and a conflict ensued. Two British
+                                soldiers were wounded. (Reuter.) </p>
+                        </div>
                     </div>
-                    <div type="subsection">
+                    <div type="item">
                         <head>THE IMPLACABLE EXPLOSION.</head>
-                        <dateline>GIBRALTAR, July 13.</dateline>
-                        <p>Four more men have died from injuries received by the explosion on board
-                            the Implacable. (Reuter.) </p>
+                        <div type="wireReport">
+                            <dateline><placeName>GIBRALTAR</placeName>, July 13.</dateline>
+                            <p>Four more men have died from injuries received by the explosion on
+                                board the Implacable. (Reuter.) </p>
+                        </div>
                     </div>
-                    <div type="subsection">
+                    <div type="item">
                         <head>RAISING OF THE NOVIK.</head>
-                        <dateline>TOKIO, July 13.</dateline>
-                        <p>The Novik has been raised. (Reuter.)</p>
+                        <div type="wireReport">
+                            <dateline><placeName>TOKIO</placeName>, July 13.</dateline>
+                            <p>The Novik has been raised. (Reuter.)</p>
+                        </div>
                     </div>
-                    <div type="subsection">
+                    <div type="item">
                         <head>FRENCH PARLIAMENT.</head>
-                        <dateline>PARIS, July 13.</dateline>
-                        <p>The Chamber discussed the amnesty law and afterwards decided, in
-                            agreement with the Government, to adjourn the debate till October.</p>
-                        <p>The session is closed.</p>
-                        <p>The Government has decided to pardon all the persons compromised in the
-                            amnesty bill.</p>
-                        <p>M. Buffet has returned to Paris. (Havas.)</p>
+                        <div type="wireReport">
+                            <dateline><placeName>PARIS</placeName>, July 13.</dateline>
+                            <p>The Chamber discussed the amnesty law and afterwards decided, in
+                                agreement with the Government, to adjourn the debate till
+                                October.</p>
+                            <p>The session is closed.</p>
+                            <p>The Government has decided to pardon all the persons compromised in
+                                the amnesty bill.</p>
+                            <p><persName>M. Buffet</persName> has returned to
+                                    <placeName>Paris</placeName>. (Havas.)</p>
+                        </div>
                     </div>
                 </div>
                 <div type="item" scope="advertisement">
@@ -1651,30 +1675,35 @@
                     <head>LOCAL AND GENERAL.</head>
                     <div type="item">
                         <head>STRAY AND Ownerless DOGS</head>
-                        <p>found in the Abdeen district of Cairo during the night of Saturday and at
+                        <p>found in the <placeName>Abdeen</placeName> district of
+                                <placeName>Cairo</placeName> during the night of Saturday and at
                             daylight on Sunday will be poisoned by the police. </p>
                     </div>
                     <div type="item">
                         <head>Bubonic PLAGUE.</head>
-                        <p> — Yesterday’s bulletin reports one death at Alexandria, one death at
-                            Achmoun, and one cure at Damanhour. There remain 21 cases under
+                        <p> — Yesterday’s bulletin reports one death at
+                                <placeName>Alexandria</placeName>, one death at
+                                <placeName>Achmoun</placeName>, and one cure at
+                                <placeName>Damanhour</placeName>. There remain 21 cases under
                             treatment. </p>
                     </div>
                     <div type="item">
                         <head>ACCIDENT TO A SAILOR.</head>
-                        <p>—A Russian sailor named Shetverishenko was seriously injured yesterday by
-                            a fall into the hold of the S.S. Tsaritza and was taken to hospital.
+                        <p>—A Russian sailor named <persName>Shetverishenko</persName> was seriously
+                            injured yesterday by a fall into the hold of the S.S. Tsaritza and was
+                            taken to hospital. </p>
+                    </div>
+                    <div type="item">
+                        <head><persName>Lifonti</persName>’s MUSIC-STORES</head>
+                        <p> have been removed from the premises in <placeName>Cherif
+                                Pasha-street</placeName> to the new <placeName>Lifonti
+                                Building</placeName> in <placeName>Rosetta-road</placeName>. The
+                            inauguration of the new establishment will take place in a few days.
                         </p>
                     </div>
                     <div type="item">
-                        <head>Lifonti’s MUSIC-STORES</head>
-                        <p> have been removed from the premises in Cherif Pasha-street to the new
-                            Lifonti Building in Rosetta-road. The inauguration of the new
-                            establishment will take place in a few days. </p>
-                    </div>
-                    <div type="item">
-                        <head>SUEZ CANAL.</head>
-                        <p>—9 vessels passod through the Canal on the 11th inst., of which 4 were
+                        <head><placeName>SUEZ CANAL</placeName>.</head>
+                        <p>—9 vessels passed through the Canal on the 11th inst., of which 4 were
                             British, 1 Turkish, 2 German, 2 Dutch. The day’s receipts were frs. 216,
                             221.02, making the total from the 1st inst. frs. 3,136,571.36. </p>
                     </div>
@@ -1687,16 +1716,17 @@
                         </p>
                     </div>
                     <div type="item">
-                        <head>ALHAMBRA THEATRE.</head>
-                        <p>Great attractions are promised for to-night at the Alhambra on the
-                            occasion of the French national fête. The Italian operetta company will
-                            perform Varney’s patriotic operetta Fanfan la Tulipe in the theatre,
-                            while in the grounds, which will be illuminated à la Venitienne, the
-                            Armenian Band will discourse selections of music, and a firework display
-                            will be given. </p>
+                        <head><placeName>ALHAMBRA THEATRE</placeName>.</head>
+                        <p>Great attractions are promised for to-night at the
+                                <placeName>Alhambra</placeName> on the occasion of the French
+                            national fête. The Italian operetta company will perform Varney’s
+                            patriotic operetta Fanfan la Tulipe in the theatre, while in the
+                            grounds, which will be illuminated à la Venitienne, the Armenian Band
+                            will discourse selections of music, and a firework display will be
+                            given. </p>
                     </div>
                     <div type="item">
-                        <head>SAN STEFANO CASINO.</head>
+                        <head><placeName>SAN STEFANO CASINO</placeName>.</head>
                         <p>A grand instrumental concert will be given at the Casino on Sunday
                             morning next at 10 o’clock. The programme is varied and interesting, and
                             includes Beethoven’s 5th Symphony, besides two novelties for Egypt, a
@@ -1705,58 +1735,74 @@
                             musicians for the occasion. </p>
                     </div>
                     <div type="item">
-                        <head>THE DEYROUT THEFT.</head>
+                        <head>THE <placeName>DEYROUT</placeName> THEFT.</head>
                         <p>The administrative enquiry into the disappearance of the registered
-                            letter containing £800 addressed by the National Bank to M. Yunan at
-                            Deyrout has terminated in the suspension, to date from June 26, of an
-                            apprentice named Mugahed Atalla, whose case is to be examined by the
-                            Parquet. The matter being still subjudice we refrain from giving any
+                            letter containing £800 addressed by the National Bank to <persName>M.
+                                Yunan</persName> at <placeName>Deyrout</placeName> has terminated in
+                            the suspension, to date from June 26, of an apprentice named
+                                <persName>Mugahed Atalla</persName>, whose case is to be examined by
+                            the Parquet. The matter being still subjudice we refrain from giving any
                             details as to the methods of the enquiry, which appears to have been
-                            very cleverly conducted by A. Fux Bey, </p>
+                            very cleverly conducted by <persName>A. Fux Bey</persName>, </p>
                     </div>
                     <div type="item">
-                        <head>ST. MARK’S CHURCH CLOSED FOR RESTORATION.</head>
-                        <p>Next Sunday (July 16) the 11 a.m. and the 6.15 p.m. services at St.
-                            Mark’s Church will be omitted owing to the complete disorder in which
-                            the church is at present, through scaffolding, removal of pews, and
-                            taking to pieces of the organ, etc. At 8 a.m. there will be a
-                            celebration of the Holy Communion in the chapel, and a second
-                            celebration of the Communion (being the 3rd Sunday in the month) at 11
-                            a.m., also in the chapel. </p>
+                        <head><placeName>ST. MARK’S CHURCH</placeName> CLOSED FOR
+                            RESTORATION.</head>
+                        <p>Next Sunday (July 16) the 11 a.m. and the 6.15 p.m. services at
+                                <placeName>St. Mark’s Church</placeName> will be omitted owing to
+                            the complete disorder in which the church is at present, through
+                            scaffolding, removal of pews, and taking to pieces of the organ, etc. At
+                            8 a.m. there will be a celebration of the Holy Communion in the chapel,
+                            and a second celebration of the Communion (being the 3rd Sunday in the
+                            month) at 11 a.m., also in the chapel. </p>
                     </div>
                     <div type="item">
                         <head>A RAILWAY GRIEVANCE.</head>
-                        <p>A Minet el Kamh correspondent writes asking us to call the attention of
-                            the E.R.A. to the fact that sometime ago train No. 27 was allowed to
-                            halt for two minutes at each of the stations of Shiblanga, Mit Fazid,
-                            Godaieda, and Zankalone, but now this has been stopped. One cannot leave
-                            Cairo for any of these stations after 4.15 p.m., and this is hard on
-                            merchants and business men. Besides,a passenger cannot leave Alexandria
-                            for these stations after 10.50 a.m., whereas he could leave at 3.45 p.m.
-                            if No. 27 stopped there. </p>
+                        <p>A <placeName>Minet el Kamh</placeName> correspondent writes asking us to
+                            call the attention of the E.R.A. to the fact that sometime ago train No.
+                            27 was allowed to halt for two minutes at each of the stations of
+                                <placeName>Shiblanga</placeName>, <placeName>Mit Fazid</placeName>,
+                                <placeName>Godaieda</placeName>, and
+                                <placeName>Zankalone</placeName>, but now this has been stopped. One
+                            cannot leave <placeName>Cairo</placeName> for any of these stations
+                            after 4.15 p.m., and this is hard on merchants and business men.
+                            Besides,a passenger cannot leave <placeName>Alexandria</placeName> for
+                            these stations after 10.50 a.m., whereas he could leave at 3.45 p.m. if
+                            No. 27 stopped there. </p>
                     </div>
                     <div type="item">
-                        <head>M. Leon Fehmy AND Orphi PASHA.</head>
-                        <p>M. Léon Fehmy, editor of “La Justice,” Young Turk, exile, State prisoner
-                            and what not, recently called on Mahmoud Pasha Orphi and demanded a
-                            private interview. The issue of the meeting must have been violent, for
-                            Orphi Pasha complained to the authorities that Leon Fehmy had attacked
-                            and beaten him, while Leon Fehmy, when the police called at his house,
-                            declared that he could not leave his bed, having been beaten within an
-                            inch of his life by Orphi Pasha. A procès-verbal has been drawn up, and
-                            the Pasha and the politician are to go before the Parquet.</p>
+                        <head>M. <persName>Leon Fehmy</persName> AND <persName>Orphi
+                                PASHA</persName>.</head>
+                        <p>M. <persName>Léon Fehmy</persName>, editor of “La Justice,” Young Turk,
+                            exile, State prisoner and what not, recently called on <persName>Mahmoud
+                                Pasha Orphi</persName> and demanded a private interview. The issue
+                            of the meeting must have been violent, for Orphi Pasha complained to the
+                            authorities that Leon Fehmy had attacked and beaten him, while Leon
+                            Fehmy, when the police called at his house, declared that he could not
+                            leave his bed, having been beaten within an inch of his life by Orphi
+                            Pasha. A procès-verbal has been drawn up, and the Pasha and the
+                            politician are to go before the Parquet.</p>
                     </div>
                 </div>
                 <div type="article">
                     <head>PASSENGER LISTS. DEPARTURES.</head>
-                    <p>Le paquebot “Adria,” de la Cie Florio Rubattino parti hier pour Gènes avait à
-                        bord: </p>
-                    <p>MM. Paolo Campoli, Errante Florio, Edoardo Samuelson, Comte C. Senni, Rév.
-                        Père Krudenier et fam., Père Zaccaria, Naufal, M. et Mme Morad Bey, fam.
-                        Lucovich, Colomba Somma et fille, Sussman, R. Jentile, Zraiok, Alf. Pilpel,
-                        Scott, Mme Coffin, Mme Miclavetz, gouvernante et 3 enfants, Mlle Colloridi
-                        et fils, Cav. D. Faro, Luigi Colucci, Mme Nadalini, Dom. Salinas, G. Salinas
-                        et fam., L Cohen, et 45 passagen de 3e classe. </p>
+                    <p>Le paquebot “Adria,” de la Cie Florio Rubattino parti hier pour
+                            <placeName>Gènes</placeName> avait à bord: </p>
+                    <p>MM. <persName>Paolo Campoli</persName>, <persName>Errante Florio</persName>,
+                            <persName>Edoardo Samuelson</persName>, <persName>Comte C.
+                            Senni</persName>, <persName>Rév. Père Krudenier</persName> et fam.,
+                            <persName>Père Zaccaria</persName>, <persName>Naufal</persName>, M. et
+                        Mme <persName>Morad Bey</persName>, fam. <persName>Lucovich</persName>,
+                            <persName>Colomba Somma</persName> et fille,
+                            <persName>Sussman</persName>, <persName>R. Jentile</persName>,
+                            <persName>Zraiok</persName>, <persName>Alf. Pilpel</persName>,
+                            <persName>Scott</persName>, <persName>Mme Coffin</persName>,
+                            <persName>Mme Miclavetz</persName>, gouvernante et 3 enfants,
+                            <persName>Mlle Colloridi</persName> et fils, <persName>Cav. D.
+                            Faro</persName>, <persName>Luigi Colucci</persName>, <persName>Mme
+                            Nadalini</persName>, <persName>Dom. Salinas</persName>, <persName>G.
+                            Salinas</persName> et fam., <persName>L Cohen</persName>, et 45 passagen
+                        de 3e classe. </p>
                 </div>
                 <cb/>
                 <div type="article">
@@ -1855,10 +1901,10 @@
                 </div>
                 <cb/>
                 <div type="article">
-                    <head>THE YEMEN REVOLT.</head>
+                    <head>THE <placeName>YEMEN</placeName> REVOLT.</head>
                     <head type="sub">MANIFESTO TO THE ARABS.</head>
-                    <p>The leader of the rising in the Yemen has issued a manifesto whioh opens as
-                        follows :—</p>
+                    <p>The leader of the rising in the <placeName>Yemen</placeName> has issued a
+                        manifesto whioh opens as follows :—</p>
                     <p>"To all the followers and adherents devoted to the Book of God (Koran) the
                         laws of His messenger and His pure family, who are the security of the
                         people of the land from every calamity, the Ark of Salvation, the
@@ -1890,10 +1936,11 @@
                         in your succour, and soon shall we write to the Sheikh Nasir-al-Din Ali Bin
                         Magdad (may God protect him) to cast his eye towards you if you be of the
                         truthful.” </p>
-                    <p>[The Sheikh Nasir-al-Din is the Commander-in-Chief of the rebel Army.] </p>
+                    <p>[The <persName>Sheikh Nasir-al-Din</persName> is the Commander-in-Chief of
+                        the rebel Army.] </p>
                 </div>
                 <div type="article">
-                    <head>SUDAN LAW COURTS.</head>
+                    <head><placeName>SUDAN</placeName> LAW COURTS.</head>
                     <p>The latest “Sudan Gazette” to hand contains certain regulations relating to
                         the Moslem Law Courts in the Sudan. One of the new rules issued by the Grand
                         Cadi of the Sudan with the approval of the Governor-General allows the High
@@ -1953,72 +2000,83 @@
                         <item>5 Intermezzo..Be’ d’Enfante...Jaxoue. </item>
                         <item>6 Gavotte...Stephanie...Csibulka.</item>
                     </list>
-                    <p> S. Dore, Bandmaster, E. Berks. Regt.</p>
+                    <p>
+                        <persName>S. Dore</persName>, Bandmaster, E. Berks. Regt.</p>
                 </div>
                 <cb/>
                 <div type="article">
-                    <head> THE SUDAN RAILWAY. ITS IMPORTANCE TO ENGLAND.</head>
-                    <p>The Correspondent of the “Journal des Débats,” writing from Djibouti, draws
-                        attention to the important results likely to follow the completion of the
-                        Sudan Railway, the two sections of which, he says, starting respectively
-                        from the Red Sea and the Nile, will certainly be finished in the early part
-                        of next year. </p>
-                    <p>Independently of the impetus England will be in a position to give to
-                        commerce and industry in the Sudan, she will possess means of communication
+                    <head> THE <placeName>SUDAN</placeName> RAILWAY. ITS IMPORTANCE TO
+                            <placeName>ENGLAND</placeName>.</head>
+                    <p>The Correspondent of the “Journal des Débats,” writing from
+                            <placeName>Djibouti</placeName>, draws attention to the important
+                        results likely to follow the completion of the <placeName>Sudan</placeName>
+                        Railway, the two sections of which, he says, starting respectively from the
+                            <placeName>Red Sea</placeName> and the <placeName>Nile</placeName>, will
+                        certainly be finished in the early part of next year. </p>
+                    <p>Independently of the impetus <placeName>England</placeName> will be in a
+                        position to give to commerce and industry in the
+                            <placeName>Sudan</placeName>, she will possess means of communication
                         which will greatly increase her military power in Egypt. Thanks to her naval
-                        preponderance in the Red Sea and the Indian Ocean, she will be able to bring
-                        native troops from India to Suakin and convey them thence by the Sudan
-                        Railway to the shores of the Mediterranean. </p>
-                    <p>The reorganisation of the Indian Army, to which Viscount Kitchener’s powers
-                        are now devoted, leads to the belief that the troops at present prepared and
-                        held in reserve in the Indian Peninsula represent an imposing force, which
-                        the British Government will always hold in readiness to establish its
-                        supremacy in the Eastern Mediterranean. </p>
+                        preponderance in the <placeName>Red Sea</placeName> and the
+                            <placeName>Indian Ocean</placeName>, she will be able to bring native
+                        troops from <placeName>India</placeName> to <placeName>Suakin</placeName>
+                        and convey them thence by the Sudan Railway to the shores of the
+                            <placeName>Mediterranean</placeName>. </p>
+                    <p>The reorganisation of the Indian Army, to which <persName>Viscount
+                            Kitchener</persName>’s powers are now devoted, leads to the belief that
+                        the troops at present prepared and held in reserve in the <placeName>Indian
+                            Peninsula</placeName> represent an imposing force, which the British
+                        Government will always hold in readiness to establish its supremacy in the
+                        Eastern Mediterranean. </p>
                 </div>
                 <div type="article">
                     <head>RETIREMENT OF A MIRALAI. FAREWELL PARADE.</head>
-                    <p>Yesterday, the troops of the 7th Battalion Egyptian Army paraded at-Ras el
-                        Tin, on the occasion of the retirement of their commanding officer, Miralai
-                        Moursi Bey Fehmy (who has attained the age limit) and the handing over of
-                        the command of the 7th to Kaimakam Hassan Bey Helmi. After the troops had
+                    <p>Yesterday, the troops of the 7th Battalion Egyptian Army paraded
+                            at-<placeName>Ras el Tin</placeName>, on the occasion of the retirement
+                        of their commanding officer, <persName>Miralai Moursi Bey Fehmy</persName>
+                        (who has attained the age limit) and the handing over of the command of the
+                        7th to <persName>Kaimakam Hassan Bey Helmi</persName>. After the troops had
                         been reviewed by their old and new commandants, the officer in charge of the
-                        colour went through the ceremony of handing it to the Miralai Moursi Bey
-                        Fehmy, who in turn gave it to the new commandant. The retiring officer then
-                        gave a short address to the soldiers, wishing them success, and insisting on
-                        the importance of discipline and good conduct. </p>
+                        colour went through the ceremony of handing it to the <persName>Miralai
+                            Moursi Bey Fehmy</persName>, who in turn gave it to the new commandant.
+                        The retiring officer then gave a short address to the soldiers, wishing them
+                        success, and insisting on the importance of discipline and good conduct. </p>
                     <p>The troops were obviously moved by the ceremony and by their colonel’s words,
                         some of the men shedding tears, for the late commandant of the battalion was
                         decidedly popular among his men. A large and orderly crowd witnessed the
                         ceremony. </p>
                 </div>
-                <div type="article">
-                    <head>MACLEAN-ROYLE WEDDING.</head>
+                <div type="article" scope="social">
+                    <head><persName>MACLEAN</persName>-<persName>ROYLE</persName> WEDDING.</head>
                     <p>Our London Correspondent telegraphs to correct an error which appeared in his
                         account yesterday of the Maclean-Royle wedding. The ceremony was performed
-                        by the Ven. Archdeacon Gwynne, archdeacon of the Sudan, assisted by Fev.
-                        David Anderson, rector of St. George’s, and not by the latter only.</p>
+                        by the <persName>Ven. Archdeacon Gwynne</persName>, archdeacon of the Sudan,
+                        assisted by <persName>Fev. David Anderson</persName>, rector of St.
+                        George’s, and not by the latter only.</p>
                 </div>
                 <div type="article">
                     <head>THE MARONITE PATRIARCH.</head>
-                    <p>The Pope has received in audience the Maronite Patriarch, Mgr. Elia El Havik,
-                        who was accompanied by a suite of 25 persons. The Patriaroh brought with him
-                        presents of the value of 35,000 francs which he offered to His Holiness.</p>
+                    <p>The Pope has received in audience the Maronite Patriarch, Mgr. <persName>Elia
+                            El Havik</persName>, who was accompanied by a suite of 25 persons. The
+                        Patriarch brought with him presents of the value of 35,000 francs which he
+                        offered to His Holiness.</p>
                 </div>
                 <div type="article">
                     <head>THE 14TH OF JULY.</head>
                     <p>This morning, on the occasion of the French national fête, a reception was
-                        held at the French Consulate by M. Vice-Consul Campana. Most of the
-                        notabilities of the French colony and of the Swiss colony were present, as
-                        well as a large number of the Frenoh clergy. A speech appropriate to the
-                        occasion was delivered by M. Barbazza, Député de la Nation. He asked M.
-                        Campana, at whose return to Alexandria he expressed his satisfaction, to
-                        transmit to the President of the Republic, in the name of the Frenoh colony,
-                        their due sense of thankfulness at the preservation of his life on the
-                        occasion of the attempt to assassinate the King of Spain during his visit to
-                        Paris. He thanked the Swiss colony for its presence at the reception, and
-                        ended his discourse by toasting Franve and the Republic. M. Campana replied
-                        in felicitous terms, promising to convey the French colony's message to M.
-                        Loubet. </p>
+                        held at the French Consulate by M. <persName>Vice-Consul Campana</persName>.
+                        Most of the notabilities of the French colony and of the Swiss colony were
+                        present, as well as a large number of the Frenoh clergy. A speech
+                        appropriate to the occasion was delivered by <persName>M.
+                            Barbazza</persName>, Député de la Nation. He asked M. Campana, at whose
+                        return to Alexandria he expressed his satisfaction, to transmit to the
+                        President of the Republic, in the name of the Frenoh colony, their due sense
+                        of thankfulness at the preservation of his life on the occasion of the
+                        attempt to assassinate the <persName>King of Spain</persName> during his
+                        visit to Paris. He thanked the Swiss colony for its presence at the
+                        reception, and ended his discourse by toasting Franve and the Republic.
+                            <persName>M. Campana</persName> replied in felicitous terms, promising
+                        to convey the French colony's message to M. Loubet. </p>
                 </div>
                 <div type="article">
                     <head>BRITISH CHAMBER OF COMMERCE.</head>
@@ -2043,34 +2101,41 @@
                 </div>
                 <cb/>
                 <div type="article">
-                    <head>NOTES FROM SUEZ.</head>
+                    <head>NOTES FROM <placeName>SUEZ</placeName>.</head>
                     <div type="item">
                         <head>THE FLIGHT INTO EGYPT.</head>
                         <byline> ( FROM OUR CORRESPONDENT. )</byline>
-                        <dateline>Suez, Thursday.</dateline>
-                        <p>Owing to the insurrection at Yemen, several hundreds of Jews have fled to
-                            Aden, and many of them arrive at Suez daily by steamers. It is stated
-                            that over 1,000 Jews are now waiting at Aden to prooeed to Egypt. </p>
+                        <dateline><placeName>Suez</placeName>, Thursday.</dateline>
+                        <p>Owing to the insurrection at <placeName>Yemen</placeName>, several
+                            hundreds of Jews have fled to Aden, and many of them arrive at
+                                <placeName>Suez</placeName> daily by steamers. It is stated that
+                            over 1,000 Jews are now waiting at <placeName>Aden</placeName> to
+                            proceed to <placeName>Egypt</placeName>. </p>
                     </div>
                     <div type="item">
                         <head>THE S.S. FOYLE</head>
-                        <p>The S.S. Foyle, which was ashore near Hanish Island, in the Red Sea,
-                            arrived at Suez yesterday and entered the Canal bound to Port Said for
-                            orders (presumably she will go to Alexandria). It will be remembered
-                            that this steamer had a full cargo of rice from Rangoon, and had to
-                            discharge about 800 tons in order to come off. She was subsequently
-                            taken to Perim, where she was provisionally repaired. </p>
+                        <p>The S.S. Foyle, which was ashore near <placeName>Hanish
+                                Island</placeName>, in the <placeName>Red Sea</placeName>, arrived
+                            at Suez yesterday and entered the <placeName>Canal</placeName> bound to
+                                <placeName>Port Said</placeName> for orders (presumably she will go
+                            to Alexandria). It will be remembered that this steamer had a full cargo
+                            of rice from <placeName>Rangoon</placeName>, and had to discharge about
+                            800 tons in order to come off. She was subsequently taken to
+                                <placeName>Perim</placeName>, where she was provisionally repaired.
+                        </p>
                     </div>
                     <div type="item">
                         <head>FRENCH FETE.</head>
-                        <p>This year’s French fête at Suez promises to be a great success. Excellent
-                            arrangements have been made for the gymkhanas and dancing in the open
-                            air, which will take place in the avenue opposite the Cercle
-                            International at Port Tewfik. The enclosure is beautifully decorated
-                            with flags, and will be illuminated by several hundreds of electric
-                            lamps. A special orchestra has been engaged in Cairo for the occasion.
-                            Special arrangements have been made for carbine shooting, and costly
-                            prizes will be given to the winners. </p>
+                        <p>This year’s French fête at <placeName>Suez</placeName> promises to be a
+                            great success. Excellent arrangements have been made for the gymkhanas
+                            and dancing in the open air, which will take place in <placeName>the
+                                avenue opposite the Cercle International</placeName> at
+                                <placeName>Port Tewfik</placeName>. The enclosure is beautifully
+                            decorated with flags, and will be illuminated by several hundreds of
+                            electric lamps. A special orchestra has been engaged in
+                                <placeName>Cairo</placeName> for the occasion. Special arrangements
+                            have been made for carbine shooting, and costly prizes will be given to
+                            the winners. </p>
                     </div>
                 </div>
                 <div type="article">
@@ -2078,46 +2143,57 @@
                     <p>During the week ending the 8th inst. operations for the destruction of the
                         cotton worm have been actively carried on. The reports from the various
                         provinces are given herewith:— </p>
-                    <p>Ghizeh: 3,380 feddans, belonging to 7,857 proprietors, have been attacked and
-                        3,058 of these have been cleared by 49,698 ohildren. </p>
-                    <p>Kalioubieh: 4,311 feddans, belonging to 1,621 proprietors, have been attacked
-                        and have been cleared by 19,208 children. </p>
-                    <p>Menonfieh: 4,253 feddans, belonging to 1,515 proprietors, have been attacked
-                        and 3,702 feddans have been cleared by 15,839 children. </p>
-                    <p>Gharbieh: 7,314 feddans, belonging to 1,045 proprietors, have been attacked
-                        and 5,642 feddans have been cleaned by 7,587 children. </p>
-                    <p>Behera: 30,443 feddans, belonging to 5,906 proprietors, have been attaoked
-                        and 22,698 feddans have been cleared by 49,587 children. </p>
-                    <p>Dakahlieh: 8,014 feddans, belonging to 1,472 proprietors, have been attacked
-                        and 7,001 feddans have cleared by 18,952 children. </p>
-                    <p>Damietta: 222 feddans, belonging to 84 proprietors, have been attacked and
-                        have all been cleared by 1,175 children. </p>
-                    <p>Fayoum: 8 feddans, belonging to one proprietor, have been attacked and have
-                        been cleared by 30 children. </p>
-                    <p>Assiont: 180 feddans, belonging to one proprietor, have been attacked and
-                        cleared. </p>
-                    <p>Beni-Souef remains free from the pest </p>
-                    <p>According to the latest news received certain lands in Minieh have been
-                        attacked by the worm and measures are being taken for their destruction. The
-                        Nedwet el Assal (Aphis) is being efficaciously dealt with by the method
-                        suggested by the Ministry of the Interior. </p>
+                    <p><placeName>Ghizeh</placeName>: 3,380 feddans, belonging to 7,857 proprietors,
+                        have been attacked and 3,058 of these have been cleared by 49,698 ohildren. </p>
+                    <p><placeName>Kalioubieh</placeName>: 4,311 feddans, belonging to 1,621
+                        proprietors, have been attacked and have been cleared by 19,208 children. </p>
+                    <p><placeName>Menonfieh</placeName>: 4,253 feddans, belonging to 1,515
+                        proprietors, have been attacked and 3,702 feddans have been cleared by
+                        15,839 children. </p>
+                    <p><placeName>Gharbieh</placeName>: 7,314 feddans, belonging to 1,045
+                        proprietors, have been attacked and 5,642 feddans have been cleaned by 7,587
+                        children. </p>
+                    <p><placeName>Behera</placeName>: 30,443 feddans, belonging to 5,906
+                        proprietors, have been attaoked and 22,698 feddans have been cleared by
+                        49,587 children. </p>
+                    <p><placeName>Dakahlieh</placeName>: 8,014 feddans, belonging to 1,472
+                        proprietors, have been attacked and 7,001 feddans have cleared by 18,952
+                        children. </p>
+                    <p><placeName>Damietta</placeName>: 222 feddans, belonging to 84 proprietors,
+                        have been attacked and have all been cleared by 1,175 children. </p>
+                    <p><placeName>Fayoum</placeName>: 8 feddans, belonging to one proprietor, have
+                        been attacked and have been cleared by 30 children. </p>
+                    <p><placeName>Assiout</placeName>: 180 feddans, belonging to one proprietor,
+                        have been attacked and cleared. </p>
+                    <p><placeName>Beni-Souef</placeName> remains free from the pest </p>
+                    <p>According to the latest news received certain lands in
+                            <placeName>Minieh</placeName> have been attacked by the worm and
+                        measures are being taken for their destruction. The Nedwet el Assal (Aphis)
+                        is being efficaciously dealt with by the method suggested by the Ministry of
+                        the Interior. </p>
                 </div>
                 <div type="article">
                     <head>STEAMER MOVEMENTS.</head>
-                    <p>The Moss liner “Rameses” arrived at Liverpool yesterday afternoon. </p>
+                    <p>The Moss liner “Rameses” arrived at <placeName>Liverpool</placeName>
+                        yesterday afternoon. </p>
                 </div>
                 <div type="section" scope="social">
                     <head>PERSONAL AND SOCIAL</head>
-                    <p>Sir H. Pinching, Director-General, Sanitary Department, left Cairo for
-                        Port-Said yesterday evening. </p>
-                    <p>Major L’Estrange Johnston, President of the State Railway Board, arrived at
-                        Alexandria last night from Cairo. </p>
-                    <p>Mr. Littlewood, Chief Veterinary Inspector, and Mrs. Littlewood left Cairo
-                        yesterday evening by the 6.15 p.m. train for Port Said, where they will
-                        embark for England on the Nord-deutscher Lloyd S.S. Zieten. </p>
-                    <p>The Sub-Governor of Alexandria called upon the French Vice Consul at 11 a.m.
-                        to-day. The Vice-Consul paid a return visit to the Gonvernorat at 11.30 am.
-                    </p>
+                    <p><persName>Sir H. Pinching</persName>, Director-General, Sanitary Department,
+                        left <placeName>Cairo</placeName> for <placeName>Port-Said</placeName>
+                        yesterday evening. </p>
+                    <p><persName>Major L’Estrange Johnston</persName>, President of the State
+                        Railway Board, arrived at <placeName>Alexandria</placeName> last night from
+                            <placeName>Cairo</placeName>. </p>
+                    <p><persName>Mr. Littlewood</persName>, Chief Veterinary Inspector, and
+                            <persName>Mrs. Littlewood</persName> left <placeName>Cairo</placeName>
+                        yesterday evening by the 6.15 p.m. train for <placeName>Port
+                            Said</placeName>, where they will embark for
+                            <placeName>England</placeName> on the Nord-deutscher Lloyd S.S. Zieten. </p>
+                    <p>The <persName>Sub-Governor of Alexandria</persName> called upon the
+                            <persName>French Vice Consul</persName> at 11 a.m. to-day. The
+                        Vice-Consul paid a return visit to the <placeName>Gonvernorat</placeName> at
+                        11.30 am. </p>
                 </div>
                 <div type="section" scope="advertisement">
                     <div type="item" scope="advertisement">
@@ -2147,11 +2223,916 @@
                     </div>
                 </div>
             </div>
-            <div type="page" n="4"> 
-            
+            <div type="page" n="4">
+                <cb n="1"/>
+                <cb n="2"/>
+                <cb n="3"/>
+                <div type="article">
+                    <head>EASTERN TELEGRAPH CO. LTD.</head>
+                    <p>AVERAGE TIME occupied in transmission of Egyptian telegrams from England to
+                        Alexandria on <date when="1905-07-13">Thursday, 13th July, 1905</date>.</p>
+                    <p>OUTWARDS.</p>
+                    <p>Between the hours of 10 a.m. and 6 p.m. (Cairo time)</p>
+                    <table rows="6" cols="3">
+                        <row role="label">
+                            <cell rows="2">FROM</cell>
+                            <cell cols="2">MESSAGES HANDED IN AT</cell>
+                        </row>
+                        <row role="label">
+                            <cell>The Company’s Offices. H. M.</cell>
+                            <cell>Postal Telegraph Offices. H. M.</cell>
+                        </row>
+                        <row>
+                            <cell><placeName>London</placeName></cell>
+                            <cell><measure unit="min">29</measure></cell>
+                            <cell><measure unit="min">38</measure></cell>
+                        </row>
+                        <row>
+                            <cell><placeName>Liverpool</placeName></cell>
+                            <cell><measure unit="min">24</measure></cell>
+                            <cell><measure unit="min">—</measure></cell>
+                        </row>
+                        <row>
+                            <cell><placeName>Manchester</placeName></cell>
+                            <cell><measure unit="min">36</measure></cell>
+                            <cell><measure unit="min">—</measure></cell>
+                        </row>
+                        <row>
+                            <cell><placeName>Glasgow</placeName></cell>
+                            <cell><measure unit="min">28</measure></cell>
+                            <cell><measure unit="min">—</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Other Provincial Offices</cell>
+                            <cell><measure unit="min">—</measure></cell>
+                            <cell><measure unit="min">46</measure></cell>
+                        </row>
+                    </table>
+                    <p>Delay due to faulty landlines.</p>
+                </div>
+                <div type="article">
+                    <head>STOCKS AND SHARES</head>
+                    <p>
+                        <hi rend="italic">Closing Prices, to-day at 1 p.m.</hi>
+                    </p>
+                    <table cols="4">
+                        <row role="label">
+                            <cell>Shares</cell>
+                            <cell/>
+                            <cell>
+                                <hi rend="bold">BANKS.</hi>
+                            </cell>
+                            <cell/>
+                        </row>
+                        <row>
+                            <cell>Lst.</cell>
+                            <cell>13 ¾</cell>
+                            <cell>Imperial Ottoman Bank</cell>
+                            <cell>—</cell>
+                        </row>
+                        <row>
+                            <cell>"</cell>
+                            <cell>26 5/16</cell>
+                            <cell>Nat. Bank of Egypt</cell>
+                            <cell>—</cell>
+                        </row>
+                        <row>
+                            <cell>"</cell>
+                            <cell>—</cell>
+                            <cell>do do New</cell>
+                            <cell>26 3/16</cell>
+                        </row>
+                        <row>
+                            <cell>Fcs.</cell>
+                            <cell>426 —</cell>
+                            <cell>National Bank of Greece</cell>
+                            <cell>—</cell>
+                        </row>
+                        <row>
+                            <cell>L.E.</cell>
+                            <cell>— 1/16</cell>
+                            <cell>Banque Industrielle</cell>
+                            <cell>—</cell>
+                        </row>
+                        <row>
+                            <cell>Fcs.</cell>
+                            <cell>815 —</cell>
+                            <cell>Credit Foncier Egyptian Lottery Bonds</cell>
+                            <cell>316</cell>
+                        </row>
+                        <row>
+                            <cell>Lst.</cell>
+                            <cell>13 7/8</cell>
+                            <cell>Agricultural Bank</cell>
+                            <cell>9 1/2</cell>
+                        </row>
+                        <row>
+                            <cell>Fcs.</cell>
+                            <cell>124 ½</cell>
+                            <cell>Banque d’Athènes</cell>
+                            <cell>—</cell>
+                        </row>
+                        <row>
+                            <cell>Lst.</cell>
+                            <cell>1 3/8</cell>
+                            <cell>Egypt. Investment Co.</cell>
+                            <cell>—</cell>
+                        </row>
+                        <row>
+                            <cell>"</cell>
+                            <cell>9 5/16</cell>
+                            <cell>Land Bank of Egypt</cell>
+                            <cell>90</cell>
+                        </row>
+                        <row role="lable">
+                            <cell/>
+                            <cell/>
+                            <cell>
+                                <hi rend="bold">LAND, &amp;c.</hi>
+                            </cell>
+                            <cell/>
+                        </row>
+                        <row>
+                            <cell>Fcs.</cell>
+                            <cell>1000 —</cell>
+                            <cell>Agric.-Indust. Egypt...</cell>
+                            <cell>520</cell>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell/>
+                            <cell>Fond.</cell>
+                            <cell>1050</cell>
+                        </row>
+                        <row>
+                            <cell>L.E.</cell>
+                            <cell>43 ¼</cell>
+                            <cell>Behera Company</cell>
+                            <cell>5 1/8</cell>
+                        </row>
+                        <row>
+                            <cell>Lst.</cell>
+                            <cell>2 7/16</cell>
+                            <cell>Egypt. Delta Land Co.</cell>
+                            <cell>—</cell>
+                        </row>
+                        <row>
+                            <cell>"</cell>
+                            <cell>6 3/8</cell>
+                            <cell>Wardan Estate Coy.</cell>
+                            <cell>5</cell>
+                        </row>
+                        <row>
+                            <cell>"</cell>
+                            <cell>4 7/8</cell>
+                            <cell>Land &amp; Mortgage.</cell>
+                            <cell>—</cell>
+                        </row>
+                        <row>
+                            <cell>"</cell>
+                            <cell>28 1/8</cell>
+                            <cell>New Daira Sanieh Fond.</cell>
+                            <cell>180</cell>
+                        </row>
+                        <row>
+                            <cell>"</cell>
+                            <cell>—</cell>
+                            <cell>Corporation of Western Egypt</cell>
+                            <cell>15/16</cell>
+                        </row>
+                        <row>
+                            <cell> </cell>
+                            <cell>33/ —</cell>
+                            <cell>New Egyptian Co.</cell>
+                            <cell/>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell/>
+                            <cell>Egypt. Estates Ltd.</cell>
+                            <cell>7/8</cell>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell/>
+                            <cell>
+                                <hi rend="bold">COMMERCIAL INDUSTRIAL</hi>
+                            </cell>
+                            <cell/>
+                        </row>
+                        <row>
+                            <cell>Lst.</cell>
+                            <cell>30 —</cell>
+                            <cell>Alexand. Bonded Stores Pref.</cell>
+                            <cell>—</cell>
+                        </row>
+                        <row>
+                            <cell>"</cell>
+                            <cell>— 23/32</cell>
+                            <cell>Anglo-Egypt. Spinning Co.</cell>
+                            <cell>—</cell>
+                        </row>
+                        <row>
+                            <cell>"</cell>
+                            <cell>23 —</cell>
+                            <cell>Bourse Khédiviale</cell>
+                            <cell>—</cell>
+                        </row>
+                        <cb n="4"/>
+                        <row>
+                            <cell>"</cell>
+                            <cell>75 —</cell>
+                            <cell>pref. Cairo Sewage Transport Ord.</cell>
+                            <cell>60</cell>
+                        </row>
+                        <row>
+                            <cell>Fcs.</cell>
+                            <cell>201 —</cell>
+                            <cell>ex Cr. Brewery Alex. Fond.</cell>
+                            <cell>100</cell>
+                        </row>
+                        <row>
+                            <cell>"</cell>
+                            <cell>—</cell>
+                            <cell>do do 6 % Debs.</cell>
+                            <cell>500</cell>
+                        </row>
+                        <row>
+                            <cell>"</cell>
+                            <cell>110 —</cell>
+                            <cell>do Cairo Fond.</cell>
+                            <cell>61</cell>
+                        </row>
+                        <row>
+                            <cell>Sh.</cell>
+                            <cell>5/3 —</cell>
+                            <cell>Egypt. Cotton Mills</cell>
+                            <cell>—</cell>
+                        </row>
+                        <row>
+                            <cell>"</cell>
+                            <cell>22/9 —</cell>
+                            <cell>do Markets</cell>
+                            <cell>100</cell>
+                        </row>
+                        <row>
+                            <cell>"</cell>
+                            <cell>34/9 —</cell>
+                            <cell>do Salt and Soda Fond.</cell>
+                            <cell>—</cell>
+                        </row>
+                        <row>
+                            <cell>Fcs.</cell>
+                            <cell>70 —</cell>
+                            <cell>Ciments d’Egypte</cell>
+                            <cell>15</cell>
+                        </row>
+                        <row>
+                            <cell>Lst.</cell>
+                            <cell>—</cell>
+                            <cell>Egypt- Trust &amp; Invest.</cell>
+                            <cell>1 7/16</cell>
+                        </row>
+                        <row>
+                            <cell>"</cell>
+                            <cell>7 ¼</cell>
+                            <cell>Kafr-el-Zayat Cot Coy.</cell>
+                            <cell>102 ½</cell>
+                        </row>
+                        <row>
+                            <cell>"</cell>
+                            <cell>9 7/16</cell>
+                            <cell>Nungovich Hotels</cell>
+                            <cell>103 ¾</cell>
+                        </row>
+                        <row>
+                            <cell>"</cell>
+                            <cell>37 —</cell>
+                            <cell>Soc. Pressage et Dépôts</cell>
+                            <cell>102</cell>
+                        </row>
+                        <row>
+                            <cell>"</cell>
+                            <cell>25 —</cell>
+                            <cell>Société Presses Libres</cell>
+                            <cell>102</cell>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell/>
+                            <cell>
+                                <hi rend="bold">NAVIGATION &amp; WATER WORKS.</hi>
+                            </cell>
+                            <cell/>
+                        </row>
+                        <row>
+                            <cell>Lst.</cell>
+                            <cell>5 7/16</cell>
+                            <cell>ex Anglo - American Nile &amp;c. Co.</cell>
+                            <cell>—</cell>
+                        </row>
+                        <row>
+                            <cell>"</cell>
+                            <cell>4 3/16</cell>
+                            <cell>Khedivial Mail S.S. &amp;c. Co. Fonds.</cell>
+                            <cell>16/3</cell>
+                        </row>
+                        <row>
+                            <cell>"</cell>
+                            <cell>15</cell>
+                            <cell>Alex. Water Company</cell>
+                            <cell>—</cell>
+                        </row>
+                        <row>
+                            <cell>Fcs.</cell>
+                            <cell>1130</cell>
+                            <cell>Cairo Water Coy. Fonds.</cell>
+                            <cell>1040</cell>
+                        </row>
+                        <row>
+                            <cell>Lst.</cell>
+                            <cell>22 ½</cell>
+                            <cell>Tantah Water Co. Fonds.</cell>
+                            <cell>—</cell>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell/>
+                            <cell>
+                                <hi rend="bold">RAILWAYS &amp; TRAMWAYS.</hi>
+                            </cell>
+                            <cell/>
+                        </row>
+                        <row>
+                            <cell>Lst.</cell>
+                            <cell>12 7/8</cell>
+                            <cell>ex Delta Light</cell>
+                            <cell>100</cell>
+                        </row>
+                        <row>
+                            <cell>"</cell>
+                            <cell>—</cell>
+                            <cell>Delta Light Def</cell>
+                            <cell>14</cell>
+                        </row>
+                        <row>
+                            <cell>"</cell>
+                            <cell>9 —</cell>
+                            <cell>Fayoum</cell>
+                            <cell>—</cell>
+                        </row>
+                        <row>
+                            <cell>"</cell>
+                            <cell>26 ¾</cell>
+                            <cell>Keneh-Assouan</cell>
+                            <cell>—</cell>
+                        </row>
+                        <row>
+                            <cell>Fcs.</cell>
+                            <cell>164 ¼</cell>
+                            <cell>Alexandria Trams</cell>
+                            <cell>490</cell>
+                        </row>
+                        <row>
+                            <cell> </cell>
+                            <cell>—</cell>
+                            <cell>do " Fonds.</cell>
+                            <cell>342</cell>
+                        </row>
+                        <row>
+                            <cell>Lst.</cell>
+                            <cell>7 1/4</cell>
+                            <cell>Ramleh Railway</cell>
+                            <cell>—</cell>
+                        </row>
+                    </table>
+                    <p>Furnished by Reid &amp; Bernard 10, St. Marks Buildings, Alexandria, and
+                        Sharia Kasr-el-Nil, Cairo, who undertake the sale and purchase of Stocks and
+                        Shares, on the local Bourse and also on the London Stock Exchange.</p>
+                </div>
+                <div type="article" scope="financial">
+                    <head>BOURSE KHEDIVIALE</head>
+                    <p>CONTRATS</p>
+                    <p>Fluctuations de 9h.30 à 1h. p.m.</p>
+                    <p>
+                        <hi rend="italic">Cotons F.G.F.Br.</hi>
+                    </p>
+                    <p>Dans la matinée; prix plus haut pour juillet tal. 14 5/16 à —/— ; plus bas
+                        pour juillet 14 7/32 à — /—. </p>
+                    <p>
+                        <hi rend="italic">Grains de coton</hi>
+                    </p>
+                    <p>Dans la matinée ; prix plus haut pour juil. P.T. 59 —/— à —/—: plus bas pour
+                        juil. 58 35/40 à —/—. </p>
+                    <p>Remarques</p>
+                    <p>(De Midi à 1h. p.m.)</p>
+                    <p>Cotons.—La tenue a continué à être bonne, surtout pour la vieille récolte et
+                        ce n'est qu'à cause de Liverpool, qui est venu faible en avant-bourse que
+                        nous avons eu une légere réaction en clôture. Le marché a été très actif
+                        pendant toute la matinée.</p>
+                    <p>Graines de coton.—La séance a fini soutenue aussi bien pour les 3 mois que
+                        pour la vieille récolte, mais comme affaires le marché a laissé à
+                        désirer.</p>
+                    <table rows="2" cols="4">
+                        <head>Bateaux partis:</head>
+                        <row role="label">
+                            <cell>Juillet</cell>
+                            <cell>S.S.</cell>
+                            <cell>pour</cell>
+                            <cell>Ton.</cell>
+                        </row>
+                        <row>
+                            <cell>7</cell>
+                            <cell>Grecian Prince</cell>
+                            <cell>Dunkerque</cell>
+                            <cell>250</cell>
+                        </row>
+                        <row>
+                            <cell>12</cell>
+                            <cell>Lorenzo</cell>
+                            <cell>Hull</cell>
+                            <cell>3000</cell>
+                        </row>
+                    </table>
+                    <table rows="2" cols="3">
+                        <head>Bateaux sous chargement:</head>
+                        <row role="label">
+                            <cell>S.S.</cell>
+                            <cell>pour</cell>
+                            <cell>Ton.</cell>
+                        </row>
+                        <row>
+                            <cell>Seti</cell>
+                            <cell>Liverpool</cell>
+                            <cell>100</cell>
+                        </row>
+                        <row>
+                            <cell>Banco</cell>
+                            <cell>U.K.</cell>
+                            <cell>3000</cell>
+                        </row>
+                        <row>
+                            <cell>Toro</cell>
+                            <cell>Hull</cell>
+                            <cell>4000</cell>
+                        </row>
+                        <row>
+                            <cell>Mount Lebanon</cell>
+                            <cell>Glasgow</cell>
+                            <cell>1000</cell>
+                        </row>
+                        <row>
+                            <cell>Numina</cell>
+                            <cell>Londres</cell>
+                            <cell>3600</cell>
+                        </row>
+                    </table>
+                    <table rows="2" cols="3">
+                        <head>Bateaux attendus:</head>
+                        <row role="label">
+                            <cell>S.S.</cell>
+                            <cell>pour</cell>
+                            <cell>Ton.</cell>
+                        </row>
+                        <row>
+                            <cell>Assiout</cell>
+                            <cell>Hull</cell>
+                            <cell>1000</cell>
+                        </row>
+                    </table>
+                    <p>Fèves.—Marché nul.</p>
+                    <p>Bourse Khédviale, le 13 juillet 1905.</p>
+                </div>
+                <div type="article" scope="financial">
+                    <head>COTONS</head>
+                    <p>copie de la dépêche</p>
+                    <p>DE L'ALEXANDRIA GENERAL PRODUCE ASSOCIATION</p>
+                    <p>à la</p>
+                    <p>LIVERPOOL COTTON ASSOCIATION</p>
+                    <p>(Cours pratiqués ce jour à la Bourse Khédiviale à 9h. 45 a.m.) </p>
+                    <table rows="5" cols="2">
+                        <row role="label">
+                            <cell>Tal.</cell>
+                            <cell>Livraison</cell>
+                        </row>
+                        <row>
+                            <cell>15 1/16</cell>
+                            <cell>Juillet</cell>
+                        </row>
+                        <row>
+                            <cell>15 3/8</cell>
+                            <cell>Août</cell>
+                        </row>
+                        <row>
+                            <cell>14 3/4</cell>
+                            <cell>Novembre</cell>
+                        </row>
+                        <row>
+                            <cell>14 21/32</cell>
+                            <cell>Janvier</cell>
+                        </row>
+                    </table>
+                    <p>Marché ferme</p>
+                    <p>Arrivages de ce jour, à Minet-el-Basaal, cantars 2784</p>
+                    <p>Arrivages de la semaine à Minet-el-Basaal, cantars 7,458</p>
+                    <p>
+                        <table rows="3" cols="2">
+                            <row role="label">
+                                <cell>Exportations pour</cell>
+                                <cell>balles</cell>
+                            </row>
+                            <row>
+                                <cell>l'Angleterre</cell>
+                                <cell>5,351</cell>
+                            </row>
+                            <row>
+                                <cell>le Content</cell>
+                                <cell>6,082</cell>
+                            </row>
+                            <row>
+                                <cell>l'Amérique</cell>
+                                <cell>1,265</cell>
+                            </row>
+                        </table>
+                    </p>
+                    <p>Stock à Minet-el-Bassal, cantars 776,337</p>
+                    <p>(Cours pratiqués ce jour à la Bourse Khédiviale à 12h. 45 p.m.)</p>
+                    <table rows="5" cols="2">
+                        <row role="label">
+                            <cell>Tal.</cell>
+                            <cell>Livraison</cell>
+                        </row>
+                        <row>
+                            <cell>14 7/8</cell>
+                            <cell>Juillet</cell>
+                        </row>
+                        <row>
+                            <cell>15 3/16</cell>
+                            <cell>Août</cell>
+                        </row>
+                        <row>
+                            <cell>14 21/32</cell>
+                            <cell>Novembre</cell>
+                        </row>
+                        <row>
+                            <cell>14 9/16</cell>
+                            <cell>Janvier</cell>
+                        </row>
+                    </table>
+                    <p>Marché quiet </p>
+                </div>
+                <cb n="5"/>
+                <cb n="6"/>
             </div>
             <div type="page" n="5"> </div>
-            <div type="page" n="6"> </div>
+            <div type="page" n="6">
+                <cols n="6"/>
+                <cb n="1"/>
+                <div type="article">
+                    <head>REUTER'S TELEGRAMS</head>
+                    <head type="sub">CLOSING REPORTS</head>
+                    <table cols="4">
+                        <row role="label">
+                            <cell cols="4"><placeName>Liverpool</placeName>, <time when="1905-07-13"
+                                    >July 13, 12.50 p.m.</time></cell>
+                        </row>
+                        <row>
+                            <cell>Sales of the day</cell>
+                            <cell/>
+                            <cell>bales</cell>
+                            <cell><measure>4,000</measure></cell>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell>of which Egyptian</cell>
+                            <cell>,,</cell>
+                            <cell><measure>200</measure></cell>
+                        </row>
+                        <row>
+                            <cell>American (new crop)</cell>
+                            <cell>Maize Spot</cell>
+                            <cell>per cental</cell>
+                            <cell><measure>5/2</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Amer. futures </cell>
+                            <cell>(August-Sept.)</cell>
+                            <cell/>
+                            <cell><measure>5.83</measure></cell>
+                        </row>
+                        <row>
+                            <cell> " " </cell>
+                            <cell>(Dec.-Jan.)</cell>
+                            <cell/>
+                            <cell><measure>5.85</measure></cell>
+                        </row>
+                        <row>
+                            <cell>American</cell>
+                            <cell>Middling</cell>
+                            <cell/>
+                            <cell><measure>5.97</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Egypt. fully good fair, delivery</cell>
+                            <cell>(July)</cell>
+                            <cell/>
+                            <cell><measure>7 37/64</measure></cell>
+                        </row>
+                        <row>
+                            <cell>" " " " " </cell>
+                            <cell>(August)</cell>
+                            <cell/>
+                            <cell><measure>7 40/64</measure></cell>
+                        </row>
+                        <row>
+                            <cell>" " " " " </cell>
+                            <cell>(Oct.)</cell>
+                            <cell/>
+                            <cell><measure>7 41/64</measure></cell>
+                        </row>
+                        <row>
+                            <cell>" " " " " </cell>
+                            <cell>(Nov.)</cell>
+                            <cell/>
+                            <cell><measure>7 36/64</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Egypt.</cell>
+                            <cell>Brown fair </cell>
+                            <cell>per lb. d.</cell>
+                            <cell><measure>6 13/16</measure></cell>
+                        </row>
+                        <row>
+                            <cell>,,</cell>
+                            <cell>,, good fair</cell>
+                            <cell/>
+                            <cell><measure>7 9/16</measure></cell>
+                        </row>
+                        <row>
+                            <cell>,,</cell>
+                            <cell>,, good</cell>
+                            <cell/>
+                            <cell><measure>8 7/16</measure></cell>
+                        </row>
+                        <row>
+                            <cell>,,</cell>
+                            <cell>fully good fair</cell>
+                            <cell/>
+                            <cell><measure>7 14/16</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Egyptian Saidi Beans</cell>
+                            <cell> new </cell>
+                            <cell>(per 480 lbs.)</cell>
+                            <cell><measure>30/3</measure></cell>
+                        </row>
+                        <row role="label">
+                            <cell cols="4"><placeName>New-York</placeName>, <date when="1904-07-13"
+                                    >July 13</date></cell>
+                        </row>
+                        <row>
+                            <cell>Spot Cotton... </cell>
+                            <cell/>
+                            <cell/>
+                            <cell><measure>10.80</measure></cell>
+                        </row>
+                        <row>
+                            <cell>American Futures </cell>
+                            <cell>(August)</cell>
+                            <cell/>
+                            <cell><measure>10.46</measure></cell>
+                        </row>
+                        <row>
+                            <cell> " " </cell>
+                            <cell>(September)</cell>
+                            <cell/>
+                            <cell><measure>10.52</measure></cell>
+                        </row>
+                        <row>
+                            <cell> " " </cell>
+                            <cell>(December)</cell>
+                            <cell/>
+                            <cell><measure>10.65</measure></cell>
+                        </row>
+                        <row>
+                            <cell> " " </cell>
+                            <cell>(January)</cell>
+                            <cell/>
+                            <cell><measure>10.69</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Cable transfers</cell>
+                            <cell/>
+                            <cell>dol. </cell>
+                            <cell><measure>4.87</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Cotton day’s receipts at all U.-S. Ports</cell>
+                            <cell/>
+                            <cell>bales </cell>
+                            <cell><measure>15,000</measure></cell>
+                        </row>
+                        <row role="label">
+                            <cell cols="4"><placeName>Liverpool</placeName>, <date when="1905-07-13"
+                                    >July 13</date>.</cell>
+                        </row>
+                        <row>
+                            <cell>American futures </cell>
+                            <cell>(August-September)</cell>
+                            <cell/>
+                            <cell><measure>5.76</measure></cell>
+                        </row>
+                        <row>
+                            <cell>Egypt fully good fair, </cell>
+                            <cell>delivery (July)</cell>
+                            <cell/>
+                            <cell><measure>7 36/64</measure></cell>
+                        </row>
+                        <row>
+                            <cell>,, ,, ,, ,,</cell>
+                            <cell>,, (Aug.)</cell>
+                            <cell/>
+                            <cell><measure>7 37/64</measure></cell>
+                        </row>
+                        <row>
+                            <cell>,, ,, ,, ,,</cell>
+                            <cell>,, (Oct.)</cell>
+                            <cell/>
+                            <cell><measure>7 39/64</measure></cell>
+                        </row>
+                        <row>
+                            <cell>,, ,, ,, ,,</cell>
+                            <cell>,, (Nov.)</cell>
+                            <cell/>
+                            <cell><measure>7 35/64</measure></cell>
+                        </row>
+                        <row role="label">
+                            <cell cols="4"><placeName>London</placeName>, <date when="1905-07-13"
+                                    >July 13</date></cell>
+                        </row>
+                        <row>
+                            <cell cols="3">Private discount (3 month bills)</cell>
+                            <cell><measure>1 7/8 %</measure></cell>
+                        </row>
+                        <row>
+                            <cell cols="3">Bar Silver (per oz d.)</cell>
+                            <cell><measure>27 5/16</measure></cell>
+                        </row>
+                        <row>
+                            <cell cols="3">Consols (August)</cell>
+                            <cell><measure>90 1/2</measure></cell>
+                        </row>
+                        <row>
+                            <cell cols="3">Rio Tinto</cell>
+                            <cell><measure>63 1/2</measure></cell>
+                        </row>
+                        <row>
+                            <cell cols="3">Rand Mines New</cell>
+                            <cell><measure>9 1/4</measure></cell>
+                        </row>
+                        <row>
+                            <cell cols="3"> Egyptian Unified</cell>
+                            <cell><measure>105 1/4</measure></cell>
+                        </row>
+                        <row>
+                            <cell cols="3"> " Railway</cell>
+                            <cell><measure>102 —</measure></cell>
+                        </row>
+                        <row>
+                            <cell cols="3"> " Domain</cell>
+                            <cell><measure> 104 —</measure></cell>
+                        </row>
+                        <row>
+                            <cell cols="3">Ottoman Defence</cell>
+                            <cell><measure>103 ½</measure></cell>
+                        </row>
+                        <row>
+                            <cell cols="3">Turkish Unified</cell>
+                            <cell><measure>88 —</measure></cell>
+                        </row>
+                        <row>
+                            <cell cols="3">Italian Rents 4%</cell>
+                            <cell><measure>104 1/4</measure></cell>
+                        </row>
+                        <row>
+                            <cell cols="3">Ottoman Bank</cell>
+                            <cell><measure>13 ¾</measure></cell>
+                        </row>
+                        <row>
+                            <cell cols="3">National Bank of Egypt</cell>
+                            <cell><measure>26 3/8</measure></cell>
+                        </row>
+                        <row>
+                            <cell cols="3">Daira Sanieh</cell>
+                            <cell><measure>101 1/2</measure></cell>
+                        </row>
+                        <row>
+                            <cell cols="3">New Daira</cell>
+                            <cell><measure>28 ¼</measure></cell>
+                        </row>
+                        <row>
+                            <cell cols="3">Greek Monopole</cell>
+                            <cell><measure>52 ¼</measure></cell>
+                        </row>
+                        <row>
+                            <cell cols="3">Greek Rent 4%</cell>
+                            <cell><measure>41 1/4</measure></cell>
+                        </row>
+                        <row>
+                            <cell cols="3">Chartereds of S. Africa</cell>
+                            <cell><measure>1 14/16</measure></cell>
+                        </row>
+                        <row>
+                            <cell cols="3">Agricultural Bank</cell>
+                            <cell><measure>13 7/8</measure></cell>
+                        </row>
+                        <row>
+                            <cell cols="3">New Egyptians</cell>
+                            <cell><measure>1 3/8</measure></cell>
+                        </row>
+                        <row>
+                            <cell cols="3">Nile Valley Gold Mine. New</cell>
+                            <cell><measure>1 1/4</measure></cell>
+                        </row>
+                        <row>
+                            <cell cols="3">The Western Oasis Corporation</cell>
+                            <cell><measure>1/2</measure> premium </cell>
+                        </row>
+                        <row>
+                            <cell cols="3">Delta Light (Bearer shares) </cell>
+                            <cell><measure>12 ½</measure> to <measure>13 —</measure></cell>
+                        </row>
+                        <row>
+                            <cell cols="3">Egypt, cot. seed to Hull (July)</cell>
+                            <cell><measure>5 13/16</measure> sellers</cell>
+                        </row>
+                        <row>
+                            <cell cols="3">German Beet Sugar (July) </cell>
+                            <cell><measure>9/9</measure></cell>
+                        </row>
+                        <row role="label">
+                            <cell cols="2">Bank Returns</cell>
+                            <cell>This week.</cell>
+                            <cell>Last week.</cell>
+                        </row>
+                        <row>
+                            <cell cols="2">Notes reserves</cell>
+                            <cell>£<measure unit="£">24,538,000</measure></cell>
+                            <cell>£<measure unit="£">24,412,000</measure></cell>
+                        </row>
+                        <row>
+                            <cell cols="2">Other securities</cell>
+                            <cell>£<measure unit="£">28,992,000</measure></cell>
+                            <cell>£<measure unit="£">36,375,000</measure></cell>
+                        </row>
+                        <row>
+                            <cell cols="2">Bullion</cell>
+                            <cell>£<measure unit="£">38,204,000</measure></cell>
+                            <cell>£<measure unit="£">38,462,000</measure></cell>
+                        </row>
+                        <row>
+                            <cell cols="3">Proportion of reserve to liabilities</cell>
+                            <cell><measure>48 5/8 %</measure></cell>
+                        </row>
+                        <row role="label">
+                            <cell cols="4"><placeName>Paris</placeName>, <date when="1905-07-13"
+                                    >July 13</date>.</cell>
+                        </row>
+                        <row>
+                            <cell cols="3">Lots Turcs</cell>
+                            <cell><measure>132 —</measure></cell>
+                        </row>
+                        <row>
+                            <cell cols="3">Crédit Lyonnais</cell>
+                            <cell><measure>1092 —</measure></cell>
+                        </row>
+                        <row>
+                            <cell cols="3">Ottoman Bank</cell>
+                            <cell><measure>594 —</measure></cell>
+                        </row>
+                        <row>
+                            <cell cols="3">Cheques on London</cell>
+                            <cell><measure>25.14 1/2</measure></cell>
+                        </row>
+                        <row>
+                            <cell cols="3">Sugar White No. 3 (July)</cell>
+                            <cell><measure>— —</measure></cell>
+                        </row>
+                        <row>
+                            <cell cols="3">Crédit Foncier Egyptien</cell>
+                            <cell><measure>814 —</measure></cell>
+                        </row>
+                        <row>
+                            <cell cols="3">Banque d'Athènes</cell>
+                            <cell><measure>125 —</measure></cell>
+                        </row>
+                        <row>
+                            <cell cols="3">Land Bank of Egypt</cell>
+                            <cell><measure>236 —</measure></cell>
+                        </row>
+                    </table>
+                </div>
+            </div>
         </body>
     </text>
 </TEI>
