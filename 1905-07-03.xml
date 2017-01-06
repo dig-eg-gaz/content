@@ -1,9 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/dig-eg-gaz/resources/master/out/egSchema.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/dig-eg-gaz/resources/master/out/egSchema.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title level="m" type="main">Egyptian Gazette</title>
+                <title level="m" type="main">The Egyptian Gazette</title>
                 <title level="m" type="sub">An encoded transcription</title>
                 <editor>Will Hanley</editor>
                 <principal>Will Hanley</principal>
@@ -19,7 +20,7 @@
             </publicationStmt>
             <sourceDesc>
                 <bibl>
-                    <title>Egyptian Gazette</title>
+                    <title>The Egyptian Gazette</title>
                     <date when="1905-07-03">July 3, 1905</date>
                 </bibl>
             </sourceDesc>
@@ -28,10 +29,10 @@
     <text>
         <body>
             <div type="page" n="1">
-                <head>THE EGYPTIAN GAZETTE</head>
-                <head type="sub">No. <measure quantity="7230">7,230</measure>] ALEXANDRIA, MONDAY,
-                    JULY 3, 1905. [SIX PAGES P.T. 1. </head>
-                <div type="section" scope="advertisement">
+                <div type="masthead">
+                    <head>THE EGYPTIAN GAZETTE</head>
+                    <head type="sub">No. <measure quantity="7230">7,230</measure>] ALEXANDRIA,
+                        MONDAY, JULY 3, 1905. [SIX PAGES P.T. 1. </head>
                     <div type="item" scope="advertisement" xml:id="deg-ad-etc01">
                         <head>The Eastern Telegraph Company, Limited.</head>
                         <p>This Company's system of submarine telegraph cables is the most direct
@@ -52,6 +53,8 @@
                             Etc.</p>
                         <p>For Particulars see Advertisement below.</p>
                     </div>
+                </div>
+                <div type="section" scope="advertisement">
                     <cols n="3"/>
                     <cb n="1"/>
                     <div type="item" scope="advertisement" xml:id="deg-ad-pos01">
@@ -6209,7 +6212,7 @@
                             <cell>(August-September)</cell>
                             <cell/>
                             <cell><measure>5.31</measure></cell>
-                        </row>               
+                        </row>
                         <row role="label">
                             <cell cols="4"><placeName>London</placeName>, <date when="1905-07-01"
                                     >July 1</date>.</cell>
