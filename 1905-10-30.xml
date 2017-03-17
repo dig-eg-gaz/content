@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/dig-eg-gaz/resources/master/out/egSchema.rnc" type="application/relax-ng-compact-syntax"
 ?>
-<?xml-stylesheet type="text/xsl" href="dig-eg-gaz.xsl"?>  <TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-stylesheet type="text/xsl" href="dig-eg-gaz.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
@@ -1293,10 +1294,8 @@
 				</div>
 			</div>
 			<div type="page" n="3">
-				<div type="item">
-					<head>﻿THE EGYPTIAN GAZETTE, MONDAY, OCTOBER 30-1905</head>
-				</div>
-				<div type="item">
+
+				<div type="section">
 					<div type="item">
 						<head>RUSSIAN REVOLUTION.</head>
 						<head type="sub">SITUATION WORSE.</head>
@@ -1471,50 +1470,69 @@
 							received orders to proceed to the <persName>Somali</persName> coast.
 							(Reuter)</p>
 					</div>
-					<div type="section" scope="local" xml:id="deg-el-locl01">
-						<head>LOCAL AND GENERAL.</head>
+				</div>
+				<div type="section" scope="local" xml:id="deg-el-locl01">
+					<head>LOCAL AND GENERAL.</head>
+					<div type="item">
 						<p>The Cairo Tramway Company have issued their winter time-table, which
 							comes into force on November 1.</p>
-						<p>The Pilgrimage.—A large number of Moorish pilgrims from
-								<placeName>Tangiers</placeName> arrived at
-								<placeName>Alexandria</placeName> yesterday by the Ellerman S.S.
-							Sardinia.</p>
-						<p>Boy Drowned —A boy named Seyid Ahmed Ibrahim. 11 years of age, fell into
-							the sea from a small boat yesterday and was drowned. His body has been
-							recovered.</p>
-						<p>Stray Dogs.—Stray and ownerless dogs found in the Gamalieh district of
-							Cairo during tonight, and in the Waily district during tomorrow night,
-							will be poisoned by the police.</p>
-						<p>The Cairo Chrysanthemum Show will be held in the exhibition hall at
-							Ghezireh on Saturday and Sunday, November 4 and 5. The opening of the
-							exhibition will take place at 3.30 p.m.</p>
-						<p>Egyptian Army Examination. - Fourteen candidates out of a total of
-							twenty-one who presented themselves for examination for promotion to the
-							rank of Buluk Amin,at Abbasieb on the 18th inst, have been
-							successful</p>
-						<p>Butchers’ Strike.—Our Cairo contemporaries threaten us with a butcher's
-							strike,caused, it is stated, by corrupt conduct on the part of an
-							inspector of the abattoir. We hope that the Ministry of the Interior
-							will take the necessary steps to save <placeName>Cairo</placeName> from
-							such an unpleasant experience, at the opening of the season, too, of all
-							times !</p>
-						<p>A Ramadan Poem. Our native contemporary "Al Zahir” contains an Arabic
-							poem, composed by Moh. Bey Abou Shadi, the proprietor of the journal,
-							and dedicated to H.M. the Sultan on the occasion of the commencement of
-							Ramadan, which commemorates the glorious recapture of Sanfi and
-							describes the Yemenites as lacking knowledge, religion, and good
-							manners. Perhaps they will atone for their past rudeness by giving Ahmed
-							Faizi Pasha a warm reception at Sada, where their leaders have
-							retired.</p>
 					</div>
 					<div type="item">
-						<head>STEAMER MOVEMENTS.</head>
-						<p>The Moss Iiner Tabor sailed from <placeName>Liverpool</placeName> on
-							Saturday afternoon and is due here on the 1 th prox. with passengers,
-							mails and general cargo. The M.M. steamer Niger, from Marseilles, passed
-							the <placeName>Straits of Messina</placeName> Saturday and is due here
-							tomorrow morning.</p>
+						<head>The Pilgrimage</head>
+						<p>A large number of Moorish pilgrims from <placeName>Tangiers</placeName>
+							arrived at <placeName>Alexandria</placeName> yesterday by the Ellerman
+							S.S. Sardinia.</p>
 					</div>
+					<div type="item">
+						<head>Boy Drowned</head>
+						<p>A boy named Seyid Ahmed Ibrahim. 11 years of age, fell into the sea from
+							a small boat yesterday and was drowned. His body has been recovered.</p>
+					</div>
+					<div type="item">
+						<head>Stray Dogs</head>
+						<p>Stray and ownerless dogs found in the Gamalieh district of Cairo during
+							tonight, and in the Waily district during tomorrow night, will be
+							poisoned by the police.</p>
+					</div>
+					<div type="item">
+						<head>The Cairo Chrysanthemum Show</head>
+						<p> will be held in the exhibition hall at Ghezireh on Saturday and Sunday,
+							November 4 and 5. The opening of the exhibition will take place at 3.30
+							p.m.</p>
+					</div>
+					<div type="item">
+						<head>Egyptian Army Examination</head>
+						<p> Fourteen candidates out of a total of twenty-one who presented
+							themselves for examination for promotion to the rank of Buluk Amin,at
+							Abbasieb on the 18th inst, have been successful</p>
+					</div>
+					<div type="item">
+						<head>Butchers’ Strike</head>
+						<p>Our Cairo contemporaries threaten us with a butcher's strike,caused, it
+							is stated, by corrupt conduct on the part of an inspector of the
+							abattoir. We hope that the Ministry of the Interior will take the
+							necessary steps to save <placeName>Cairo</placeName> from such an
+							unpleasant experience, at the opening of the season, too, of all times
+							!</p>
+					</div>
+					<div type="item">
+						<head>A Ramadan Poem.</head>
+						<p> Our native contemporary "Al Zahir” contains an Arabic poem, composed by
+							Moh. Bey Abou Shadi, the proprietor of the journal, and dedicated to
+							H.M. the Sultan on the occasion of the commencement of Ramadan, which
+							commemorates the glorious recapture of Sanfi and describes the Yemenites
+							as lacking knowledge, religion, and good manners. Perhaps they will
+							atone for their past rudeness by giving Ahmed Faizi Pasha a warm
+							reception at Sada, where their leaders have retired.</p>
+					</div>
+				</div>
+				<div type="item">
+					<head>STEAMER MOVEMENTS.</head>
+					<p>The Moss Iiner Tabor sailed from <placeName>Liverpool</placeName> on Saturday
+						afternoon and is due here on the 1 th prox. with passengers, mails and
+						general cargo. The M.M. steamer Niger, from Marseilles, passed the
+							<placeName>Straits of Messina</placeName> Saturday and is due here
+						tomorrow morning.</p>
 				</div>
 				<div type="item">
 					<head>THE ROYAL TOUR.</head>
@@ -1585,7 +1603,7 @@
 				<div type="item">
 					<div type="item">
 						<head>DEPARTURE FROM SUEZ.</head>
-						<head>(From our Correspondent).</head>
+						<byline>(From our Correspondent).</byline>
 						<dateline>Suez, Saturday.</dateline>
 						<p>H. M. S. Proserpine sailed from Suez for the <placeName>Red
 								Sea</placeName> last night at midnight, and was followed at daybreak
@@ -1613,142 +1631,139 @@
 					</div>
 				</div>
 				<div type="item">
+					<head>ARRIVAL OF THE VECTIS.</head>
+					<head>DETAILS OF COLLISION.</head>
+					<head>(From our Correspondent.)</head>
+					<head>Port Said, Monday.</head>
+					<p>The S.S. Vectis (6,000 tons), of the P. and O. Co.,arrived at Port Said
+						to-day from <placeName>Beyrout</placeName> with a number of tourists on
+						board. I learn that the collision which the Vectis had near
+							<placeName>Constantinople</placeName> was with the Italian cargo steamer
+						Esther. Although the damage done to the Vectis was slight, the Esther had a
+						rent from rail to keel which was 20 feet wide. She only just managed to
+						reach shallow water in a sinking condition. The passengers on board the
+						Vectis praise Captain Johnson's prompt action, as the passengers were all
+						assembled without any panic and the boats manned in a few minutes. Happily
+						these precautions were unnecessary. The Vectis Will reach Alexandria the end
+						of this week.</p>
+				</div>
+				<div type="item">
+					<head><persName>WILLIAM GARSTIN</persName>.</head>
+					<head>GIFT OF £15,000.</head>
+					<p>The Egyptian Government has Informed the Press that it has decided to grant
+						the sum of £15,000 to sir William Garstin, C.M.G., in recognition of his
+						valuable services to the country. We are glad to hear that Sir William
+						Garstin is making as favorable progress as can be expected after his recent
+						operation, and will resume his functions as Adviser to the Ministry of
+						Public Works early in January.</p>
+				</div>
+				<div type="item">
+					<head>THE KHEDIVE.</head>
+					<p>H.H. the Khedive received the <persName
+							ref="https://www.wikidata.org/wiki/Q336487">Earl of Cromer</persName> in
+						audience at Abdeen Palace yesterday morning. In the afternoon his Highness
+						received H.B. Mgr. Photios, Patriarch of the Greek Orthodox Church,
+						Seifullah Yossi Pasha, and the Vicar of the Armenian Orthodox community. At
+						3.30 p.m., his Highness presided at the sitting of the Council of Ministers,
+						and in the evening he gave an "iftar” to the ulema, after which his Highness
+						held a general reception in honor of his return to the Capital and of the
+						commencement of Ramadan.</p>
+				</div>
+				<div type="item">
+					<head>THE SUCRERIES.</head>
+					<p>The extraordinary general meeting of the shareholders of the Sucreries, which
+						was to have been held at 4 p.m. on Saturday, has been postponed till the
+						25th prox. owing to a sufficient number of shares not being represented.</p>
+				</div>
+				<div type="item">
+					<head>A QUESTION OF PROPRIETORSHIP.</head>
+					<p>Our readers will remember that some months ago the property of Aly Pasha
+						Cherif on Rhoda Island was put up for sale by the Wakfs Administration, and
+						was knocked down to Messrs. Zervadachi AND Co. at the price of £1,360 the
+						feddan. This price was thought by the Wakfs Administration to be
+						insufficient, and consequently it was decided to have a new adjudication. We
+						hear that few companies were prepared to compete owing to certain drawbacks
+						connected with this property, such, for instance, as the fact that all the
+						river frontage, amounting to 14 feddans, had been sold by the heirs as
+						private property to various persons, and consequently would not enter into
+						the general sale. Another drawback was the fact that a portion of the
+						property was understood to be leased for a period of seven and a half years
+						and that under no circumstances would the lessee give it up to a purchaser
+						until the expiration of his term. We now hear that the lessee has officially
+						notified the Wakfs Administration of bis intention to hold his land for the
+						entire period of his lease, although the administration only recognises his
+						right to a part of it A good deal of discussion took place about this at the
+						time of the first adjudication, as several important persons are said to be
+						in interested in the matter, and the point is one that has an important
+						bearing on the renewed sale of the lands, which has been fixed for the first
+						of next month.</p>
+				</div>
+				<div type="section" scope="social" xml:id="deg-el-pers01">
+					<head>PERSONAL AND SOCIAL</head>
+					<p>Mr. Dupuis, Inspector General of Irrigation in the Sudan, will probably
+						return from his special mission to Canada and the U.S.A. on December 4. M.
+						Barois is expected to return from leave on the 2nd prox, when be will resume
+						his duties in the Railway Administration. Major P.G. Elgood, inspector in
+						the Ministry of the Interior, has returned from leave and resumed his
+						duties. Mr. M. Melville, inspector in the Ministry of the Interior, has been
+						granted an extension of leave until the 16th proximo. Major W.F. Ilosiey,
+						2nd Battalion Royal Ioniskilling Fusiliers, hss been granted extension of
+						leave until December 13. Mr. M. H. Goldie has been appointed manager of the
+						Harrar branch of the National Bank Of Abyssinia.</p>
+				</div>
+
+				<div type="section" xml:id="deg-el-nf-port01">
+					<head>NOTES FROM PORT SAID.</head>
 					<div type="item">
-						<head>ARRIVAL OF THE VECTIS.</head>
-						<head>DETAILS OF COLLISION.</head>
-						<head>(From our Correspondent.)</head>
-						<head>Port Said, Monday.</head>
-						<p>The S.S. Vectis (6,000 tons), of the P. and O. Co.,arrived at Port Said
-							to-day from <placeName>Beyrout</placeName> with a number of tourists on
-							board. I learn that the collision which the Vectis had near
-								<placeName>Constantinople</placeName> was with the Italian cargo
-							steamer Esther. Although the damage done to the Vectis was slight, the
-							Esther had a rent from rail to keel which was 20 feet wide. She only
-							just managed to reach shallow water in a sinking condition. The
-							passengers on board the Vectis praise Captain Johnson's prompt action,
-							as the passengers were all assembled without any panic and the boats
-							manned in a few minutes. Happily these precautions were unnecessary. The
-							Vectis Will reach Alexandria the end of this week.</p>
+						<head>BAD WEATHER IN THE HARBOUR</head>
+						<head>(From our Correspondent).</head>
+						<head>Port Said, Sunday. </head>
+						<p>The last few days have seen a long of more or less serious accidents in
+							the harbour of Port Said largely owing to the somewhat protracted spell
+							of bad weather which we have experienced here. The night before the
+							arrival of the Royal party in the Renown it blew hard from the east, and
+							in a short space of time a sea got up which did considerable damage to
+							the new East breakwater. Towards morning some 30 yards of newly placed
+							block of concrete had disappeared and a large hole had been breached by
+							the sea in the small jetty. Some forty native craft, wind bound, laden
+							with coal, took refuge under the lee of the jettes and one was sunk The
+							Messageries Senegal hooked some mooring chains with her anchor and,
+							drifting round, smashed he windlass, and divers lifting material were
+							sent at daylight on Saturday to assist her. During the early hours of
+							Saturday, a collier, the Appledore, to avoid a collision with some of
+							the native vessels which at all times are to be seen crossing and
+							tacking in the sea channels, let go both anchors and did so much damage
+							to herself that she was obliged to slip both chains ; which chains and
+							anchors it took over a day to recover and replace on board. The record
+							was completed last night, when Bell’s Asia Minor steamer, the Bear,
+							coming into port, in the main channel, ran into and sank a very large
+							Arab dhow laden with some 100 tons of coal and carrying no lights —
+							which, by the way, is after all not at all an uncommon state of affairs
+							in the harbor and on the coast line of Port Said. The sound of the crash
+							of torn and rending timber, accompanied, as it was, by the noise of
+							falling spars and the howls and screams of the vessel’s crew and of
+							those of many other similar vessels at anchor in the vicinity, was
+							awe-inspiring and terrifying in the extreme. The Bear apparently went
+							astern on the engines, for her rudder could clearly be seen from the
+							breakwater in a mass of foam and spray, and a circle of some yards of
+							churned-up water was remarked, by many among the witnesses of the
+							collision, Which occurred at 8 p.m. The Canal Company's launches were in
+							the Vicinity and very quickly had lines on to the sunken vessel
+							endeavouring to tow her out of the channel, with little chances of
+							success, for the dhow bad completely sank in a minute after the shock,
+							which most have cut her nearly in two. I have heard that no lives were
+							lost and that her entire crew of 16 were picked op almost immediately.
+							The Bear, after examination, slowly proceeded to her berth, having
+							suffered no apparent damage, and to-day shear-legs and divers are at
+							work getting the sunken ship dear of the channel, which, however,
+							remained dear on its western side.</p>
 					</div>
+				</div>
+
+				<div type="section" xml:id="deg-el-nf-faym01">
+					<head>NOTES FROM FAYOUM.</head>
 					<div type="item">
-						<head><persName>WILLIAM GARSTIN</persName>.</head>
-						<head>GIFT OF £15,000.</head>
-						<p>The Egyptian Government has Informed the Press that it has decided to
-							grant the sum of £15,000 to sir William Garstin, C.M.G., in recognition
-							of his valuable services to the country. We are glad to hear that Sir
-							William Garstin is making as favorable progress as can be expected after
-							his recent operation, and will resume his functions as Adviser to the
-							Ministry of Public Works early in January.</p>
-					</div>
-					<div type="item">
-						<head>THE KHEDIVE.</head>
-						<p>H.H. the Khedive received the <persName
-								ref="https://www.wikidata.org/wiki/Q336487">Earl of
-								Cromer</persName> in audience at Abdeen Palace yesterday morning. In
-							the afternoon his Highness received H.B. Mgr. Photios, Patriarch of the
-							Greek Orthodox Church, Seifullah Yossi Pasha, and the Vicar of the
-							Armenian Orthodox community. At 3.30 p.m., his Highness presided at the
-							sitting of the Council of Ministers, and in the evening he gave an
-							"iftar” to the ulema, after which his Highness held a general reception
-							in honor of his return to the Capital and of the commencement of
-							Ramadan.</p>
-					</div>
-					<div type="item">
-						<head>THE SUCRERIES.</head>
-						<p>The extraordinary general meeting of the shareholders of the Sucreries,
-							which was to have been held at 4 p.m. on Saturday, has been postponed
-							till the 25th prox. owing to a sufficient number of shares not being
-							represented.</p>
-					</div>
-					<div type="item">
-						<head>A QUESTION OF PROPRIETORSHIP.</head>
-						<p>Our readers will remember that some months ago the property of Aly Pasha
-							Cherif on Rhoda Island was put up for sale by the Wakfs Administration,
-							and was knocked down to Messrs. Zervadachi AND Co. at the price of
-							£1,360 the feddan. This price was thought by the Wakfs Administration to
-							be insufficient, and consequently it was decided to have a new
-							adjudication. We hear that few companies were prepared to compete owing
-							to certain drawbacks connected with this property, such, for instance,
-							as the fact that all the river frontage, amounting to 14 feddans, had
-							been sold by the heirs as private property to various persons, and
-							consequently would not enter into the general sale. Another drawback was
-							the fact that a portion of the property was understood to be leased for
-							a period of seven and a half years and that under no circumstances would
-							the lessee give it up to a purchaser until the expiration of his term.
-							We now hear that the lessee has officially notified the Wakfs
-							Administration of bis intention to hold his land for the entire period
-							of his lease, although the administration only recognises his right to a
-							part of it A good deal of discussion took place about this at the time
-							of the first adjudication, as several important persons are said to be
-							in interested in the matter, and the point is one that has an important
-							bearing on the renewed sale of the lands, which has been fixed for the
-							first of next month.</p>
-					</div>
-					<div type="section" scope="social" xml:id="deg-el-pers01"><head>PERSONAL AND SOCIAL</head>
-						<p>Mr. Dupuis, Inspector General of Irrigation in the Sudan, will probably
-							return from his special mission to Canada and the U.S.A. on December 4.
-							M. Barois is expected to return from leave on the 2nd prox, when be will
-							resume his duties in the Railway Administration. Major P.G. Elgood,
-							inspector in the Ministry of the Interior, has returned from leave and
-							resumed his duties. Mr. M. Melville, inspector in the Ministry of the
-							Interior, has been granted an extension of leave until the 16th proximo.
-							Major W.F. Ilosiey, 2nd Battalion Royal Ioniskilling Fusiliers, hss been
-							granted extension of leave until December 13. Mr. M. H. Goldie has been
-							appointed manager of the Harrar branch of the National Bank Of
-							Abyssinia.</p>
-					</div>
-					<div type="item">
-						<div type="section" xml:id="deg-el-nf-port01">
-							<head>NOTES FROM PORT SAID.</head>
-							<div type="item"><head>BAD WEATHER IN THE HARBOUR</head>
-							<head>(From our Correspondent).</head>
-							<head>Port Said, Sunday. </head>
-							<p>The last few days have seen a long of more or less serious accidents
-								in the harbour of Port Said largely owing to the somewhat protracted
-								spell of bad weather which we have experienced here. The night
-								before the arrival of the Royal party in the Renown it blew hard
-								from the east, and in a short space of time a sea got up which did
-								considerable damage to the new East breakwater. Towards morning some
-								30 yards of newly placed block of concrete had disappeared and a
-								large hole had been breached by the sea in the small jetty. Some
-								forty native craft, wind bound, laden with coal, took refuge under
-								the lee of the jettes and one was sunk The Messageries Senegal
-								hooked some mooring chains with her anchor and, drifting round,
-								smashed he windlass, and divers lifting material were sent at
-								daylight on Saturday to assist her. During the early hours of
-								Saturday, a collier, the Appledore, to avoid a collision with some
-								of the native vessels which at all times are to be seen crossing and
-								tacking in the sea channels, let go both anchors and did so much
-								damage to herself that she was obliged to slip both chains ; which
-								chains and anchors it took over a day to recover and replace on
-								board. The record was completed last night, when Bell’s Asia Minor
-								steamer, the Bear, coming into port, in the main channel, ran into
-								and sank a very large Arab dhow laden with some 100 tons of coal and
-								carrying no lights — which, by the way, is after all not at all an
-								uncommon state of affairs in the harbor and on the coast line of
-								Port Said. The sound of the crash of torn and rending timber,
-								accompanied, as it was, by the noise of falling spars and the howls
-								and screams of the vessel’s crew and of those of many other similar
-								vessels at anchor in the vicinity, was awe-inspiring and terrifying
-								in the extreme. The Bear apparently went astern on the engines, for
-								her rudder could clearly be seen from the breakwater in a mass of
-								foam and spray, and a circle of some yards of churned-up water was
-								remarked, by many among the witnesses of the collision, Which
-								occurred at 8 p.m. The Canal Company's launches were in the Vicinity
-								and very quickly had lines on to the sunken vessel endeavouring to
-								tow her out of the channel, with little chances of success, for the
-								dhow bad completely sank in a minute after the shock, which most
-								have cut her nearly in two. I have heard that no lives were lost and
-								that her entire crew of 16 were picked op almost immediately. The
-								Bear, after examination, slowly proceeded to her berth, having
-								suffered no apparent damage, and to-day shear-legs and divers are at
-								work getting the sunken ship dear of the channel, which, however,
-								remained dear on its western side.</p>
-						</div></div>
-					</div>
-					<div type="section" xml:id="deg-el-nf-faym01">
-						<head>NOTES FROM FAYOUM.</head>
-						<div type="item"><head>FIRST WINTER RACES.</head>
+						<head>FIRST WINTER RACES.</head>
 						<head>(From our Correspondent.)</head>
 						<head>Fayoum, October 26.</head>
 						<p>The first winter races take place here to-morrow, and very great interst
@@ -1757,8 +1772,9 @@
 							rival those of Alexandria or Cairo. However that may be, we shall have
 							visitors from Cairo to-morrow in the dessert of Azab, close to the
 							Nazleh waterfal and the old Coptic convent and only a matter of a few
-							minutes' drive from Medinet el Fayoum</p></div>
-					
+							minutes' drive from Medinet el Fayoum</p>
+					</div>
+
 					<div type="item">
 						<head>CASES OF LEPROSY</head>
 						<p>A leper came to my office yesterday and I made enquiries as to how he
@@ -1770,9 +1786,12 @@
 							must have been conveyed by fleas or other parasitic insects. Would it
 							not be possible for the Government to build a small leper hospital to
 							enable these cases to be segregated?</p>
-					</div></div>
-					<div type="section" xml:id="deg-el-spor01"><head>SPORT AND PLAY.</head>
-						<div type="item"><head>KHEDIVIAL SPORTING CLUB.</head>
+					</div>
+				</div>
+				<div type="section" xml:id="deg-el-spor01">
+					<head>SPORT AND PLAY.</head>
+					<div type="item">
+						<head>KHEDIVIAL SPORTING CLUB.</head>
 						<p>Owners are reminded that first entries for the Maiden Pony Plate, value
 							LE 100. and Cairo Derby, value L.E. 100, to be run at the Pint Winter
 							Meeting in December, close on November 1. Also, nominations for the
@@ -1780,102 +1799,94 @@
 							made on November 1 Subscriptions for the Paddock Handicap, value LE.
 							200, and Visitors Handicap, value LE. 200, to be run at the Third Winter
 							Meeting, must be taken by November 1.</p>
-					</div></div>
-					<div type="item">
-						<p>Anglo-American Nile Steamers An rHTOTBJI, CQIwEIPAig-Y'. Blur Tnmwort of
-							Goods botwosn Altsaadrfa sad Cairo. THftCC 6AU.INM A-WfcKK. . Agent* mt
-							* uumnu mem umaem ca, m,</p>
-					</div>
-					<div type="item">
-						<head>THE PISANI CASE</head>
-						<head>FURTHER HEARING OF WITNESSES</head>
-						<p>Pisani, the Malteese, was again brought before the British Consular Court
-							both on Friday and Saturday, on the charge of having attempted to murder
-							Victoria Dehan, and Austrian subject, at the Pension Krauss, on the 13th
-							inst Mr. A. D. Alban presided, Mr. Favargi acted as registrar, and
-							Maltre Sciortino appeared for accused. In giving evidence on Friday,
-							Captain Arthur Quartier, inspector of the secret police, deposed that he
-							was called to the Pension Krauss in the Old Zaptieh street on the 18th
-							inst. and that on entering he found there a man who was connected with [
-							] "Imperiale," an employe of the Telephone company, and the landlady. He
-							was handed a revolver which he selt in order to convince himself that it
-							had been fired recently and which he then put in his pocket. The mirror
-							was broken and the carpet and two chairs were blood-stained. He found
-							Victoria Dehan in the next room standing up and holding her right side
-							from which blood was flowing. There was also a man in the room who
-							proved to be Giorgio Mascarelli, the woman's lover. He took her to the
-							Gards Medicale, where she was attended by a doctor. Shortly afterwards
-							the Commandant of Police and the chief of the secret police arrived, and
-							in their presence he unloaded the revolver, which contained two loaded
-							and three empty cartridges. Accused came to the pension in te custody of
-							the mamour of Mousky ceracol and witness examined his hands. He found
-							the top right hand between the thumb and fore-finger discoloured, and
-							there was a slight bruise on the fore-finger, the left hand was much
-							discoloured and both smelt of gunpowder. Victoria Dehan, who had
-							returned to the pension, was confronted with accused, who she identified
-							as her assailant. VIncenza Zuixef, mother of the injured woman, was next
-							called and said that she cae to Cairo to take her daughter back to Port
-							Said, where her husband lived. She next accused at the railway station
-							and afterwards went to the pension, having first visited the Hotel de la
-							Poete. At the pension witnesses, Victoria Dehan, Pisani, and the
-							landlady went into a parlour. Accused told Victoria that he had sent for
-							her mother to take her back to Port Said. Victoria said she could not ge
-							at present, and told accused to leave the room as she wished to speak to
-							her mother. The landlady then told witness that she could not allow her
-							daughter to leave as she had been recommended to her by someone. Accused
-							asked Victoria why she would go with [her] mother, and the woman replied
-							she did not wish to, whereupon Pisani drew a revolver from his coat
-							pocket and fired at Victoria. The landlady rushed out of the room and
-							locked herself into the opposite one, while witness ran out calling for
-							help and as she was going downstairs heard another shot. Witness did not
-							go back to the house but took the next train to Port Said. Emin Wasfi,
-							mamour of the Mousky ranebl, was the next witness heard on Friday. His
-							evidence differed in no essential detail from that of Captain Quartier,
-							and Said Mustaqha was next called and deposed to having arrested
-							accused. The first witness examined on Saturday morning was the medical
-							adviser to the Austrian Consulate. The woman Victoria deposed witness,
-							had two wounds which had evidently been inflicted by one bullet. The
-							first wound was on the under surface of the right arm, oblique in
-							direction, and superficial, it being caused by the Bullet grazing the
-							arm, which the woman held up to protect herself. The second wound was
-							serious. It was on the anterior right side of the thorax and had
-							penetrated into the thoracic cavity, lacerating a portion of the rights
-							lung. He had sent her to hospital and thought she would not be able to
-							appear for at least ten days Giorgio Mascarelli, who lived with Vitoria
-							Dehan, next gave evidence. The woman, he said, was married and her
-							husband lived at Port Said, in which town he had made her acquaintance.
-							He came into the pension where he and Victoria were living, just after
-							the shots had been fired. A revolver was produced in court, and witness
-							said it was similar to the one which he had seen lying on the floor of
-							the room when he entered. He was aware that accused had had relation
-							with VIctoria Dehan; accused and witness had not quarrelled about her.
-							Dr. Ismail Hamadi, attached to the Cairo city police deposed to having
-							examined the accused. He said that he found a wound on the left side of
-							the neck at the junction of the head and neck and behind. THere was an
-							irregular opening with a diameter of about half a centimeter. The hair
-							in the neighbour-hood of the wound was signed; the wound might have been
-							self-inflicted by the left hand. There was also a burn and wound on the
-							right cheek, which might possibly have been caused by a piece of glass.
-							There were black marks on both hands, especially the left, and also and
-							abrasion on the right hand. Dr. Battista Mazzoli was the last witness
-							called and deposed to having examined Victoria Dehan at the Garde
-							Medicale. His evidence was similar in every respect to that of Dr.
-							Basker the first medical witness called the case was then adjourned
-							until the 7th pox. when it is hoped that the wounded woman may be able
-							to give evidence.</p>
-					</div>
-					<div type="item">
-						<p>=-= M ’.w gttBagggggggssssgsgMg Beck AND Cb’s PilsehSr Bfer. BREMEN*
-							ObtelneMe from every ReepeeWble nroi IN CAIRO, ALEXAMPRU iXD m «Ut)4V.
-							LiinranT, asgfisg-</p>
 					</div>
 				</div>
-				<cb n="1"/>
-				<cb n="2"/>
-				<cb n="3"/>
-				<cb n="4"/>
-				<cb n="5"/>
-				<cb n="6"/>
+				<div type="item">
+					<p>Anglo-American Nile Steamers An rHTOTBJI, CQIwEIPAig-Y'. Blur Tnmwort of
+						Goods botwosn Altsaadrfa sad Cairo. THftCC 6AU.INM A-WfcKK. . Agent* mt *
+						uumnu mem umaem ca, m,</p>
+				</div>
+				<div type="item">
+					<head>THE PISANI CASE</head>
+					<head>FURTHER HEARING OF WITNESSES</head>
+					<p>Pisani, the Malteese, was again brought before the British Consular Court
+						both on Friday and Saturday, on the charge of having attempted to murder
+						Victoria Dehan, and Austrian subject, at the Pension Krauss, on the 13th
+						inst Mr. A. D. Alban presided, Mr. Favargi acted as registrar, and Maltre
+						Sciortino appeared for accused. In giving evidence on Friday, Captain Arthur
+						Quartier, inspector of the secret police, deposed that he was called to the
+						Pension Krauss in the Old Zaptieh street on the 18th inst. and that on
+						entering he found there a man who was connected with [ ] "Imperiale," an
+						employe of the Telephone company, and the landlady. He was handed a revolver
+						which he selt in order to convince himself that it had been fired recently
+						and which he then put in his pocket. The mirror was broken and the carpet
+						and two chairs were blood-stained. He found Victoria Dehan in the next room
+						standing up and holding her right side from which blood was flowing. There
+						was also a man in the room who proved to be Giorgio Mascarelli, the woman's
+						lover. He took her to the Gards Medicale, where she was attended by a
+						doctor. Shortly afterwards the Commandant of Police and the chief of the
+						secret police arrived, and in their presence he unloaded the revolver, which
+						contained two loaded and three empty cartridges. Accused came to the pension
+						in te custody of the mamour of Mousky ceracol and witness examined his
+						hands. He found the top right hand between the thumb and fore-finger
+						discoloured, and there was a slight bruise on the fore-finger, the left hand
+						was much discoloured and both smelt of gunpowder. Victoria Dehan, who had
+						returned to the pension, was confronted with accused, who she identified as
+						her assailant. VIncenza Zuixef, mother of the injured woman, was next called
+						and said that she cae to Cairo to take her daughter back to Port Said, where
+						her husband lived. She next accused at the railway station and afterwards
+						went to the pension, having first visited the Hotel de la Poete. At the
+						pension witnesses, Victoria Dehan, Pisani, and the landlady went into a
+						parlour. Accused told Victoria that he had sent for her mother to take her
+						back to Port Said. Victoria said she could not ge at present, and told
+						accused to leave the room as she wished to speak to her mother. The landlady
+						then told witness that she could not allow her daughter to leave as she had
+						been recommended to her by someone. Accused asked Victoria why she would go
+						with [her] mother, and the woman replied she did not wish to, whereupon
+						Pisani drew a revolver from his coat pocket and fired at Victoria. The
+						landlady rushed out of the room and locked herself into the opposite one,
+						while witness ran out calling for help and as she was going downstairs heard
+						another shot. Witness did not go back to the house but took the next train
+						to Port Said. Emin Wasfi, mamour of the Mousky ranebl, was the next witness
+						heard on Friday. His evidence differed in no essential detail from that of
+						Captain Quartier, and Said Mustaqha was next called and deposed to having
+						arrested accused. The first witness examined on Saturday morning was the
+						medical adviser to the Austrian Consulate. The woman Victoria deposed
+						witness, had two wounds which had evidently been inflicted by one bullet.
+						The first wound was on the under surface of the right arm, oblique in
+						direction, and superficial, it being caused by the Bullet grazing the arm,
+						which the woman held up to protect herself. The second wound was serious. It
+						was on the anterior right side of the thorax and had penetrated into the
+						thoracic cavity, lacerating a portion of the rights lung. He had sent her to
+						hospital and thought she would not be able to appear for at least ten days
+						Giorgio Mascarelli, who lived with Vitoria Dehan, next gave evidence. The
+						woman, he said, was married and her husband lived at Port Said, in which
+						town he had made her acquaintance. He came into the pension where he and
+						Victoria were living, just after the shots had been fired. A revolver was
+						produced in court, and witness said it was similar to the one which he had
+						seen lying on the floor of the room when he entered. He was aware that
+						accused had had relation with VIctoria Dehan; accused and witness had not
+						quarrelled about her. Dr. Ismail Hamadi, attached to the Cairo city police
+						deposed to having examined the accused. He said that he found a wound on the
+						left side of the neck at the junction of the head and neck and behind. THere
+						was an irregular opening with a diameter of about half a centimeter. The
+						hair in the neighbour-hood of the wound was signed; the wound might have
+						been self-inflicted by the left hand. There was also a burn and wound on the
+						right cheek, which might possibly have been caused by a piece of glass.
+						There were black marks on both hands, especially the left, and also and
+						abrasion on the right hand. Dr. Battista Mazzoli was the last witness called
+						and deposed to having examined Victoria Dehan at the Garde Medicale. His
+						evidence was similar in every respect to that of Dr. Basker the first
+						medical witness called the case was then adjourned until the 7th pox. when
+						it is hoped that the wounded woman may be able to give evidence.</p>
+				</div>
+				<div type="item">
+					<p>=-= M ’.w gttBagggggggssssgsgMg Beck AND Cb’s PilsehSr Bfer. BREMEN*
+						ObtelneMe from every ReepeeWble nroi IN CAIRO, ALEXAMPRU iXD m «Ut)4V.
+						LiinranT, asgfisg-</p>
+				</div>
+
+				
 			</div>
 			<div type="page" n="4">
 				<cb n="1"/>
