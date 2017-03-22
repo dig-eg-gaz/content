@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/dig-eg-gaz/resources/master/out/egSchema.rnc" type="application/relax-ng-compact-syntax"?>
-<?xml-stylesheet type="text/xsl" href="dig-eg-gaz.xsl"?>  <TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-stylesheet type="text/xsl" href="dig-eg-gaz.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -844,8 +845,8 @@
                             invited and may me addressed to Mr. W.E. Kingsford, Sharia Cherifois,
                             Sharia Kasr-el-Nil, Cairo.</p>
                         <p>Fire Insurance</p>
-                        <p>The Company's Agents in Egypt for Fire Insurance are Mossrs. Gustav
-                            Brach &amp; Cairo Alexandria.</p>
+                        <p>The Company's Agents in Egypt for Fire Insurance are Mossrs. Gustav Brach
+                            &amp; Cairo Alexandria.</p>
                     </div>
                     <div type="item" scope="advertisement">
                         <head>NORDDEUTSCHER LLOYD.</head>
@@ -1772,35 +1773,54 @@
                     <p>The Tsar has returned here.</p>
                     <p>(Reuter.)</p>
                 </div>
-                <div type="item">
+                <div type="section" scope="local" xml:id="deg-el-locl01">
                     <head>LOCAL AND GENERAL.</head>
-                    <p>Orthodox Christmas Day falls to-morrow and all the banks will be closed.</p>
-                    <p>General Holiday.—The Ministries will be closed on Accession Day.</p>
-                    <p>Quarantine restrictions are now applied in Egyptian ports to arrivals from
-                        Iodia.</p>
-                    <p>Alhambra—A matinee performance will be given at this theatre to-morrow, on
-                        the occasion of the Orthodox Christmas Day.</p>
-                    <p>The Abousir Papyrus.—Prof.Diels,of Berlin, reports that a papyrus recently
-                        fund at Abousir near Cairo consists of what may really be described as part
-                        of a Greek encyclopedia, apparently condensed from a larger work. They
-                        contain lists of lawyers and artists, the seven wonders of the world, and
-                        the then known mountains, islands, and rivers.</p>
-                    <p>Royal Artillery Gun Practice. — 2nd Lieut. A. J. Gatt and 10 men of the
-                        Detach- ment, R.M.A., Citadel, Cairo, will be attached under tho orders of
-                        the O.C. RA. in Egypt, to either the 56th Bty., R.F.A., or 4th M.B., R.G.A.,
-                        during their gun practice, from the 9th to 25th inst The remainder of the
-                        Detach- ment, R.M.A., at the Citadel, will be attached, for discipline, to
-                        the Detachment, 2nd Batta- lion Rifle Brigade, during the above period.</p>
-                    <p>British Chamber of Commerce.—We would call the attention of persons
-                        interested in Egyptian trade to the work of the British Chamber of Commerce
-                        of Egypt, whose office in Alexandria gives information as to stand- ings,
-                        trade, &amp;c., to its members, and whose monthly publication reviews our
-                        commerce- The annual subscription is £1 and all British traders should
-                        become members. Our London office, 36, New Broad-street E.C., acts as London
-                        agency to the Chamber.</p>
+                    <div type="item">
+                        <p>Orthodox Christmas Day falls to-morrow and all the banks will be
+                            closed.</p>
+                    </div>
+                    <div type="item">
+                        <head>General Holiday</head>
+                        <p>The Ministries will be closed on Accession Day.</p>
+                    </div>
+                    <div type="item">
+                        <head>Quarantine restrictions</head>
+                        <p> are now applied in Egyptian ports to arrivals from Iodia.</p>
+                    </div>
+                    <div type="item">
+                        <head>Alhambra</head>
+                        <p>A matinee performance will be given at this theatre to-morrow, on the
+                            occasion of the Orthodox Christmas Day.</p>
+                    </div>
+                    <div type="item">
+                        <head>The Abousir Papyrus</head>
+                        <p>Prof.Diels,of Berlin, reports that a papyrus recently fund at Abousir
+                            near Cairo consists of what may really be described as part of a Greek
+                            encyclopedia, apparently condensed from a larger work. They contain
+                            lists of lawyers and artists, the seven wonders of the world, and the
+                            then known mountains, islands, and rivers.</p>
+                    </div>
+                    <div type="item">
+                        <head>Royal Artillery Gun Practice</head>
+                        <p> 2nd Lieut. A. J. Gatt and 10 men of the Detach- ment, R.M.A., Citadel,
+                            Cairo, will be attached under tho orders of the O.C. RA. in Egypt, to
+                            either the 56th Bty., R.F.A., or 4th M.B., R.G.A., during their gun
+                            practice, from the 9th to 25th inst The remainder of the Detach- ment,
+                            R.M.A., at the Citadel, will be attached, for discipline, to the
+                            Detachment, 2nd Batta- lion Rifle Brigade, during the above period.</p>
+                    </div>
+                    <div type="item">
+                        <head>British Chamber of Commerce</head>
+                        <p>We would call the attention of persons interested in Egyptian trade to
+                            the work of the British Chamber of Commerce of Egypt, whose office in
+                            Alexandria gives information as to standings, trade, &amp;c., to its
+                            members, and whose monthly publication reviews our commerce- The annual
+                            subscription is £1 and all British traders should become members. Our
+                            London office, 36, New Broad-street E.C., acts as London agency to the
+                            Chamber.</p>
+                    </div>
                 </div>
-                <div type="item">
-                    <head>THE KHEDIVE.</head>
+                <div type="section" xml:id="deg-el-khed01"><head>THE KHEDIVE.</head>
                     <p>The Khedive is leaving Montazah for Cairo this evening.</p>
                 </div>
                 <div type="item">
@@ -2078,7 +2098,7 @@
                             Polka—The Post Horn-Moore. Regimental March. Khedivial Anthem. God Save
                             the King. R. Watson Ramsey, Bandmaster.</p>
                     </div>
-                    <div type="item">
+                    <div type="section" scope="social" xml:id="deg-el-pers01">
                         <head>PERSONAL AND SOCIAL.</head>
                         <p>The renowned Italian musician Puccini, composer of La Boheme, La Tosca,
                             and Manon, is expected to arrive in Egypt on the 15th inst.</p>
@@ -2200,7 +2220,7 @@
                         tribuaaux ae prisontoient pas dls la jour da lour institu- tion une garoatie
                         suffisante et, on oonslquenoe, tout on admettaot le principe de la
                         oomplteuoe pinole on touta matilro, elle on ajouma l'appli- cation ft une
-                        Ipoque plus favorable. En 1870, Nubar obtint un finnan du Saltan autorisant
+                        Ipoque plus favorable. En 1870, Nubar obtint un finnan du Sultan autorisant
                         la Khtklivo Ismail ft rlglar la condition dee Etrongors en Egypte, ot o'est
                         en vertu de co firman que les nouveaux tribunaux furent Itablis, on
                         1875.</p>
@@ -2227,16 +2247,16 @@
                         lesquelles Itoieut impossibles sous Tancieu regime. Aujourd’hui l'Egypta se
                         trouvo done dons une Ire uouvolle do surotl oil tout rlussit et
                         prospire.</p>
-                    <p>Lorsque les colonies europleennes Itoient pod nombreuses dons ce pays, il
-                        n'y avait pas d'inoonvlnients k oe que choc une d'olios et sa justioe
-                        privle. Mais aujourd'hui, les Itrangers sont devenus si nombreux, leurs
-                        intlrlts et leurs relations sont si intimement lids k oeux des Egyptians
-                        qu'il est roisonnoblement perm is de lee confondro even ccux-ci. Die Ion, du
-                        moment que leurs intlrlts sont les mimes, et que los lois oiviles qui lee
-                        rlgissent le sont aussi, pourquoi n'en serait-il pas de mime dans lo cos oil
-                        un i-tranger se rendroit ooupable d’un dllit ou d’un crime oontre la
-                        slcuritl publiqao, ou d’une infraction contre les partiouliers. 11 est juste
-                        et raisonnable que lee peraonues qui viennent s'ltahlir dans un pays d'uno
+                    <p>Lorsque les colonies europleennes Itoient pod nombreuses dons ce pays, il n'y
+                        avait pas d'inoonvlnients k oe que choc une d'olios et sa justioe privle.
+                        Mais aujourd'hui, les Itrangers sont devenus si nombreux, leurs intlrlts et
+                        leurs relations sont si intimement lids k oeux des Egyptians qu'il est
+                        roisonnoblement perm is de lee confondro even ccux-ci. Die Ion, du moment
+                        que leurs intlrlts sont les mimes, et que los lois oiviles qui lee rlgissent
+                        le sont aussi, pourquoi n'en serait-il pas de mime dans lo cos oil un
+                        i-tranger se rendroit ooupable d’un dllit ou d’un crime oontre la slcuritl
+                        publiqao, ou d’une infraction contre les partiouliers. 11 est juste et
+                        raisonnable que lee peraonues qui viennent s'ltahlir dans un pays d'uno
                         fa^cn permanente ou provisoiro et profitent do ses rossources et dos
                         bienfaits do sa llgislation soient rlgis par les mlmos lois qui goavornent
                         les nationaux eux-mlmes; et, du momont que la compltence des oontraventions
@@ -2367,7 +2387,7 @@
                         <p><placeName>Angleterre</placeName>; vap. angl, Orestes, cap.
                                 <persName>Walker</persName>, sur lest.</p>
                     </div>
-                    <div type="item">
+                    <div type="section" xml:id="deg-el-plst01">
                         <head>PASSENGER LISTS.</head>
                         <p>Le paquebot "Sirio” da 1a C'io Florio P.ubat- tino parti bier pour Qtnea
                             arait k bord ; <persName>MM. Ugo Benvoie</persName>, <persName>Comp.
@@ -4709,86 +4729,100 @@
                         to 1LM.S. “Bulwark,” flagship of Sir Compton E. Dom- villo, G.C.B.,
                         Commander-in-chief in the Mediterranean.</p>
                 </div>
-                <div type="item">
-                    <head>Letters to the Editor</head>
-                    <head>The case of Roxdorf.</head>
-                    <p>To tor Editor or rax Eotptus Gaxbtr.</p>
-                    <p>Dear Sir,—1 happened to read the reprint in the Gazette of a report from the
-                        Daily Mail, concerning Berlin, and especially Rixdorf. 1 may tell yon that
-                        the honorable Mr. Alderson, who was in Rixdorf, has very well observed, but
-                        unfortunately some details hare escaped him. We beg to report them to your
-                        readers supplementary. If Mr. A should have oome to the Rixdorf palaces
-                        half-an-hour later and stayed for dinner, he would no doubt have seen on
-                        overy table ‘tunle soup and venidoo with a golden spoon.”</p>
-                    <p>Tha provision store of Borehardt, purveyor to his Majesty, furnishes the
-                        working people with these dainties. Of late a decline of price of this
-                        merchandise has taken plaoe because the people grew tired of it and
-                        preferred tar a time porridgs and potatoes. The house of Gertan's, purveyors
-                        to his Ma- jesty, provides the people with the hangings and the staff Mr. A
-                        so greatly admired, and having so largely profited by the working class- es
-                        a Smyrna oarpst has been given as a Christmas present to every family and a
-                        seal cape to every grandmother, for old people al- ways fael odd. How glad
-                        Mr. A. would foal if he oould but see it.</p>
-                    <p>Every Rixdorf workman smokes cigars from Book’s or Upmanls and every one of
-                        them has a safe in the Bank of Germany. Your Mr. A. is a sharp observer; as
-                        long a* tho world goes there sre but two his equals, Munchausen and Jules
-                        Verne. Wishing you a happy New Year.</p>
-                    <p>1 remain, dear Sir, Very truly yours, Ruldortxr. Rixdorf (Germany), Deo.
-                        24,1904.</p>
-                    <p>VANDALISM AT CAN OP UB</p>
-                    <p>To tor Editor or rax EomuH Gxzeitx.</p>
-                    <p>Sir,—Your article in Tuesday's Gazette on the wantou damage that the Temple
-                        of Arsinag Aphrodite / has sutfored during the past low months
-                        ulikelyloarousethoangerol the learned world against not only the Alexandria
-                        Archioo- logical Society, the authorities of the Alexandria
-                        Muscumandtbeowner uttbe temple's site, but also against the Department of
-                        Antiquities of tho Egyptian Government, for having been so remiss in its
-                        duties towards one ot the most interesting temples ot the Ptolemaio epoch.
-                        Early in the summer, inspired by the announce- ment which 1 road in your
-                        columns of the disoovery of this temple, 1 paid a visit to Aboukir during a
-                        short stay at Alexandria, and at onoe came to the oonolusion that the ruins
-                        were those ot the temple erected Jo the deified sister-wife ot Ptolemy
-                        Philodelphus by Callicr- ates on tho Zephyrian forelaud, half-way be- tween
-                        tho Pharos of Alexandria and the Canopio month of the 'Nile, as is recorded
-                        in a Greek epigram from a papyrus. From* com- parison of tho description of
-                        the site as given by Strabo and Stephanos Byzantios with the epigram from
-                        the Fimin-Didot papyrus, it is clear that this is the temple, renowned for
-                        the romantic offering ot the looks of Berenioe, which inspired the
-                        oelebratod poem of Calli- machus, that has survived through the trans-
-                        lation of Catalina There is a tragic irony ot a twofold character to the
-                        praaent plight of this onoe famous tone. The poem whereby the templo become
-                        renowned in literature is described by Professor Robinson Rllis as ”a
-                        scientific not less than a poetical tribute paid by learning to the founders
-                        and supporters ot the Museum" of Alexandria. Yettheauthorities of tho
-                        present Museum of Alexandria have allowed the remains of tho temple to be
-                        irre- trievably rained by their indifference. Another touch of irony is seen
-                        in the fact that the site ot the temple is now in the possession of a Prince
-                        of os Macedonian an origin,as wcrePlrila- delphus and Euergetes. It is
-                        amazing that the Egyptian Government should be so engrossed in its efforts
-                        to increase the more material interests of the oountry, that it neglects to
-                        preserve the prioeleaa relios of the past. Por my part I do not think wo
-                        should aoeuw Alexandrians or their Archcologioal Society. It is surprising
-                        that snob a materially-minded city should possess even the rudiments of snob
-                        an institution. But it is the authorities at Cairo who are to be blamed, for
-                        having failed, when the temple was discovered in the spring, to at onoe take
-                        all the necessary precau- tions lot safeguarding tho remains and expro-
-                        priating the land. Yours truly, Cairo, January 8,</p>
+                <div type="section" xml:id="deg-el-lett01">
+                    <head>LETTERS TO THE EDITOR</head>
+                    <div type="item">
+                        <head>The case of Roxdorf.</head>
+                        <p>To tor Editor or rax Eotptus Gaxbtr.</p>
+                        <p>Dear Sir,—1 happened to read the reprint in the Gazette of a report from
+                            the Daily Mail, concerning Berlin, and especially Rixdorf. 1 may tell
+                            yon that the honorable Mr. Alderson, who was in Rixdorf, has very well
+                            observed, but unfortunately some details hare escaped him. We beg to
+                            report them to your readers supplementary. If Mr. A should have oome to
+                            the Rixdorf palaces half-an-hour later and stayed for dinner, he would
+                            no doubt have seen on overy table ‘tunle soup and venidoo with a golden
+                            spoon.”</p>
+                        <p>Tha provision store of Borehardt, purveyor to his Majesty, furnishes the
+                            working people with these dainties. Of late a decline of price of this
+                            merchandise has taken plaoe because the people grew tired of it and
+                            preferred tar a time porridgs and potatoes. The house of Gertan's,
+                            purveyors to his Ma- jesty, provides the people with the hangings and
+                            the staff Mr. A so greatly admired, and having so largely profited by
+                            the working class- es a Smyrna oarpst has been given as a Christmas
+                            present to every family and a seal cape to every grandmother, for old
+                            people al- ways fael odd. How glad Mr. A. would foal if he oould but see
+                            it.</p>
+                        <p>Every Rixdorf workman smokes cigars from Book’s or Upmanls and every one
+                            of them has a safe in the Bank of Germany. Your Mr. A. is a sharp
+                            observer; as long a* tho world goes there sre but two his equals,
+                            Munchausen and Jules Verne. Wishing you a happy New Year.</p>
+                        <p>1 remain, dear Sir, Very truly yours,</p>
+                        <byline>Ruldortxr.</byline>
+                        <dateline>Rixdorf (Germany), Deo. 24,1904.</dateline>
+                    </div>
+                    <div type="item">
+                        <head>VANDALISM AT CANOPUS</head>
+                        <p>To tor Editor or rax EomuH Gxzeitx.</p>
+                        <p>Sir,—Your article in Tuesday's Gazette on the wantou damage that the
+                            Temple of Arsinag Aphrodite / has sutfored during the past low months
+                            ulikelyloarousethoangerol the learned world against not only the
+                            Alexandria Archioo- logical Society, the authorities of the Alexandria
+                            Muscumandtbeowner uttbe temple's site, but also against the Department
+                            of Antiquities of tho Egyptian Government, for having been so remiss in
+                            its duties towards one ot the most interesting temples ot the Ptolemaio
+                            epoch. Early in the summer, inspired by the announce- ment which 1 road
+                            in your columns of the disoovery of this temple, 1 paid a visit to
+                            Aboukir during a short stay at Alexandria, and at onoe came to the
+                            oonolusion that the ruins were those ot the temple erected Jo the
+                            deified sister-wife ot Ptolemy Philodelphus by Callicr- ates on tho
+                            Zephyrian forelaud, half-way be- tween tho Pharos of Alexandria and the
+                            Canopio month of the 'Nile, as is recorded in a Greek epigram from a
+                            papyrus. From* com- parison of tho description of the site as given by
+                            Strabo and Stephanos Byzantios with the epigram from the Fimin-Didot
+                            papyrus, it is clear that this is the temple, renowned for the romantic
+                            offering ot the looks of Berenioe, which inspired the oelebratod poem of
+                            Calli- machus, that has survived through the trans- lation of Catalina
+                            There is a tragic irony ot a twofold character to the praaent plight of
+                            this onoe famous tone. The poem whereby the templo become renowned in
+                            literature is described by Professor Robinson Rllis as ”a scientific not
+                            less than a poetical tribute paid by learning to the founders and
+                            supporters ot the Museum" of Alexandria. Yettheauthorities of tho
+                            present Museum of Alexandria have allowed the remains of tho temple to
+                            be irre- trievably rained by their indifference. Another touch of irony
+                            is seen in the fact that the site ot the temple is now in the possession
+                            of a Prince of os Macedonian an origin,as wcrePlrila- delphus and
+                            Euergetes. It is amazing that the Egyptian Government should be so
+                            engrossed in its efforts to increase the more material interests of the
+                            oountry, that it neglects to preserve the prioeleaa relios of the past.
+                            Por my part I do not think wo should aoeuw Alexandrians or their
+                            Archcologioal Society. It is surprising that snob a materially-minded
+                            city should possess even the rudiments of snob an institution. But it is
+                            the authorities at Cairo who are to be blamed, for having failed, when
+                            the temple was discovered in the spring, to at onoe take all the
+                            necessary precau- tions lot safeguarding tho remains and expro- priating
+                            the land. Yours truly, Cairo, January 8,</p>
+                    </div>
                 </div>
-                <div type="item">
-                    <head>Sport and Play</head>
-                    <p>FOOTBALL</p>
-                    <p>R.M.A. r. A Comport R. Bnuu. Regimest. This match took plaoe et Mustapha ou
-                        Wednesday last l'ho play on the whole was rather in favour of the R. Berks,
-                        who did mo.t of the attacking. The weakness in front ot goal alone saved the
-                        K.M.A., and the match ended in a draw, no goals boing soorod.</p>
-                    <p>BILLIARD HANDICAPS.</p>
-                    <p>It is proposed to hold two billiard handicaps of 250 points up at the
-                        Soldiers' Club, Cairo, one for N.C.O’e. of the rank of oorporal and upwards,
-                        the other for lanoe-oorporals end privates. The 1st prise is a silver oup
-                        and the 2nd prize, a billiard one. The entrance fee is la, to be paid on
-                        entering to the manager, not later than the 8th inst. One N.C.O., and one
-                        private from oach unit of the garrison to form a oommitteo for
-                        handicapping.</p>
+                <div type="section" xml:id="deg-el-spor01">
+                    <head>SPORT and Play</head>
+                    <div type="item">
+                        <head>FOOTBALL</head>
+                        <p>R.M.A. r. A Comport R. Bnuu. Regimest. This match took plaoe et Mustapha
+                            ou Wednesday last l'ho play on the whole was rather in favour of the R.
+                            Berks, who did mo.t of the attacking. The weakness in front ot goal
+                            alone saved the K.M.A., and the match ended in a draw, no goals boing
+                            soorod.</p>
+                    </div>
+                    <div type="item">
+                        <head>BILLIARD HANDICAPS.</head>
+                        <p>It is proposed to hold two billiard handicaps of 250 points up at the
+                            Soldiers' Club, Cairo, one for N.C.O’e. of the rank of oorporal and
+                            upwards, the other for lanoe-oorporals end privates. The 1st prise is a
+                            silver oup and the 2nd prize, a billiard one. The entrance fee is la, to
+                            be paid on entering to the manager, not later than the 8th inst. One
+                            N.C.O., and one private from oach unit of the garrison to form a
+                            oommitteo for handicapping.</p>
+                    </div>
                 </div>
                 <div type="item" scope="advertisement">
                     <p>WHERE TO WINTER IN EGYPT.</p>
