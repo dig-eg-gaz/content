@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/dig-eg-gaz/resources/master/out/egSchema.rnc" type="application/relax-ng-compact-syntax"?>
-<?xml-stylesheet type="text/xsl" href="dig-eg-gaz.xsl"?>  <TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-stylesheet type="text/xsl" href="dig-eg-gaz.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -1811,7 +1812,7 @@
                             agreement as definite. (Havas.) </p>
                     </div>
                 </div>
-                <div type="section">
+                <div type="section" scope="social" xml:id="deg-el-pers01">
                     <head>PERSONAL AND SOCIAL.</head>
                     <p>Lord Edward Cecil Pasha arrived at Cairo to-day from England. </p>
                     <p>Mr. Boyle, First Secretary to the British Agency, will leave Egypt on
@@ -1853,69 +1854,109 @@
                     <p>xxxxx-xx-x xx</p>
                 </div>
                 <cb n="3"/>
-                <div type="section">
+                <div type="section" scope="local" xml:id="deg-el-locl01">
                     <head>LOCAL AND GENERAL</head>
-                    <p>Railway Accident.—Owing to the derailing of two goods trucks the
-                        Cairo-Alexandria express was over half an hour late on Saturday. </p>
-                    <p>Quarantine in Turkey.—A telegram from Constantinople states that arrivals
-                        from Port Said are now subjected to a medical examination and disinfection. </p>
-                    <p>Stray and Ownerless Dogs found in the Shoubra district of Cairo during
-                        to-morrow night and at daylight on Wednesday will be poisoned by the
-                        police.</p>
-                    <p>Carlton Hotel.—We are informed that the management of the Carlton Hotel,
-                        Bulkeley, have still a few excellent rooms to offer to intending visitors to
-                        this delightful seaside resort. </p>
-                    <p>A Fire broke out yesterday in the spinning mills at Karmous, and was
-                        extinguished by the Fire Brigade. The damage has not yet been ascertained.
-                        The origin of the fire was accidental. </p>
-                    <p>Still they Come!—Developments in Egypt (says the “Daily Report”) are
-                        proceeding apace. Several new companies are being prepared for the market,
-                        including more subsidiaries of the Egyptian Mines Exploration. </p>
-                    <p>Suez Canal.— 8 vessels passed through the Canal on the 29th ulto., 7 of which
-                        were British and 1 German. The receipts for the day amounted to frs.
-                        267,794.38, making the total from the 1st June frs. 7,981,933.92 </p>
-                    <p>Fatal Lamp Accident—A Syrian girl called Rosa Bishara Habib, aged 16 years,
-                        expired at the Greek Hospital, Alexandria, yesterday from burns caused by
-                        the upsetting of a spirit lamp on which she was boiling milk in her parents’
-                        house in the Attarin quarter. </p>
-                    <p>Letters to the Editor.—The Editor wishes to point out to correspondents that
-                        unsigned letters on any subject cannot be published the “Egyptian Gazette.”
-                        Letters must be accompanied by visiting cards, or bear the name and address
-                        of the writers, as a guarantee of good faith. </p>
-                    <p>Stock Exchange Notices.—The committee of the London Stock Exchange has
-                        appointed July 5 as a special settling day in Egyptian Land and General
-                        Trust, Ltd.—200,000 shares of £1 each, 5s paid, Nos. 1 to 200,000. The
-                        committee has also ordered the above security to be quoted in the official
-                        list. </p>
-                    <p>Cattle Plague. — During the week ending July 1, 13 deaths from cattle plague
-                        were notified throughout Egypt, namely, 2 at Za gazig, 5 at Hehia, and 6 at
-                        Shibin-el-Kom. The number of deaths during the corresponding period last
-                        year was 1,319. Since the commencement of the epidemic the total number of
-                        deaths amounts to 147,291, distributed as follows Gouvernorats, 892 ; Lower
-                        Egypt, 54,164 ; Upper Egypt, 92,235. </p>
-                    <p>Italian Comedy.—The management of the Alhambra Theatre have engaged an
-                        Italian comedy company which will occupy the boards of the theatre during
-                        August, and which is under the management of Sig. Ernesto Della Guardia. The
-                        company is said to be one of the best in Italy, and two of its members are
-                        artistes of repute, viz., Sig. Andrea Maggi and Siga. Clara Della Guardia.
-                        The company’s repertoire includes Cyrano de Bergerac and the principal works
-                        of Gabriele D’Annunzio. </p>
-                    <p>Death of the Chimpanzee at the Zoo.—We regret to hear that the chimpanzee
-                        from the Bahr el Ghazal, which was brought to the Zoological Gardens from
-                        Khartoum last autumn, died quite suddenly last Friday night from what is
-                        believed to have been kidney disease. Visitors to the gardens will miss the
-                        ape, whose imitative powers and gambols always attracted the attention of
-                        visitors. Her keeper bad little or no difficulty in taming her and is
-                        greatly affected by the death of one of the most interesting animals ever
-                        exhibited at Cairo. </p>
-                    <p>Delivery of Letters.—The continual crease in the demand for house-to-house
-                        delivery in Cairo and Alexandria (says a Post Office notice) renders it
-                        absolutely necessary that all persons in the towns desirous of such delivery
-                        shall have the number of the house and name of the street in which they live
-                        indicated on their correspondence. Should by any chance a street be unnamed,
-                        then the quarter of the town in which it is situated must be indicated.
-                        Attention to these instructions is imperative to avoid delay and errors in
-                        the delivery of correspondence. </p>
+                    <div type="item">
+                        <head>Railway Accident</head>
+                        <p>Owing to the derailing of two goods trucks the Cairo-Alexandria express
+                            was over half an hour late on Saturday. </p>
+                    </div>
+                    <div type="item">
+                        <head>Quarantine in Turkey</head>
+                        <p>A telegram from Constantinople states that arrivals from Port Said are
+                            now subjected to a medical examination and disinfection. </p>
+                    </div>
+                    <div type="item">
+                        <head>Stray and Ownerless Dogs</head>
+                        <p> found in the Shoubra district of Cairo during to-morrow night and at
+                            daylight on Wednesday will be poisoned by the police.</p>
+                    </div>
+                    <div type="item">
+                        <head>Carlton Hotel</head>
+                        <p>We are informed that the management of the Carlton Hotel, Bulkeley, have
+                            still a few excellent rooms to offer to intending visitors to this
+                            delightful seaside resort. </p>
+                    </div>
+                    <div type="item">
+                        <head>A Fire</head>
+                        <p> broke out yesterday in the spinning mills at Karmous, and was
+                            extinguished by the Fire Brigade. The damage has not yet been
+                            ascertained. The origin of the fire was accidental. </p>
+                    </div>
+                    <div type="item">
+                        <head>Still they Come!</head>
+                        <p>Developments in Egypt (says the “Daily Report”) are proceeding apace.
+                            Several new companies are being prepared for the market, including more
+                            subsidiaries of the Egyptian Mines Exploration. </p>
+                    </div>
+                    <div type="item">
+                        <head>Suez Canal</head>
+                        <p> 8 vessels passed through the Canal on the 29th ulto., 7 of which were
+                            British and 1 German. The receipts for the day amounted to frs.
+                            267,794.38, making the total from the 1st June frs. 7,981,933.92 </p>
+                    </div>
+                    <div type="item">
+                        <head>Fatal Lamp Accident</head>
+                        <p>A Syrian girl called Rosa Bishara Habib, aged 16 years, expired at the
+                            Greek Hospital, Alexandria, yesterday from burns caused by the upsetting
+                            of a spirit lamp on which she was boiling milk in her parents’ house in
+                            the Attarin quarter. </p>
+                    </div>
+                    <div type="item">
+                        <head>Letters to the Editor</head>
+                        <p>The Editor wishes to point out to correspondents that unsigned letters on
+                            any subject cannot be published the “Egyptian Gazette.” Letters must be
+                            accompanied by visiting cards, or bear the name and address of the
+                            writers, as a guarantee of good faith. </p>
+                    </div>
+                    <div type="item">
+                        <head>Stock Exchange Notices</head>
+                        <p>The committee of the London Stock Exchange has appointed July 5 as a
+                            special settling day in Egyptian Land and General Trust, Ltd.-200,000
+                            shares of £1 each, 5s paid, Nos. 1 to 200,000. The committee has also
+                            ordered the above security to be quoted in the official list. </p>
+                    </div>
+                    <div type="item">
+                        <head>Cattle Plague</head>
+                        <p> During the week ending July 1, 13 deaths from cattle plague were
+                            notified throughout Egypt, namely, 2 at Za gazig, 5 at Hehia, and 6 at
+                            Shibin-el-Kom. The number of deaths during the corresponding period last
+                            year was 1,319. Since the commencement of the epidemic the total number
+                            of deaths amounts to 147,291, distributed as follows Gouvernorats, 892 ;
+                            Lower Egypt, 54,164 ; Upper Egypt, 92,235. </p>
+                    </div>
+                    <div type="item">
+                        <head>Italian Comedy</head>
+                        <p>The management of the Alhambra Theatre have engaged an Italian comedy
+                            company which will occupy the boards of the theatre during August, and
+                            which is under the management of Sig. Ernesto Della Guardia. The company
+                            is said to be one of the best in Italy, and two of its members are
+                            artistes of repute, viz., Sig. Andrea Maggi and Siga. Clara Della
+                            Guardia. The company’s repertoire includes Cyrano de Bergerac and the
+                            principal works of Gabriele D’Annunzio. </p>
+                    </div>
+                    <div type="item">
+                        <head>Death of the Chimpanzee at the Zoo</head>
+                        <p>We regret to hear that the chimpanzee from the Bahr el Ghazal, which was
+                            brought to the Zoological Gardens from Khartoum last autumn, died quite
+                            suddenly last Friday night from what is believed to have been kidney
+                            disease. Visitors to the gardens will miss the ape, whose imitative
+                            powers and gambols always attracted the attention of visitors. Her
+                            keeper bad little or no difficulty in taming her and is greatly affected
+                            by the death of one of the most interesting animals ever exhibited at
+                            Cairo. </p>
+                    </div>
+                    <div type="item">
+                        <head>Delivery of Letters</head>
+                        <p>The continual crease in the demand for house-to-house delivery in Cairo
+                            and Alexandria (says a Post Office notice) renders it absolutely
+                            necessary that all persons in the towns desirous of such delivery shall
+                            have the number of the house and name of the street in which they live
+                            indicated on their correspondence. Should by any chance a street be
+                            unnamed, then the quarter of the town in which it is situated must be
+                            indicated. Attention to these instructions is imperative to avoid delay
+                            and errors in the delivery of correspondence. </p>
+                    </div>
                 </div>
                 <div type="item" scope="advertisement" xml:id="deg-ad-whr01">
                     <head>WINDSOR HOTEL Restaurant.</head>
@@ -1997,8 +2038,7 @@
                         Egyptian Salt and Soda Company’s factory, Kafr el Zayat. </p>
                 </div>
                 <div type="item">
-                    <head>AGRICULTURAL BANK</head>
-                    <head>LOANS TO OMDEHS.</head>
+                    <head>AGRICULTURAL BANK. LOANS TO OMDEHS.</head>
                     <p>The Agricultural Bank has decided that in future all loans granted to omdehs
                         will bear interest at a rate two per cent. lower than that of other loans.
                         This regulation will be made applicable to all existing loans, the
@@ -2009,8 +2049,7 @@
                         to them up to the end of the previous month. These fees will commence to be
                         allowed on all B. istimaras paid on or after 1st Jane, 1905. </p>
                 </div>
-                <div type="item">
-                    <head>STEAMER MOVEMENTS.</head>
+                <div type="section" xml:id="deg-el-stmr01"><head>STEAMER MOVEMENTS.</head>
                     <p>The Messageries Maritimes S.S. “Senegal," from Marseilles, passed the Straits
                         of Messina on Saturday and is due here; to-morrow morning. </p>
                 </div>
@@ -2022,15 +2061,13 @@
                 </div>
                 <cb n="4"/>
                 <div type="item">
-                    <head>CHOLERA SCARE. </head>
-                    <head>NO FOUNDATION FOR REPORTS.</head>
+                    <head>CHOLERA SCARE. NO FOUNDATION FOR REPORTS.</head>
                     <p>Rumours have been in circulation during the past day or two that some cases
                         of cholera had occurred at Luxor. H. E. the Regent has, we are informed,
                         received official news to the effect that these rumours are absolutely
                         without any foundation in fact. </p>
                 </div>
-                <div type="item">
-                    <head>THE KHEDIVE.</head>
+                <div type="section" xml:id="deg-el-khed01"><head>THE KHEDIVE.</head>
                     <p>The Khedive, attended by Boutros Pasha Ghali and Col. Watson, left London on
                         Saturday week for Paris. His Highness travelled from Charing-cross in a
                         Royal saloon attached to the 2 20 Folkestone-Boulogne express. The Earl of
@@ -2046,8 +2083,7 @@
                     <p>H. E. Fakhry Pasha will also act as ad interim Minister of Justice and
                         Foreign Affairs till the return of H. E. Ibrahim Fouad Pasha. </p>
                 </div>
-                <div type="item">
-                    <head>EGYPTIAN ARMY.</head>
+                <div type="section" xml:id="deg-el-egar01"><head>EGYPTIAN ARMY.</head>
                     <p>British officers will wear mourning for the late El Kaimakam Fell Bey up to
                         the 18th July inclusive. </p>
                     <p>His Highness the Khedive has been most graciously pleased to approve of the
@@ -2108,7 +2144,7 @@
                         purposes. Some of them were Italian subjects, and the Italian Consulate will
                         in consequence take proceedings against the procuress and keeper of the
                         establishment. The Native Parquet is also undertaking proceedings against
-                        tbe mother of two Armenian girls found there, who are local subjects, for
+                        the mother of two Armenian girls found there, who are local subjects, for
                         aiding and abetting the commission of certain offences against minors. </p>
                 </div>
                 <div type="item">
@@ -2130,8 +2166,7 @@
                 </div>
                 <cb n="6"/>
                 <div type="item">
-                    <head>DNEIPER LEAVES PORT SAID.</head>
-                    <head>ST. KILDA’S CREW LANDED. </head>
+                    <head>DNEIPER LEAVES PORT SAID. ST. KILDA’S CREW LANDED. </head>
                     <byline>( From our Correspondent. )</byline>
                     <dateline>Port Said, Sunday.</dateline>
                     <p>Sentries were posted all day yesterday alongside the Russian cruiser
@@ -2186,8 +2221,7 @@
                         vessel which has ever gone through the Canal. </p>
                 </div>
                 <div type="item">
-                    <head>CRICKET.</head>
-                    <head>ALEXANDRIA v. CAIRO.</head>
+                    <head>CRICKET. ALEXANDRIA v. CAIRO.</head>
                     <p>This match was played on the A.C.C. ground on Saturday last, but owing to the
                         inability of the Cairo team to get down in the morning, only a half-day’s
                         match could be arranged, play commencing about 2p.m. The Alexandrians opened
@@ -2326,7 +2360,7 @@
                     <p>(à suivre)</p>
                 </div>
                 <cb n="2"/>
-                <div type="item" xml:lang="fr">
+                <div type="section" xml:lang="fr" xml:id="deg-el-bdlb01">
                     <head>BULLETIN DE LA BOURSE</head>
                     <p>(Aujourd'hui à midi et demie)</p>
                     <p>Durant la matinée, le marché a été absolument insignifiant. Les quelques
@@ -2340,7 +2374,7 @@
                         longtemps. </p>
                     <p>La tendance demeure indécise. </p>
                 </div>
-                <div type="item" xml:lang="fr">
+                <div type="section" xml:lang="fr" xml:id="deg-el-moma01">
                     <head>MOUVEMENT MARITIME DU PORT D'ALEXANDRIE</head>
                     <p>arrivées</p>
                     <p>1er juillet</p>
@@ -2375,7 +2409,7 @@
                     <p>Malte et Hambourg ; vap. all. Rhodos, cap. Buss.</p>
                     <p>Seriphos ; vap. franç. Calédonie, cap. Jaffry. </p>
                 </div>
-                <div type="item">
+                <div type="section" xml:id="deg-el-plst01">
                     <head>PASSENGER LISTS.</head>
                     <p>ARRIVALS.</p>
                     <p>Le paquebot “Semiramis” du Lloyd Autrichien arrivé ce matin de Trieste avait

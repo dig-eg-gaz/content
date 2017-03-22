@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/dig-eg-gaz/resources/master/out/egSchema.rnc" type="application/relax-ng-compact-syntax"?>
-<?xml-stylesheet type="text/xsl" href="dig-eg-gaz.xsl"?>  <TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-stylesheet type="text/xsl" href="dig-eg-gaz.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -1836,7 +1837,7 @@
                         </div>
                     </div>
                     <cb/>
-                    <div type="section" scope="local">
+                    <div type="section" scope="local" xml:id="deg-el-locl01">
                         <head>LOCAL AND GENERAL.</head>
                         <div type="item">
                             <head>Rains</head>
@@ -1926,7 +1927,7 @@
                                 that resulted in his death.</p>
                         </div>
                     </div>
-                    <div type="section" scope="social">
+                    <div type="section" scope="social" xml:id="deg-el-pers01">
                         <head>PERSONAL AND SOCIAL.</head>
                         <div type="article" scope="social" source="local">
                             <p>The Earl of Cromer was one of the guests at a dinner party given on
@@ -2157,9 +2158,10 @@
                     </div>
                 </div>
                 <cb/>
-                <div type="section" scope="local">
+                <div type="section" xml:id="deg-el-nf-suak01">
+                    <head>NOTES FROM SUAKIN. </head>
                     <div type="article">
-                        <head>NOTES FROM SUAKIN. FEVER ON THE INCREASE.</head>
+                        <head>FEVER ON THE INCREASE.</head>
                         <byline>(From our Correspondent.)</byline>
                         <dateline>Suakin, July 5.</dateline>
                         <p>The weather is becoming more oppressive than ever, owing to the hot
@@ -2215,8 +2217,7 @@
                             200,000 shares of £1 each, 5s paid (Nos. 1 to 200,000).</p>
                     </div>
                 </div>
-                <div type="section" scope="sporting">
-                    <head>SPORT AND PLAY.</head>
+                <div type="section" xml:id="deg-el-spor01"><head>SPORT AND PLAY.</head>
                     <div type="item">
                         <p>KHEDIVIAL YACHT CLUB, REGATTA. The following is the handicap for the
                             month of July:— Class I.</p>
@@ -2235,7 +2236,7 @@
                     </div>
                 </div>
                 <cb/>
-                <div type="section" scope="letters" source="local">
+                <div type="section" xml:id="deg-el-lett01">
                     <head>LETTERS TO THE EDITOR.</head>
                     <p>We do not hold ourselves responsible for the opinions expressed by our
                         correspondants, but we wish, in a spirit of fair play to all, to
@@ -2421,8 +2422,7 @@
                         prochain.</p>
                 </div>
                 <cb n="2"/>
-                <div type="item">
-                    <head>MOUVEMENT MARITIME DU PORT D’ALEXANDRIE</head>
+                <div type="section" xml:lang="fr" xml:id="deg-el-moma01"><head>MOUVEMENT MARITIME DU PORT D’ALEXANDRIE</head>
                     <p>ARRIVÉES</p>
                     <p>10 juillet</p>
                     <p>Manchester et Malte ; 3 j. 3/4, vap. ang. Tuscan Prince, cap. Chilvers, ton.
@@ -2442,7 +2442,9 @@
                     <p>10 juillet</p>
                     <p>Constantinople , vap. hell. Princesse Sophie, cap. Damir. </p>
                     <p>Syrie et Londres ; vap. ang. Assiout, cap. Hannaford. </p>
-                    <p>PASSENGER LISTS . </p>
+                </div>
+                <div type="section" xml:id="deg-el-plst01">
+                    <head>PASSENGER LISTS.</head>
                     <p>ARRIVALS .</p>
                     <p>Le paquebot “Niger” des Messageries Maritimes arrivé ce matin de Marseille,
                         avait à bord : </p>
