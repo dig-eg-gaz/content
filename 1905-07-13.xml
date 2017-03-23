@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/dig-eg-gaz/resources/master/out/egSchema.rnc" type="application/relax-ng-compact-syntax"?>
-<?xml-stylesheet type="text/xsl" href="dig-eg-gaz.xsl"?>  <TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-stylesheet type="text/xsl" href="dig-eg-gaz.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -2168,7 +2169,7 @@
                         <cb/>
                     </div>
                 </div>
-                <div type="section" scope="local" xml:id="deg-el-locl01">
+                <div type="section" element="local">
                     <head>LOCAL AND GENERAL.</head>
                     <div type="item">
                         <head>Suakin Province.</head>
@@ -2245,94 +2246,98 @@
                             11.50 p.m.</p>
                     </div>
                 </div>
-                <div type="section" xml:id="deg-el-spor01"><head>SPORT AND PLAY.</head>
-                    <div type="item"><head>KHEDIVIAL YACHT CLUB. REGATTA.</head>
-                    <p>The following is the result of yesterday’s regatta :—</p>
-                    <table rows="6" cols="4">
-                        <head>Class I.</head>
-                        <row role="label">
-                            <cell>Boat.</cell>
-                            <cell>Start.</cell>
-                            <cell>Finish.</cell>
-                            <cell>Sailed by</cell>
-                        </row>
-                        <row>
-                            <cell role="label">1 Minnie</cell>
-                            <cell>3.30.06</cell>
-                            <cell>4.59.49</cell>
-                            <cell>N.W.deCourcy</cell>
-                        </row>
-                        <row>
-                            <cell>2 Coot</cell>
-                            <cell>3.34.11</cell>
-                            <cell>5.01.37</cell>
-                            <cell>A. S. Preston</cell>
-                        </row>
-                        <row>
-                            <cell>3 Sans Pareille</cell>
-                            <cell>3.52.04</cell>
-                            <cell>5.01.50</cell>
-                            <cell>Mr. de Tchudi</cell>
-                        </row>
-                        <row>
-                            <cell>Banshee</cell>
-                            <cell>3.46.20</cell>
-                            <cell>5.02.40</cell>
-                            <cell>I. McClure</cell>
-                        </row>
-                        <row>
-                            <cell>Leman</cell>
-                            <cell>3.42.15</cell>
-                            <cell>5.42.15</cell>
-                            <cell>Mr. de Planta</cell>
-                        </row>
-                    </table>
-                    <table rows="6" cols="2">
-                        <head>Class II.</head>
-                        <row>
-                            <cell>1 Derpbil</cell>
-                            <cell>3.55.12</cell>
-                            <cell>5.30.13</cell>
-                            <cell>Prince Aziz</cell>
-                        </row>
-                        <row>
-                            <cell>2 Akraba</cell>
-                            <cell>3.58.22</cell>
-                            <cell>5.31.40</cell>
-                            <cell>Sagh. Phillips</cell>
-                        </row>
-                        <row>
-                            <cell>3 Masr</cell>
-                            <cell>4.08.19</cell>
-                            <cell>5.34.42</cell>
-                            <cell>Mr. Ravelli</cell>
-                        </row>
-                        <row>
-                            <cell>Calypso</cell>
-                            <cell>4.14.24</cell>
-                            <cell>5.35.53</cell>
-                            <cell>" O. Werner</cell>
-                        </row>
-                        <row>
-                            <cell>Shamrock</cell>
-                            <cell>4.04.45</cell>
-                            <cell>5.35.57</cell>
-                            <cell>Lieut. Basset</cell>
-                        </row>
-                        <row>
-                            <cell>Tanta</cell>
-                            <cell>4.04.57</cell>
-                            <cell>5.37.20</cell>
-                            <cell>Mr. E. Gentili</cell>
-                        </row>
-                    </table>
-                    <p>The Jessica, when rounding Gabbary buoy on a wind, was unfortunately run into
-                        on the port bow and out down to the water line by the Celtic, of Class I.,
-                        which was coming down before the wind to round the same buoy.</p>
-                    <p>Assistance was rendered by the Celtic and Tier-el-Mina and both of these
-                        boats of course lost their race.</p>
-                    <p>The gap cut in the Jessica was stopped up with canvas and she put into
-                        dry-dock at Gabbary, where she discharged all her ballast.</p></div>
+                <div type="section" element="sport">
+                    <head>SPORT AND PLAY.</head>
+                    <div type="item">
+                        <head>KHEDIVIAL YACHT CLUB. REGATTA.</head>
+                        <p>The following is the result of yesterday’s regatta :—</p>
+                        <table rows="6" cols="4">
+                            <head>Class I.</head>
+                            <row role="label">
+                                <cell>Boat.</cell>
+                                <cell>Start.</cell>
+                                <cell>Finish.</cell>
+                                <cell>Sailed by</cell>
+                            </row>
+                            <row>
+                                <cell role="label">1 Minnie</cell>
+                                <cell>3.30.06</cell>
+                                <cell>4.59.49</cell>
+                                <cell>N.W.deCourcy</cell>
+                            </row>
+                            <row>
+                                <cell>2 Coot</cell>
+                                <cell>3.34.11</cell>
+                                <cell>5.01.37</cell>
+                                <cell>A. S. Preston</cell>
+                            </row>
+                            <row>
+                                <cell>3 Sans Pareille</cell>
+                                <cell>3.52.04</cell>
+                                <cell>5.01.50</cell>
+                                <cell>Mr. de Tchudi</cell>
+                            </row>
+                            <row>
+                                <cell>Banshee</cell>
+                                <cell>3.46.20</cell>
+                                <cell>5.02.40</cell>
+                                <cell>I. McClure</cell>
+                            </row>
+                            <row>
+                                <cell>Leman</cell>
+                                <cell>3.42.15</cell>
+                                <cell>5.42.15</cell>
+                                <cell>Mr. de Planta</cell>
+                            </row>
+                        </table>
+                        <table rows="6" cols="2">
+                            <head>Class II.</head>
+                            <row>
+                                <cell>1 Derpbil</cell>
+                                <cell>3.55.12</cell>
+                                <cell>5.30.13</cell>
+                                <cell>Prince Aziz</cell>
+                            </row>
+                            <row>
+                                <cell>2 Akraba</cell>
+                                <cell>3.58.22</cell>
+                                <cell>5.31.40</cell>
+                                <cell>Sagh. Phillips</cell>
+                            </row>
+                            <row>
+                                <cell>3 Masr</cell>
+                                <cell>4.08.19</cell>
+                                <cell>5.34.42</cell>
+                                <cell>Mr. Ravelli</cell>
+                            </row>
+                            <row>
+                                <cell>Calypso</cell>
+                                <cell>4.14.24</cell>
+                                <cell>5.35.53</cell>
+                                <cell>" O. Werner</cell>
+                            </row>
+                            <row>
+                                <cell>Shamrock</cell>
+                                <cell>4.04.45</cell>
+                                <cell>5.35.57</cell>
+                                <cell>Lieut. Basset</cell>
+                            </row>
+                            <row>
+                                <cell>Tanta</cell>
+                                <cell>4.04.57</cell>
+                                <cell>5.37.20</cell>
+                                <cell>Mr. E. Gentili</cell>
+                            </row>
+                        </table>
+                        <p>The Jessica, when rounding Gabbary buoy on a wind, was unfortunately run
+                            into on the port bow and out down to the water line by the Celtic, of
+                            Class I., which was coming down before the wind to round the same
+                            buoy.</p>
+                        <p>Assistance was rendered by the Celtic and Tier-el-Mina and both of these
+                            boats of course lost their race.</p>
+                        <p>The gap cut in the Jessica was stopped up with canvas and she put into
+                            dry-dock at Gabbary, where she discharged all her ballast.</p>
+                    </div>
                 </div>
                 <div type="advert">
                     <p>WINDSOR HOTEL Restaurant.</p>
@@ -2499,7 +2504,7 @@
                         unspeakable lamentation here. All the people condole with each other for the
                         irreparable loss and implore the divine blessing on the dead sheikh.</p>
                 </div>
-                <div type="section" scope="social" xml:id="deg-el-pers01">
+                <div type="section" element="social">
                     <head>PERSONAL AND SOCIAL.</head>
                     <p>Prince and Princess Arisugawa of Japan, who have been on a visit to England,
                         left London on Tuesday on their return to Japan by the Norddeutscher Lloyd
@@ -2844,7 +2849,8 @@
                             à 28 1/16, la Nungovich de 9 1/2 à 9 7/16, 1’Anglo-Amerioan Nile de 5
                             1/2 à 5 7/16.</p>
                     </div>
-                    <div type="section" xml:id="deg-el-plst01"><head>PASSENGER LISTS.</head>
+                    <div type="section" element="passList">
+                        <head>PASSENGER LISTS.</head>
                         <div type="subsection">
                             <head>ARRIVALS.</head>
                             <p>Per P. and 0, S.S. “Arabia,” arrived at Port Said Tuesday from London
@@ -5009,7 +5015,8 @@
                     <p>B. Nathan &amp; Cl, Chief Agents for Alexandria.</p>
                     <p>A. V. Thomson, Secretary for Egypt.</p>
                 </div>
-                <div type="section" xml:id="deg-el-army01"><head>ARMY AND NAVY.</head>
+                <div type="section" xml:id="deg-el-army01">
+                    <head>ARMY AND NAVY.</head>
                     <byline>(From our Correspondent).</byline>
                     <dateline>London, July 4.</dateline>
                     <p>The new force of cavalry which is about to be raised in Egypt will no doubt
@@ -5064,7 +5071,8 @@
                         rate of construction she will be ready for commission about the year 1910.
                     </p>
                 </div>
-                <div type="section" xml:id="deg-el-vlst01"><head>VISITORS LIST.</head>
+                <div type="section" element="visitList">
+                    <head>VISITORS LIST.</head>
                     <head type="sub">WINDSOR HOTEL, ALEXANDRIA.</head>
                     <p>Dr and Mrs. K. Johnston, Mr. M. Maliolin, Mr. Goldie, Dr. Goldslich, Lt.
                         Robert Porgès, M. Jacques Anger, M. Paul d’Albert, M. and Mme Samarina, Mr.
