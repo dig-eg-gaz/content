@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/dig-eg-gaz/resources/master/out/egSchema.rnc" type="application/relax-ng-compact-syntax"
 ?>
-<?xml-stylesheet type="text/xsl" href="dig-eg-gaz.xsl"?> <?xml-stylesheet type="text/css" href="dig-eg-gaz.css"?> <TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-stylesheet type="text/xsl" href="dig-eg-gaz.xsl"?>  <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -37,8 +37,7 @@
             <div type="page" n="2"> </div>
             <div type="page" n="3">
                 <cb n="1"/>
-                <div type="item">
-                    <head>PERSONAL AND SOCIAL.</head>
+                <div type="section" element="social"><head>PERSONAL AND SOCIAL.</head>
                     <p>Owing to the large number of tourists who have arrived within the last few
                         days, Shepheard’s Hotel and Ghezireh Palace are completely full. Among those
                         staying at Shepheard’s we notice Prince Omar Toussoun, Baron Pidoll, Sir
@@ -65,23 +64,20 @@
                         the importers conform with the regulations as to quarantine applied to
                         cattle imported from Syria.</p>
                 </div>
-                <div type="item">
-                    <head>STEAMER MOVEMENTS.</head>
+                <div type="section" element="steamerMovements"><head>STEAMER MOVEMENTS.</head>
                     <p>The Moss liner “Seti” sailed hence yesterday evening for Manchester, via
                         Malta, with passengers, mails, and general cargo, including 6,733 bales
                         cotton.</p>
                     <p>The Moss liner “Nitocris" sailed yesterday morning from Malta and is due here
                         on Sunday morning, with general cargo and coal from Glasgow.</p>
                 </div>
-                <div type="item">
-                    <head>BULLETIN DE La BOURSE</head>
+                <div type="section" xml:lang="fr" element="bulletinBourse"><head>BULLETIN DE LA BOURSE</head>
                     <p>(Aujourd’hui à midi et demie)</p>
                     <p>Les acheteurs se tenant sur la réserve, les cours restent à peu près
                         stationnaires.</p>
                 </div>
                 <div type="item">
-                    <head>THE DUKE OF CONNAUGHT.</head>
-                    <head>ARRIVAL AT ALEXANDRIA</head>
+                    <head>THE DUKE OF CONNAUGHT. ARRIVAL AT ALEXANDRIA</head>
                     <p>This morning at about 10.30 o'clock, the 1st class cruiser "Essex," with the
                         Duke and Duchess of Connaught on board, was sighted approaching Alexandria
                         harbour. Soon afterwards Mr E. B. Gould, I.S.O., H.M. s Consul-General at
@@ -112,8 +108,7 @@
                     <p>Their Royal Highnesses, with H H. the Khedive, will be present at the Cairo
                         races to-morrow.</p>
                 </div>
-                <div type="item">
-                    <head>THE KHEDIVE.</head>
+                <div type="section" element="khedive"><head>THE KHEDIVE.</head>
                     <p>The Khedive lias postponed his trip to the Lylnan Desert until the 22nd
                         proxo.</p>
                     <p>His Highness will preside at a meeting of the Council of Ministers to be held
@@ -174,7 +169,7 @@
                 <div type="item">
                     <head>EGYPT AND THE EMPRESS EUGENIE REMINISCENCES.</head>
                     <p>The following is from the “Daily Telegraph" of Thursday last : —</p>
-                    <p> To-morrow the Macedonia sails from Marseilles on her usual journey to Port
+                    <p>To-morrow the Macedonia sails from Marseilles on her usual journey to Port
                         Said and the East. Among her passengers is an aged lady, whoso hair is white
                         with years and trouble. She is travelling incognito, and her identity may
                         not become known to her fellow-passengers, but she is none other than
@@ -272,8 +267,8 @@
                         Egypt too— changed beyond all recognition save for the Pyramids and the
                         Nile.</p>
                 </div>
-                <div type="item">
-                    <head>HELOUAN NOTES. RAILWAY DEVELOPMENTS.</head>
+                <div type="section" element="notesHelouan">
+                    <head>HELOUAN NOTES.</head> <div type="item"><head>RAILWAY DEVELOPMENTS.</head>
                     <byline>(FROM OUR CORRESPONDENT.)</byline>
                     <dateline>Helouan, January 25.</dateline>
                     <p>The Delta Light Railway Company only took over the Helouan Railway towards
@@ -336,17 +331,16 @@
                         span as could be expected in a desert spot and cast a silent but significant
                         reflection on our reverence for our gallant soldiers, who have passed
                         away.</p>
-                </div>
+                </div></div>
                 <div type="item">
                     <head>SAVOY HOTEL, LUXOR.</head>
                     <p>Best and most comfortable, unique for its position on Nile bank. Under German
                         Management. Moderate charges. Patronised by officer of Army of Occupation.
                         Concerts twice daily.</p>
                 </div>
-                <div type="item">
-                    <head>SPORT AND PLAY.</head>
-                    <p>RACING.</p>
-                    <p>CAIRO SECOND WINTER MEETING.</p>
+                <div type="section" element="sport"><head>SPORT AND PLAY.</head>
+                    <div type="item"><head>RACING.</head>
+                    <head>CAIRO SECOND WINTER MEETING.</head>
                     <p>In spite of very cold and raw weather, there was quite a large attendance on
                         the first day of the Cairo 2nd Winter Meeting, though there were gaps which
                         the weather doubtless explained. Among those present we noticed H. R H.
@@ -371,8 +365,8 @@
                         of the course, giving Mr. René Carton de Wiart, who was riding, a nasty
                         fall, resulting in concussion of the brain. According to the latest reports,
                         no serious damage appears to have been done, and Mr. R. C. de Wiart will
-                        probably be none the worse in a week's time.</p>
-                </div>
+                        probably be none the worse in a week's time.</p></div>
+                
                 <div type="item">
                     <p>THE MAIDEN PLATE Value LE 25, 2nd horse to receive LE 3, if four or more
                         start, and 3rd horse LE 2, if six or more start, out of the stakes. For
@@ -382,7 +376,7 @@
                     <p>Mr. Tueni’s b.a.h. Caprice, Mathews. 10.6. 2 Ibrahim Bey Cherifs b.a.h. St.
                         Frusquin, Makhali. 10.6. 3</p>
                     <p>Hussein Bey Sioufi's b.a.h. Akid, 8.11. 0</p>
-                    <p>Omar Bey Saltan and Bakri Bey's b.a.h.</p>
+                    <p>Omar Bey Sultan and Bakri Bey's b.a.h.</p>
                     <p>Saiad II. 11.0. 0</p>
                     <p>Moharrem Pasha's b.a.h. Aeolus. 10.2 0</p>
                     <p>Kamel Eff. Maher’s g.a.h. Social Life, 10.8. 0 Ibrahim Bey Cherifs g.a.h.
@@ -440,36 +434,16 @@
                         miles.</p>
                     <p>Kalil Pasha Kayat's g.a.h. Latiff, 10.7. Jenkins. i Saleh Bey Yaghen’s
                         g.a.h.. London, 10.7. H. Suliman.</p>
-                </div>
-                <cb n="2"/>
-                <cb n="3"/>
-                <cb n="4"/>
-                <cb n="5"/>
-                <cb n="6"/>
+                </div></div>
             </div>
             <div type="page" n="4">
-                <cb n="1"/>
-                <cb n="2"/>
-                <cb n="3"/>
-                <cb n="4"/>
-                <cb n="5"/>
-                <cb n="6"/>
+               
             </div>
             <div type="page" n="5">
-                <cb n="1"/>
-                <cb n="2"/>
-                <cb n="3"/>
-                <cb n="4"/>
-                <cb n="5"/>
-                <cb n="6"/>
+               
             </div>
             <div type="page" n="6">
-                <cb n="1"/>
-                <cb n="2"/>
-                <cb n="3"/>
-                <cb n="4"/>
-                <cb n="5"/>
-                <cb n="6"/>
+                
             </div>
         </body>
     </text>
