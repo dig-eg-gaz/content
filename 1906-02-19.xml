@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/dig-eg-gaz/resources/master/out/egSchema.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-stylesheet type="text/xsl" href="dig-eg-gaz.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
@@ -22,6 +23,7 @@
                 <bibl>
                     <title>The Egyptian Gazette</title>
                     <date when="1906-02-19">February 19, 1906</date>
+                    <extent><measure unit="pages" quantity="8">8</measure> pages</extent>
                 </bibl>
             </sourceDesc>
         </fileDesc>
@@ -1637,7 +1639,7 @@
                         neighbours are apprehensive, and at the same time Germany has shown that she
                         regards Great Britain as it was regarded by Philip II., by Louis XIV., and
                         by Napoleon. The recognition of these foots has made dear to the other
-                        Continental States the true position of England, obscured tor nearly a
+                        Continental States the true position of England, obscured for nearly a
                         century They now see that England with her naval power is the balancing
                         element in the European system, the one element which by its nature must be
                         in sympathy with their independence and opposed to any designs which would
@@ -1676,7 +1678,7 @@
                         new chapter in its history. May it end happily.</p>
                     <p>The confirmation of the arrangement will take place on Saturday next</p>
                 </div>
-                <div type="item">
+                <div type="section" element="local">
                     <head>LOCAL AND GENERAL</head>
                     <p>Pasteur Institute.</p>
                     <!-- it will not let me put "head" as a tag for all of the subheadings -->
@@ -1716,7 +1718,7 @@
                         Society, but with the Societe de secour mutual de Portefaix d’Alexandrie
                         (i.e., the Town Porters’ Society).</p>
                     <p>Hellenic Diplomatic Agency.</p>
-                    <p>During the aoseuce ot the Helleuio Di¬plomatic: <persName>Agent M.
+                    <p>During the aoseuce of the Helleuio Di¬plomatic: <persName>Agent M.
                             rekalis</persName>, the secretary t. the consulate, will be acting
                         Consul-General. It is rumored that M, Geunadis, the Cunsu.- General, will be
                         appointed secretary to Prince George in Crete, as he has a thorough
@@ -1849,8 +1851,7 @@
                         there were numerous expressions of regret when the programme came to an
                         end</p>
                 </div>
-                <div type="item">
-                    <head>STEAMER MOVEMENTS</head>
+                <div type="section" element="steamerMovements"><head>STEAMER MOVEMENTS</head>
                     <p>The Messageries S.S. Portugal, from Mar eilles, passed the Straits of Messina
                         on SatURDay and is due here to-morrow.</p>
                     <p>The Moss liner Tabor sailed hence on Saturday afternoon, for Liverpool, v a M
@@ -1891,7 +1892,7 @@
                         Menasce, Messrs. Aghion, Beyerle. Foster, de Tschndi, Cattaui, Suares,
                         Zervudachi. Rollo, Ralli, Benachi, Salvago. Milton, and Pelazaeus decided to
                         choose the Director-General of Customs so as their candidate, it was the
-                        highest tribute n that oonld be paid to his character and capacity.</p>
+                        highest tribute n that could be paid to his character and capacity.</p>
                     <p> At the interview which took place at the British Agency this day week
                         between Lord Cromer and the directors, it was, however, decided that advice
                         from London should be, sought, but on Friday morning the Egyptian Government
@@ -1992,7 +1993,7 @@
                     <p>The report f the diree’oraof this oomnany for the period ending 31stDecember,
                         willbesnbm’t- ted to the shareholders at the seoond "'di ry general meeting
                         to be held at Wim-hes'er H nre, 0 d Broad Street, London, on Thursday next.
-                        The report and statement of accounts embrace the period sinoe the
+                        The report and statement of accounts embrace the period since the
                         incorporation of the company on the 9th of January, 1905, to the 81st
                         Deoember. 190V The operations of the period under review have resulted in a
                         nett profi' (without including any of the apprecia¬tion on investments
@@ -2136,7 +2137,7 @@
                         estimated the damages. Consequently there was no per¬formance on Saturday
                         night Iris gave place to Beidckt, and Cairo bad something to talk of.</p>
                 </div>
-                <div type="item">
+                <div type="section" element="social">
                     <head>PERSONAL AND SOCIAL</head>
                     <p>Sir Horace and Lady Pinching have left on a short trip to Upper Egypt.</p>
                     <p>Mr. Webb has left Cairo for Assouan on in¬spection</p>
@@ -2200,8 +2201,8 @@
             <div type="page" n="4">
                 <cols n="6"/>
                 <cb n="1"/>
-                <div type="item">
-                    <head>T0-DAY'S TELEGRAMS.</head>
+                <div type="section" element="wire">
+                    <head>TO-DAY'S TELEGRAMS.</head><div type="item">
                     <p>THE FRENCH PRESIDENCY.</p>
                     <p>M. FALLIERES ASSUMES OFFICE</p>
                     <p> PARIS, February 17.</p>
@@ -2376,12 +2377,12 @@
                     <p>Eatherquakes occurred over the island on Friday, which were the most severe
                         for 60 years : the damage was slight</p>
                     <p>(Reuter)</p>
-                </div>
-                <div type="item">
+                </div></div>
+                <div type="section" element="letters">
                     <head>LETTER TO THE EDITOR</head>
                     <p>We do not hold ourselves responsible (or the opinions expressed by oar
                         correspondents, but we wish, in a spirit of fair play to all, to permit —
-                        within certain necessary limits—free discussion.</p>
+                        within certain necessary limits—free discussion.</p><div type="item">
                     <p>ALLEGED ASSOUAN BALL INCIDENT</p>
                     <p>TO THE EDITOR OF THE EGYPTIAN GAZETTE</p>
                     <p>Dear Sir,—Had I realised, when, in a frivolous mood, I sent you my
@@ -2400,9 +2401,9 @@
                         Lover of Womanly Women” at any time she suggests.— Yours, etc.,</p>
                     <p>"A HATER OF LACK OF BREEDING"</p>
                     <p>POST OFFICE, Assouan, February 15.</p>
-                </div>
+                </div></div>
                 <cb n="3"/>
-                <div type="item" scope="calendar" xml:id="deg-el-coce01">
+                <div type="item" scope="calendar" element="comingEvents">
                     <head>Calendar of Coming Events</head>
                     <table cols="2" xml:id="deg-ta-coce01">
                         <row role="label">
@@ -2978,7 +2979,7 @@
                 <div type="item">
                     <head>AVIS</head>
                     <p>La Municipalite d’Alexandrie met au concours an poste d’ingenieur electricien
-                        de la Classe de L.E. 22 k 26 par mois.</p>
+                        de la Classe de L.E. 22 à 26 par mois.</p>
                     <p>Toute personne qui desirerait concoarir a ce poste est priee de presenter ene
                         demande avant lel5 Mars 1906 et da remettre en mdme temps, ses diplomes
                         universitaires, son acte de naissance ou un document en tenant lien ainsi
@@ -3675,8 +3676,8 @@
                         Paris, Bruxelles, An vers, Liverpool et New-York. La Circulaire quo- ti
                         tienne de la maison est envoyée sur demande. </p>
                 </div>
-                <div type="item">
-                    <head>PASSENGER LISTS.</head>
+                <div type="section" element="passList">
+<head>PASSENGER LISTS.</head>
                     <p>ARRIVALS.</p>
                     <p>The following passengers arrived on Saturday from Constantinople and Pi fie
                         is, by the S.S. Ismailia</p>
@@ -3702,8 +3703,7 @@
                         J. R Arthur, Mr. Scocimaro, Mr. Melandinos, Mr. W. Nonahai, 2 soldiers and 2
                         deck passengers.</p>
                 </div>
-                <div type="item">
-                    <head>SHIPPING MOVEMENTS</head>
+                <div type="section" element="shippingMovements"><head>SHIPPING MOVEMENTS</head>
                     <p>ALEXANDRIA HARBOUR</p>
                     <p>ARRIVALS</p>
                     <p><date>Feb.17</date></p>
@@ -3758,7 +3758,7 @@
                     <p>Remarques</p>
                     <p>(De midi à 1h. p.m.)</p>
                     <p>Coton.—A l’arrivée de l’avant bourse de Liverpool peu brillante au fond il y
-                        a eu de très fortes réalisations, ce qni a fait immédiatement reculer les
+                        a eu de très fortes réalisations, ce qui a fait immédiatement reculer les
                         prix. Les idées de la spécula¬tions sont pourtant toujours chaudes et ne
                         demandent qu’un appui du dehors</p>
                     <p>Graines de coton. - L’activ té a continué a faire défaut et la clôture a été
@@ -5378,6 +5378,7 @@
                 </div>
             </div>
             <div type="page" n="7">
+                <!-- check to make changes -->
                 <div type="page" xml:id="deg-el-vmhb01">
                 <div type="masthead">
                     <cols n="6"/>

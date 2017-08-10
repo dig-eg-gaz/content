@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/dig-eg-gaz/resources/master/out/egSchema.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-stylesheet type="text/xsl" href="dig-eg-gaz.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
@@ -22,6 +23,7 @@
                 <bibl>
                     <title>The Egyptian Gazette</title>
                     <date when="1906-01-15">January 15, 1906</date>
+                    <extent><measure unit="pages" quantity="8">8</measure> pages</extent>
                 </bibl>
             </sourceDesc>
         </fileDesc>
@@ -437,7 +439,7 @@
                         <p>Agencies in Egypt : ALEXANDRIA, CAIRO, &amp; PORT SAID.</p>
                         <p>Advances on Merchandise and Securities in current account and for fixed
                             periods. Purchase and sale of stocks and Shares on the London and
-                            Continental exchanges, letters of credit issued, valuables reoeived in
+                            Continental exchanges, letters of credit issued, valuables received in
                             safe custody. Drafts, cheques and telegraphic transfers issued on the
                             principal towns of the world. Foreign exchange purchased, bills
                             discounted, bills, invoices, annuities and dividends collected and every
@@ -1333,7 +1335,7 @@
                 </div>
             </div>
             <div type="page" n="3">
-                <div type="item">
+                <div type="section" element="local">
                     <head>LOCAL AND GENERAL.</head>
                     <p>Deutsche Orient Bank. The Alexandria branch of the Deutsche Orient Bank baa
                         been at work since the 3rd inst., and the branch at Cairo will be
@@ -1383,7 +1385,7 @@
             </div>
             <div type="page" n="4">
 
-                <div type="item">
+                <div type="section" element="wire">
                     <head>TO-DAY'S TELEGRAMS.</head>
                     <p>ELECTION CAMPAIGN.</p>
                     <p>MR. BLAFOUR DEFEATED.</p>
@@ -1406,7 +1408,7 @@
                         are beginning to quake, knowing that vacillators always follow the lead of
                         previous elections. Liberal headquarters are proportionately jubilant and
                         are confident of a big independent majority (Reuter)</p>
-                </div>
+                
                 <div type="item">
                     <head>MOROCCO CONFERENCE</head>
                     <p>COUNT TATTENBACH HOPEFUL.</p>
@@ -1467,7 +1469,7 @@
                     <head>INTERNATIONAL FOOTBALL.</head>
                     <p>London, January 13. Football. Rugby. Wales beat England by 16 to 3. (Reuter)
                     </p>
-                </div>
+                </div></div>
                 <div type="item">
                     <head>REPORTED FUSION OF HAMBURG-AMERIKA AND N.D.L.S.CO</head>
                     <p>A report is current in Berlin financial circles which ought to be well
@@ -1491,7 +1493,7 @@
                         Vladivostok to Odessa contained a clause providing for the possibility of
                         fusion. </p>
                 </div>
-                <div type="item">
+                <div type="item" element="comingEvents">
                     <head>CALENDER OF COMING EVENTS.</head>
                     <p>ALEXANDRIA</p>
                     <p>January.</p>
@@ -1554,7 +1556,7 @@
                     <p>PORT SAID and SUEZ.</p>
                     <p>TENDERS are hereby invited for new Contracts for the supply of Fresh Beef,
                         Mutton, Vegetables, Soft; Bread, and Water to His Majesty's Ships at Port
-                        Said and Suez, tor twelve months from 1st April 1906. </p>
+                        Said and Suez, for twelve months from 1st April 1906. </p>
                     <p>Each article should be tendered for separately, bat the tenders for all the
                         articles offered by any particular firm must be placid on the same form. </p>
                     <p>Prices should be quoted in English currency. Forms of Application can be
@@ -1616,7 +1618,7 @@
                     <head>The Egyptian Enterprise and Development Company.</head>
                     <p>AVIS</p>
                     <p>Le Conseil d’Administration a Thonneor d’informer MM. lès Actionnaires que
-                        snr le- 24.000 actions nouvelles, dont l’émission a été décidés par
+                        sur le- 24.000 actions nouvelles, dont l’émission a été décidés par
                         l’Assemblée Générale exjjraordi naire da 15 Déoembre, 16.000 aotions leur
                         ont été réservées, à raison de 1 action nouvelle poor 1 aotion ancienne, an
                         prix de £11, l’aotion. Ce droit de préférence est valable jnsqn’ao 16
@@ -1859,7 +1861,7 @@
                         from the time when in Alexandria there was a famine of femininity either
                         d'un monde ou de l'aotre. </p>
                 </div>
-                <div type="article">
+                <div type="section" element="sport">
                     <head>SPORT AND PLAY.</head>
                     <p>FOOTBALL.</p>
                     <p>R. INNISKILLING FUSILIERS REGIMENTAL SHIELD (FIRST ROUND).</p>
@@ -2189,27 +2191,31 @@
                         </row>
                     </table>
                 </div>
-                <div type="item">
-                    <head>SHIPPING MOVEMENTS</head>
+                <div type="section" element="shippingMovements"><head>SHIPPING MOVEMENTS</head>
                     <p>ALEXANDRIA HARBOUR.</p>
                     <p>ARRIVALS.</p>
                     <p>Jan. 13.</p>
-                    <p>Princesse Sophie, Greek a. Salonica and Pircens, Nanopoulo. Kosseir, Brit a.
-                        Constantinople and Pirceus, Khedivial Mail. Emp. Nicolas, Rosa. s. Odessa
-                        and Suda, Cie Russe.</p>
+                    <p>Princesse Sophie, Greek a. Salonica and Pircens, Nanopoulo. </p>
+                    <p>Kosseir, Brit a. Constantinople and Pirceus, Khedivial Mail. </p>
+                    <p>Emp. Nicolas, Rosa. s. Odessa and Suda, Cie Russe.</p>
                     <p>Jan. 14.</p>
-                    <p>Perseo, Ital. s. Genoa and Messina, Florio Robattino. Marie Reine, Grek a.
-                        Salonica and Adalia, Homey. O. H. Wiens, Swed. s. Kudikswall Salonique. Ott
-                        s. Alexandretta and Port-Said, Mazarakis. Drumlsish, Brit s. Androssan,
-                        Barker and Co. </p>
+                    <p>Perseo, Ital. s. Genoa and Messina, Florio Robattino. </p>
+                    <p>Marie Reine, Grek a. Salonica and Adalia, Homey. </p>
+                    <p>O. H. Wiens, Swed. s. Kudikswall </p>
+                    <p>Salonique. Ott s. Alexandretta and Port-Said, Mazarakis. </p>
+                    <p>Drumlsish, Brit s. Androssan, Barker and Co. </p>
                     <p>DEPARTURES</p>
                     <p>Jan. 13.</p>
-                    <p>Cleopatra, Austr. a Brindisi and Trieste. Byzantion, Greek s. Constantinople.
-                        Bosnian, Brit a. Malta and Liverpool. Foria, French s. Smyrna, in ballast. </p>
+                    <p>Cleopatra, Austr. a Brindisi and Trieste. </p>
+                    <p>Byzantion, Greek s. Constantinople. </p>
+                    <p>Bosnian, Brit a. Malta and Liverpool. </p>
+                    <p>Foria, French s. Smyrna, in ballast. </p>
                     <p>Jan. 14.</p>
-                    <p>Kosseir, Brit a. Port-Said and Syria. Bravo, Brit. s. Mereina Northfield,
-                        Brit s. Constantinople, in ballast. Obi, Brit a. London. Ariadne, Brit a.
-                        Hall </p>
+                    <p>Kosseir, Brit a. Port-Said and Syria. </p>
+                    <p>Bravo, Brit. s. Mereina </p>
+                    <p>Northfield, Brit s. Constantinople, in ballast. </p>
+                    <p>Obi, Brit a. London. </p>
+                    <p>Ariadne, Brit a. Hall </p>
                 </div>
                 <div type="article" scope="financial" xml:id="deg-el-lsex01">
                     <head>LONDON STOCK EXCHANGE.</head>

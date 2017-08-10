@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/dig-eg-gaz/resources/master/out/egSchema.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-stylesheet type="text/xsl" href="dig-eg-gaz.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
@@ -22,6 +23,7 @@
                 <bibl>
                     <title>The Egyptian Gazette</title>
                     <date when="1905-03-10">March 10, 1905</date>
+                    <extent><measure unit="pages" quantity="6">6</measure> pages</extent>
                 </bibl>
             </sourceDesc>
         </fileDesc>
@@ -470,7 +472,7 @@
                         <p>Agencies in Egypt : ALEXANDRIA, CAIRO, &amp; PORT SAID.</p>
                         <p>Advances on Merchandise and Securities in current account and for fixed
                             periods. Purchase and sale of stocks and Shares on the London and
-                            Continental exchanges, letters of credit issued, valuables reoeived in
+                            Continental exchanges, letters of credit issued, valuables received in
                             safe custody. Drafts, cheques and telegraphic transfers issued on the
                             principal towns of the world. Foreign exchange purchased, bills
                             discounted, bills, invoices, annuities and dividends collected and every
@@ -1362,7 +1364,7 @@
             </div>
             <div type="page" n="3">
                 <cb n="1"/>
-                <div type="item">
+                <div type="section" element="wire"><div type="item">
                     <head>KUROPATKIN’s danger.</head>
                     <p>RAILWAY LINE CUT.</p>
                     <p>JAPS ADVANCING ON HUN-HO</p>
@@ -1409,7 +1411,7 @@
                 <div type="item">
                     <head>FRENCH BUDGET.</head>
                     <p>Paris, March 9. The Chamber of Deputies has passed the Budget. (Haras.)</p>
-                </div>
+                </div></div>
                 <div type="item">
                     <head> TRADE WITH CYPRUS.</head>
                     <p>Principal Limassol to</p>
@@ -1618,7 +1620,7 @@
                         passages de 3me classe.</p>
                 </div>
                 <cb n="2"/>
-                <div type="item">
+                <div type="section" element="local">
                     <head>LOCAL AND GENERAL</head>
                     <p>Pigeon Shooting will commence at Gabbari on Sunday next at 2.30p.m.</p>
                     <p>The Brindisi Mail will close at the G.P.O., Alexandria, at 8.30 a.m. on
@@ -1633,7 +1635,7 @@
                     <p>Papyrus Find.—Our Tahta Correspondent writes that an important find of
                         papyrus has been ljiade among the ruins ot Kom-Eshgar, in the Tahta
                         district. The papyrus has been suit to tlie Moudirich.</p>
-                    <p>Smoring Concert.— We may remiud our icaiiers ot the concert to be given at
+                    <p>Smoring Concert.— We may remiud our icaiiers of the concert to be given at
                         Alonterra- to* Hail to-morrow evening, by Mr. Soott- Leshe, assisted by
                         several local amateurs. This wm be Mr. Scott Leslie's farewell appearance m
                         Alexandria.</p>
@@ -1649,7 +1651,7 @@
                     <p>Ghezireii Palace Hotel.—We regret that thiougu a typogiapbical error in our
                         report ol llie Guezireh laucy-dress ball yesterday, Mr. Kay appeared as Mrs.
                         Kay in the descnp*' tiou ot that gentleman s striking tcmiuiue uttire. The
-                        “get-up ’ was so good, we believe, that' Mr. Kay was actually asked tor a
+                        “get-up ’ was so good, we believe, that' Mr. Kay was actually asked for a
                         dance under* the belie! that he was a member ot tiie weaker sex.</p>
                     <p>Union. ArtistkiUE Fran^aisk.—Tho coin* miitee of the society is . now
                         computed us loilows :—A. Nicolas, president ; li. V. Tnoiu and De Lagurcnne,
@@ -1718,7 +1720,7 @@
                         officials and clerks from Port Arthur. They leave to-day for Odessa by the
                         Russian steamer.</p>
                 </div>
-                <div type="item">
+                <div type="section" element="khedive">
                     <head>THE KHEDIVE.</head>
                     <p>The Khedive spent yesterday on his estates</p>
                     <p>at Mariout.</p>
@@ -1729,7 +1731,7 @@
                         S.S. “Cairo” lies stranded, and was conducting investigations as we went to
                         press.</p>
                     <p>The crow of the vessel left yesterday for Italy by the Flurio-Kubattiuo S.S.
-                        “Singapore” en route tor Genoa. Only six remained here, including Captain de
+                        “Singapore” en route for Genoa. Only six remained here, including Captain de
                         Marchi, in connection with the inquiry.</p>
                     <p>Signor Novelli and his company have changed their methods of legal attack,
                         and intend suing the captain of the “Cairo” personally, the Fiorio-Kubattino
@@ -1766,7 +1768,7 @@
                         garden had been hung with multicoloured Chinese lauterus in tasteful design,
                         and there being no moon, the effect produced was extremely picturesque.
                         Electric lights had also been fixed in many of the trees, and the
-                        rose-coloured lamps ou the tops ot the highest palms completed a very pretty
+                        rose-coloured lamps ou the tops of the highest palms completed a very pretty
                         sight.</p>
                     <p>The fireworks were greatly appreciated and confetti were thrown with such
                         vigour, and in such quantity, that the paths were in places almost
@@ -1782,7 +1784,7 @@
                         Consol General. Mrs. Carey also entertained a party of six, and other
                         parties were those of Mr. Rutherford, Mr. Devries, Mr. Hiller, Mr. Moroom,
                         etc.</p>
-                    <p>Others to be seen in tbe restaurant were the Rt. Hon. J. W. Mellor, Baron
+                    <p>Others to be seen in the restaurant were the Rt. Hon. J. W. Mellor, Baron
                         Vogel von Falkenstein, Lady Bell, Countess Holnstein, and Vicomte de
                         Sapucahi.</p>
                     <p>The Egyptian Infantry band discoursed a programme of music in one of the
@@ -1800,7 +1802,7 @@
                         which was approved by the Council of Ministers last Monday :—</p>
                     <p>Nons, Kbtfdive d’Egypte, sor la proposition de notre ininistre de l’intlrieur
                         et Favis con forme de notre oonseil des ministres ; vu la deliberation de
-                        l’assexnbiee general© de la Oonr d’appel mixta en date dn 31 janvier 1905,
+                        l’assexnbiee general© de la Oonr d’appel mixta en date du 31 janvier 1905,
                         prise on conformity du decret du 31 j&amp;nvier 1889; le Conseil Legislatif
                         entendu, d4crtf- tous:</p>
                     <p>Art. ler.—Nul ne pourra, sans une autori sation prealablo de l’administration
@@ -1820,17 +1822,17 @@
                     <p>Art. 2.—tfont rdputdea loteries toutes opt^ra tious offerees au*public, sous
                         queique denomination que ce suit, dont le beultioe serait acquis umquement
                         par la vote du sort.</p>
-                    <p>L’aasimiiatiun ne s’etend pas aux valours k lots sp4cialement autons4es, soit
+                    <p>L’aasimiiatiun ne s’etend pas aux valours à lots sp4cialement autons4es, soit
                         par le gou veroeinent cgyptien, soit par le gouvemement otranger dont la
-                        legislation serait applicable k Remission; mais la vente au public des
+                        legislation serait applicable à Remission; mais la vente au public des
                         chances au tirage des cutes valeura esc comprise dans la proiiihitiou de 1
                         article ler.</p>
-                    <p>’Art. 3.—Toute ouutravention k l’article ler sera pume d’une amende ne
+                    <p>’Art. 3.—Toute ouutravention à l’article ler sera pume d’une amende ne
                         depassant pas</p>
                     <p>P.T. lou.</p>
                     <p>En cas d’une seconde coudainnation, le juge pourra, outre l'amende, appUquer
                         la peiue d'einprisounement ne depaosant pas une se* maine.</p>
-                    <p>Les billets et objets ayant servi k la con iraventiou scroiit ooutisquds.</p>
+                    <p>Les billets et objets ayant servi à la con iraventiou scroiit ooutisquds.</p>
                     <p>Art. 4.—Le present decret entrera en vi gueur 30 jours apr£s sa publication
                         au Journal</p>
                     <p>OJJiciel.</p>
@@ -1866,8 +1868,8 @@
                         with pale blue sashes and blue hats tied with chiffon strings. Each wore ,a
                         moonstone pendant with gold chain, on which were the initials of the wearer
                         in diamonds, and carried a bouquet of daffodils tied with long pale blue
-                        nbbon. The Rev. Vincent Hornyold officiated, and tbe other priests were
-                        Father Sebastian Bowden, S J., tbe Rev. Odo Laugdale, O.8.B., oousin of the
+                        nbbon. The Rev. Vincent Hornyold officiated, and the other priests were
+                        Father Sebastian Bowden, S J., the Rev. Odo Laugdale, O.8.B., oousin of the
                         bride, the Rev. F. Knapp, and the Rev. Bernard Vaughan, S,J. Lady Lovat lent
                         her house in Grosvenor-gardens for the reception. Princess Henry of
                         Battenberg's gift to the bridegroom was a silver cream ewer and sugar bowl,
@@ -1883,9 +1885,8 @@
                         awaits the train to convey passengers on board.</p>
                     <p>25518-126</p>
                 </div>
-                <div type="item">
-                    <head>STEAMER MOVEMENTS.</head>
-                    <p>The 8.8. “Fabian” arrived at Liverpool yesterday.</p>
+                <div type="section" element="steamerMovements"><head>STEAMER MOVEMENTS.</head>
+                    <p>The S.S. “Fabian” arrived at Liverpool yesterday.</p>
                     <p>The Westoott and Laurance SE “Egyptian” left Malta yesterday evening, coming
                         from Antwerp and London, and it due hero on the 18th inst.</p>
                 </div>
@@ -1925,13 +1926,13 @@
                             <p>Mais les promoteurs n en ont cure. 11s 66 preoccupent peu que la
                                 souscription soit converts 33 fois i- Le rfidacteur du prospectus n
                                 a pas chauffe le client, contr&amp;irement aux usages suivis jusqu'k
-                                ce jour. Ne tenant pas k susciter de l'enthousiasme aux foules,il ne
+                                ce jour. Ne tenant pas à susciter de l'enthousiasme aux foules,il ne
                                 fait miroiter aux yeux du public ni concessions de terraijia^ii
                                 dividendes mirobolants. 11 ne fait point de pro- messes. 11 dit
                                 simplement, en ce qui conoeme les exploitations ionci&amp;res qu’on
                                 estime que les opportunity de s'assurer des terrains qui aug-
                                 menteront de valour se pryenleront!</p>
-                            <p>Pour les terrains k butir il k%considere que la Cie retirera de cette
+                            <p>Pour les terrains à butir il k%considere que la Cie retirera de cette
                                 source de bon* revenus”.</p>
                             <p>II dit aussi; “que les trav&amp;ux d irrigation et d’&amp;mllioration
                                 des terras seront des entre- prises protitables”.</p>
@@ -1945,7 +1946,7 @@
                                 p&amp;rtie de gens fortement engages en bourse, qui craigneut de
                                 voir d4pn£- cier les anciennes valeura au profit des nou voltes. Les
                                 autres sont des bounders, qui ne oom- prenant pas l’anglais, vout
-                                lire les joumaux et r£p£tent k leur tour et k lour mani&amp;re les
+                                lire les joumaux et r£p£tent à leur tour et à lour mani&amp;re les
                                 critiques qui y sout formulae*; c ost ainsi que nous voyous en ville
                                 des badauds r^peter oouram- rnent “que le tiers des b4n&lt;$fioes et
                                 du.... capital seront engloutis par les parts de fonda- teurs I
@@ -1955,11 +1956,11 @@
                                 parts de fondAteurs n'4taitpr4lev4 qu!apr&amp;* avoir pay4 le 5 0/0
                                 aux actionnaires.</p>
                             <p>N’est-il pas legitime, apr£s avoir distribu4 uu intlrdt
-                                r&amp;itonnable k l’argent engagd et dot£ le foods de reserve, de
+                                r&amp;itonnable à l’argent engagd et dot£ le foods de reserve, de
                                 destiner sur le surplus des b4n4fioes one part aux promoteurs de
                                 l’&amp;ffaire comme retribution de lours services pr£ty avant et
                                 apr&amp;s la formation de la society</p>
-                            <p>Car oette entreprise n’est pas, oomme on le pretend, l’oeuvre d’un
+                            <p>Car cette entreprise n’est pas, oomme on le pretend, l’oeuvre d’un
                                 matin; mais bien le fruit de pluaieurs anutas dt-tudea, d’observa-
                                 tions et de recherches.</p>
                             <p>N’interosse t-on pas le Directeur d’une ban- que dans sa gestion,
@@ -1967,29 +1968,29 @@
                                 d’ex- traordinaire et de malpropre ? Oh est aurtout le danger de
                                 perdre son argent I N’est-ce pas lk plutdt on moyen pour en gaguer
                                 da vantage.</p>
-                            <p> Quant k la nature de l’affaire il nest memo pas nlce8saire de dire
+                            <p> Quant à la nature de l’affaire il nest memo pas nlce8saire de dire
                                 qu’elle a des chances de rdussir. Toutes les society foncieres en
                                 Egypte proephreot. Jetons un coup d’ccil rd- trospectif sur les
                                 sooidty de ce genre et nous venrons par la cote de lours actions les
                                 progry qu’ellea ont reality en peu de temps.</p>
-                            <p>AiiVKi la B4h4ra a vu see actions passer de £ 5 prix nominal k £ 50
-                                et 52, la Daira Sanieh de £ 5 k 27, la Soci6t4 Agricole et
-                                Industrielle de fr. 500 (en 1898) k fr. 1100, !&amp;Soci4t4 fon-
-                                ci^re de £ 20 k 36, l’Eg. Delta Land de £ 1 k 3 7/8, la Wardan
-                                Estate de 5 k 7 3/8,la Nile Land Agrioultural de LR 5 k 7 1/4 et la
+                            <p>AiiVKi la B4h4ra a vu see actions passer de £ 5 prix nominal à £ 50
+                                et 52, la Daira Sanieh de £ 5 à 27, la Soci6t4 Agricole et
+                                Industrielle de fr. 500 (en 1898) à fr. 1100, !&amp;Soci4t4 fon-
+                                ci^re de £ 20 à 36, l’Eg. Delta Land de £ 1 à 3 7/8, la Wardan
+                                Estate de 5 à 7 3/8,la Nile Land Agrioultural de LR 5 à 7 1/4 et la
                                 So- oiM d’Aboukir dont le directeur g4n4ral sera 1’admbistrateur
                                 d4l4gu4 en Egypte de l’Egjrp- tian Estate donne le 20 % de
                                 dividends.</p>
                             <p>La sooiltl qui offre aujourd’hoi ses actions suivra le progry et les
                                 suoys de ses devan- ci^res.</p> Ajoutons que l'Egypti&amp;n Estates
-                            s'est assort k Londree le placement de ua million d’obliga- tions aux
+                            s'est assort à Londree le placement de ua million d’obliga- tions aux
                             meiUeores conditions. Les b4n4fioes qui ryulteront du pl&amp;oement de
-                            oette somme en Egypte, iront tout naturellement aux eotiona #</note>
+                            cette somme en Egypte, iront tout naturellement aux eotiona #</note>
                     </p>
                 </div>
                 <cb n="6"/>
-                <div type="item">
-                    <head>Personal and Social</head>
+                <div type="section" element="social">
+                    <head>PERSONAL AND Social</head>
                     <p>
                         <note>
                             <p>H. R H. Prince Leopold of Batten berg i expected to return to Cairo
@@ -2244,7 +2245,7 @@
                     <head>Egyptian Delta Light Railways, Ltd.</head>
                     <p>Offers are invietd for the purchase of the following plots of reclaimed land
                         on the North Side of Damanhour close to the Egyptin Railway: = </p>
-                    <p>One lot measuring 1f 1 k 21 s</p>
+                    <p>One lot measuring 1f 1 à 21 s</p>
                     <p>2 3 0</p>
                     <p>4 16 13</p>
                     <p>The plan can be seen at the Company's offices, Cairo, Alexandria, Tantah and
@@ -3966,7 +3967,7 @@
                     <p>diares aud 1,250 fully-paid shares, has pros peeling rights over a large
                         concession in the Suakiu district of the Sudan. The considerable interests
                         which this syndicate holds in Egypt ind the Sudan, and tho large amount of
-                        capital it has been successful in introducing tor the exploration of its
+                        capital it has been successful in introducing for the exploration of its
                         properties, have caused the directors to be approached with Hers of further
                         concessions. In connection with two of the properties recently brought to
                         their notice, they were able to arrange for the necessary time lor their
@@ -3993,7 +3994,7 @@
                     <p>At a subsequent extraordinary general meeting the resolution to iucrease the
                         capital by 27,500 shares of £1 each was carried unanimously.</p>
                 </div>
-                <div type="item"> 
+                <div type="section" element="letters"> 
                     <head>Letters to the Editor</head>
                     <p>We do not hold oursleesc for the responsible opinions expressed by our correspondents but we wish, in a spirit of fair play to all, to permit- within certain necessary limits- free discussion.</p>
                     <p>RELIGION IN THE SCHOOLS</p>
@@ -4085,13 +4086,13 @@
                         well be effected by reducing the amount of unnecessary correspondence that
                         now takes place, and by the employment of contractors or piece workers to a
                         considerable extent in place of day labour. On the occasion of this in-‘pec
-                        iuu some inconvenience has been caused by the absenoe of plans and estimates
+                        iuu some inconvenience has been caused by the absence of plans and estimates
                         for the different projects to be considered. It is highly desirable that in
                         every case possible, a plau and estimate should be prepared in conjunction
                         with other departments concerned, and it is only by attention to such points
                         that economy and efficiency can be secured.</p>
-                </div><div type="item">
-                    <head>. SPORT AND PLAY.</head>
+                </div><div type="section" element="sport">
+                    <head>SPORT AND PLAY.</head>
                     <p>FOOTBALL.</p>
                     <p>SAINT ANDREW'S FOOTBALL CLUB, c. R. BERKS* SIGNALLERS.</p>
                     <p>This match was played on the ground of the former at Moharrem Bey on Saturday

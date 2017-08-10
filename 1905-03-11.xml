@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/dig-eg-gaz/resources/master/out/egSchema.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-stylesheet type="text/xsl" href="dig-eg-gaz.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
@@ -22,6 +23,7 @@
                 <bibl>
                     <title>The Egyptian Gazette</title>
                     <date when="1905-03-11">March 11, 1905</date>
+                    <extent><measure unit="pages" quantity="6">6</measure> pages</extent>
                 </bibl>
             </sourceDesc>
         </fileDesc>
@@ -1764,7 +1766,7 @@
                 </div>
             </div>
             <div type="page" n="3">
-                <div type="item">
+                <div type="section" element="wire"><div type="item">
                     <head>FALL OF MUKDEN</head>
                     <head>COMPLETE RUSSIAN DEFEAT</head>
                     <head>BBRIG GUNS CAPTURED</head>
@@ -1781,7 +1783,7 @@
                     <p>The Japanese occupied Pushan yesterday evening. They captured all the big
                         guns and threaten cut the Kirin road. [Havas.)</p>
                     <p>, Tokio, March 10.</p>
-                    <p>Fufhan was occupied yesterday evening. Tbe fighting continues oti the
+                    <p>Fufhan was occupied yesterday evening. The fighting continues oti the
                         northern heights of Pushan. Many Russian guns, including practically all the
                         heavy ordnance, have been captured.</p>
                     <p>Oyama reports that the enveloping movement which has been practised for some
@@ -1789,7 +1791,7 @@
                         vicinity of Mukden.</p>
                     <p>A great number of prisoners, and enormous quantities of arms, ammunition, and
                         supplies have, been taken. (Reuter.}</p>
-                </div>
+                </div></div>
                 <div type="item">
                     <p>
                         <hi xml:id="bookmark4">MR. C. NICOLAOITS CONCERT.</hi>
@@ -1838,8 +1840,8 @@
                         pitch,"</p>
                 </div>
                 <cb n="2"/>
-                <div type="item">
-                    <head>Local and General</head>
+                <div type="section" element="local">
+                    <head>LOCAL AND General</head>
                     <p>The White Star Liner "Cnpie" Leaves Alexandria this afteroon on the
                         continuation of her cruise in the Mediterranean.</p>
                 </div>
@@ -1857,7 +1859,7 @@
                         47,558.267.</p>
                 </div>
                 <div type="item">
-                    <p>Suez Canal.—11 vessels passed through tbe Canal on the 8th iust., 4 of which
+                    <p>Suez Canal.—11 vessels passed through the Canal on the 8th iust., 4 of which
                         were British, 2 German, 1 Austrian, 1 French, 1 Norwegian, 1 Dutch, 1
                         Turkish. The receipts for the (lay were Irs. 289,179.68, making the total
                         from the 1st, iust. Irs: 2,459,687.03.</p>
@@ -1881,15 +1883,14 @@
                     <p>Cairo Railway Station.—Electro pneumatic signalling lias been contracted fur
                         at this station ; but it would, iu the opinion of the Railway Commission, be
                         desirable to postpoue this work until a more definite aud comprehensive plan
-                        for the laying out ol tbe whole of the lines in Cairo station and sidiugs
+                        for the laying out ol the whole of the lines in Cairo station and sidiugs
                         has been decided upon. No estimate or plan for this had been furnished to
                         the Comiuis*iou, but with the primitive conditiou of the signalling in all
                         other parts of Egypt, they think that this electro-pueumatic signalling can
                         hardly be necessary.</p>
                     <p/>
                 </div>
-                <div type="item">
-                    <head>STEAMER MOVEMENTS.</head>
+                <div type="section" element="steamerMovements"><head>STEAMER MOVEMENTS.</head>
                     <p>THe Moss liner "Menes" sailed yesterday afternoon from Liverpool and is due
                         here about the 25th inst., with passengers, mails, and general cargo. The
                         Moss liner "seti" arrived yesterday afternoon from Liverpool via Gibraltar,
@@ -1927,7 +1928,7 @@
                         this afternoon.</p>
                     <p>The S.S. "“Odessa” left Jeddah to-day with 1,450 Russian pilgrims on
                         board.</p>
-                    <p>WIRELESS TELEGRAPHY AT SUEZ.</p>
+                </div><div type="item">  <p>WIRELESS TELEGRAPHY AT SUEZ.</p>
                     <p>(From our Correspondent).</p>
                     <p>Suez, Friday.</p>
                     <p>Arrangements have now been concluded between Uoyd’s and the Marconi
@@ -1937,12 +1938,12 @@
                         at Suez on Wednesday night. The apparatus is in charge of an export from the
                         Marcoui Company. The station is expected to be ready shortly, and will
                         oomuiuQtcate with steamers in the Red Sea haviug wireless apparatus on
-                        board.</p>
-                    <p>THE KHEDIVE.</p>
+                        board.</p></div><div type="section" element="khedive">
+                    <head>THE KHEDIVE.</head>
                     <p>The Khedive attended Friday prayers at Montaz&amp;h Mosque yesterday.</p>
                     <p>To-day, his Highness goes to Matrouh and will proceed on his excursion to the
-                        Libyan Desert, accompanied by his suite.</p>
-                    <p>THE STRANDING OF.THE "CAIRO.”</p>
+                        Libyan Desert, accompanied by his suite.</p></div><div type="item">
+                    <head>THE STRANDING OF.THE "CAIRO.”</head>
                     <p>The ei quiry into the circumstances attending the stranding of the
                         Florio-Rubattino S.S.</p>
                     <p>' Cairo” at i he entrance to Alexandria harbour has been concluded at the
@@ -1998,7 +1999,7 @@
                         excellent results.</p>
                     <p>FAYOUM S.P.CJL</p>
                     <p>Only yesterday this society was organised here, the Moudir as president and
-                        Mr. Way, of tbe Agricultural Bank, as secretary; there are about thirty
+                        Mr. Way, of the Agricultural Bank, as secretary; there are about thirty
                         members, and it is expected others will join shortly. It is intended to
                         build a hospital for animals.</p>
                     <p>Major Elgood helped in the foundation of the society here, and it is expected
@@ -2018,7 +2019,7 @@
                 </div>
                 <div type="item">
                     <head>EGYPT’S DEVELOPMENT.</head>
-                    <p>I agree with the writer of “Under tbe Mosquito Net,” that this country is
+                    <p>I agree with the writer of “Under the Mosquito Net,” that this country is
                         advancing in every way aud that everybody can see the difference between
                         Egypt of thirty years ago and Egypt of to-day. The industrious peasant is
                         quite safe now and is working his lands very successfully. But I would ssk
@@ -2117,7 +2118,7 @@
                     </table>
                     <p> </p>
                 </div>
-                <div type="item">
+                <div type="section" element="passList">
                     <head>ARRIVALS.</head>
                     <p>Per Moss 8.S. "Seti,” arrived yesterday from Liverpool, viA Gibraltar,
                         Algiers, and Malta:—Miss Bartlett, Mr. and Mrs. J. E. Black, Mr. and Mrs. A.
@@ -2126,9 +2127,8 @@
                         Hildyard, Mr. R. Parker, Mr. A. MacIntyre, Mr. H. Sharpe, Mr. Arthur Smart,
                         Mr. C. D. Smart, Mr. W. Walmaley, Mr Lawton, Mr. Gomez, Mr. Crantar, Mrs.
                         Bonana, Mr. Crantar, and 17 details of the Army of Occupation.</p>
-                </div>
-                <div type="item">
-                    <head>DEPARTURE8.</head>
+               
+                    <p>DEPARTURE8.</p>
                     <p>Le paquebot "Niger”, des Messageries Mari times parti pour Marseille le 10
                         mars avait</p>
                     <p>k bord:</p>
@@ -2149,12 +2149,12 @@
                         fait ddjk 3/16 de prime.</p>
                     <p>Bien que lea affaires soient pen n ombre uses ou mGme nulles sur les autres
                         valours, le* oours oependant se maiutiennent fermes ; la Banqne Nationale
-                        reprend mfime de 27 8/16 k 27 1/4 et 1‘Agricole de 11 3/16k11 5/16. Par
-                        oontre la baisse s’acoentue en B4blra de 51 1/2 k 50 1/4, en Delta Land de8
-                        8/4 k 8 11/16 et </p>
+                        reprend mfime de 27 8/16 à 27 1/4 et 1‘Agricole de 11 3/16k11 5/16. Par
+                        oontre la baisse s’acoentue en B4blra de 51 1/2 à 50 1/4, en Delta Land de8
+                        8/4 à 8 11/16 et </p>
                 </div>
                 <cb n="5"/>
-                <div type="item">
+                <div type="section" element="sport">
                     <head>SPORT AND PLAY</head>
                     <head>K. S. C. GYMKHANA.</head>
                     <p>
@@ -2185,7 +2185,7 @@
                                 comic. The House-keeping Stakes revealed a sad absence of the higher
                                 ma^uematios among the ladies, who mostly succumbed to the fatal
                                 problem of the “herring and &amp; half that cost 1} piastres,” aud
-                                of whom oue only gave her companion a oorreot answer. The last event
+                                of whom oue only gave her companion a correct answer. The last event
                                 was very interesting, Capt and Mrs. Bay ley and the Hon. A. Stanley,
                                 with Mins Hurloy, giving a very good display of riding.</p>
                             <p>The following is the list of prize-winners :—</p>
@@ -2253,7 +2253,7 @@
                     <p>F. MICALLEF, Sole Agent, 11 Bab Midan, Alexandria</p>
                 </div>
                 <cb n="6"/>
-                <div type="item">
+                <div type="section" element="social">
                     <head>PERSONAL AND SOCIAL</head>
                     <p>Price Aziz Pasha Hassau has returned to Alexandria from Cairo.</p>
                     <p>Sir F. R Wingate Pasha, Governor General of the Sudan, is expected at Cairo
@@ -2270,12 +2270,12 @@
                         attendance, to see him. On entering his abode the Dervish rose, made a low
                         obeisance, and addressed her thus : “Weloome, you are thrice welcome’ to my
                         humble dwelling, oh, Effipress I* Eugenie, vexed and astonished, replied,
-                        "How do you know that I am an Empress, and who told you I was ooming here V’
+                        "How do you know that I am an Empress, and who told you I was coming here V’
                         The Dervish answered: “The stars and Mohamed know everything. I knew since
                         your arrival in Egypt that you would come to ‘ me, and L have patiently
                         waited every night, for afterwards I am commanded by Allah to make my last
                         journey to Mecoa and die.”</p>
-                    <p>Tbe Empress, very frightened, was getting up to leave, for she began to fear
+                    <p>The Empress, very frightened, was getting up to leave, for she began to fear
                         this mysterious man, but, summoning courage, she said, in a haughty tone:
                         "It is true that I am * the Empress, though no one knows it but my
                         attendant; tell me what you can'of my future, tell me all, and tell me
@@ -2284,13 +2284,13 @@
                         himself to his full height, and dropping his staff, he held his hand aloft
                         as in invocation to Allah. Looking down piteously on the dark figure of the
                         Empress, he murmured slowly, “There is no God but God and Mohamed is His
-                        Prophet At yourbirth tbe stars foretold for you great powe and greater
+                        Prophet At yourbirth the stars foretold for you great powe and greater
                         sorrow, for your happiness will only be temporary, but your sorrow will last
                         for ever. You are doomed to lose your throne, your husband, and your son,
                         and, wander alone through the world like a lost star." ,</p>
                     <p>““These events will not happen' at once, for the blow would kill you. To ypu
                         as an Empress it will not be permitted to enter the Land of your husband or
-                        son, exoept by permission of those you despise. You will have to seek a home
+                        son, except by permission of those you despise. You will have to seek a home
                         with strangers, and the dress of woe will never leave your form; your jewels
                         will be but tear drops. I have said.” He had scarcely ceased speaking when
                         the Empress, terrified and angry, threw at his feet a purse of gold, crying
@@ -2339,7 +2339,7 @@
                 </div>
             </div>
             <div type="page" n="4">
-                <div type="item">
+                <div type="section" element="army">
                     <head>ARMY AND NAVY</head>
                     <p>(From Our Correspondent) <table>
                             <row>
@@ -2507,7 +2507,7 @@
                         alight at Sidi Gaber Station.</p>
                 </div>
                 <cb n="2"/>
-                <div type="item">
+                <div type="section" element="letters">
                     <head>CAIRO S.P.C.A</head>
                     <p>To the Editor of- the “Eoyptian Gazette.”</p>
                     <p>Sir,— 1 think that you expect a little too much from our visitors. No doubt
@@ -2620,7 +2620,7 @@
                         been made in the development of the ipdustry, owing to the absence of
                         suitable machinery' for extracting the rubber, and to the dirty processes as
                         yet in vogue for preparing it, which prevent its acceptance in the E6ropean
-                        market exoept at a very Jow rate.</p>
+                        market except at a very Jow rate.</p>
                     <p>We now learn that the Congo Administra tion has succeeded in bringing into
                         the market a species of Landolphia as yet scientifically unnamed ; but which
                         is known familiarly as “Grass rubber/' and has already brought a small
@@ -2631,7 +2631,7 @@
                         shoots, or roots, when only a few feet from the ground, ami it is those
                         roots which furnish the rubber ; it is mostly found amongst grass which has
                         sprung up in a forest clearing after a fire— hence its popular name. The
-                        roots contain a white fibrous mass which is, c nnpamtively, dry and elastic,
+                        roots contain a white fibrous mass which is, c unpamtively, dry and elastic,
                         and replaces the ordinary milky sap.</p>
                     <p>By bruiring with a machine the skin of these roots, with great care so as not
                         to break up the fibre, the latter is easily separated and rolled into boll*
@@ -2715,7 +2715,7 @@
                         Whatever his «tuck of goods may be, they certainly are not British. Once
                         more then we are lod to the old recommendation go often quoted by this
                         Chamber, to British manufacturers, namely, seud capable travellers, push the
-                        Briti-h article. In many branches ot the trade, were this d >ne, a large
+                        Briti-h article. In many branches of the trade, were this d >ne, a large
                         amount of businass could be brought to Great Britain. But to go a step
                         further, it eau un hesitatingly be stated that almost tho entire trade of
                         builders’ ironmonger)- could be captur</p>
@@ -2839,7 +2839,7 @@
                         Herbert Spencer’s àutvbiography, in which he refers to “—the insoluble
                         questions concerning our owu fate : the evidence seeming so strong that the
                         relations of mind and nervous structure are such that the cessatiou ot the
-                        one accompanies the dissolution ot the other, while, simultaneously, comes
+                        one accompanies the dissolution of the other, while, simultaneously, comes
                         the thought so strange, aud so diÛiuult to realise, that with death there
                         lapses both the consciousness of existence aud the couscious- ness.of having
                         existed.’’</p>
@@ -2893,7 +2893,7 @@
                         large to enable him to become the arbiter ot his own destiny.</p>
                     <p>• *</p>
                     <cb/>
-                    <p>And what is true of the individual may be equally true ot the nation, so that
+                    <p>And what is true of the individual may be equally true of the nation, so that
                         we may ses</p>
                     <p>in a collective form the very same errors (and worse) thufcswe see in the
                         person, exemplified in the conduct of the community at large, and with as
@@ -3031,7 +3031,7 @@
                             <p>Earl Percy : The answer to the first paragraph is in . the negative.
                                 The contribution from the Egy ptian Exchequer has been fixed, by
                                 agreement between the two Government*, on tlie basis of the amount
-                                by whioh the cost of the garrison iu Egypt exceeds the cost of its
+                                by which the cost of the garrison iu Egypt exceeds the cost of its
                                 maintenance at home. Its present strength is os follows : One
                                 battery Royal Field Artilr lery, one battery Mountain Artillery, one
                                 company Royal Engineers, three battalions infantry.</p>
@@ -3116,7 +3116,7 @@
                         pays just tribute to the enthusiasm of the rank and file of Islamism.While
                         he was passing through the sacred shrine this feeling got the better even of
                         his own agnosticism, and the song, ‘Labbaik Allahomma Labbaik,” describing
-                        the oneness ot the Almighty, coming from thousands of throats, brought a
+                        the oneness of the Almighty, coming from thousands of throats, brought a
                         feeling of awe upon him, and compelled him instinctively to join in its
                         chorus, while, as he says, he rubbed his nose on the floor. Tho fountain of
                         Zem zem is described as “neither sweet nor bitter, neither fresh nor salt,
@@ -3250,7 +3250,7 @@
                         bien d’autres affaires en vue, dont elle poureuit les négociations. Il e*t
                         certain que la Société basant ses affaires sur des principes solides et
                         honnêtes et ménageant los préjugés et susceptibilités des indigènes, doit
-                        forcément avoir nne forte position et une grande part dans U prospérité
+                        forcément avoir une forte position et une grande part dans U prospérité
                         toujour* croissante du pay* ICOI OAP For Delicate Sensitive, Irritable
                         Skins. * 5 kinds r Premier Floral, Toilet (Otto), Medical, and Vestal. </p>
                 </div>
@@ -3483,7 +3483,7 @@
                     </table>
                 </div>
                 <cb/>
-                <div type="article" xml:lang="fr" xml:id="deg-el-mmpa01">
+                <div type="article" xml:lang="fr" element="mouvementMaritime">
                     <head>MOUVEMENT MARITIME DU PORT D’ALEXANDRIE</head>
                     <p>ARRIVÉES</p>
                     <p><date when="1905-03-07">9 mars</date></p>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/dig-eg-gaz/resources/master/out/egSchema.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-stylesheet type="text/xsl" href="dig-eg-gaz.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
@@ -22,6 +23,7 @@
                 <bibl>
                     <title>The Egyptian Gazette</title>
                     <date when="1905-03-09">March 9, 1905</date>
+                    <extent><measure unit="pages" quantity="6">6</measure> pages</extent>
                 </bibl>
             </sourceDesc>
         </fileDesc>
@@ -1684,7 +1686,7 @@
                     </p></div>
             </div>
             <div type="page" n="3">
-            <div type="item">
+                <div type="section" element="wire"><div type="item">
                 <head>BATTLE STILL RAGING.</head>
                     <p>RUSSIANS IN FULL RETREAT.</p>
                     <p>Mukdin’s Fall Imminent</p>
@@ -1692,7 +1694,7 @@
                     <p>
                         <hi xml:id="bookmark1">AppaL1NG </hi>LOSSES.</p>
                     <p>^. Tokio, March 8.</p>
-                    <p>Marshal Oyama reporta that a. division ot the enemy with 70 guns was repulsed
+                    <p>Marshal Oyama reporta that a. division of the enemy with 70 guns was repulsed
                         at Taahicliinu, ei^lit mi his to the north-west ui Mukden. * Inc battle is
                         proceeding favorably lor us some 10 miles to the south-east, and the same
                         distance -to the south oi Fu&amp;hau despite the stubborn resistance of the
@@ -1730,14 +1732,14 @@
                         imminent.</p>
                     <p>Reuter’s corre.-poudent with General Oku says that, owing to the tlatuess of
                         the Cuuutry, the battle on the west is entirely conducted by telephone. The
-                        Russians latterly have been demoralised by tbe irresistible rushes of the
+                        Russians latterly have been demoralised by the irresistible rushes of the
                         Japanese. It is believed that some Russian regiments are on the vergo of
                         mutiny.</p>
                     <p>The Jap&amp;i.ese are now bridging the Hun-Ho.</p>
                     <p>( Hauler.</p>
                     <p>St. Petersburg, March 9.</p>
                     <p>A Russian telegram from Mukden says that yesterday at 10.0 iu the morning the
-                        heavy caunDnading on tbe northwest was shaking tbe houses of the town.</p>
+                        heavy caunDnading on the northwest was shaking the houses of the town.</p>
                     <p>Au engagement was proceeding near the Imperial tombs. (Heutar.j</p>
                     <p>Tokio, March 9.</p>
                     <p>General Kuropatkin has evidently been badly .eaten in the most bloody battle
@@ -1769,7 +1771,7 @@
                     <p>St. Petersburg, March 8. 'lhe movement of revolt in the country districts of
                         Russia is gaining strength. Bauds of armed peasants are marching through
                         the, villages damaging property. (Reuter.)</p>
-                    <p>St. Petersburg, March 9. The men ot tbe Baltic Naval dockyard hore have
+                    <p>St. Petersburg, March 9. The men of the Baltic Naval dockyard hore have
                         struck work, owing to the arrest of their elected representatives.
                         (Reuter.)</p>
                 </div><div type="item">
@@ -1780,9 +1782,9 @@
                     </div><div type="item"><head>THE CHARCOT EXPEDITION.</head>
                     <p>Buenos Ayres, March 9.- The Charcot expedition has returned safely.</p>
                     <p>(Reuter.)</p>
-                </div>
-            <div type="item">
-                <head>LOCAL AND GENERAL</head>
+                </div></div>
+            <div type="section" element="local">
+                    <head>LOCAL AND GENERAL</head>
                     <p>Red Sea Lighthouses.—We have to acknowledge the receipt of a parcel of books
                         for the Red Sea lighthouse keepers from Sheehan Bay.</p>
                     <p>The S.S. “Cairo.”— The enquiry at the Italian Consulate has not yet closed.
@@ -1816,7 +1818,7 @@
                     <p>Parturient Montes.—After the elaborate exposition of the great principles
                         involved in the institution of the new Assize Courts, delivered with the
                         souorous accent and impressive Arabic which is at the command ol the
-                        Vice-President of the Native Court ol Appeal, tbe first case that came ou
+                        Vice-President of the Native Court ol Appeal, the first case that came ou
                         for hearing dealt solely with the theft of a saucepan 1</p>
                     <p>Cairo’s New Opera House.—The Ministry of Public Works is atpreseut engaged in
                         the investigation and study of the most up-to-date opera bouses in Europe
@@ -1843,7 +1845,8 @@
                         with the escort, suite, andpilgrims accompanying, left Jeddah on Tuesday by
                         the same company’s S.S. ‘Rahmanieh,” “Payoum,” and “Negbileh” for Yambo, en
                         route for Medina.</p>
-                    </div><div type="item"><head>THE KHEDIVE.</head>
+                    </div><div type="section" element="khedive">
+                    <head>THE KHEDIVE.</head>
                     <p>The Khedive has arrived at Montazah, and</p>
                     <p>is proceeding to Mariout.</p>
                     </div><div type="item"><head>RODAH ISLAND.</head>
@@ -1855,7 +1858,7 @@
                         come to some agreement. One of the heira has made an “opposition legale” to
                         the sale.</p>
                         </div><div type="item"><head>SHEIKH FADL ESTATE CO.</head>
-                    <p>Among tbe numerous land companies which are springing up almost daily in
+                    <p>Among the numerous land companies which are springing up almost daily in
                         Egypt, is the Sheikh Fadl Estate Company. The capital of this company is
                         8,625,000 franca and is divided into 86,250 shares of 100 francs each. Of
                         these, 21,563 have been subscribed for by M. Maurice M. Cattaui and the
@@ -1870,7 +1873,7 @@
                     <p>The members of the board of administration will be Messrs. Fdlix 8uarts,
                         Raphael Suari^, Ch. Beyerte, Simon R. Rolo, Jacques R. Rolo, Enrico Xahman,
                         M. Cattaui Bey, Joseph A. Cattaui Bey, Robert S. Rolo, Leon Suar&amp;s, aud
-                        Marchetto Matatik Tbe Sheikh Fadl estate consists of 8,800 feddaus and 10
+                        Marchetto Matatik The Sheikh Fadl estate consists of 8,800 feddaus and 10
                         kirats.</p>
                         </div><div type="item"><head>EGYPTIAN ESTATES, LTD.</head>
                     <p>We arc informed that the ordinary shares of the Egyptian Estates, Limited,
@@ -1880,13 +1883,13 @@
                     <p>A London financial correspondent writes :—</p>
                     <p>The expected movement in Egyptian miuing shares is at hand, or at any rate it
                         seems so. Norlh Niles will probably wait ontil Nile Valleys give a lead, but
-                        those in tbe market who regard them with even greater favor than the shares
+                        those in the market who regard them with even greater favor than the shares
                         of the older company (from a purely market standpoint) are not entirely
                         without reasons. The issued capital is very small, only about £39,000, and
                         an appreciation in price would probably be more rapid in the case ot the
                         subsidiary than in that of the parent. By band crushing alone £3,000 worth
                         of gold bsB been recovered, and 5,000 feet of development work has been
-                        done, Nubias are quiet, and so are the rest of the list, bnt there are
+                        done, Nubias are quiet, and so are the rest of the list, but there are
                         various considerations which point to an impending revival of interest in
                         this section.</p>
                         </div><div type="item"><head>EGYPTIAN MINES EXPLORATION.</head>
@@ -1900,7 +1903,7 @@
                         close of the financial year. The company has now ample funds in hand, as the
                         subsidiary companies in which they are largely interested are carrying on
                         the development work, and no expenditure on this account is being incurred
-                        by the company. Just after the close of tbe year the Sudan Minos (Limited)
+                        by the company. Just after the close of the year the Sudan Minos (Limited)
                         was formed to acquire the Sudan Concession, with a capital of £60,000, of
                         which £20,000 is working capital, the company receiving 12,833 shares, fully
                         paid, for the concession.</p>
@@ -1915,7 +1918,7 @@
                         passe jusqu’h ce que le temps devienne suffi- samment cal me pour permettro
                         au pilote de monter kbord.</p>
                     <p>“Ce drapeau sera hissl kbord do bateau* pilote indlpendamment de tout autre
-                        signal de oette nature fait k Kom-EFNadoure."</p>
+                        signal de cette nature fait à Kom-EFNadoure."</p>
                 </div>
                 <cb n="4"/>
                 <div type="item">
@@ -1959,7 +1962,7 @@
                         leading into the ball room all the heroes of the story, the Mad Hatter,
                         Tweedledum and Tweed led ee, the Red aud White Queens, the White Knight,
                         long spoon for the nasal of his helmet, course the Walrus and the Carpenter,
-                        its and Pierrettes swarmed, as did tbe the suits, and Queens of Hearts and
+                        its and Pierrettes swarmed, as did the the suits, and Queens of Hearts and
                         Kings ofl^iamouds. There were Dervishes, too, of ferocious aspect, amoug
                         whom Major Delavoye and Capt Bigge doomed large on the limited horizon ol
                         the ball-room. Mr. Forestier- Walker had the happy idea of appearing as a
@@ -2014,7 +2017,7 @@
                         information from Manchuria seems to have fully confirmed these views, and
                         amply justified the discounting of the future that has taken place. There is
                         ofily oue weak spot. Will the French* holders of Kmmi*n stock lose their
-                        heads “en masse” in case ot the farther casualties impeding ? T‘ at the fall
+                        heads “en masse” in case of the farther casualties impeding ? T‘ at the fall
                         of Port Arthur, the destructio t oi .he Russian fleet, and the state of
                         practical t t u tion into which Russia has been plunge a by the insensate
                         action oi the Tsar, have been borne by the French investor frith extraordi
@@ -2050,7 +2053,7 @@
                         present. Then we shall see the further result, viz. the poblio will turn to
                         those markets which offer them most scope, and there will be a consequent
                         return ol activity in speculative stocks. Egyptian properties have
-                        fluctuated- considerably this week. Natiou&amp;l Bauks are tbe most active
+                        fluctuated- considerably this week. Natiou&amp;l Bauks are the most active
                         feature, having fallen beluw 26$ early in the week, but steadied again to 27
                         later. It is only to be expected that the rapid rise in prioe should produce
                         a fairly large amount of profit making, for, good-as this property
@@ -2085,7 +2088,7 @@
                     <p>DELIGHTFUL SITUATION - SEA BREEZES.</p>
                 </div>
                 <cb n="6"/>
-                <div type="item">
+                <div type="section" element="social">
                     <head>PERSONAL AND SOCIAL</head>
                     <p></p>
                     <list type="simple">
@@ -2103,8 +2106,8 @@
                     <p>leaving for Europe by the 8.8. “Canopic”.</p>
                     <p>General and Mrs. Lance have returned to the Tewfik Palace Hotel from
                         up-Kver.</p>
-                    <p>A wound received in Egypt in 1882, two days before tbe battle of Kassassin,
-                        has just been the cause of the death of Mr. Rowland Lewis, whioh occurred
+                    <p>A wound received in Egypt in 1882, two days before the battle of Kassassin,
+                        has just been the cause of the death of Mr. Rowland Lewis, which occurred
                         ten days ago io consequence of inflammation from the wound. Deceased joined
                         the 2nd Life Guards, volun teered for Egypt, and was wounded at Tel-el
                         Kebir. For the last ten years he had been one oi the Assessors of Income Tax
@@ -2127,7 +2130,7 @@
                         complete loss of the troupe’s wardrobe in the “Cairo” was not remarked.
                         NoveUi took the rOle of Alessandro F&amp;ra and was greeted with tremendous
                         applause on making his first appearance. Novelli’s monologue at the dose oi
-                        the performance was reoeived with enthusiasm.</p>
+                        the performance was received with enthusiasm.</p>
                     </div><div type="item"><head>AMATEUR THEATRICALS.</head>
                     <p>Enjoyable musical or dramatio entertainments at St Catherine’s College,
                         Alexandria, are by no means of rare oocurrenoe, and these are looked forward
@@ -2137,14 +2140,14 @@
                         frequently, the weff-known generous hospitality at the hands of the good
                         Brothers. Tuesday’s “slanos rtar&amp;tive et musicals,” which was under the
                         distinguished patronage and presence of M. Pierre Girard, Consul of France,
-                        proved no exoeption to the role, and the attractive nature of the programme
+                        proved no exception to the role, and the attractive nature of the programme
                         brought a large crowd of patroffs long before the hour announced for the
                         opening of the doors. The first part of the programme consisted of a musical
                         extravaganza entitled The Happy Man, adapted by Mr. J. Pearoe-Hill, who also
                         introduced several original songs, painted the very effective settings of
                         scenery, and trained the little company of some fifteen youngsters who took
                         part in the prodoo- tion. The performance was, in every way, an unqualified
-                        suooesa ; indeed, some ot the young artistes showed suoh histrionic ability
+                        suooesa ; indeed, some of the young artistes showed suoh histrionic ability
                         as might weU be envied by much older aspirants. As the Rajah, Mr. Nelson
                         Schranz was impressive and acted with ease and dignity. This remark also
                         applies to Mr. G. Garcia, who ably supported the rile of Prinoe Foxi, the
@@ -2155,15 +2158,15 @@
                         played by Messrs. P. Perdikides, A. Rathte, V. Paaootto, A. Akaoui, P.
                         Galatis, Z. Simaika, C. Demozantos, S. Stamos, H. Chriatodoulou, and S.
                         Noto. Hie songs and choruses were exceedingly well rendered and brought
-                        forth rounds of applause. Tbe staging was admirable, and the costumes
+                        forth rounds of applause. The staging was admirable, and the costumes
                         gorgeous. Throughout the performance net a point was missed, whksb speaks
                         volumes for the excellence of the college method, seeing that not a single
-                        English youth appeared in the piece. Tbe second portion of the programme was
+                        English youth appeared in the piece. The second portion of the programme was
                         devoted to a musical pieoe by Le Roy Villiers entitled Le Moulin du chat qui
-                        fume, whioh went with a swing that was highly creditable to all concerned,
+                        fume, which went with a swing that was highly creditable to all concerned,
                         Messrs. G. Mansour, Z. Mooktar, A. Miohaoa, G, Saunier, 8. Noto, and V,
                         Pasootto being equally successful in their respective rCles. Too much praise
-                        cannot be awarded Bro. Jerome for the capable in whioh the various
+                        cannot be awarded Bro. Jerome for the capable in which the various
                         selections were performed by his orchestra, the youthful members of which he
                         has so carefully trained, the Pot Pourri from Il Trouvalors and les Hers de
                         Oeur by Von Suppe being paicularly admired. </p>
@@ -2213,7 +2216,7 @@
                     <p>Seule l'Egyptian Investment fait exception à la faiblesse génerale: le prix
                         monte de 2 11/32 à 2 7/16, avec de nombreuses transactions.</p>
             </div>
-                <div type="article" xml:lang="fr" xml:id="deg-el-mmpa01">
+                <div type="article" xml:lang="fr" element="mouvementMaritime">
                     <head>MOUVEMENT MARITIME DU PORT D’ALEXANDRIE</head>
                     <p>ARRIVÉES</p>
                     <p><date when="1905-03-07">8 mars</date></p>
@@ -2245,7 +2248,7 @@
                     <p><placeName>Tripoli de Barbarie</placeName>vap. ang, Augustine, cap.
                             <persName>Scicluna</persName>.</p>
                 </div>
-            <div type="item">
+            <div type="section" element="steamerMovements">
                 <head> Steamer Movements</head>
                 <p>The S.S. "Avon". of the Papayanni Line, left Liverpool n the 7th inst. and is expected to arrive at Alexandria on the 23rd. inst.
             </p>
@@ -2785,7 +2788,7 @@
                 </table>
             </div>
                 <cb n="3"/>
-                <div type="item">
+                <div type="section" element="passList">
                     <head> Passenger Lists.</head>
                     <p>Per Moss S. S. "Nitocris," sailed yesterday for Liverpool, via Malta:---</p>
                 <p>Mr. R. Warwick, Rev. R. S. G. Anderson, Mr. Emile Nicholas, Mr. Paolo Caruana, and three deck pasengers.</p>
@@ -4833,7 +4836,7 @@
                         oade us simple a» possible, and that each •ration should be protected by
                         borne or stop signal' which should be placed beyond the utlyiug pointai It
                         distant signals are Ux be employed at aU on lines of minor importance, it
-                        should be distinctly understood that they .re mere n? pea tels ot the home
+                        should be distinctly understood that they .re mere n? pea tels of the home
                         signal, it is ‘oiisiderçd however that on the lines of minor mportaiice, it
                         would be better to treat all .gnus as stop signals, and to arrange
                         accordingly</p>
@@ -4973,7 +4976,7 @@
                     <p>The Address of our Cair Correspondent is now: P. O. Graves, HRosanore House, Sharia el Madabargh.</p>
                 </div>
                 <cb n="3"/>
-                <div type="item">
+                <div type="section" element="army">
                     <head>ARMY AND NAVY.</head>
                     <p>(From Our Correspondent).</p>
                     <p>London, February 27.</p>
@@ -5655,7 +5658,7 @@
                     <p>That the Board be authorised to enter into an Agreement with a Company about
                         to be formed under Egyptian Law with the title of “La Société Egyptienne de
                         la Daira Sanieh” or some similar title, or with a Trustee for such Company,
-                        in the terms of the draft whioh will be submitted to the Meeting, subject to
+                        in the terms of the draft which will be submitted to the Meeting, subject to
                         such modifications as the Board may think fit, for the sale to euch Company
                         of the whole of the undertaking, business and assets of the Company, subject
                         to its liabilities, and that this Meeting hereby sanctions the scheme of
@@ -5666,7 +5669,7 @@
                     <p>By order of the Board,</p>
                     <p>8. DB BlLWgXI, Sharia Kasr-el-Nil, Cairo. Secretary.</p>
                     <p>A draft of the Agreement oan be seen in Cairo at the offices of the Company,
-                        Sharia Kasr-el-Nil, and at the offioes of Maître Carton de Wiart, Legal
+                        Sharia Kasr-el-Nil, and at the offices of Maître Carton de Wiart, Legal
                         Adviser to the Company, at any time during business hours during the ten
                         days immediately preoeding the Meeting, and in London »t Un offiow of Hm*.
                         Norton,</p>
@@ -5682,7 +5685,7 @@
                         the date of the Meeting (viz., not later than 15th March), the Share
                         Warrants remaining so deposited until after the Meeting shall have been
                         held.</p>
-                    <p>Each Depositor will reoeive a Certificate of Deposit in exchange for the
+                    <p>Each Depositor will receive a Certificate of Deposit in exchange for the
                         Share Warrants deposited, and a ticket of admission (whioh most be produced
                         by the holder attending the Meeting) and Forms of Proxy.</p>
                     <p>It the Depositor does not intend personally to attend the Meeting, a Proxy in
@@ -5726,7 +5729,7 @@
                         London, 4 &amp; 5, King William Street, E. C., ten clear days before the
                         date of the Meeting (viz., not later than 15th March), the Share Warrants
                         remaining so deposited until after the Meeting shall have been held.</p>
-                    <p>Each Depositor will reoeive a Certificate of Deposit in exchange for the
+                    <p>Each Depositor will receive a Certificate of Deposit in exchange for the
                         Share Warrants deposited, and a ticket of admission (which must be produced
                         By the holder attending the Meeting) and Forms of Proxy.</p>
                     <p>If the Depositor does not intend personally to attend the Meeting, a Proxy in

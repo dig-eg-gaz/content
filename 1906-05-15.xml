@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/dig-eg-gaz/resources/master/out/egSchema.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-stylesheet type="text/xsl" href="dig-eg-gaz.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
@@ -22,6 +23,7 @@
                 <bibl>
                     <title>The Egyptian Gazette</title>
                     <date when="1906-05-15">May 15, 1906</date>
+                    <extent><measure unit="pages" quantity="6">6</measure> pages</extent>
                 </bibl>
             </sourceDesc>
         </fileDesc>
@@ -1662,7 +1664,7 @@
             </div>
             <div type="page" n="3">
                 <cb n="1"/>
-                <div type="article">
+                <div type="section" element="local">
                     <head>LOCAL AND GENERAL.</head>
                     <div type="item">
                         <head>The Nile.</head>
@@ -1828,7 +1830,7 @@
                             is included Mr. W. O. Joseph’s proposition
                             for the erection of a promenade pier running
                             out from the quay of the eastern harbour.
-                            We believe this proposition, whioh was submitted
+                            We believe this proposition, which was submitted
                             in December, ] 903, is now on the eve
                             of a favourable solution, and we heartily congratulate
                             the Municipality on favouring a
@@ -1879,8 +1881,8 @@
                             will only come to Egypt in case the preliminary
                             judgment gees against his son.</p>
                     </div>
-                    <div type="article">
-                        <head>THE KHEDIVE.</head>
+                    <div type="section" element="khedive">
+                    <head>THE KHEDIVE.</head>
                         <p>H.H. the Khedive is spending the day at
                             Montazah Palace.</p>
                         <p>It is stated that his Highness does not
@@ -2078,8 +2080,7 @@
                         <p>Bearings are magnetic, and given from the
                         buoy.</p>
                     </div>
-                    <div type="article">
-                        <head>STEAMER MOVEMENTS.</head>
+                    <div type="section" element="steamerMovements"><head>STEAMER MOVEMENTS.</head>
                         <p>The Moss liner Seti sailed from Malta
                         yesterday, and is due here Thursday afternoon
                         or Friday morning with passengers,
@@ -2132,7 +2133,7 @@
                         <head>Blue Nile.</head>
                         <p>A large area of the. experimental farm at
                             Kamlin was planted with Egyptian cotton in
-                            tbe autumn of 1901. Messrs. Carver, who
+                            the autumn of 1901. Messrs. Carver, who
                             bought 650 kantars of the crop, report as
                             follows : —</p>
                         <p>“The quality is very satisfactory, dean,
@@ -2237,7 +2238,7 @@
                         facilitate intercourse lines of communication
                         between Edfon and the R9d Sea have been
                         commenced, the ancient wells are being reopened,
-                        and a track suitable tor light motors is
+                        and a track suitable for light motors is
                         being made between them.</p>
                     <p>As soon as the first line of communication is
                         complete to the Red Sea, others will be started
@@ -2317,7 +2318,7 @@
                             morning, and will probably anchor in the
                             Bitter Lakes.</p>
                     </div>
-                    <div type="article">
+                    <div type="section" element="army">
                         <head>EGYPTIAN ARMY.</head>
                         <p>Captain J. L. J. Conry, D S.O., the Connaught
                             Rangers, having reported his arrival
@@ -2328,7 +2329,7 @@
                         <p>Captain M. E. T. Gunthorpe, the Yorkshire
                             Regiment, having reported his arrival in
                             Egypt from England, has also been taken on
-                            the strength ot the Egyptian Army, with the
+                            the strength of the Egyptian Army, with the
                             rank of Bimbashi, and posted to the Blue Nile
                             District.</p>
                         <p>Captain W. H. King and Lieut. S. J. Stephenson,
@@ -2634,7 +2635,7 @@
                         acheteurs qui attendent une nouvelle baisse
                         pour acquérir des titres à un prix rémunérateur,
                         explique comment quelques offres de ventes
-                        insignifiantes ont pu faire réactionner oertainos
+                        insignifiantes ont pu faire réactionner certainos
                         aleurs, d’ailleurs solides.</p>
                     <p>C’est ainsi que la Delta Light, à la veille
                         d’un fort coupon, recule à 12 1/8.</p>
@@ -2742,8 +2743,7 @@
                         less than the figure mentioned.</p>
                     <p>27889-4-3</p>
                 </div>
-                <div type="article">
-                    <head>SHIPPING MOVEMENTS.</head>
+                <div type="section" element="shippingMovements"><head>SHIPPING MOVEMENTS.</head>
                     <p>ARRIVALS</p>
                     <p>May 14</p>
                     <p>Stefano Strait, Greek s., capt. Maroni,
@@ -2762,7 +2762,7 @@
                     <p>Kyprus, Greek s., capt. Petchis, Cyprus.</p>
                 </div>
                 <cb n="3"/>
-                <div type="article">
+                <div type="section" element="passList">
                     <head>PASSENGER LISTS.</head>
                     <p>ARRIVALS.</p>
                     <p>Le paquebot Portugal, des Messageries Maritimes
@@ -4808,7 +4808,7 @@
             </div>
             <div type="page" n="5">
                 <cb n="1"/>
-                <div type="article">
+                <div type="section" element="wire">
                     <head>TO-DAY'S TELEGRAMS</head>
                     <div type="item">
                         <head>RUSSIA. MAY-DAY TROUBLES. ADMIRAL KILLED BY WORKMEN.
@@ -5187,7 +5187,7 @@
                     <p>Daira Prince Ahmed Seif el-Din Bey, Mohamed Aly Square</p>
                     <p>A. V. Thomson, Secretary for Egypt.</p>
                 </div>
-                <div type="article">
+                <div type="section" element="letters">
                     <head>LETTERS TO THE EDITOR.</head>
                     <p>We do not hold ourselves responsible for the opinions
                         expressed by our correspondents, but we wish, in a spirit of
@@ -5305,7 +5305,7 @@
                             Pera news-sheets.</p>
                         <p>Scissors and paste-pot are all that is necessary
                             in such cases ; you don’t need to think or
-                            invent; others do it tor you.</p>
+                            invent; others do it for you.</p>
                         <p>The Cairene correspondent of the "Globe"
                             however is more than a vulgar kleeptomaniac
                             or a war-correspondent. Where he cannot borrow,
@@ -5349,7 +5349,7 @@
                 </div>
                 <!-- Missing ad tempalte for Berlitz Schools of Language -->
                 <cb n="4"/>
-                <div type="article">
+                <div type="section" element="sport">
                     <head>SPORT AND PLAY.</head>
                     <byline>A. S. C.</byline>
                     <p>The handicaps for the 2nd Summer Meeting,
@@ -5497,7 +5497,7 @@
                         <p>Winners of spoors marked thus *</p>
                     </div>
                 </div>
-                <div type="item" scope="calendar" xml:id="deg-el-coce01">
+                <div type="item" scope="calendar" element="comingEvents">
                     <head>Calendar of Coming Events</head>
                     <table cols="2" xml:id="deg-ta-coce01">
                         <row role="label">

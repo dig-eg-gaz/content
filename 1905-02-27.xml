@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/dig-eg-gaz/resources/master/out/egSchema.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-stylesheet type="text/xsl" href="dig-eg-gaz.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
@@ -21,7 +22,8 @@
             <sourceDesc>
                 <bibl>
                     <title>The Egyptian Gazette</title>
-                    <date when="1905-02-27">Feburary 27, 1905</date>
+                    <date when="1905-02-27"><name>Monday</name>, Feburary 27, 1905</date>
+                    <extent><measure unit="pages" quantity="6">6</measure> pages</extent>
                 </bibl>
             </sourceDesc>
         </fileDesc>
@@ -475,7 +477,7 @@
                         <p>Agencies in Egypt : ALEXANDRIA, CAIRO, &amp; PORT SAID.</p>
                         <p>Advances on Merchandise and Securities in current account and for fixed
                             periods. Purchase and sale of stocks and Shares on the London and
-                            Continental exchanges, letters of credit issued, valuables reoeived in
+                            Continental exchanges, letters of credit issued, valuables received in
                             safe custody. Drafts, cheques and telegraphic transfers issued on the
                             principal towns of the world. Foreign exchange purchased, bills
                             discounted, bills, invoices, annuities and dividends collected and every
@@ -1302,7 +1304,7 @@
             <div type="page" n="3">
                 <cols n="6"/>
                 <cb n="1"/>
-                <div type="item">
+                <div type="section" element="wire"><div type="item">
                     <head>The War</head>
                     <head>A DESPERATE BATTLE</head>
                     <head>JAPS CAPTURE POSITION</head>
@@ -1426,7 +1428,7 @@
                     <head>Railway Troubles in Italy.</head>
                     <p>ROME, February 26. The railway employes, without actually declaring a strike;
                         are trying to impede the circulation of the trains. (Havas.)</p>
-                </div>
+                </div></div>
                 <div type="item">
                     <head>American College at Luxor.</head>
                     <p>(FROM OUR (CORRESPONDENT.) Luxor, Friday. The ceremony of the opening of the
@@ -1455,8 +1457,8 @@
                     <p>24616-23-3-207</p>
                 </div>
                 <cb n="3"/>
-                <div type="item">
-                    <head>Local and General</head>
+                <div type="section" element="local">
+                    <head>LOCAL AND General</head>
                     <p>THE PLAGUE - A fatal case of plague was reported from Suez yesterday.</p>
                     <p>MERCHANT SEAMEN'S HOME.—In the report of the concert given on Friday last,
                         the name of Mr. Plank, who. gave two admirable recita¬ tions,—Tennyson’s
@@ -1758,8 +1760,8 @@
                         displacement of 5,000 tons under her present conditions, and that of the
                         battleship which was raised in this way was 13,000 tons.</p>
                 </div>
-                <div type="item">
-                    <head>Personal and Social.</head>
+                <div type="section" element="social">
+                    <head>PERSONAL AND Social.</head>
                     <p>H. H. the Khedive is giving a banquet on Monday next in honor of
                         Major-General Slade, C.B., on the occasion of his approaching retire-
                         ment.</p>
@@ -1811,7 +1813,7 @@
                         paiement des surestaries fixées dans la charte-partie à raison do 5 pence
                         par tonne et par jour. Le retard ayant été de 17 jours 1/2, le montant de sa
                         réclamation s'élevait ainsi à £576. The Commercial and Estates Cy. of Egypt
-                        plaidait le mal fondé de la demande et s’of- frait k prouver l' que malgré
+                        plaidait le mal fondé de la demande et s’of- frait à prouver l' que malgré
                         toutes les diligen- ces faites avant l’arrivée du “Fos”, il lui avait été
                         impossible, à cause de l'encombrement du Port et du manque absolu de quais,
                         d’obtenir do l’Administration du Port un quai pour son accostage avant le 27
@@ -1845,7 +1847,7 @@
                         d'Alexandrie et du manque de mahonnes pour s’exonérer de la responsabilité
                         pour les sures- taries mis à sa charge par la convention.</p>
                 </div>
-                <div type="article" xml:lang="fr" xml:id="deg-el-mmpa01">
+                <div type="article" xml:lang="fr" element="mouvementMaritime">
                     <head>MOUVEMENT MARITIME DU PORT D’ALEXANDRIE</head>
                     <p>ARRIVÉES</p>
                     <p><date when="1905-02-25">25 fevrier</date></p>
@@ -1921,7 +1923,7 @@
                             <persName>Dodicas.</persName></p>
                 </div>
                 <cb n="2"/>
-                <div type="item">
+                <div type="section" element="passList">
                     <head>PASSENGERS’ LISTS.</head>
                     <head>ARRIVALS.</head>
                     <p>Le paquebot "Semiramis’’ du Lloyd Autri- chien arrive ce matin de Trieste,
@@ -2041,8 +2043,7 @@
                         the name of the person importing the labourers (Landowner), the number of
                         labourers, and their destination. 25405 12-A-9</p>
                 </div>
-                <div type="item">
-                    <head>STEAMER MOVEMENTS.</head>
+                <div type="section" element="steamerMovements"><head>STEAMER MOVEMENTS.</head>
                     <p>The Ellerman S.S. “Alsatian” sailed hence on Saturday evening for Liverpool
                         direct with general cargo, including 2,200 bales cotton. The Ellerman S.S.
                         "Avon” arrived at Liver- pool on Saturday morning. The Westcott S.S.
@@ -3696,7 +3697,7 @@
                     <p>Apply to <lb/>THE YOST TYPEWRITER Co., Ltd.</p>
                     <p>50, Holborn, Viaduct, London, E.C,</p>
                 </div>
-                <div type="item">
+                <div type="section" element="army">
                     <head>ARMY And NAVY</head>
                     <head>(From our Correspondent).</head>
                     <p>London, February 17. The S.S. “Dilwara” left Southampton to day with the 1st
@@ -3763,11 +3764,11 @@
                         Jane Trotter,</p>
                 </div>
                 <cb n="2"/>
-                <div type="item">
+                <div type="section" element="letters">
                     <head>LETTER TO THE EDITOR.</head>
                     <p>We do not hold ourselves for the responsible opinions expressed by our
                         correspondents. but we wish, in a spirit of fair play to a11, to permit —
-                        within certain necessary limts — free dicussion</p>
+                        within certain necessary limts — free dicussion</p><div type="item">
                     <p>MISSIONS TO MOHAMEDANS.</p>
                     <p>To the Editor of the Egyptian Gazette.</p>
                     <p>Sir—I do not think that anyone can explain away the obvious meaning of the
@@ -3813,7 +3814,7 @@
                         other by further correspondence in your hospitable columns.—I am, etc.,</p>
                     <p>R. Mai Innés.</p>
                     <p>2 .Sharia el Manakh, Cairo, February 24.</p>
-                </div>
+                </div></div>
                 <div type="item">
                     <head>ALEXAXDRIA MUNICIPALITY.</head>
                     <p>The following is the ordre du jour of the meeting of the Municipal Commission
@@ -4030,8 +4031,8 @@
                         </table>
                     </div>
                     <cb n="3"/>
-                    <div type="item">
-                        <head>SPORT AND PLAY.</head>
+                    <div type="section" element="sport">
+                    <head>SPORT AND PLAY.</head>
                         <head>Football.</head>
                         <p>THE SAINT ANDREW FOOTBALL CLUB versus "A.” COMPANY, ROYAL BERKS. The
                             Saint Andrew Football Club opened their new ground on Moharrcm Bey
@@ -4099,7 +4100,7 @@
                         <p>25261-28-2-05</p>
                     </div>
                     <cb n="4"/>
-                    <div type="item" scope="calendar" xml:id="deg-el-coce01">
+                    <div type="item" scope="calendar" element="comingEvents">
                         <head>Calendar of Coming Events</head>
                         <table cols="2" xml:id="deg-ta-coce01">
                             <row role="label">

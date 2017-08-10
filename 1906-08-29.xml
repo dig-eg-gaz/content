@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/dig-eg-gaz/resources/master/out/egSchema.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-stylesheet type="text/xsl" href="dig-eg-gaz.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
@@ -21,7 +22,8 @@
             <sourceDesc>
                 <bibl>
                     <title>The Egyptian Gazette</title>
-                    <date when="1906-08-29">August 29, 1906</date>
+                    <date when="1906-08-29"><name>Wednesday</name>, August 29, 1906</date>
+                    <extent><measure unit="pages" quantity="8">8</measure> pages</extent>
                 </bibl>
             </sourceDesc>
         </fileDesc>
@@ -1562,7 +1564,8 @@
                 </div>
                 <cb n="2"/>
                 <div type="item" scope="advertisement">
-                    <head><!-- this ad is a derivative of walker and meimarachi; requires new template --></head>
+                    <head><!-- this ad is a derivative of walker and meimarachi; contains image; requires new template --></head>
+                    <p>Draught Beer for the Home.</p>
                 </div>
                 <div type="item" scope="advertisement" xml:id="deg-ad-eeh01">
                     <head>EASTERN EXCHANGE HOTEL, PORT SAID.</head>
@@ -1612,12 +1615,10 @@
                 <div type="item" scope="advertisement">
                     <head>Benger's Food<!--unfinished; requires template--></head>
                 </div>
-                <div type="item" scope="advertisement">
-                    <head>REISER &amp; BINDER<!-- complete; requires template--></head>
-                    <p>Photographers</p>
-                    <p>Alexandria and Cairo</p>
-                    <p><measure type="indexNo">26848</measure></p>
-                    <p><measure type="indexNo">4-12-806</measure></p>
+                <div type="advert" xml:id="rbi01">
+                    <head>Photographers. REISER &amp; BINDER Photographers.</head>
+                    <p><measure type="indexNo">26848</measure> Alexandria &amp; Cairo. <measure
+                        type="indexNo">4-12 906</measure></p>
                 </div>
                 <div type="advert" xml:id="deg-ad-nea01">
                     <p>Three-quarters of a Century's established Reputation</p>
@@ -1632,7 +1633,7 @@
                 </div>
                 <div type="item" scope="advertisement">
                     <head>Cairo Photographic Stores
-                        O.DIRADOUR<!--unfinished; requires template--></head>
+                        O. DIRADOUR<!--unfinished; requires template--></head>
                 </div>
                 <cb n="3"/>
                 <div type="advert" xml:id="deg-ad-cne01">
@@ -1915,7 +1916,7 @@
                     <p>Price: One Piastre Tariff.</p>
                     <p><date when="1906-08-29">WEDNESDAY, AUGUST 29, 1906</date>.</p>
                 </div>
-                <div type="article">
+                <div type="item">
                     <head>COMPANY LAW AMENDMENT.</head>
                     <p> In our previous articles on this subject we have dealt with the proposals of
                         the committee to meet the following points:— (a) The growing practice of
@@ -1982,8 +1983,8 @@
                 <div type="section" scope="newspaper">
                     <cols n="6"/>
                     <cb n="1"/>
-                    <div type="article">
-                        <head>LOCAL AND GENERAL.</head>
+                    <div type="section" element="local">
+                    <head>LOCAL AND GENERAL.</head>
                         <p>
                             <hi rend="bold">Council of Ministers.</hi></p>
                         <p>The Council of Ministers meets to morrow at San Stefano.</p>
@@ -2114,14 +2115,16 @@
                             inches of losing his life. The train shoots across the road without any
                             more warning than a bell, which is inaudible to those travelling quickly
                             in the neighbourhood.</p>
-                        <p>LEGISLATIVE COUNCIL.</p>
+                    </div>
+                    <div type="item"> <p>LEGISLATIVE COUNCIL.</p>
                         <p>At Monday’s sitting the Legislative Council, under the presidency of
                             Abdul Hamid Pasha Sadek, approved the following projected decrees : I.
                             to qualify <hi rend="italic">sols</hi> as police officers in courts of
                             law ; II. to reduce the penalty of vagrancy to six months’ imprisonment
                             ; III. to enforce Laws 3 and 13 relating to neglect in notifying the
                             appearance of cotton worm. The Council meets next on October 1.</p>
-                        <p>THE NEW CHEFS DE PARQUET.</p>
+                    </div>
+                    <div type="item"> <p>THE NEW CHEFS DE PARQUET.</p>
                         <p>It is understood that the appointment of Morice Bey and Mr. Kershaw as
                             chefs de parquet, as per a Khedivial edict issued by the Regent, is only
                             with the object of empowering both officials to open inquiries and call
@@ -2132,7 +2135,8 @@
                             oath requisite for his new position. The new chef de parquet is
                             returning to Shibin, where he will continue his investigations into the
                             Sirsina incident.</p>
-                        <p>CAPITULATIONS IN THE CONGO.</p>
+                    </div>
+                    <div type="item"> <p>CAPITULATIONS IN THE CONGO.</p>
                         <p>While Lord Cromer is seeking to abolish the capitulations in Egypt, the
                             Congo Reform Association has addressed an appeal to Sir Edward Grey,
                             signed by forty British missionaries now resident in England, urging the
@@ -2212,7 +2216,8 @@
                             of the reputation for comfort and luxury which one associates with its
                             name and that of the Hamburg-Amerika Steamship Co, to which it is
                             allied.</p>
-                        <p>THE OSMANIEH.</p>
+                    </div>
+                    <div type="item"> <p>THE OSMANIEH.</p>
                         <p>The London Tribune” of Wednesday last says :—The new twin screw steamer
                             Osmanieh, constructed on the Tyne to meet the demand for first-class
                             Mediterranean service, has just returned from her test trials in the
@@ -2234,7 +2239,8 @@
                             Eastern potentates, and furnished in exquisite style. There are spacious
                             dining, drawing, and smoking rooms, and also capacity for carrying 2,000
                             tons of cargo.</p>
-                        <p>SAN STEFANO CASINO.</p>
+                    </div>
+                    <div type="item">  <p>SAN STEFANO CASINO.</p>
                         <p>The following is the menu of the dinner to be served to-morrow night, on
                             the occasion of the small dance:—</p>
                         <p>Consumme glace</p>
@@ -2280,7 +2286,8 @@
                             shown by experiments in Paris that these aged bacilli are infinitely
                             more deadly than those obtained from the sputum of live persons who are
                             infected.</p>
-                        <p>QUARANTINE IN TURKEY.</p>
+                    </div>
+                    <div type="item">  <p>QUARANTINE IN TURKEY.</p>
                         <p>A telegram from Pera states that three days’ quarantine is imposed on
                             pilgrims and passengers from Suez bound for Yambo and Jeddah.</p>
                         <p>The medical inspection of arrivals from Jeddah has been removed.</p>
@@ -2289,11 +2296,13 @@
                             The case admitted to hospital was that of a native woman in the Karmous
                             kism. The fatal case was that of a man in Menshieh kism. One case was
                             discharged as cured.</p>
-                        <p>EGYPTSYRIA TELEGRAPH.</p>
+                    </div>
+                    <div type="item">   <p>EGYPTSYRIA TELEGRAPH.</p>
                         <p>The authorities are considering the scheme of doubling the telegraph line
                             between Egypt and Syria in order to facilitate communications between
                             the two countries.</p>
-                        <p>A SURVIVOR OF THE SIRIO.</p>
+                    </div>
+                    <div type="item">   <p>A SURVIVOR OF THE SIRIO.</p>
                         <p>A Syrian survivor of the wreck of the Florio-Rubattino S.S. Sirio, which
                             sank recently in the Atlantic, has arrived at Alexandria, and has given
                             an account of the catastrophe. The first and second class passengers, he
@@ -2305,14 +2314,16 @@
                             sharks before any help could reach them. He speaks highly of the Spanish
                             Government for its generosity and splendid treatment of the helpless
                             survivors.</p>
-                        <p>LANCASHIRE’S COTTON RIVAL.</p>
+                    </div>
+                    <div type="item">   <p>LANCASHIRE’S COTTON RIVAL.</p>
                         <p>Manchester capitalists interested in the cotton trade are now sinking
                             huge sums in the erection of spinning and weaving mills in India. Bombay
                             is rapidly becoming an important cotton-spinning and manufacturing
                             centre, dozens of factories, having sprung up there. Lancashire-trained
                             men are going out to India to take up responsible and remunerative
                             positions in the newly erected mills.</p>
-                        <p>K. Y. C.</p>
+                    </div>
+                    <div type="item"> <p>K. Y. C.</p>
                         <p>The following is the programme of music to be played by the Khedive’s
                             band this after- noon at the Khedivial Yacht Club : —</p>
                         <p>March—El Capitan-Sousa</p>
@@ -2396,7 +2407,8 @@
                             to adequately strengthen the staff. There has been a large decrease in
                             the number of “urgent” telegrams, which points to an improvement in the
                             transmission of ordinary messages.</p>
-                        <p>JUDGE BATCHELLER ON EGYPTIAN WOMEN.</p>
+                    </div>
+                    <div type="item"> <p>JUDGE BATCHELLER ON EGYPTIAN WOMEN.</p>
                         <p>Judge Batcheller, of the Mixed Court of Appeal, has contributed an
                             instructive article on the legal status of Egyptian and Moslem women to
                             the latest issue of the “North American Review.” He remarks :</p>
@@ -2408,7 +2420,7 @@
                             Mohamedan people, and have so prevailed for many centuries. In fact,
                             Mohamedan women, whether single or married, are absolutely free in
                             respect to property relations.”</p>
-                        <p>PASSENGER LISTS.</p>
+                    </div><div type="section" element="passList"><head>PASSENGER LISTS.</head>
                         <p>Arrivals. </p>
                         <p>Le paqnebot Yang-Tté , dea Measageriea Maritimes arrivé hier matin de
                             Marseille, avait a bord :</p>
@@ -2446,12 +2458,13 @@
                         <p>Mr. J. Gooding, barrister-at-law, has asked us to give notice that he has
                             removed to No.6 Cleopatra street (Telephone No. 1853). </p>
                     </div>
-                    <div type="article">
-                        <head>LETTERS TO THE EDITOR.</head>
+                    <div type="section" element="letters">
+                    <head>LETTERS TO THE EDITOR.</head>
                         <p>We do not hold ourselves responsible for the opinions expressed by our
                             correspondent, but we wish, in a spirit of fair play to all, to
                             permit—within certain necessary limits— free discussion. </p>
-                        <p>PURIFICATION OF ALEXANDRIA.</p>
+                   
+                    <div type="item">  <p>PURIFICATION OF ALEXANDRIA.</p>
                         <p>To THE EDITOR OF THE “Egyptian GAZETTE.”</p>
                         <p>Sir,—In reference to the great and noble work which Miralai Hopkinson Bey
                             is doing in trying to stamp out immorality in Alexandria, I should like
@@ -2482,7 +2495,8 @@
                         <p>PETER RUDOLPH.</p>
                         <p>The Rudolph Home,</p>
                         <p>Alexandria, August 28th.</p>
-                        <p>Sir,—The terrible state of affairs prevailing in Alexandria could he
+                    </div>
+                        <div type="item"> <p>Sir,—The terrible state of affairs prevailing in Alexandria could he
                             easily stopped if the following regulations were laid down by Miralai
                             Hopkinson Bey, the Consular Corps, and the Municipality :—</p>
                         <p>1. Every owner or tenant of a house who lets or sub-lets apartments to a
@@ -2499,18 +2513,19 @@
                             morals of Alexandria. — I am, etc.,</p>
                         <p>A SYMPATHISER.</p>
                         <p>Alexandria, 27th August. </p>
-                    </div>
+                    </div></div>
                     <div type="item" scope="advertisement">
                         <head>F. Phillips &amp; Co.<!--needs template--></head>
                     </div>
                 </div>
             </div>
             <div type="page" n="4">
-                <div type="section" scope="newspaper">
+                
                     <cols n="3"/>
                     <cb n="1"/>
-                    <div type="article">
-                        <head>RUSSIAN REVOLUTION.</head>
+                    <div type="section" element="wire">
+                
+                    <div type="item"> <head>RUSSIAN REVOLUTION.</head>
                         <head>REVOLUTIONISTS ACTIVE.</head>
                         <head>BATTLE AND ARSON.</head>
                         <head>'DEATH-FOR-DEATH' SOCIETY.</head>
@@ -2544,7 +2559,8 @@
                         <p>ST. PETERSBURG, August 28.</p>
                         <p>The Tsar attended the service held in memory of General Minn. (
                             Havas)</p>
-                        <p>QUESTION OF DJANET.</p>
+                    </div>
+                        <div type="item">    <p>QUESTION OF DJANET.</p>
                         <p>STATUS QUO ESTABLISHED.</p>
                         <p>PARIS, August 28.</p>
                         <p>According to a semi-official statement, the status quo of Djanet has been
@@ -2552,42 +2568,48 @@
                             the boundary between the Oasis of Ghat and French territory. This method
                             of procedure is identical with that adopted by Great Britain in settling
                             the Tabah incident. (Reuter)</p>
-                        <p>TURKEY AND BULGARIA.</p>
+                        </div>
+                        <div type="item">    <p>TURKEY AND BULGARIA.</p>
                         <p>CIRCULAR TO THB POWERS.</p>
                         <p>CONSTANTINOPLE, August 28.</p>
                         <p>A Circular of the Porte asks the six Great Powers to intervene in
                             Bulgaria to prevent the demonstrations against the Greeks. It is stated
                             that a Palace dignitary has left for Marienbad in order to see Prince
                             Ferdinand. Havas</p>
-                        <p>RUSSO BULGARIAN INCIDENT.</p>
+                        </div>
+                        <div type="item">   <p>RUSSO BULGARIAN INCIDENT.</p>
                         <p>ST. PETERSBURG, August 28.</p>
                         <p>The Russo Bulgarian incident, mentioned on 23rd instant, has been
                             settled, and diplomatic relations resumed, Bulgaria having given
                             satisfactory explanations. (Reuter)</p>
-                        <p>THE SHAH’S HEALTH.</p>
+                        </div>
+                        <div type="item">   <p>THE SHAH’S HEALTH.</p>
                         <p>GERMAN INTRIGUES.</p>
                         <p>TEHERAN, August 28.</p>
                         <p>The Shah’s health gives cause for anxiety. Germany is said to be
                                 <unclear>manuevering</unclear> in order to profit by the
                             circumstances. (Havas)</p>
-                        <p>SIGNIFICANT GERMAN MOVE.</p>
+                        </div>
+                        <div type="item">   <p>SIGNIFICANT GERMAN MOVE.</p>
                         <p>LONDON, August 28.</p>
                         <p>The “Times” learns from Berlin that the German cruiser Hansa, at present
                             in China, has been ordered to proceed to the Gulf of Martaban. The
                             avowed object for this is the promotion of German commercial interests
                             by showing the flag of the country at Rangoon. (Reuter)</p>
-                        <p>CUBAN INSURRECTION.</p>
+                        </div>
+                        <div type="item">   <p>CUBAN INSURRECTION.</p>
                         <p>PROCLAMATION OF AMNESTY.</p>
                         <p>HAVANA, August 28.</p>
                         <p>In view of a proclamation of amnesty nearly all the insurgent leaders
                             have signified their willingness to disband if they are positively
                             guaranteed immunity from punishment. Many rebels are already returning
                             home with the exception of those from western districts. (Reuter)</p>
-                        <p>CONSTITUTION FOR CHINA.</p>
+                        </div>
+                        <div type="item">  <p>CONSTITUTION FOR CHINA.</p>
                         <p>PEKING, August 28.</p>
                         <p>The Dowager-Empress has appointed a committee to consider the proposals
                             for the establishment of a Constitution. (Reuter)</p>
-                    </div>
+                    </div></div>
                     <cb n="2"/>
                     <div type="article">
                         <head>HORRORS OF ALEXANDRIA.</head>
@@ -2691,7 +2713,8 @@
                             of the Arab cemetery loom invitingly beneath acacia and sycamore. Here
                             at least in the midst of death there are the decency and cleanliness
                             that are lacking in life : a remarkable contrast.</p>
-                        <p>XENOS.</p>
+                    </div>
+                    <div type="item">  <p>XENOS.</p>
                         <p>HORRORS IN THE YEMEN.</p>
                         <p>The grave news which was published in this column some time ago of the
                             grave state of affairs in the Yemen is more than confirmed by more
@@ -2710,7 +2733,8 @@
                             can probably continue to do so, but the Arabs are masters in law.
                             Rumours begin to circulate that Italy meditates an active policy which
                             may create a sphere of influence in the Yemen</p>
-                        <p>GREAT BRITAIN AND TURKEY.</p>
+                    </div>
+                    <div type="item">  <p>GREAT BRITAIN AND TURKEY.</p>
                         <p>The “Morning Post” considers the situation in the Near East especially in
                             regard to the possibility of Great Britan initiating a policy which will
                             at once conduce to the restoration of order in the Balkans and
@@ -2729,7 +2753,8 @@
                             directly concerned (though not convenient to others) to return to Lord
                             Beaconsfield’s declared policy of strengthening an ancient
                             Empire—essential to the maintenance of peace."</p>
-                        <p>WHY NOT SAFES ON TRAINS?</p>
+                    </div>
+                    <div type="item">  <p>WHY NOT SAFES ON TRAINS?</p>
                         <p>The traveller, says the “County Gentleman and Land and Water," who has to
                             make a long railway journey with bank notes or other valuables in his
                             possession, is often obsesed by the fear of loss through accident or
@@ -4132,11 +4157,11 @@ The updated table is further down below. --></p>
                         <p> For All Countries and All Purposes.</p>
                         <p> 26144 J. &amp;F. Howard, Bedford, England. 26-1</p>
                     </div>
-                </div>
+                
             </div>
             <div type="page" n="5">
-                <div type="section" scope="newspaper">
-                    <cols n="5"/>
+                
+                    <cols n="6"/>
                     <cb n="1"/>
                     <div type="article">
                         <head>THE ENGLISH IN EGYPT.</head>
@@ -4427,7 +4452,7 @@ The updated table is further down below. --></p>
                             wherever it has the power to do so. </p>
                     </div>
                     <cb n="4"/>
-                    <div type="article">
+                    <div type="section" element="nativePress">
                         <head>NATIVE PRESS COMMENTS.</head>
                         <head>LORD CROMER'S POSITION.</head>
                         <p>Last Friday we published a remarkable tirade which was made against the
@@ -4679,10 +4704,10 @@ The updated table is further down below. --></p>
                             </row>
                         </table>
                     </div>
-                </div>
+                
             </div>
             <div type="page" n="6">
-                <div type="section" scope="newspaper">
+               
                     <cols n="6"/>
                     <cb n="1"/>
                     <div type="article">
@@ -4771,7 +4796,7 @@ The updated table is further down below. --></p>
                             exigible depuis le 20 Mai dernier et qu’en cas de retard ils s’exposent
                             à l’application des l’ article 7 des Statuts. </p>
                     </div>
-                </div>
+                
                 <cb n="2"/>
                 <div type="article">
                     <head>BULETIN DE LA BOURSE</head>
@@ -4815,8 +4840,7 @@ The updated table is further down below. --></p>
                         dans votre district, en comparaison de l’année dernière ?</p>
                     <p>LE PRESIDENT.</p>
                 </div>
-                <div type="item">
-                    <head>SHIPPING MOVEMENTS</head>
+                <div type="section" element="shippingMovements"><head>SHIPPING MOVEMENTS</head>
                     <p>ALEXANDRIA HARBOUR</p>
                     <p>ARRIVALS.</p>
                     <p>August 28.</p>
@@ -5675,7 +5699,7 @@ The updated table is further down below. --></p>
                 </div>
                 <cb n="5"/>
                 <div type="article" xml:id="deg-el-reut01">
-                    <head>REUTER'S TELEGRAMS</head>
+                    <head>REUTERS' TELEGRAMS</head>
                     <head type="sub">CLOSING REPORTS</head>
                     <table cols="4" xml:id="deg-ta-reut01">
                         <row role="label">
@@ -7044,8 +7068,8 @@ The updated table is further down below. --></p>
                 </div>
             </div>
             <div type="page" n="7">
-                <div type="section" scope="newspaper">
-                    <cols n="4"/>
+                
+                    <cols n="6"/>
                     <cb n="1"/>
                     <div type="item" scope="advertisement">
                         <head>PITH OF THE PRESS.</head>
@@ -7223,7 +7247,7 @@ The updated table is further down below. --></p>
                         <p><measure type="indexNo">215</measure></p>
                     </div>
                     <cb n="2"/>
-                    <div type="item" scope="advertisement">
+                    <div type="section" element="army">
                         <head>ARMY AND NAVY.</head>
                         <head>(From our correspondent.)</head>
                         <p>London, August 21.</p>
@@ -7310,7 +7334,7 @@ The updated table is further down below. --></p>
                     <cb n="3"/>
                     <cols n="2"/>
                     <cb n="1"/>
-                    <div type="item" scope="sporting">
+                    <div type="section" element="sport">
                         <head>SPORT AND PLAY</head>
                         <p>CRICKET.</p>
                         <p>MR. S. J. DAWSON'S XI v. MR. J. C. MACLAREN'S XI.</p>
@@ -7725,7 +7749,7 @@ The updated table is further down below. --></p>
                         <p>Davies Bryan &amp; Co., Cairo &amp; Alexandria.</p>
                         <p>7-10-906</p>
                     </div>
-                </div>
+                
             </div>
             <div type="page" n="8">
                 <cols n="4"/>
@@ -8076,7 +8100,7 @@ The updated table is further down below. --></p>
                     </table>
                 </div>
                 <div type="article" xml:id="deg-el-coal01">
-                    <head>COALS.</head>
+                    <head>COALS</head>
                     <table xml:id="deg-ta-coal01">
                         <head>Current prices per ton free on wagon.</head>
                         <row role="label">
@@ -8955,7 +8979,7 @@ The updated table is further down below. --></p>
                     <p><measure type="indexNo">31-12-906</measure></p>
                 </div>
                 <div type="item" scope="advertisement" xml:id="deg-ad-mil01">
-                    <head>Milner's Safes</head>
+                    <head>Milner's Safes<!--yet to be updated--></head>
                     <p>Sole Agents for Egypt</p>
                     <p>G. Marcus &amp; Co.</p>
                     <p>Large Stock Kept in</p>

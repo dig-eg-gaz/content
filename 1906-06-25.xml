@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/dig-eg-gaz/resources/master/out/egSchema.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-stylesheet type="text/xsl" href="dig-eg-gaz.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
@@ -21,7 +22,8 @@
             <sourceDesc>
                 <bibl>
                     <title>The Egyptian Gazette</title>
-                    <date when="1905-07-13">June 25, 1906</date>
+                    <date when="1906-06-25">June 25, 1906</date>
+                    <extent><measure unit="pages" quantity="6">6</measure> pages</extent>
                 </bibl>
             </sourceDesc>
         </fileDesc>
@@ -2255,7 +2257,7 @@
                         diplomatic tact displayed by M. Naoum in the negotiations for a commercial
                         arrangement with Egypt. </p>
                 </div>
-                <div type="item">
+                <div type="section" element="local">
                     <head>LOCAL AND GENERAL.</head>
                     <byline>Occupation of Thoroughfares.</byline>
                     <p> The regulations concerning the use and occupation of public thoroughfares by
@@ -2329,7 +2331,7 @@
                         Sudanese, -- a repsect that will be considerably enhanced by the news of its
                         latest victory. </p>
                 </div>
-                <div type="item">
+                <div type="section" element="social">
                     <head>PERSONAL AND SOCIAL</head>
                     <p> The death of the wife of Marshal Ahmed Mukhtar Pachs, Ottoman High
                         Commissioner in Egypt, occurred at his Excellency's villa at Kizil Toprak,
@@ -2369,11 +2371,11 @@
                     </p>
                 </div>
                 <!-- Eden Palace Hotel, Cairo - no template available for advertisement -->
-                <div type="item">
+                <div type="section" element="letters">
                     <head>LETTERS TO THE EDITOR.</head>
                     <byline>We do not hold ourselves responsible for the opinions expressed by our
                         correspondents, but we wish, in a spirit of fair-play to all, to permit -
-                        within certain necessary limits - free discussion.</byline>
+                        within certain necessary limits - free discussion.</byline><div type="item">
                     <head>ENGLISHMAN'S NIGHT ADVENTURE.</head>
                     <byline> TO THE EDITOR OF THE "EGYPTIAN GAZETTE" </byline>
                     <p> Sir, -- Your readers will, for the most part, concur in the concluding
@@ -2439,9 +2441,8 @@
                         seaport in the Eastern Mediterranean — Yours etc., </p>
                     <docAuthor>BATHER.</docAuthor>
                     <dateline>Cairo, June 23rd, 1906.</dateline>
-                </div>
-                <div type="item">
-                    <head>STEAMER MOVEMENTS.</head>
+                </div></div>
+                <div type="section" element="steamerMovements"><head>STEAMER MOVEMENTS.</head>
                     <p> The Messageries Maritimes S.S. Congo, from MArseilles, passed the STraits of
                         Messina on Saturday, and is due at Alexandria to morrow morning. </p>
                     <p>Th Ellerman S.S. Fabian sailed on Saturday for Liverpool via Tunis.</p>
@@ -3921,9 +3922,9 @@
                     </table>
                 </div>
             </div>
-            <div type="page" n="5">
-                <div type="item">
-                    <dateline>THE EGYPTIAN GAZETTE, MONDAY, JUNE 25, 1906.</dateline>
+            <div type="page" n="5"><dateline>THE EGYPTIAN GAZETTE, MONDAY, JUNE 25, 1906.</dateline>
+                <div type="section" element="wire"> <div type="item">
+                    
                     <head>RUSSIAN TERRORISM.</head>
                     <head>THE METHODS OF TREPOFF.</head>
                     <head>BREAD FAMINE.</head>
@@ -4051,7 +4052,7 @@
                         are proud of the free, unpurchased connection between us, but that you can
                         make us no offer which would compensate us for a tax on our food."
                         (Reuter)</p>
-                </div>
+                </div></div>
                 <div type="item">
                     <head>THE RUSSIAN OUTLOOK.</head>
                     <p>There seems to be no practical doubt that, whatever may have been the cause

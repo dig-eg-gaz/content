@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/dig-eg-gaz/resources/master/out/egSchema.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-stylesheet type="text/xsl" href="dig-eg-gaz.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
@@ -21,7 +22,8 @@
             <sourceDesc>
                 <bibl>
                     <title>The Egyptian Gazette</title>
-                    <date when="1905-12-04">December 04, 1905<!-- 1905-12-05 --></date>
+                    <date when="1905-12-05">December 5, 1905</date>
+                    <extent><measure unit="pages" quantity="8">8</measure> pages</extent>
                 </bibl>
             </sourceDesc>
         </fileDesc>
@@ -1213,7 +1215,7 @@
                 <p>Agencies in Egypt : ALEXANDRIA, CAIRO, &amp; PORT SAID.</p>
                 <p>Advances on Merchandise and Securities in current account and for fixed periods.
                     Purchase and sale of stocks and Shares on the London and Continental exchanges,
-                    letters of credit issued, valuables reoeived in safe custody. Drafts, cheques
+                    letters of credit issued, valuables received in safe custody. Drafts, cheques
                     and telegraphic transfers issued on the principal towns of the world. Foreign
                     exchange purchased, bills discounted, bills, invoices, annuities and dividends
                     collected and every description of banking business transacted. 18-4-906</p>
@@ -1727,10 +1729,10 @@
                                 humour. For the minority we have only the Homeric exhortation, ”Be
                                 men, my friends, remember your dashing courage”.</p>
                         </div>
-                    </div>
+                    </div></div></div>
                     <div type="page" n="3">
                         <head>EGYPTIAN GAZETTE, TUESDAY, DECEMBER 5, 1905. </head>
-                        <p>FEAR OF CIVIL WAR</p>
+                        <div type="section" element="wire"> <head>FEAR OF CIVIL WAR</head>
                         <p>St.Petersburg, December 4.</p>
                         <p>Most elaborate precautions are being taken in view of a feared outbreak
                             of the troops. The Marine Infantry have been disarmed on account of
@@ -1770,8 +1772,8 @@
                             Socialists on Friday, M Rouvier condemned the anti militarist
                             propaganda. He asserted that an immence majority of Frenchmen remained
                             faithful to Russian friendship and the alliance. His speech was greeted
-                            with applause. (Havas)</p>
-                        <p>SPORT AND PLAY</p>
+                            with applause. (Havas)</p></div><div type="section" element="sport">
+                        <head>SPORT AND PLAY</head>
                         <p>Cricket</p>
                         <p>A.C.C. v. H.M.S. Carnarvon</p>
                         <p>Played at Alexandria on Saturday, December 2, the club winning by ten
@@ -1838,8 +1840,7 @@
                                 </row>
                             </table></p>
 
-                    </div>
-                    <div type="page" n="3">
+                  
                        
                         <table rows="12" cols="2">
                             <head>H.M.S Carnarvon</head>
@@ -1920,8 +1921,8 @@
                             <p>(Later). The Government has resigned. The King summoned Sir Henry
                                 Campbell Bannerman. (Reuter)</p>
                         </div>
-                        <div type="item">
-                            <head> LOCAL AND GENERAL</head>
+                        <div type="section" element="local">
+                    <head>LOCAL AND GENERAL</head>
                             <p>Property in Cairo</p>
                             <p>The residence of Khalil Pasba, in the Islamia quarter of Cairo, has
                                 been sold for L.E. 105,000</p>
@@ -2248,9 +2249,8 @@
                                 </row>
                             </table>
                         </div>
-                    </div>
-                    <div type="item">
-                        <head>Steamer Movements</head>
+                  
+                    <div type="section" element="steamerMovements"><head>STEAMER MOVEMENTS</head>
                         <p>The S.S. Trojan Prince left Manchesteron Monday and is due at Alexandria
                             via Tonis and Malta, on December 19th</p>
                     </div>
@@ -2271,7 +2271,7 @@
                         <p>ORCHESTRA PLAYS 6 TO 11.30 P.M</p>
                         <p>DELIGHTFUL SITUATION - SEA BREEZES.</p>
                     </div>
-
+                    </div></div>
                     <div type="page" n="4">
                         <p>THE HAMIDIEH-HEDJAZ RAILWAY.</p>
                         <p> </p>
@@ -4067,8 +4067,8 @@
                                 </row>
                             </table>
                         </div>
-                    </div>
-                </div>
+                   
+               
             </div>
         </body>
     </text>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/dig-eg-gaz/resources/master/out/egSchema.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-stylesheet type="text/xsl" href="dig-eg-gaz.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
@@ -21,7 +22,8 @@
             <sourceDesc>
                 <bibl>
                     <title>The Egyptian Gazette</title>
-                    <date when="1905-12-06">December 09, 1905<!-- 1905-12-09 --></date>
+                    <date when="1905-12-09">December 9, 1905</date>
+                    <extent><measure unit="pages" quantity="8">8</measure> pages</extent>
                 </bibl>
             </sourceDesc>
         </fileDesc>
@@ -831,7 +833,7 @@
                 <p>Agencies in Egypt : ALEXANDRIA, CAIRO, &amp; PORT SAID.</p>
                 <p>Advances on Merchandise and Securities in current account and for fixed periods.
                     Purchase and sale of stocks and Shares on the London and Continental exchanges,
-                    letters of credit issued, valuables reoeived in safe custody. Drafts, cheques
+                    letters of credit issued, valuables received in safe custody. Drafts, cheques
                     and telegraphic transfers issued on the principal towns of the world. Foreign
                     exchange purchased, bills discounted, bills, invoices, annuities and dividends
                     collected and every description of banking business transacted. 18-4-906</p>
@@ -1219,6 +1221,7 @@
                 </div>
              </div>
             <div type="page" n="3">
+            <div type="section" element="wire">
               <div type="article">
                 <head>Military Mutinies Spreading</head>
                     <p>Authorities Impotent</p>
@@ -1292,16 +1295,16 @@
                         unvarying; everything he does is just like him. He is short and thickset;
                         but that, instead of making him unromantic, only draws your eye to his long
                         sword."</p>
-                </div>
-     <div type="article">
-         <head>Sport and Play</head>
+                </div></div>
+     <div type="section" element="sport">
+                    <head>SPORT AND Play</head>
          <p>A.S.C Golf Notice</p>
          <p>Competitors are informed that the draw for the second round of the cup and club prize
                         competition has been posted up in the club house, and are requested to
                         complete their matces by the date mentioned thereon, Wednesday, 20th inst. </p>
      </div>
-                <div type="article">
-                    <head>Local and General</head>
+                <div type="section" element="local">
+                    <head>LOCAL AND General</head>
                     <p>Theft from a Bank</p>
                     <p>It is reported that an employee of the Agricultural Bank at Zagazig stole a
                         few days ago a sum of L.E. 700 and disappeared. </p>
@@ -1421,8 +1424,8 @@
                         Sedfi, Grand Mufti of Egypt, which took place at 3 p.m. yesterday. The
                         ceremony was attended by all the ulema.</p>
                 </div>
-                <div type="article">
-                    <head>The Khedive</head>
+                <div type="section" element="khedive">
+                    <head>THE KHEDIVE.</head>
 <p>H.H. the Khedive gave audience yesterday to M. de la Bouliniere, who presented M. de Valdrome,
                         first secretary, M. Bertrand, Consul, M. Nettement Consul suppleant, and M.
                         Gui first dragoman. </p>

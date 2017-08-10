@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/dig-eg-gaz/resources/master/out/egSchema.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-stylesheet type="text/xsl" href="dig-eg-gaz.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
@@ -22,6 +23,7 @@
                 <bibl>
                     <title>The Egyptian Gazette</title>
                     <date when="1906-01-15">January 16, 1906</date>
+                    <extent><measure unit="pages" quantity="8">8</measure> pages</extent>
                 </bibl>
             </sourceDesc>
         </fileDesc>
@@ -1703,7 +1705,7 @@
                 </div>
             </div>
             <div type="page" n="3">
-                <div type="article">
+                <div type="section" element="local">
                     <head>LOCAL AND GENERAL.</head>
                     <p>Union Artistique Francaise.</p>
                     <p>The ordinary general meeting of the above will take place to-morrow at 9 p.m.
@@ -1904,7 +1906,7 @@
                         L'retivo work of the Mehkemeh to be suspended for the time being, and did
                         not him' elf attend the Mehkemeh yesterday.</p>
                 </div>
-                <div type="article">
+                <div type="section" element="khedive">
                     <head>THE KHEDIVE.</head>
                     <p>H.H. the Khedive left Cairo yesterday for his estates at Ismailia, and will
                         return to Koubbeh Palace this evening. His Highness will come in to Abdeen
@@ -2053,8 +2055,7 @@
                         reported to have been damaged by striking a rock on Nisi Island, Marmora.
                         The Assouan is one of the larger boats in the Khedivial fleet.</p>
                 </div>
-                <div type="article">
-                    <head>STEAMER MOVEMENTS.</head>
+                <div type="section" element="steamerMovements"><head>STEAMER MOVEMENTS.</head>
                     <p>The S.S. Scottish Prince, from Manchester, with passengers and general cargo,
                         left Malta on Monday, and is due to arrive at Alexandria on Friday.</p>
                 </div>
@@ -2145,7 +2146,7 @@
                     <p>Is now open at 7, Rue Eglise Debbane Alexandria. (Telephone 1218). Please
                         arrange time for sittings beforehand. 27057-8-5</p>
                 </div>
-                <div type="article">
+                <div type="section" element="social">
                     <head>PERSONAL AND SOCIAL.</head>
                     <p>There is said to be a project of marriage (according to "Troth”) between
                         Prinoe George of Branswiok-Luneborg, elder son of the Duke and Dnobess of
@@ -2219,8 +2220,8 @@
                 </div>
             </div>
             <div type="page" n="4">
-                <div type="item">
-                    <head>TO-DAY'S TELEGRAMS.</head>
+                <div type="section" element="wire">
+                    <head>TO-DAY'S TELEGRAMS.</head><div type="item">
                     <p>ELECTION CAMPAIGN.</p>
                     <p>SUCCESS OF LABOUR.</p>
                     <p>REMARKABLE INCREASE OF VOTES.</p>
@@ -2276,8 +2277,8 @@
                     <head>COTTON GROWERS CONVENTION.</head>
                     <p>New Orleans, January 15. The Cotton Growers Convention has resolved upon a
                         reduction of ten per centum in the acreage of plantations. (Reuter)</p>
-                </div>
-                <div type="item">
+                </div></div>
+                <div type="item" element="comingEvents">
                     <head>CALENDER OF COMING EVENTS.</head>
                     <p>ALEXANDRIA</p>
                     <p>January.</p>
@@ -2301,7 +2302,7 @@
                     <p>Sun. 28: Trotting Race Meeting</p>
                     <p>Wed. 31: Ghezireh. Royal Military Tournament.</p>
                 </div>
-                <div type="article">
+                <div type="section" element="army">
                     <head>ARMY AND NAVY.</head>
                     <p>(FROM OUR CORRESPONDENT.)</p>
                     <p>LONDON, JANUARY 5.</p>
@@ -2424,11 +2425,11 @@
                         improvement is also to be carried out in other ships so that the days of
                         “hard tack,” as well as those of “salt horse,” are numbered.</p>
                 </div>
-                <div type="item">
+                <div type="section" element="letters">
                     <head>LETTERS TO THE EDITOR.</head>
                     <p>We do not hold ourselves responsible for the opinions expressed by our
                         correspondents, but we wish, in a spirit of fair play to all, to permit -
-                        within certain necessary limits- free discussion.</p>
+                        within certain necessary limits- free discussion.</p><div type="item">
                     <p>THE COPE WHITEHOUSE CLAIM.</p>
                     <p>To the Editor of the Egyptian Gazette. Sir,—In your ia.sae of 20th December
                         last you published a letter from Mr. Cope White house in which the following
@@ -2453,9 +2454,9 @@
                         had “enlivened” my volume with “a post-mortem examination of the Cope
                         Whitehouse theory” ; for which he seemed to hold me in some way responsible.
                         Hanbury Brown. Newlands, Crawley Down, England, 5th January, 1906.</p>
-                </div>
-                <div type="item">
-                    <head>PASSENGER LISTS.</head>
+                </div></div>
+                <div type="section" element="passList">
+<head>PASSENGER LISTS.</head>
                     <p>ARRIVALS.</p>
                     <p>Per S.S. Habsburg, of the Austrian Lloyd/ arrived yesterday from Trieste : —
                         M. and Mine Figoier, R. Father, P. Asmar, Mme Lelifcvre aud two comp.. M.
@@ -2683,7 +2684,7 @@
                         which is written Stock Exchange. Here the whole country is one vast Stock
                         Exchange, which saps its civilization at the roots.”</p>
                     <p>Female Tourists' Ugliness.</p>
-                    <p>Of the ugliness of the female tourist on the Nile steamers onr author says :—
+                    <p>Of the ugliness of the female tourist on the Nile steamers our author says :—
                         Alas! there is nothing on board to admire, and we have come to the
                         conclusion that nine-tenths of the ladies who travel are ugly. It is really
                         remarkable the number of plain-looking women in the world. 1 know that all

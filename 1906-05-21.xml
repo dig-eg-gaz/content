@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/dig-eg-gaz/resources/master/out/egSchema.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-stylesheet type="text/xsl" href="dig-eg-gaz.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title level="m" type="main">Digital Egyptian Gazette</title>
                 <title level="m" type="sub">An encoded transcription</title>
-                <editor>SabrinaNunez</editor>
+                <editor>Sabrina Nunez</editor>
                 <principal>Will Hanley</principal>
             </titleStmt>
             <editionStmt>
@@ -21,7 +22,8 @@
             <sourceDesc>
                 <bibl>
                     <title>The Egyptian Gazette</title>
-                    <date when="1906-05-21">July 13, 1905</date>
+                    <date when="1906-05-21">May 21, 1905</date>
+                    <extent><measure unit="pages" quantity="6">6</measure> pages</extent>
                 </bibl>
             </sourceDesc>
         </fileDesc>
@@ -2058,8 +2060,8 @@
                 </div>
             </div>
             <div type="page" n="3">
-                <div type="section">
-                    <head>Local and General </head>
+                <div type="section" element="local">
+                    <head>LOCAL AND General </head>
                     <p> Cairo Bourse.</p>
                     <p> The Khedivial Bourse, Cairo, will be open between 10 a.m. and noon on and
                         after to day and until farther notice.</p>
@@ -2096,7 +2098,7 @@
                         scene until an advanced boor, Alexandria and Ramleh society being largely
                         represented. </p>
                     <p> Boat Capsized.</p>
-                    <p> A boat bound tor Deyront and Bein Mazar capsized on Saturday near Rod el
+                    <p> A boat bound for Deyront and Bein Mazar capsized on Saturday near Rod el
                         Farag. Five natives were thrown into the water and were in imminent risk of
                         drowning when M. Alphonso Keskiary, of the tramway excursion steamers
                         service, immediately put out in a launch, and after rescuing the men in the
@@ -2152,7 +2154,7 @@
                     <p> London. Monday.</p>
                     <p>The proposed entente between England and Russia, which is assuming the form
                         of an agreement between the two countries is creating some anxiety in
-                        Germany.</p>
+                        Germany.</p></div>
                     <div type="item">
                         <head> THE PRINCES’ CASE.</head>
                         <p>This morning’s hearing of the Princes' case was taken op by the
@@ -2205,7 +2207,7 @@
                             one and a half hundred- weight, included a tent with a collapsible pole.
                             Lieutenant Routh carried a specially construct- ed water-bottle. </p>
                     </div>
-                    <div type="item">
+                    <div type="section" element="army">
                         <head> EGYPTIAN ARMY.</head>
 
                         <p> Leave of absence, on private affairs, has beea granted to the following
@@ -2235,7 +2237,7 @@
                             in the Suez roads, and H.M.S. Fox, after having taken banker coal, has
                             moored in the North Basin of Port Ibrahim.</p>
                     </div>
-                    <div type="item">
+                    <div type="section" element="steamerMovements">
                         <head> STEAMER MOVEMENTS.</head>
                         <p>The Messageries S S. Niger, from Mar- seiles, passed the Straits of
                             Messina on Saturday, and is due here tomorrow morning. </p>
@@ -2440,7 +2442,7 @@
                                 Gillson’s John Peel. Alexandria Derby (additional entries).— Khalil
                                 Pacha Khayat’s An Revoir, Mr. R Karam’s Nimrod.</p>
                             <p>Ibrahimieh Handicap.—Prince Omar Pacha Toussoun’a Hadban, Baron J. E.
-                                de Menasce's VikiDg, Ishack Bey Harsein’s Nessim, Khalil Pacha
+                                de Menasce's Viking, Ishack Bey Harsein’s Nessim, Khalil Pacha
                                 Khayat’s Suleik and Kawkab, Mr. A. J. Sursock’s The Bard, Moharrem
                                 Pasha Sioufi’s Atragak, Ibrahim Bey Cheiifs Ter el-Hamam, Kara Aslan
                                 and Mikado, Mr. J. Valeosio’s Sioudi (late Nouri), Saleh Bey
@@ -2523,8 +2525,8 @@
                             <p>Roomie and Breakfast P.T. 25— Monia a la carte</p>
                             <p>20700-26-11-906</p>
                         </div>
-                        <div type="item">
-                            <head>PERSONAL AND SOCIAL.</head>
+                        <div type="section" element="social">
+                    <head>PERSONAL AND SOCIAL.</head>
                             <p>H H. the Khedive has conferred the follow- ing decorations on the
                                 undermentioned officials of the Cairo Police School : Medjidieh (3rd
                                 Class), Bimbashi Khalil Ed. Hamdj, head- master, and Ahmed Eff.
@@ -2586,7 +2588,7 @@
                             <p>1. £120 á titre supplémentaire pour le homage des terrains des
                                 quais.</p>
 
-                            <p>2. £200 pour certaines reparations k effec- tuer á des parties de
+                            <p>2. £200 pour certaines reparations à effec- tuer á des parties de
                                 chaussées des quais.</p>
 
                             <p>3. £1450 pour la construction du collec- teur Ibrahim.</p>
@@ -2641,7 +2643,7 @@
                         </div>
                     </div>
 
-                </div>
+               
             </div>
             <div type="page" n="4">
                 <head>THÉ EGYPTIAN GAZETTE, MONDAY, MAT 21, 1906.</head>
@@ -2706,7 +2708,7 @@
 
                     <p>L'Agricole perd 1/16 à 9 13/16, la National Bank également 1/16 à 26 1/8.</p>
 
-                    <p>La Delta Light recule de 1/16 à 12 1/16, les Urbaines de 1/16 k 6 3/16.</p>
+                    <p>La Delta Light recule de 1/16 à 12 1/16, les Urbaines de 1/16 à 6 3/16.</p>
 
                     <p>Par contre, la Béhéra avance de 1/4 à 35 1/4, les Markets gagnent 6 pence à
                         26/6, la Salt and Soda 3 pences à 21.</p>
@@ -2748,10 +2750,10 @@
                         Par contre, le Comptoir Finan- cier s’est alourdi à 5 3/4 l’action ancienne
                         et 5 5/8 la nouvelle ; la part de fondateur est revenue à 38.</p>
 
-                    <p>L’action Crédit Foncier a faibli b 775-776. La Béhéra est remontée k 35 et la
+                    <p>L’action Crédit Foncier a faibli b 775-776. La Béhéra est remontée à 35 et la
                         Delta Light à 12 1/8.</p>
 
-                    <p>L’agricole du Nil a été traitée k 265, ex- right</p>
+                    <p>L’agricole du Nil a été traitée à 265, ex- right</p>
 
                     <p>L’action Entreprises Immobilières et Travaux a été demandée à 4 1/8-3/16, et
                         l’Union Fon- cière à 6 7/16-1/2.</p>
@@ -2825,7 +2827,7 @@
                     <p>A l’ordre du jour: rapport da conseil, pré- sentation des comptes et bilan de
                         l’exercice écoulé, fixation du dividende, etc.</p>
                 </div>
-                <div type="article">
+                <div type="section" element="passList">
                     <head>PASSENGER LISTS.</head>
 
                     <p>DEPARTURES.</p>
@@ -2852,8 +2854,7 @@
                         Pachundaki, Mme Reinsperger, Mr. O. Stierle, Mr. Schwarger, Mr. Strack, Mme
                         Seeger et fille, Mr. et Mme Wehrli, M. R Wiecbell, M. le Dr. Zechlin.</p>
                 </div>
-                <div type="article">
-                    <head>SHIPPING MOVEMENTS.</head>
+                <div type="section" element="shippingMovements"><head>SHIPPING MOVEMENTS.</head>
 
                     <p>ALEXANDRIA HARBOUR.</p>
                     <p>ARRIVALS.</p>
@@ -2912,7 +2913,7 @@
                     <p>AVIS</p>
 
                     <p>L’Administration des Chemins de fer et des Télégraphes de l'Etat a l'honneur
-                        de porter k la connaissançe du public qu’à partir du 20 Mai courant, un
+                        de porter à la connaissançe du public qu’à partir du 20 Mai courant, un
                         Bureau Télégraphique sera ouvert sur la plaça de Manshia, près de la
                         Citadelle pour l'échange des correspoudanoes en langues Européennes et
                         Araba.</p>
@@ -4417,8 +4418,7 @@ et la clôture a été plutôt mauvaise.--></p>
                     </table>
                 </div>
             </div>
-            <div type="page" n="5">
-                <div type="item" scope="advertisement">
+            <div type="page" n="5"><div type="section" element="wire">                <div type="item">
                     <head> Tofay's General</head>
                     <p>Great Britain and Russia</p>
                     <p>Negotiations for Understanding Advanced</p>
@@ -4443,7 +4443,7 @@ et la clôture a été plutôt mauvaise.--></p>
                     <p>The "Daily Telegraph” states that the Channel Fleet visits Kronstadt at the
                         end of July.</p>
                 </div>
-                <div type="item" scope="advertisement">
+                <div type="item">
                     <head> Japan and Russia</head>
                     <p>RUMOURED DIPLOMATIC TENSION.</p>
 
@@ -4455,7 +4455,7 @@ et la clôture a été plutôt mauvaise.--></p>
                         Britain and Germany are supporting Japan.</p>
                     <p> (Reuttr)</p>
                 </div>
-                <div type="item" scope="advertisement">
+                <div type="item">
                     <head> PEACE CONFERENCE.</head>
 
                     <p>London, May 20.</p>
@@ -4463,7 +4463,7 @@ et la clôture a été plutôt mauvaise.--></p>
                     <p>It is practically certain that the Peace Con- ference will not meet before
                         May, 1907. (R.)</p>
                 </div>
-                <div type="item" scope="advertisement">
+                <div type="item">
                     <head> The Chinese Customs</head>
                     <p>GREAT BRITAIN’S PROTEST.</p>
 
@@ -4481,14 +4481,14 @@ et la clôture a été plutôt mauvaise.--></p>
                         protest against the Customs edict. The British Charge d’Af- faires has
                         addressed a second Note to the Chinese Government. (Reuter)</p>
                 </div>
-                <div type="item" scope="advertisement">
+                <div type="item">
                     <head> Amnesty In Russia </head>
                     <p>St.Petersburg, May 19.</p>
 
                     <p>The amnesty wi'l be promulgated on the 27th May, the anniversary of the
                         Tsar’s coronation. (Havas)</p>
                 </div>
-                <div type="item" scope="advertisement">
+                <div type="item">
                     <head> Opening of Simplon Tunnel</head>
                     <p>Brigue. May 19.</p>
                     <p>King Victor Emmanuel and M. Forrer, Pre- sident of the Helvetian
@@ -4497,25 +4497,25 @@ et la clôture a été plutôt mauvaise.--></p>
                     <p>Rome, May 20.</p>
                     <p>King Victor Emmannuel has formally opened the Simplon Tunnel. (Reuter)</p>
                 </div>
-                <div type="item" scope="advertisement">
+                <div type="item">
                     <head> The Pope Ill</head>
                     <p>Rome, May 19.</p>
                     <p>The Pope is laid np in bed with gout. (R.)</p>
                 </div>
-                <div type="item" scope="advertisement">
+                <div type="item">
                     <head>FRENCH ELECTIONS.</head>
                     <p> Paris,May 20.</p>
                     <p> The second ballots give the victory to the Radicals and Socialists.Messars,
                         Magnand,Buissot, Viviani, and Draint have been elete, while Messrs.
                         Marchand, Déroulède and Driant have been defeated. (Hacas)</p>
                 </div>
-                <div type="item" scope="advertisement">
+                <div type="item">
                     <head> BOMB EXPLOSION IN FRANCE.</head>
                     <p> Poitiers, May 20.</p>
                     <p> A bomb exploded at Saint Chartres. Seven people were seriously injured.
                         (Havas)</p>
                 </div>
-                <div type="item" scope="advertisement">
+                <div type="item">
                     <head> Natal Rebellion</head>
                     <p>Rearguard Action.</p>
                     <p>Cheifs Anxious To Surrednder</p>
@@ -4529,7 +4529,7 @@ et la clôture a été plutôt mauvaise.--></p>
                         military operation. Native women who have surrendered say that the Zulu
                         plans have been upset by the energy shown by the British. (Reuter)</p>
                 </div>
-                <div type="item" scope="advertisement">
+                <div type="item">
                     <head>“C.-B.” AND FEMALE SUFFRAGISTS.</head>
 
                     <p>London, May 19.</p>
@@ -4538,27 +4538,27 @@ et la clôture a été plutôt mauvaise.--></p>
                         expressed sympathy with them, and urged them to have patience till the
                         Government was more united on the question. (Reuter)</p>
                 </div>
-                <div type="item" scope="advertisement">
+                <div type="item">
                     <head>BURGOMASTERS LEAVE LONDON.</head>
 
                     <p> London, May 20.</p>
                     <p>The Burgomasters have left for home. (R)</p>
                 </div>
-                <div type="item" scope="advertisement">
+                <div type="item">
                     <head>AMERICAN RAILWAY RATES BILL.</head>
 
                     <p>Washington, May 19.</p>
                     <p>The Senate has passed the Railway Rates Bill, with amendments. (Reuter)</p>
                 </div>
-                <div type="item" scope="advertisement">
+                <div type="item">
                     <head>HOME CRICKET.</head>
 
                     <p>London, May 19.</p>
                     <p>Cricket. Kent v. Yorkshire : Yorkshire won by 119 runs. Hampshire v. Surrey :
                         Surrey won by ten wickets. Oxford University v. Lancashire : Lancashire won
                         by 141 runs. (R.)</p>
-                </div>
-                <div type="item" scope="advertisement">
+                </div></div>
+                <div type="item">
                     <head>EGYPTIAN COTTON PESTS.</head>
 
                     <p>The latest issue of the Bulletin of the Im- perial Institute contains an
@@ -4611,14 +4611,14 @@ et la clôture a été plutôt mauvaise.--></p>
                         Sea- men’s Home will be held at H. B. M.’s Consulate on Monday, the 28th
                         May, at 5 p.m. 27972-1</p>
                 </div>
-                <div type="item" scope="advertisement">
+                <div type="section" scope="letters">
                     <head>LETTERS TO THE EDITOR.</head>
 
                     <p>We do not hold ourselves responsible for the opinions ex- pressed by our
                         correspondents, but we wish, in a spirit of Islr pUj to all, to permit
                         -within certain necessary limits— free discussion.</p>
-
-                    <p>AN APPEAL.</p>
+<div type="item">
+                    <head>AN APPEAL.</head>
 
                     <p>To the Editor of the "Egyptian Gazette.” Dear Sir,—I feel yon will allow me
                         to make an appeal in your columns for a subscription towards an old
@@ -4668,8 +4668,8 @@ et la clôture a été plutôt mauvaise.--></p>
 
                     <p>Yours truly,</p>
                     <p>Brotherly love, Relief.and I hope Truth. </p>
-                </div>
-                <div type="item" scope="calendar" xml:id="deg-el-coce01">
+                </div></div>
+                <div type="item" scope="calendar" element="comingEvents">
                     <head>Calendar of Coming Events</head>
                     <table cols="2" xml:id="deg-ta-coce01">
                         <row role="label">
