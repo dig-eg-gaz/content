@@ -12,8 +12,7 @@
             </titleStmt>
             <editionStmt>
                 <edition>
-                    <date when="2016-10-10">October 10, 2016</date>
-                </edition>
+                    <date when="2016-10-10">October 10, 2016</date><gloss>1</gloss></edition>
             </editionStmt>
             <publicationStmt>
                 <publisher>FSU University Libraries</publisher>
@@ -23,7 +22,7 @@
                 <bibl>
                     <title>Egyptian Gazette</title>
                     <date when="1905-10-07">October 7, 1905</date>
-                </bibl>
+                    <extent><measure unit="pages" quantity="6">6</measure> pages</extent></bibl>
             </sourceDesc>
         </fileDesc>
     </teiHeader>
@@ -1184,7 +1183,7 @@
                         <p>Advances on Merchandise and Securities in current account and for fixed
                             periods. Purchase and sale of stocks and Shares on the <placeName
                                 ref="https://www.wikidata.org/wiki/Q84">London</placeName> and
-                            Continental exchanges, letters of credit issued, valuables reoeived in
+                            Continental exchanges, letters of credit issued, valuables received in
                             safe custody. Drafts, cheques and telegraphic transfers issued on the
                             principal towns of the world. Foreign exchange purchased, bills
                             discounted, bills, invoices, annuities and dividends collected and every
@@ -1851,8 +1850,12 @@
                         <p>The officers and clerks of the Bank are pledged to secrecy as to the
                             transactions of customers. 18-9-905</p>
                     </div>
-                    <!-- TODO Surplus Drapery Stock -->
-                    <!-- TODO Howie & Co, The Hygenic Dairy -->
+                    <div type="advert">
+                        <head>SELLING OFF. SURPLUS DRAPERY STOCK OF MAGASINS VICTORIA</head>
+                        <p>On Premises lately occupied by "Papeterie Commerciale," Rue Sesostris, 3
+                            doors from Cherif Pasha Street. For particulars see advertisement in another
+                            column.</p>
+                    </div> <!-- TODO Howie & Co, The Hygenic Dairy -->
                     <div type="advert" xml:id="deg-ad-aaw01">
                         <head>ARISTON AERATED WATERS</head>
                         <p>Guaranteed Distilled.</p>
@@ -1869,8 +1872,13 @@
                         <p>Alexandria &amp; Cairo</p>
                         <p>27-10-0.</p>
                     </div>
-                    <!-- TODO Grand Hotel de Louvre & Paix -->
-                    <div type="advert" xml:id="deg-ad-clh01">
+                    <div type="advert" xml:id="deg-ad-ghl01">
+                        <head>MARSEILLE</head>
+                        <p>GRAND HOTEL DU LOUVRE &amp; PAIX</p>
+                        <p>LA RESERVE &amp; PALACE HOTEL</p>
+                        <p>Cornice. Sea-Side</p>
+                        <p>Proprieter L. ECHENARD, NEUSCHWANDER.</p><p><measure type="indexNo">26504-20*-1</measure></p>
+                    </div><div type="advert" xml:id="deg-ad-clh01">
                         <head>CIGARES de la HAVANE</head>
                         <p>de provenance directe et de toutes les meilleures marques</p>
                         <p>Nicolas G Sabbag</p>
@@ -1883,8 +1891,16 @@
                         <p>246081-26-904</p>
                     </div>
                     <!-- TODO Walker Meimarachi, Limited -->
-                    <!-- TODO The National Residence, Cairo. -->
-                    <!-- TODO Hotel Du Nil, Cairo -->
+                    <div type="advert" xml:id="deg-ad-nrc01">
+                        <head>The National Residence, Cairo.</head>
+                        <p>One of the finest and most up-to-date residences.</p>
+                        <p>Rooms furnished and not furnished. With or without board. Situated in the Sharia
+                            Soliman Pasha and Sharia Dair-el-Binat, Ismailieh quarter. High class cuisine,
+                            electric light throughout and lift. Rooms and apartments to suit every one. For
+                            further particulars apply to</p>
+                        <p>Chas. Bauer, General Manager, Cairo,</p>
+                        <p><measure type="indexNo">26515-30-11-905</measure></p>
+                    </div><!-- TODO Hotel Du Nil, Cairo -->
                     <div type="advert" xml:id="deg-ad-hcs01">
                         <p>HOTEL-CASINO SAN STEFANO IS NOW OPEN</p>
                         <p>26045-80-9-5</p>
@@ -2033,7 +2049,7 @@
                     <p>SATURDAY, OCTOBER 7, 1905.</p>
                 </div>
                 <!-- TODO The Sucrereis -->
-                <div type="item" scope="calendar" xml:id="CalendarOfTheWeek">
+                <div type="item" element="comingEvents">
                     <head>Calendar of Coming Events.</head>
                     <div type="subsection">
                         <table cols="3" xml:id="CalendarOfTheWeek-Alexandria">
@@ -2104,7 +2120,7 @@
                     </div>
                 </div>
             </div>
-            <div type="page" n="3">
+            <div type="page" n="3"><div type="section" element="wire">
                 <div type="article">
                     <head>CANAL TRAFFIC, SHIPS ENTER TODAY.</head>
                     <dateline><placeName ref="https://www.wikidata.org/wiki/Q134509">Port
@@ -2176,7 +2192,7 @@
                     <p>A great athletic meeting is taking place in the Vatican gardens under the
                         patronage of the Pope, who warmly approves of sports.</p>
                     <byline>(R.)</byline>
-                </div>
+                </div></div>
 
                 <div type="section" element="social">
                     <head>PERSONAL AND SOCIAL</head>
@@ -2439,8 +2455,7 @@
                             H. the Khedive to the yacht club. The weekly regatta will be held on
                             Wednesday as usual.</p>
                     </div>
-                    <div type="article">
-                        <head>STEAMER MOVEMENTS.</head>
+                    <div type="section" element="steamerMovements"><head>STEAMER MOVEMENTS.</head>
                         <p>The Moss liner Rameses sailed from. <placeName
                                 ref="https://www.wikidata.org/wiki/Q233">Malta</placeName> yesterday
                             afternoon and is due at <placeName
@@ -2699,7 +2714,7 @@
                     <p>Asset mouvementés au début, les Estates</p>
                     <p>terminent avec une reaction totals de 1/32 à 1 7/32 acheteurs. Cette valeur
                         sera désormais inscrite au Stock Exchange de Londres,</p>
-                    <p>L’Agrioole qui a été en grande faveur durant toute la semaine finit à 9 5/8,
+                    <p>L’Agricole qui a été en grande faveur durant toute la semaine finit à 9 5/8,
                         en gain de 3/16 sur le cours de vendredi dernier.</p>
                     <p>Toot aussi animée, quo que en snes contraire, 1a National Bank clôture à 27
                         3/16, en parts de 5/16.</p>

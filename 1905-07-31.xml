@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/dig-eg-gaz/resources/master/out/egSchema.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-stylesheet type="text/xsl" href="dig-eg-gaz.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
@@ -11,8 +12,7 @@
             </titleStmt>
             <editionStmt>
                 <edition>
-                    <date when="2017-01-17">January 17, 2017</date>
-                </edition>
+                    <date when="2017-01-17">January 17, 2017</date><gloss>2</gloss></edition>
             </editionStmt>
             <publicationStmt>
                 <publisher>FSU University Libraries</publisher>
@@ -21,8 +21,8 @@
             <sourceDesc>
                 <bibl>
                     <title>The Egyptian Gazette</title>
-                    <date when="1905-07-31">July 31, 1905</date>
-                </bibl>
+                    <date when="1905-07-31"><name>Monday</name>, July 31, 1905</date>
+                    <extent><measure unit="pages" quantity="6">6</measure> pages</extent></bibl>
             </sourceDesc>
         </fileDesc>
     </teiHeader>
@@ -98,10 +98,15 @@
                             </row>
                         </table>
                         <p>The Brindisi Express Steamers leave Port Said directly the Indian Mails
-                            arrive. Passengers can go on board the evening before. The Fare remains
-                            as usual.</p>
+                            arrive. Passengers can go on board the evening before. The Fare is £ 9
+                            to Brindisi.</p>
+                        <p>The combined sea and special train fare has been reduced to £ 22.9.11
+                            Port Said to London via Brindisi or via Mersailles.</p>
+                        <p>During the Monsoon season the express steamer usually reaches Brindisi on
+                            Thursday afternoon, the special train starting at 8 p.m. and arriving in
+                            London at the very convenient hour of 4.56 p.m. on Saturday.</p>
                         <p>For all further information apply to the Company's Agents,</p>
-                        <p>Messrs. THOS. COOK &amp; SON (Egypt) Ltd. CAIRO.</p>
+                        <p>Messrs. THOS. COOK &amp; SON (Egypt) Ltd. CAIRO. </p>
                         <p>GEORGE ROYLE, Esq. PORT-SAID.</p>
                         <p>Messrs. HABELDEN &amp; Co. ALEXANDRIA.</p>
                         <p>F. G. DAVIDSON, Superintendent P. &amp; O. S. N. Company in Egypt
@@ -189,7 +194,7 @@
                             <measure quantity="4196" unit="ton">5,706</measure> tons leaves about
                                 <date when="1905-08-09">August 23</date>.</p>
                         <p>FARES from Port Said to Marseilles £12.0.0, London £17.0.0, Colombo
-                            £32.10.0, Rangoon £37.10.0.</p>
+                            £37.10.0, Rangoon £37.10.0.</p>
                         <p>Agents Cairo: THOS. COOK &amp; SON. Suez &amp; Port Said : WM. STAPLEDON
                             &amp; SONS,</p>
                         <p>31-12-905</p>
@@ -235,7 +240,7 @@
                             </row>
                             <row>
                                 <cell>*Busiris</cell>
-                                <cell>Tons. 6,000</cell>
+                                <cell>Tons. 8,000</cell>
                                 <cell>*Nitocris</cell>
                                 <cell>Tons 5,500</cell>
                                 <cell>Rameses</cell>
@@ -301,10 +306,10 @@
                             SAID about <date when="1905-07-23">August 6</date> for London.</p>
                         <p><name>S.S. ARRACAN</name>
                             <measure quantity="5600" unit="ton">5800</measure> Tons will leave PORT
-                            SAID about <date when="1905-08-06">August 29</date> for Liverpool.</p>
+                            SAID about <date when="1905-08-06">August 20</date> for Liverpool.</p>
                         <p><name>S.S. MANDALAY</name>
                             <measure quantity="5800" unit="ton">5600</measure> Tons will leave PORT
-                            SAID about <date when="1905-08-20">SEPT. 8</date> for Liverpool</p>
+                            SAID about <date when="1905-08-20">SEPT. 3</date> for Liverpool</p>
                         <p>Due in LONDON or LIVERPOOL 12 days thereafter.</p>
                         <p>Apply WORMS &amp; Co., Port Said and Suez. THOS. COOK &amp; SON, (EGYPT)
                             LD., CAIRO ;</p>
@@ -341,6 +346,7 @@
                         <p>Best camp equipment in the country! <measure type="indexNo">10
                                 12-904</measure></p>
                     </div>
+                    <cb n="2"/>
                     <div type="item" scope="advertisement" xml:id="deg-ad-bis01">
                         <head>British India S. N. Company, Limited.</head>
                         <p>MAIL AND PASSENGER STEAM SHIPS.</p>
@@ -551,7 +557,7 @@
                             </row>
                             <row>
                                 <cell>Depart. - Alexandria</cell>
-                                <cell>6. 0 p.m.</cell>
+                                <cell>6.00 p.m.</cell>
                                 <cell>Arrival - Cairo</cell>
                                 <cell>9.20 p.m.</cell>
                             </row>
@@ -584,7 +590,7 @@
                             </row>
                             <row>
                                 <cell>Arriv. - Port Said</cell>
-                                <cell>5. 0 p.m. &amp; 11.10 p.m.</cell>
+                                <cell>5.00 p.m. &amp; 11.10 p.m.</cell>
                                 <cell>Arriv. - Cairo</cell>
                                 <cell>5. 0 p.m. &amp; 11.25 p.m.</cell>
                             </row>
@@ -665,6 +671,7 @@
                         <p>SOLE AGENTS FOR Dudbridges Oil Engines from 1 to 25 B.H.P. as supplied to
                             Sudan Government. Seamless xxxxxxxxxxxxxxxxxxxxx</p>
                     </div>
+                    <cb n="3"/>
                     <div type="item" scope="advertisement" xml:id="deg-ad-aan01">
                         <head>Anglo-American Nile Steamer &amp; Hotel Coy.</head>
                         <p>Weekly departure during Winter Season by the<lb/> Luxurious First Class
@@ -769,66 +776,44 @@
                             and Germany.</p>
                         <table rows="3" cols="8">
                             <row>
-                                <cell><date when="1905-07-08">July 8</date></cell>
-                                <cell>4 p.m.</cell>
-                                <cell><name>S. S. "Semiramis"</name></cell>
-                                <cell><persName>Capt. Martinolich</persName></cell>
-                                <cell><date when="1905-07-29">July 29</date></cell>
+                                <cell><date when="1905-07-08">July 29</date></cell>
                                 <cell>4 p.m.</cell>
                                 <cell><name>S. S. "Imperator"</name></cell>
                                 <cell><persName>Capt. Mosca</persName></cell>
-                            </row>
-                            <row>
-                                <cell><date when="1905-07-15">July 15</date></cell>
+                                <cell><date when="1905-07-29">August 5</date></cell>
                                 <cell>4 p.m.</cell>
-                                <cell><name>S. S. "Bohemia"</name></cell>
-                                <cell><persName>Capt. Dabcevich</persName></cell>
-                                <cell><date when="1905-08-05">August 5</date></cell>
-                                <cell>4 p.m.</cell>
-                                <cell><name>S.S. "Imperatrix"</name></cell>
-                                <cell><persName>Capt. Ghezzo</persName></cell>
-                            </row>
-                            <row>
-                                <cell><date when="1905-07-22">July 22</date></cell>
-                                <cell>4 p.m.</cell>
-                                <cell><name>S. S. "Cleopatra"</name></cell>
-                                <cell><persName>Capt. Ivellich</persName></cell>
-                                <cell/>
-                                <cell/>
-                                <cell/>
-                                <cell/>
+                                <cell><name>S. S. "Imperatrix"</name></cell>
+                                <cell><persName>Capt. Ghekso</persName></cell>
                             </row>
                         </table>
                         <p>Fortnightly Service: Alexandria-Brindisi-Venice-Trieste</p>
                         <table rows="1" cols="8">
                             <row>
-                                <cell><date when="1905-06-21">June 21</date></cell>
+                                <cell><date when="1905-06-21">August 2</date></cell>
+                                <cell>4 p.m.</cell>
+                                <cell><name>S. S. "Amphitrite"</name></cell>
+                                <cell><persName>Capt. Tomassevich</persName></cell>
+                                <cell><date when="1905-07-05">August 16</date></cell>
                                 <cell>4 p.m.</cell>
                                 <cell><name>S. S. "Thalia"</name></cell>
-                                <cell><persName>Capt. Ivaneich</persName></cell>
-                                <cell><date when="1905-07-05">July 5</date></cell>
-                                <cell>4 p.m.</cell>
-                                <cell><name>S. S. "Maria Teresa"</name></cell>
-                                <cell><persName>Capt. Knezevich</persName></cell>
+                                <cell><persName>Capt. Ivancick</persName></cell>
                             </row>
                         </table>
                         <p>(Departures from Suez) To Aden, Bombay, Colombo, Penang, Singapore,
-                            Hong-Kong, Shanghai, Yokohama, Kobé about <date when="1905-07-05">July
-                                5</date> and <date when="1905-08-04">August 4</date>. To Aden,
+                            Hong-Kong, Shanghai, Yokohama, Kobé about <date when="1905-07-05">August
+                                4</date> and <date when="1905-08-04">Sept. 4</date>. To Aden,
                             Karachi, and Bombay accelerated service about <date when="1905-08-18"
                                 >August 18</date>. To Aden, Karachi, Bombay, Colombo, Madras,
-                            Rangoon, and Calcutta about <date when="1905-07-20">July 20</date>.</p>
+                            Rangoon, and Calcutta about <date when="1905-07-20">August
+                            18</date>.</p>
                         <p>East African Line.</p>
                         <p>To Aden, Mombassa, Zanzibar, Beira, Delagoa Bay, Durban, about <date
-                                when="1905-07-04">July 4</date> and <date when="1905-08-03">August
-                                3</date>.</p>
-                        <p>Syrian-Cyprus-Caramanian Line.</p>
-                        <p>Steamers leaves Alexandria on or about <date when="1905-07-03">July
-                                3</date>, <date when="1905-07-17">17</date> and <date
-                                when="1905-07-31">31</date>.</p>
+                                when="1905-07-04">August 3</date> and <date when="1905-08-03"
+                                >September 3</date>.</p>
                         <p>For information apply to the Agents, Alexandria, Port Said and Suez,
-                            Thos. Cook &amp; Son, Ld., Leon Heller, Cairo Agent, 4, Sharia Maghraby,
-                            (Telephone 192), Cairo; F. Tedeschi, Helouan.</p>
+                            Thos. Cook &amp; Son, Ld., </p>
+                        <p>Leon Heller, Cairo Agent, 4, Sharia Maghraby, (Telephone 192), Cairo; F.
+                            Tedeschi, Helouan.</p>
                         <p>Special passage rates granted to Egyptian Government officials, members
                             of the Army of Occupation and their families.</p>
                         <p><measure type="indexNo">31-12-905</measure></p>
@@ -841,9 +826,8 @@
                             and other Mediterranean Ports.</p>
                         <p>Excellent Passenger Accommodation. Stewardess carried. Liberal table and
                             Moderate Fares for single and return tickets.</p>
-                        <p>The <name>S S. SARDINIA</name> will sail for
-                                <placeName>Liverpool</placeName> (via Bona) on <date
-                                when="1905-07-07">Friday, the 7th inst.</date> at 4 p.m.</p>
+                        <p>The <name>S S. Austrian</name>, Capt. Draper, now in port will leave for
+                                <placeName>Liverpool</placeName> in a few days.</p>
                         <p>CARGO taken by special agreement only. Through Freights quoted for the
                             UNITED STATES and INLAND TOWNS in GREAT BRITAIN.</p>
                         <p>For passage or freight apply to the Agents, BARKER &amp; Co., Alexandria.
@@ -870,7 +854,7 @@
                                 <cell><name>S.S. City of Athens</name></cell>
                                 <cell><date when="1905-07-26">August 13</date></cell>
                                 <cell>Marseilles and Liverpool</cell>
-                                <cell><name>S.S. City of Kucknow</name></cell>
+                                <cell><name>S.S. City of Lucknow</name></cell>
                                 <cell><date>Aug. 9</date></cell>
                             </row>
                             <row>
@@ -899,34 +883,32 @@
                             U.S.A</p>
                         <table rows="4" cols="5">
                             <row>
+                                <cell>Westcott <name>S.S. Plmothian</name></cell>
+                                <cell>expected from</cell>
+                                <cell><placeName>Antwerp</placeName>, <placeName>London</placeName>
+                                    &amp; <placeName>Malta</placeName></cell>
+                                <cell>is due on or about</cell>
+                                <cell><date when="1905-07-16">July 30</date></cell>
+                            </row>
+                            <row>
                                 <cell>Westcott <name>S.S. Orestes</name></cell>
                                 <cell>expected from</cell>
                                 <cell><placeName>Antwerp</placeName>, <placeName>London</placeName>
                                     &amp; <placeName>Malta</placeName></cell>
                                 <cell>is due on or about</cell>
-                                <cell><date when="1905-07-16">August 15</date></cell>
+                                <cell><date when="1905-07-25">August 15</date></cell>
                             </row>
                             <row>
                                 <cell>Ellerman <name>S.S. Flavian</name></cell>
                                 <cell>expected from</cell>
-                                <cell><placeName>Glasgow</placeName>,
-                                        <placeName>Gibraltar</placeName> &amp;
+                                <cell>
+                                    <placeName>Liverpool</placeName> &amp;
                                         <placeName>Malta</placeName></cell>
-                                <cell>is due on or about</cell>
-                                <cell><date when="1905-07-25">July 25</date></cell>
-                            </row>
-                            <row>
-                                <cell>Westcott <name>S.S. Plymothian</name></cell>
-                                <cell>expected from</cell>
-                                <cell><placeName>Antwerp</placeName>, <placeName>London</placeName>
-                                    &amp; <placeName>Malta</placeName></cell>
                                 <cell>is due on or about</cell>
                                 <cell><date when="1905-07-25">August 17</date></cell>
                             </row>
                         </table>
-                        <p>Ellerman <name>S.S. Britannia</name> now on the berth for
-                                <placeName>Liverpool</placeName> is expected to sail about the <date
-                                when="1905-07-25">25th inst.</date></p>
+                        <p>Passenger accommodation amidship and stewardess carried.</p>
                         <p>N. E. TAMVACO Alexandria agents <measure type="indexNo"
                                 >23186-20-3-3</measure></p>
                     </div>
@@ -1091,9 +1073,9 @@
                         <p>* 35/- per case or P.T. 170.5.</p>
                         <p>** 40/6 " " " 197.5.</p>
                         <p>*** 47/- " " " 229</p>
-                        <p>VO 53/- per case or P.T. 256.</p>
-                        <p>VSO 60/- " " " 292.</p>
-                        <p>VSOP 80/- " " " 390.</p>
+                        <p>VO 53/- per case or P.T. 258.</p>
+                        <p>VSO 60/- " " " 210.</p>
+                        <p>VSOP 80/- " " " 322.</p>
                         <p>All so-called MARTELL Cognacs sold below these prices cannot be
                             genuine.</p>
                         <p>25912.7-8-9)</p>
@@ -1257,7 +1239,7 @@
                             Station.</p>
                         <p>21440-24-5-905</p>
                         <p>G. AQUILINA, Proprieter.</p>
-                    </div>
+                    </div></div>
                     <cb n="5"/>
                     <div type="section" scope="weather" xml:id="deg-el-dawr01">
                         <head>DAILY WEATHER REPORT</head>
@@ -1494,8 +1476,8 @@
                         <p>Editor &amp; Manager: R. Snelling.</p>
                         <p>Price: One Piastre Tariff.</p>
                         <p><date when="1905-07-31">MONDAY, JULY 31, 1905</date>.</p>
-                        <p>MAY 27, 1905.</p>
-                        <p>Admiral Togo’s offiCial report of the Battle of the Sea of Japan, which
+                        <p>MAY 27, 1905.</p></div><div type="item">
+                        <p>Admiral Togo’s official report of the Battle of the Sea of Japan, which
                             appeared in the “Times” of the 24th inst., is the first clear
                             description of the greatest modern sea battle. It contradicts some of
                             the versions of the tactics employed in the fight to which naval experts
@@ -1647,14 +1629,14 @@
                         </table>
                     </div>
                 </div>
-            </div>
+         
             <div type="page" n="3">
                 <div type="masthead">
                     <head>THE EGYPTIAN GAZETTE, Monday, July 31, 1905.</head>
                 </div>
-                <div type="section">
+                
                     <cols n="6"/>
-                    <cb n="1"/>
+                <cb n="1"/><div type="section" element="wire">
                     <div type="item">
                         <head>VLADIVOSTOK BLOCKADED</head>
                         <p><hi rend="bold">JAPANESE OVERRUNNING SAGHALIEN.</hi></p>
@@ -1757,7 +1739,7 @@
                         <p>St. Petersburg, July 30.</p>
                         <p>The Tsar, in replying to a petition urging him not to conclude a shameful
                             peace, says :— "The Russian people may rely on me that I will never make
-                            a dishonorable or an unworthy peace.” {Reuter.)</p>
+                            a dishonorable or an unworthy peace.” (Reuter.)</p>
                     </div>
                     <div type="item">
                         <head>JAPS NOT OPPOSED TO ARMISTICE.</head>
@@ -1792,9 +1774,9 @@
                         <p>New Orleans, July 29.</p>
                         <p>Numerous cases of yellow fever have taken place here. The illness is
                             spreading to other cities. (Reuter.)</p>
-                    </div>
-                    <div type="item">
-                        <head>PASSENGER LISTS.</head>
+                    </div></div>
+                    <div type="section" element="passList">
+<head>PASSENGER LISTS.</head>
                         <p><hi rend="bold">ARRIVALS</hi>.</p>
                         <p>Le paquebot “Imperatrix” arrive ce matin de Trieste avait A bord : MM. A.
                             Nourrisson, Prince et Princesse ,Dabija et leur fille, A. Tilche, Rd. P.
@@ -1836,8 +1818,8 @@
                             fam., S. Ventura, Mme Warner et 34 passagers de 3me classe. </p>
                     </div>
                     <cb n="3"/>
-                    <div type="item">
-                        <head>LOCAL AND GENERAL.</head>
+                    <div type="section" element="local">
+                    <head>LOCAL AND GENERAL.</head>
                         <p>The Cyprus Journal for July contains a large amount of interesting
                             matter, mainly pertaining to agriculture.</p>
                         <p>Rotations.—The rotations now enforced in the 2nd Circle of Irrigation are
@@ -1873,7 +1855,7 @@
                             Sharkieh province, the Bandar and Markaz of Zagazig subscribing L.E.
                             1,400 and Fakous Markaz L.E. 1,350.</p>
                         <p>The Ways of the Turk.—The chief ulema of Tripoli in Syria, Sheikh Mohamed
-                            El Raffei, has been pnt nnder arrest and his house searched from top to
+                            El Raffei, has been pnt under arrest and his house searched from top to
                             bottom. The Turkish police, on being asked to explain their conduct,
                             could only say that the sheikh was known to be a friend of the late
                             Grand Mufti of Egypt! We should have thought that such a recom-
@@ -2027,11 +2009,11 @@
                             voyage. She does not coal here, though permission to do so has been
                             granted, and has only taken a limited quantity of provisions and
                             water.</p>
-                        <p><hi rend="bold">DEPARTURE OF CONSUL.</hi></p>
+                    </div><div type="item"><p><hi rend="bold">DEPARTURE OF CONSUL.</hi></p>
                         <p>Mr. D. A. Cameron is to leave here on Tues- day in the homeward going P.
                             And O. mail steamer and will be replaced by the Vice- Consul during the
                             three months in which he will be on leave.</p>
-                        <p>
+                    </div><div type="item"> <p>
                             <hi rend="bold">HARBOUR IMPROVEMENTS.</hi></p>
                         <p>I hear on excellent authority that Messrs. Dowrie And Co., who are the
                             lessees of the point bearing their name, have been paid an indem- nity
@@ -2043,7 +2025,7 @@
                             behind Navy House has been given them in exchange, thus putting the
                             Canal Company in the position of landlords to Dowrie And Co., —result,
                             this heavy indemnity.</p>
-                        <p><hi rend="bold">SERIOUS CANAL INCIDENT.</hi></p>
+                    </div><div type="item"> <p><hi rend="bold">SERIOUS CANAL INCIDENT.</hi></p>
                         <p>The steamer Newton Hall, having been ordered to tie up close to Kilo. 133
                             in the Canal, sent tier lines ashore in the usual way. Some form of
                             discussion appears to have taken place with some Arabs who are working
@@ -2062,7 +2044,7 @@
                             of its kind.</p>
                         <p>Port Said, Sunday, 1 p.m. </p>
                         <p>The Newton Hall is proceeding all well and will be here to-night.</p>
-                        <p><hi rend="bold">NOTES FROM SUEZ.</hi></p>
+                    </div><div type="item"><p><hi rend="bold">NOTES FROM SUEZ.</hi></p>
                         <p><hi rend="bold">DANCE ON THE BLECTRA.</hi></p>
                         <p>(From a Correspondent.)</p>
                         <p>On Thursday last, a most successful small dance was held at Suez on board
@@ -2085,7 +2067,7 @@
                             the most successful small dances ever held on board ship in Suez, the
                             hosts being amply repaid for their trouble and the care taken over the
                             decora- tions,by the enthusiastic admiration expressed on all hands.</p>
-                        <p><hi rend="bold">STEAMER MOVEMENTS.</hi></p>
+                    </div><div type="section" element="steamerMovements"><head>STEAMER MOVEMENTS.</head>
                         <p>The Messageries Maritimes S.S. Senegal, from Marseilles, passed the
                             Straits of Messina on Saturday and is due at Alexandria to- morrow
                             morning.</p>
@@ -2123,8 +2105,8 @@
                             offered at 1 premium for the special settlement, the previous issue
                             being quoted at 93. Russians are inclined to be easier.</p>
                     </div>
-                    <div type="item">
-                        <head>PERSONAL AND SOCIAL</head>
+                    <div type="section" element="social">
+                    <head>PERSONAL AND SOCIAL</head>
                         <p>Mgr. Aurelio Briante has returned to Alex- andria from Cairo.</p>
                         <p>Mr. Malcolm McIlwraith, the Judicial Advi- ser, was invested with the
                             Order of St Michael and St George by H. M. the King at Bucking- ham
@@ -2171,7 +2153,7 @@
                         <p>M. Cortessi, a Greek notable of Cairo has presented 1,000 francs to the
                             Greek Govern- ment for military equipment. </p>
                     </div>
-                </div>
+                
             </div>
             <div type="page" n="4">
                 <div type="masthead">
@@ -2212,7 +2194,7 @@
                             malgré les protestations de tous les clients, s’installa devant un
                             restaurant en face de la mosquée Attarine. Comme on le priait de se re
                             tirer, il se mit à proférer des menaces et lança contre un groupe, assis
-                            à la porte, nn outil de cuivre qui heureusement manqua son bnt.</p>
+                            à la porte, un outil de cuivre qui heureusement manqua son bnt.</p>
                         <p> Nous voulons croire que la police et le con- sulat prendront des mesures
                             nécessaires pour empêcher qu’un colosse aussi dangereux ne continue à
                             terroriser la ville.</p>
@@ -2276,43 +2258,89 @@
                             considérables.</p>
                         <p>La Banque d’Athènes continue sa marche ascendante et atteint 130
                             acheteurs.</p>
-                        <p>L’Agrioole monte de 14 1/32 à 14 1/16 ache- teurs.</p>
+                        <p>L’Agricole monte de 14 1/32 à 14 1/16 ache- teurs.</p>
                         <p>En hausse également la Crown Brewery de 202 à 210, la Delta Light de 13 à
                             18 1/8, et la Ramleh Railway de 7 5/16 à 7 3/8.</p>
                         <p>Quant à la Sait &amp; Soda, elle fléchit légère- ment de 35 à 34/9.</p>
                     </div>
-                    <div type="article" xml:lang="fr" xml:id="deg-el-mmpa01">
+                    <div type="article" xml:lang="fr" element="mouvementMaritime">
                         <head>MOUVEMENT MARITIME DU PORT D’ALEXANDRIE</head>
                         <p>ARRIVÉES</p>
-                        <p><date when="1905-07-12">12 juillet</date></p>
+                        <p><date when="1905-07-12">29 juillet</date></p>
+                        <p><placeName>Smyrne</placeName> et <placeName>Chio</placeName>; 1 j. 3/4,
+                            vap. hell. Byzantion, cap. <persName>Mavromati</persName>, ton. <measure
+                                unit="ton">400</measure>, à Kechaya.</p>
+                        <p><placeName>Port-Said</placeName>; 16 h., vap. ital. Bosforo, cap.
+                                <persName>Milazzo</persName>, ton. <measure unit="ton"
+                                >1,513</measure>, à la Cie Florio-Rubat.</p>
+                        <p><placeName>Manchester</placeName> et <placeName>Malte</placeName>; 3 j.
+                            3/4, vap. ang. Indian Prince, cap. <persName>Evans</persName>, ton.
+                                <measure unit="ton">1,202</measure>, à Grace &amp; Co.</p>
+                        <cb/>
+                        <p><placeName>Cardiff</placeName> ; 14  j., vap. ang. Sidmouth, cap.
+                                <persName>West</persName>, ton. <measure unit="ton">2,604</measure>,
+                            à Nimnium.</p>
                         <p><placeName>Odessa</placeName> et <placeName>Sude</placeName>; 1 j., vap.
-                            russe Tzaritza, cap. <persName>Roller</persName>, ton. <measure
-                                unit="ton">1,727</measure>, à la Cie Russe.</p>
-                        <p><placeName>Gènes</placeName> et <placeName>Toulon</placeName> ; 10 j.,
-                            1/2, vap. ital. Jeanne Marcelle, cap. <persName>Passaton</persName>,
-                            ton. <measure unit="ton">1,674</measure>, à Luxardo.</p>
-                        <p><date when="1905-07-13">13 juillet</date></p>
-                        <p><placeName>Londres</placeName> et <placeName>Tripoli</placeName>; 4 j.,
-                            3/4, vap. angl. Kaffir Prince, cap. <persName>Wright</persName>, ton.
-                                <measure unit="ton">1402</measure>, à Grace &amp; Co.</p>
-                        <cb n="2"/>
-                        <p><placeName>Syrie</placeName> et <placeName>Port-Saïd</placeName>; 16 h.,
-                            vap. ang. El Kahira, cap. <persName>Silvestri</persName>, ton. <measure
-                                unit="ton">848</measure>, à la Khedivial Mail.</p>
-                        <p><placeName>Cardiff</placeName>; 14 j. 1/2, vap. ang. Chiverstone, cap.
-                                <persName>Dwyer</persName>, ton. <measure unit="ton">1889</measure>,
-                            à ordre.</p>
-                        <p><placeName>Beyrouth</placeName> et <placeName>Port-Saïd</placeName> ; 16
-                            h., vapour français Sénégal, cap. Vincenti, ton. <measure unit="ton"
-                                >2,235</measure>, aux Messageries Maritimes.</p>
+                            russe Tzar, cap. <persName>Emerretly</persName>, ton. <measure
+                                unit="ton">1524</measure>, à la Cie Russe.</p>
+                        <p><placeName>Genes</placeName> ; 8 j. remorqueur ital. Britannia, cap.
+                                <persName>Faziani</persName>, ton. <measure unit="ton">39</measure>,
+                            à Luxardo.</p>
+                        <p><placeName>Galatz</placeName> ; 6 j., vap. hell. Eptanissos, cap.
+                                <persName>Condons</persName>, ton. <measure unit="ton"
+                            >934</measure>, à Confudakis.</p>
+                        <p><placeName>Alexandrette</placeName> ; 3 j., vap. ang. Milo, cap.
+                                <persName>Burnett</persName>, ton. <measure unit="ton"
+                            >683</measure>, à Minotto.</p>
+                        <p><placeName>Salonique</placeName> et <placeName>Piree</placeName>; 2 j.,
+                            vap. hell. Vassilissa Olga, cap. <persName>Courentis</persName>, ton.
+                                <measure unit="ton">819</measure>, à Nanopoulo.</p>
+                        <p><date when="1905-07-13">30 juillet</date></p>
+                        <p><placeName>Genes</placeName> et <placeName>Messine</placeName>; 63 h.,
+                            vap. ital. Orione, cap. <persName>C. Ercoli</persName>, ton. <measure
+                                unit="ton">2296</measure>, à la Cie Florio-Rubat.</p>
+                        <p><placeName>Barry Dock</placeName> ; 14 j. 3/4, vap. ang. Westfield, cap.
+                                <persName>Stovry</persName>, ton. <measure unit="ton"
+                            >2092</measure>, à Stabile</p>
+                        <p><placeName>Savaneh</placeName>et <placeName>Alger</placeName>; 7 j. 1/2,
+                            vap. ang. Evelyn, cap. <persName>Bulfenvich</persName>, ton. <measure
+                                unit="ton">1476</measure>, à Grace &amp; Co.</p>
+                        <p><placeName>Londres</placeName> et <placeName>Malte</placeName> ; 4 j.,
+                            vap. ang. Plymothian, cap. Nimn, ton. <measure unit="ton">952</measure>,
+                            a Tamvaco.</p>
+                        <p><placeName>Chypre</placeName> et <placeName>Port-Said</placeName> ; vap.
+                            angl. Esperanza, cap. Gauci, ton. <measure unit="ton">424</measure>, a
+                            Minotto.</p>
+                        <p>31 juillet</p>
+                        <p><placeName>Trieste</placeName> et <placeName>Brindisi</placeName> ; 60
+                            h., vap. autr. Imperatrix, cap. Ghezo, ton. <measure unit="ton"
+                                >2353</measure>, au Lloyd Autrichien.</p>
+                        <p><placeName>Newcastle</placeName> ; 17 j.,  1/2 vap. ang. Trunkly, cap.
+                            Game, ton. <measure unit="ton">1,668</measure>, a Barber &amp; Son.</p>
+                        <p><placeName>Sundswalt</placeName> et Alger ; 7 j.,  1/2 vap. ang. Lerle,
+                            cap. Eggert, ton. <measure unit="ton">1,694</measure>, a Barber &amp;
+                            Son.</p>
                         <p>DÉPARTS</p>
-                        <p><date when="1905-07-12">12 juillet</date></p>
-                        <p><placeName>Pirée</placeName> et <placeName>Constantinople</placeName> :
-                            vap. ang. Ismailieh, cap. <persName>Gatteschi</persName>.</p>
-                        <p><placeName>Hull</placeName>; vap. ang. Lorenzo, cap.
-                                <persName>Wing</persName>.</p>
-                        <p><placeName>Jaffa</placeName>; vap. ott, Marigo, cap.
-                                <persName>Cofupandelis</persName>, sur lest.</p>
+                        <p><date when="1905-07-12">29 juillet</date></p>
+                        <p><placeName>Brindisi</placeName> et <placeName>Trieste</placeName> : vap.
+                            autr. Imperator, cap. <persName>Mosco</persName>.</p>
+                        <p><placeName>Port-Said</placeName> et <placeName>Mersine</placeName> : vap.
+                            ang. Assouan, cap. <persName>Silvestri</persName>.</p>
+                        <p><placeName>Mersine</placeName>; vap. ang. Bear, cap.
+                                <persName>Yeroyanni</persName>.</p>
+                        <p><placeName>Candie</placeName>; vap. hell. Byzantion, cap.
+                                <persName>Mavromatis</persName>.</p>
+                        <p><placeName>Constantinople</placeName>; vap. hell. Marie Reine, cap.
+                                <persName>Papalas</persName>.</p>
+                        <p><placeName>Taganrog</placeName>; vap. ang, Leander, cap.
+                                <persName>Price</persName>, sur lest.</p>
+                        <p><placeName>Kertch</placeName>; vap. norv, Aker, cap.
+                                <persName>Wetregen</persName>, sur lest.</p>
+                        <p><placeName>Liverpool</placeName>; vap. ang, Britannia, cap.
+                                <persName>Potheram</persName>.</p>
+                        <p>30 juillet</p>
+                        <p><placeName>Beyrouth</placeName> et <placeName>Anvers</placeName> : vap.
+                            belge. Lys, c. <persName>Luja</persName>.</p>
                     </div>
                     <div type="item">
                         <head>DAIRA SANIEH CO., LIMITED</head>
@@ -2353,8 +2381,8 @@
                             réclamer les sommes qui pourraient leur être dues du ohef du
                             remboursement Le remboursement sera effectué à partir du 15 Octobre 1905
                             au pair augmenté de 25 francs et ce à Paris en francs, à Londres en
-                            livres sterling au ohange de 25 franos par livre, à Berlin en Marks an
-                            taux dn change oaloulé à la parité de 25 franos par livre sterling.</p>
+                            livres sterling au change de 25 franos par livre, à Berlin en Marks an
+                            taux du change oaloulé à la parité de 25 franos par livre sterling.</p>
                         <p>Après le 1er Décembre 1905 le rembourse- ment n’aura plus lieu qu’au
                             Caire à la Société Egyptienne de la Daira Sanieh, ou à la Na- tional
                             Bank of Egypt.</p>
@@ -2462,10 +2490,10 @@
                         <p>Les articles sas-mentionnés peuvent être exa- minés à Ramlet (Boulao) oü
                             ils sont déposés et d’où l’adjudicataire pourra les enlever, à ses
                             frais, tels quels et en l’état où ils se trouvent H»n« an délai de 30
-                            jonrs de l’aooeptation de son offre (les jonrs fériés exoeptés); faute
-                            de quoi, la vente sera annulée et le montant dn cautionnement de plein
+                            jonrs de l’aooeptation de son offre (les jonrs fériés exceptés); faute
+                            de quoi, la vente sera annulée et le montant du cautionnement de plein
                             droit acquis à l’Admi- nistration.</p>
-                        <p>Tout soumissionnaire devra verser, an préa- lable, nn cautionnement
+                        <p>Tout soumissionnaire devra verser, an préa- lable, un cautionnement
                             provisoire de LE. 15. Le soumissionnaire déclaré adjudicataire devra
                             parfaire oe dépôt aux 10 % du montant de la vente consentie.</p>
                         <p>Le cautionnement définitif sera conservé à la Caisse Centrale de
@@ -2526,7 +2554,7 @@
                                 <cell><measure unit="fcs">824 —</measure></cell>
                                 <cell><orgName>Credit Foncier Egyptian 8500</orgName> Lottery
                                     Bonds</cell>
-                                <cell><measure unit="fcs">317</measure></cell>
+                                <cell><measure unit="fcs">318</measure></cell>
                             </row>
                             <row>
                                 <cell>Lst.</cell>
@@ -2548,7 +2576,7 @@
                             </row>
                             <row>
                                 <cell>"</cell>
-                                <cell><measure unit="£">9 5/16</measure></cell>
+                                <cell><measure unit="£">9 7/16</measure></cell>
                                 <cell><orgName>Land Bank of Egypt</orgName></cell>
                                 <cell><measure unit="£">85</measure></cell>
                             </row>
@@ -2828,52 +2856,16 @@
                                 >—/—</measure>. </p>
                         <p>Remarques</p>
                         <p>(De Midi à 1h. p.m.)</p>
-                        <p>Cotons.—<!-- Fill --></p>
-                        <p>Graines de coton.—<!-- Fill --></p>
-                        <table rows="2" cols="4">
-                            <head>Bateaux partis:</head>
-                            <row role="label">
-                                <cell>Juillet</cell>
-                                <cell>S.S.</cell>
-                                <cell>pour</cell>
-                                <cell>Ton.</cell>
-                            </row>
-                            <row>
-                                <cell>7</cell>
-                                <cell>Grecian Prince</cell>
-                                <cell>Dunkerque</cell>
-                                <cell><measure>250</measure></cell>
-                            </row>
-                        </table>
-                        <table rows="2" cols="3">
-                            <head>Bateaux sous chargement:</head>
-                            <row role="label">
-                                <cell>S.S.</cell>
-                                <cell>pour</cell>
-                                <cell>Ton.</cell>
-                            </row>
-                            <row>
-                                <cell>Seti</cell>
-                                <cell>Liverpool</cell>
-                                <cell><measure unit="ton">100</measure></cell>
-                            </row>
-                        </table>
-                        <table rows="2" cols="3">
-                            <head>Bateaux attendus:</head>
-                            <row role="label">
-                                <cell>S.S.</cell>
-                                <cell>pour</cell>
-                                <cell>Ton.</cell>
-                            </row>
-                            <row>
-                                <cell>Assiout</cell>
-                                <cell>Hull</cell>
-                                <cell>1000</cell>
-                            </row>
-                        </table>
-                        <cb n="4"/>
-                        <p>Fèves.—<!-- Fill --></p>
-                        <p>Bourse Khédviale, le <date when="1905-07-11">11 juillet 1905</date>.</p>
+                        <p>Coton.— L'activite a augmente et la fermete qui s'etait accentuee s'est
+                            changee en hausse marquee sur la vielle recolte. Quant au novembre, il a
+                            bien fini aussi, mais quelques realisatons l'out empeche de monter dans
+                            les memes proportions que l'sout. Dans l'ensemble, la matinee a ete
+                            bonne et la tendance reste pour la hausse.</p>
+                        <p>Graines de coton.— Tout d'un coup il y a eu quelques offres de vente
+                            ayaut plus ou moins l'air d'une manœuvre et la seance a fini en reaction
+                            sensible.</p>
+                        <p>Feves.-Manque complet d'affaires et cours toujours nominaux.</p>
+                        <p>Bourse Khediviale, le 29 juillet 1905.</p>
                     </div>
                     <div type="article" scope="financial" xml:lang="fr" xml:id="deg-el-ctns01">
                         <head>COTONS</head>
@@ -2885,67 +2877,67 @@
                         <table rows="4" cols="4" xml:id="deg-ta-ctns01">
                             <row>
                                 <cell>Tal.</cell>
-                                <cell><measure unit="tal">14 7/8</measure></cell>
+                                <cell><measure unit="tal">15 17/32</measure></cell>
                                 <cell>Livraison</cell>
-                                <cell>Juillet</cell>
+                                <cell>Aout</cell>
                             </row>
                             <row>
                                 <cell>,,</cell>
-                                <cell><measure unit="tal">15 3/16</measure></cell>
-                                <cell>,,</cell>
-                                <cell>Août</cell>
-                            </row>
-                            <row>
-                                <cell>,,</cell>
-                                <cell><measure unit="tal">14 23/32</measure></cell>
+                                <cell><measure unit="tal">15 5/32</measure></cell>
                                 <cell>,,</cell>
                                 <cell>Novembre</cell>
                             </row>
                             <row>
                                 <cell>,,</cell>
-                                <cell><measure unit="tal">14 5/8</measure></cell>
+                                <cell><measure unit="tal">15 1/16</measure></cell>
                                 <cell>,,</cell>
                                 <cell>Janvier</cell>
+                            </row>
+                            <row>
+                                <cell>,,</cell>
+                                <cell><measure unit="tal">15 7/32</measure></cell>
+                                <cell>,,</cell>
+                                <cell>Mars</cell>
                             </row>
                         </table>
                         <p>Marché ferme</p>
                         <p>Arrivages de ce jour, à Minet-el-Bassal, cantars <measure unit="cantar"
-                                >1008</measure></p>
+                                >1320</measure></p>
                         <p>(Cours pratiqués ce jour à la Bourse Khédiviale à 12h. 45 p.m.)</p>
                         <table rows="4" cols="4" xml:id="deg-ta-ctns02">
                             <row>
                                 <cell>Tal.</cell>
-                                <cell><measure unit="tal">14 15/16</measure></cell>
+                                <cell><measure unit="tal">15 11/16</measure></cell>
                                 <cell>Livraison</cell>
-                                <cell>Juillet</cell>
-                            </row>
-                            <row>
-                                <cell>,,</cell>
-                                <cell><measure unit="tal">15 1/4</measure></cell>
-                                <cell>,,</cell>
                                 <cell>Août</cell>
                             </row>
                             <row>
                                 <cell>,,</cell>
-                                <cell><measure unit="tal">14 7/8</measure></cell>
+                                <cell><measure unit="tal">15 5/32</measure></cell>
                                 <cell>,,</cell>
                                 <cell>Novembre</cell>
                             </row>
                             <row>
                                 <cell>,,</cell>
-                                <cell><measure unit="tal">14 25/32</measure></cell>
+                                <cell><measure unit="tal">15 3/32</measure></cell>
                                 <cell>,,</cell>
                                 <cell>Janvier</cell>
+                            </row>
+                            <row>
+                                <cell>,,</cell>
+                                <cell><measure unit="tal">15 7/32</measure></cell>
+                                <cell>,,</cell>
+                                <cell>Mars</cell>
                             </row>
                         </table>
                         <p>Marché ferme </p>
                     </div>
                     <div type="section" scope="financial" xml:lang="fr" xml:id="deg-el-mmeb01">
                         <head>MARCHE DE MINET-EL-BASSAL</head>
-                        <dateline><date when="1905-07-12">12 juillet 1905</date>.—(11h.55
+                        <dateline><date when="1905-07-12">31 juillet 1905</date>.—(11h.55
                             a.m.)</dateline>
                         <p><hi rend="italic">Cotons</hi> —Clôture du marché du <date
-                                when="1905-07-11">11 juillet</date>: Ferme et en hausse de 1/8. </p>
+                                when="1905-07-11">29 juillet</date>: calme, mais soutenu. </p>
                         <table cols="6" xml:id="deg-ta-mmeb01">
                             <row role="label">
                                 <cell cols="6">BEURRES</cell>
@@ -2978,7 +2970,7 @@
                         </table>
                         <p>Etat du marché de ce jour, cotons : Ferme</p>
                         <p>Les arrivages de ce jour se chiffrent par cantars <measure unit="cantar"
-                                >1011</measure> contre même jour l’année précédente cantars <measure
+                                >1576</measure> contre même jour l’année précédente cantars <measure
                                 unit="cantar">156</measure>
                         </p>
                         <p><hi rend="italic">Grains de coton</hi>.—Sans changement</p>
@@ -2990,81 +2982,58 @@
                             </row>
                             <row>
                                 <cell>Mit-Afifi—</cell>
-                                <cell><measure unit="pt">58</measure></cell>
+                                <cell><measure unit="pt">57</measure></cell>
                                 <cell>Rien</cell>
                             </row>
                             <row>
                                 <cell>Haute-Egypte.—</cell>
-                                <cell><measure unit="pt">56 1/2</measure></cell>
+                                <cell><measure unit="pt">55 1/2</measure></cell>
                                 <cell>Rien</cell>
                             </row>
                         </table>
                         <p><hi rend="italic">Blés</hi>.—Très fermes</p>
                         <p><hi rend="italic">Qualité Saïdi</hi>.—Cond. Saha P.T. <measure unit="pt"
                                 >—</measure> à <measure unit="pt">—</measure></p>
-                        <p><hi rend="italic">" Béhéra</hi>: " " " <measure unit="pt">110</measure> à
-                                <measure unit="pt">120</measure></p>
+                        <p><hi rend="italic">" Béhéra</hi>: " " " <measure unit="pt">115</measure> à
+                                <measure unit="pt">125</measure></p>
                         <p><hi rend="italic">Feves</hi>.—En baisse</p>
                         <p><hi rend="italic">Saïdi</hi>
-                            <measure unit="pt">95</measure></p>
+                            <measure unit="pt">104</measure></p>
                         <p><hi rend="italic">Fayoum</hi> : disponible : <measure unit="pt"
-                                >94</measure></p>
+                                >103</measure></p>
                         <p><hi rend="italic">Qualitè Saïdi</hi>. Cond. Saha P.T. <measure unit="pt"
-                                >108</measure> à <measure unit="pt">114</measure></p>
-                        <p><hi rend="italic">Lentilles</hi>.—Très rares</p>
+                                >112</measure> à <measure unit="pt">115</measure></p>
+                        <p><hi rend="italic">Lentilles</hi>.—rares</p>
                         <p>Disponible: Rien</p>
-                        <p> Cond. Saha P.T. <measure unit="pt">120</measure> à <measure unit="pt"
-                                >130</measure></p>
+                        <p> Cond. Saha P.T. <measure unit="pt">135</measure> à <measure unit="pt"
+                                >145</measure></p>
                         <p><hi rend="italic">Orges</hi>.—Soutenues</p>
-                        <p>" Cond.Saha P.T. <measure unit="pt">61</measure> à <measure unit="pt"
+                        <p>" Cond.Saha P.T. <measure unit="pt">60</measure> à <measure unit="pt"
                                 >63</measure></p>
                         <p><hi rend="italic">Maïs</hi>.—Sans changement</p>
                         <p>Disponible : Rien</p>
-                        <p>" Cond. Saha P.T. <measure unit="pt">100</measure> à <measure unit="pt"
-                                >110</measure></p>
+                        <p>" Cond. Saha P.T. <measure unit="pt">95</measure> à <measure unit="pt"
+                                >100</measure></p>
                         <table rows="4" cols="3" xml:id="deg-ta-mmeb03">
                             <row role="label">
                                 <cell>Exportation</cell>
-                                <cell>du <date when="1905-07-11">11 juil.</date></cell>
-                                <cell>depuis le <date when="1905-07-07">7 juil.</date></cell>
+                                <cell>du <date when="1905-07-11">29 juil. et 30 juil</date></cell>
+                                <cell>depuis le <date when="1905-07-07">28 juil.</date></cell>
                             </row>
                             <row>
                                 <cell>Coton</cell>
-                                <cell>Bal. <measure unit="balles">616</measure></cell>
-                                <cell>Bal. <measure unit="balles">10298</measure></cell>
+                                <cell>Bal. <measure unit="balles">2036</measure></cell>
+                                <cell>Bal. <measure unit="balles">5474</measure></cell>
                             </row>
                             <row>
                                 <cell>Gr. de cot.</cell>
-                                <cell>Ard. <measure unit="ard">2962</measure></cell>
-                                <cell>Ard. <measure unit="ard">8952</measure></cell>
+                                <cell>Ard. <measure unit="ard">––</measure></cell>
+                                <cell>Ard. <measure unit="ard">14344</measure></cell>
                             </row>
                             <row>
                                 <cell>Fèves</cell>
-                                <cell>" <measure unit="ard">6595</measure></cell>
-                                <cell>" <measure unit="ard">7461</measure></cell>
-                            </row>
-                        </table>
-                        <table rows="4" cols="3" xml:id="deg-ta-mmeb04">
-                            <head>Exportations probables de la semaine:</head>
-                            <row role="label">
-                                <cell/>
-                                <cell>1905</cell>
-                                <cell>1904</cell>
-                            </row>
-                            <row>
-                                <cell>Coton</cell>
-                                <cell>Bal. <measure unit="balles">15,000</measure></cell>
-                                <cell><measure unit="balles">5,900</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Graines de coton</cell>
-                                <cell>Ard. <measure unit="ard">25,000</measure></cell>
-                                <cell>Ard. <measure unit="ard">34,000</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Fèves</cell>
-                                <cell>" <measure unit="ard">16,000</measure></cell>
-                                <cell><measure unit="ard">2,000</measure></cell>
+                                <cell>" <measure unit="ard">––</measure></cell>
+                                <cell>" <measure unit="ard">––</measure></cell>
                             </row>
                         </table>
                         <table cols="5" xml:id="deg-ta-mmeb05">
@@ -3080,9 +3049,9 @@
                             <row>
                                 <cell><placeName>Damanhour</placeName>. </cell>
                                 <cell>De P.T.</cell>
-                                <cell><measure unit="pt">180</measure></cell>
+                                <cell><measure unit="pt">170</measure></cell>
                                 <cell>à</cell>
-                                <cell><measure unit="pt">242 ½</measure></cell>
+                                <cell><measure unit="pt">245 </measure></cell>
                             </row>
                             <row role="label">
                                 <cell cols="5">Provience Garbieh</cell>
@@ -3092,14 +3061,14 @@
                                 <cell>De P.T.</cell>
                                 <cell><measure unit="pt">265</measure></cell>
                                 <cell>à</cell>
-                                <cell><measure unit="pt">295</measure></cell>
+                                <cell><measure unit="pt">305</measure></cell>
                             </row>
                             <row>
                                 <cell><placeName>Tantah</placeName>. </cell>
                                 <cell>" "</cell>
-                                <cell><measure unit="pt">260</measure></cell>
+                                <cell><measure unit="pt">270</measure></cell>
                                 <cell>"</cell>
-                                <cell><measure unit="pt">295</measure></cell>
+                                <cell><measure unit="pt">307 1/2</measure></cell>
                             </row>
                             <row role="label">
                                 <cell cols="5">Province Menoufieh</cell>
@@ -3122,28 +3091,28 @@
                             <row>
                                 <cell>Graines de coton Afifi</cell>
                                 <cell>P.T. </cell>
-                                <cell><measure unit="pt">58 —</measure></cell>
+                                <cell><measure unit="pt">57 —</measure></cell>
                                 <cell>à P.T. </cell>
                                 <cell><measure unit="pt">—</measure></cell>
                             </row>
                             <row>
                                 <cell>" Haute Egypte</cell>
                                 <cell>" </cell>
-                                <cell><measure unit="pt">56 ½</measure></cell>
+                                <cell><measure unit="pt">55 ½</measure></cell>
                                 <cell>" " </cell>
                                 <cell><measure unit="pt">—</measure></cell>
                             </row>
                             <row>
                                 <cell>Fèves Saïdi</cell>
                                 <cell>" </cell>
-                                <cell><measure unit="pt">95 —</measure></cell>
+                                <cell><measure unit="pt">104 —</measure></cell>
                                 <cell>" " </cell>
                                 <cell><measure unit="pt">—</measure></cell>
                             </row>
                             <row>
                                 <cell>" Fayoumi</cell>
                                 <cell>" </cell>
-                                <cell><measure unit="pt">94 —</measure></cell>
+                                <cell><measure unit="pt">103 —</measure></cell>
                                 <cell>" " </cell>
                                 <cell><measure unit="pt">—</measure></cell>
                             </row>
@@ -3162,13 +3131,13 @@
                                 <row>
                                     <cell>Cotons</cell>
                                     <cell>S/B </cell>
-                                    <cell><measure unit="sb">53</measure></cell>
+                                    <cell><measure unit="sb">165</measure></cell>
                                     <cell>—</cell>
                                 </row>
                                 <row>
                                     <cell>Graines de coton</cell>
                                     <cell>sacs </cell>
-                                    <cell><measure unit="sack">1630</measure></cell>
+                                    <cell><measure unit="sack">3073</measure></cell>
                                     <cell>—</cell>
                                 </row>
                                 <row>
@@ -3180,13 +3149,13 @@
                                 <row>
                                     <cell>" Béhéra</cell>
                                     <cell>" </cell>
-                                    <cell><measure unit="sack">2033</measure></cell>
+                                    <cell><measure unit="sack">1014</measure></cell>
                                     <cell>-</cell>
                                 </row>
                                 <row>
                                     <cell>Fèves Saidi</cell>
                                     <cell>" </cell>
-                                    <cell><measure unit="sack">1273</measure></cell>
+                                    <cell><measure unit="sack">908</measure></cell>
                                     <cell>—</cell>
                                 </row>
                                 <row>
@@ -3210,16 +3179,16 @@
                                 <row>
                                     <cell>Lentilles</cell>
                                     <cell>" </cell>
-                                    <cell><measure unit="sack">—</measure></cell>
+                                    <cell><measure unit="sack">12</measure></cell>
                                     <cell>-—</cell>
                                 </row>
                             </table>
                             <p><hi rend="italic">Cotons</hi>.-Total des arrivages depuis le <date
                                     when="1904-09-01">1er septembre 1904</date> jusqu’à ce jour,
-                                cantars <measure unit="cantar">6,209,388</measure>.</p>
+                                cantars <measure unit="cantar">6,224,432</measure>.</p>
                             <p><hi rend="italic">Grains de coton</hi>.—Total des arrivages depuis le
                                     <date when="1904-09-01">1er septembre 1904</date> jusqu’à ce
-                                jour, Ard. <measure unit="ard">3,503,332</measure></p>
+                                jour, Ard. <measure unit="ard">3,545,309</measure></p>
                             <p>Contre même jour en 1904 :</p>
                             <table rows="9" cols="2" xml:id="deg-ta-mmeb08">
                                 <row role="label">
@@ -3234,22 +3203,22 @@
                                 <row>
                                     <cell>Graines de coton</cell>
                                     <cell>sacs </cell>
-                                    <cell><measure unit="sack">-</measure></cell>
+                                    <cell><measure unit="sack">2822</measure></cell>
                                 </row>
                                 <row>
                                     <cell>Blés Saïdi </cell>
                                     <cell>" </cell>
-                                    <cell><measure unit="sack">—</measure></cell>
+                                    <cell><measure unit="sack">24</measure></cell>
                                 </row>
                                 <row>
                                     <cell>" Béhéra</cell>
                                     <cell>" </cell>
-                                    <cell><measure unit="sack">894</measure></cell>
+                                    <cell><measure unit="sack">1332</measure></cell>
                                 </row>
                                 <row>
                                     <cell>Fèves Saidi</cell>
                                     <cell>" </cell>
-                                    <cell><measure unit="sack">3506</measure></cell>
+                                    <cell><measure unit="sack">5342</measure></cell>
                                 </row>
                                 <row>
                                     <cell>" Béhéra</cell>
@@ -3264,20 +3233,20 @@
                                 <row>
                                     <cell>Maïs</cell>
                                     <cell>" </cell>
-                                    <cell><measure unit="sack">250</measure></cell>
+                                    <cell><measure unit="sack">54</measure></cell>
                                 </row>
                                 <row>
                                     <cell>Lentilles</cell>
                                     <cell>" </cell>
-                                    <cell><measure unit="sack">—</measure></cell>
+                                    <cell>194</cell>
                                 </row>
                             </table>
                             <p><hi rend="italic">Cotons</hi>.—Total des arrivages depuis le <date
                                     when="1903-09-01">1er septembre 1903</date> jusqu’à ce jour,
-                                cantars <measure unit="cantar">6,458,818</measure></p>
+                                cantars <measure unit="cantar">6,458,821</measure></p>
                             <p><hi rend="italic">Graines de coton</hi>.—Total des arrivages depuis
                                 le <date when="1903-09-01">1er septembre 1903</date> jusqu’à ce jour
-                                Ard. <measure unit="ard">3,533,437</measure></p>
+                                Ard. <measure unit="ard">3,541,960</measure></p>
                         </div>
                         <div type="item">
                             <head>CONTRATS, (11h.55 a.m.)</head>
@@ -3289,21 +3258,21 @@
                                 <row>
                                     <cell>Novembre</cell>
                                     <cell>Tal.</cell>
-                                    <cell><measure unit="tal">14 15/16</measure></cell>
+                                    <cell><measure unit="tal">15 5/32</measure></cell>
                                     <cell>à</cell>
                                     <cell><measure unit="tal">—</measure></cell>
                                 </row>
                                 <row>
                                     <cell>Janvier</cell>
                                     <cell>"</cell>
-                                    <cell><measure unit="tal">14 27/32</measure></cell>
+                                    <cell><measure unit="tal">15 1/16</measure></cell>
                                     <cell>"</cell>
                                     <cell><measure unit="tal">—</measure></cell>
                                 </row>
                                 <row>
                                     <cell>Mars</cell>
                                     <cell>"</cell>
-                                    <cell><measure unit="tal">15 —</measure></cell>
+                                    <cell><measure unit="tal">15 7/32</measure></cell>
                                     <cell>"</cell>
                                     <cell><measure unit="tal">—</measure></cell>
                                 </row>
@@ -3317,7 +3286,7 @@
                                 <row>
                                     <cell>Août</cell>
                                     <cell>"</cell>
-                                    <cell><measure unit="tal">15 3/16</measure></cell>
+                                    <cell><measure unit="tal">15 9/32</measure></cell>
                                     <cell>"</cell>
                                     <cell><measure unit="tal">—</measure></cell>
                                 </row>
@@ -3327,21 +3296,14 @@
                                 <row>
                                     <cell>N.-D.-J.</cell>
                                     <cell>P.T.</cell>
-                                    <cell><measure unit="pt">61 —</measure></cell>
+                                    <cell><measure unit="pt">60 30/40</measure></cell>
                                     <cell>à</cell>
-                                    <cell><measure unit="pt">—</measure></cell>
-                                </row>
-                                <row>
-                                    <cell>Juillet</cell>
-                                    <cell>"</cell>
-                                    <cell><measure unit="pt">58 20/40</measure></cell>
-                                    <cell>"</cell>
                                     <cell><measure unit="pt">—</measure></cell>
                                 </row>
                                 <row>
                                     <cell>Août</cell>
                                     <cell>"</cell>
-                                    <cell><measure unit="pt">59 30/40</measure></cell>
+                                    <cell><measure unit="pt">55 10/40</measure></cell>
                                     <cell>"</cell>
                                     <cell><measure unit="pt">—</measure></cell>
                                 </row>
@@ -3352,59 +3314,64 @@
                                 <row>
                                     <cell>Sept.-Oct.</cell>
                                     <cell>P.T.</cell>
-                                    <cell><measure unit="pt">95 —</measure></cell>
+                                    <cell><measure unit="pt">105 —</measure></cell>
                                     <cell>à</cell>
-                                    <cell><measure unit="pt">—</measure></cell>
+                                    <cell><measure unit="pt">106</measure></cell>
+                                </row>
+                                <row>
+                                    <cell>Nov.-Dec.-Jan</cell>
+                                    <cell/>
+                                    <cell>104</cell>
+                                    <cell/>
+                                    <cell>105</cell>
                                 </row>
                             </table>
                             <p>REMARQUES</p>
                             <p><hi rend="italic">Cotons</hi>: Nouvelle récolte.—Le novembre a ouvert
-                                à 14 15/16 sous l'impression de la clôture d'Amérique et ne tarde
-                                même pas à fléchir à 14 7/8, mais il se raffermit de nouveau.
-                                Affaires claisemées.</p>
+                                à 15 5/8 sous l'impression de la clôture d'Amérique et ne tarde même
+                                pas à fléchir à 14 7/8, mais il se raffermit de nouveau. Affaires
+                                claisemées.</p>
                             <p>Récolte actuelle. —Juillet a débuté à 14 5/16 et reste soutenu.
                                 Marché peu animé.</p>
                             <p><hi rend="italic">Grains de coton</hi>: Nouvelle récolte.— Sans
                                 affaires importante; quand même les cours sont bien tenus.</p>
-                            <p>Récolte actuelle.—Juillet a obtenu P.T. 58 ¾ à l'ouverture. </p>
+                            <p>Récolte actuelle.—Juillet a obtenu P.T. 58. Marche soutenu.</p>
                             <p><hi rend="italic">Fèves-Saidi</hi>: Nouvelle récolte.—Marché nul.</p>
                         </div>
                     </div>
                     <div type="article" xml:lang="fr" xml:id="deg-el-extr01">
                         <head>Exterieur</head>
-                        <p>Dépêches particulières du <date when="1905-07-11">11 juillet
+                        <p>Dépêches particulières du <date when="1905-07-11">29 juillet
                             1905</date></p>
                         <p>PRODUITS EGYPTIENS</p>
                         <p>LIVERPOOL</p>
                         <p><hi rend="italic">Coton: Etat du Marché</hi>.—Soutenu</p>
-                        <p><hi rend="italic">Disp</hi>..— F.G.F.: <measure unit="£">7 7/8</measure>
+                        <p><hi rend="italic">Disp</hi>..— F.G.F.: <measure unit="£">8</measure>
                             (sans changement)</p>
                         <p><hi rend="italic">Futurs</hi> Juillet :<measure unit="£">7
-                                52/64</measure> (6/64 point de hausse)</p>
+                                58/64</measure> (3/64 point de hausse)</p>
                         <p>LIVERPOOL</p>
                         <p><hi rend="italic">Graines de coton</hi>.—Soutenues</p>
                         <p><hi rend="italic">Fèves</hi> — Fermes</p>
                         <p>HULL</p>
-                        <p><hi rend="italic">Graines de coton</hi>.—Calmes, sans changement</p>
-                        <p><hi rend="italic">Fèves</hi>.—Soutenues</p>
+                        <p><hi rend="italic">Graines de coton</hi>.—En hausse</p>
+                        <p><hi rend="italic">Fèves</hi>.—Meme situation</p>
                         <p>LONDRES</p>
                         <p><hi rend="italic">Graines de coton</hi>.— Sans changement</p>
                         <p>COTON AMÉRICAIN</p>
                         <p>LIVERPOOL</p>
                         <p>Futurs août-sept.: <measure unit="$">5.90</measure> (15 points de
                             baisse)</p>
-                        <p>" oct-nov.: <measure unit="$">5.92</measure> (13 points de baisse)</p>
-                        <p>Disponible : <measure unit="$">6.12</measure> (11 points de hausse)</p>
+                        <p>" oct-nov.: <measure unit="$">5.94</measure> (2 points de baisse)</p>
+                        <p>Disponible : <measure unit="$">6.03</measure> (2 points de hausse)</p>
                         <p>NEW-YORK</p>
-                        <p>Middling Upland: <measure unit="$">11.00</measure> (30 points de
+                        <p>Middling Upland: <measure unit="$">11.10</measure> (5 points de
                             hausse)</p>
-                        <p>Futurs août: <measure unit="$">10.82</measure> (24 points de busse)</p>
-                        <p>" oct. : <measure unit="$">10.96</measure> (24 points de baisse)</p>
-                        <p>Arrivages du jour, balles <measure unit="balles">22,000</measure></p>
+                        <p>Futurs août: <measure unit="$">10.74</measure> (9 points de busse)</p>
+                        <p>" oct. : <measure unit="$">11.00</measure> (9 points de baisse)</p>
+                        <p>Arrivages du jour, balles <measure unit="balles">10,000</measure></p>
                         <p>Contre même jour, l’année dernière, balles <measure unit="balles"
-                                >1,800</measure></p>
-                        <p>Pointer : bal. <measure unit="balles">—,—</measure> contre bal. <measure
-                                unit="balles">—,—</measure></p>
+                                >4,000</measure></p>
                     </div>
                     <div type="item">
                         <head>Resume de la Situation Cotonniere</head>
@@ -3558,29 +3525,28 @@
                             </row>
                         </table>
                     </div>
-                    <!-- Table above needs to be finished -->
                     <div type="article" scope="financial" xml:id="deg-el-lsex01">
                         <head>LONDON STOCK EXCHANGE.</head>
-                        <head type="sub">Prices on <date when="1905-07-07">Friday, July 7,
+                        <head type="sub">Prices on <date when="1905-07-07">Tuesday, July 25,
                                 1905</date>.</head>
                         <table cols="4" xml:id="deg-ta-lsex01">
                             <row>
                                 <cell>Consols a/c</cell>
-                                <cell><measure>90 1/8</measure></cell>
+                                <cell><measure>90 1/16</measure></cell>
                                 <cell>@</cell>
-                                <cell><measure>— ¼</measure></cell>
+                                <cell><measure>—2/16</measure></cell>
                             </row>
                             <row>
                                 <cell>Consols cash</cell>
-                                <cell><measure>90 —</measure></cell>
+                                <cell><measure>90 1/16</measure></cell>
                                 <cell>,,</cell>
-                                <cell><measure>— 1/8</measure></cell>
+                                <cell><measure>— 3/16</measure></cell>
                             </row>
                             <row>
                                 <cell>Egyptian 4 % Unified</cell>
-                                <cell><measure>104 ¾</measure></cell>
+                                <cell><measure>105 1/4</measure></cell>
                                 <cell>,,</cell>
-                                <cell><measure>105 ¼</measure></cell>
+                                <cell><measure> 1/6</measure></cell>
                             </row>
                             <row>
                                 <cell>Egyptian 4 ½ % State Domain</cell>
@@ -3592,37 +3558,37 @@
                                 <cell>Egyptian 3 ½ % Government Pref.</cell>
                                 <cell><measure>101 ½</measure></cell>
                                 <cell>,,</cell>
-                                <cell><measure>102 —</measure></cell>
+                                <cell><measure>102 1/2</measure></cell>
                             </row>
                             <row>
                                 <cell>Egyptian 3 ½ % Inscribed </cell>
-                                <cell><measure>98 ½</measure></cell>
+                                <cell><measure>98 </measure></cell>
                                 <cell>,,</cell>
-                                <cell><measure>99 ½</measure></cell>
+                                <cell><measure>99 </measure></cell>
                             </row>
                             <row>
                                 <cell>Egyptian 4% Daira l980 </cell>
-                                <cell><measure>100 ½</measure></cell>
+                                <cell><measure>101</measure></cell>
+                                <cell>,,</cell>
+                                <cell><measure>102</measure></cell>
+                            </row>
+                            <row>
+                                <cell>Turkish Unified</cell>
+                                <cell><measure>88 1/2</measure></cell>
+                                <cell>,,</cell>
+                                <cell><measure>89</measure></cell>
+                            </row>
+                            <row>
+                                <cell>Austrian Gold 4 %</cell>
+                                <cell><measure>100 1/2</measure></cell>
                                 <cell>,,</cell>
                                 <cell><measure>101 ½</measure></cell>
                             </row>
                             <row>
-                                <cell>Turkish Unified</cell>
-                                <cell><measure>87 ½</measure></cell>
-                                <cell>,,</cell>
-                                <cell><measure>88 —</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Austrian Gold 4 %</cell>
-                                <cell><measure>99 ½</measure></cell>
-                                <cell>,,</cell>
-                                <cell><measure>100 ½</measure></cell>
-                            </row>
-                            <row>
                                 <cell>French 3% Rentes</cell>
-                                <cell><measure>98 ½</measure></cell>
+                                <cell><measure>98 </measure></cell>
                                 <cell>,,</cell>
-                                <cell><measure>99 ½</measure></cell>
+                                <cell><measure>99 </measure></cell>
                             </row>
                             <row>
                                 <cell>German 3% 1891</cell>
@@ -3632,57 +3598,51 @@
                             </row>
                             <row>
                                 <cell>Greek 5 % 1881</cell>
-                                <cell><measure>50 ½</measure></cell>
+                                <cell><measure>51 ½</measure></cell>
                                 <cell>,,</cell>
-                                <cell><measure>51 —</measure></cell>
+                                <cell><measure>52 —</measure></cell>
                             </row>
                             <row>
                                 <cell>Italian 5 % 1861</cell>
-                                <cell><measure>103 ½</measure></cell>
+                                <cell><measure>104</measure></cell>
                                 <cell>,,</cell>
-                                <cell><measure>104 —</measure></cell>
+                                <cell><measure>1/2</measure></cell>
                             </row>
                             <row>
                                 <cell>Russian 4 % Con. 1889</cell>
-                                <cell><measure>87 —</measure></cell>
+                                <cell><measure>87 1/2</measure></cell>
                                 <cell>,,</cell>
-                                <cell><measure>— ½</measure></cell>
+                                <cell><measure>88</measure></cell>
                             </row>
                             <row>
                                 <cell>Japan 5 % 1902</cell>
-                                <cell><measure>99 ¾</measure></cell>
+                                <cell><measure>100 1/2</measure></cell>
                                 <cell>,,</cell>
-                                <cell><measure>100 ¼</measure></cell>
+                                <cell><measure>101</measure></cell>
                             </row>
                             <row>
                                 <cell>United States 4 % 1925</cell>
-                                <cell><measure>134 —</measure></cell>
+                                <cell><measure>133 —</measure></cell>
                                 <cell>,,</cell>
-                                <cell><measure>136 —</measure></cell>
+                                <cell><measure>135 —</measure></cell>
                             </row>
                             <row>
                                 <cell>Daira Sanieh</cell>
-                                <cell><measure>28 1/8</measure></cell>
+                                <cell><measure>27 7/8</measure></cell>
                                 <cell>,,</cell>
-                                <cell><measure>— 3/8</measure></cell>
+                                <cell><measure>28 1/8</measure></cell>
                             </row>
                             <row>
                                 <cell> Daira Deferred</cell>
-                                <cell><measure>177 —</measure></cell>
+                                <cell><measure>175 —</measure></cell>
                                 <cell>,,</cell>
                                 <cell><measure>180 —</measure></cell>
                             </row>
                             <row>
                                 <cell>National Banks</cell>
-                                <cell><measure>26 ¼</measure></cell>
+                                <cell><measure>26 3/4</measure></cell>
                                 <cell>,,</cell>
-                                <cell><measure>— ½</measure></cell>
-                            </row>
-                            <row>
-                                <cell>National Banks New</cell>
-                                <cell><measure>6 ¼</measure></cell>
-                                <cell>,,</cell>
-                                <cell><measure>— ½</measure>pm</cell>
+                                <cell><measure>27</measure></cell>
                             </row>
                             <row>
                                 <cell>Agricultural Banks</cell>
@@ -3698,99 +3658,99 @@
                             </row>
                             <row>
                                 <cell> Agricultural 3 ½ % Bonds</cell>
-                                <cell><measure>94 —</measure></cell>
+                                <cell><measure>93 1/2</measure></cell>
                                 <cell>,,</cell>
-                                <cell><measure>— ½</measure></cell>
+                                <cell><measure>94</measure></cell>
                             </row>
                             <row>
                                 <cell>Delta Preference</cell>
-                                <cell><measure>12 ½</measure></cell>
+                                <cell><measure>13</measure></cell>
                                 <cell>,,</cell>
-                                <cell><measure>13 —</measure></cell>
+                                <cell><measure>–– 1/4</measure></cell>
                             </row>
                             <row>
                                 <cell> Delta Deferred</cell>
-                                <cell><measure>12 —</measure></cell>
-                                <cell>,,</cell>
                                 <cell><measure>14 —</measure></cell>
+                                <cell>,,</cell>
+                                <cell><measure>16 —</measure></cell>
                             </row>
                             <row>
                                 <cell>Delta Lands</cell>
-                                <cell><measure>1 7/8</measure></cell>
+                                <cell><measure>2 1/2</measure></cell>
                                 <cell>,,</cell>
-                                <cell><measure>2 1/8</measure></cell>
+                                <cell><measure>–– 3/4</measure></cell>
                             </row>
                             <row>
                                 <cell>Daira Sugar</cell>
-                                <cell><measure>5 ½</measure></cell>
+                                <cell><measure>5 3/8</measure></cell>
                                 <cell>,,</cell>
-                                <cell><measure>— ¾</measure></cell>
+                                <cell><measure>— 5/8</measure></cell>
                             </row>
                             <row>
                                 <cell>Salt &amp; Soda</cell>
                                 <cell><measure>1 5/8</measure></cell>
                                 <cell>,,</cell>
-                                <cell><measure>1 7/8</measure></cell>
+                                <cell><measure>–– 7/8</measure></cell>
                             </row>
                             <row>
                                 <cell>Egyptian Markets</cell>
-                                <cell><measure>1 —</measure></cell>
-                                <cell>,,</cell>
-                                <cell><measure>— ¼</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Nile Valley</cell>
                                 <cell><measure>1 1/8</measure></cell>
                                 <cell>,,</cell>
                                 <cell><measure>— ¼</measure></cell>
                             </row>
                             <row>
-                                <cell>Sudan Mines</cell>
-                                <cell><measure>— 3/8</measure></cell>
+                                <cell>Nile Valley</cell>
+                                <cell><measure>1 1/16</measure></cell>
                                 <cell>,,</cell>
-                                <cell><measure>— ½</measure></cell>
+                                <cell><measure>— 1/8</measure></cell>
+                            </row>
+                            <row>
+                                <cell>Sudan Mines</cell>
+                                <cell><measure>— 1/8</measure></cell>
+                                <cell>,,</cell>
+                                <cell><measure>— 1/4</measure></cell>
                             </row>
                             <row>
                                 <cell>Egyptian Sudan Mines Syndicate</cell>
-                                <cell><measure>1 ½</measure></cell>
+                                <cell><measure>1 5/8</measure></cell>
                                 <cell>,,</cell>
                                 <cell><measure>— ¾</measure></cell>
                             </row>
                             <row>
                                 <cell>Egyptian Mines Exploration Ltd.</cell>
-                                <cell><measure>12/9 —</measure></cell>
+                                <cell><measure>13/9 —</measure></cell>
                                 <cell>,,</cell>
-                                <cell><measure>13/3 —</measure></cell>
+                                <cell><measure>14/3 —</measure></cell>
                             </row>
                             <row>
                                 <cell>Um Rus fully paid</cell>
-                                <cell><measure>— 15/16</measure></cell>
+                                <cell><measure>1 ––</measure></cell>
                                 <cell>,,</cell>
-                                <cell><measure>1 1/16</measure></cell>
+                                <cell><measure>–– 1/8</measure></cell>
                             </row>
                             <row>
                                 <cell>Corporation of Western Egypt</cell>
-                                <cell><measure>— ¼</measure></cell>
+                                <cell><measure>— 7/16</measure></cell>
                                 <cell>,,</cell>
-                                <cell><measure>— 3/8</measure>pm</cell>
+                                <cell><measure>— 9/15</measure>pm</cell>
                             </row>
                             <row>
                                 <cell>United Africans</cell>
-                                <cell><measure>1 ¼</measure></cell>
+                                <cell><measure>1 5/16</measure></cell>
                                 <cell>,,</cell>
-                                <cell><measure>— 3/8</measure>pm</cell>
+                                <cell><measure>— 7/16</measure>pm</cell>
                             </row>
                             <row>
                                 <cell>Egypt. Invest &amp; Agency </cell>
-                                <cell><measure>— 1/8</measure></cell>
+                                <cell><measure>— 3/8</measure></cell>
                                 <cell>,,</cell>
-                                <cell><measure>— 1/8</measure></cell>
+                                <cell><measure>— 5/8</measure></cell>
                             </row>
                             <row>
                                 <cell>Egyptian Estates </cell>
                                 <cell><measure>— 1/8</measure> dis.</cell>
                                 <cell>,,</cell>
-                                <cell><measure>— 3/8</measure>pm</cell>
+                                <cell><measure>— 1/8</measure>pm</cell>
                             </row>
                         </table>
                     </div>
@@ -3810,16 +3770,16 @@
                             <row>
                                 <cell>,, Middling</cell>
                                 <cell>,, ,,</cell>
-                                <cell><measure unit="pt">118</measure></cell>
+                                <cell><measure unit="pt">116</measure></cell>
                                 <cell>,, ,,</cell>
-                                <cell><measure unit="pt">120</measure></cell>
+                                <cell><measure unit="pt">118</measure></cell>
                             </row>
                             <row>
                                 <cell>,, Mawani</cell>
                                 <cell>,, ,,</cell>
-                                <cell><measure unit="pt">127</measure></cell>
+                                <cell><measure unit="pt">125</measure></cell>
                                 <cell>,, ,,</cell>
-                                <cell><measure unit="pt">132</measure></cell>
+                                <cell><measure unit="pt">135</measure></cell>
                             </row>
                             <row>
                                 <cell>,, Shami</cell>
@@ -3833,56 +3793,56 @@
                                 <cell>,, ,,</cell>
                                 <cell><measure unit="pt">108</measure></cell>
                                 <cell>,, ,,</cell>
-                                <cell><measure unit="pt">112</measure></cell>
+                                <cell><measure unit="pt">110</measure></cell>
                             </row>
                             <row>
                                 <cell>,, Zawati</cell>
                                 <cell>,, ,,</cell>
-                                <cell><measure unit="pt">115</measure></cell>
+                                <cell><measure unit="pt">112</measure></cell>
                                 <cell>,, ,,</cell>
-                                <cell><measure unit="pt">116</measure></cell>
+                                <cell><measure unit="pt">114</measure></cell>
                             </row>
                             <row>
                                 <cell>,, Old</cell>
                                 <cell>,, ,,</cell>
-                                <cell><measure unit="pt">—</measure></cell>
+                                <cell><measure unit="pt">117</measure></cell>
                                 <cell>,, ,,</cell>
-                                <cell><measure unit="pt">—</measure></cell>
+                                <cell><measure unit="pt">118</measure></cell>
                             </row>
                             <row>
                                 <cell>Lentils, Tugari</cell>
                                 <cell>,, ,,</cell>
-                                <cell><measure unit="pt">108</measure></cell>
+                                <cell><measure unit="pt">110</measure></cell>
                                 <cell>,, ,,</cell>
-                                <cell><measure unit="pt">112</measure></cell>
+                                <cell><measure unit="pt">118</measure></cell>
                             </row>
                             <row>
                                 <cell>,, Zawati</cell>
                                 <cell>,, ,,</cell>
-                                <cell><measure unit="pt">122</measure></cell>
+                                <cell><measure unit="pt">125</measure></cell>
                                 <cell>,, ,,</cell>
-                                <cell><measure unit="pt">128</measure></cell>
+                                <cell><measure unit="pt">135</measure></cell>
                             </row>
                             <row>
                                 <cell>Barley, Tugari</cell>
                                 <cell>,, ,,</cell>
-                                <cell><measure unit="pt">74</measure></cell>
+                                <cell><measure unit="pt">72</measure></cell>
                                 <cell>,, ,,</cell>
-                                <cell><measure unit="pt">75</measure></cell>
+                                <cell><measure unit="pt">74</measure></cell>
                             </row>
                             <row>
                                 <cell>,, Zawati</cell>
                                 <cell>,, ,,</cell>
-                                <cell><measure unit="pt">78</measure></cell>
+                                <cell>76</cell>
                                 <cell>,, ,,</cell>
-                                <cell><measure unit="pt">82</measure></cell>
+                                <cell><measure unit="pt">77</measure></cell>
                             </row>
                             <row>
                                 <cell>,, Mariuti</cell>
                                 <cell>,, ,,</cell>
-                                <cell><measure unit="pt">76</measure></cell>
+                                <cell><measure unit="pt">73</measure></cell>
                                 <cell>,, ,,</cell>
-                                <cell><measure unit="pt">77</measure></cell>
+                                <cell><measure unit="pt">75</measure></cell>
                             </row>
                             <row>
                                 <cell>Dura Shami</cell>
@@ -3901,23 +3861,30 @@
                             <row>
                                 <cell>Helba</cell>
                                 <cell>,, ,,</cell>
-                                <cell><measure unit="pt">180</measure></cell>
-                                <cell>,, ,,</cell>
                                 <cell><measure unit="pt">185</measure></cell>
+                                <cell>,, ,,</cell>
+                                <cell><measure unit="pt">195</measure></cell>
                             </row>
                             <row>
                                 <cell>Termis</cell>
                                 <cell>,, ,,</cell>
-                                <cell><measure unit="pt">70</measure></cell>
-                                <cell>,, ,,</cell>
                                 <cell><measure unit="pt">72</measure></cell>
+                                <cell>,, ,,</cell>
+                                <cell><measure unit="pt">73</measure></cell>
                             </row>
                             <row>
                                 <cell>Hummos</cell>
                                 <cell>,, ,,</cell>
-                                <cell><measure unit="pt">165</measure></cell>
+                                <cell><measure unit="pt">180</measure></cell>
                                 <cell>,, ,,</cell>
-                                <cell><measure unit="pt">175</measure></cell>
+                                <cell><measure unit="pt">182</measure></cell>
+                            </row>
+                            <row>
+                                <cell>Simsim</cell>
+                                <cell/>
+                                <cell>170</cell>
+                                <cell/>
+                                <cell>180</cell>
                             </row>
                         </table>
                         <table rows="9" cols="3" xml:id="deg-ta-cema02">
@@ -3925,32 +3892,32 @@
                             <row>
                                 <cell>Wheat </cell>
                                 <cell>Ard.</cell>
-                                <cell><measure unit="ard">3000</measure></cell>
+                                <cell><measure unit="ard">5000</measure></cell>
                             </row>
                             <row>
                                 <cell>Beans</cell>
                                 <cell>,,</cell>
-                                <cell><measure unit="ard">2000</measure></cell>
+                                <cell><measure unit="ard">6000</measure></cell>
                             </row>
                             <row>
                                 <cell>Lentils</cell>
                                 <cell>,,</cell>
-                                <cell><measure unit="ard">100</measure></cell>
+                                <cell><measure unit="ard">400</measure></cell>
                             </row>
                             <row>
                                 <cell>Barley</cell>
                                 <cell>,,</cell>
-                                <cell><measure unit="ard">300</measure></cell>
+                                <cell><measure unit="ard">––</measure></cell>
                             </row>
                             <row>
                                 <cell>,, Mariuti</cell>
                                 <cell>,,</cell>
-                                <cell><measure unit="ard">500</measure></cell>
+                                <cell><measure unit="ard">1500</measure></cell>
                             </row>
                             <row>
                                 <cell>,, Hamawi</cell>
                                 <cell>,,</cell>
-                                <cell><measure unit="ard">400</measure></cell>
+                                <cell><measure unit="ard">1000</measure></cell>
                             </row>
                             <row>
                                 <cell>Dura Shami</cell>
@@ -3965,7 +3932,7 @@
                             <row>
                                 <cell>Helba</cell>
                                 <cell>,,</cell>
-                                <cell><measure unit="ard">300</measure></cell>
+                                <cell><measure unit="ard">600</measure></cell>
                             </row>
                         </table>
                     </div>
@@ -3980,12 +3947,12 @@
                             <row>
                                 <cell>London cheque</cell>
                                 <cell><measure unit="£">97 9/16</measure></cell>
-                                <cell><measure unit="£">97 15/16</measure></cell>
+                                <cell><measure unit="£">97 7/8</measure></cell>
                             </row>
                             <row>
                                 <cell>" 3m. bank paper</cell>
-                                <cell><measure unit="£">97 1/16</measure></cell>
-                                <cell><measure unit="£">97 3/8</measure></cell>
+                                <cell><measure unit="£">97 </measure></cell>
+                                <cell><measure unit="£">97 5/16</measure></cell>
                             </row>
                             <row>
                                 <cell>" 3m. house paper</cell>
@@ -3995,42 +3962,42 @@
                             <row>
                                 <cell>Paris cheque</cell>
                                 <cell><measure unit="fcs">388 —</measure></cell>
-                                <cell><measure unit="fcs">389 ½</measure></cell>
+                                <cell><measure unit="fcs">389</measure></cell>
                             </row>
                             <row>
                                 <cell>" 3m. bank paper</cell>
                                 <cell><measure unit="fcs">386 ¼</measure></cell>
-                                <cell><measure unit="fcs">387 ½</measure></cell>
+                                <cell><measure unit="fcs">387</measure></cell>
                             </row>
                             <row>
                                 <cell>" 3m. house paper</cell>
-                                <cell><measure unit="fcs">385 ¾</measure></cell>
-                                <cell><measure unit="fcs">— —</measure></cell>
+                                <cell><measure unit="fcs">386</measure></cell>
+                                <cell><measure unit="fcs">— 1/2</measure></cell>
                             </row>
                             <row>
                                 <cell>Switzerland cheque</cell>
-                                <cell><measure unit="fcs">386 ½</measure></cell>
-                                <cell><measure unit="fcs">388 ¾</measure></cell>
+                                <cell><measure unit="fcs">387</measure></cell>
+                                <cell><measure unit="fcs">389</measure></cell>
                             </row>
                             <row>
                                 <cell>3m. bank paper</cell>
-                                <cell><measure unit="fcs">384 —</measure></cell>
-                                <cell><measure unit="fcs">— —</measure></cell>
+                                <cell><measure unit="fcs">384 1/4</measure></cell>
+                                <cell><measure unit="fcs">— 3/4</measure></cell>
                             </row>
                             <row>
                                 <cell>Germany cheque</cell>
-                                <cell><measure>476 ¼</measure></cell>
-                                <cell><measure>478 —</measure></cell>
+                                <cell><measure>477</measure></cell>
+                                <cell><measure>478 1/8</measure></cell>
                             </row>
                             <row>
                                 <cell>" 3m bank paper </cell>
                                 <cell><measure>473 ¼</measure></cell>
-                                <cell><measure>— —</measure></cell>
+                                <cell><measure>— 3/8</measure></cell>
                             </row>
                             <row>
                                 <cell>Italian cheque</cell>
-                                <cell><measure>388 —</measure></cell>
-                                <cell><measure>390 —</measure></cell>
+                                <cell><measure>387 1/4</measure></cell>
+                                <cell><measure>389 1/4</measure></cell>
                             </row>
                             <row>
                                 <cell>Vienna &amp; Trieste cheque</cell>
@@ -4039,8 +4006,8 @@
                             </row>
                             <row>
                                 <cell>Constantinople cheque</cell>
-                                <cell><measure>88 7/8</measure></cell>
-                                <cell><measure>89 5/16</measure></cell>
+                                <cell><measure>89</measure></cell>
+                                <cell><measure>89 3/8</measure></cell>
                             </row>
                         </table>
                         <p> *Less one per mille brokerage.</p>
@@ -4050,94 +4017,94 @@
                         <table cols="4" xml:id="deg-ta-egmm01">
                             <row role="label">
                                 <cell>Name of Company </cell>
-                                <cell>Making up Prices <date when="1905-06-26">June 26</date>
+                                <cell>Making up Prices <date when="1905-06-26">July 10</date>
                                 </cell>
-                                <cell cols="2">Latest Prices <date when="1905-06-30">June
-                                    30</date></cell>
+                                <cell cols="2">Latest Prices <date when="1905-06-30">July
+                                    21</date></cell>
                             </row>
                             <row>
                                 <cell>Central Egypt Exploration</cell>
-                                <cell><measure>1 1/8</measure></cell>
                                 <cell><measure>1 1/16</measure></cell>
-                                <cell><measure>1 3/16</measure></cell>
+                                <cell><measure>1 </measure></cell>
+                                <cell><measure>1 1/8</measure></cell>
                             </row>
                             <row>
                                 <cell>Corporation of W. Egypt</cell>
                                 <cell><measure>7/16</measure>pm</cell>
-                                <cell><measure>17/32</measure></cell>
-                                <cell><measure>19/32</measure></cell>
+                                <cell><measure>7/16</measure></cell>
+                                <cell><measure>9/16</measure></cell>
                             </row>
                             <row>
                                 <cell>Egypt. Mines Exlpor. Synd.</cell>
                                 <cell><measure>13/</measure></cell>
-                                <cell><measure>13/</measure></cell>
-                                <cell><measure>13/3</measure></cell>
+                                <cell><measure>13/9</measure></cell>
+                                <cell><measure>14/3</measure></cell>
                             </row>
                             <row>
                                 <cell>Egypt. Sudan Minerals</cell>
                                 <cell><measure>1/8</measure></cell>
-                                <cell><measure>1/16</measure></cell>
-                                <cell><measure>3/16</measure></cell>
+                                <cell><measure>1 1/8</measure></cell>
+                                <cell><measure>1 1/4</measure></cell>
                             </row>
                             <row>
                                 <cell>Egypt. and Sudan Mining Synd.</cell>
-                                <cell><measure>1 11/16</measure></cell>
                                 <cell><measure>1 5/8</measure></cell>
-                                <cell><measure>1 3/4</measure></cell>
+                                <cell><measure>1 9/16</measure></cell>
+                                <cell><measure>1 11/16</measure></cell>
                             </row>
                             <row>
                                 <cell>Nile Goldfields</cell>
-                                <cell><measure>½</measure></cell>
-                                <cell><measure>¼</measure></cell>
-                                <cell><measure>¾</measure></cell>
+                                <cell><measure>11/16</measure></cell>
+                                <cell><measure>9/16</measure></cell>
+                                <cell><measure>12/16</measure></cell>
                             </row>
                             <row>
                                 <cell>Nile Valley Block E</cell>
-                                <cell><measure>¾</measure></cell>
-                                <cell><measure>¾</measure></cell>
-                                <cell><measure>7/8</measure></cell>
+                                <cell><measure>5/8</measure></cell>
+                                <cell><measure>12/16</measure></cell>
+                                <cell><measure>12/16</measure></cell>
                             </row>
                             <row>
                                 <cell>Nile Valley (New)</cell>
-                                <cell><measure>1 ¼</measure></cell>
-                                <cell><measure>1 ¼</measure></cell>
-                                <cell><measure>1 3/8</measure></cell>
+                                <cell><measure>1 7/32</measure></cell>
+                                <cell><measure>1 </measure></cell>
+                                <cell><measure>1 1/8</measure></cell>
                             </row>
                             <row>
                                 <cell>North Nile Valley</cell>
-                                <cell><measure>3/8</measure></cell>
-                                <cell><measure>3/16</measure></cell>
-                                <cell><measure>5/16</measure></cell>
+                                <cell><measure>2/16</measure></cell>
+                                <cell><measure>1 3/16</measure></cell>
+                                <cell><measure>1 5/16</measure></cell>
                             </row>
                             <row>
                                 <cell>Nubia (Sudan) Dev. Synd. (10s. pd.)</cell>
-                                <cell><measure>15/16</measure></cell>
-                                <cell><measure>7/8</measure></cell>
-                                <cell><measure>1</measure></cell>
+                                <cell><measure>3/4</measure></cell>
+                                <cell><measure>7/16</measure></cell>
+                                <cell><measure>9/16</measure></cell>
                             </row>
                             <row>
                                 <cell>Sudan Explor. (10s. Shares)</cell>
                                 <cell><measure>3/</measure></cell>
-                                <cell><measure>2/6</measure></cell>
-                                <cell><measure>3/6</measure></cell>
+                                <cell><measure>1/8</measure></cell>
+                                <cell><measure>1/4</measure></cell>
                             </row>
                             <row>
                                 <cell>Sudan Mines</cell>
-                                <cell><measure>½</measure></cell>
                                 <cell><measure>3/8</measure></cell>
-                                <cell><measure>5/8</measure></cell>
+                                <cell><measure>1/4</measure></cell>
+                                <cell><measure>1/2</measure></cell>
                             </row>
                             <row>
                                 <cell>Um Rus Gold Mines</cell>
                                 <cell><measure>1/32</measure> pm</cell>
                                 <cell>par</cell>
-                                <cell><measure>1/16</measure>pm</cell>
+                                <cell><measure>1/8</measure>pm</cell>
                             </row>
                             <row>
                                 <cell>United African Explor.</cell>
+                                <cell><measure>1 1/4</measure></cell>
                                 <cell><measure>1 5/16</measure></cell>
-                                <cell><measure>1 ¼</measure></cell>
-                                <cell><measure>1 3/8</measure></cell>
+                                <cell><measure>1 7/16</measure></cell>
                             </row>
                         </table>
                     </div>
@@ -4149,69 +4116,69 @@
                             <row>
                                 <cell>Agric. Bank of Egypt</cell>
                                 <cell>Lst.</cell>
-                                <cell><measure unit="£">13 13/16</measure> à 7/8 </cell>
+                                <cell><measure unit="£">14 1/16</measure> à 1/8 </cell>
                                 <cell>à</cell>
-                                <cell><measure unit="£">9 7/16</measure> à 1/2</cell>
+                                <cell><measure unit="£">9 5/8</measure>
+                                </cell>
                             </row>
                             <row>
                                 <cell>Nat. Bank of Egypt</cell>
                                 <cell>"</cell>
                                 <cell>
-                                    <measure unit="£">26 5/16</measure>
-                                </cell>
+                                    <measure unit="£">27 1/4</measure> a 5/16</cell>
                                 <cell>"</cell>
                                 <cell>
-                                    <measure unit="£">— 3/8</measure></cell>
+                                    <measure unit="£">27 ¼ a 5/16 </measure></cell>
                             </row>
                             <row>
                                 <cell>Ramleh Railway</cell>
                                 <cell>"</cell>
                                 <cell>
-                                    <measure unit="£">7 1/8</measure></cell>
+                                    <measure unit="£">7 3/8</measure></cell>
                                 <cell>"</cell>
-                                <cell><measure unit="£">— —</measure></cell>
+                                <cell><measure unit="£">— 7/16</measure></cell>
                             </row>
                             <row>
                                 <cell>Egyptian Delta Railway ex.-c.</cell>
                                 <cell>"</cell>
-                                <cell><measure unit="£">12 7/8</measure></cell>
+                                <cell><measure unit="£">13 1/8</measure></cell>
                                 <cell>"</cell>
-                                <cell><measure unit="£">— 15/16</measure></cell>
+                                <cell><measure unit="£">— 2/16</measure></cell>
                             </row>
                             <row>
                                 <cell>Tram. d’Alexandrie</cell>
                                 <cell>Fcs.</cell>
-                                <cell><measure unit="fcs">165 —</measure></cell>
+                                <cell><measure unit="fcs">156 —</measure></cell>
                                 <cell>"</cell>
-                                <cell><measure unit="fcs">165 ¼</measure></cell>
+                                <cell><measure unit="fcs">157</measure></cell>
                             </row>
                             <row>
                                 <cell>" " div.</cell>
                                 <cell>"</cell>
-                                <cell><measure unit="fcs">340 —</measure></cell>
+                                <cell><measure unit="fcs">342 —</measure></cell>
                                 <cell>"</cell>
-                                <cell><measure unit="fcs">— —</measure></cell>
+                                <cell><measure unit="fcs">345 —</measure></cell>
                             </row>
                             <row>
                                 <cell>Alexandria Water</cell>
                                 <cell>Lst.</cell>
-                                <cell><measure unit="£">15 —</measure></cell>
+                                <cell><measure unit="£">14 15/16</measure></cell>
                                 <cell>"</cell>
-                                <cell><measure unit="£">— —</measure></cell>
+                                <cell><measure unit="£">15 —</measure></cell>
                             </row>
                             <row>
                                 <cell>Eaux du Cairo</cell>
                                 <cell>Fcs.</cell>
-                                <cell><measure unit="fcs">1115 —</measure></cell>
+                                <cell><measure unit="fcs">–– —</measure></cell>
                                 <cell>"</cell>
                                 <cell><measure unit="fcs">— —</measure></cell>
                             </row>
                             <row>
                                 <cell>Daira Sanieh</cell>
                                 <cell>Lst.</cell>
-                                <cell><measure unit="£">28 1/16</measure></cell>
+                                <cell><measure unit="£">28 1/4</measure></cell>
                                 <cell>"</cell>
-                                <cell><measure unit="£">— 1/8</measure></cell>
+                                <cell><measure unit="£">— 5/16</measure></cell>
                             </row>
                             <row>
                                 <cell>Béhéra</cell>
@@ -4230,42 +4197,42 @@
                             <row>
                                 <cell>Egyptian Markets</cell>
                                 <cell>"</cell>
-                                <cell><measure unit="£">22 6</measure></cell>
+                                <cell><measure unit="£">22/9</measure></cell>
                                 <cell>"</cell>
-                                <cell><measure unit="£">22/9 —</measure></cell>
+                                <cell><measure unit="£">23/ —</measure></cell>
                             </row>
                             <row>
                                 <cell>Anglo-Egyptian Spinning</cell>
                                 <cell>"</cell>
-                                <cell><measure unit="£">—11/16</measure></cell>
+                                <cell><measure unit="£">—3/4</measure></cell>
                                 <cell>"</cell>
-                                <cell><measure unit="£"> — ¾</measure></cell>
+                                <cell><measure unit="£"> — 12/16</measure></cell>
                             </row>
                             <row>
                                 <cell>Bière d’Alex. Priv.</cell>
                                 <cell>Fcs.</cell>
-                                <cell><measure unit="fcs">200 —</measure></cell>
+                                <cell><measure unit="fcs">210 —</measure></cell>
                                 <cell>"</cell>
-                                <cell><measure unit="fcs">203 —</measure></cell>
+                                <cell><measure unit="fcs">–– —</measure></cell>
                             </row>
                             <row>
                                 <cell> " " Div.</cell>
                                 <cell>"</cell>
-                                <cell><measure unit="fcs">100 —</measure></cell>
+                                <cell><measure unit="fcs">108 —</measure></cell>
                                 <cell>"</cell>
-                                <cell><measure unit="fcs">105 —</measure></cell>
+                                <cell><measure unit="fcs">113 —</measure></cell>
                             </row>
                             <row>
                                 <cell>" du Cairo Priv.</cell>
                                 <cell>"</cell>
-                                <cell><measure unit="fcs">110 —</measure></cell>
+                                <cell><measure unit="fcs">122 —</measure></cell>
                                 <cell>"</cell>
-                                <cell><measure unit="fcs">111 —</measure></cell>
+                                <cell><measure unit="fcs">123 —</measure></cell>
                             </row>
                             <row>
                                 <cell>" " Div.</cell>
                                 <cell>"</cell>
-                                <cell><measure unit="fcs">60 —</measure></cell>
+                                <cell><measure unit="fcs">62 —</measure></cell>
                                 <cell>"</cell>
                                 <cell><measure unit="fcs">— —</measure></cell>
                             </row>
@@ -4301,10 +4268,10 @@
                             <row>
                                 <cell>Oblig. Credit Foncier Egyptien 3 %</cell>
                                 <cell>Fcs.</cell>
-                                <cell><measure unit="fcs">316 —</measure>
+                                <cell><measure unit="fcs">318 —</measure>
                                 </cell>
                                 <cell>"</cell>
-                                <cell><measure unit="fcs">316 ½</measure></cell>
+                                <cell><measure unit="fcs">272 ½</measure></cell>
                             </row>
                             <row>
                                 <cell>Lots Turcs</cell>
@@ -4332,99 +4299,99 @@
                             <row>
                                 <cell>Cassa di Sconto</cell>
                                 <cell>Fcs.</cell>
-                                <cell><measure unit="fcs">177 —</measure>
+                                <cell><measure unit="fcs">183 1/4</measure>
                                 </cell>
                                 <cell>"</cell>
-                                <cell><measure unit="fcs">165 —</measure></cell>
+                                <cell><measure unit="fcs">172 1/2</measure></cell>
                             </row>
                             <row>
                                 <cell>Anglo-American Nile</cell>
                                 <cell>Lst.</cell>
-                                <cell><measure unit="£">5 7/16</measure>
+                                <cell><measure unit="£">5 5/8</measure>
                                 </cell>
                                 <cell>"</cell>
-                                <cell><measure unit="£">— ½</measure></cell>
+                                <cell><measure unit="£">— 11/16</measure></cell>
                             </row>
                             <row>
                                 <cell>Banque d’Athènes </cell>
                                 <cell>Fcs.</cell>
-                                <cell><measure unit="fcs">122 ¼</measure></cell>
+                                <cell><measure unit="fcs">130 </measure></cell>
                                 <cell>"</cell>
-                                <cell><measure unit="fcs">122 ½</measure></cell>
+                                <cell><measure unit="fcs">130 ½</measure></cell>
                             </row>
                             <row>
                                 <cell>Deferred Delta</cell>
                                 <cell>Lst.</cell>
-                                <cell><measure unit="£">13 ¾</measure>
+                                <cell><measure unit="£">–– –– </measure>
                                 </cell>
                                 <cell>"</cell>
-                                <cell><measure unit="£">— 7/8</measure></cell>
+                                <cell><measure unit="£">— ––</measure></cell>
                             </row>
                             <row>
                                 <cell>Nungovich Hotels</cell>
                                 <cell>"</cell>
-                                <cell><measure unit="£">9 7/16</measure></cell>
+                                <cell><measure unit="£">10 </measure></cell>
                                 <cell>"</cell>
-                                <cell><measure unit="£">— ½</measure></cell>
+                                <cell><measure unit="£">— 1/16</measure></cell>
                             </row>
                             <row>
                                 <cell>Delta Land</cell>
                                 <cell>"</cell>
                                 <cell>
-                                    <measure unit="£">2 15/32</measure></cell>
+                                    <measure unit="£">2 3/4</measure></cell>
                                 <cell>"</cell>
-                                <cell><measure unit="£">— ½</measure></cell>
+                                <cell><measure unit="£">— 13/16</measure></cell>
                             </row>
                             <row>
                                 <cell> Egyptian Invest. &amp; Agency Ld.</cell>
                                 <cell>"</cell>
-                                <cell><measure unit="£">1 11/32</measure>
+                                <cell><measure unit="£">1 5/16</measure>
                                 </cell>
                                 <cell>"</cell>
-                                <cell><measure unit="£">— 3/8</measure></cell>
+                                <cell><measure unit="£">— 11/32</measure></cell>
                             </row>
                             <row>
                                 <cell>Land Bank</cell>
                                 <cell>"</cell>
-                                <cell><measure unit="£">9 5/16</measure>
+                                <cell><measure unit="£">9 7/16</measure>
                                 </cell>
                                 <cell>"</cell>
-                                <cell><measure unit="£">— 3/8</measure></cell>
+                                <cell><measure unit="£">— 1/2</measure></cell>
                             </row>
                             <row>
                                 <cell>Trust Investment</cell>
                                 <cell>"</cell>
-                                <cell><measure unit="£">1 13/32</measure></cell>
+                                <cell><measure unit="£">1 9/32</measure></cell>
                                 <cell>"</cell>
-                                <cell><measure unit="£">— 7/16</measure></cell>
+                                <cell><measure unit="£">— 5/16</measure></cell>
                             </row>
                             <row>
                                 <cell>Splendid Hôtels</cell>
                                 <cell>"</cell>
-                                <cell><measure unit="£">4 ¼</measure></cell>
+                                <cell><measure unit="£">–– ––</measure></cell>
                                 <cell>"</cell>
                                 <cell><measure unit="£">— —</measure></cell>
                             </row>
                             <row>
                                 <cell>Estates</cell>
                                 <cell>"</cell>
-                                <cell><measure unit="£">— 27/32</measure></cell>
+                                <cell><measure unit="£">— 31/32</measure></cell>
                                 <cell>"</cell>
-                                <cell><measure unit="£">— 7/8</measure></cell>
+                                <cell><measure unit="£">1 ––</measure></cell>
                             </row>
                             <row>
                                 <cell>Cheik Fadl </cell>
                                 <cell>"</cell>
-                                <cell><measure unit="fcs">123 —</measure></cell>
+                                <cell><measure unit="fcs">125 —</measure></cell>
                                 <cell>"</cell>
-                                <cell><measure unit="fcs">124 —</measure></cell>
+                                <cell><measure unit="fcs">–– —</measure></cell>
                             </row>
                             <row>
                                 <cell>Entreprises Urbaines</cell>
                                 <cell>"</cell>
-                                <cell><measure unit="£">4 5/8</measure></cell>
+                                <cell><measure unit="£">5 1/8</measure></cell>
                                 <cell>"</cell>
-                                <cell><measure unit="£">— 11/16</measure></cell>
+                                <cell><measure unit="£">— 3/16</measure></cell>
                             </row>
                         </table>
                     </div>
@@ -4434,8 +4401,10 @@
                         <p>DÉPÊCHE D'OUVERTURE</p>
                         <p>LIVERPOOL, 10h. a.m.</p>
                         <p>Américain</p>
-                        <p>Futurs: août-sept. : <measure unit="$">5.85</measure></p>
-                        <p>,, oct.-nov. : <measure unit="$">5.84</measure></p>
+                        <p>Futurs: août-sept. : <measure unit="$">5.96</measure></p>
+                        <p>,, oct.-nov. : <measure unit="$">5.96</measure></p>
+                        <p>Futurs: août-sept. : <measure unit="$">5.96</measure></p>
+                        <p>,, oct.-nov. : <measure unit="$">5.99</measure></p>
                     </div>
                     <div type="article" xml:lang="fr" xml:id="deg-el-dehe1">
                         <head>DERNIERE HEURE</head>
@@ -4448,41 +4417,33 @@
                             <row>
                                 <cell>Novembre</cell>
                                 <cell>Tal.</cell>
-                                <cell><measure unit="tal">14 15/16</measure>
+                                <cell><measure unit="tal">15 3/16</measure>
                                 </cell>
                                 <cell>à</cell>
-                                <cell><measure unit="tal">— 31/32</measure></cell>
+                                <cell><measure unit="tal">— 7/32</measure></cell>
                             </row>
                             <row>
                                 <cell>Janvier</cell>
                                 <cell>"</cell>
-                                <cell><measure unit="tal">14 27/32</measure></cell>
+                                <cell><measure unit="tal">15 1/8</measure></cell>
                                 <cell>"</cell>
                                 <cell>
-                                    <measure unit="tal">— 7/8</measure></cell>
+                                    <measure unit="tal">— 5/32</measure></cell>
                             </row>
                             <row>
                                 <cell>Mars</cell>
                                 <cell>"</cell>
-                                <cell><measure unit="tal">15 1/16</measure></cell>
+                                <cell><measure unit="tal">15 9/32</measure></cell>
                                 <cell>"</cell>
                                 <cell><measure unit="tal">— —</measure></cell>
                             </row>
                             <row>
-                                <cell>Juillet</cell>
+                                <cell>Aout</cell>
                                 <cell>"</cell>
-                                <cell><measure unit="tal">15 7/32</measure></cell>
-                                <cell>"</cell>
-                                <cell>
-                                    <measure unit="tal">— ¼</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Août</cell>
-                                <cell>"</cell>
-                                <cell><measure unit="tal">15 17/32</measure></cell>
+                                <cell><measure unit="tal">15 9/16</measure></cell>
                                 <cell>"</cell>
                                 <cell>
-                                    <measure unit="tal">— 9/16</measure></cell>
+                                    <measure unit="tal">— 19/32</measure></cell>
                             </row>
                             <row role="label">
                                 <cell>Graines de coton</cell>
@@ -4490,34 +4451,27 @@
                             <row>
                                 <cell>N.-D.-J. </cell>
                                 <cell>"</cell>
-                                <cell><measure unit="tal">61 10/40</measure>
+                                <cell><measure unit="tal">60 30/40</measure>
                                 </cell>
                                 <cell>à</cell>
-                                <cell><measure unit="tal">— 20/40</measure></cell>
-                            </row>
-                            <row>
-                                <cell>Juillet</cell>
-                                <cell>"</cell>
-                                <cell><measure unit="tal">59 —</measure></cell>
-                                <cell>"</cell>
-                                <cell><measure unit="tal">– –</measure></cell>
+                                <cell><measure unit="tal">— 35/40</measure></cell>
                             </row>
                             <row>
                                 <cell>Août</cell>
                                 <cell> "</cell>
-                                <cell><measure unit="tal">59 30/40</measure></cell>
+                                <cell><measure unit="tal">58 5/40</measure></cell>
                                 <cell>"</cell>
-                                <cell><measure unit="tal">— 35/40</measure></cell>
+                                <cell><measure unit="tal">— 10/40</measure></cell>
                             </row>
                             <row role="label">
                                 <cell>Fèves-Saïdi</cell>
                             </row>
                             <row>
-                                <cell>Sept-Oct.</cell>
+                                <cell>Nov.-Dec.-Jan.</cell>
                                 <cell>P.T.</cell>
-                                <cell><measure unit="pt">95 —</measure></cell>
+                                <cell><measure unit="pt">103 —</measure></cell>
                                 <cell>à</cell>
-                                <cell><measure unit="pt">— ½</measure></cell>
+                                <cell><measure unit="pt">104</measure></cell>
                             </row>
                         </table>
                     </div>
@@ -4836,8 +4790,8 @@
                             pursuit of his inquiry he has paid many visits to the pigmies at their
                             lodgings in the vicinity of Tottenham Court-read.</p>
                     </div>
-                    <div type="item">
-                        <head>ARMY AND NAVY.</head>
+                    <div type="section" element="army">
+                    <head>ARMY AND NAVY.</head>
                         <p>(From our Correspondent.)</p>
                         <p>London, July 20.</p>
                         <p>Captain W.H.Drake,R.A., the new D.A.A.G. of the Egyptian Army, was lately
@@ -4897,7 +4851,7 @@
                             home waters.</p>
                     </div>
                     <cb n="5"/>
-                    <div type="item" scope="calendar" xml:id="deg-el-coce01">
+                    <div type="item" scope="calendar" element="comingEvents">
                         <head>Calendar of Coming Events</head>
                         <table cols="2" xml:id="deg-ta-coce01">
                             <row role="label">
@@ -5118,28 +5072,29 @@
                         <p>St. David’s Buildings, ALEXANDRIA,</p>
                         <p>and 35 - 37 Noble Street LONDON, E.C.</p>
                         <p>English Tailors, Drapers and Outfitters.</p>
-                        <p>TRAVELLING REQUISITIES: COMPRESSED CANE TRUNKS. SOLID LEATHER OVERLAND TRUNKS.
-                            GLADSTONE &amp; KIT BAGS. SUIT CASES, RUGS, &amp;c.</p>
-                        <p>ATHLETIC GOODS: A VARIED STOCK, INCLUDING Slazenger’s Doherty “E.G.M.” Demon. AND
-                            Ayre’s Central Strung Racquets.</p>
+                        <p>TRAVELLING REQUISITIES: COMPRESSED CANE TRUNKS. SOLID LEATHER OVERLAND
+                            TRUNKS. GLADSTONE &amp; KIT BAGS. SUIT CASES, RUGS, &amp;c.</p>
+                        <p>ATHLETIC GOODS: A VARIED STOCK, INCLUDING Slazenger’s Doherty “E.G.M.”
+                            Demon. AND Ayre’s Central Strung Racquets.</p>
                         <p>TENNIS BALLS FRESH SUPPLY WEEKLY.</p>
                         <p>BOOTS &amp; SHOES.</p>
                         <p>All the newest shapes in the best English makes:—</p>
                         <p>BUCKSKIN TENNIS BOOT AT £1 A SPECIALITY.</p>
-                        <p>Owing to the increased business in this Department a new Showroom has been fitted
-                            up where better attention can be given to Customers.</p>
-                        <p>CLOTHS: The largest Stock in Egypt of Cloths of the best British Manufacture :
-                            TROPICAL TWEEDS, FLANNELS, DRILLS, &amp; c., &amp; c</p>
-                        <p>All garments cut by experienced English cutters. Fit and style guaranteed.</p>
-                        <p>GENTS’ OUTFITTING: The newest Shades in Crepe de Chene Ties. Cellular, Oxford,
-                            Zephyr Shirts and Pyjamas in great variety.</p>
+                        <p>Owing to the increased business in this Department a new Showroom has
+                            been fitted up where better attention can be given to Customers.</p>
+                        <p>CLOTHS: The largest Stock in Egypt of Cloths of the best British
+                            Manufacture : TROPICAL TWEEDS, FLANNELS, DRILLS, &amp; c., &amp; c</p>
+                        <p>All garments cut by experienced English cutters. Fit and style
+                            guaranteed.</p>
+                        <p>GENTS’ OUTFITTING: The newest Shades in Crepe de Chene Ties. Cellular,
+                            Oxford, Zephyr Shirts and Pyjamas in great variety.</p>
                         <p>Special Attention paid to Shirts Made to Measure.</p>
                         <p>HOSIERY AND UNDERCLOTHING IN THE BEST MAKES.</p>
                         <p>PANAMA, STRAW, &amp; FELT HATS CORK &amp; PITH HELMETS. CAPS.</p>
-                        <p>HOUSEHOLD LINEN AT SPECIALLY CHEAP PRICES. TABLE CLOTHS, NAPKINS, SHEETS, AND
-                            PILLOW CASES. FLANNELETTES, VIYELLAS AND CEYLON FLANNELS.</p>
-                        <p>SOAP, PERFUMERY, RUBBER SPONGES, BRUSHES, STUDS, MIRRORS (Hand &amp; Shaving)
-                            FOUNTAIN PENS, &amp;c., &amp;c.</p>
+                        <p>HOUSEHOLD LINEN AT SPECIALLY CHEAP PRICES. TABLE CLOTHS, NAPKINS, SHEETS,
+                            AND PILLOW CASES. FLANNELETTES, VIYELLAS AND CEYLON FLANNELS.</p>
+                        <p>SOAP, PERFUMERY, RUBBER SPONGES, BRUSHES, STUDS, MIRRORS (Hand &amp;
+                            Shaving) FOUNTAIN PENS, &amp;c., &amp;c.</p>
                         <p>Davies Bryan &amp; Co., Cairo &amp; Alexandria.</p>
                     </div>
                 </div>
@@ -5573,7 +5528,7 @@
                     </div>
                     <div type="article" xml:lang="fr" xml:id="deg-el-teha01">
                         <head>TELEGRAMME HAVAS</head>
-                        <dateline>BOURSE du <date when="1905-07-11">11 juillet
+                        <dateline>BOURSE du <date when="1905-07-11">29 juillet
                             1905</date></dateline>
                         <p>COURS DES VALEURS A TERMS, CLOTURE</p>
                         <table cols="3" xml:id="deg-ta-teha01">
@@ -5861,7 +5816,6 @@
                             </row>
                             <row>
                                 <cell cols="5">CONTINENT (NANTES-DUNKERQUE)</cell>
-
                             </row>
                             <row>
                                 <cell>Graines de coton (Dunkerque)</cell>
@@ -5974,7 +5928,7 @@
                                 <cell><measure unit="fcs">30.—</measure></cell>
                             </row>
                         </table>
-                        <dateline>Alexandrie, le 13 juillet 1905</dateline>
+                        <dateline>Alexandrie, le 27 juillet 1905</dateline>
                     </div>
                     <div type="article" xml:id="deg-el-egml01">
                         <head>EGYPTIAN MARKETS, LIMITED</head>
@@ -5982,8 +5936,7 @@
                             <head>Approximative Returns</head>
                             <row role="label">
                                 <cell/>
-                                <cell>Week ended <date when="1905-06-29">June 29,
-                                    1905</date>.</cell>
+                                <cell>Week ended <date when="1905-06-29">July 6, 1905</date>.</cell>
                                 <cell>same period 1904</cell>
                             </row>
                             <row>
@@ -6372,9 +6325,9 @@
                         <p>21188-24.5.905</p>
                     </div>
                 </div>
-                <!-- end Section division -->
+                
             </div>
-            <!-- end page division -->
+            
         </body>
     </text>
 </TEI>

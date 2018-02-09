@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/dig-eg-gaz/resources/master/out/egSchema.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-stylesheet type="text/xsl" href="dig-eg-gaz.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
@@ -10,8 +11,8 @@
                 <principal>Will Hanley</principal>
             </titleStmt>
             <editionStmt>
-                <p>March 2, 2017</p>
-            </editionStmt>
+                <edition><date when="2017-03-02">March 2, 2017</date><gloss>3</gloss>
+            </edition></editionStmt>
             <publicationStmt>
                 <publisher>FSU University Libraries</publisher>
                 <pubPlace>Tallahassee, FL</pubPlace>
@@ -19,7 +20,8 @@
             <sourceDesc>
                 <bibl>
                     <title>The Egyptian Gazette</title>
-                    <date when="1906-08-28">August 28, 1906</date></bibl>
+                    <date when="1906-08-28">August 28, 1906</date>
+                    <extent><measure unit="pages" quantity="6">6</measure> pages</extent></bibl>
             </sourceDesc>
         </fileDesc>
     </teiHeader>
@@ -498,7 +500,6 @@
                         <p>For tariff and particulars apply to ADOLPHE STROSS, Alexandria,
                             Agent.</p>
                     </div>
-                    <cb n="3"/>
                     <div type="item" scope="advertisement" xml:id="deg-ad-deb01">
                         <head>DEUTSCHE BANK,</head>
                         <p>BERLIN, W.</p>
@@ -1353,11 +1354,10 @@
                         <head>THE CROWN PRESERVED COAL CO
                             Limited.<!--contains images, and text--></head>
                         <p>Works and Shipping Ports:</p>
-                        <p>Liverpool, 1886. Jamaicao, 1891. Chicago, 1893. Highest Award.</p>
-                        <p>CARDIFF and Port Talbot.</p>
-                        <p>Manufactuerers and Shippers of "CROWN FUEL" used by</p>
-                        <p>Warships, and State and Colonial Railways.</p>
-                        <p>Telegraphic Address: "Crown, Cardiff"</p>
+                        <p>CARDIFF AND POST TALBOT.</p>
+                        <p>Manufacturers and Shippers of "CROWN FUEL" Used By</p>
+                        <p>Warships and State and Colonial Railways.</p>
+                        <p>Telegraphic Address "CROWN, Cardiff."</p>
                     </div>
                     <div type="item" scope="advertisement" xml:id="say01">
                         <head>SAYERS'</head>
@@ -1819,7 +1819,7 @@
                     </div>
                 </div>
                 <div type="item" scope="newspaper" xml:id="deg-el-egsa02">
-                    <head>THE EGYPTIAN GAZETTE.</head>
+                    <head>THE EGYPTIAN GAZETTE</head>
                     <p>SUBSCRIPTIONS.—Alexandria, Cairo, and the Interior of Egypt (including
                         delivery in Alexandria or postage to subscriber’s address) P.T. 231½ per
                         annum, P.T. 116 for six months, P.T. 80 for three months. To other countries
@@ -2018,8 +2018,8 @@
                 <div type="section" scope="newspaper">
                     <cols n="6"/>
                     <cb n="1"/>
-                    <div type="article">
-                        <head>LOCAL AND GENERAL.</head>
+                    <div type="section" element="local">
+                    <head>LOCAL AND GENERAL.</head>
                         <p><hi rend="bold">Horses for the Army.</hi></p>
                         <p>100 horses for the 6th Inniskilling Dragoons have arrived in Cairo from
                             Malta. </p>
@@ -2120,7 +2120,7 @@
                             all Europeans equally, and has no desire to change the status quo. The
                             intrigues of Mustapha Pasha Kamel and his German collaborator are no
                             longer acceptable. </p>
-                        <p>THE LATE PRINCE MOHAMED IBRAHIM</p>
+                    </div><div type="item"><p>THE LATE PRINCE MOHAMED IBRAHIM</p>
                         <p>As already announced, the body of the late Prince Mohamed Ibrahim will
                             arrive at Alexandria from France ON the 4th proxo. On arrival here the
                             body will be removed to Ras-el-Tin Palace, where a funeral ceremony will
@@ -2133,7 +2133,7 @@
                             of the Prince’s mortal remains. It is said that the transport of the
                             body to Egypt was purposely delayed in order to allow of the Sultan’s
                             Accession Day fetes being held. </p>
-                        <p>KELB NASRANI</p>
+                    </div><div type="item"><p>KELB NASRANI</p>
                         <p>A case of incipient fanaticism took place on Friday evening at Cairo, on
                             a building in course of construction in the Sulkn El Hanafi. This
                             building is being erected on Wakf property by a contractor named M.
@@ -2146,7 +2146,7 @@
                             lay down the law than religions scruple. Such objections, however, might
                             very properly be met with that most excellent of remedies—the kourbash—
                             wielded by the proper authority. </p>
-                        <p>"AL UMMEH."</p>
+                    </div><div type="item"> <p>"AL UMMEH."</p>
                         <p>Troublesome times have fallen upon our confrere “Al Ummeh,” which
                             obtained such notoriety during the Akaba affair by its phenomenal
                             fabrications of news. The paper ceased to appear a few weeks ago as its
@@ -2157,21 +2157,21 @@
                             registered letter containing a postal money order for L.E. 70. Hashim
                             Bay was obliged to make good this sum to the post office on the day
                             after the forgery was discovered. </p>
-                        <p>PHARMACY PROSECUTIONS.</p>
+                    </div><div type="item"><p>PHARMACY PROSECUTIONS.</p>
                         <p>A number of persons have been condemned to various pains and penalties by
                             the Courts for breaches of the Pharmacy Regulations. One pharmacy
                             proprietor was ordered to dose his premises for having conducted his
                             pharmacy without a certificated pharmacist, another pharmacist was fired
                             for selling medicine of bad quality, and several perfumery dealers were
                             fined for selling opium without authorisation. </p>
-                        <p>THE PLAGUE.</p>
+                    </div><div type="item"> <p>THE PLAGUE.</p>
                         <p>During the week ended the 26th inst., nine cases of plague were notified
                             throughout Egypt, seven of which occurred at Alexandria and two at Suez.
                             Six cases ended fatally, five cures were effected, and seven patients
                             remained under treatment. Since the 1st January 434 cases have in all
                             been notified, as compared with 233 and 780 during the corresponding
                             periods of 1905 and 1904 respectively. </p>
-                        <p>PROVINCIAL NOTES.</p>
+                    </div><div type="item"><p>PROVINCIAL NOTES.</p>
                         <p>A band of outlaws operating at Keneh has been arrested. Among them was
                             one of the ghaffirs of the bandar. They lately made a raid on the house
                             of a notable of Keneh.</p>
@@ -2213,11 +2213,11 @@
                             recorded at Helouan, the maximum displacement occurring at 3.57 a.m.,
                             Cairo time, and being beyond the capacity of the instrument to measure
                             its magnitude. The above time corresponds to 9-11 p.m. of the Valparaiso
-                            shocks.</p>
-                        <p>THE KHEDIVE.</p>
+                            shocks.</p></div><div type="section" element="khedive">
+                        <head>THE KHEDIVE.</head>
                         <p>The Khedivial Maieh has received information confirming our news that H.
                             H. the Khedive met King Edward at Cowes, and also that he had an
-                            interview with Sir Ernest Cassel.</p>
+                            interview with Sir Ernest Cassel.</p></div><div type="item">
                         <p>RAILWAY FATALITY.</p>
                         <p>( FROM OUR CORRESPONDENT. )</p>
                         <p>Damanhour, Monday.</p>
@@ -2225,7 +2225,7 @@
                             Birket-el- Sab. The express between Cairo and Alexandria while near that
                             station cut a ghaffir to pieces who was employed on signalling work.
                             Death of course was instantaneous.</p>
-                        <p>VIOLATION OF DOMICILE.</p>
+                            </div><div type="item"><p>VIOLATION OF DOMICILE.</p>
                         <p>M. D. Paraponiaris, a distiller of Tantah, has lodged a protest with the
                             Hellenic Consulate, the Ministry of the Interior, and the Moudir of
                             Gharbieh, against the violation of domicile committed by a police
@@ -2238,7 +2238,7 @@
                             Paraponiaris had to threaten the intruders with a revolver to make them
                             leave the premises. They did not restore the roksa. This was three weeks
                             ago.</p>
-                        <p>THE VILLA MARGHERITA CASE.</p>
+                            </div><div type="item"> <p>THE VILLA MARGHERITA CASE.</p>
                         <p>It has been discovered that the Armenian who attempted to murder Hassan
                             Bey Moharrem recently at the Hotel Villa Margherita at San Stefano is a
                             Persian subject, and consequently a representative of the Persian
@@ -2247,7 +2247,7 @@
                             Moharrem was visiting a friend of his at the villa when the Armenian
                             tried to blackmail him, asking him for money. The doctor is physician to
                             the Khedive.</p>
-                        <p>NEW THEATRE ABBAS, CAIRO</p>
+                            </div><div type="item"><p>NEW THEATRE ABBAS, CAIRO</p>
                         <p>On Sunday afternoon and evening <hi rend="italic">Dalla Terra alla
                                 Luna</hi> was given by the Lombardo operetta company at the New
                             Theatre Abbas, and on both occasions the house was filled and this
@@ -2309,8 +2309,8 @@
                             needs more direct lines of communication than she presently enjoys via
                             Vrania (near the Macedonian frontier), Uskub, and Salonica, 150 miles
                             distant from her border. Several foreign companies ply their steamers on
-                            the Danube and Save.</p>
-                        <p>PERSONAL AND SOCIAL.</p>
+                            the Danube and Save.</p></div><div type="section" element="social">
+                        <head>PERSONAL AND SOCIAL.</head>
                         <p>It is interesting to note that the Hon Alexander Murray, the Master of
                             Elibank, who has been inveighing against Socialism at Westlington is a
                             director of the Corporation of Western Egypt, and paid a somewhat
@@ -2438,7 +2438,7 @@
                             hours some 200 prisoners were taken.</p>
                         <p>The number of killed on the day of the fight is not known. The three
                             hundred and fifty mentioned is the total in the continual fights between
-                            the combined forces of tbe Telodi garrison and the Nubas, and the
+                            the combined forces of the Telodi garrison and the Nubas, and the
                             rebels, from the day of the massacre to the arrival of the troops on
                             June 14, a period of about 20 days. It was anything but a bloodless
                             victory on our side. A large number of our friendlies must have been
@@ -2458,8 +2458,8 @@
                             slavery, and oppression reigned supreme. </p>
                     </div>
                     <cb n="6"/>
-                    <div type="article">
-                        <head>LETTERS TO THE EDITOR</head>
+                    <div type="section" element="letters">
+                    <head>LETTERS TO THE EDITOR</head>
                         <p>We do not hold ourselves responsible for the opinions expressed by our
                             correspondents, but we wish in a spirit of fair play to all, to permit –
                             within certain necessary limits – free discussion.</p>
@@ -2777,7 +2777,7 @@
                         ont perdu respectivement 1 franc à 68 et 17. Les Automobiles ont été
                         offortes à 5 1/8.</p>
                     <p>Dans le groupe des valeurs hôtelières, le Nuogovich ont été demandés à 17
-                        7/16 et les Egyptian à 6 3/8. Les Upper Egypt ont été négociés k 4 13/16.
+                        7/16 et les Egyptian à 6 3/8. Les Upper Egypt ont été négociés à 4 13/16.
                         Les National ont gagné 1/4 de livre à 4 1/8 ; leur part de foi dateur a
                         clôturé à 53. L’Anglo-American N le a éte offerte à 5 7/16.</p>
                     <p>Parmi les petites valeurs, les Delta Land si sont maintenus à 3 5/16*3/8. La
@@ -2824,8 +2824,8 @@
                         1905,soit une plus-value de LE. 6,149. </p>
                 </div>
                 <cb n="4"/>
-                <div type="item">
-                    <p>PASSENGER LISTS.</p>
+                <div type="section" element="passList">
+                    <head>PASSENGER LISTS.</head>
                     <p>Arrivals.</p>
                     <p>Per S.S. Cleopatra arrived yesterday from Trieste :</p>
                     <p>Mr. and Mrs. Moh. Bey, Mr. and Mrs. Ben Lassin, Mr. and Mrs. Mabardi, Mr. and
@@ -2835,8 +2835,7 @@
                     <p>Mr. Giorgycy, Austrian Consul, Mr. Preston, Mr. and Mrs. Andrus, Messrs N.W.
                         Edwards, Alvonitis, Mrs. Tedeschi, Mrs. Roth.</p>
                 </div>
-                <div type="item">
-                    <head>SHIPPING MOVEMENTS</head>
+                <div type="section" element="shippingMovements"><head>SHIPPING MOVEMENTS</head>
                     <p>ALEXANDRIA HARBOUR</p>
                     <p>Arrivals</p>
                     <p>August 27.</p>
@@ -2899,7 +2898,7 @@
                     <p>28404-2-2 </p>
                 </div>
                 <div type="article" xml:lang="fr" xml:id="deg-el-adcm01">
-                    <head>ASSOCIATION DES COURTIERS EN MARCHANISES</head>
+                    <head>ASSOCIATION DES COURTIERS EN MARCHANDISES</head>
                     <p>Résponse des Primes en Contrats</p>
                     <p>(Obligatore entre agences absentes) du Jeudi 31 juillet 1906, à 11h.15
                         a.m.</p>
@@ -2960,33 +2959,33 @@
                         </row>
                     </table>
                 </div>
-                <div type="article" scope="financial" xml:lang="fr" xml:id="deg-el-bokh01">
-                    <head>BOURSE KHEDIVIALE</head>
-                    <p>CONTRATS</p>
-                    <p>Fluctuations de 9h.30 à 1h. p.m.</p>
-                    <p>
-                        <hi rend="italic">Cotons F.G.F.Br.</hi>
-                    </p>
-                    <p>Dans la matinée; prix plus haut pour nov. talaris <measure unit="tal">16
-                            7/8</measure> à <measure unit="tal">—/—</measure> ; plus bas pour nov.
-                            <measure unit="tal">16 3/4</measure> à <measure unit="tal">—
-                            /—</measure>. </p>
-                    <p>
-                        <hi rend="italic">Grains de coton</hi>
-                    </p>
-                    <p>Dans la matinée ; prix plus haut pour 3 mois P.T. <measure unit="pt">63
-                            15/40</measure> à <measure unit="pt">—/—</measure>: plus bas pour 3 mois
-                            <measure unit="pt">63 10/40</measure> à <measure unit="pt"
-                        >—/—</measure>. </p>
-                    <p>Remarques</p>
-                    <p>(De midi à 1h. p.m.)</p>
-                    <p>Coton.—Après un moment d’hésitation sur l’avantbourse de Liverpool le marché
-                        s’est soutenu et la clôture a eu lieu en bonne tendance.</p>
-                    <p>Graines de coton.—Il y a eu de la fermeté, mais au fond le marché est
-                        inactif.</p>
-                    <p>Féves.--Marché nul.</p>
-                    <p>Bourse Khédviale, le <date when="1906-08-27">27 aeût 1906</date>.</p>
-                </div>
+                    <div type="article" scope="financial" xml:lang="fr" xml:id="deg-el-bokh01">
+                        <head>BOURSE KHEDIVIALE</head>
+                        <p>CONTRATS</p>
+                        <p>Fluctuations de 9h.30 à 1h. p.m.</p>
+                        <p>
+                            <hi rend="italic">Cotons F.G.F.Br.</hi>
+                        </p>
+                        <p>Dans la matinée; prix plus haut pour nov. talaris <measure unit="tal">16
+                                7/8</measure> à <measure unit="tal">—/—</measure> ; plus bas pour nov.
+                                <measure unit="tal">16 3/4</measure> à <measure unit="tal">—
+                                /—</measure>. </p>
+                        <p>
+                            <hi rend="italic">Grains de coton</hi>
+                        </p>
+                        <p>Dans la matinée ; prix plus haut pour 3 mois P.T. <measure unit="pt">63
+                                15/40</measure> à <measure unit="pt">—/—</measure>: plus bas pour 3 mois
+                                <measure unit="pt">63 10/40</measure> à <measure unit="pt"
+                            >—/—</measure>. </p>
+                        <p>Remarques</p>
+                        <p>(De midi à 1h. p.m.)</p>
+                        <p>Coton.—Après un moment d’hésitation sur l’avantbourse de Liverpool le marché
+                            s’est soutenu et la clôture a eu lieu en bonne tendance.</p>
+                        <p>Graines de coton.—Il y a eu de la fermeté, mais au fond le marché est
+                            inactif.</p>
+                        <p>Féves.--Marché nul.</p>
+                        <p>Bourse Khédviale, le <date when="1906-08-27">27 aeût 1906</date>.</p>
+                    </div>
                 <cb n="5"/>
                 <div type="article" scope="financial" xml:lang="fr" xml:id="deg-el-ctns01">
                     <head>COTONS</head>
@@ -4175,9 +4174,9 @@
             </div>
             <div type="page" n="5">
                 <cols n="5"/>
-                <cb n="1"/>
+                <cb n="1"/><div type="section" element="wire"><head>TODAY'S TELEGRAMS.</head>
                 <div type="article">
-                    <head>TODAY'S TELEGRAMS.</head>
+                    
                     <head>RUSSIAN REVOLUTION.</head>
                     <head>MORE ASSASSINATIONS.</head>
                     <head>REVOLUTIONARY COMMITTEE'S THREAT.</head>
@@ -4211,7 +4210,7 @@
                         Moscow riots. (<hi rend="italic">Havas</hi>) </p>
                     <p>WARSAW, August 27.</p>
                     <p>The acting Governor Wolarlarski has been assassinated by revolver shots.(<hi
-                            rend="italic">Havas</hi>)</p>
+                            rend="italic">Havas</hi>)</p></div><div type="item">
                     <p>FRANCE AND TURKEY.</p>
                     <p>EVACUATION - OF D JAN ET.</p>
                     <p>PARIS, August 27.</p>
@@ -4226,29 +4225,29 @@
                         that the Liberals who had just completed a crusade against Protection might
                         be force into another crusade against Socialism. Liberalism would cease to
                         exist as an active force unless it was prepared to stand on its own legs.
-                            (<hi rend="italic">Reuter</hi>)</p>
+                        (<hi rend="italic">Reuter</hi>)</p></div><div type="item">
                     <p>ENGLISH ORTHOGRAPHY.</p>
                     <p>MR. ROOSEVELT’S REFORMS.</p>
                     <p>LONDON, August 27.</p>
                     <p>A project of Mr. Roosevelt to reform ortho-graphy has evoked a general
                         protest in England and is ridiculed even by the majority of Americans. (<hi
-                            rend="italic">Reuter</hi>)</p>
+                            rend="italic">Reuter</hi>)</p></div><div type="item">
                     <p>DUKE OF OPORTO IN MOTOR ACCIDENT</p>
                     <p>LISBON, August 27. The Duke of Oporto, motoring to Cascades yesterday, fell
                         down a ravine and was seriously injured. (<hi rend="italic"
                         >Reuters</hi>)</p>
                     <p>Prince Alfonso Henriques, Duke of Oporto, is the brother of the King of
-                        Portugal. He was born in 1865.</p>
+                        Portugal. He was born in 1865.</p></div><div type="item">
                     <p>BRITISH FLEET S VISIT TO FIÜME.</p>
                     <p>FIUME, August 27.</p>
                     <p>The British fleet is paying a visit here. A banquet was given yesterday
                         evening in its honour. Lord Charles Beresford and the Governor exchanged
-                        complimentary toasts. (<hi rend="italic">R.</hi>)</p>
+                        complimentary toasts. (<hi rend="italic">R.</hi>)</p></div><div type="item">
                     <p>MR. HALDANE AT GERMAN MANŒUVRES</p>
                     <p>MARIENBAD, August 27.</p>
                     <p>Mr. Heldane has arrived here, and will proceed tomorrow, officially, to
                         witness the German manœuvres. (<hi rend="italic">Reuter</hi>) </p>
-                </div>
+                </div></div>
                 <cb n="2"/>
                 <div type="article">
                     <head>EGYPT AND GERMANY.</head>
@@ -4330,7 +4329,7 @@
                         to its progress and development. </p>
                 </div>
                 <cb n="3"/>
-                <div type="article">
+                <div type="section" element="army">
                     <head>ARMY AND NAVY.</head>
                     <head>(From our own correspondent.)</head>
                     <p> LONDON, August 18.</p>
@@ -4428,532 +4427,514 @@
                     <p>DairaPrince Ahmed Seif el-Din Bey, Mohamed Aly Square</p>
                     <p>A. V. Thomson, Secretary for Egypt.</p>
                 </div>
-                <div type="subsection">
-                    <cols n="2"/>
-                    <cb n="1"/>
-                    <div type="item" scope="sporting">
-                        <head>SPORT AND PLAY</head>
-                        <head>KHEDIVAL YACHT CLUB</head>
-                        <p>REGATTA.</p>
-                        <p>The following is the handicap for to morrow's racing for the Sporting
-                            Club cups :—</p>
-                        <table cols="2">
-                            <row role="label">
-                                <cell cols="2">Class I.</cell>
-                            </row>
-                            <row>
-                                <cell><hi rend="italic">Boat.</hi></cell>
-                                <cell><hi rend="italic">Time of Start.</hi></cell>
-                            </row>
-                            <row>
-                                <cell>Anne Marie</cell>
-                                <cell>2.55</cell>
-                            </row>
-                            <row>
-                                <cell>Delikanli</cell>
-                                <cell>3.03</cell>
-                            </row>
-                            <row>
-                                <cell>Nanin,</cell>
-                                <cell>3.04</cell>
-                            </row>
-                            <row>
-                                <cell>Tier el Mina</cell>
-                                <cell>3.05</cell>
-                            </row>
-                            <row>
-                                <cell>Coot</cell>
-                                <cell>3.07</cell>
-                            </row>
-                            <row>
-                                <cell>We-Two</cell>
-                                <cell>3.09</cell>
-                            </row>
-                            <row>
-                                <cell>Madeline</cell>
-                                <cell>3.11</cell>
-                            </row>
-                            <row>
-                                <cell>Minnie, Leman</cell>
-                                <cell>3.12</cell>
-                            </row>
-                            <row>
-                                <cell>L'Aiglon</cell>
-                                <cell>3.14</cell>
-                            </row>
-                            <row>
-                                <cell>Sans Pareille</cell>
-                                <cell>3.23</cell>
-                            </row>
-                            <row role="label">
-                                <cell cols="2">Class II</cell>
-                            </row>
-                            <row>
-                                <cell>Akraba</cell>
-                                <cell>3.25</cell>
-                            </row>
-                            <row>
-                                <cell>Ironie, Jessica</cell>
-                                <cell>3.27</cell>
-                            </row>
-                            <row>
-                                <cell>Cattelaya</cell>
-                                <cell>3.30</cell>
-                            </row>
-                            <row>
-                                <cell>Shamrock</cell>
-                                <cell>3.36</cell>
-                            </row>
-                            <row>
-                                <cell>Cyclone</cell>
-                                <cell>3.37</cell>
-                            </row>
-                            <row>
-                                <cell>Gumrook, Masr, Ananke</cell>
-                                <cell>3.38</cell>
-                            </row>
-                            <row>
-                                <cell>Calypso</cell>
-                                <cell>3.40</cell>
-                            </row>
-                            <row>
-                                <cell>Iskandiriyah</cell>
-                                <cell>3.41</cell>
-                            </row>
-                            <row>
-                                <cell>Ram-Seas</cell>
-                                <cell>3.45</cell>
-                            </row>
-                        </table>
-                        <p>Class I. Course A. Class II. Course Q.</p>
-                        <p>Members are requested to note that in Course Q they must pass to the
-                            southward of the pivot buoy both in going ouside and <hi rend="italic"
-                                >returning</hi>, owing to the extension to the breakwater; and are
-                            requested to correct their charts accodingly.</p>
-                        <p>YACHTING IN ALEXANDRIA.</p>
-                        <p>For some years yachting has proved a favourite pastime with a large
-                            section of the sporting community of Alexandria, and the advent of the
-                            Khédivial Yacht Club no doubt helped in no small degree to stimulate the
-                            spirit of sport in young Alexandria. That a great change is gradually
-                            developing in the yachting circle is, however, very evident, for no less
-                            than five yachts are about to be placed in our waters by private
-                            owners,—a very valuable addition to our fleet of pleasure craft.</p>
-                        <p>The first of these, Ananke, has just been imported by Mr. John Chini, the
-                            energetic president of the flourishing and plucky Rowing Club, and made
-                            her debut on Wednesday last, when she added another win to her already
-                            long list of successes scored in other waters. The Ananke was built last
-                            year in Genoa, is sloop rigged, and will certainly prove a formidable
-                            opponent to the craft in Class II.</p>
-                        <p>Mr. Chini is to be congratulated on having secured a first-class craft of
-                            which he may justly feel proud. We wish the Ananke success.</p>
-                        <p>CRICKET.</p>
-                        <p>OVER 28 <hi rend="italic">v.</hi> UNDER 28.</p>
-                        <p>Played on the A.C.C. ground on Saturday last. Scores:—</p>
-                        <table cols="5">
-                            <row role="label">
-                                <cell cols="5">OVER 28</cell>
-                            </row>
-                            <row>
-                                <cell>Mr.</cell>
-                                <cell>H.M. Hanley</cell>
-                                <cell>c. Mainprice</cell>
-                                <cell>b, Peel</cell>
-                                <cell>14</cell>
-                            </row>
-                            <row>
-                                <cell>"</cell>
-                                <cell>S.J. Dawson</cell>
-                                <cell>c. Harrison</cell>
-                                <cell>b. Peel</cell>
-                                <cell>10</cell>
-                            </row>
-                            <row>
-                                <cell>"</cell>
-                                <cell>G.C. Foster</cell>
-                                <cell>c. Dealtry</cell>
-                                <cell>b. Bailey</cell>
-                                <cell>3</cell>
-                            </row>
-                            <row>
-                                <cell>"</cell>
-                                <cell>J.C. McLauren</cell>
-                                <cell/>
-                                <cell>b. Peel</cell>
-                                <cell>104</cell>
-                            </row>
-                            <row>
-                                <cell>"</cell>
-                                <cell>R.B. McLean</cell>
-                                <cell>c. Bailey</cell>
-                                <cell>b. Peel</cell>
-                                <cell>38</cell>
-                            </row>
-                            <row>
-                                <cell>"</cell>
-                                <cell>A.R. Brown</cell>
-                                <cell>c. Dealtry</cell>
-                                <cell>b. Blythman</cell>
-                                <cell>0</cell>
-                            </row>
-                            <row>
-                                <cell>"</cell>
-                                <cell>W. Lucas</cell>
-                                <cell>c. Blyhtman</cell>
-                                <cell>b. Blythman</cell>
-                                <cell>6</cell>
-                            </row>
-                            <row>
-                                <cell>"</cell>
-                                <cell>J. Mancantelli</cell>
-                                <cell>c. Peel</cell>
-                                <cell>b. Peel</cell>
-                                <cell>14</cell>
-                            </row>
-                            <row>
-                                <cell>"</cell>
-                                <cell>A. Gooding</cell>
-                                <cell>b. Peel</cell>
-                                <cell/>
-                                <cell>3</cell>
-                            </row>
-                            <row>
-                                <cell>"</cell>
-                                <cell>W. Reeve</cell>
-                                <cell cols="2">not out</cell>
-                                <cell>10</cell>
-                            </row>
-                            <row>
-                                <cell/>
-                                <cell cols="3">Extras. Byes 10, L. Byes 1. Wides 2</cell>
-                                <cell>13</cell>
-                            </row>
-                            <row>
-                                <cell cols="3"/>
-                                <cell>Total</cell>
-                                <cell>215</cell>
-                            </row>
-                        </table>
-                        <p>Bowling analysis.</p>
-                        <table cols="5">
-                            <row>
-                                <cell/>
-                                <cell>O.</cell>
-                                <cell>M.</cell>
-                                <cell>R.</cell>
-                                <cell>W.</cell>
-                            </row>
-                            <row>
-                                <cell>Peel</cell>
-                                <cell>14</cell>
-                                <cell>1</cell>
-                                <cell>59</cell>
-                                <cell>6</cell>
-                            </row>
-                            <row>
-                                <cell>Bailey</cell>
-                                <cell>14</cell>
-                                <cell>1</cell>
-                                <cell>62</cell>
-                                <cell>1</cell>
-                            </row>
-                            <row>
-                                <cell>Harrison</cell>
-                                <cell>3</cell>
-                                <cell>0</cell>
-                                <cell>30</cell>
-                                <cell>0</cell>
-                            </row>
-                            <row>
-                                <cell>Blythman</cell>
-                                <cell>8</cell>
-                                <cell>1</cell>
-                                <cell>35</cell>
-                                <cell>2</cell>
-                            </row>
-                            <row>
-                                <cell>Murray</cell>
-                                <cell>1</cell>
-                                <cell>0</cell>
-                                <cell>16</cell>
-                                <cell>0</cell>
-                            </row>
-                        </table>
-                        <table cols="5">
-                            <row role="label">
-                                <cell cols="5">UNDER 28</cell>
-                            </row>
-                            <row>
-                                <cell>Mr.</cell>
-                                <cell>W.E. Peel</cell>
-                                <cell/>
-                                <cell>b. McLauren</cell>
-                                <cell>19</cell>
-                            </row>
-                            <row>
-                                <cell>"</cell>
-                                <cell>K. Macaulay</cell>
-                                <cell>c. Sub</cell>
-                                <cell>b. Dawson</cell>
-                                <cell>41</cell>
-                            </row>
-                            <row>
-                                <cell>"</cell>
-                                <cell>G.N. Cheeseman</cell>
-                                <cell/>
-                                <cell>b. McLauren</cell>
-                                <cell>1</cell>
-                            </row>
-                            <row>
-                                <cell>"</cell>
-                                <cell>R.E. Mainprice</cell>
-                                <cell>c. Mancantelli</cell>
-                                <cell>b, McLean</cell>
-                                <cell>15</cell>
-                            </row>
-                            <row>
-                                <cell>"</cell>
-                                <cell>G.L. Bailey</cell>
-                                <cell>c. Dawson</cell>
-                                <cell>b. McLauren</cell>
-                                <cell>13</cell>
-                            </row>
-                            <row>
-                                <cell>"</cell>
-                                <cell>P.E. Harrison</cell>
-                                <cell>c. McLean</cell>
-                                <cell>b. Dawson</cell>
-                                <cell>8</cell>
-                            </row>
-                            <row>
-                                <cell>"</cell>
-                                <cell>C.M.E. Dealtry</cell>
-                                <cell/>
-                                <cell>b. McLean</cell>
-                                <cell>17</cell>
-                            </row>
-                            <row>
-                                <cell>"</cell>
-                                <cell>N.S. Murray</cell>
-                                <cell>c. McLaren</cell>
-                                <cell>b. Dawson</cell>
-                                <cell>0</cell>
-                            </row>
-                            <row>
-                                <cell>"</cell>
-                                <cell>M. Blythman</cell>
-                                <cell/>
-                                <cell>b. Dawson</cell>
-                                <cell>0</cell>
-                            </row>
-                            <row>
-                                <cell>"</cell>
-                                <cell>C.S. Scarth</cell>
-                                <cell/>
-                                <cell>b. McLean</cell>
-                                <cell>14</cell>
-                            </row>
-                            <row>
-                                <cell>"</cell>
-                                <cell>W.D. Angel</cell>
-                                <cell cols="2">not out</cell>
-                                <cell>4</cell>
-                            </row>
-                            <row>
-                                <cell/>
-                                <cell cols="3">Extras. Byes</cell>
-                                <cell>8</cell>
-                            </row>
-                            <row>
-                                <cell cols="3"/>
-                                <cell>Total</cell>
-                                <cell>140</cell>
-                            </row>
-                        </table>
-                        <p>Bowling analysis.</p>
-                        <table cols="5">
-                            <row>
-                                <cell/>
-                                <cell>O.</cell>
-                                <cell>M.</cell>
-                                <cell>R.</cell>
-                                <cell>W.</cell>
-                            </row>
-                            <row>
-                                <cell>Dawson</cell>
-                                <cell>22</cell>
-                                <cell>8</cell>
-                                <cell>50</cell>
-                                <cell>4</cell>
-                            </row>
-                            <row>
-                                <cell>McLaren</cell>
-                                <cell>14</cell>
-                                <cell>3</cell>
-                                <cell>60</cell>
-                                <cell>3</cell>
-                            </row>
-                            <row>
-                                <cell>McLean</cell>
-                                <cell>7</cell>
-                                <cell>2</cell>
-                                <cell>22</cell>
-                                <cell>3</cell>
-                            </row>
-                        </table>
-                    </div>
-                    <cb n="2"/>
-                    <div type="item" element="comingEvents">
-                        <head>Calendar of Coming Events</head>
-                        <table cols="3" xml:id="deg-ta-coce01">
-                            <row role="label">
-                                <cell cols="2">ALEXANDRIA.</cell>
-                                <cell/>
-                            </row>
-                            <row>
-                                <cell>August.</cell>
-                                <cell/>
-                            </row>
-                            <row>
-                                <cell>Tues. 28</cell>
-                                <cell>Windsor Hotel. Concert by De Salvo orchestra. 6-12
-                                    daily.</cell>
-                            </row>
-                            <row>
-                                <cell/>
-                                <cell>Mex Casino and Restaurant on Syren Island. Concert daily by
-                                    Roumanian orchestra. (Tel No. 940.)</cell>
-                            </row>
-                            <row>
-                                <cell/>
-                                <cell>Zizinia Theatre. Cinematophono Threatre. 9.</cell>
-                            </row>
-                            <row>
-                                <cell/>
-                                <cell>San Stefano Theatre. Varietes. 9.30.</cell>
-                            </row>
-                            <row>
-                                <cell/>
-                                <cell>French Garden. Varietes. 9.30</cell>
-                            </row>
-                            <row>
-                                <cell/>
-                                <cell>Alhambra Theatre. French comedy company in <hi rend="italic"
-                                        >La Dame aux Camelias</hi>. 9.30. </cell>
-                            </row>
-                            <row>
-                                <cell>Wed 29</cell>
-                                <cell>Khedival Yacht Club. Regatta.</cell>
-                            </row>
-                            <row>
-                                <cell>Thurs. 30</cell>
-                                <cell>San Stefano Casino. Small Dance. 10.</cell>
-                            </row>
-                            <row>
-                                <cell>Fri 31</cell>
-                                <cell>San Stefano Casino. Children's Ball. 5.30.</cell>
-                            </row>
-                            <row>
-                                <cell>September.</cell>
-                                <cell/>
-                            </row>
-                            <row>
-                                <cell>Sat 1.</cell>
-                                <cell>Mustapha Range. B. R. C. Practice. 2.30.</cell>
-                            </row>
-                            <row>
-                                <cell/>
-                                <cell>Mex Casino. Reunion des Familles Ball 9.30.</cell>
-                            </row>
-                            <row>
-                                <cell>Sun. 2</cell>
-                                <cell>San Stefano Casino. Concert. 10 30 and 4.30.</cell>
-                            </row>
-                            <row>
-                                <cell/>
-                                <cell>Round Point. Pigeon Shooting. 2.30.</cell>
-                            </row>
-                            <row role="label">
-                                <cell cols="2">CAIRO</cell>
-                                <cell/>
-                            </row>
-                            <row>
-                                <cell>August.</cell>
-                                <cell/>
-                                <cell/>
-                            </row>
-                            <row>
-                                <cell>Tues. 28</cell>
-                                <cell>Esbekieh Gardens. Performance by British Military Band.
-                                    9.</cell>
-                                <cell/>
-                            </row>
-                            <row>
-                                <cell/>
-                                <cell>New Theatre Abbas. Italian operatta company. 9.</cell>
-                                <cell/>
-                            </row>
-                            <row>
-                                <cell/>
-                                <cell>Theatre des Nouveautes. 9.30</cell>
-                                <cell/>
-                            </row>
-                            <row>
-                                <cell/>
-                                <cell>Alcazar Parisien. 9.30.</cell>
-                                <cell/>
-                            </row>
-                            <row>
-                                <cell>Wed. 29</cell>
-                                <cell>Continental Hotel. Concert by Military Band. 8 to 11.</cell>
-                                <cell/>
-                            </row>
-                            <row>
-                                <cell>Fri. 31</cell>
-                                <cell>Zoological Gardens. Afternoon Concert by the Ghizeh Boys’
-                                    Band.</cell>
-                                <cell/>
-                            </row>
-                            <row>
-                                <cell/>
-                                <cell>Esbekieh Gardens. Performance by British Military Band.
-                                    9.</cell>
-                                <cell/>
-                            </row>
-                            <row>
-                                <cell>September.</cell>
-                                <cell/>
-                                <cell/>
-                            </row>
-                            <row>
-                                <cell>Sun. 2</cell>
-                                <cell>Zoological Gardens. Concert by Ghizeh Boys' Band.
-                                    Afternoon</cell>
-                                <cell/>
-                            </row>
-                        </table>
-                    </div>
-                    <div type="item">
-                        <p>Commercial &amp; Financial Supplement of The “ Egyptian Gazette. ”</p>
-                        <p>The Commercial and Financial Supplement of the “Egyptian Gazette” is
-                            published at midday every Saturday in time for the Austrian Lloyd's
-                            mail. The supplement contains exhaustive and important reviews of the
-                            cotton, cotton seed, and stock and share markets, with all the latest
-                            statistics up to the evening of the preceding day, complete tabular
-                            forms of the various market fluctuations, and the copies of the official
-                            telegrams of the Liverpool Cotton Association, etc., etc. Subscription
-                            for one year P.T. 100 (inclusive of postage in Egypt. For abroad the
-                            postage is P.T. 10 extra). For further particulars apply to the Manager
-                            "Egyptian Gazette.” </p>
-                    </div>
-                    <div type="item" scope="advertisement">
-                        <head>EDEN PALACE HOTEL, CAIRO</head>
-                        <p><hi rend="bold">NOTED FOR ITS EXCELLENT CUISINE</hi></p>
-                        <p>ELECTRIC LIGHT LIFT</p>
-                        <p>Special terms for officer o the Army of Occupation and Government
-                            Officials</p>
-                        <p><measure type="indexNo">26-11-906</measure></p>
-                    </div>
+                <cols n="2"/>
+                <cb n="1"/>
+                <div type="section" element="sport">
+                    <head>SPORT AND PLAY</head>
+                    <head>KHEDIVAL YACHT CLUB</head>
+                    <p>REGATTA.</p>
+                    <p>The following is the handicap for to morrow's racing for the Sporting Club
+                        cups :—</p>
+                    <table cols="2">
+                        <row role="label">
+                            <cell cols="2">Class I.</cell>
+                        </row>
+                        <row>
+                            <cell><hi rend="italic">Boat.</hi></cell>
+                            <cell><hi rend="italic">Time of Start.</hi></cell>
+                        </row>
+                        <row>
+                            <cell>Anne Marie</cell>
+                            <cell>2.55</cell>
+                        </row>
+                        <row>
+                            <cell>Delikanli</cell>
+                            <cell>3.03</cell>
+                        </row>
+                        <row>
+                            <cell>Nanin,</cell>
+                            <cell>3.04</cell>
+                        </row>
+                        <row>
+                            <cell>Tier el Mina</cell>
+                            <cell>3.05</cell>
+                        </row>
+                        <row>
+                            <cell>Coot</cell>
+                            <cell>3.07</cell>
+                        </row>
+                        <row>
+                            <cell>We-Two</cell>
+                            <cell>3.09</cell>
+                        </row>
+                        <row>
+                            <cell>Madeline</cell>
+                            <cell>3.11</cell>
+                        </row>
+                        <row>
+                            <cell>Minnie, Leman</cell>
+                            <cell>3.12</cell>
+                        </row>
+                        <row>
+                            <cell>L'Aiglon</cell>
+                            <cell>3.14</cell>
+                        </row>
+                        <row>
+                            <cell>Sans Pareille</cell>
+                            <cell>3.23</cell>
+                        </row>
+                        <row role="label">
+                            <cell cols="2">Class II</cell>
+                        </row>
+                        <row>
+                            <cell>Akraba</cell>
+                            <cell>3.25</cell>
+                        </row>
+                        <row>
+                            <cell>Ironie, Jessica</cell>
+                            <cell>3.27</cell>
+                        </row>
+                        <row>
+                            <cell>Cattelaya</cell>
+                            <cell>3.30</cell>
+                        </row>
+                        <row>
+                            <cell>Shamrock</cell>
+                            <cell>3.36</cell>
+                        </row>
+                        <row>
+                            <cell>Cyclone</cell>
+                            <cell>3.37</cell>
+                        </row>
+                        <row>
+                            <cell>Gumrook, Masr, Ananke</cell>
+                            <cell>3.38</cell>
+                        </row>
+                        <row>
+                            <cell>Calypso</cell>
+                            <cell>3.40</cell>
+                        </row>
+                        <row>
+                            <cell>Iskandiriyah</cell>
+                            <cell>3.41</cell>
+                        </row>
+                        <row>
+                            <cell>Ram-Seas</cell>
+                            <cell>3.45</cell>
+                        </row>
+                    </table>
+                    <p>Class I. Course A. Class II. Course Q.</p>
+                    <p>Members are requested to note that in Course Q they must pass to the
+                        southward of the pivot buoy both in going ouside and <hi rend="italic"
+                            >returning</hi>, owing to the extension to the breakwater; and are
+                        requested to correct their charts accodingly.</p>
+                    <p>YACHTING IN ALEXANDRIA.</p>
+                    <p>For some years yachting has proved a favourite pastime with a large section
+                        of the sporting community of Alexandria, and the advent of the Khédivial
+                        Yacht Club no doubt helped in no small degree to stimulate the spirit of
+                        sport in young Alexandria. That a great change is gradually developing in
+                        the yachting circle is, however, very evident, for no less than five yachts
+                        are about to be placed in our waters by private owners,—a very valuable
+                        addition to our fleet of pleasure craft.</p>
+                    <p>The first of these, Ananke, has just been imported by Mr. John Chini, the
+                        energetic president of the flourishing and plucky Rowing Club, and made her
+                        debut on Wednesday last, when she added another win to her already long list
+                        of successes scored in other waters. The Ananke was built last year in
+                        Genoa, is sloop rigged, and will certainly prove a formidable opponent to
+                        the craft in Class II.</p>
+                    <p>Mr. Chini is to be congratulated on having secured a first-class craft of
+                        which he may justly feel proud. We wish the Ananke success.</p>
+                    <p>CRICKET.</p>
+                    <p>OVER 28 <hi rend="italic">v.</hi> UNDER 28.</p>
+                    <p>Played on the A.C.C. ground on Saturday last. Scores:—</p>
+                    <table cols="5">
+                        <row role="label">
+                            <cell cols="5">OVER 28</cell>
+                        </row>
+                        <row>
+                            <cell>Mr.</cell>
+                            <cell>H.M. Hanley</cell>
+                            <cell>c. Mainprice</cell>
+                            <cell>b, Peel</cell>
+                            <cell>14</cell>
+                        </row>
+                        <row>
+                            <cell>"</cell>
+                            <cell>S.J. Dawson</cell>
+                            <cell>c. Harrison</cell>
+                            <cell>b. Peel</cell>
+                            <cell>10</cell>
+                        </row>
+                        <row>
+                            <cell>"</cell>
+                            <cell>G.C. Foster</cell>
+                            <cell>c. Dealtry</cell>
+                            <cell>b. Bailey</cell>
+                            <cell>3</cell>
+                        </row>
+                        <row>
+                            <cell>"</cell>
+                            <cell>J.C. McLauren</cell>
+                            <cell/>
+                            <cell>b. Peel</cell>
+                            <cell>104</cell>
+                        </row>
+                        <row>
+                            <cell>"</cell>
+                            <cell>R.B. McLean</cell>
+                            <cell>c. Bailey</cell>
+                            <cell>b. Peel</cell>
+                            <cell>38</cell>
+                        </row>
+                        <row>
+                            <cell>"</cell>
+                            <cell>A.R. Brown</cell>
+                            <cell>c. Dealtry</cell>
+                            <cell>b. Blythman</cell>
+                            <cell>0</cell>
+                        </row>
+                        <row>
+                            <cell>"</cell>
+                            <cell>W. Lucas</cell>
+                            <cell>c. Blyhtman</cell>
+                            <cell>b. Blythman</cell>
+                            <cell>6</cell>
+                        </row>
+                        <row>
+                            <cell>"</cell>
+                            <cell>J. Mancantelli</cell>
+                            <cell>c. Peel</cell>
+                            <cell>b. Peel</cell>
+                            <cell>14</cell>
+                        </row>
+                        <row>
+                            <cell>"</cell>
+                            <cell>A. Gooding</cell>
+                            <cell>b. Peel</cell>
+                            <cell/>
+                            <cell>3</cell>
+                        </row>
+                        <row>
+                            <cell>"</cell>
+                            <cell>W. Reeve</cell>
+                            <cell cols="2">not out</cell>
+                            <cell>10</cell>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell cols="3">Extras. Byes 10, L. Byes 1. Wides 2</cell>
+                            <cell>13</cell>
+                        </row>
+                        <row>
+                            <cell cols="3"/>
+                            <cell>Total</cell>
+                            <cell>215</cell>
+                        </row>
+                    </table>
+                    <p>Bowling analysis.</p>
+                    <table cols="5">
+                        <row>
+                            <cell/>
+                            <cell>O.</cell>
+                            <cell>M.</cell>
+                            <cell>R.</cell>
+                            <cell>W.</cell>
+                        </row>
+                        <row>
+                            <cell>Peel</cell>
+                            <cell>14</cell>
+                            <cell>1</cell>
+                            <cell>59</cell>
+                            <cell>6</cell>
+                        </row>
+                        <row>
+                            <cell>Bailey</cell>
+                            <cell>14</cell>
+                            <cell>1</cell>
+                            <cell>62</cell>
+                            <cell>1</cell>
+                        </row>
+                        <row>
+                            <cell>Harrison</cell>
+                            <cell>3</cell>
+                            <cell>0</cell>
+                            <cell>30</cell>
+                            <cell>0</cell>
+                        </row>
+                        <row>
+                            <cell>Blythman</cell>
+                            <cell>8</cell>
+                            <cell>1</cell>
+                            <cell>35</cell>
+                            <cell>2</cell>
+                        </row>
+                        <row>
+                            <cell>Murray</cell>
+                            <cell>1</cell>
+                            <cell>0</cell>
+                            <cell>16</cell>
+                            <cell>0</cell>
+                        </row>
+                    </table>
+                    <table cols="5">
+                        <row role="label">
+                            <cell cols="5">UNDER 28</cell>
+                        </row>
+                        <row>
+                            <cell>Mr.</cell>
+                            <cell>W.E. Peel</cell>
+                            <cell/>
+                            <cell>b. McLauren</cell>
+                            <cell>19</cell>
+                        </row>
+                        <row>
+                            <cell>"</cell>
+                            <cell>K. Macaulay</cell>
+                            <cell>c. Sub</cell>
+                            <cell>b. Dawson</cell>
+                            <cell>41</cell>
+                        </row>
+                        <row>
+                            <cell>"</cell>
+                            <cell>G.N. Cheeseman</cell>
+                            <cell/>
+                            <cell>b. McLauren</cell>
+                            <cell>1</cell>
+                        </row>
+                        <row>
+                            <cell>"</cell>
+                            <cell>R.E. Mainprice</cell>
+                            <cell>c. Mancantelli</cell>
+                            <cell>b, McLean</cell>
+                            <cell>15</cell>
+                        </row>
+                        <row>
+                            <cell>"</cell>
+                            <cell>G.L. Bailey</cell>
+                            <cell>c. Dawson</cell>
+                            <cell>b. McLauren</cell>
+                            <cell>13</cell>
+                        </row>
+                        <row>
+                            <cell>"</cell>
+                            <cell>P.E. Harrison</cell>
+                            <cell>c. McLean</cell>
+                            <cell>b. Dawson</cell>
+                            <cell>8</cell>
+                        </row>
+                        <row>
+                            <cell>"</cell>
+                            <cell>C.M.E. Dealtry</cell>
+                            <cell/>
+                            <cell>b. McLean</cell>
+                            <cell>17</cell>
+                        </row>
+                        <row>
+                            <cell>"</cell>
+                            <cell>N.S. Murray</cell>
+                            <cell>c. McLaren</cell>
+                            <cell>b. Dawson</cell>
+                            <cell>0</cell>
+                        </row>
+                        <row>
+                            <cell>"</cell>
+                            <cell>M. Blythman</cell>
+                            <cell/>
+                            <cell>b. Dawson</cell>
+                            <cell>0</cell>
+                        </row>
+                        <row>
+                            <cell>"</cell>
+                            <cell>C.S. Scarth</cell>
+                            <cell/>
+                            <cell>b. McLean</cell>
+                            <cell>14</cell>
+                        </row>
+                        <row>
+                            <cell>"</cell>
+                            <cell>W.D. Angel</cell>
+                            <cell cols="2">not out</cell>
+                            <cell>4</cell>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell cols="3">Extras. Byes</cell>
+                            <cell>8</cell>
+                        </row>
+                        <row>
+                            <cell cols="3"/>
+                            <cell>Total</cell>
+                            <cell>140</cell>
+                        </row>
+                    </table>
+                    <p>Bowling analysis.</p>
+                    <table cols="5">
+                        <row>
+                            <cell/>
+                            <cell>O.</cell>
+                            <cell>M.</cell>
+                            <cell>R.</cell>
+                            <cell>W.</cell>
+                        </row>
+                        <row>
+                            <cell>Dawson</cell>
+                            <cell>22</cell>
+                            <cell>8</cell>
+                            <cell>50</cell>
+                            <cell>4</cell>
+                        </row>
+                        <row>
+                            <cell>McLaren</cell>
+                            <cell>14</cell>
+                            <cell>3</cell>
+                            <cell>60</cell>
+                            <cell>3</cell>
+                        </row>
+                        <row>
+                            <cell>McLean</cell>
+                            <cell>7</cell>
+                            <cell>2</cell>
+                            <cell>22</cell>
+                            <cell>3</cell>
+                        </row>
+                    </table>
                 </div>
+                <cb n="2"/>
+                <div type="item" element="comingEvents">
+                    <head>Calendar of Coming Events</head>
+                    <table cols="2" xml:id="deg-ta-coce01">
+                        <row role="label">
+                            <cell cols="2">ALEXANDRIA.</cell>
+                        </row>
+                        <row>
+                            <cell>August.</cell>
+                            <cell/>
+                        </row>
+                        <row>
+                            <cell>Tues. 28</cell>
+                            <cell>Windsor Hotel. Concert by De Salvo orchestra. 6-12 daily.</cell>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell>Mex Casino and Restaurant on Syren Island. Concert daily by
+                                Roumanian orchestra. (Tel No. 940.)</cell>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell>Zizinia Theatre. Cinematophono Threatre. 9.</cell>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell>San Stefano Theatre. Varietes. 9.30.</cell>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell>French Garden. Varietes. 9.30</cell>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell>Alhambra Theatre. French comedy company in <hi rend="italic">La
+                                    Dame aux Camelias</hi>. 9.30. </cell>
+                        </row>
+                        <row>
+                            <cell>Wed 29</cell>
+                            <cell>Khedival Yacht Club. Regatta.</cell>
+                        </row>
+                        <row>
+                            <cell>Thurs. 30</cell>
+                            <cell>San Stefano Casino. Small Dance. 10.</cell>
+                        </row>
+                        <row>
+                            <cell>Fri 31</cell>
+                            <cell>San Stefano Casino. Children's Ball. 5.30.</cell>
+                        </row>
+                        <row>
+                            <cell>September.</cell>
+                            <cell/>
+                        </row>
+                        <row>
+                            <cell>Sat 1.</cell>
+                            <cell>Mustapha Range. B. R. C. Practice. 2.30.</cell>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell>Mex Casino. Reunion des Familles Ball 9.30.</cell>
+                        </row>
+                        <row>
+                            <cell>Sun. 2</cell>
+                            <cell>San Stefano Casino. Concert. 10 30 and 4.30.</cell>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell>Round Point. Pigeon Shooting. 2.30.</cell>
+                        </row>
+                        <row role="label">
+                            <cell cols="2">CAIRO</cell>
+                        </row>
+                        <row>
+                            <cell>August.</cell>
+                            <cell/>
+                        </row>
+                        <row>
+                            <cell>Tues. 28</cell>
+                            <cell>Esbekieh Gardens. Performance by British Military Band. 9.</cell>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell>New Theatre Abbas. Italian operatta company. 9.</cell>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell>Theatre des Nouveautes. 9.30</cell>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell>Alcazar Parisien. 9.30.</cell>
+                        </row>
+                        <row>
+                            <cell>Wed. 29</cell>
+                            <cell>Continental Hotel. Concert by Military Band. 8 to 11.</cell>
+                        </row>
+                        <row>
+                            <cell>Fri. 31</cell>
+                            <cell>Zoological Gardens. Afternoon Concert by the Ghizeh Boys’
+                                Band.</cell>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell>Esbekieh Gardens. Performance by British Military Band. 9.</cell>
+                        </row>
+                        <row>
+                            <cell>September.</cell>
+                            <cell/>
+                        </row>
+                        <row>
+                            <cell>Sun. 2</cell>
+                            <cell>Zoological Gardens. Concert by Ghizeh Boys' Band. Afternoon</cell>
+                        </row>
+                    </table>
+                </div>
+                <div type="item">
+                    <p>Commercial &amp; Financial Supplement of The “ Egyptian Gazette. ”</p>
+                    <p>The Commercial and Financial Supplement of the “Egyptian Gazette” is
+                        published at midday every Saturday in time for the Austrian Lloyd's mail.
+                        The supplement contains exhaustive and important reviews of the cotton,
+                        cotton seed, and stock and share markets, with all the latest statistics up
+                        to the evening of the preceding day, complete tabular forms of the various
+                        market fluctuations, and the copies of the official telegrams of the
+                        Liverpool Cotton Association, etc., etc. Subscription for one year P.T. 100
+                        (inclusive of postage in Egypt. For abroad the postage is P.T. 10 extra).
+                        For further particulars apply to the Manager "Egyptian Gazette.” </p>
+                </div>
+                <div type="item" scope="advertisement">
+                    <head>EDEN PALACE HOTEL, CAIRO</head>
+                    <p><hi rend="bold">NOTED FOR ITS EXCELLENT CUISINE</hi></p>
+                    <p>ELECTRIC LIGHT LIFT</p>
+                    <p>Special terms for officer o the Army of Occupation and Government
+                        Officials</p>
+                    <p><measure type="indexNo">26-11-906</measure></p>
+                </div>
+                <cols n="1"/>
                 <div type="item" scope="advertisement">
                     <head>WATERLOW &amp; LAYTON, LIMITED.<!--template needed--></head>
                     <p>ESTABLISHED 1811.</p>
@@ -5188,7 +5169,7 @@
                     </table>
                 </div>
                 <div type="article" xml:id="deg-el-reut01">
-                    <head>REUTER'S TELEGRAMS</head>
+                    <head>REUTERS' TELEGRAMS</head>
                     <head type="sub">CLOSING REPORTS</head>
                     <table cols="4" xml:id="deg-ta-reut01">
                         <row role="label">
@@ -6336,8 +6317,7 @@
                     <p>Agents for Green's Economisers.</p>
                 </div>
                 <div type="item" scope="advertisement">
-                    <head>DIXON BROS. &amp; HUTCHINSON
-                        Ltd.<!-- template needed, picture included--></head>
+                    <head>DIXON BROS. &amp; HUTCHINSON Ltd.<!-- template needed, picture included--></head>
                     <p>MOTOR BOATS &amp; PETROL MOTORS.</p>
                     <p>Special Designs for Nile, Canals, Business, and Pleasure Boats</p>
                     <p>Works: SOUTHAMPTON</p>
@@ -6524,8 +6504,7 @@
                     <p>21188-24.5.906</p>
                 </div>
                 <div type="item" scope="advertisement">
-                    <head>THOS. HINSHELWOOD &amp; CO.,
-                        LIMITED<!-- template needed; picture included--></head>
+                    <head>THOS. HINSHELWOOD &amp; CO., LIMITED<!-- template needed; picture included--></head>
                 </div>
                 <cols n="2"/>
                 <cb n="1"/>

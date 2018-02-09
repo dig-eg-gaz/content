@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/dig-eg-gaz/resources/master/out/egSchema.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-stylesheet type="text/xsl" href="dig-eg-gaz.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
@@ -11,8 +12,7 @@
             </titleStmt>
             <editionStmt>
                 <edition>
-                    <date when="2017-01-22">January 22, 2017</date>
-                </edition>
+                    <date when="2017-01-22">January 22, 2017</date><gloss>3</gloss></edition>
             </editionStmt>
             <publicationStmt>
                 <publisher>FSU University Libraries</publisher>
@@ -21,8 +21,8 @@
             <sourceDesc>
                 <bibl>
                     <title>The Egyptian Gazette</title>
-                    <date when="1905-02-27">Feburary 27, 1905</date>
-                </bibl>
+                    <date when="1905-02-27"><name>Monday</name>, Feburary 27, 1905</date>
+                    <extent><measure unit="pages" quantity="6">6</measure> pages</extent></bibl>
             </sourceDesc>
         </fileDesc>
     </teiHeader>
@@ -33,10 +33,6 @@
                     <head>THE EGYPTIAN GAZETTE</head>
                     <head type="sub">No. <measure quantity="7134">7,134</measure>] ALEXANDRIA,
                         MONDAY, FEBURARY 27, 1905. [SIX PAGES P.T. 1. </head>
-                </div>
-                <div type="section" scope="advertisement">
-                    <cols n="3"/>
-                    <cb n="1"/>
                     <div type="item" scope="advertisement" xml:id="deg-ad-etc01">
                         <head>The Eastern Telegraph Company, Limited.</head>
                         <p>This Company's system of submarine telegraph <lb/>cables is the most
@@ -50,8 +46,149 @@
                         <p>STATIONS IN EGYPT: Alexandria, Cairo, <lb/>Suez, Port-Tewfik, Port-Saïd,
                             Suakin. Head <lb/>Office. London.</p>
                     </div>
-                    <!-- Need new template for Eastern Telegraph Company, Limited. in French-->
-                    <!-- need new template Peninsular and Oriental -->
+                    <div type="advert" xml:id="deg-ad-etc02" xml:lang="fr">
+                        <head>The Eastern Telegraph Company, Limited.</head>
+                        <p>Le réseau de cable télégraphiques sous-marins de cette compagnie
+                            constitue le moyen de communication le plus direct et le plus rapide
+                            d'Egypte pour l'Europe, l'Amérique du Nord et du Sud, L,Afrique
+                            orientale, méridionale et occidentale, les Indes, l'Australie, la
+                            Nouvelle-Zélande, la Chine et le Japon.</p>
+                        <p>Pour assurer une transmission rapide, les télégrammes doivent porter
+                            l'indication <hi rend="bold">Viâ Eastern</hi>.</p>
+                        <p>Voir le temps moyen de transmission le plus récent jusqu'à Londres au
+                            belletin journalier publié dans ce journal.</p>
+                        <p>STATIONS EN EGYPTE. Alexandrie, le Caire, Suez, Port-Tewfik, Port-Said,
+                            Suakin. Bureau principal à Londres.</p>
+                    </div>
+                </div>
+                <div type="section" scope="advertisement">
+                    <cols n="3"/>
+                    <cb n="1"/>
+                    <div type="advert" xml:id="deg-ad-pos04">
+                        <head>Peninsular and Oriental S. N. Company.</head>
+                        <p>The following steamers are expected to leave Port Said on or about the
+                            following dates:--</p>
+                        <p>
+                            <table rows="11" cols="7">
+                                <head/>
+                                <row>
+                                    <cell>"Ceylon"</cell>
+                                    <cell>4,094</cell>
+                                    <cell>Tons</cell>
+                                    <cell><date when="1905-01-08">8</date></cell>
+                                    <cell>January</cell>
+                                    <cell>for</cell>
+                                    <cell>Marseilles and London</cell>
+                                </row>
+                                <row>
+                                    <cell>"Borneo"</cell>
+                                    <cell>4,573</cell>
+                                    <cell>"</cell>
+                                    <cell><date when="1905-01-09">9</date></cell>
+                                    <cell>"</cell>
+                                    <cell>"</cell>
+                                    <cell>Malta and London</cell>
+                                </row>
+                                <row>
+                                    <cell>"Moldavia"</cell>
+                                    <cell>9,500</cell>
+                                    <cell>"</cell>
+                                    <cell><date when="1905-01-09">9</date></cell>
+                                    <cell>"</cell>
+                                    <cell>"</cell>
+                                    <cell>Marseilles, Plymouth and London</cell>
+                                </row>
+                                <row>
+                                    <cell>"Arabia"</cell>
+                                    <cell>7,903</cell>
+                                    <cell>"</cell>
+                                    <cell><date when="1905-01-16">16</date></cell>
+                                    <cell>"</cell>
+                                    <cell>"</cell>
+                                    <cell>Marseilles, Plymouth and London</cell>
+                                </row>
+                                <row>
+                                    <cell>"Syria"</cell>
+                                    <cell>6,600</cell>
+                                    <cell>"</cell>
+                                    <cell><date when="1905-01-23">23</date></cell>
+                                    <cell>"</cell>
+                                    <cell>"</cell>
+                                    <cell>Malta and London</cell>
+                                </row>
+                                <row>
+                                    <cell>"Victoria"</cell>
+                                    <cell>6,522</cell>
+                                    <cell>"</cell>
+                                    <cell><date when="1905-01-23">23</date></cell>
+                                    <cell>"</cell>
+                                    <cell>"</cell>
+                                    <cell>Marseilles, Plymouth and London</cell>
+                                </row>
+                                <row>
+                                    <cell>"Oriental"</cell>
+                                    <cell>5,284</cell>
+                                    <cell>"</cell>
+                                    <cell><date when="1905-01-30">30</date></cell>
+                                    <cell>"</cell>
+                                    <cell>"</cell>
+                                    <cell>Marseilles, Plymouth and London</cell>
+                                </row>
+                                <row>
+                                    <cell>"Socotra"</cell>
+                                    <cell>6,009</cell>
+                                    <cell>"</cell>
+                                    <cell><date when="1905-02-05">5</date></cell>
+                                    <cell>February</cell>
+                                    <cell>"</cell>
+                                    <cell>London</cell>
+                                </row>
+                                <row>
+                                    <cell>"Himalaya"</cell>
+                                    <cell>6,898</cell>
+                                    <cell>"</cell>
+                                    <cell><date when="1905-02-06">6</date></cell>
+                                    <cell>"</cell>
+                                    <cell>"</cell>
+                                    <cell>Marseilles, Plymouth and London</cell>
+                                </row>
+                                <row>
+                                    <cell>"Palermo"</cell>
+                                    <cell>7,597</cell>
+                                    <cell>"</cell>
+                                    <cell><date when="1905-01-13">13</date></cell>
+                                    <cell>"</cell>
+                                    <cell>"</cell>
+                                    <cell>London</cell>
+                                </row>
+                                <row>
+                                    <cell>"Egypt"</cell>
+                                    <cell>7,912</cell>
+                                    <cell>"</cell>
+                                    <cell/>
+                                    <cell>"</cell>
+                                    <cell>"</cell>
+                                    <cell>Marseilles, Plymouth and London</cell>
+                                </row>
+                            </table>
+                        </p>
+                        <p>Port-Said to London via Brindisi</p>
+                        <p>The BRINDISI steamer leaves PORT-SAID after arrival of Indian Mail.
+                            Combined steamer and sleeping car fare from PORT-SAID to LONDON via
+                            BRINDISI or via MARSEILLES £25.9.11</p>
+                        <p>To the East.</p>
+                        <p>The Mail Steamers leave SUEZ for ADEN and BOMBAY every Wednesday, and for
+                            AUSTRALIA and CHINA every alternate Wednesday. A steamer leaves for
+                            CALCUTTA, fortnightly, and another for JAPAN. Passengers can embark at
+                            PORT-SAID.</p>
+                        <p>For all further information apply to the Company's Agents,</p>
+                        <p>Messrs. Thos, Cook &amp; Son (Egypt) Ltd.… … … … … … … … CAIRO.</p>
+                        <p>George Royle, Esq… … … … … … … … … … … … … … PORT-SAID.</p>
+                        <p>Messrs. Haselden &amp; Co. … … … … … … … … … … … … ALEXANDRIA.</p>
+                        <p>F.G. DAVIDSON, Superintendant P. &amp; O. S. N. Company in Egypt. SUEZ.
+                            xx-xx-xx</p>
+                        <p/>
+                    </div>
                     <div type="item" scope="advertisement" xml:id="deg-ad-opl01">
                         <head>Orient-Pacific Line of Royal Mail Steamers.</head>
                         <p>OUTWARDS to AUSTRALIA.</p>
@@ -443,7 +580,16 @@
                             Agent.</p>
                         <p><measure type="indexNo">15-2-905</measure></p>
                     </div>
-                    <!-- NEED MESSRS. HENRY J. MONSONS &amp; Co's AD-->
+                    <div type="advert" xml:id="deg-ad-hjm01">
+                        <head>Messrs. HENRY J. MONSON &amp; Co's</head>
+                        <p>NITRATE AND PHOSPHATE QUARRIES</p>
+                        <p>(Under a Concession held from the Egyptian Government).</p>
+                        <p>SILVER MEDAL AGRICULTURAL EXHIBITION, CAIRO, 1903.</p>
+                        <p>Works at Kift-Maala, Sabaieh and Luxor.</p>
+                        <p>Head Office, Cairo, London Office 120, Fenchurch St., E.C.</p>
+                        <p>Chemical manure, Lime, Cement, Plaster of Paris, Tile Paving and Fire
+                            Brick, Paints, etc. <measure type="indexNo">31-10-905</measure></p>
+                    </div>
                     <div type="item" scope="advertisement" xml:id="deg-ad-abw01">
                         <head>ALEXANDRIA BONDED WAREHOUSE COMPANY, LTD.</head>
                         <p>(Société des Entrepôts d'Alexandrie)</p>
@@ -475,7 +621,7 @@
                         <p>Agencies in Egypt : ALEXANDRIA, CAIRO, &amp; PORT SAID.</p>
                         <p>Advances on Merchandise and Securities in current account and for fixed
                             periods. Purchase and sale of stocks and Shares on the London and
-                            Continental exchanges, letters of credit issued, valuables reoeived in
+                            Continental exchanges, letters of credit issued, valuables received in
                             safe custody. Drafts, cheques and telegraphic transfers issued on the
                             principal towns of the world. Foreign exchange purchased, bills
                             discounted, bills, invoices, annuities and dividends collected and every
@@ -641,8 +787,74 @@
                             San Stefano Casino 30.4.906</p>
                     </div>
                     <cb n="3"/>
-                    <!-- Anglo-American Nile Steamer &amp; Hotel Coy. AD-->
-                    <!-- Law union &amp; Crown insurance company of London, England. AD-->
+                    <div type="item" scope="advertisement" xml:id="deg-ad-aan04">
+                        <head>Angle-American Nile Steamer and Hotel Coy.</head>
+                        <p>Chief-Office : Sharia Boulac, </p>
+                        <p>Grand Continental Hotel Buildings, - Branch office, Opposite Savoy Hotel,
+                            Cairo</p>
+                        <table rows="4" cols="6">
+                            <row role="label">
+                                <cell cols="6"><hi rend="italic">Regular weekly Tourist Steamer
+                                        Departure between Cairo and Assouan by following steamers
+                                    </hi>.</cell>
+                            </row>
+                            <row>
+                                <cell>Puritan</cell>
+                                <cell>February</cell>
+                                <cell>3rd</cell>
+                                <cell>Puritan</cell>
+                                <cell>February</cell>
+                                <cell>24th</cell>
+                            </row>
+                            <row>
+                                <cell>Mayflower</cell>
+                                <cell>February</cell>
+                                <cell>10th</cell>
+                                <cell>Mayflower</cell>
+                                <cell>March</cell>
+                                <cell>3rd</cell>
+                            </row>
+                            <row>
+                                <cell>Victoria</cell>
+                                <cell>February</cell>
+                                <cell>17th</cell>
+                                <cell>Victoria</cell>
+                                <cell>March</cell>
+                                <cell>10th</cell>
+                            </row>
+                            <row>
+                                <cell cols="6">Weeklyy SECOND CATARACT SERVICE by the First Class
+                                    Tourist Steamer "Indiana"</cell>
+                            </row>
+                        </table>
+                        <p>AGENTS FOR PRINCIPAL STEAM NAVIGATION COMPANIES</p>
+                        <p>Through Bookings to Khartoum and Gondokoro.</p>
+                        <p>RAILWAY TICKETS TO ALL PARTS OF EGYPT.<lb/><lb/>FREIGHT SERVICE by steam
+                            barges between ALEXANDRIA and CAIRO.<lb/></p>
+                        <p>SAVOY HOTEL. Elephantine Island, Assouan (Aswan), Company's Property.</p>
+                    </div>
+                    <div type="item" scope="advertisement" xml:id="deg-ad-luc01">
+                        <head>LAW UNION AND CROWN INSURANCE COMPANY OF LONDON, ENGLAND. (Established
+                            1825.)</head>
+                        <table rows="1" cols="2">
+                            <row role="label">
+                                <cell cols="2">Funds In Hand</cell>
+                                <cell cols="2">$5,500,000</cell>
+                            </row>
+                            <row>
+                                <cell cols="2">Annual Income</cell>
+                                <cell cols="2">$800,000</cell>
+                            </row>
+                        </table>
+                        <p>LOANS. </p>
+                        <p>Applications for Loans on eligible Agricultural or City Property are
+                            invited and may be addressed to Mr. W. E. KINGSFORD, Sharia Cherifels,
+                            Sharia Kasr-el-Nil. Cairo,</p>
+                        <p>FIRE INSURANCE.</p>
+                        <p>The Compaany's Agents in Egypt for Fires Insurance are Messrs. GUSTAV
+                            BRACH AND Alexandria</p>
+                        <p><measure type="indexNo">34736-10-4-905</measure></p>
+                    </div>
                     <div type="item" scope="advertisement" xml:id="deg-ad-nll02">
                         <head>NORDDEUTSCHER LLOYD.</head>
                         <p>Welkly Service from ALEXANDRIA (Passenger and Freight) to
@@ -816,7 +1028,15 @@
                         <p>SOLE AGENTS FOR Dudbridges Oil Engines from 1 to 25 B.H.P. as supplied to
                             Sudan Government. Seamless Steel Boat Co.. Ltd..etc..etc.</p>
                     </div>
-                    <!--Insurance AD-->
+                    <div type="advert" xml:id="deg-ad-ela01">
+                        <head>INSURANCE.</head>
+                        <p>LIFE The Edinburgh Life Assurance Company.</p>
+                        <p>MARINE Union Insurance Society of Canton (Limited).</p>
+                        <p>FIDELITY National Guarantee &amp; Suretyship Association (Limited).</p>
+                        <p>Risks accepted at Tariff rates. -- Claimes liberally and promptly
+                            settled.</p>
+                        <p>Agents for Egypt: HEWAT &amp; Co., Alexandria.</p>
+                    </div>
                     <div type="item" scope="advertisement" xml:id="deg-ad-sio01">
                         <head>Sun Insurance Office,</head>
                         <p>LONDON. Founded 1710.-Total sum insured in 1902 £487,600,000.</p>
@@ -1302,130 +1522,137 @@
             <div type="page" n="3">
                 <cols n="6"/>
                 <cb n="1"/>
-                <div type="item">
-                    <head>The War</head>
-                    <head>A DESPERATE BATTLE</head>
-                    <head>JAPS CAPTURE POSITION</head>
-                    <head>SUCCESSFUL BAYONET RUSH</head>
-                    <p>ST. Petersburg February 25 The Japanese attack on Beresneff Hill during the
-                        night of the 23rd inst. was repulsed. it was, however, renewed yesterday,
-                        when the Russians were forced to retire. A desperate battle is proceeding
-                        along the whole front the result being indecisive. General Sakharoff reports
-                        that the railway bridge in the vicinity of Hai-Cheng has been blown up, thus
-                        interrupting the Japanese communications. (Reuter.)</p>
-                    <p>TOKIO, February 25. The Russian attempt to blow up the bridge at Haicheng has
-                        been foiled by the arrival of Japanese reinforcements. The Russian cavalry
-                        is constantly active in the direction of Niu- clwang. (Reuter.)</p>
-                    <p>ST. Petersburg, February 25. General Sakharoff reports that Beresneff was
-                        finally captured by a bayonet rush, the Japanese advancing over their own
-                        dead amid exploding mines and entanglements. The enemy lost a considerable
-                        number of men. (R.) </p>
-                    <p>ST. Petersburg, February 25. General Sakharoff telegraphs that the Russians
-                        evacuated the position of Beresneff, ad¬ joining Tsinkhetehon. (Havas.)</p>
-                    <p>ST. PETERSBURG, February 26. A despatch from General Kropotkin shows that the
-                        last day's fighting for the village of Tsinkhechen was most desperate. He
-                        reports a series of acts of bravery on the part of the Russians, who did not
-                        evacuate the position until their cartridges were exhausted. Their losses
-                        are still unknown, but 12 officers and 300 men have been taken to the
-                        hospital. The percentage of head is large. The Japanese are advancing on the
-                        passes held by the Russians. (Reuter.)</p>
-                </div>
-                <div type="item">
-                    <head>North Sea Enquiry</head>
-                    <head>Rodjestvensky at Fault</head>
-                    <p>Paris, Feburary 25. The text of the Commission's report bears evident signs
-                        of compromises. some of the passages are almost Contradictory, thus ac¬
-                        counting for the misleading character of the previous anticipations. It says
-                        that Admiral Rodjestvensky's permanent orders to open fire “in case of are
-                        evident and immediate attack by torpedo-boats" were not excessive in time of
-                        war, and particularly in circumstances which the Admiral had reason to
-                        believe were alarming, hut the Commissioners find—Russia alone
-                        dissenting—there were no torpedo-boats present, at the time of the incident.
-                        The responsibility for opening fire and for the results devolves upon
-                        Rodjestvensky. The Commissioners believe that the Rus¬ sians neutrally tiled
-                        upon their own cruiser "Aurora," which they mistook for a torpedo- boat .
-                        The firing anyhow was unduly prolonged. Rodjestvensky ought to have informed
-                        the authorities of the occurrence when passing Dover. It concludes by
-                        stating that the report is not intended to disparage the capacity or
-                        humanity of Rodjestvensky. (Reuter.)</p>
-                    <p>PARIS, February 25. At its final sitting, the North Sea Commis- sion
-                        concluded that Admiral Rodjestvensky was responsible for the firing and its
-                        conse¬ quences, but owing to circumstances the inci¬ dent does not in any
-                        way throw discredit on the military valour and the humanitarian sentiments
-                        of the Admiral and his squadron. (Havas.)</p>
-                </div>
-                <div type="item">
-                    <head>Third Baltic Fleet.</head>
-                    <p>DOVER, February 25. The third Baltic squadron has passed off here.
-                        (Reuter.)</p>
-                </div>
-                <div type="item">
-                    <head>General Stoessel.</head>
-                    <head>Received by the tsar.</head>
-                    <p>St. Petersburg, February 26. The Tsar has recieved General Stoessel and gave
-                        him a warm reception. (Havas.)</p>
-                </div>
-                <div type="item">
-                    <head>Home Football.</head>
-                    <p>LONDON, February 26. Rugby. Ireland beat Scotland by 11 points to 5.
-                        Association. England v. Ireland. One goal each. Queen’s Club. The Army beat
-                        the Navy by 2 goals to nil. The King and the Prince of Wales were present.
-                        (Reuter.)</p>
-                </div>
-                <cb n="2"/>
-                <div type="item">
-                    <head>ANARCHY IN CAUCASUS.</head>
-                    <head>HORRIBLE ATROCITIES.</head>
-                    <head>ARMED RISING PROGRESSING</head>
-                    <p>ST. PETERSBURG, February 25. The press states that the whole of Eastern
-                        Siberia, like the Caucasus, is virtually cutoff from Russia so fur as trade
-                        is concerned. The merchants and better classes are fleeing from Baku, where
-                        the riots are characterised as atrocities. Men and women have been burned
-                        alive, and corpses mutilated. An armed rising is progressing in the country
-                        districts of the Caucasus. (Reuter.)</p>
-                    <p>WARSAW, February 25. The demands of the strikers on the Warsaw- Vienna
-                        Railway have been conceded by the Government Traffic is being resumed.
-                        (R.)</p>
-                    <p>LONDON, February 25. Despatches from-Constantinople describe the whole
-                        Caucasus as being in a state of anarchy. There appears to be a general
-                        semi-revoln- tionary strike movement which is directed by a secret committee
-                        at St Petersburg. Added to this, ferocious racial feuds exist, and horrible
-                        atrocities are being perpetrated. (Reuter.)</p>
-                    <p>WARSAW, February 25. The employes,on the Vienna-Warsaw Rail¬ way are not
-                        satisfied with the concessions and have re-struck. (Reuter.)</p>
-                </div>
-                <div type="item">
-                    <head>RUSSIAN CONSTITUTION.</head>
-                    <head>An Absolute Necessity.</head>
-                    <head>The Tsar's Decision.</head>
-                    <p>ST. PETERSBURG, February 26. The Minister Yermuloff was engaged during the
-                        past week in preparing a long and detailed report on the inner situation of
-                        Russia. He presented it on Friday to the Tsar. This report, depicting in
-                        plain language the chaotic condition of Russia and indicating the danger of
-                        procrastination, shows the absolute neces¬ sity, in order to avert a
-                        revolution, of adopt¬ ing immediate drastic measures to meet the grave
-                        crisis. No reforms short of a Constitu¬ tion on western hues will satisfy
-                        the people and restore order. The Tsar has since directed steps to be taken
-                        with a view to summoning a representative assembly in order to draft a
-                        Constitution giving, in a large measure, re¬ presentative government. A
-                        meeting of Ministers and others yesterday, presided over by M. Yermoloff,
-                        discussed the steps to he taken in order to give the Tsar’s decision a
-                        practical form. The workmen in the railway shops at Chita on the Siberian
-                        line have struck. They demand a cessation of the war. (Reuter.)</p>
-                    <p>ST. PETERSBURG, February 25. The Tsar has , approved the conclusions of the
-                        report of M. Yermoloff for the convocation of the National Assembly with the
-                        object of drawing up a Constitution. (Havas.)</p>
-                </div>
-                <div type="item">
-                    <head>Royal Visit to India.</head>
-                    <p>LONDON, February 26. (Official). The Prince and Princess of Wales will arrive
-                        in India next November, and stay until the following March. They will visit
-                        the principal cities. ( Reuter.)</p>
-                </div>
-                <div type="item">
-                    <head>Railway Troubles in Italy.</head>
-                    <p>ROME, February 26. The railway employes, without actually declaring a strike;
-                        are trying to impede the circulation of the trains. (Havas.)</p>
+                <div type="section" element="wire">
+                    <div type="item">
+                        <head>The War</head>
+                        <head>A DESPERATE BATTLE</head>
+                        <head>JAPS CAPTURE POSITION</head>
+                        <head>SUCCESSFUL BAYONET RUSH</head>
+                        <p>ST. Petersburg February 25 The Japanese attack on Beresneff Hill during
+                            the night of the 23rd inst. was repulsed. it was, however, renewed
+                            yesterday, when the Russians were forced to retire. A desperate battle
+                            is proceeding along the whole front the result being indecisive. General
+                            Sakharoff reports that the railway bridge in the vicinity of Hai-Cheng
+                            has been blown up, thus interrupting the Japanese communications.
+                            (Reuter.)</p>
+                        <p>TOKIO, February 25. The Russian attempt to blow up the bridge at Haicheng
+                            has been foiled by the arrival of Japanese reinforcements. The Russian
+                            cavalry is constantly active in the direction of Niu- clwang.
+                            (Reuter.)</p>
+                        <p>ST. Petersburg, February 25. General Sakharoff reports that Beresneff was
+                            finally captured by a bayonet rush, the Japanese advancing over their
+                            own dead amid exploding mines and entanglements. The enemy lost a
+                            considerable number of men. (R.) </p>
+                        <p>ST. Petersburg, February 25. General Sakharoff telegraphs that the
+                            Russians evacuated the position of Beresneff, ad¬ joining Tsinkhetehon.
+                            (Havas.)</p>
+                        <p>ST. PETERSBURG, February 26. A despatch from General Kropotkin shows that
+                            the last day's fighting for the village of Tsinkhechen was most
+                            desperate. He reports a series of acts of bravery on the part of the
+                            Russians, who did not evacuate the position until their cartridges were
+                            exhausted. Their losses are still unknown, but 12 officers and 300 men
+                            have been taken to the hospital. The percentage of head is large. The
+                            Japanese are advancing on the passes held by the Russians. (Reuter.)</p>
+                    </div>
+                    <div type="item">
+                        <head>North Sea Enquiry</head>
+                        <head>Rodjestvensky at Fault</head>
+                        <p>Paris, Feburary 25. The text of the Commission's report bears evident
+                            signs of compromises. some of the passages are almost Contradictory,
+                            thus ac¬ counting for the misleading character of the previous
+                            anticipations. It says that Admiral Rodjestvensky's permanent orders to
+                            open fire “in case of are evident and immediate attack by torpedo-boats"
+                            were not excessive in time of war, and particularly in circumstances
+                            which the Admiral had reason to believe were alarming, hut the
+                            Commissioners find—Russia alone dissenting—there were no torpedo-boats
+                            present, at the time of the incident. The responsibility for opening
+                            fire and for the results devolves upon Rodjestvensky. The Commissioners
+                            believe that the Rus¬ sians neutrally tiled upon their own cruiser
+                            "Aurora," which they mistook for a torpedo- boat . The firing anyhow was
+                            unduly prolonged. Rodjestvensky ought to have informed the authorities
+                            of the occurrence when passing Dover. It concludes by stating that the
+                            report is not intended to disparage the capacity or humanity of
+                            Rodjestvensky. (Reuter.)</p>
+                        <p>PARIS, February 25. At its final sitting, the North Sea Commis- sion
+                            concluded that Admiral Rodjestvensky was responsible for the firing and
+                            its conse¬ quences, but owing to circumstances the inci¬ dent does not
+                            in any way throw discredit on the military valour and the humanitarian
+                            sentiments of the Admiral and his squadron. (Havas.)</p>
+                    </div>
+                    <div type="item">
+                        <head>Third Baltic Fleet.</head>
+                        <p>DOVER, February 25. The third Baltic squadron has passed off here.
+                            (Reuter.)</p>
+                    </div>
+                    <div type="item">
+                        <head>General Stoessel.</head>
+                        <head>Received by the tsar.</head>
+                        <p>St. Petersburg, February 26. The Tsar has recieved General Stoessel and
+                            gave him a warm reception. (Havas.)</p>
+                    </div>
+                    <div type="item">
+                        <head>Home Football.</head>
+                        <p>LONDON, February 26. Rugby. Ireland beat Scotland by 11 points to 5.
+                            Association. England v. Ireland. One goal each. Queen’s Club. The Army
+                            beat the Navy by 2 goals to nil. The King and the Prince of Wales were
+                            present. (Reuter.)</p>
+                    </div>
+                    <cb n="2"/>
+                    <div type="item">
+                        <head>ANARCHY IN CAUCASUS.</head>
+                        <head>HORRIBLE ATROCITIES.</head>
+                        <head>ARMED RISING PROGRESSING</head>
+                        <p>ST. PETERSBURG, February 25. The press states that the whole of Eastern
+                            Siberia, like the Caucasus, is virtually cutoff from Russia so fur as
+                            trade is concerned. The merchants and better classes are fleeing from
+                            Baku, where the riots are characterised as atrocities. Men and women
+                            have been burned alive, and corpses mutilated. An armed rising is
+                            progressing in the country districts of the Caucasus. (Reuter.)</p>
+                        <p>WARSAW, February 25. The demands of the strikers on the Warsaw- Vienna
+                            Railway have been conceded by the Government Traffic is being resumed.
+                            (R.)</p>
+                        <p>LONDON, February 25. Despatches from-Constantinople describe the whole
+                            Caucasus as being in a state of anarchy. There appears to be a general
+                            semi-revoln- tionary strike movement which is directed by a secret
+                            committee at St Petersburg. Added to this, ferocious racial feuds exist,
+                            and horrible atrocities are being perpetrated. (Reuter.)</p>
+                        <p>WARSAW, February 25. The employes,on the Vienna-Warsaw Rail¬ way are not
+                            satisfied with the concessions and have re-struck. (Reuter.)</p>
+                    </div>
+                    <div type="item">
+                        <head>RUSSIAN CONSTITUTION.</head>
+                        <head>An Absolute Necessity.</head>
+                        <head>The Tsar's Decision.</head>
+                        <p>ST. PETERSBURG, February 26. The Minister Yermuloff was engaged during
+                            the past week in preparing a long and detailed report on the inner
+                            situation of Russia. He presented it on Friday to the Tsar. This report,
+                            depicting in plain language the chaotic condition of Russia and
+                            indicating the danger of procrastination, shows the absolute neces¬
+                            sity, in order to avert a revolution, of adopt¬ ing immediate drastic
+                            measures to meet the grave crisis. No reforms short of a Constitu¬ tion
+                            on western hues will satisfy the people and restore order. The Tsar has
+                            since directed steps to be taken with a view to summoning a
+                            representative assembly in order to draft a Constitution giving, in a
+                            large measure, re¬ presentative government. A meeting of Ministers and
+                            others yesterday, presided over by M. Yermoloff, discussed the steps to
+                            he taken in order to give the Tsar’s decision a practical form. The
+                            workmen in the railway shops at Chita on the Siberian line have struck.
+                            They demand a cessation of the war. (Reuter.)</p>
+                        <p>ST. PETERSBURG, February 25. The Tsar has , approved the conclusions of
+                            the report of M. Yermoloff for the convocation of the National Assembly
+                            with the object of drawing up a Constitution. (Havas.)</p>
+                    </div>
+                    <div type="item">
+                        <head>Royal Visit to India.</head>
+                        <p>LONDON, February 26. (Official). The Prince and Princess of Wales will
+                            arrive in India next November, and stay until the following March. They
+                            will visit the principal cities. ( Reuter.)</p>
+                    </div>
+                    <div type="item">
+                        <head>Railway Troubles in Italy.</head>
+                        <p>ROME, February 26. The railway employes, without actually declaring a
+                            strike; are trying to impede the circulation of the trains. (Havas.)</p>
+                    </div>
                 </div>
                 <div type="item">
                     <head>American College at Luxor.</head>
@@ -1455,8 +1682,8 @@
                     <p>24616-23-3-207</p>
                 </div>
                 <cb n="3"/>
-                <div type="item">
-                    <head>Local and General</head>
+                <div type="section" element="local">
+                    <head>LOCAL AND General</head>
                     <p>THE PLAGUE - A fatal case of plague was reported from Suez yesterday.</p>
                     <p>MERCHANT SEAMEN'S HOME.—In the report of the concert given on Friday last,
                         the name of Mr. Plank, who. gave two admirable recita¬ tions,—Tennyson’s
@@ -1758,8 +1985,8 @@
                         displacement of 5,000 tons under her present conditions, and that of the
                         battleship which was raised in this way was 13,000 tons.</p>
                 </div>
-                <div type="item">
-                    <head>Personal and Social.</head>
+                <div type="section" element="social">
+                    <head>PERSONAL AND Social.</head>
                     <p>H. H. the Khedive is giving a banquet on Monday next in honor of
                         Major-General Slade, C.B., on the occasion of his approaching retire-
                         ment.</p>
@@ -1811,7 +2038,7 @@
                         paiement des surestaries fixées dans la charte-partie à raison do 5 pence
                         par tonne et par jour. Le retard ayant été de 17 jours 1/2, le montant de sa
                         réclamation s'élevait ainsi à £576. The Commercial and Estates Cy. of Egypt
-                        plaidait le mal fondé de la demande et s’of- frait k prouver l' que malgré
+                        plaidait le mal fondé de la demande et s’of- frait à prouver l' que malgré
                         toutes les diligen- ces faites avant l’arrivée du “Fos”, il lui avait été
                         impossible, à cause de l'encombrement du Port et du manque absolu de quais,
                         d’obtenir do l’Administration du Port un quai pour son accostage avant le 27
@@ -1845,7 +2072,7 @@
                         d'Alexandrie et du manque de mahonnes pour s’exonérer de la responsabilité
                         pour les sures- taries mis à sa charge par la convention.</p>
                 </div>
-                <div type="article" xml:lang="fr" xml:id="deg-el-mmpa01">
+                <div type="article" xml:lang="fr" element="mouvementMaritime">
                     <head>MOUVEMENT MARITIME DU PORT D’ALEXANDRIE</head>
                     <p>ARRIVÉES</p>
                     <p><date when="1905-02-25">25 fevrier</date></p>
@@ -1921,7 +2148,7 @@
                             <persName>Dodicas.</persName></p>
                 </div>
                 <cb n="2"/>
-                <div type="item">
+                <div type="section" element="passList">
                     <head>PASSENGERS’ LISTS.</head>
                     <head>ARRIVALS.</head>
                     <p>Le paquebot "Semiramis’’ du Lloyd Autri- chien arrive ce matin de Trieste,
@@ -2041,7 +2268,7 @@
                         the name of the person importing the labourers (Landowner), the number of
                         labourers, and their destination. 25405 12-A-9</p>
                 </div>
-                <div type="item">
+                <div type="section" element="steamerMovements">
                     <head>STEAMER MOVEMENTS.</head>
                     <p>The Ellerman S.S. “Alsatian” sailed hence on Saturday evening for Liverpool
                         direct with general cargo, including 2,200 bales cotton. The Ellerman S.S.
@@ -3696,7 +3923,7 @@
                     <p>Apply to <lb/>THE YOST TYPEWRITER Co., Ltd.</p>
                     <p>50, Holborn, Viaduct, London, E.C,</p>
                 </div>
-                <div type="item">
+                <div type="section" element="army">
                     <head>ARMY And NAVY</head>
                     <head>(From our Correspondent).</head>
                     <p>London, February 17. The S.S. “Dilwara” left Southampton to day with the 1st
@@ -3763,56 +3990,61 @@
                         Jane Trotter,</p>
                 </div>
                 <cb n="2"/>
-                <div type="item">
+                <div type="section" element="letters">
                     <head>LETTER TO THE EDITOR.</head>
                     <p>We do not hold ourselves for the responsible opinions expressed by our
                         correspondents. but we wish, in a spirit of fair play to a11, to permit —
                         within certain necessary limts — free dicussion</p>
-                    <p>MISSIONS TO MOHAMEDANS.</p>
-                    <p>To the Editor of the Egyptian Gazette.</p>
-                    <p>Sir—I do not think that anyone can explain away the obvious meaning of the
-                        leading arti- cle in the “Gazette” on the above subject by merely bringing
-                        charges of “misrepresentation,” word-twisting,” and “cool impudence,” as a
-                        letter signed “Thos. Atwood” -does, against those with whom he does not
-                        happen to agree. There are considerable numbers of people who have been
-                        given a distinct impression, both by the article in question, and by various
-                        paragraphs that have recently appeared in your paper, that the “Gazette” is
-                        encouraging the notion that all religions (worthy of the name) are equally
-                        good and true, and that, rather than unreservedly accept the tenets of
-                        Christianity, a man should gather together out of the various religions all
-                        that pleases him in them, and then adopt these selections as his own creed.
-                        If we are all mistaken in our interpretation of the general intention of
-                        these passages, I for one shall be most sincerely relieved to hear it, by
-                        means of some direct declaration to that effect on the part of the writer of
-                        the articie in question. Up to now I Have been given no cause to withdraw
-                        anything I said in my former letter.</p>
-                    <p>I cannot ask you, Sir, to give me space in which to reply at length to Mr.
-                        Atwood's letter, lor it seems to me that every paragraph in it ought to bo
-                        contested, and I am sure that he and I would both be equally bored by the
-                        time had done. May I say, however, that it is not easy to understand now
-                        questions (as the ad- visability of Christian missions to Moslems) possibly
-                        be discussed without bringing into them what be calls "the everlasting reli-
-                        gious difficulty,” lor it appears to mo that reli- gion is the very kernel
-                        of the whole subject. Indeed, my main object iu writing now is to say that I
-                        would never presume, by means of letters to the public press, to try and
-                        prove that Christian missions to Moslems are just- iciable , to those who
-                        hud that “Christianity is unable to satisfy their conceptions of eternal
-                        truth,” who say of Christ that “salvation .... is not alone to be found in
-                        Him, spite of all that certain passages in our English Bible convey,” and
-                        who cannot accept the Divine Sonship of our Lord. I fully understand that
-                        those who find themselves unable to accept the Bible as the Word of God, are
-                        at the same time naturally unable to recognise the em- phatic and binding
-                        nature of the command which Jesus has laid upon His own followers to preach
-                        the Gospel to every creature,” and that they need to be convinced of the
-                        absolute truth of Christianity before they can be ex- pected to believe in
-                        Christian missions.</p>
-                    <p>I do not propose here to follow Mr. Atwood in his discussion of the claims of
-                        Christianity the failings of Christians, and I see that our standpoints with
-                        regard to the religious aspect of the question before us (Missions to
-                        Moslems) are so essentially different, that we cannot hope to convince each
-                        other by further correspondence in your hospitable columns.—I am, etc.,</p>
-                    <p>R. Mai Innés.</p>
-                    <p>2 .Sharia el Manakh, Cairo, February 24.</p>
+                    <div type="item">
+                        <p>MISSIONS TO MOHAMEDANS.</p>
+                        <p>To the Editor of the Egyptian Gazette.</p>
+                        <p>Sir—I do not think that anyone can explain away the obvious meaning of
+                            the leading arti- cle in the “Gazette” on the above subject by merely
+                            bringing charges of “misrepresentation,” word-twisting,” and “cool
+                            impudence,” as a letter signed “Thos. Atwood” -does, against those with
+                            whom he does not happen to agree. There are considerable numbers of
+                            people who have been given a distinct impression, both by the article in
+                            question, and by various paragraphs that have recently appeared in your
+                            paper, that the “Gazette” is encouraging the notion that all religions
+                            (worthy of the name) are equally good and true, and that, rather than
+                            unreservedly accept the tenets of Christianity, a man should gather
+                            together out of the various religions all that pleases him in them, and
+                            then adopt these selections as his own creed. If we are all mistaken in
+                            our interpretation of the general intention of these passages, I for one
+                            shall be most sincerely relieved to hear it, by means of some direct
+                            declaration to that effect on the part of the writer of the articie in
+                            question. Up to now I Have been given no cause to withdraw anything I
+                            said in my former letter.</p>
+                        <p>I cannot ask you, Sir, to give me space in which to reply at length to
+                            Mr. Atwood's letter, lor it seems to me that every paragraph in it ought
+                            to bo contested, and I am sure that he and I would both be equally bored
+                            by the time had done. May I say, however, that it is not easy to
+                            understand now questions (as the ad- visability of Christian missions to
+                            Moslems) possibly be discussed without bringing into them what be calls
+                            "the everlasting reli- gious difficulty,” lor it appears to mo that
+                            reli- gion is the very kernel of the whole subject. Indeed, my main
+                            object iu writing now is to say that I would never presume, by means of
+                            letters to the public press, to try and prove that Christian missions to
+                            Moslems are just- iciable , to those who hud that “Christianity is
+                            unable to satisfy their conceptions of eternal truth,” who say of Christ
+                            that “salvation .... is not alone to be found in Him, spite of all that
+                            certain passages in our English Bible convey,” and who cannot accept the
+                            Divine Sonship of our Lord. I fully understand that those who find
+                            themselves unable to accept the Bible as the Word of God, are at the
+                            same time naturally unable to recognise the em- phatic and binding
+                            nature of the command which Jesus has laid upon His own followers to
+                            preach the Gospel to every creature,” and that they need to be convinced
+                            of the absolute truth of Christianity before they can be ex- pected to
+                            believe in Christian missions.</p>
+                        <p>I do not propose here to follow Mr. Atwood in his discussion of the
+                            claims of Christianity the failings of Christians, and I see that our
+                            standpoints with regard to the religious aspect of the question before
+                            us (Missions to Moslems) are so essentially different, that we cannot
+                            hope to convince each other by further correspondence in your hospitable
+                            columns.—I am, etc.,</p>
+                        <p>R. Mai Innés.</p>
+                        <p>2 .Sharia el Manakh, Cairo, February 24.</p>
+                    </div>
                 </div>
                 <div type="item">
                     <head>ALEXAXDRIA MUNICIPALITY.</head>
@@ -4030,7 +4262,7 @@
                         </table>
                     </div>
                     <cb n="3"/>
-                    <div type="item">
+                    <div type="section" element="sport">
                         <head>SPORT AND PLAY.</head>
                         <head>Football.</head>
                         <p>THE SAINT ANDREW FOOTBALL CLUB versus "A.” COMPANY, ROYAL BERKS. The
@@ -4099,7 +4331,7 @@
                         <p>25261-28-2-05</p>
                     </div>
                     <cb n="4"/>
-                    <div type="item" scope="calendar" xml:id="deg-el-coce01">
+                    <div type="item" scope="calendar" element="comingEvents">
                         <head>Calendar of Coming Events</head>
                         <table cols="2" xml:id="deg-ta-coce01">
                             <row role="label">

@@ -12,8 +12,7 @@
             </titleStmt>
             <editionStmt>
                 <edition>
-                    <date when="2017-03-01">March 3, 2017</date>
-                </edition>
+                    <date when="2017-03-01">March 3, 2017</date><gloss>3</gloss></edition>
             </editionStmt>
             <publicationStmt>
                 <publisher>FSU University Libraries</publisher>
@@ -23,7 +22,7 @@
                 <bibl>
                     <title>The Egyptian Gazette</title>
                     <date when="1906-06-28">June 28, 1906</date>
-                </bibl>
+                    <extent><measure unit="pages" quantity="6">6</measure> pages</extent></bibl>
             </sourceDesc>
         </fileDesc>
     </teiHeader>
@@ -1160,8 +1159,12 @@
                     <p>Opposite Austrian Consulate, near the Zizinia Theatre. Catalogue on
                         application.</p>
                 </div>
-                <!-- Lancaster House, Cairo. -->
-                <div type="item" scope="advertisement" xml:id="deg-ad-clh01" xml:lang="fr">
+                <div type="advert" xml:id="deg-ad-lhc01">
+                    <head>LANCASTER HOUSE, CAIRO</head>
+                    <p>Sharia Wabour El Moya.</p>
+                    <p>Comfortable apartments, with or without board. Terms very reasonable.</p>
+                    <p><measure type="indexNo">26348-18-12-906</measure></p>
+                </div><div type="item" scope="advertisement" xml:id="deg-ad-clh01" xml:lang="fr">
                     <head>CIGARES de la HAVANE</head>
                     <p>de provenance directe et de toutes les meilleures marques</p>
                     <p>Nicolas G Sabbag</p>
@@ -1693,7 +1696,7 @@
                         principle the world has long acted and will long continue to act. Certain
                         States inflict the most rigorous penal servitude for life on the worst
                         criminals, exchanging for a rapid death a slower, but almost equally fatal
-                        process, and dooming a number of respectable and honest persons to the task
+                        process, and dcoming a number of respectable and honest persons to the task
                         of looking after some of the vilest human types. We cannot praise the
                         compromise.</p>
                     <p>As for the Denishwai judgment, the object of the judges was to prevent a
@@ -1709,7 +1712,7 @@
                 <!-- Rose's Lime Juice -->
             </div>
             <div type="page" n="3">
-                <div type="item">
+                <div type="section" element="local">
                     <head>LOCAL AND GENERAL.</head>
                     <head>Legislative Council.</head>
                     <p>The Legislative Council meets today.</p>
@@ -2148,7 +2151,7 @@
                         management, a satisfactory result can be obtained. </p>
                 </div>
                 <!-- temperature at Assouan (town) -->
-                <div type="item">
+                <div type="section" element="social">
                     <head>PERSONAL AND SOCIAL.</head>
                     <p>It will not be very long (remarks the "Daily News".) before we see the Earl
                         and Countess of Cromer in London for they have just started from Cairo for
@@ -2366,8 +2369,8 @@
                     <p>La Banque d'Orient est échangée à 132 3/4.</p>
                 </div>
                 <!-- THE COTTON MARKET -->
-                <div type="item">
-                    <head>PASSENGER LISTS.</head>
+                <div type="section" element="passList">
+<head>PASSENGER LISTS.</head>
                     <p>DEPARTURES></p>
                     <p>Le paquebot "Ismalia" de la Khédivial Mail parti le 27 Juin pour Pirée,
                         Syrmne, Métélin et Constantinople, avait à bord.</p>
@@ -3538,7 +3541,7 @@
                 <div type="item">
                     <head>THE EGYPTIAN GAZETTE. THURSDAY, JUNE 28, 1906.</head>
                     <head>5</head>
-                </div>
+                </div><div type="section" element="wire">
                 <div type="item">
                     <head>S. WALES VISITED BY EARTHQUAKE</head>
                     <head>SERIOUS DAMAGE DONE.</head>
@@ -3628,7 +3631,7 @@
                     <p>M.C.C beat Cambridge University by 4 wickets.</p>
                     <p>Warwickshire v. Leicestershire and Yorkshire v. Kent, the matches were drawn.
                         (R.)</p>
-                </div>
+                </div></div>
                 <div type="item">
                     <head>MONEY AND SHARE MARKET.</head>
                     <byline>(FROM OUR FINANCIAL CORRESPONDENT.)</byline>
@@ -3806,7 +3809,7 @@
                     <p>Daira Prince Ahmed Seif el-Din Bey, Mohamed Aly Square</p>
                     <p>A. V. Thomson, Secretary for Egypt.</p>
                 </div>
-                <div type="item">
+                <div type="section" element="army">
                     <head>ARMY AND NAVY.</head>
                     <byline>(FROM OUR CORRESPONDENT.)</byline>
                     <dateline><placeName>London</placeName>, June 19.</dateline>
@@ -3853,7 +3856,7 @@
                         therefore a wide field for the energies of this lates commercial
                         mission.</p>
                 </div>
-                <div type="item" scope="calendar" xml:id="deg-el-coce01">
+                <div type="item" scope="calendar" element="comingEvents">
                     <head>Calendar of Coming Events</head>
                     <table cols="2" xml:id="deg-ta-coce01">
                         <row role="label">

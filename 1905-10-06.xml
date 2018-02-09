@@ -12,8 +12,7 @@
             </titleStmt>
             <editionStmt>
                 <edition>
-                    <date when="2016-10-10">October 10, 2016</date>
-                </edition>
+                    <date when="2016-10-10">October 10, 2016</date><gloss>1</gloss></edition>
             </editionStmt>
             <publicationStmt>
                 <publisher>FSU University Libraries</publisher>
@@ -23,7 +22,7 @@
                 <bibl>
                     <title>Egyptian Gazette</title>
                     <date when="1905-10-06">October 6, 1905</date>
-                </bibl>
+                    <extent><measure unit="pages" quantity="6">6</measure> pages</extent></bibl>
             </sourceDesc>
         </fileDesc>
     </teiHeader>
@@ -1225,8 +1224,18 @@
                         <p>Dragomans in Hotel Uniform Meet all Trains and Steamers.</p>
                         <p>22941-23-8-905</p>
                     </div>
-                    <!-- TODO Savoy Hotel, Luxor (Upper Egypt) -->
-                    <div type="advert" xml:id="deg-ad-hbr01">
+                    <div type="advert" xml:id="deg-ad-shl01">
+                        <head>SAVOY HOTEL, Luxor (Upper Egypt)</head>
+                        <p>NEW FIRST-CLASS HOTEL WITH EVERY MODERN COMFORT</p>
+                        <p>SPLENDID SITUATION on the bank of the Nile, on the road to Karnak and within easy reach of Thrbes</p>
+                        <p>Magnificent Views, Beautiful Surrondings, Garden, Spacious Terrace overlooking the River,</p>
+                        <p>Bliliar Room, Smoking-Room, Reading-Room, Electric Light throughout.</p>
+                        <p>Restaurant open to Non-Residents. Moderate Charges</p>
+                        <p>Omnibus and Porter meet all Trains and Steamers.</p>
+                        <p>HOTEL BEAU-RIVAGE, RAMLEH, OPENING IN MARCH</p>
+                        <p>G. &amp;M RUNCKEWITZ, Proprietors</p>
+                        <p>Also Prop. of the BEAU-RIVAGE HOTEL, Ramleh Alexandria</p>
+                    </div><div type="advert" xml:id="deg-ad-hbr01">
                         <head>Hotel Beau-Rivage.</head>
                         <p>Ramleh-Alexandria</p>
                         <p>15 Minutes by Carriage or "Palais tram from Sidi Gaber Station.</p>
@@ -1384,8 +1393,12 @@
                         <p>The officers and clerks of the Bank are pledged to secrecy as to the
                             transactions of customers. 18-9-905</p>
                     </div>
-                    <!-- TODO Surplus Drapery Stock of Magasins Victoria -->
-                    <!-- TODO Howie and Co. The Hygenic Dairy -->
+                    <div type="advert">
+                        <head>SELLING OFF. SURPLUS DRAPERY STOCK OF MAGASINS VICTORIA</head>
+                        <p>On Premises lately occupied by "Papeterie Commerciale," Rue Sesostris, 3
+                            doors from Cherif Pasha Street. For particulars see advertisement in another
+                            column.</p>
+                    </div><!-- TODO Howie and Co. The Hygenic Dairy -->
                     <div type="advert" xml:id="deg-ad-jma03">
                         <p>Embossing Press for Stamping Own Paper with Address Crest &amp; c.</p>
                         <p>Engraving Office</p>
@@ -1626,7 +1639,7 @@
                     <p>FRIDAY, OCTOBER 6, 1905.</p>
                 </div>
                 <!-- TODO Edhem Pasha -->
-                <div type="item" scope="calendar" xml:id="CalendarOfTheWeek">
+                <div type="item" element="comingEvents">
                     <head>Calendar of Coming Events.</head>
                     <div type="subsection">
                         <table cols="3" xml:id="CalendarOfTheWeek-Alexandria">
@@ -1701,7 +1714,7 @@
             </div>
             <div type="page" n="3">
                 <head>THE EGYPTIAN GAZETTE, FRIDAY, <date when="1905-10-06"><date when="1905-10-06"
-                            >October 6</date> 1905</date></head>
+                    >October 6</date> 1905</date></head><div type="section" element="wire">
                 <div type="wireReport">
                     <head>TUBERCULOSIS PROFESSOR BEHRING’S CLAIM.</head>
                     <head>DISCOVERY OF REMEDY.</head>
@@ -1774,7 +1787,7 @@
                             <date when="1905-10-05">October 5</date>.</dateline>
                     <p>Jockey Club Stakes. l.St. Amant ; 2. Polymelus ; 3. Mondamin.</p>
                     <byline>(Renter)</byline>
-                </div>
+                </div></div>
                 <div type="section" element="letters">
                     <head>LETTER TO THE EDITOR.</head>
                     <p>We do not bold ourselves responsible for the opinions expressed by car
@@ -1918,7 +1931,7 @@
                         <head>Unrequited Love Results in Murder</head>
                         <p>After being betrothed for four years a young man of Rod-El-Farag (near
                                 <placeName ref="https://www.wikidata.org/wiki/Q85">Cairo</placeName>
-                            ) oonld not arrange to marry his fiance, and the girl’s mother requested
+                            ) could not arrange to marry his fiance, and the girl’s mother requested
                             him either to break off the engagement or to marry her daughter within a
                             short time. Shortly afterwards another suitor for the girl's hand
                             appeared and these two became engaged and were married. The thwarted
@@ -2012,8 +2025,7 @@
                         <p>Mignon de bœuf REnaissance Pilaff aux cailles Petite pois à l'Anglaise
                             Ponlarde rôite Salade de laitue Parfait au Moke Gàtean St. Germain</p>
                     </div>
-                    <div type="article">
-                        <head>STEAMER MOVEMENTS.</head>
+                    <div type="section" element="steamerMovements"><head>STEAMER MOVEMENTS.</head>
                         <p>The express Khedivial mail steamship Ismailia will leave <placeName
                                 ref="https://www.wikidata.org/wiki/Q87">Alexandria</placeName> at 4
                             p.m. on Wednesday next for Piræus, Smyrna, Mitylene, and

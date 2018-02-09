@@ -12,8 +12,7 @@
             </titleStmt>
             <editionStmt>
                 <edition>
-                    <date when="2016-10-10">October 10, 2016</date>
-                </edition>
+                    <date when="2016-10-10">October 10, 2016</date><gloss>1</gloss></edition>
             </editionStmt>
             <publicationStmt>
                 <publisher>FSU University Libraries</publisher>
@@ -22,8 +21,8 @@
             <sourceDesc>
                 <bibl>
                     <title>Egyptian Gazette</title>
-                    <date when="1905-10-02">October 2, 1905</date>
-                </bibl>
+                    <date when="1905-10-02"><name>Monday</name>, October 2, 1905</date>
+                    <extent><measure unit="pages" quantity="6">6</measure> pages</extent></bibl>
             </sourceDesc>
         </fileDesc>
     </teiHeader>
@@ -1237,8 +1236,18 @@
                         <p>Dragomans in Hotel Uniform Meet all Trains and Steamers.</p>
                         <p>22941-23-8-905</p>
                     </div>
-                    <!-- TODO Savoy Hotel, Luxor (Upper Egypt) -->
-                    <div type="advert" xml:id="deg-ad-hbr01">
+                    <div type="advert" xml:id="deg-ad-shl01">
+                        <head>SAVOY HOTEL, Luxor (Upper Egypt)</head>
+                        <p>NEW FIRST-CLASS HOTEL WITH EVERY MODERN COMFORT</p>
+                        <p>SPLENDID SITUATION on the bank of the Nile, on the road to Karnak and within easy reach of Thrbes</p>
+                        <p>Magnificent Views, Beautiful Surrondings, Garden, Spacious Terrace overlooking the River,</p>
+                        <p>Bliliar Room, Smoking-Room, Reading-Room, Electric Light throughout.</p>
+                        <p>Restaurant open to Non-Residents. Moderate Charges</p>
+                        <p>Omnibus and Porter meet all Trains and Steamers.</p>
+                        <p>HOTEL BEAU-RIVAGE, RAMLEH, OPENING IN MARCH</p>
+                        <p>G. &amp;M RUNCKEWITZ, Proprietors</p>
+                        <p>Also Prop. of the BEAU-RIVAGE HOTEL, Ramleh Alexandria</p>
+                    </div><div type="advert" xml:id="deg-ad-hbr01">
                         <head>Hotel Beau-Rivage.</head>
                         <p>Ramleh-Alexandria</p>
                         <p>15 Minutes by Carriage or "Palais tram from Sidi Gaber Station.</p>
@@ -1342,8 +1351,12 @@
                             specially catered for</p>
                         <p>2063-14-1-906</p>
                     </div>
-                    <!-- TODO Magasins Victoria: Selling of Surplus Drapery Stock -->
-                    <!-- TODO Berlitz Scools of Langauges -->
+                    <div type="advert">
+                        <head>SELLING OFF. SURPLUS DRAPERY STOCK OF MAGASINS VICTORIA</head>
+                        <p>On Premises lately occupied by "Papeterie Commerciale," Rue Sesostris, 3
+                            doors from Cherif Pasha Street. For particulars see advertisement in another
+                            column.</p>
+                    </div><!-- TODO Berlitz Scools of Langauges -->
                     <!-- TODO Howie and Co. The Hygenic Dairy -->
                     <cb n="2"/>
                     <div type="advert" xml:id="deg-ad-aeb01">
@@ -1595,8 +1608,7 @@
                 <div type="article" scope="international">
                     <!-- TODO The Crisis at Budapest -->
                 </div>
-                <div type="item" scope="calendar">
-                    <head>Calendar of Coming Events.</head>
+                <div type="section" element="comingEvents"><head>CALENDAR OF COMING Events.</head>
                     <div type="subsection">
                         <head>Alexandria</head>
                         <head type="sub">October</head>
@@ -1678,7 +1690,13 @@
                         </table>
                     </div>
                 </div>
-                <!-- TODO Advertisement: Marseille; Grand hotel Du Louvre & Paix-->
+                <div type="advert" xml:id="deg-ad-ghl01">
+                    <head>MARSEILLE</head>
+                    <p>GRAND HOTEL DU LOUVRE &amp; PAIX</p>
+                    <p>LA RESERVE &amp; PALACE HOTEL</p>
+                    <p>Cornice. Sea-Side</p>
+                    <p>Proprieter L. ECHENARD, NEUSCHWANDER.</p><p><measure type="indexNo">26504-20*-1</measure></p>
+                </div>
             </div>
             <div type="page" n="3">
                 <cb n="1"/>
@@ -1875,7 +1893,7 @@
                             was formed on June 5 last, was opened opposite the Minet el Bassal
                             exchange. The ceremony was presided over by the Rev. Father Giuseppe,
                             honorary president of the society, and Professor Caruana, honorary
-                            secretary, represented those members ot the committee who were unable to
+                            secretary, represented those members of the committee who were unable to
                             attend ; the Rev Father Gardien was also present After the conclusion of
                             the ceremony the prosperity of the club was toasted amidst cheers, and
                             the instruments, which have been furnished by an Austrian manufacturer,
@@ -1922,8 +1940,8 @@
                 <cb n="3"/>
                 <div type="section" element="notesConstantinople">
                     <head>CONSTANTINOPLE NOTES.</head>
-                    <div type="item">
-                        <head>THE KHEDIVE'S VISIT.</head>
+                    <div type="section" element="khedive">
+                    <head>THE KHEDIVE'S VISIT.</head>
                         <byline>(From our CORRESPONDENT).</byline>
                         <dateline>Constantinople, September 26.</dateline>
                         <p>By the time that yon receive these notes H.H. the Khedive, who left here

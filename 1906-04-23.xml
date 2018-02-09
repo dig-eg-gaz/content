@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/dig-eg-gaz/resources/master/out/egSchema.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-stylesheet type="text/xsl" href="dig-eg-gaz.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
@@ -11,8 +12,7 @@
             </titleStmt>
             <editionStmt>
                 <edition>
-                    <date when="2017-01-11">January 11, 2017</date>
-                </edition>
+                    <date when="2017-01-11">January 11, 2017</date><gloss>3</gloss></edition>
             </editionStmt>
             <publicationStmt>
                 <publisher>FSU University Libraries</publisher>
@@ -21,8 +21,8 @@
             <sourceDesc>
                 <bibl>
                     <title>The Egyptian Gazette</title>
-                    <date when="1906-04-23">April 23, 1906</date>
-                </bibl>
+                    <date when="1906-04-23"><name>Monday</name>, April 23, 1906</date>
+                    <extent><measure unit="pages" quantity="6">6</measure> pages</extent></bibl>
             </sourceDesc>
         </fileDesc>
     </teiHeader>
@@ -182,7 +182,7 @@
                         all particulars apply</p>
                     <p>Wm. STAPLEDON &amp; Sons, PORT SAID and PORT-TEWFIK (Suez). 30-6-906</p>
                 </div>
-            </div>
+          
             <!-- Bibby Line Mail Twin-Screw Steamers; done-->
             <div type="item" scope="advertisement" xml:id="deg-ad-blm02">
                 <head>BIBBY LINE MAIL TWIN-SCREW STEAMERS.</head>
@@ -1420,8 +1420,8 @@
                 <p>As facility to tourists, booking can be effected at Shephard's Hotel.</p>
                 <p><measure type="indexNo">37655</measure></p>
                 <p>J. H. l'E. JOHNSTONE, General Manager.</p>
-            </div>
-            <div type="page" n="2"/>
+            </div></div>
+            <div type="page" n="2">
             <!-- Royal Insurance Co done-->
             <div type="item" scope="advertisement" xml:id="deg-ad-ric01">
                 <head>Royal Insurance Co.</head>
@@ -1822,10 +1822,10 @@
                     above all, labour—sucb mining operations are impossible, and in addition the
                     natives are true sons of Ishmael, with their hand against every man and every
                     man’s hand against them, ("The Globe"). </p>
-            </div>
-            <div type="page" n="3"/>
-            <div type="item">
-                <head>TO-DAY'S TELEGRAMS</head>
+            </div></div>
+            <div type="page" n="3">
+            <div type="section" element="wire">
+                    <head>TO-DAY'S TELEGRAMS</head><div type="item">
                 <p>AMERICA'S MOST APPALLING DISASTER</p>
                 <p>FRISCO FIRE UNDER CONTROL</p>
                 <p>RELIEF MEASURES</p>
@@ -1917,7 +1917,7 @@
                 <p>London, April 21. </p>
                 <p>Association Football Cup Match. Everton beat Newcastle United by one to nil.
                     There were over 60,000 spectators. (Reuter)</p>
-            </div>
+            </div></div>
             <div type="item" scope="advertisement">
                 <head>Isherwood's Cairo Cigarettes.</head>
                 <p>The reputation which these Cigarettes have gained in the past, stands unrivalled
@@ -1928,8 +1928,8 @@
             </div>
             <cb/>
             <!-- Column break -->
-            <div type="item">
-                <head>LOCAL AND GENERAL</head>
+            <div type="section" element="local">
+                    <head>LOCAL AND GENERAL</head>
                 <p>Fire. </p>
                 <p>Our Ghirgeh Correspondent telegraphs that a big conflagration has broken out at
                     Kom bandar. </p>
@@ -1979,8 +1979,8 @@
                     Mombasa and thence proceed through the centre of Africa to ascend Mount
                     Ruvenzore, which so far has been unexplored. </p>
             </div>
-            <div type="item">
-                <head>THE KHEDIVE.</head>
+            <div type="section" element="khedive">
+                    <head>THE KHEDIVE.</head>
                 <p>H.H. the Khedive left Alexandria for Cairo on Saturday evening. His Highness came
                     in to Abdeen Palace to-day from Koubbeh and presided at the Council of
                     Ministers. </p>
@@ -2007,8 +2007,7 @@
                 <p>The Commission also decided to supply the sakkas of Mit Ghamr with artesian well
                     water at a low price. </p>
             </div>
-            <div type="item">
-                <head>STEAMER MOVEMENTS</head>
+            <div type="section" element="steamerMovements"><head>STEAMER MOVEMENTS</head>
                 <p>The Moss liner Khephren sailed from Liverpool, via Malta, with mails and a cargo
                     of 23,057 bags onions. </p>
                 <p>The Cunard S. S. Cypria arrived at Liverpool on Saturday morning. </p>
@@ -2018,9 +2017,9 @@
             </div>
             <cb/>
             <!-- Column break-->
-            <div type="item">
+            <div type="section" element="nativePress">
                 <head>INCREASE OF BRITISH GARRISON</head>
-                <p>NATIVE PRESS OPINIONS</p>
+                <head>NATIVE PRESS OPINIONS</head>
                 <p>Native Press opinions on the increase of the Army of Occupation are decidedly
                     interesting. The "Moayad,” after denying the statement that Ghazi Mukhtar Pacha
                     had claimed for Turkey the right to construct a line to Suez which would place
@@ -2366,8 +2365,8 @@
                 <p>Fennel. — 1st Moh. Said el Kebir ; 2nd Hassan Attieh. </p>
                 <p>Colocassia.—2nd, Hassan Attieh. </p>
                 <p>Chonx Rave.—1st, Abdel Kadr Ibrahim; 2nd, Ibrahim Hassan, </p>
-            </div>
-            <div type="page" n="4"/>
+            </div></div>
+            <div type="page" n="4">
             <cols n="6"/>
             <cb n="1"/>
             <div type="item">
@@ -2376,25 +2375,25 @@
                 <p>La matinée a été toute entière oonaaorée anz Port Said Salt Association et aux
                     Salt and Soda. </p>
                 <p>Ces dernière? ont clôturé à 23/3 et les Port Said Salt à 15/3 aobetenrs. </p>
-                <p>Quant an reste, il y a fléshissement général, excepté ei Agricole qni hausse an
+                <p>Quant an reste, il y a fléshissement général, excepté ei Agricole qui hausse an
                     contraire à 10 1/8—10 3/16. </p>
                 <p>Quelques affaires ont également été traitées en Trust à 1 21/32. </p>
                 <p>L’Oasis (Corporation of Western Egypt) est invendable à 1 1/4. Da 33/6 la New
                     Egyptian tombe à 31/9 et les Upper Egypt Hotels de 5 3/16 à 4 3/4. </p>
                 <p>Cette réaction est probablement appelée à s’accentuer bien davantage d’ici à la
-                    fin du mois, oar il saffit d’ane vente de 25 titres poor occasionner nne
+                    fin du mois, oar il saffit d’ane vente de 25 titres poor occasionner une
                     dégringolade, comme cela est arrivé ce matin pour le Crédit Franoo- Egyptien. </p>
             </div>
             <div type="item">
                 <head>The Port Said Salt Association, Limited</head>
                 <p>Les assemblées Extraordinaires et Ordinai res de la Port Said Salt Association,
-                    Ltd., ont eu lieu, Samedi, aveo nn concours inusité d’actionnaires. Il y avait
+                    Ltd., ont eu lieu, Samedi, aveo un concours inusité d’actionnaires. Il y avait
                     plus de 60 actionnaires et 135.000 actions étaient représentées. Les
                     propositions faites par le groope d'actionnaires intéressés dans la Sait Soda,
                     en vue d’amener la fusion des deux Sociétés ont été rejetées à une énorme
                     majorité. L’Assemblée Ordinaire a approuvé le rapport, a décidé de distribuer le
                     dividende de 5 %, a nommé Administrateurs M:M. Vermond et Geo. Sait, en
-                    remplacement dés deux administrateurs sortants qni ne se présentaient pas à la
+                    remplacement dés deux administrateurs sortants qui ne se présentaient pas à la
                     réélection et a nommé Mr. Hewat, censeur. A la suite de l’Assemblée, MM. Debourg
                     et R. Abdy administrateurs ont donné leur démission. </p>
             </div>
@@ -2441,11 +2440,11 @@
                 <p>Restent £15,850. </p>
                 <p>Cela suffirait pour donner le 3 % s/ le capital mais comme la vente du sel non
                     seulement ne rapportera rien, et sera au contraire passive de tous les frais
-                    généraux incombant à oette branche, frais qui doivent être énorme?, il y a à
-                    prévoir que oette évaluation de bénéfices se transformera en perte. Je ne sais
+                    généraux incombant à cette branche, frais qui doivent être énorme?, il y a à
+                    prévoir que cette évaluation de bénéfices se transformera en perte. Je ne sais
                     ce qae fera la Port Said Salt mais sans rien perdre elle peut jeter sur les mar
                     chés de l’intérieur une certaine quantité de rel afin d’obliger la Sait and Soda
-                    à maintenir sa politique de travail à perte, et dans oette lutte je crains bien
+                    à maintenir sa politique de travail à perte, et dans cette lutte je crains bien
                     que ce ne soit le colosse qui doivent finalement céder. </p>
                 <p>Qu’en pensent les actionnaires de la Sait and soda ?</p>
                 <p> Un Actionnaire de 14 Salt and Soda. 27778-1 </p>
@@ -2466,7 +2465,7 @@
                 <head>The Upper Egypt Hotels Company</head>
                 <p>U est porté à la connaissance des 0' ligataires qae le ooupon No. 1 é ;héint le
                     1er mai 1906, des obligations 5% de l’Upper Egypt Hotels Co. sera payé aux
-                    guichets de la National Bank of Egypt à partir dn 1er mai 19' 6. 27774-3A-1 </p>
+                    guichets de la National Bank of Egypt à partir du 1er mai 19' 6. 27774-3A-1 </p>
             </div>
             <div type="item">
                 <head>Egyptian Constructions, Limited</head>
@@ -2485,7 +2484,7 @@
                 <p>Cette époque de Tannés ocmoidant avjc la réapparition de la peste, les autorités
                     sanitaires croient devoir rappe’er le rôle prépondérant qne jouent les rats dans
                     la propagation de cette épidémie. </p>
-                <p>Elles engagent les habitants de la Ville et principalement les personnes qni sont
+                <p>Elles engagent les habitants de la Ville et principalement les personnes qui sont
                     parti onlièrement exposées aa oontaot des rats (telles qne bakals, marchand?
                     d’huile, de farine, de savon, propriétaires d’écuries, eto ) à faire asage des
                     ratières et des boulettes empoisonnées que la Municipalité met gratuitement à
@@ -2504,13 +2503,13 @@
                 <p>AVIS </p>
                 <p>L’Administration des Chemins de fer de l’Etat a l’honneur de porter à la
                     oonnaissai c? du Public qu’à partir du 15 Mai 1906 les arti oies suivants :
-                    lèves, blés, maïs, orges, lentilles, helbés, lupins et pois chiches, qni seront
+                    lèves, blés, maïs, orges, lentilles, helbés, lupins et pois chiches, qui seront
                     transportés par charge complète oa inoomplète de toute? les gares de la
                     Haute-Egypte situées au Sud d’Abou-el-Noamrous (inclusivement) destination des
                     gares de la Basse-Egypte (y compris le Caire, Ghiz?b, Bonlao Daoroar et
-                    Embabeh), seront taxé? au taux de la 6me olasse da Tarif Général des
+                    Embabeh), seront taxé? au taux de la 6me classe da Tarif Général des
                     Marchandises, avec une rédaction de 25 %. </p>
-                <p>Cette rédaction s’étendra également sur les “Tibns” qni seront expédiés des gares
+                <p>Cette rédaction s’étendra également sur les “Tibns” qui seront expédiés des gares
                     de la Haute-Egypte au Sud d’Abou el-Nomrous (inclusivement) à destination des
                     gares de la Basse Egypte (y compris les sus-mentionnées) par chargement complet
                     (avec un minimum de 6,000 kilogs.) et tans responsabilité pour l’Administration. </p>
@@ -2541,8 +2540,7 @@
                     l'après-midi. 27745-8-1 </p>
             </div>
             <cb n="3"/>
-            <div type="item">
-                <head>Shipping Movements</head>
+            <div type="section" element="shippingMovements"><head>SHIPPING MOVEMENTS</head>
                 <p>ALEXANDRIA HARBOUR.</p>
                 <p> ARRIVALS. </p>
                 <p>April 21. </p>
@@ -4356,8 +4354,8 @@
                         </row>
                     </table>
                 </div>
-            </div>
-            <div type="page" n="5"/>
+            </div></div>
+            <div type="page" n="5">
             <cols n="6"/>
             <cb n="1"/>
             <div type="item">
@@ -4591,7 +4589,7 @@
                 <head>La Societe Egyptienne de la Daira Sanieh.</head>
                 <p>AVIS</p>
                 <p>La Socidt4 Egyptienne de la Daira Sanieh met aox enohrea pnbliqnes la vente de
-                        denx lots de terrains de oonstrnotion sis k Minieh k cdt4 de l’ancien palais
+                        denx lots de terrains de oonstrnotion sis à Minieh k cdt4 de l’ancien palais
                         vendn k M. Philippe Back. Le lot N°. 1,—est d’nne superfioie de 3300 mktree
                         oarr4s environ et le lot N°. 2,— est de 9600 metres oarr4a environ —La
                         mise k prix a 4t4 respectivement fixde k P. T. 80 et P. T. 40 le mktre
@@ -4605,31 +4603,31 @@
                         de L. E. 250 poor le No. 1, de L. E. 4C0 pour le lot No. 2 et de L. E. 650
                         poor les denx lots ensemble. Cea oantionnements devront dtre effectors soit
                         par paiements en espkees k la Caisse de la Soci4t4, dins sea bureaux Rae
-                        Abdin, soit par mandat postal, soit par cheque snr one banqne da Caire,
+                        Abdin, soit par mandat postal, soit par cheque sur one banqne da Caire,
                         dfiment accepts par cette Banque, soit par envoi du montint en billets de
                         la Banqne Nationale. </p>
                 <p>La Soci4t4 se reserve le droit de refuser oa d’acccapter n'importe quelle off
                         re sans antre obliga’ion poor elle que la restitution des oaotioncements. </p>
-                <p>Cette vente est sonmise anx olanses et conditions de oette Soci4t4 pour
+                <p>Cette vente est sonmise anx olanses et conditions de cette Soci4t4 pour
                         tontes sea ventes. L’ufire doit mentionner le mode d’aprks leqnel le prix
                         sera pay4. Si l’offre oomporte le paie-ment integral avant la prise de
                         possession, 09lni dont i’offre serait aooept4e doit s’engager k parfaire le
                         prix ausaitdt qne la 8ooi4t4 l’anra avis4 de l’acoeptation de son off re. Si
                         l’offre oomporte le paiement k termes, celni dont l’offre aura 4t4 accepts
-                        devra s’engager k parfaire le trente poor cent da prix aussitdt que la
+                        devra s’engager à parfaire le trente poor cent da prix aussitdt que la
                         Soci4t4 l’aura avis4 de l’aooeptation de son offre.Le soldo da prix sera
                         pay4 indiffdremment soit en quinze annuity, aveo an int4r6t de 5 % Tan, soit
                         en 20 annuity, aveo on int4r6fc de5 1/2% l’ao. Dans l’nn on 1’antre oas
                         la premikre annuity est d’4oh4ance le ler Ootobre 1906. </p>
                 <p>Aussitdt qu’une offre est accepts, l’acqa4renr doit payer soit le solde du
-                        prix soit le complement du 30 % et se reodre k l’invitation de la Soci4t4
+                        prix soit le complement du 30 % et se reodre à l’invitation de la Soci4t4
                         pour la signature de l’aote de vente, faute de qnoi la Society se reserve le
                         droit de r4-sillier sa promesee cfe vente et de confisqner
                         le oaationnement    277602-1</p>
             <div type="article">
                 <head>National Bank of Egypt.</head>
                 <p>AVIS</p>
-                <p>Le Conseil d’Adminietration de la National Bank of Egypt a l'honoenr de porter JJ la con-naissance des int4ress48 que l’Assemb 4e Generate Ordinaire des Aotionnaires rennie le Samedi 24 Mirs 1906, an Sifcge Social, an Caire, a fixe k 16 shellings le montant dn divi-dende k payer par aotion poor l’exeroioe olos le 30 Deoembre 1905. Cedividende est payable oontre remise dn coupon N. 6, k partir dn 2 Avril 1906, an Sifcge Social de la Banqne, an Caire, k sa sncoursale d’Alexandrie, dans ses Agences des Provinces et k son Agenoe de Londres, 4 et 5 King William Street.</p>
+                <p>Le Conseil d’Adminietration de la National Bank of Egypt a l'honoenr de porter JJ la con-naissance des int4ress48 que l’Assemb 4e Generate Ordinaire des Aotionnaires rennie le Samedi 24 Mirs 1906, an Sifcge Social, an Caire, a fixe à 16 shellings le montant du divi-dende k payer par aotion poor l’exeroioe olos le 30 Deoembre 1905. Cedividende est payable oontre remise du coupon N. 6, k partir du 2 Avril 1906, an Sifcge Social de la Banqne, an Caire, à sa sncoursale d’Alexandrie, dans ses Agences des Provinces et à son Agenoe de Londres, 4 et 5 King William Street.</p>
                 <p>27582 10x-8</p>
             </div>
             <cb n="4"/>
@@ -4637,31 +4635,31 @@
                     <head>Circulaire H. De Vries et Boutigny</head>
                 <p>NOTES ET CRITIQUES</p>
                 <p>Le Caire, le 21 avril.</p>
-                <p>Le taux de l’escompte libre k Londres vient d’etre enoore 41ev4 de 1/8 k 3 1/2 ponr cent. On lira pins loin les oanses de oe renohdrisee-ment dn loyer del’argent.</p>
-                <p>A a Stock Exchange, le Consolid4 anglais aurait baiss4 hier de 5/8. saof errenr de transmission. L’Unifi4e a r4actionn4 de 1/4 k 106. La National Bank et 1’Agricole sont reat4es k 27 et. 10 1/8. La Daira a recoil de 1/4 k 18. La Delta a 4galement perdu 1/4 k 12 3/4.</p>
-                <p>A Paris, l’aotion Credit Foncier Egyptien s’est maintenne k 787. La Banqne d’Aihknes a regagn4 1 frano k 153.</p>
-                <p>Influence par les manvais conrs de Londres, notre marchd a commence par se montrer lonrd et oraintif; la tendance generate etait k la reaction, aveo pen d’affaires. On a ete toatefois pins aotif et pins ferme vers la cldtare.</p>
-                <p>La National Bank, d4laiss4e, est tombee k 26 13/16 poor se relever k 26 15/16 27. L’Agri-cole, plus anim4e, a retrograde jnsqn’k 10 1/16 ponr oldturer k 10 1/8-3/16.</p>
-                <p>Le Comptoir a ete neglige k 8. La nonvelle emission de 50,000 actions, offsites par preference aox porteurs aotuels an prix de £ 5, est annonc4e poor le 2 Mai prochain.</p>
-                <p>L’action Credit Foncier est restee k 786 ; la part de fondatenr a hausse de 960 k 1010. La Delta Light a baisse k 12 1/2.</p>
-                <p>L’action Heliopolis a ete ramenee k 330 ; la part de fondatenr k 12 1/2. L’aotion Entre prises lmmobilteres et Travanx a ete ootee k 4 3/8; la part de fondatenr k 83. Les parts de fondateur Express Nile Steamers Co. ont ete echangees k 68-70. La part de fondatenr Nile Land a progrease k 70 ; Taction a fait 14 3/8.</p>
-                <p>Eq excellent* tenoe, les Improvements ont avance k 4 15/16. C’est justice, car oe titre est fort bon k prendre et ea valeur reelle est superiors an oonrs actnel. Le dividende distri-hne ponr 1905 represente an intent annael de!3% et l’exeroioe coarant s'annonoe sons lesmeillenrs anspioes.Cette eoci4t4afaitdepnis qoelque temps, soit aveo ses propres ressonroes, soit en participation, de belles operations qui font prevoir, k ooort delai, de trfca gros benefices.</p>
-                <p>Les actions privilegiees Tramways d’Alexandrie ont baisse k 190 ; les dividendes k 352. L’aotion Bourse Khediviale du Caire a reonie k 160 ; les Omnibus k 30.</p>
-                <p>Dans le groupe des Hotels, les Nungovioh ont oldture k 17 15/16 et les Upper Egypt k 4 7/8.</p>
-                <p>Parmi lrs petites valears, il y a en de grosses ventes de Salt and Soda qui, de 26 sh.. sont tombes k 24 sb. 9, snr la romeur que le projet de fusion aveo la Port-Said Association serait appeie k Otre rejete par la majorite des aotion naires de cette deraifcre Sootetd. On a c’dtur4 k 25.</p>
-                <p>Les Delta Land re sont hien comports: de 4    5/8 ils ont progress^ k 4 13/16. Les Hooketr ont oldturl k 1 1/8-3/16. Lss Markets ont avancl k 27 sh. Les Abdy sont revenns k 1 5/16.</p>
+                <p>Le taux de l’escompte libre à Londres vient d’etre enoore 41ev4 de 1/8 à 3 1/2 ponr cent. On lira pins loin les oanses de oe renohdrisee-ment du loyer del’argent.</p>
+                <p>A a Stock Exchange, le Consolid4 anglais aurait baiss4 hier de 5/8. saof errenr de transmission. L’Unifi4e a r4actionn4 de 1/4 à 106. La National Bank et 1’Agricole sont reat4es k 27 et. 10 1/8. La Daira a recoil de 1/4 à 18. La Delta a 4galement perdu 1/4 à 12 3/4.</p>
+                <p>A Paris, l’aotion Credit Foncier Egyptien s’est maintenne à 787. La Banqne d’Aihknes a regagn4 1 frano à 153.</p>
+                <p>Influence par les manvais conrs de Londres, notre marché a commence par se montrer lonrd et oraintif; la tendance generate etait k la reaction, aveo pen d’affaires. On a ete toatefois pins aotif et pins ferme vers la cldtare.</p>
+                <p>La National Bank, d4laiss4e, est tombee à 26 13/16 poor se relever à 26 15/16 27. L’Agri-cole, plus anim4e, a retrograde jnsqn’k 10 1/16 ponr oldturer à 10 1/8-3/16.</p>
+                <p>Le Comptoir a ete neglige à 8. La nonvelle emission de 50,000 actions, offsites par preference aox porteurs aotuels an prix de £ 5, est annonc4e poor le 2 Mai prochain.</p>
+                <p>L’action Credit Foncier est restee k 786 ; la part de fondatenr a hausse de 960 à 1010. La Delta Light a baisse à 12 1/2.</p>
+                <p>L’action Heliopolis a ete ramenee à 330 ; la part de fondatenr à 12 1/2. L’aotion Entre prises lmmobilteres et Travanx a ete ootee k 4 3/8; la part de fondatenr à 83. Les parts de fondateur Express Nile Steamers Co. ont ete echangees à 68-70. La part de fondatenr Nile Land a progrease à 70 ; Taction a fait 14 3/8.</p>
+                <p>Eq excellent* tenoe, les Improvements ont avance à 4 15/16. C’est justice, car oe titre est fort bon à prendre et ea valeur reelle est superiors an oonrs actnel. Le dividende distri-hne ponr 1905 represente an intent annael de!3% et l’exeroioe coarant s'annonoe sons lesmeillenrs anspioes.Cette eoci4t4afaitdepnis qoelque temps, soit aveo ses propres ressonroes, soit en participation, de belles operations qui font prevoir, à ooort delai, de trfca gros benefices.</p>
+                <p>Les actions privilegiees Tramways d’Alexandrie ont baisse à 190 ; les dividendes à 352. L’aotion Bourse Khediviale du Caire a reonie k 160 ; les Omnibus à 30.</p>
+                <p>Dans le groupe des Hotels, les Nungovioh ont oldture à 17 15/16 et les Upper Egypt k 4 7/8.</p>
+                <p>Parmi lrs petites valears, il y a en de grosses ventes de Salt and Soda qui, de 26 sh.. sont tombes à 24 sb. 9, sur la romeur que le projet de fusion aveo la Port-Said Association serait appeie à Otre rejete par la majorite des aotion naires de cette deraifcre Sootetd. On a c’dtur4 k 25.</p>
+                <p>Les Delta Land re sont hien comports: de 4    5/8 ils ont progress^ à 4 13/16. Les Hooketr ont oldturl à 1 1/8-3/16. Lss Markets ont avancl à 27 sh. Les Abdy sont revenns k 1 5/16.</p>
                 <p>Nous extrayona d’une lettre de Londres, en date da 15 avril, les lignes suivantes relatives k la hausie da taax de I’esoompte :</p>
-                <p>"Le renoh5rissement da loyer de Targent est dfi k plusieurs causes : d’ahord an fait que le oours du change k New-York a fteohi dans des proportions extraordinaires : le “gold point” ayant 4*4 atteint, la Bauque d’Angleterre a dfi, Taut re jour, livrer £ 425,000 d’or pour les Etats-Uuis. On s’attend k la continuation de oette exode, mais on ne ressent anenne orainte B4rieose. Le seal mal est qn’ane fois enoore la baisse du taox de Tesoompte est arr6t4e. Snr le maroh4 libre on est remont4 k 3 1/8 et apparemment on ira k 3 1/2 avant la fin dn mois. Le taax da report s’en est ressenti en Bourse.</p>
-                <p>"D’aatre part, k Berlin, le poids de Tern-prnnt de 560 millions de marks p4sera assez lonrdement snr le maroh4, pendant qaelqne temps an moins. Anssi bien la Banqne de TEmpire n’a pas ahandonc4 le taux offioiel de 5 pour cent, et en Bourse le report ne s’4carte gukre de ce m6me taux.</p>
-                <p>"Enfiu, k Paris, la grosre affaire de l’em-prant rasse a amec4 le rappel des cpitaux framjais qui avaient oheroh4 emploi k Londres.</p>
-                <p>"En conclusion, Tassant g4n4ral livr4 aux diaponibilit^a a exerc4 one influence fkoheuse snr la tenne des Bourses. II en est r4solt4 nne situation pins ou moins malais4e; mais henreu-sement cette g6ne est appel4e k dtre patsagkre, et il n’y a pas k appr4hender one crise grave.” • *</p>
-                <p>Il resulte do rapport qui sera pr4sent4 k la proohaine assemble des Tramways d’Alexandra que le soldo cr4diteor dn compte Profits et Pertes pour Texercice 1905 se monte k Frs. 642,102.</p>
-                <p>Apres avoir port4 Frs. 32,105 k la r4serve statntaire et Frs. 103,694 an foods de renon-vellement du matdriel, le oonseil propose de di8tribuer Frs. 6,25 par aotion privil4gi4e et Frs. 2,75 par action de dividende.</p>
-                <p>Les recettes de 1905 acoosent snr Texercioe pr4c4dent one augmentation de Frs. 219,571, tandis qne les d4penses ne se sont aoornes qne de Frs. 100,207.</p>
-                <p>Le rapport annonoe qne le conseil a 4t4 eaisi par nn gronpe porteur d’environ 50,000 aotions d’nn projet d’unifioation des denx cat4-gories d’aotions, et qn’il 4tadie, d’apiks les statute, les moyens 14gaux qni permettraient d’arriver k la r4alisation de oe prrjet.</p>
-                <p>None prions in8tamment les pereonnes qni ne reipivent pas r4gnlikreiiient notre Circnlaire de none aviser sans retard afin qne nous puis-sions prendre des mesa res imm4 iates poor assurer la ponctualit4 da service d’exp4dition.</p>
+                <p>"Le renoh5rissement da loyer de Targent est dfi à plusieurs causes : d’ahord an fait que le oours du change à New-York a fteohi dans des proportions extraordinaires : le “gold point” ayant 4*4 atteint, la Bauque d’Angleterre a dfi, Taut re jour, livrer £ 425,000 d’or pour les Etats-Uuis. On s’attend à la continuation de oette exode, mais on ne ressent anenne orainte B4rieose. Le seal mal est qn’ane fois enoore la baisse du taox de Tesoompte est arr6t4e. Snr le maroh4 libre on est remont4 à 3 1/8 et apparemment on ira à 3 1/2 avant la fin dn mois. Le taax da report s’en est ressenti en Bourse.</p>
+                <p>"D’aatre part, à Berlin, le poids de Tern-prnnt de 560 millions de marks p4sera assez lonrdement sur le maroh4, pendant qaelqne temps an moins. Anssi bien la Banqne de TEmpire n’a pas ahandonc4 le taux offioiel de 5 pour cent, et en Bourse le report ne s’4carte gukre de ce m6me taux.</p>
+                <p>"Enfiu, à Paris, la grosre affaire de l’em-prant rasse a amec4 le rappel des cpitaux framjais qui avaient oheroh4 emploi à Londres.</p>
+                <p>"En conclusion, Tassant g4n4ral livr4 aux diaponibilit^a a exerc4 one influence fkoheuse snr la tenne des Bourses. II en est r4solt4 une situation pins ou moins malais4e; mais henreu-sement cette g6ne est appel4e k dtre patsagkre, et il n’y a pas à appr4hender one crise grave.” • *</p>
+                <p>Il resulte do rapport qui sera pr4sent4 k la proohaine assemble des Tramways d’Alexandra que le soldo cr4diteor du compte Profits et Pertes pour Texercice 1905 se monte k Frs. 642,102.</p>
+                <p>Apres avoir port4 Frs. 32,105 à la r4serve statntaire et Frs. 103,694 an foods de renon-vellement du matdriel, le oonseil propose de di8tribuer Frs. 6,25 par aotion privil4gi4e et Frs. 2,75 par action de dividende.</p>
+                <p>Les recettes de 1905 acoosent sur Texercioe pr4c4dent one augmentation de Frs. 219,571, tandis qne les d4penses ne se sont aoornes qne de Frs. 100,207.</p>
+                <p>Le rapport annonoe qne le conseil a 4t4 eaisi par un gronpe porteur d’environ 50,000 aotions d’nn projet d’unifioation des denx cat4-gories d’aotions, et qn’il 4tadie, d’apiks les statute, les moyens 14gaux qui permettraient d’arriver à la r4alisation de oe prrjet.</p>
+                <p>None prions in8tamment les pereonnes qui ne reipivent pas r4gnlikreiiient notre Circnlaire de none aviser sans retard afin qne nous puis-sions prendre des mesa res imm4 iates poor assurer la ponctualit4 da service d’exp4dition.</p>
                 <p>Carnet de Tactionnaire</p>
-                <p>Le dividende de 5 sh. snr lea aotions ordi-nairea de la Daira Sanieh ponr l’exeroioe 1905</p>  
+                <p>Le dividende de 5 sh. sur lea aotions ordi-nairea de la Daira Sanieh ponr l’exeroioe 1905</p>  
             </div>
             <cb n="4"/>
                 <div type="section">
@@ -4814,10 +4812,10 @@
                             SHAVING FOUNTAIN PENS, INKS, STATIONARY &amp;c., &amp;c</p>
                     <p>Davies Bryan &amp; Co., Cairo &amp; Alexandria.</p>
                 </div>
-            </div>
-            <div type="page" n="6"/>
+            </div></div></div>
+            <div type="page" n="6">
             <cols n="3"/>
-            <cb n="1"/><!-- W.H. Allen, Sons & Co, Ltd --><!-- Need Thos. Hinshelwood & CO --></div>
+            <cb n="1"/><!-- W.H. Allen, Sons & Co, Ltd --><!-- Need Thos. Hinshelwood & CO -->
             <div type="item" scope="advertisement" xml:id="deg-ad-pdd01">
                     <p>Les personnes qui connaissent les</p>
                     <p>Pilules du Docteur DEHAUT de Paris</p>
@@ -4940,8 +4938,25 @@
                 <p>Write for Catalogue No. 73.</p>
                 <p>25908-6-1 (5)</p>
             </div>
-            <!-- Need Jessop & Appleby Bros., Limited -->
-            <div type="item" scope="advertisement" xml:id="deg-ad-okl01">
+                <div type="advert" xml:id="deg-ad-eec01">
+                    <p>Jessop &amp; Appleby Bros., Limited</p>
+                    <p>Cranes, Excavators, Transporters, Concrete Mixers, Pile Drivers, Contractors
+                        Plant.</p>
+                    <p>Midland Railway Carriage &amp; Wagon Co. Ld.</p>
+                    <p>Railway Carriages, Wagons and Trucks.</p>
+                    <p>G.R Turner, Limited.</p>
+                    <p>Light Railway Material</p>
+                    <p>Tees side Bridge &amp; Engineering Works Ltd.</p>
+                    <p>Steel and Iron Bridges.</p>
+                    <p>Constructional Steel and Iron Work.</p>
+                    <p>Hunter and English</p>
+                    <p>Dredgers and Rice Mills</p>
+                    <p>Egyptian House:</p>
+                    <p>The Egyptian Engineering Co., Ltd.</p>
+                    <p>Maison Spiro, Sharia Kasr-el-Nil, <placeName>Cairo</placeName></p>
+                    <p>Telephone 1542. </p>
+                    <p>Cables: Anglogypt, <placeName>Cairo</placeName></p>
+                </div><div type="item" scope="advertisement" xml:id="deg-ad-okl01">
                 <head>Orenstein &amp; Koppel, Ltd.</head>
                 <p>Capital 10,000,000 Frs.</p>
                 <p>Purveyors to H.H. the Khedive.</p>
@@ -4977,7 +4992,7 @@
                 <p>Goods delivered against cash for account of shippers. <measure type="indexNo"
                         >1-6-906</measure></p>
                 <!-- Need hotel du nil, cairo ad -->
-            </div>
+            </div></div>
         </body>
     </text>
 </TEI>

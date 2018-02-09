@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/dig-eg-gaz/resources/master/out/egSchema.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-stylesheet type="text/xsl" href="dig-eg-gaz.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
@@ -11,8 +12,7 @@
             </titleStmt>
             <editionStmt>
                 <edition>
-                    <date when="2017-02-14">February 14, 2017</date>
-                </edition>
+                    <date when="2017-02-14">February 14, 2017</date><gloss>3</gloss></edition>
             </editionStmt>
             <publicationStmt>
                 <publisher>FSU University Libraries</publisher>
@@ -22,7 +22,7 @@
                 <bibl>
                     <title>The Egyptian Gazette</title>
                     <date when="1906-09-07">September 7, 1906</date>
-                </bibl>
+                    <extent><measure unit="pages" quantity="6">6</measure> pages</extent></bibl>
             </sourceDesc>
         </fileDesc>
     </teiHeader>
@@ -1870,7 +1870,7 @@
             <div type="page" n="3">
                 <cols n="6"/>
                 <cb n="1"/>
-                <div type="item">
+                <div type="section" element="local">
                     <head>LOCAL AND GENERAL.</head>
                     <div type="item">
                         <head><hi rend="bold">The Forthcoming
@@ -2039,7 +2039,7 @@
                         tions between the Ottoman delegates and 
                         Constantinople. But in all probability there 
                         has been a deadlock, and the Porte has now 
-                        discovered a nice excuse tor withdrawing from 
+                        discovered a nice excuse for withdrawing from 
                         an impossible situation.</p>
                         <p>In commenting on the present position of 
                         the Akabah question the “Temps” says :—</p>
@@ -2140,8 +2140,7 @@
                     <p>God Save the King.</p>
                     <p>Mr. J. PROSSER. B. M.</p>
                 </div>
-                <div type="item">
-                    <head>STEAMER MOVEMENTS</head>
+                <div type="section" element="steamerMovements"><head>STEAMER MOVEMENTS</head>
                     <p>The Moss liner “Khephren” sailed yesterday 
                     afternoon for Clazomene in ballast.</p>
                     <p>The Moss liner “Amasis” sailed from Malta 
@@ -2508,7 +2507,7 @@
                     public or the assistance of the "assistant un-
                     qualified,” but what for?</p>
                 </div>
-                <div type="item">
+                <div type="section" element="social">
                     <head>PERSONAL AND SOCIAL</head>
                     <p>Prince Mohamed Aly Pasha will shortly 
                     come to Alexandria, where he will spend several 
@@ -2549,7 +2548,7 @@
                     rector of the botanical gardens.</p>
                 </div>
                 <cb n="6"/>
-                <div type="item">
+                <div type="section" element="letters">
                     <head>LETTERS TO THE EDITOR.</head>
                     <p>We do not hold ourselves responsible for the opinions ex-
                     pressed by our correspondents, but we wish, in a spirit of
@@ -2813,8 +2812,7 @@
                     surplus de LE 2,468 pour l’exercice courant.</p>
                 </div>
                 <cb n="2"/>
-                <div type="item">
-                    <head>SHIPPING MOVEMENTS</head>
+                <div type="section" element="shippingMovements"><head>SHIPPING MOVEMENTS</head>
                     <head>ALEXANDRIA HARBOUR.</head>
                     <p>ARRIVALS</p>
                     <p><date when="1906-09-06">September 6.</date></p>
@@ -2843,7 +2841,7 @@
                     <p>Khephren, Brit. s., capt. Burnett, Clazomena,
                     in ballast.</p>
                 </div>
-                <div type="item" scope="calendar" xml:id="deg-el-coce01">
+                <div type="item" scope="calendar" element="comingEvents">
                     <head>Calendar of Coming Events</head>
                     <table cols="2" xml:id="deg-ta-coce01">
                         <row role="label">
@@ -3124,7 +3122,7 @@
                         <p>EGYPT. —Home in private family wanted, 
                             for girl (rheumatic) of 10 and maid, for 
                             winter months, (Helouan or vicinity) in ex-
-                            change tor home in Brighton (doctor’s honse) 
+                            change for home in Brighton (doctor’s honse) 
                             for child and maid or children requiring educa-
                             tion. Bowring, Fu ze Hill, Brighton, England.
                             28447-3A-2</p>
@@ -4549,7 +4547,7 @@
                 </div>
             </div>
             <div type="page" n="5">
-                <div type="item">
+                <div type="section" element="wire">
                     <head>TO-DAY’S TELEGRAMS.</head>
                     <div type="item">
                         <head>RUSSIA.</head>
@@ -6323,7 +6321,26 @@
                     <p>Tanta<lb/>Sharia El Alail.</p>
                     <p>17 11-905</p>
                 </div>
-                <!-- Steinemann, Mabardi & Co -->
+                <div type="advert" xml:id="deg-ad-smc01">
+                    <head>STEINEMANN, MABARDI &amp; C°</head>
+                    <p>The Egyptian Engineering Stores.</p>
+                    <p>MERCHANTS, CONTRACTORSS &amp; MACHINERY IMPORTERS, ALEXANDRIA.</p>
+                    <p>Sole Agents for Egypt, Asia Minor and Syria for</p>
+                    <p>Messrs. CLAYTON &amp; SHUTTLEWORTH, Lincoln, Portable &amp; fixed Engines &amp;
+                        Boilers, Corn mills, Thrashing, Strawbruising &amp; Cutting Machines.</p>
+                    <p>Messrs. GALLOWAYS, LTD., Manchester.—The Largest Boiler Works in the World.</p>
+                    <p>WALTER A. WOOD, Mowing and Reaping Machine Co. Hoosick Falls, N.Y. (America)
+                        Reapers, Mowers, Harvesters &amp; Rakes.</p>
+                    <p>PIGUET &amp; Co., Lyons. —French Steam Engines.;</p>
+                    <p>AVELING &amp; PORTER, LIMITED, Rochester.—Steam Rollers and Steam Ploughs.</p>
+                    <p>LES TANNERIES LYONNAISES, Oullins (Rhône).-Best Leather Belting.</p>
+                    <p>E. S. HINDLEY, Burton, Dorset—Vertical Engines and Boilers, specially designed
+                        for driving Electric Dynamos &amp; Centrifugal Pumps, etc., etc.</p>
+                    <p>HILLAIRET HUGUEOT, Paris.—Electricians.</p>
+                    <p>L. DUMONT, Paris.—Centrifugal pumps.</p>
+                    <p>R. F. &amp; E. TURNER, LTD., Ipswich.—Floor Mills.</p>
+                    <p>21188-24.5.905</p>
+                </div>
                 <div type="item" scope="advertisement" xml:id="deg-ad-tce01">
                     <head>Telephone Company of Egypt, Limited.</head>
                     <p>CAIRO-ALEXANDRIA TELEPHONE.--Rates as follow :- P.T. 5 for each 3 minutes, or
@@ -6381,7 +6398,15 @@
                     <p>2% aux bons de 1 an et au-delà.</p>
                     <p>31.12.905</p>
                 </div>
-                <!-- Charles Evans. -->
+                <div type="item" scope="advertisement">
+                    <head>CHARLES EVANS.</head>
+                    <p><hi rend="italic">Passenger, Shipping,
+                        Custom House and Forwarding Agent</hi></p>
+                    <p>Royal Chambers, PORT SAID.</p>
+                    <p>Strict personal attention guaranteed.</p>
+                    <p>Correspondents everywhere.       27042-31-12-906</p>
+                    <p>AGENT FOR "THE EGYPTIAN GAZETTE"</p>
+                </div>
                 <cols n="3"/>
                 <cb n="3"/>
                 <!-- The Egyptian Engineering Co. Ltd. -->
@@ -6471,7 +6496,16 @@
                         </row>
                     </table>
                 </div>
-                <!-- Thos. Hinshelwood & Co., Limited -->
+                <div type="advert">
+                    <p>PROTECTION AGAINST FIRE.</p>
+                    <p>THE UNDERWRITERS' FIRE EXTINGUISHER.</p>
+                    <p>Over Five Hundred now in use In Egypt and the Sudan.</p>
+                    <p>SIMPLICITY RELIABILITY EFFICACY</p>
+                    <p>Write for Illustrated Circulars and Full Particulars:</p>
+                    <p>SOLE AGENTS:</p>
+                    <p>THOS. HINSELWOOD &amp; CO., LIMITED</p>
+                    <p>ALEXANDIRA.      <measure type="indexNo">21-1-907</measure></p>
+                </div>
                 <div type="item" scope="advertisement" xml:id="deg-ad-tcs02">
                     <head>Thos. Cook &amp; Son (Egypt), Ltd.</head>
                     <p>Engineers, Boulac, Cairo. Alexandria.</p>
