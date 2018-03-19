@@ -1211,7 +1211,7 @@
             </div>
             <div type="page" n="2">
                 <cb n="1"/>
-                <div type="section" scope="advertisement">
+                
                     <div type="advert" xml:id="deg-ad-ric01">
                         <head>Royal Insurance Coy</head>
                         <p>FIRE AND LIFE.</p>
@@ -1321,8 +1321,12 @@
                         <p>24916-15-11-905</p>
                     </div>
                     <!-- TODO Ask for John B. Caffari -->
-                    <!-- TODO Lancaster House, Cairo -->
-                    <cols n="1"/>
+                    <div type="advert" xml:id="deg-ad-lhc01">
+                        <head>LANCASTER HOUSE, CAIRO</head>
+                        <p>Sharia Wabour El Moya.</p>
+                        <p>Comfortable apartments, with or without board. Terms very reasonable.</p>
+                        <p><measure type="indexNo">26348-18-12-906</measure></p>
+                    </div> <cols n="1"/>
                     <cb n="2"/>
                     <div type="advert" xml:id="deg-ad-icc01">
                         <head>Ind, Coope &amp; Co., Ltd.</head>
@@ -1373,8 +1377,16 @@
                         <p>26045-80-9-5</p>
                     </div>
                     <!-- TODO Hotel Du Nil, Cairo -->
-                    <!-- TODO The national Residence, Cairo -->
-                    <cols n="2"/>
+                    <div type="advert" xml:id="deg-ad-nrc01">
+                        <head>The National Residence, Cairo.</head>
+                        <p>One of the finest and most up-to-date residences.</p>
+                        <p>Rooms furnished and not furnished. With or without board. Situated in the Sharia
+                            Soliman Pasha and Sharia Dair-el-Binat, Ismailieh quarter. High class cuisine,
+                            electric light throughout and lift. Rooms and apartments to suit every one. For
+                            further particulars apply to</p>
+                        <p>Chas. Bauer, General Manager, Cairo,</p>
+                        <p><measure type="indexNo">26515-30-11-905</measure></p>
+                    </div><cols n="2"/>
                     <cb n="1"/>
                     <div type="advert" xml:id="deg-ad-ssw01">
                         <head>Siemens Schukert Werke</head>
@@ -1415,10 +1427,10 @@
                     <cb n="3"/>
                     <!-- TODO Comptoir National d'Escompte -->
                     <cols n="2"/>
-                </div>
+                
                 <cb n="1"/>
-                <div type="section" scope="weather">
-                    <head>DAILY WEATHER REPORT</head>
+                <div type="section" feature="weather">
+            <head>DAILY WEATHER REPORT</head>
                     <p>OBSERVATIONS BY THE SURVEY DEPARTMENT.</p>
                     <div type="subsection">
                         <table rend="frame" xml:id="AlexandriaWeather">
@@ -1622,7 +1634,7 @@
                         </table>
                     </div>
                 </div>
-                <div type="section" element="comingEvents"><head>CALENDAR OF COMING Events.</head>
+                <div type="section" feature="comingEvents"><head>CALENDAR OF COMING Events.</head>
                     <div type="subsection">
                         <head>Alexandria</head>
                         <head type="sub">October</head>
@@ -1702,7 +1714,7 @@
                     <p>DELIGHTFUL SITUATION - SEA BREEZES.</p>
                 </div>
                 <cb n="2"/>
-                <div type="item" scope="newspaper">
+                <div type="item">
                     <head>THE EGYPTIAN GAZETTE.</head>
                     <p>SUBSCRIPTIONS.—Alexandria, Cairo, and the Interior of Egypt (including
                         delivery in Alexandria or postage to subscriber’s address) P.T. 231½ per
@@ -1722,7 +1734,7 @@
                     <p>THE “EGYPTIAN GAZETTE” IS PRINTED ON PAPER MANUFACTURED AND SUPPLIED BY THE
                         LONDON PAPER MILLS Co., LIMITED (SALES OFFICE: 27, CANNON STREET, E.C.) </p>
                 </div>
-                <div type="item" scope="newspaper">
+                <div type="item">
                     <p>The Egyptian Gazette </p>
                     <p>An English Daily Newspaper, Established in 1880. </p>
                     <p>Editor &amp; Manager: R. Snelling. </p>
@@ -1733,9 +1745,9 @@
             </div>
             <div type="page" n="3">
                 <cb n="1"/>
-                <div type="section" element="wire">
+                <div type="section" feature="wire">
                     <head>PORTE AND POWERS.</head>
-                    <div type="article">
+                    <div type="item">
                         <head>MACEDONIAN FINANCIAL CONTROL.</head>
                         <head type="sub">SULTAN'S INSTRUCT IONS</head>
                         <dateline>Constantinople. October 3.</dateline>
@@ -1747,7 +1759,7 @@
                             Salonika.</p>
                         <byline>(R)</byline>
                     </div>
-                    <div type="article">
+                    <div type="item">
                         <head>JAPANS COMMERCE INTRODUCTION OF FOREIGN CAPITAL Tokyo October
                             3.</head>
                         <p>At the meeting of the Associated Chambers of Commerce here the Minister
@@ -1757,7 +1769,7 @@
                             do their utmost, for the development of foreign trade.</p>
                         <byline>(Reuter)</byline>
                     </div>
-                    <div type="article">
+                    <div type="item">
                         <head>another imperial ukase</head>
                         <head>ELECTION OF NATIONAL ASSEMBLY.</head>
                         <dateline><placeName>St.</placeName> Petersburg, October 3.</dateline>
@@ -1765,13 +1777,13 @@
                             for the National Assembly.</p>
                         <byline>(Reuter)</byline>
                     </div>
-                    <div type="article">
+                    <div type="item">
                         <head>FINNISH REVOLT.</head>
                         <p><placeName>St. Petersburg</placeName>, October 3. Depots of arms and
                             munitions are continually being found in Finland.</p>
                         <byline>(Reuter)</byline>
                     </div>
-                    <div type="article">
+                    <div type="item">
                         <head>GERMANY AND China.</head>
                         <head>THE COMMERCIAL TREATY.</head>
                         <dateline><placeName>Berlin</placeName>, October 3.</dateline>
@@ -1780,21 +1792,21 @@
                             begin to morrow.</p>
                         <byline>(Reuter)</byline>
                     </div>
-                    <div type="article">
+                    <div type="item">
                         <head>THE GERMANS AND CZECHS. POLICE QUASH DEMONSTRATION.</head>
                         <dateline><placeName>Brunn</placeName>, October 3.</dateline>
                         <p>In consequence of disputes between the Germans and Czechs the troops
                             dispersed the demonstrators.</p>
                         <byline>(Havas)</byline>
                     </div>
-                    <div type="article">
+                    <div type="item">
                         <head>STRIKES IN BERLIN.</head>
                         <dateline><placeName>Berlin</placeName>, October 3.</dateline>
                         <p>Thirty-eight thousand electricians have gone on strike. The tramway
                             service is suffering.</p>
                         <byline>(Havas)</byline>
                     </div>
-                    <div type="article">
+                    <div type="item">
                         <head>THE MANILA HURRICANE. TWO STEAMERS LOST.</head>
                         <dateline><placeName>Manila</placeName>, October 3.</dateline>
                         <p>Two inter-insular steamers were lost in the recent hurricane in the
@@ -1802,7 +1814,7 @@
                             plantations and warehouses is estimated at a million sterling. </p>
                         <byline>(Reuter)</byline>
                     </div>
-                    <div type="article">
+                    <div type="item">
                         <head>COUNT BRAZZA S FUNERAL.</head>
                         <dateline><placeName><placeName ref="https://www.wikidata.org/wiki/Q90"
                                     >Paris</placeName></placeName>, October 3.</dateline>
@@ -1810,7 +1822,7 @@
                             attended.</p>
                         <byline>(Havas)</byline>
                     </div>
-                    <div type="article">
+                    <div type="item">
                         <head>DEATH OF A POET.</head>
                         <div type="item">
                             <dateline><placeName ref="https://www.wikidata.org/wiki/Q90"
@@ -1835,7 +1847,7 @@
                     </div>
                 </div>
                 <cb n="2"/>
-                <div type="section" element="local">
+                <div type="section" feature="local">
                     <head>LOCAL AND GENERAL.</head>
                     <div type="item">
                         <p>The Austro-Hangarian diplomatic agency has transferred its offices to
@@ -1861,7 +1873,7 @@
                             row represented by Messrs. Gustave Jullien and Cesar Giordano who will
                             sign conjointly as agents.</p>
                     </div>
-                    <div type="section" element="councilMinisters">
+                    <div type="section" feature="councilMinisters">
                     <head>COUNCIL OF MINISters.</head>
                         <p>The Council of Ministers will meet on Monday next. Among the agenda of
                             the day will be the appointment of a successor to Hassan Bey Wassif,
@@ -1916,7 +1928,7 @@
                             at the Sultan's private theatre in Yildiz Kiosk.</p>
                     </div>
                 </div>
-                <div type="section" element="social">
+                <div type="section" feature="social">
                     <head>PERSONAL AND SOCIAL.</head>
 
                     <p>It is reported that H.H. the Khedive will visit the Mansourah Agricultural
@@ -1984,7 +1996,7 @@
                             ref="https://www.wikidata.org/wiki/Q134509">Port Said</placeName>.</p>
 
                 </div>
-                <div type="article">
+                <div type="item">
                     <head>THE PHARMACY REGULATIONS. !</head>
                     <p>A serions infringement of the pharmacy regulations, which have now been in
                         operation for a little over a year is reported from <placeName
@@ -2004,7 +2016,7 @@
                         adjournment of the case for two months to enable him to prove his foreign
                         nationality.</p>
                 </div>
-                <div type="article">
+                <div type="item">
                     <head>SERIOUS RAILWAY ACCIDENT.</head>
                     <p>A serions collision occured yesterday near Kassassin station between the
                         passenger train which left Ismailia at 6.20 a.m. for Benha and another
@@ -2016,7 +2028,7 @@
                         commandant of police, the substitute of the Parquet, and a medical officer.
                         Most of the injured passengers were taken to the hospital at Ismailia.</p>
                 </div>
-                <div type="article">
+                <div type="item">
                     <head>CAIRO DRAINAGE.</head>
                     <p>The Sanitary Administration has decided to extend the drains for rain water
                         which were commenced about three years ago, and is at present engaged upon
@@ -2031,7 +2043,7 @@
                         being constructed, and which greatly simplified the task of the engineers
                         and contractors entrusted with the work.</p>
                 </div>
-                <div type="article">
+                <div type="item">
                     <head>THE NUBARIEH CANAL.</head>
                     <p>An official communication was sent yesterday to the Press bureau whereby the
                         Ministry of Public Works notifies for public informaiton that the statement
@@ -2047,7 +2059,7 @@
                         waste lands should be suspended until the question of a farther supply of
                         water for irrigation purposes has been finally settled.</p>
                 </div>
-                <div type="section" element="steamerMovements"><head>STEAMER MOVEMENTS.</head>
+                <div type="section" feature="steamerMovements"><head>STEAMER MOVEMENTS.</head>
                     <p>The S.S. Persian Prince from Antwerp, left <placeName
                             ref="https://www.wikidata.org/wiki/Q233">Malta</placeName> yesterday
                         with a general cargo and is due to arrive at <placeName
@@ -2072,7 +2084,7 @@
                     <p>TRIAL Lesson Free.</p>
                 </div>
                 <cb n="4"/>
-                <div type="section" element="notesPortSaid">
+                <div type="section" feature="notesPortSaid">
                     <head>NOTES FROM PORT SAID.</head>
                     <div type="item">
                         <head>THE CHATHAM WRECKAGE</head>
@@ -2134,13 +2146,13 @@
                             the attention of the engineers staff, and it will probably be some time
                             before this unfortunate craft sees the full light of day.</p>
                     </div>
-                    <div type="article">
+                    <div type="item">
                         <head>THE AUSTRIAN CONSUL.</head>
                         <p>The Austrian Lloyd Africa which arrived to-day had on board the Austrian
                             Consul, who returns after three month’s leave.</p>
                     </div>
                 </div>
-                <div type="article">
+                <div type="item">
                     <head>THE DANGERS OF THE RED SEA.</head>
                     <p>A Board of Trade inquiry was concluded at Newosa le-on-Tyne on Saturday the
                         16th ult. into the circumstances attending the stranding of the steam ship
@@ -2165,7 +2177,7 @@
                         Page) and the officers were not in fault</p>
                 </div>
                 <cb n="5"/>
-                <div type="article">
+                <div type="item">
                     <head>ARCHÆOLOGY IN Turkey. A SHORT REVIEW</head>
                     <byline>(From a Constantinople Correspondent).</byline>
                     <p>( Concluded. )</p>
@@ -2311,9 +2323,9 @@
                         by death and reunited in the next life, but all of these are of very rough
                         workmanship sod very hastily sculptured.</p>
                 </div>
-                <div type="section" element="sport">
+                <div type="section" feature="sport">
                     <head>SPORT AND PLAY.</head>
-                    <div type="article">
+                    <div type="item">
                         <!-- TODO SPORTS TABLE -->
                         <head>CRICKET.</head>
                         <head type="sub">E. T. C. SENIORS v. JUNIORS.</head>
@@ -2369,7 +2381,7 @@
             </div>
             <div type="page" n="4">
                 <head>THE Egyptian GAZETTE, WEDNESDAY OCTOBER 4, 1905</head>
-                <div type="article">
+                <div type="item">
                     <head><persName ref="http://www.oxforddnb.com/view/article/39736"
                             >Saltin</persName> PASHA &amp; THE SUDAN.</head>
                     <p>awakened, like the fellaheen in Upper <placeName
@@ -2552,7 +2564,7 @@
                         can obtain farther particulars from our Loudon office, 36, New Broad-street,
                         which acts as agents to the Chamber.</p>
                 </div>
-                <div type="article">
+                <div type="item">
                     <head>Anglo-American Nile Steiners &amp; HOTEL COMPANY. </head>
                     <p>After transport OF goods between <placeName
                             ref="https://www.wikidata.org/wiki/Q87">Alexandria</placeName> &amp;
@@ -2564,7 +2576,7 @@
                         Sterilized Tins. Keeps good IN ANY CLIMATE for MANY MONTHS. On sale almost
                         everywhere, but if any difficulty in procuring it, apply to</p>
                 </div>
-                <div type="article">
+                <div type="item">
                     <!-- TODO Replace with Add boilerplate -->
                     <p>McLAREN’S STEAM PLOUGHS BRIDGE'S NoShock J. &amp; H.,McLAREN J. &amp; F.
                         HOWARD, Bedford, England, Brass Door Plate With Mahogany Block Ready for
@@ -2573,7 +2585,7 @@
                             ref="https://www.wikidata.org/wiki/Q85">Cairo</placeName> Works,
                         Castleton, Manchester, ENGLAND. 24773.12.5</p>
                 </div>
-                <div type="article">
+                <div type="item">
                     <head>PROMISE AND FULFILMENT.</head>
                     <p>The story told of Lord <persName
                             ref="http://www.oxforddnb.com/view/article/32680">Curzon</persName>,
@@ -2593,7 +2605,7 @@
                         Cocky, I'll make you a peer.” And he did, and the present baron is the
                         second holder of the title promised by a boy and given by a statesman.</p>
                 </div>
-                <div type="article">
+                <div type="item">
                     <head>AFRICA'S FUTURE RIVIERA.</head>
                     <p>Great progress is being made in the opening up of the French Niger country.
                         The railway has been carried as far as Koulikoro, on the Niger, and a
@@ -2604,7 +2616,7 @@
                         steady improvement of the means of access may render the Niger as much a
                         winter resort as the Nile now is.</p>
                 </div>
-                <div type="article">
+                <div type="item">
                     <head>FOR SALE.</head>
                     <p>Abont 8 tons of used tents also a quantity of wood and iron, all of which can
                         be seen at the Ordonance Depot, Mustapha Barracks, where a detailed list of
@@ -2614,7 +2626,7 @@
                             ref="https://www.wikidata.org/wiki/Q85">Cairo</placeName> , so as to
                         reach him on or before the 10th October, 1905.</p>
                 </div>
-                <div type="article">
+                <div type="item">
                     <!-- TODO Figure out how to represent the byline/closer -->
                     <head>SOCIETE ANONYME DES EAUX DU CAIRE</head>
                     <p>A. Paiement de coupons.</p>
@@ -2658,12 +2670,12 @@
                             >Cairo</placeName> ,le <date when="1905-09-14">14 Septembre 1905</date>.
                         26428-6-4</dateline>
                 </div>
-                <div type="article">
+                <div type="item">
                     <head>SELLING OFF SURPLUS DRAPERY STOCK OF MAGASINS VICTORIA.</head>
                     <p>Premises lately occupied by “Papeterie Commerciale," Rue Sesostris, 3 doors
                         from Cherif Pasha Street. For particulars see</p>
                 </div>
-                <div type="article">
+                <div type="item">
                     <head>BUTTER-SCOTCH</head>
                     <p>(The Celebrated Sweet for Children).</p>
                     <p>Messrs. Tanured Bonniui &amp; Co.,</p>
@@ -2671,19 +2683,19 @@
                     <p>Manufactory: <placeName ref="https://www.wikidata.org/wiki/Q84"
                             >London</placeName>. England.</p>
                 </div>
-                <div type="article">
+                <div type="item">
                     <head>BON-ACCORD</head>
                     <p>Centrifugal Pumps,</p>
                     <p>Patent Friction Clutches.</p>
                 </div>
-                <div type="article">
+                <div type="item">
                     <head><placeName ref="https://www.wikidata.org/wiki/Q85">Cairo</placeName> &amp;
                         Alexander</head>
                     <p>NB.—This Whisky is the same as supplied to the Bed Cross Society, Loudon, for
                         use by the invalided troops and hospitals in 8outh Africa, to the House of
                         Lords and House of Commons.</p>
                 </div>
-                <div type="article">
+                <div type="item">
                     <!-- TODO Replace with Add boilerplate -->
                     <head>THE VAL DE TRAVERS ASPHALTE PAVING COMPANY, LIMITED.</head>
                 </div>
