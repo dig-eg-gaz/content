@@ -13,7 +13,9 @@
             </titleStmt>
             <editionStmt>
                 <edition>
-                    <date when="2016-10-04">October 4th, 2016</date><gloss>2</gloss></edition>
+                    <date when="2016-10-04">October 4th, 2016</date><gloss>2</gloss>
+                    <!-- mmeb cantars unique -->
+                </edition>
             </editionStmt>
             <publicationStmt>
                 <publisher>FSU University Libraries</publisher>
@@ -29,9 +31,10 @@
     </teiHeader>
     <text>
         <body>
+            <pb n="1"/>
             <div type="page" n="1">
                 <head>Page 1</head>
-                <div type="item" scope="maritime">
+                <div type="item">
                     <head>Peninsular and Oriental S. N. Company.</head>
                     <p>Berths can be definitely engaged as if the voyage were commencing at Port
                         Said. Plans can be seen at the Offices of the Company's Agents.</p>
@@ -1290,6 +1293,7 @@
                     <p>Agents for Egypt: HEWAT &amp; Co., Alexandria.</p>
                 </div>
             </div>
+            <pb n="2"/>
             <div type="page" n="2">
                 <head>Page 2</head>
                 <div type="advert">
@@ -1453,8 +1457,8 @@
                     <p>It is the purest Soap going.</p>
                     <p>Soap</p>
                 </div>
-                <div type="section" scope="weather">
-                    <head>DAILY WEATHER REPORT</head>
+                <div type="section" feature="weather">
+            <head>DAILY WEATHER REPORT</head>
                     <p>OBSERVATIONS BY THE SURVEY DEPARTMENT.</p>
                     <div type="subsection">
                         <table rend="frame" xml:id="AlexandriaWeather">
@@ -1518,10 +1522,10 @@
                 <div type="section">
                     <head>The Egyptian Gazette</head>
                     <p>An English Daily Newspaper, Established 1880,</p>
-                    <p>Editor &amp; Manager : R Snelling. Price: One Plastre Tariff.</p>
+                    <p>Editor &amp; Manager : R Snelling. Price: One Plastre Tariff.</p><dateline>SATURDAY, SEPTEMBER 23, 1905.</dateline>
                 </div>
-                <div type="article" scope="international">
-                    <dateline>SATURDAY, SEPTEMBER 23, 1905.</dateline>
+                <div type="item">
+                    
                     <head>THE BALKAN QUESTION.</head>
                     <p>It was once remarked that the population of the Balkan countries was made up
                         of men with rifles and without ideas, and men with ideas And without rifles,
@@ -1563,7 +1567,7 @@
                         sympathy of the British newspaper reader, and in five years’ time John Ball
                         may have once more turned phil-Hellene. </p>
                 </div>
-                <div type="item" scope="calendar">
+                <div type="item" xml:id="deg-el-cotw01">
                     <head>CALENDAR OF THE WEEK.</head>
                     <p>(Coptic and Mohamedan.)</p>
                     <p>San. 24 The San in Libra. Autumn commences.</p>
@@ -1575,9 +1579,10 @@
                     <p>Sat. 30 Sow barley (Upper Egypt) Observe the signs of the weather,</p>
                 </div>
             </div>
+            <pb n="3"/>
             <div type="page" n="3">
                 <cb n="1"/>
-                <div type="section" element="wire">
+                <div type="section" feature="wire">
                     <div type="item">
                         <head>MOROCCAN CONFERENCE.</head>
                         <head>GERMAN OBJECTIONS.</head>
@@ -1663,7 +1668,7 @@
                     </div>
                 </div>
                 <cb n="2"/>
-                <div type="section" element="local">
+                <div type="section" feature="local">
                     <head>LOCAL AND GENERAL.</head>
                     <div type="item">
                         <head>All Saints’ Church, Cairo</head>
@@ -1743,7 +1748,7 @@
                             object deserves. </p>
                     </div>
                 </div>
-                <div type="section" element="social">
+                <div type="section" feature="social">
                     <head>PERSONAL AND SOCIAL.</head>
                     <p>H.H. the Khedive leaves Constantinople on Monday and is expected to arrive in
                         Alexandria next Thursday. </p>
@@ -1847,14 +1852,14 @@
                     <p>4-Fantaisie-Fedora-Giordano. </p>
                     <p>5—Ballet-Old-Massenet. </p>
                 </div>
-                <div type="section" element="steamerMovements"><head>STEAMER MOVEMENTS.</head>
+                <div type="section" feature="steamerMovements"><head>STEAMER MOVEMENTS.</head>
                     <p>The S.S. Persian Prince left Antwerp yesterday with passengers and general
                         cargo and is due to arrive at Alexandria on or about October 10. </p>
                     <p>The express Khedivial mail steamship Ismailia will leave Alexandria at 4 p.m.
                         on Wednesday next for Pirseus, Smyrna, Mity-ene, and Constantinople, </p>
                 </div>
                 <cb n="4"/>
-                <div type="section" element="notesPortSaid">
+                <div type="section" feature="notesPortSaid">
                     <head>NOTES FROM PORT SAID.</head>
                     <head>CHATHAM TO BE BLOWN UP.</head>
                     <p>(From our Correspondent.) </p>
@@ -1942,7 +1947,7 @@
                     <p>F. MICALLEF, Sole Agent, 11 Bab Midan, Alexandria</p>
                 </div>
                 <cb n="5"/>
-                <div type="section" element="notesConstantinople"><head>CONSTANTINOPLE NOTES.</head>
+                <div type="section" feature="notesConstantinople"><head>CONSTANTINOPLE NOTES.</head>
                     <head>H. H. THE KHEDIVE.</head>
                     <byline>(From our Correspondent).</byline>
                     <p>Constantinople, September 18. H. H. the Khedive while at Vienna paid a visit
@@ -1979,7 +1984,7 @@
                         connected with the pilgrimage to the Moslem Holy Places. He was accompanied
                         by Mr. T,H. Parker. </p>
                 </div>
-                <div type="section" element="letters">
+                <div type="section" feature="letters">
                     <head>LETTER TO THE EDITOR.</head>
                     <p>We do not hold ourselves responsible for the opinions expressed by our
                         correspondents, but we wish, in a spirit of fair play to a11, to permit —
@@ -2016,7 +2021,7 @@
                         <dateline>Assiout 21st Sept. </dateline>
                     </div>
                 </div>
-                <div type="section" element="passList">
+                <div type="section" feature="passList">
                     <head>PASSENGER LIST.</head>
                     <head>DEPARTURES.</head>
                     <p>Le paquebot Portugal, des Messageries Ma ritimes parti hier pour Marseille,
@@ -2037,7 +2042,7 @@
                     <p>G. AQUILINA, Proprieter.</p>
                 </div>
                 <cb n="6"/>
-                <div type="section" xml:lang="fr" element="chroniqueFinanciere">
+                <div type="section" xml:lang="fr" feature="chroniqueFinanciere">
                     <head>CHRONIQUE FINANCIERE</head>
                     <p>La semaine qui vient de s’éoonler a été l’nne les pins oalmes qae noas ayons
                         en à enregistrer depuis quelque temps. Las grosses valeurs en particulier,
@@ -2107,7 +2112,7 @@
                         aux fellahs après leur amélioration. </p>
                     <p>Alexandrie, le 22 Septembre 1905. </p>
                 </div>
-                <div type="section" xml:lang="fr" element="bulletinBourse"><head>BULLETIN DE LA BOURSE</head>
+                <div type="section" xml:lang="fr" feature="bulletinBourse"><head>BULLETIN DE LA BOURSE</head>
                     <p>(aujuord'hui a midi et demie)</p>
                     <p>La baisse et rinaotion ne font que s'aoœn' tner. Tout as lea fluotuationa de
                         la oote indi* qnent an nouveau recul. </p>
@@ -2127,8 +2132,9 @@
                     <p>Après avoir ouvert à 55, ks 8oercriss çef réactionné jusqu'à 68</p>
                 </div>
             </div>
+            <pb n="4"/>
             <div type="page" n="4">
-                <div type="article" scope="international">
+                <div type="item">
                     <head>THE ARMY AND ITS UNIFORM.</head>
                     <p>Mr. J.H.M. Abbott, writing in the “Spectator” on “How it Strikes an
                         Australian,” says that the English Army on a peace footing seems to be
@@ -2162,7 +2168,7 @@
                         become what from the quality of its material it should never be—a jest and a
                         byword. </p>
                 </div>
-                <div type="article" scope="international">
+                <div type="item">
                     <head>ROMAN VILLAGE DISCOVERED.</head>
                     <p>Recent excavations at the Little Wellington Wood, near Watch field, Berks,
                         have revealed traces of an old Roman village. A well, fifteen feet in depth,
@@ -2181,7 +2187,7 @@
                         Constantine the Great, who accompanied him in this important British
                         campaign. </p>
                 </div>
-                <div type="article" scope="international">
+                <div type="item">
                     <head>THE LADY AND THE TELEPHONE.</head>
                     <p>The lady and the telephone have been so Intimately connected in recent
                         history that one hears with something of a pang of the threatened severance
@@ -2206,7 +2212,7 @@
                         considered ungallant to specify, we shall watch her departure with dry eyes.
                     </p>
                 </div>
-                <div type="article" scope="international">
+                <div type="item">
                     <head>CAPTAIN COOK RELIC.</head>
                     <p>There has just been discovered at Whitby, his birthplace, a relic of one of
                         Captain Cook’s voyages, in the shape of a hog’s tusk, mounted with a piece
@@ -2215,8 +2221,8 @@
                         Cook’s men.” On the top of the ferrule are the words, “Bell metal from York
                         Minister, burnt May 20, 1840.” </p>
                 </div>
-                <div type="article" scope="international">
-                    <p>A GREAT DETECTIVE.</p>
+                <div type="item">
+                    <head>A GREAT DETECTIVE.</head>
                     <p>One of the Paris papers states that Vidocq was a myth, or, rather, that he
                         had never been chief of the Sûreté, Géneralé. This statement on the eve of
                         the production of a Vidocq play, by Emile Bergerat, in Paris, aroused a
@@ -2246,7 +2252,7 @@
                         there not one small hitch. The modern criminal has become scientific too.
                     </p>
                 </div>
-                <div type="article" scope="international">
+                <div type="item">
                     <head>EGYPTIAN MINES.</head>
                     <p>Highly encouraging developments are taking place in the Semna nine of the
                         Fatira Company—an offshoot of the Egyptian Mines Exploration Company. In the
@@ -2262,7 +2268,7 @@
                         its interest in the producing Um Rus being considerable. No small wonder
                         bayers are being attracted by the present low price of the shares. </p>
                 </div>
-                <div type="section" element="comingEvents"><head>CALENDAR OF COMING Events.</head>
+                <div type="section" feature="comingEvents"><head>CALENDAR OF COMING Events.</head>
                     <p>ALEXANDRIA.</p>
                     <p>September.</p>
                     <p>Wed. 20 Mex. Prinea’s Restaurant des Bains Roumanian orchestra, every
@@ -2287,7 +2293,7 @@
                     <p>October.</p>
                     <p>Sun. 1 Ambassadeurs Theatre. Grand Festival. (For Calabrian Sufferers).</p>
                 </div>
-                <div type="article">
+                <div type="item">
                     <head>EASTERN TELEGRAPH CO. LTD.</head>
                     <p>AVERAGE TIME occupied in transmission of Egyptian telegrams from England to
                         Alexandria on <date when="1905-07-11">Wednesday, 20st September,
@@ -2331,7 +2337,7 @@
                     </table>
                     <p>Delay on provincial Alex. Due faulty land-lines.</p>
                 </div>
-                <div type="item" scope="financial">
+                <div type="item">
                     <head>LONDON COMMERCIAL REPORT</head>
                     <head>SEPTEMBER SALES.</head>
                     <head>MOTHER OF PEARL.</head>
@@ -2358,7 +2364,7 @@
                         reserve, at 17s to 18s, 54 cases good garblings being sold privately, price
                         not reported. </p>
                 </div>
-                <div type="item" scope="financial">
+                <div type="item" feature="cottonMarket">
                     <head>THE COTTON MARKET.</head>
                     <p>Kearsley and Cunningham's Weekly Report.</p>
                     <p>Liverpool, September 14.</p>
@@ -2383,7 +2389,7 @@
                         5.61 Sep./Oct 5.46 Jan./Feb. 5.56 May/June 5.62 Oct/Nov. 5.49 Feb./Mar. 5.58
                         June/July 5.63 Nov./Dec. 5.52 Mar./Apl. 5.60 July/Aug. 5.63 </p>
                 </div>
-                <div type="article" scope="international">
+                <div type="item">
                     <head>KIDNEY DISEASE.</head>
                     <head>TAKES YOU UNAWARES.</head>
                     <p>Until kidney disease has reached a serious stage, it seldom gives any more
@@ -2424,7 +2430,7 @@
                     <p>Next term begins 27 Sept. </p>
                     <p>Apply to the Director. 26451-10-1</p>
                 </div>
-                <div type="item" scope="financial">
+                <div type="item">
                     <head>Soicete Internationale des Employés</head>
                     <head>D'ALEXANDRIE</head>
                     <p><hi rend="bold">Siège Social : Rue Mosquée Attarine No. 21 BUREAU DE
@@ -2547,6 +2553,7 @@
                     <p>TOTTENHAM COURT ROAD LONDON ENGLAND</p>
                 </div>
             </div>
+            <pb n="5"/>
             <div type="page" n="5">
                 <head>Page 5</head>
                 <div type="advert" xml:id="deg-ad-tas01">
@@ -2563,7 +2570,7 @@
                     <p>Cairo Show Rooms: Rond-Point Soliman Pacha, opposite Savoy Hotel.</p>
                     <p>25366--31-1-906</p>
                 </div>
-                <div type="section" element="mattersMoment">
+                <div type="section" feature="homePapers">
                     <head>MATTERS OF MOMENT. PITH OF THE PRESS COMMENTS.</head>
                     <head>JAPANESE PEACE DISTURBANCES.</head>
                     <p><hi rend="bold">“Times.”</hi></p>
@@ -2586,7 +2593,7 @@
                         expansion of her foreign trade. Here, then, we have the first big movement
                         to take advantage of the opportunities afforded by the peace. </p>
                 </div>
-                <div type="article" scope="international">
+                <div type="item">
                     <head>GREAT PROSPERITY PREDICTED. </head>
                     <p><hi rend="bold">“Telegraph.”</hi></p>
                     <p>Even during the war the industries of Japan have hardly been prejudicially
@@ -2636,7 +2643,7 @@
                         depended on to bring to a quick ending the underground schemes of party
                         politicians. </p>
                 </div>
-                <div type="article" scope="international">
+                <div type="item">
                     <head>THE SCANDINAVIAN CRISIS.</head>
                     <p><hi rend="bold">“Daily News”.</hi></p>
                     <p>It is often urged that the aspirations of the small nations threaten the
@@ -2708,7 +2715,7 @@
                 <div type="advert">
                     <head>FREE TO CYCLISTS</head>
                 </div>
-                <div type="article" scope="international">
+                <div type="item">
                     <head>KISHENEFF.</head>
                     <p>Kisheneff is the capital of Bessarabia, a Russian province bordering upon
                         Hungary. We reached it by a branch railway line tram a small station on the
@@ -2837,7 +2844,7 @@
                         Egyptian experience. </p>
                     <p>26450-3*-2</p>
                 </div>
-                <div type="section" element="army">
+                <div type="section" feature="army">
                     <head>ARMY AND NAVY.</head>
                     <byline>(From Our Correspondent).</byline>
                     <p>London, September 15. Captain M. J. Hamilton, Lancashire Fusi-lier, has been
@@ -2890,7 +2897,7 @@
                     <p>K. R. Khosla, Manager,</p>
                     <p>Punjab Cooperative Bank, Limited, 26452-4-2 Rawal Pindi (India),</p>
                 </div>
-                <div type="article" scope="announcements">
+                <div type="item">
                     <head>Administration des Chemins de for de l’Etat</head>
                     <p><hi rend="bold"> À VIS</hi></p>
                     <p><hi rend="bold">Transport des Chiens sur les lignes</hi></p>
@@ -2905,7 +2912,7 @@
                         prochain. </p>
                     <p>Le Game, le 29 Septembre 1906. 26458-1</p>
                 </div>
-                <div type="item" scope="announcements">
+                <div type="item">
                     <head>KHEDIVIAL MAIL STEAMSHIP AND GRAVING DOCK COMPANY LIMITED.</head>
                     <p>Holders of 5$ % Cemulative Preference BhaSh Warrants *to Bearer are hereby
                         iafospl that Coupon No. 14 will be payable on tad after the 80 September
@@ -3561,6 +3568,7 @@
                     </table>
                 </div>
             </div>
+            <pb n="6"/>
             <div type="page" n="6">
                 <head>Page 6</head>
                 <div type="advert" xml:id="deg-ad-inv01">
@@ -3582,7 +3590,7 @@
                     <p>LONDON &amp; PARIS EXCHANGE LIMITED, GENERAL BANKERS. BASILDON HOUSE, BANK,
                         LONDON, E.C. </p>
                 </div>
-                <div type="article" scope="financial">
+                <div type="item">
                     <head>REVUE COMMERCIALE</head>
                     <p><hi rend="italic">Coton</hi>. La matinée do samedi n’a rien eu
                         d’extraordinaire : commencée calme, elle s’est raffenn:e par la suite, pour
@@ -3678,7 +3686,7 @@
                         prêts à charger; la semaine prochaine nous offrira une compensation. </p>
                     <p>Alexandrie, le 22 Septembre 1905.</p>
                 </div>
-                <div type="article" scope="financial">
+                <div type="item">
                     <head>AUX SUCRERIES</head>
                     <p>Le travail des usines recommencera dans quelques semaines.</p>
                     <p>Les administrateurs provisoire? doivent s’y prendre dès à présent pour
@@ -3727,7 +3735,7 @@
                         Nom m »aurons bientôt, </p>
                     <p>A. S.</p>
                 </div>
-                <div type="section" xml:lang="fr" element="mouvementMaritime">
+                <div type="section" xml:lang="fr" feature="shippingMovements">
                     <head>MOUVEMENT MARITIME</head>
                     <head type="sub">DU PORT D’ALEXANDRIE</head>
                     <p><hi rend="bold">ARRIVEES</hi></p>
@@ -3744,7 +3752,7 @@
                     <p>Port-Saïd ; vap. ital. Boaforo, oap. Milano. </p>
                     <p>Candie ; vap. hell. Byzantion, oap. Mavromatis.</p>
                 </div>
-                <div type="article" xml:id="deg-el-stsh01">
+                <div type="item" xml:id="deg-el-stsh01">
                     <head>STOCKS AND SHARES</head>
                     <p>
                         <hi rend="italic">Closing Prices, to-day at 1 p.m.</hi>
@@ -4072,7 +4080,7 @@
                         and purchase of Stocks and Shares, on the local Bourse and also on the
                             <orgName>London Stock Exchange</orgName>.</p>
                 </div>
-                <div type="article" scope="financial" xml:lang="fr">
+                <div type="item" xml:lang="fr">
                     <head>BOURSE KHEDIVIALE</head>
                     <p>CONTRATS</p>
                     <p>Fluctuations de 9h.30 à 1h. p.m.</p>
@@ -4100,7 +4108,7 @@
                     <p>Fèves.— Marche nul.</p>
                     <p>Bourse Khédviale, le <date when="1905-07-11">22 septembre 1905</date>.</p>
                 </div>
-                <div type="article" scope="financial" xml:lang="fr">
+                <div type="item" xml:lang="fr">
                     <head>COTONS</head>
                     <p>copie de la dépêche</p>
                     <p>DE L'ALEXANDRIA GENERAL PRODUCE ASSOCIATION</p>
@@ -4153,7 +4161,7 @@
                     </table>
                     <p>Marché Ferme </p>
                 </div>
-                <div type="section" scope="financial" xml:lang="fr" xml:id="deg-el-mmeb01">
+                <div type="section" xml:lang="fr" xml:id="deg-el-mmeb01">
                     <head>MARCHE DE MINET-EL-BASSAL</head>
                     <dateline><date when="1905-07-12">23 septembre 1905</date>.—(11h.55
                         a.m.)</dateline>
@@ -4510,7 +4518,7 @@
                         <p>Filiere de ce matin, ard. 4.000.</p>
                     </div>
                 </div>
-                <div type="article" xml:lang="fr">
+                <div type="item" xml:lang="fr">
                     <head>Exterieur</head>
                     <p>Dépêches particulières du <date when="1905-07-11">22 septembre
                         1905</date></p>
@@ -4542,7 +4550,7 @@
                     <p>Contre même jour, l’année dernière, balles <measure unit="balles"
                             >43,000</measure></p>
                 </div>
-                <div type="article">
+                <div type="item">
                     <head>PRIMES DES CONTRATS</head>
                     <table cols="6">
                         <row>
@@ -4604,7 +4612,7 @@
                         </row>
                     </table>
                 </div>
-                <div type="article">
+                <div type="item">
                     <head>REUTER'S TELEGRAMS un</head>
                     <head type="sub">CLOSING REPORTS</head>
                     <table cols="2">
@@ -4877,7 +4885,7 @@
                         </row>
                     </table>
                 </div>
-                <div type="article" xml:lang="fr">
+                <div type="item" xml:lang="fr">
                     <head>TELEGRAMME HAVAS</head>
                     <dateline>BOURSE du <date when="1905-07-11">22 septembre 1905</date></dateline>
                     <p>COURS DES VALEURS A TERMS, CLOTURE</p>
@@ -4978,7 +4986,7 @@
                             <measure>4</measure>
                     </p>
                 </div>
-                <div type="article" xml:lang="fr" xml:id="deg-el-adcm01">
+                <div type="item" xml:lang="fr" xml:id="deg-el-adcm01">
                     <head>ASSOCIATION DES COURTIERS EN MARCHANISES</head>
                     <p>Le comité de l'Association des Courtiers en Marchandises a fixé comme suit,
                         pour ce jour, le prix de compensation ordinaire : </p>
@@ -5214,7 +5222,7 @@
                         </row>
                     </table>
                 </div>
-                <div type="article">
+                <div type="item">
                     <head>TO-DAY’S EXCHANGE QUOTATIONS</head>
                     <table rows="14" cols="3">
                         <row role="label">
@@ -5290,7 +5298,7 @@
                     </table>
                     <p>*Less one per mille brokerage.</p>
                 </div>
-                <div type="article">
+                <div type="item" xml:id="deg-el-shli01">
                     <head>SHARE LIST</head>
                     <p>Issued by the “Association des Courtiers en Valeurs d'Alexandrie”.</p>
                     <p>Clôture d’aujourd'hui à 12h.30 p.m.</p>
@@ -5563,7 +5571,7 @@
                         </row>
                     </table>
                 </div>
-                <div type="item" scope="financial">
+                <div type="item">
                     <head>ASSOCIATION DES COURTIERS EN MARCHANDISES</head>
                     <p rend="italic">(Service special)</p>
                     <p>Depeche D'Ouverture Liverpool, 10h. a.m.</p>
@@ -5577,7 +5585,7 @@
                     <p>Futurs: oct-nov: 5.71</p>
                     <p>jan.-fev.:5.81</p>
                 </div>
-                <div type="article">
+                <div type="item">
                     <head>DERNIERE HEURE</head>
                     <p>(Clôture de la Bourse Khédiviale 1h. p.m.) </p>
                     <p>Cours de l’Association des Courtiers en Marchandises </p>
@@ -5638,6 +5646,7 @@
             </div>
 
 
+            <pb n="7"/>
             <div type="page" n="7">
                 <head>Page 7</head>
 
@@ -5662,7 +5671,7 @@
                     <p>RELIABLE BRITISH GOODS.</p>
                 </div>
 
-                <div type="section" element="londonLetter">
+                <div type="section" feature="londonLetter">
                     <head>OUR LONDON LETTER.</head>
 
                     <byline>(From Our Correspondent).</byline>
@@ -5859,7 +5868,7 @@
                         that these might have been indefinitely multiplied but for the discreet
                         withdrawal of that hotel. </p>
                 </div>
-                <div type="article" scope="international">
+                <div type="item">
                     <head>THE FUTURE WAR OFFICE.</head>
 
                     <p>Certain remnants of scaffolding still cling to the corners of the new War
@@ -5944,8 +5953,8 @@
                     <p>A. V. Thomson, Secretary for Egypt.</p>
                 </div>
 
-                <div type="advert">
-                    <head>Cheap Prepaid Advertisements</head>
+                <div type="section" feature="prepaidAdvertisements">
+                     <head>Cheap Prepaid Advertisements</head>
                     <p>Under this heading advertisements are inserted at the following rates OMd 8
                         TIMM 6 TXMK 1$ words . . . P.T. S P.T. 10 P.T. 15 80 words ... „8 „16 „84
                         Bvery 10 wwdi, \ 9 4 « beyond 30. . . J" 2 " 4 " * The address is counted.
@@ -6092,6 +6101,7 @@
 
             </div>
 
+            <pb n="8"/>
             <div type="page" n="8">
                 <head>Page 8</head>
 
@@ -6247,7 +6257,7 @@
                     <p>Poudrettes, Engrais Chimiques Organiques.</p>
                 </div>
 
-                <div type="section" scope="financial" xml:lang="fr" xml:id="deg-el-agpa01">
+                <div type="section" xml:lang="fr" xml:id="deg-el-agpa01">
                     <head>ALEXANDRIA GENERAL PRODUCE ASSOCIATION</head>
                     <head>BULLETIN HEBDOMADAIRE</head>
                     <p>No. <measure>1,041</measure></p>
@@ -7402,7 +7412,7 @@
                     </p>
                 </div>
 
-                <div type="item" scope="announcements">
+                <div type="item">
                     <p>L'EGYPTIAN GAZETTE est en vent dans les rues du Caire tous les sours a 7
                         h.80, excepte les dimanches et hours feries Le journal est aussi en vente
                         aux gares du Carie, d'Alexandrie, de Tantah, de Demmhour de Kafr-Zayet et de
