@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/dig-eg-gaz/resources/master/out/egSchema.rnc" type="application/relax-ng-compact-syntax"
 ?>
-<?xml-stylesheet type="text/xsl" href="dig-eg-gaz.xsl"?>  <TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-stylesheet type="text/xsl" href="dig-eg-gaz.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -28,6 +29,7 @@
     </teiHeader>
     <text>
         <body>
+            <pb n="1"/>
             <div type="page" n="1">
                 <head>THE EGYPTIAN GAZETTE</head>
                 <head type="sub">No. 7357] ALEXANDRIA, WEDNESDAY, NOVEMBER 29, 1905. [EIGHT PAGES
@@ -941,6 +943,7 @@
                         ainsi que de toutes opérations de Banque. 31-12-904</p>
                 </div>
             </div>
+            <pb n="2"/>
             <div type="page" n="2">
                 <cb n="1"/>
                 <div type="advert">
@@ -1408,10 +1411,11 @@
                         sacrifice, gave up his career on what he regarded as a point of duty.</p>
                 </div>
             </div>
+            <pb n="3"/>
             <div type="page" n="3">
                 <dateline>THE EGYPTIAN GAZETTE, WEDNESDAY, NOVEMBER 29 1905</dateline>
                 <cb n="1"/>
-                <div type="section" element="wire">
+                <div type="section" feature="wire">
                     <div type="item">
                         <head>RUSSIAN REVOLUTION. SERIOUS SITUATION AT SEVASTOPOL. ARMY IN
                             REVOLT.</head>
@@ -1592,7 +1596,7 @@
                         </div>
                     </div>
                 </div>
-                <div type="section" element="local">
+                <div type="section" feature="local">
                     <head>LOCAL AND GENERAL</head>
                     <div type="item">
                         <head>Sheep-pox.</head>
@@ -1696,7 +1700,8 @@
                         particularly. The Egy[tian is easily pleased, and his calm acqui- escence in
                         all that is, makes him indifferent to a cold and wet Beyram.</p>
                 </div>
-                <div type="section" element="khedive"><head>THE KHEDIVE.</head>
+                <div type="section" feature="khedive">
+                    <head>THE KHEDIVE.</head>
                     <p>H.H. the Khedive stayed at Koubbeh Palace on Sunday and Monday and came to
                         Cairo for the reception held at Abdeen yester- day at an early hour of the
                         morning. In the afternoon his Highness paid the usual Beyram visit to the
@@ -1711,7 +1716,8 @@
                         Bey Khairy expressing the Khedive's regret at the retirement of a faithful
                         servant who had done good service to the Khedivial House.</p>
                 </div>
-                <div type="section" element="councilMinisters"><head>COUNCIL OF MINISTERS.</head>
+                <div type="section" feature="councilMinisters">
+                    <head>COUNCIL OF MINISTERS.</head>
                     <p>Among the decisions taken by the Council of Ministers, which met under the
                         presidency of H.H. the Khedive on Saturday afternoon, were the retirement of
                         Rizkallah Bey Gabrial, of the State Railways Administration, the grant of
@@ -1748,11 +1754,10 @@
                 </div>
                 <div type="advert" xml:id="deg-ad-jco01">
                     <head>JOSEPH COMAS, TECHNICAL ENGINEER.</head>
-                    <p>Surveyor and Contractor in shipping. Takes<lb/>
-                        charge of Engines and Boilers. Undertakes<lb/>
-                        repairs of same, guaranteeing success. First<lb/>
-                        class references. Address: Rue el Warsha,<lb/>
-                        Maison Gabriel, ALEXANDRIA</p>
+                    <p>Surveyor and Contractor in shipping. Takes<lb/> charge of Engines and
+                        Boilers. Undertakes<lb/> repairs of same, guaranteeing success. First<lb/>
+                        class references. Address: Rue el Warsha,<lb/> Maison Gabriel,
+                        ALEXANDRIA</p>
                     <p><measure type="indexNo">26685-12A-8</measure></p>
                 </div>
                 <cb n="4"/>
@@ -1806,8 +1811,9 @@
                         includes the sum of L.E. 189,757 paid to the Egyptian War Office for the
                         maintenance of the Egyptian troops in the Sudan.</p>
                 </div>
-                <div type="section" element="notesSuakin">
-                    <head>NOTES FROM SUAKIN.</head> <byline>(FROM OUR CORRESPONDENT.)</byline>
+                <div type="section" feature="notesSuakin">
+                    <head>NOTES FROM SUAKIN.</head>
+                    <byline>(FROM OUR CORRESPONDENT.)</byline>
                     <dateline>Suakin, Nov. 22.</dateline>
                     <p>The British S.S. Afganistan (namesake of the ill fated vessel which was
                         wrecked about two years ago with the Suskin condensors) has arrived here on
@@ -1836,7 +1842,8 @@
                         to some of the deck fittings, boats, etc., and also swept overboard the deck
                         cargo.</p>
                 </div>
-                <div type="section" element="steamerMovements"><head>STEAMER MOVEMENTS.</head>
+                <div type="section" feature="steamerMovements">
+                    <head>STEAMER MOVEMENTS.</head>
                     <p>The Ellerman S.S. Avon arrived at Liver- pool on Sunday.</p>
                     <p>The Eller man S.S. Britannia sailed for Liverpool yesterday with passengers
                         and gene- ral cargo, including 4,957 bales cotton.</p>
@@ -1878,99 +1885,102 @@
                     <head>L'EAU A ALEXANDRIE</head>
                     <p>Lots o' French</p>
                 </div>
-                <div type="section" xml:lang="fr" element="bulletinBourse"><head>BULLETIN DE LA BOURSE</head>
+                <div type="section" xml:lang="fr" feature="bulletinBourse">
+                    <head>BULLETIN DE LA BOURSE</head>
                     <p>Lots o' French</p>
                 </div>
                 <cb n="6"/>
-                <div type="section" element="social"><head>PERSONAL AND SOCIAL.</head>
-                    <div type="item">
-                        <p>H.H. Prince Djemil Pasha Toursoun left for Paris on Monday.</p>
-                    </div>
-                    <div type="item">
-                        <p>H.H. Prince Fazil Ozman is staying at Shep- heard's Hotel.</p>
-                    </div>
-                    <div type="item">
-                        <p>H.E. Mustapha Pasha Fehmy is spending Beyram at Mena House.</p>
-                    </div>
-                    <div type="item">
-                        <p>There was a large number of well-known arrivals by the Hohenzoilern
-                            yesterday from Europe, including H.H. Princess Ismail, Count and
-                            Countess de Zogheb, M. and Mme N. Siradino, etc. A full list of
-                            passengers will be published to-morrow.</p>
-                    </div>
-                    <div type="item">
-                        <p>The marriage arranged between Mr. Percy Machell and Countess Victoria
-                            Glechen will take place at the Chapel Royal, St. James's Palace, on the
-                            7th December, at twelve o'clock.</p>
-                    </div>
-                    <div type="item">
-                        <p>Sir William Garstin will return to Cairo at the end of December.</p>
-                    </div>
-                    <div type="item">
-                        <p>Saba Pasha and Chitty Bey have arrived at Cairo from Alexandria.</p>
-                    </div>
-                    <div type="item">
-                        <p>M. Maspero will leave for a tour in Upper Egypt between the 8th and 10th
-                            prox.</p>
-                    </div>
-                    <div type="item">
-                        <p>Mr. Somers-Clarke, the well-known architect, is leaving for Mehimed this
-                            evening.</p>
-                    </div>
-                    <div type="item">
-                        <p>Professor Flinders Petrie and Mrs. Petris are staying at the Hotel du
-                            Nil, Cairo.</p>
-                    </div>
-                    <div type="item">
-                        <p>M. de Hoelske, Russian Commis ioner on the Caisse de la Dette has
-                            returned to Cairo.</p>
-                    </div>
-                    <div type="item">
-                        <p>We regret to hear of the death of the wife of Mr. Philemon Hallam Tuck,
-                            brother of Judge Tuck, of which sad event information has just come by
-                            cable from Baltimore, Mary- land, U.S.A.</p>
-                    </div>
-                    <div type="item">
-                        <p>The Hon. Mrs. Lindley, wife of the Second Secretary in the Diplomatic
-                            Service, who has spent most of the autumn in Invernesshire, has left
-                            England for Cairo. Mrs. Lindley is leaving her baby in the Highlands,
-                            but her elder little girl comes out to Egypt with her.</p>
-                    </div>
-                    <div type="item">
-                        <p>The Hon. Francis Lindley is expecting an appointment in the
-                            newly-constituted British Embassy at Tokyo, in which case he will prob-
-                            ably be stationed in Japan for several years.</p>
-                    </div>
-                    <div type="item">
-                        <p>Among others who are coming out to Egypt are Major F.I. Ricarde-Seaver,
-                            Lord and Lady Talbot de Malahide, and the Earl and Count- ess of
-                            Leitrir. The latter party leave Mar- seille on December 15.</p>
-                    </div>
-                    <div type="item">
-                        <p>The Baron and Baronness of Zoylem have left Cairo for Tunis, where they
-                            propose to make a short stay. The Baron and Baroness have been touring
-                            in Sicily, Greece, and -despite the execrable raod- in Palestine in a 24
-                            h.p. de Dion motor car.</p>
-                    </div>
-                    <div type="item">
-                        <p>The marriage of Miss Cohen and Mr. Elward Frieman of Constantinople, took
-                            place yes- terday at Cairo, followed by a reception at the Continental
-                            Hotel, at which nearly all the chief Israelite fmilies of the Capital
-                            were represented. The guests were received by Mr. Coronel, soucin of the
-                            bride, and the hotel presented unusual animation till 5 o'clock. In the
-                            evening a dance was given in honor of the happy pair, and many fresh and
-                            elaborate gowns graced the occasion.</p>
-                    </div>
-                    <div type="item">
-                        <p>Prof. and Mrs. Simpson, who arrived yester- day by the Hohenzollern, are
-                            going up river with a party on the dahabieh Serapis.</p>
-                    </div>
-                    <div type="item">
-                        <p>Sir Ernest Cassel has contributed £2,000 to Queen Alexandra's Fund for
-                            the relief of the unemployed.</p>
-                    </div>
+                <div type="section" feature="social">
+                    <head>PERSONAL AND SOCIAL.</head>
+
+                    <p>H.H. Prince Djemil Pasha Toursoun left for Paris on Monday.</p>
+
+
+                    <p>H.H. Prince Fazil Ozman is staying at Shep- heard's Hotel.</p>
+
+
+                    <p>H.E. Mustapha Pasha Fehmy is spending Beyram at Mena House.</p>
+
+
+                    <p>There was a large number of well-known arrivals by the Hohenzoilern yesterday
+                        from Europe, including H.H. Princess Ismail, Count and Countess de Zogheb,
+                        M. and Mme N. Siradino, etc. A full list of passengers will be published
+                        to-morrow.</p>
+
+
+                    <p>The marriage arranged between Mr. Percy Machell and Countess Victoria Glechen
+                        will take place at the Chapel Royal, St. James's Palace, on the 7th
+                        December, at twelve o'clock.</p>
+
+
+                    <p>Sir William Garstin will return to Cairo at the end of December.</p>
+
+
+                    <p>Saba Pasha and Chitty Bey have arrived at Cairo from Alexandria.</p>
+
+
+                    <p>M. Maspero will leave for a tour in Upper Egypt between the 8th and 10th
+                        prox.</p>
+
+
+                    <p>Mr. Somers-Clarke, the well-known architect, is leaving for Mehimed this
+                        evening.</p>
+
+
+                    <p>Professor Flinders Petrie and Mrs. Petris are staying at the Hotel du Nil,
+                        Cairo.</p>
+
+
+                    <p>M. de Hoelske, Russian Commis ioner on the Caisse de la Dette has returned to
+                        Cairo.</p>
+
+
+                    <p>We regret to hear of the death of the wife of Mr. Philemon Hallam Tuck,
+                        brother of Judge Tuck, of which sad event information has just come by cable
+                        from Baltimore, Mary- land, U.S.A.</p>
+
+
+                    <p>The Hon. Mrs. Lindley, wife of the Second Secretary in the Diplomatic
+                        Service, who has spent most of the autumn in Invernesshire, has left England
+                        for Cairo. Mrs. Lindley is leaving her baby in the Highlands, but her elder
+                        little girl comes out to Egypt with her.</p>
+
+
+                    <p>The Hon. Francis Lindley is expecting an appointment in the newly-constituted
+                        British Embassy at Tokyo, in which case he will prob- ably be stationed in
+                        Japan for several years.</p>
+
+
+                    <p>Among others who are coming out to Egypt are Major F.I. Ricarde-Seaver, Lord
+                        and Lady Talbot de Malahide, and the Earl and Count- ess of Leitrir. The
+                        latter party leave Mar- seille on December 15.</p>
+
+
+                    <p>The Baron and Baronness of Zoylem have left Cairo for Tunis, where they
+                        propose to make a short stay. The Baron and Baroness have been touring in
+                        Sicily, Greece, and -despite the execrable raod- in Palestine in a 24 h.p.
+                        de Dion motor car.</p>
+
+
+                    <p>The marriage of Miss Cohen and Mr. Elward Frieman of Constantinople, took
+                        place yes- terday at Cairo, followed by a reception at the Continental
+                        Hotel, at which nearly all the chief Israelite fmilies of the Capital were
+                        represented. The guests were received by Mr. Coronel, soucin of the bride,
+                        and the hotel presented unusual animation till 5 o'clock. In the evening a
+                        dance was given in honor of the happy pair, and many fresh and elaborate
+                        gowns graced the occasion.</p>
+
+
+                    <p>Prof. and Mrs. Simpson, who arrived yester- day by the Hohenzollern, are
+                        going up river with a party on the dahabieh Serapis.</p>
+
+
+                    <p>Sir Ernest Cassel has contributed £2,000 to Queen Alexandra's Fund for the
+                        relief of the unemployed.</p>
+
                 </div>
-                <div type="section" element="passList"><head>PASSENGER LIST.</head>
+                <div type="section" feature="passList">
+                    <head>PASSENGER LIST.</head>
                     <div type="item">
                         <head>ARRIVALS</head>
                         <p>Per S.S. City of Cambridge, arrived from Liverpool and Malta on Monday:
@@ -1993,9 +2003,10 @@
                     </div>
                 </div>
             </div>
+            <pb n="4"/>
             <div type="page" n="4">
                 <cb n="1"/>
-                <div type="article">
+                <div type="item">
                     <head>IRRIGATION ENGINEERING.</head>
                     <docAuthor>By Sir Hanburt Brown, K.C.M.G., late Insepctor-General of Irrigation
                         in Lower Egypt, and formerly in Upper Egypt.</docAuthor>
@@ -2083,7 +2094,7 @@
                     <p>CAIRO opposite the Tramways Co. Works, Sharia Sahal, Kasr-el-Nil</p>
                 </div>
                 <cb n="2"/>
-                <div type="section" element="letters">
+                <div type="section" feature="letters">
                     <div type="item">
                         <head>ANOTHER MONOPOLY. ZEITOUN-MATARIEH WATER SUPPLY.</head>
                         <p>To the editor of the Egyptian Gazette.</p>
@@ -2169,8 +2180,8 @@
                     <p>FrC., CALVERT &amp; Co., Manchester, England.</p>
                 </div>
                 <cb n="3"/>
-                <div type="article">
-                    <head>Cheap Prepaid Advertisements</head>
+                <div type="section" feature="prepaidAdvertisements">
+                     <head>Cheap Prepaid Advertisements</head>
                     <p>Under this heading advertisements are in- serted at the following rates:-</p>
                     <table cols="4">
                         <row role="label">
@@ -2206,7 +2217,7 @@
                         to any address if a few stamps are sent by the advertiser to cover
                         postage.</p>
                 </div>
-                <div type="article">
+                <div type="item">
                     <div type="item">
                         <head>Agard's International Industries and Trade Marks Register.</head>
                         <p>A useful business directory containing addresses of all important
@@ -2219,44 +2230,44 @@
                             Colonies and Egypt. The best reference book for travellers.</p>
                     </div>
                 </div>
-                <div type="article">
+                <div type="item">
                     <p>ALEXANDRIA.- German Lessons given. Apply, No. 26,793, "Egyptian Gazette"
                         offices.</p>
                 </div>
-                <div type="article">
+                <div type="item">
                     <p>ADVERTISING AGENTS.- The best public Advertising sites in Alexandria belong
                         to G. Vestri &amp; Co., Advt. Agents, St. Catherine's Square. Special rates
                         for permanent clients. Moderate terms. Prompt despatch.</p>
                 </div>
-                <div type="article">
+                <div type="item">
                     <p>ANGLO-AMERICAN Typwriting Agency, 19, Boulevard de Ramleh. Only English
                         Typewriting Office in Alexandria. Typewriting by copy of by dictation.
                         Densmore Typewriter, (Official Typewriter of the St. Louis Exhi- bition).
                         "Success" Typewriter Supplies at London prices. Cleaning and refitting of
                         all typewriters.</p>
                 </div>
-                <div type="article">
+                <div type="item">
                     <p>AN ENGLISH OF GERMAN NURSE- GOVERNESS for two children of 6 and 2 years is
                         wanted; good references required Cal between 10-2 o'clock. Mme Back, VIlla
                         Herz Bey, Kasr el Doubara, near Kasr el Nil Bridge.</p>
                 </div>
-                <div type="article">
+                <div type="item">
                     <p>BLICK TYPEWRITERS, No. 5 £9, No. 7 £11. W.T. Emmens, 99 Rue Attarine,
                         Alexandria, Address, Post Office Box 35.</p>
                 </div>
-                <div type="article">
+                <div type="item">
                     <p>CHEF.- First-class European Chef required for the Union Club. Apply,
                         Secretary, Union Club, Alexandria.</p>
                 </div>
-                <div type="article">
+                <div type="item">
                     <p>FOR LOAN OF MONEY upon mortgage, etc., and English lessons, apply to Profes-
                         sor Caruana-Nani, Monferrato's Buildings, Alex- andria.</p>
                 </div>
-                <div type="article">
+                <div type="item">
                     <p>PRACTICAL ENGINEER.- M.I.N.A. Frenchman speaking and writing English desires
                         appointment in Egypt. Address "Ex- pert", "Egyptian Gazette" offices.</p>
                 </div>
-                <div type="article">
+                <div type="item">
                     <p>SINGING AND VOICE PRODUCTION, professor Cav. Mires, of Milan, with Milan
                         diploma and Certificates from Zurich and Leipzig, gives lessons. English
                         Singing a spe- cialty. Accepts limited number of pupils for paino (classic
@@ -2264,25 +2275,25 @@
                         Lifonti and Hack, Cherif Pasha Street. Many references from pupils in
                         Alexandria.</p>
                 </div>
-                <div type="article">
+                <div type="item">
                     <p>TO LET. At Bulkeley, one minute from the station, six rooms, bath-room,
                         kitchen, cellars, garden, every convenience. Apply to Messrs. Briscoe and
                         Aicard, 15, Blvd. de Ramleh.</p>
                 </div>
-                <div type="article">
+                <div type="item">
                     <p>YOUNG GENTLEMAN having few hours to spare daily, is open to undertake
                         secretarial or clerical work. Perfect English, French, Spanish, and fair
                         Arabic. Highest References. Address, No. 26,803, "Egyptian Gazette"
                         offices.</p>
                 </div>
-                <div type="article">
+                <div type="item">
                     <head>NOTICE</head>
                     <p>Merchants, Tradesmen and others in Cairo wishing to do business with British
                         firms are requested to send their names, addresses and particulars of their
                         businesses to Mr. Peter Black, "The Commercial Bureau," P.O. Box No. 50,
                         Cairo.</p>
                 </div>
-                <div type="article" scope="calendar">
+                <div type="item" xml:id="deg-el-cotw01">
                     <p>(Coptic and Mohamedan.)</p>
                     <table cols="3">
                         <row role="label">
@@ -2333,7 +2344,7 @@
                     </table>
                 </div>
                 <cb n="4"/>
-                <div type="article">
+                <div type="item">
                     <head>ARMY OF OCCUPATION. BEEF AND MUTTON.</head>
                     <p>Tenders will be received at the Head Quarters Offices, Cairo, until 12
                         o'clock noon on Friday 1st December 1905, for the supply of Beef and Mutton
@@ -2349,7 +2360,7 @@
                     <p>Head Quaters,</p>
                     <dateline>Cairo, 14th Nov. 1905.</dateline>
                 </div>
-                <div type="article">
+                <div type="item">
                     <head>Alexandria &amp; Ramleh Railway, Cy. Limited. AVIS</head>
                     <p>L'Alexandria &amp; Ramleh Railway Cy. Ltd. a l'honneur de rappeler au Public
                         que le dernier delai pour l'echange des anciens carnets de 50 billets qui
@@ -2360,8 +2371,8 @@
                     <p>A partir du 1er Decembre 1905, les anciens carnets non echanges n'auront plus
                         aucune valeur. La Direction.</p>
                 </div>
-                <div type="article">
-                    <head>Societe Internationale des Employes D'Alexandrie Siege Social Rue Mosquee
+                <div type="section" xml:lang="fr" feature="bureauPlacement">
+                    <head>Société Internationale des Employes D'Alexandrie Siege Social Rue Mosquee
                         Attarine No. 21 Bureau de Placement</head>
                     <div type="item">
                         <head>OFFRES</head>
@@ -2482,6 +2493,7 @@
                     <p>The SHANNON, Limited, F.W. SCHAPER, Managing Director, LONDON, E.C.</p>
                 </div>
             </div>
+            <pb n="5"/>
             <div type="page" n="5">
                 <cb n="1"/>
                 <div type="advert">
@@ -2496,7 +2508,7 @@
                         LONDON</p>
                     <p>Cairo Show Rooms: Rond-Point Soliman Pacha, opposite Savoy Hotel.</p>
                 </div>
-                <div type="article">
+                <div type="item">
                     <head>KHEDIVIAL OPERA HOUSE</head>
                     <div type="item">
                         <head>RUY BLAS.</head>
@@ -2579,7 +2591,7 @@
                     <p>xxxxx-xx-x xx</p>
                 </div>
                 <cb n="2"/>
-                <div type="article" scope="advertisement">
+                <div type="item" scope="advertisement">
                     <head>SUDAN GOVERNMENT.</head>
                     <div type="item">
                         <head>TRANSFERS AND APPOINTMENTS.</head>
@@ -2632,7 +2644,7 @@
                             class Medjidieh on El Bimbashi R.C. Bayldon.</p>
                     </div>
                 </div>
-                <div type="article">
+                <div type="item">
                     <head>THE HELOUAN SEASON.</head>
                     <p>Among the latest arrivals at the Grand Hotel, Helouan, we notice: Mr. E
                         Robertson, M.P., Miss M.E. Green, Mrs. K.A. Robinson, Miss Breeze, Mr. C.E.
@@ -2648,7 +2660,7 @@
                         mann, Frau and Fraulein von Koenig, Mrs. H. Dennison, Mr. and Mrs. W. Cook,
                         Dr. Fels, Dr. Weisel.</p>
                 </div>
-                <div type="article">
+                <div type="item">
                     <head>NILE TOURISTS.</head>
                     <p>The following passengers left by P.S. Rameses yesterday for the Nile trip:-
                         Miss Fallowes, Miss Meschami, General and Mrs. Bridge, Mr. Lorenzo Oneto,
@@ -2666,7 +2678,7 @@
                         McLeod Matheson, Miss M. Osborne, Mrs. Henry Barda.</p>
                 </div>
                 <cb n="3"/>
-                <div type="article">
+                <div type="item">
                     <head>EGYPT'S MALADIES IN 1904. INTERESTING STATISTICS.</head>
                     <p>The Sanitary Department of the Ministry of the Interior has published a
                         volume of statistics dealing with the infectious diseases notified
@@ -2697,7 +2709,7 @@
                         was responsible for 1,093 and measle for 5,260 deaths. Diphtheria was very
                         fatal out of 586 fatal cases for all Egypt.</p>
                 </div>
-                <div type="article">
+                <div type="item">
                     <head>EGYPTIAN FIRE PROTECYION CO.</head>
                     <p>This company has been formed for "protect- ing against destruction of damage
                         by fire, all household and movable property, as well as guaranteeing, in
@@ -2711,7 +2723,7 @@
                         Theodore de Kolischkine, 300; Edmond de Manasce, 500; Enrico Nahman, 350;
                         Jacques Suares, 300; Gustave Suares, 100.</p>
                 </div>
-                <div type="article">
+                <div type="item">
                     <head>THE DROP IN EGYPTIAN STOCK.</head>
                     <p>The recent decline in some of the leading Egyptian securities known to the
                         market, such as shares of the National Bank of Egypt, the Agricultural Bank
@@ -2731,7 +2743,7 @@
                         better, those who follow the course of events in Egypt would not be surpised
                         to see a further decline.</p>
                 </div>
-                <div type="article">
+                <div type="item">
                     <head>EGYPT'S EXPORTS TO SPAIN.</head>
                     <p>The annual blue books of statistics of the trade of Spain for 1904 recently
                         issued state that the imports into Spain from Egypt amounted during the year
@@ -2744,7 +2756,7 @@
                         the Colonies about £30,000, compared also with the figures of 1903.</p>
                 </div>
                 <cb n="4"/>
-                <div type="section" element="sport">
+                <div type="section" feature="sport">
                     <head>SPORT AND PLAY.</head>
                     <div type="item">
                         <head>KHEDIVIAL SPORTING CLUB.</head>
@@ -2784,7 +2796,8 @@
                             referee.</p>
                     </div>
                 </div>
-                <div type="section" element="comingEvents"><head>CALENDAR OF COMING Events.</head>
+                <div type="section" feature="comingEvents">
+                    <head>CALENDAR OF COMING Events.</head>
                     <div type="item">
                         <head>Alexandria.</head>
                         <table cols="5">
@@ -2891,7 +2904,7 @@
                         </table>
                     </div>
                 </div>
-                <div type="item" scope="calendar">
+                <div type="item">
                     <head>CAIRO SEASON FIXTURES.</head>
                     <p>The following is a list of proposed events for the forthcoming Cairo
                         Season:-</p>
@@ -3102,7 +3115,7 @@
                         means of the<lb/> “Express Boring System."</p>
                     <p>24,437-12-1-905</p>
                 </div>
-                <div type="article" scope="advertisement">
+                <div type="item" scope="advertisement">
                     <head>The Standard Life Assurance Company.</head>
                     <p>ESTABLISHED 1825</p>
                     <p>Head Office: -3, George Street, Edinburgh.</p>
@@ -3145,9 +3158,10 @@
                             <placeName>ENGLAND</placeName></p>
                 </div>
             </div>
+            <pb n="6"/>
             <div type="page" n="6">
                 <cb n="1"/>
-                <div type="section" xml:lang="fr" element="legal">
+                <div type="section" xml:lang="fr" feature="legal">
                     <head>CHRONIQUE JUDICIAIRE</head>
                     <div type="item">
                         <head>TRIBUNAL DES CONTRAVENTIONS D'ALEXANDRIE LOTERIES ETRANGERES EN
@@ -3156,7 +3170,8 @@
                         <cb n="2"/>
                     </div>
                 </div>
-                <div type="item" element="exportManifests"><head>Export Manifests</head>
+                <div type="item" feature="exportManifests">
+                    <head>Export Manifests</head>
                     <table rows="14" cols="3">
                         <head>For <placeName>MANCHESTER</placeName>, by the S.S. "Seti," sailed on
                             the <date when="1905-11-24">24th November</date>:</head>
@@ -3257,7 +3272,7 @@
                         </row>
                     </table>
                 </div>
-                <div type="section" element="shippingMovements">
+                <div type="section" feature="shippingMovements">
                     <head>SHIPPING MOVEMENTS.</head>
                     <div type="subsection">
                         <head>ALEXANDRIA HARBOUR</head>
@@ -3327,7 +3342,7 @@
                         <p>(French)</p>
                     </div>
                 </div>
-                <div type="article">
+                <div type="item">
                     <head>EASTERN TELEGRAPH CO. LTD.</head>
                     <p>AVERAGE TIME occupied in transmission of Egyptian telegrams from England to
                         Alexandria on <date when="1905-11-28">Wednesday, 28th Nov., 1905</date>. </p>
@@ -3371,7 +3386,7 @@
                     <p>Delay due to faulty landlines.</p>
                 </div>
                 <cb n="4"/>
-                <div type="article" xml:id="deg-stocks-and-shares">
+                <div type="item" xml:id="deg-stocks-and-shares">
                     <head>STOCKS AND SHARES</head>
                     <p>
                         <hi rend="italic">Closing Prices, to-day at 12,30 p.m.</hi>
@@ -3876,7 +3891,7 @@
                         </table>
                     </div>
                 </div>
-                <div type="article" scope="financial" xml:lang="fr" xml:id="deg-el-ctns01">
+                <div type="item" xml:lang="fr" xml:id="deg-el-ctns01">
                     <head>COTONS</head>
                     <p>copie de la dépêche</p>
                     <p>DE L'ALEXANDRIA GENERAL PRODUCE ASSOCIATION</p>
@@ -4077,7 +4092,7 @@
                         <p><hi rend="italic">Feves-Saidi</hi>: Nouvelle recolte.- Marche nul</p>
                     </div>
                 </div>
-                <div type="article" xml:lang="fr" xml:id="deg-el-extr01">
+                <div type="item" xml:lang="fr" xml:id="deg-el-extr01">
                     <head>Exterieur</head>
                     <p>Dépêches particulières du <date when="1905-11-27">27 novembre 1905</date></p>
                     <p>PRODUITS EGYPTIENS</p>
@@ -4108,7 +4123,7 @@
                     <p>Contre même jour, l’année dernière, balles <measure unit="balles"
                             >81,000</measure></p>
                 </div>
-                <div type="article" xml:id="deg-el-reut01">
+                <div type="item" xml:id="deg-el-reut01">
                     <head>REUTER'S TELEGRAMS</head>
                     <head type="sub">CLOSING REPORTS</head>
                     <table cols="4" xml:id="deg-ta-reut01">
@@ -4427,7 +4442,7 @@
                     </table>
                 </div>
                 <cb n="6"/>
-                <div type="article">
+                <div type="item">
                     <head>ALEXANDRIA GENERAL PRODUCE ASSOCIATION</head>
                     <p>Les differences de prix pour livraison sur Contrats de coton ont ete fixees
                         comme suit:</p>
@@ -4485,7 +4500,7 @@
                         payer pour les livraisons cotons Haute-Egypte et Fayoum contre contrats de
                         decembre.</p>
                 </div>
-                <div type="article" scope="financial" xml:id="deg-el-tdeq01">
+                <div type="item" xml:id="deg-el-tdeq01">
                     <head>TO-DAY’S EXCHANGE QUOTATIONS</head>
                     <table rows="14" cols="3" xml:id="deg-ta-tdeq01">
                         <row role="label">
@@ -4561,7 +4576,7 @@
                     </table>
                     <p>*Less one per mille brokerage.</p>
                 </div>
-                <div type="article" xml:lang="fr" xml:id="deg-el-teha01">
+                <div type="item" xml:lang="fr" xml:id="deg-el-teha01">
                     <head>TELEGRAMME HAVAS</head>
                     <dateline>BOURSE du <date when="1905-11-28">28 novembre 1905</date></dateline>
                     <p>COURS DES VALEURS A TERMS, CLOTURE</p>
@@ -4661,7 +4676,7 @@
                     <p>Escomptes---Paris <measure>3</measure>, Londres <measure>4</measure>, Berlin
                             <measure>5 1/2</measure> %</p>
                 </div>
-                <div type="article" xml:id="deg-el-shli01">
+                <div type="item" xml:id="deg-el-shli01">
                     <head>SHARE LIST</head>
                     <p>Issued by the “Association des Courtiers en Valeurs d'Alexandrie”.</p>
                     <p>Clôture d’aujourd'hui à 12h.30 p.m.</p>
@@ -4969,7 +4984,7 @@
                         </row>
                     </table>
                 </div>
-                <div type="article">
+                <div type="item">
                     <head>ASSOCIATION DES COURTIERS EN MARCHANDISE (service special)</head>
                     <p>DEPECHE D'OUVERTURE</p>
                     <table cols="3">
@@ -5019,7 +5034,7 @@
                         </row>
                     </table>
                 </div>
-                <div type="article" xml:lang="fr" xml:id="deg-el-dehe1">
+                <div type="item" xml:lang="fr" xml:id="deg-el-dehe1">
                     <head>DERNIERE HEURE</head>
                     <p>(Clôture de la Bourse Khédiviale 1h. p.m.) </p>
                     <p>Cours de l’Association des Courtiers en Marchandises </p>
@@ -5089,6 +5104,7 @@
                     </table>
                 </div>
             </div>
+            <pb n="7"/>
             <div type="page" n="7">
                 <cb n="1"/>
                 <div type="section">
@@ -5460,7 +5476,7 @@
                                 November, 1905</date>.</dateline>
                     </div>
                 </div>
-                <div type="item" scope="financial">
+                <div type="item">
                     <head>Balance Sheet, <date when="1905-06-30">30th June, 1905</date></head>
                     <div type="subsection">
                         <head>To Capital-</head>
@@ -5894,9 +5910,10 @@
                     <p>Davies Bryan &amp; Co., Cairo &amp; Alexandria.</p>
                 </div>
             </div>
+            <pb n="8"/>
             <div type="page" n="8">
                 <cb n="1"/>
-                <div type="article">
+                <div type="item">
                     <head>REUTER'S TELEGRAMS</head>
                     <head type="sub">CLOSING REPORTS</head>
                     <table cols="4">
@@ -6220,7 +6237,7 @@
                         </row>
                     </table>
                 </div>
-                <div type="article" xml:lang="fr">
+                <div type="item" xml:lang="fr">
                     <head>TELEGRAMME HAVAS</head>
                     <dateline>BOURSE du <date when="1905-11-27">27 novembre 1905</date></dateline>
                     <p>COURS DES VALEURS A TERMS, CLOTURE</p>
@@ -6320,7 +6337,7 @@
                     <p>Escomptes---Paris <measure>3</measure>, Londres <measure>4</measure>, Berlin
                             <measure>5 1/2</measure>%.</p>
                 </div>
-                <div type="article" xml:id="deg-el-egmm01">
+                <div type="item" xml:id="deg-el-egmm01">
                     <head>EGYPTIAN MINING MARKET.</head>
                     <table cols="4" xml:id="deg-ta-egmm01">
                         <row role="label">
@@ -6422,7 +6439,7 @@
                         </row>
                     </table>
                 </div>
-                <div type="article" xml:id="deg-el-etcl1">
+                <div type="item" xml:id="deg-el-etcl1">
                     <head>EASTERN TELEGRAPH CO. LTD.</head>
                     <p>AVERAGE TIME occupied in transmission of Egyptian telegrams from England to
                         Alexandria on <date when="1905-11-27">Tuesday, 27th Nov., 1905</date>. </p>
@@ -6467,7 +6484,7 @@
                         landlines.</p>
                 </div>
                 <cb n="2"/>
-                <div type="item" scope="financial" xml:lang="fr" xml:id="deg-el-noli01">
+                <div type="item" xml:lang="fr" xml:id="deg-el-noli01">
                     <head>NOLIS</head>
                     <table cols="3" xml:id="deg-ta-noli01">
                         <row>
@@ -6707,7 +6724,7 @@
                     <dateline>Alexandrie, le <date when="1905-11-23">23 novembre
                         1905</date></dateline>
                 </div>
-                <div type="article" xml:id="deg-el-rrat01">
+                <div type="item" xml:id="deg-el-rrat01">
                     <head>RAMLEH RAILWAY COMPANY</head>
                     <table cols="4" xml:id="deg-ta-rrat01">
                         <head>RECETTES</head>
@@ -6876,7 +6893,7 @@
                         </row>
                     </table>
                 </div>
-                <div type="item" scope="financial">
+                <div type="item">
                     <head>TARIF D'EXPORTATION</head>
                     <p>pour le nois de novembre 1905.</p>
                     <table cols="4">
@@ -7020,7 +7037,7 @@
                         </row>
                     </table>
                 </div>
-                <div type="article">
+                <div type="item">
                     <head>COALS.</head>
                     <table>
                         <head>Current prices per ton free on wagon.</head>
@@ -7236,7 +7253,7 @@
                     <p>Engrais Naturels Complets</p>
                     <p>Poudrettes, Engrais Chimiques Organiques.</p>
                 </div>
-                <div type="article">
+                <div type="item">
                     <head>RESUME DE LA SITUATION COTONNIERE</head>
                     <dateline>au 25 novembre</dateline>
                     <table cols="3">
@@ -7410,7 +7427,7 @@
                     </div>
                 </div>
                 <cb n="4"/>
-                <div type="article">
+                <div type="item">
                     <p>A BROKEN-DOWN SYSTEM. This is a condition or disease to which doctors give
                         many names, but which few of them really understand. It is simply weakness-
                         a break-down, as it were, of the vital forces that sustain the system. No
@@ -7459,7 +7476,7 @@
                     <p>25299</p>
                     <p>31.12.905</p>
                 </div>
-                <div type="article">
+                <div type="item">
                     <p>L'EGYPTIAN GAZETTE est en vent dans les rues du Caire tous les soirs a 7h.
                         30, excepte les dimanches et jours feries. Le journal est aussi en vente aus
                         gares du Caire, d'Alexandrie, de Tantah, de Damenhour de Kafr-Zayat et de
