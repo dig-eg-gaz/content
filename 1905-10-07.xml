@@ -28,6 +28,7 @@
     </teiHeader>
     <text>
         <body>
+            <pb n="1"/>
             <div type="page" n="1">
                 <head>THE EGYPTIAN GAZETTE</head>
                 <head type="sub">No. 7239] <placeName ref="https://www.wikidata.org/wiki/Q87"
@@ -1765,8 +1766,8 @@
                     </div>
                 </div>
             </div>
+            <pb n="2"/>
             <div type="page" n="2">
-                <div type="section" scope="advertisement">
                     <div type="advert" xml:id="deg-ad-ric01">
                         <head>Royal Insurance Coy</head>
                         <p>FIRE AND LIFE.</p>
@@ -1850,8 +1851,12 @@
                         <p>The officers and clerks of the Bank are pledged to secrecy as to the
                             transactions of customers. 18-9-905</p>
                     </div>
-                    <!-- TODO Surplus Drapery Stock -->
-                    <!-- TODO Howie & Co, The Hygenic Dairy -->
+                    <div type="advert">
+                        <head>SELLING OFF. SURPLUS DRAPERY STOCK OF MAGASINS VICTORIA</head>
+                        <p>On Premises lately occupied by "Papeterie Commerciale," Rue Sesostris, 3
+                            doors from Cherif Pasha Street. For particulars see advertisement in another
+                            column.</p>
+                    </div> <!-- TODO Howie & Co, The Hygenic Dairy -->
                     <div type="advert" xml:id="deg-ad-aaw01">
                         <head>ARISTON AERATED WATERS</head>
                         <p>Guaranteed Distilled.</p>
@@ -1868,8 +1873,13 @@
                         <p>Alexandria &amp; Cairo</p>
                         <p>27-10-0.</p>
                     </div>
-                    <!-- TODO Grand Hotel de Louvre & Paix -->
-                    <div type="advert" xml:id="deg-ad-clh01">
+                    <div type="advert" xml:id="deg-ad-ghl01">
+                        <head>MARSEILLE</head>
+                        <p>GRAND HOTEL DU LOUVRE &amp; PAIX</p>
+                        <p>LA RESERVE &amp; PALACE HOTEL</p>
+                        <p>Cornice. Sea-Side</p>
+                        <p>Proprieter L. ECHENARD, NEUSCHWANDER.</p><p><measure type="indexNo">26504-20*-1</measure></p>
+                    </div><div type="advert" xml:id="deg-ad-clh01">
                         <head>CIGARES de la HAVANE</head>
                         <p>de provenance directe et de toutes les meilleures marques</p>
                         <p>Nicolas G Sabbag</p>
@@ -1882,8 +1892,16 @@
                         <p>246081-26-904</p>
                     </div>
                     <!-- TODO Walker Meimarachi, Limited -->
-                    <!-- TODO The National Residence, Cairo. -->
-                    <!-- TODO Hotel Du Nil, Cairo -->
+                    <div type="advert" xml:id="deg-ad-nrc01">
+                        <head>The National Residence, Cairo.</head>
+                        <p>One of the finest and most up-to-date residences.</p>
+                        <p>Rooms furnished and not furnished. With or without board. Situated in the Sharia
+                            Soliman Pasha and Sharia Dair-el-Binat, Ismailieh quarter. High class cuisine,
+                            electric light throughout and lift. Rooms and apartments to suit every one. For
+                            further particulars apply to</p>
+                        <p>Chas. Bauer, General Manager, Cairo,</p>
+                        <p><measure type="indexNo">26515-30-11-905</measure></p>
+                    </div><!-- TODO Hotel Du Nil, Cairo -->
                     <div type="advert" xml:id="deg-ad-hcs01">
                         <p>HOTEL-CASINO SAN STEFANO IS NOW OPEN</p>
                         <p>26045-80-9-5</p>
@@ -1960,9 +1978,9 @@
                         <p>It has the Largest Sale in the World.</p>
                         <p>Soap</p>
                     </div>
-                </div>
-                <div type="section" scope="weather">
-                    <head>DAILY WEATHER REPORT</head>
+                
+                <div type="section" feature="weather">
+            <head>DAILY WEATHER REPORT</head>
                     <p>OBSERVATIONS BY THE SURVEY DEPARTMENT.</p>
                     <div type="subsection">
                         <table rend="frame" xml:id="AlexandriaWeather">
@@ -2004,7 +2022,7 @@
                             the barometer is falling.</p>
                     </div>
                 </div>
-                <div type="item" scope="newspaper">
+                <div type="item">
                     <head>THE EGYPTIAN GAZETTE.</head>
                     <p>SUBSCRIPTIONS.—Alexandria, Cairo, and the Interior of Egypt (including
                         delivery in Alexandria or postage to subscriber’s address) P.T. 231½ per
@@ -2024,7 +2042,7 @@
                     <p>THE “EGYPTIAN GAZETTE” IS PRINTED ON PAPER MANUFACTURED AND SUPPLIED BY THE
                         LONDON PAPER MILLS Co., LIMITED (SALES OFFICE: 27, CANNON STREET, E.C.) </p>
                 </div>
-                <div type="item" scope="newspaper">
+                <div type="item">
                     <p>The Egyptian Gazette </p>
                     <p>An English Daily Newspaper, Established in 1880. </p>
                     <p>Editor &amp; Manager: R. Snelling. </p>
@@ -2032,7 +2050,7 @@
                     <p>SATURDAY, OCTOBER 7, 1905.</p>
                 </div>
                 <!-- TODO The Sucrereis -->
-                <div type="item" element="comingEvents">
+                <div type="item" feature="comingEvents">
                     <head>Calendar of Coming Events.</head>
                     <div type="subsection">
                         <table cols="3" xml:id="CalendarOfTheWeek-Alexandria">
@@ -2103,8 +2121,9 @@
                     </div>
                 </div>
             </div>
-            <div type="page" n="3"><div type="section" element="wire">
-                <div type="article">
+            <pb n="3"/>
+            <div type="page" n="3"><div type="section" feature="wire">
+                <div type="item">
                     <head>CANAL TRAFFIC, SHIPS ENTER TODAY.</head>
                     <dateline><placeName ref="https://www.wikidata.org/wiki/Q134509">Port
                             Said</placeName>, <date when="1905-10-06">October 6</date>.</dateline>
@@ -2112,7 +2131,7 @@
                         The cargo boats will follow.</p>
                     <byline>(Havas)</byline>
                 </div>
-                <div type="article">
+                <div type="item">
                     <head>AMERICAN INSURANCE COMPANIES.</head>
                     <head type="sub">IRREGULARITIES AND WASTE OF FUNDS.</head>
                     <dateline>New York, <date when="1905-10-06">October 6</date>.</dateline>
@@ -2122,7 +2141,7 @@
                     <byline>(Reuter)</byline>
                 </div>
 
-                <div type="article">
+                <div type="item">
                     <head>MR. TAFT IN JAPAN.</head>
                     <head type="sub">IMPORTANT UNDERSTANDING WITH U S. A.</head>
                     <dateline>Tokio. <date when="1905-10-06">October 6</date>.</dateline>
@@ -2132,33 +2151,33 @@
                         whatever upon the Phillipines.</p>
                     <byline>(Reuter)</byline>
                 </div>
-                <div type="article">
+                <div type="item">
                     <head>RUSSIAN NATIONAL ASSEMBLY.</head>
                     <p>St. Petersburg, <date when="1905-10-06">October 6</date>. The Minister of the
                         Interior has ordered the local authorities to abstain from interference with
                         the forthcoming elections to the National Assembly.</p>
                     <byline>(Reuter)</byline>
                 </div>
-                <div type="article">
+                <div type="item">
                     <head type="sub">THE REICHSRATH.</head>
                     <head>UNIVERSAL SUFFRAGE.</head>
                     <dateline>Vienna. <date when="1905-10-06">October 6</date>.</dateline>
                     <p>The Rechsrath has rejected the resolutions for universal suffrage.</p>
                     <byline>(Havas)</byline>
                 </div>
-                <div type="article">
+                <div type="item">
                     <head>BRITISH SQUADRON AT KOBE.</head>
                     <dateline>Kobe, <date when="1905-10-06">October 6</date>.</dateline>
                     <p>The British <placeName ref="https://www.wikidata.org/wiki/Q148"
                             >China</placeName> Squadron has arrived here.</p>
                     <byline>(Reuter)</byline>
                 </div>
-                <div type="article">
+                <div type="item">
                     <head>STRIKES IN LIVONIA.</head>
                     <p>St Petersburg, <date when="1905-10-06">October 6</date>. Strikes and
                         pillaging continue in the Livonia province. (Havas)</p>
                 </div>
-                <div type="article">
+                <div type="item">
                     <head type="sub">HAMBURG-AMERIKA LINE</head>
                     <head>NEW STEAMER PURCHASED.</head>
                     <dateline>Berlin, <date when="1905-10-06">October 6</date>.</dateline>
@@ -2169,7 +2188,7 @@
                             ref="https://www.wikidata.org/wiki/Q87">Alexandria</placeName>, in
                         connection with the Berlin express. (Reuter)</p>
                 </div>
-                <div type="article">
+                <div type="item">
                     <head>ROMAN ATHLETIC MEETING.</head>
                     <dateline>Rome, <date when="1905-10-06">October 6</date>.</dateline>
                     <p>A great athletic meeting is taking place in the Vatican gardens under the
@@ -2177,16 +2196,16 @@
                     <byline>(R.)</byline>
                 </div></div>
 
-                <div type="section" element="social">
+                <div type="section" feature="social">
                     <head>PERSONAL AND SOCIAL</head>
-                    <div type="article">
+                    <div type="item">
                         <p>Sir Vincent Corbett, the Financial Adviser, will arrive at <placeName
                                 ref="https://www.wikidata.org/wiki/Q87">Alexandria</placeName> on
                             Monday from <placeName ref="https://www.wikidata.org/wiki/Q579613"
                                 >Marseilles</placeName> by the North German Lloyd S.S.
                             Schleswig.</p>
                     </div>
-                    <div type="article">
+                    <div type="item">
                         <p>Lord Hindlip is shortly expected in <placeName
                                 ref="https://www.wikidata.org/wiki/Q85">Cairo</placeName> on his way
                             to British East Africa. His lordship is going on a six months’ visit to
@@ -2194,23 +2213,23 @@
                             the Protectorate last year. Lord Hindlip is accompanied by Lady
                             Hindlip.</p>
                     </div>
-                    <div type="article">
+                    <div type="item">
                         <p>Mr. Harrison, general manager of Messrs, Thos. Cook and Sons, is expected
                             to strive in <placeName ref="https://www.wikidata.org/wiki/Q79"
                                 >Egypt</placeName> towards the end of this month.</p>
                     </div>
-                    <div type="article">
+                    <div type="item">
                         <p>Mr. Baehler is expected back in <placeName
                                 ref="https://www.wikidata.org/wiki/Q85">Cairo</placeName> with his
                             family, on Monday.</p>
                     </div>
-                    <div type="article">
+                    <div type="item">
                         <p>Mr. David Longworth left <placeName
                                 ref="https://www.wikidata.org/wiki/Q85">Cairo</placeName> for
                             Nairobi yesterday.</p>
                     </div>
                 </div>
-                <div type="article">
+                <div type="item">
                     <head>ST ANDREWS CHURCH.</head>
                     <head type="sub"><placeName ref="https://www.wikidata.org/wiki/Q85"
                             >Cairo</placeName>
@@ -2219,18 +2238,18 @@
                     <p>6 p.m.</p>
                     <p>Beginning Sunday, <date when="1905-10-08">8th October</date>.</p>
                 </div>
-                <div type="section" element="local">
+                <div type="section" feature="local">
                     <head>LOCAL AND GENERAL</head>
-                    <div type="article">
+                    <div type="item">
                         <p>The Brindisi Mail will be made up at the G.P.O., <placeName
                                 ref="https://www.wikidata.org/wiki/Q87">Alexandria</placeName>, on
                             Tuesday at 8.30 a.m.</p>
                     </div>
-                    <div type="article">
+                    <div type="item">
                         <p>Stray and Ownerless Dogs found in the Kobessi district during to-morrow
                             night and at dawn of the 9th inst. will be poisoned by the police.</p>
                     </div>
-                    <div type="article">
+                    <div type="item">
                         <head>The Bank of Abyssinia</head>
                         <p>The first meeting of the directors of the above banks will be hold at
                                 <placeName ref="https://www.wikidata.org/wiki/Q85">Cairo</placeName>
@@ -2238,35 +2257,35 @@
                             governor of the Bank of Abyssinia, and will proceed to Adis Ababba to
                             take up his now duties in about two months’ time.</p>
                     </div>
-                    <div type="article">
+                    <div type="item">
                         <head>Coal Imports</head>
                         <p>From the 1st of January to the 5th of October, 824,306 tons of coal were
                             imported into Egypt. Wales sent 443,720, Newcastle 194,487, Scotland
                             99,112, Yorkshire 56,574, and other places 31.503 tons. During the
                             corresponding period of 1904, 797,262 tons were received.</p>
                     </div>
-                    <div type="article">
+                    <div type="item">
                         <head>Found drowned</head>
                         <p>A corpse of a native lad aged 12, which was not identified, was found
                             floating in the Mahmudieh canal yesterday, and on being taken out of the
                             water was removed to the hospital for medical examination. Inquiries are
                             being made in the hopes of identifying the body.</p>
                     </div>
-                    <div type="article">
+                    <div type="item">
                         <head>New Ottoman Medal</head>
                         <p>In accordance with the Sultan's desire the Ottoman Government will strike
                             a new medal, which will be called the "Yemen Medal." The new medal is to
                             be confered upon the soldiers who distinguished themselvcs in
                             suppressing the Yemen rebellion.</p>
                     </div>
-                    <div type="article">
+                    <div type="item">
                         <head>Burnt to Death</head>
                         <p>A woman of the name of Maria Rato, 25 years of age, was boiling a kettle
                             on a gas stove on the 5th inst. when the flame caught her clothes. The
                             flimsy material immediately flared up and the unfortunate woman received
                             terrible burns from which she died very shortly after.</p>
                     </div>
-                    <div type="article">
+                    <div type="item">
                         <head>Alhambra Theatre</head>
                         <p>The Della Guardia Dramatic company will stage Maison de Poupée at this
                             evening's performance and a matinée will bo given to-morrow, commenting
@@ -2274,7 +2293,7 @@
                             will no performance, it being the eve of the Jewish Day of
                             Atonement.</p>
                     </div>
-                    <div type="article">
+                    <div type="item">
                         <head>Affray at Menshieh</head>
                         <p>A quarrel took place yesterday at Menshieh between Alexandre Khalikopolo
                             a Greek carpenter aged 30, and Said Imam, a native cabdriver aged 20, in
@@ -2282,7 +2301,7 @@
                             man's hand was badly wounded and he was taken to the hospital, where he
                             will be detained until recovered.</p>
                     </div>
-                    <div type="article">
+                    <div type="item">
                         <head>San Stefano Casino</head>
                         <p>The demonstration of telepathy, thought-reading, and autosuggestion by
                             Professor Bellini will take the place of the usual small dance at the
@@ -2290,7 +2309,7 @@
                             non-subsribers will be charged P.T. 10. The Bracale orchestra will play
                             as usual tomorrow at 10.30 a.m. and 5 p.m.</p>
                     </div>
-                    <div type="article">
+                    <div type="item">
                         <head>A Painful Death</head>
                         <p>A <placeName ref="https://www.wikidata.org/wiki/Q84">London</placeName>
                             contemporary announces that a cow in Sullivan County, U.S.A., has just
@@ -2299,7 +2318,7 @@
                             all of which it proceeded to swallow. The subsequent fermenting of the
                             yeast opened the umbrella, and the beast died in great agony.</p>
                     </div></div>
-                    <div type="article">
+                    <div type="item">
                         <head>THE <placeName ref="https://www.wikidata.org/wiki/Q85"
                                 >Cairo</placeName> “ZOO.”</head>
                         <head>Rumoured Hotel Amalgamation</head>
@@ -2312,7 +2331,7 @@
                             the recent appreciation in the shares of there companies is due to this
                             reason.</p>
                     </div>
-                    <div type="article">
+                    <div type="item">
                         <head>The Selection of a Grand Mufti</head>
                         <p>We learn that the Council of Ministers at their meeting on Monday will
                             select two sheikhs, shore names will be submitted to H. H. the Khedive
@@ -2321,7 +2340,7 @@
                             but, our native readers have not to wait much longer now know whether
                             their own choice has been selected.</p>
                     </div>
-                    <div type="article">
+                    <div type="item">
                         <head>British Chamber of Commerce</head>
                         <p>We would draw the attention of manufacturers and merchants to the work of
                             the British Chamber of Commerce of Egypt, which was formed in 1896 with
@@ -2337,7 +2356,7 @@
                                 ref="https://www.wikidata.org/wiki/Q84">London</placeName> office,
                             86, New Broad-street, which acts as agents to the Chamber.</p>
                     </div>
-                    <div type="article">
+                    <div type="item">
                         <head>THE Cairo “ZOO.”</head>
                         <head>REPORT FOR 1904.</head>
                         <p>The sixth annual report by the director of the Ghizeh Zoological Gardens
@@ -2380,13 +2399,13 @@
                             sent a list of the grasshoppers and kindred insects to be found in the
                             Gardens which, should interest entomologists.</p>
                     </div>
-                    <div type="section" element="khedive">
+                    <div type="section" feature="khedive">
                         <head>THE KHEDIVE.</head>
                         <p>H.H. the Khedive has graciously consented to open the Mansourah
                             Agricultural show on Friday, the 20th inst., and daring his stay will be
                             the guest of the Municipality.</p>
                     </div>
-                    <div type="article">
+                    <div type="item">
                         <head>FRANCE AND GERMANY.</head>
                         <head>RECEPTION OF BUELOW'S STATEMENTS</head>
                         <byline>(From our <placeName ref="https://www.wikidata.org/wiki/Q84"
@@ -2407,7 +2426,7 @@
                             declared to be as tactless as they are provocative. "They add insult to
                             injury.” — Such is the opinion of the general French public.</p>
                     </div>
-                    <div type="article">
+                    <div type="item">
                         <head>THE SUCRERIES.</head>
                         <p>Sir William Willcocks leaves to-day for Upper Egypt, where he will visit
                             the Sucreries Company's factories and will be followed later by MM.
@@ -2417,7 +2436,7 @@
                             draw up a report in combination with Sir William Willcocks, which will
                             state the exact condition and value of the factories.</p>
                     </div>
-                    <div type="article">
+                    <div type="item">
                         <head>CREDIT FONCIER EGYPTIEN.</head>
                         <p>Nothing is known at the offices of the Credit Foncier in <placeName
                                 ref="https://www.wikidata.org/wiki/Q85">Cairo</placeName> regarding
@@ -2432,13 +2451,13 @@
                             the solicitaiton of his colleagues on the board, be decided to retan his
                             appointment.</p>
                     </div>
-                    <div type="article">
+                    <div type="item">
                         <head>KHEDIVIAL YACHT CLUB.</head>
                         <p>There will be an extra regatta held on Friday in honor of the visit of H.
                             H. the Khedive to the yacht club. The weekly regatta will be held on
                             Wednesday as usual.</p>
                     </div>
-                    <div type="section" element="steamerMovements"><head>STEAMER MOVEMENTS.</head>
+                    <div type="section" feature="steamerMovements"><head>STEAMER MOVEMENTS.</head>
                         <p>The Moss liner Rameses sailed from. <placeName
                                 ref="https://www.wikidata.org/wiki/Q233">Malta</placeName> yesterday
                             afternoon and is due at <placeName
@@ -2446,7 +2465,7 @@
                             Tuesday with passengers, mails, and general cargo.</p>
                     </div>
                 
-                <div type="section" element="notesSuez">
+                <div type="section" feature="notesSuez">
                     <head>NOTES FROM SUEZ.</head>
                     <div type="item">
                         <head>SHIPS ENTER THE CANAL.</head>
@@ -2545,7 +2564,7 @@
                             the</q>
                         <!-- TODO find the truncated part of this note -->
                     </div>
-                    <div type="article">
+                    <div type="item">
                         <head>ENGLISH CHURCH IN KHARTOUM.</head>
                         <p>The "Standard” has received the following letter from Sir Reginald
                             Wingate Pasha appealing for funds for the construction an English Church
@@ -2569,7 +2588,7 @@
                         -->
                     </div>
                 </div>
-                <div type="section" element="notesPortSaid">
+                <div type="section" feature="notesPortSaid">
                     <head>NOTES FROM PORT SAID.</head>
                     <div type="item">
                         <p>Less regularly, we have now 37 steamers in the harbour of <placeName
@@ -2636,7 +2655,7 @@
                             fate of the unfortunate Chatham.</p>
                     </div>
                 </div>
-                <div type="article">
+                <div type="item">
                     <!-- TODO Replace with ad boilerplate -->
                     <head>BECK &amp; GO'S PILSENER BEER</head>
                     <p><unclear>OMalaakla frum *r*nr R*M*itatl* fIra</unclear> In <placeName
@@ -2644,12 +2663,12 @@
                             ref="https://www.wikidata.org/wiki/Q87">Alexandria</placeName>, &amp;
                         the Sudan. Otherwise apply too <unclear>. j ntwnn. r. wcauii</unclear></p>
                 </div>
-                <div type="article">
+                <div type="item">
                     <!-- TODO Replace with Ad boilerplate-->
                     <head>Anglo American Nile Steamers &amp; hotel company.</head>
                     <p>Three Saillage a-Week</p>
                 </div>
-                <div type="article">
+                <div type="item">
                     <head>CURONIQUE FINANCIERE</head>
                     <dateline>Vendredi <date when="1905-10-06">6 Octobre</date>.</dateline>
                     <p>Il y a Peru de choses à ajouter à ce que none avons dit dans notre dernière
@@ -2736,8 +2755,11 @@
                     <p><unclear/>gouverment a une reprise vere le<unclear/></p>
                 </div>
             </div>
+            <pb n="4"/>
             <div type="page" n="4"> </div>
+            <pb n="5"/>
             <div type="page" n="5"> </div>
+            <pb n="6"/>
             <div type="page" n="6"> </div>
         </body>
     </text>
