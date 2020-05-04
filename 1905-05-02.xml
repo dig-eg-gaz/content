@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/dig-eg-gaz/resources/master/out/egSchema.rnc" type="application/relax-ng-compact-syntax"?>
-<?xml-stylesheet type="text/xsl" href="dig-eg-gaz.xsl"?>  <TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-stylesheet type="text/xsl" href="dig-eg-gaz.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
@@ -20,20 +21,52 @@
 			<sourceDesc>
 				<bibl>
 					<title>Egyptian Gazette</title>
-					<date when="1905-05-02"><name>Tuesday</name>, May 2, 1905</date>
-                    <extent><measure unit="pages" quantity="6">6</measure> pages</extent></bibl>
+					<date when="1905-05-02">Tuesday, May 2, 1905</date>
+					<extent><measure unit="pages" quantity="6">6</measure> pages</extent></bibl>
 			</sourceDesc>
 		</fileDesc>
 	</teiHeader>
 	<text>
 		<body>
 			<pb n="1"/>
-            <div type="page" n="1">
-				<head>THE EGYPTIAN GAZETTE</head>
-				<head type="sub">No. 7239] ALEXANDRIA, TUESDAY, MAY 2, 1905. [SIX PAGES P.T. 1. </head>
+			<div type="page" n="1" status="incomplete">
+				<div type="nameplate">
+					<table cols="6">
+						<row>
+							<cell rows="2" xml:id="deg-ad-etc01">The Eastern Telegraph Company,
+								Limited.<lb/> This Company's system of submarine telegraph
+								<lb/>cables is the most direct and quickest means of
+								<lb/>communication from Egypt to Europe, North and <lb/>South
+								America, East, South and West Africa, <lb/>India, Australia, New
+								Zealand, China and Japan.<lb/> To secure quick transmission,
+								telegrams should <lb/>be marked <hi rend="italic">Via
+								Eastern</hi>.For latest average time to London, see daily
+								<lb/>bulletin in this paper.<lb/> STATIONS IN EGYPT: Alexandria,
+								Cairo, <lb/>Suez, Port-Tewfik, Port-Saïd, Suakin. Head <lb/>Office.
+								London.</cell>
+							<cell cols="4">THE EGYPTIAN GAZETTE</cell>
+							<cell rows="2">The Eastern Telegraph Company, Limited.<lb/> This
+								Company's system of submarine telegraph <lb/>cables is the most
+								direct and quickest means of <lb/>communication from Egypt to
+								Europe, North and <lb/>South America, East, South and West Africa,
+								<lb/>India, Australia, New Zealand, China and Japan.<lb/> To secure
+								quick transmission, telegrams should <lb/>be marked <hi
+									rend="italic">Via Eastern</hi>.For latest average time to
+								London, see daily <lb/>bulletin in this paper.<lb/> STATIONS IN
+								EGYPT: Alexandria, Cairo, <lb/>Suez, Port-Tewfik, Port-Saïd, Suakin.
+								Head <lb/>Office. London.</cell>
+						</row>
+						<row>
+							<cell>No. <measure quantity="7187">7,187</measure>]</cell>
+							<cell>ALEXANDRIA, TUESDAY, MAY 2, 1905.</cell>
+							<cell>[SIX PAGES</cell>
+							<cell>P.T. 1</cell>
+						</row>
+					</table>
+				</div>
 			</div>
 			<pb n="2"/>
-            <div type="page" n="2">
+			<div type="page" n="2" status="incomplete">
 				<div type="section" feature="weather">
 					<head>DAILY WEATHER REPORT</head>
 					<p>OBSERVATIONS BY THE SURVEY DEPARTMENT.</p>
@@ -74,7 +107,7 @@
 				</div>
 			</div>
 			<pb n="3"/>
-            <div type="page" n="3">
+			<div type="page" n="3">
 				<div type="section" feature="wire">
 					<div type="item">
 						<head>RUSSIAN TOLERATION DECREE.</head>
@@ -226,7 +259,8 @@
 						</div>
 					</div>
 				</div>
-				<div type="section" feature="social"><head>PERSONAL AND SOCIAL</head>
+				<div type="section" feature="social">
+					<head>PERSONAL AND SOCIAL</head>
 					<div type="item">
 						<p>It is stated that the successor to Mahmoud Pasha Sidky as Governor of
 							Alexandria will be Mustapha Pasha Maher, the Moudir of Dakahlieh, and
@@ -237,20 +271,20 @@
 						<p>H. E. the Governor returned to Alexandria yesterday.</p>
 					</div>
 					<div type="item">
-						<p>Baron Acton, Italian Consul-General at Alexandria, returned from Italy on
-							Sunday.</p>
+						<p><persName>Baron Acton</persName>, Italian Consul-General at Alexandria,
+							returned from Italy on Sunday.</p>
 					</div>
 					<div type="item">
-						<p>Sir Henry Tanner, I.S.O., F.R.I.B.A., F.S.I. Principal Architect of
-							H.M.’s Office of Works, was among the passengrs who arrived yester- day
-							from Marseilles by the S. s. “Hohenzol- lern.”</p>
+						<p><persName>Sir Henry Tanner</persName>, I.S.O., F.R.I.B.A., F.S.I.
+							Principal Architect of H.M.’s Office of Works, was among the passengrs
+							who arrived yesterday from Marseilles by the S. s. “Hohenzollern.”</p>
 					</div>
 					<div type="item">
 						<p>Among the latest arrivals at the Eastern Exchange Hotel, Port Said, are
-							Mr. Maurice Stubbs, Mr. A. Pillett, Mr. P. Cooke, Capt. Murray, Mr. W.
-							E. Bennett, Mr. A. L. Goldie, Mr. J. W. Norton, Miss Ailfen, Miss
-							Robins, Mr. and Miss Muntz, Miss Laing, Mr. N. N. Tabet, Mrs. L. Stuart,
-							Mr. A. Tissier, Mr. G. M. Dawson.</p>
+							Mr. Maurice Stubbs, <persName>Mr. A. Pillett</persName>, Mr. P. Cooke,
+							Capt. Murray, Mr. W. E. Bennett, Mr. A. L. Goldie, Mr. J. W. Norton,
+							Miss Ailfen, Miss Robins, Mr. and Miss Muntz, Miss Laing, Mr. N. N.
+							Tabet, Mrs. L. Stuart, Mr. A. Tissier, Mr. G. M. Dawson.</p>
 					</div>
 				</div>
 				<div type="section" feature="local">
@@ -414,7 +448,8 @@
 						details as to the Gouvernorat and the land opposite the old Ramleh station.
 						As soon as these matters are settled, the lands' will be sold.</p>
 				</div>
-				<div type="section" feature="khedive"><head>THE KHEDIVE.</head>
+				<div type="section" feature="khedive">
+					<head>THE KHEDIVE.</head>
 					<p>The Khedive will hold a reception at Ras el Tin Palace on Saturday next. The
 						order in which visitors will be received will be published tomorrow.</p>
 					<p>The Khedivah will hold a reception on the same day.</p>
@@ -511,7 +546,8 @@
 						matter, not even if smitten with Samson's weapons—I am, etc, ACCORD.</p>
 					<dateline>Alexandria, May 1.</dateline>
 				</div>
-				<div type="section" feature="steamerMovements"><head>STEAMER MOVEMENTS.</head>
+				<div type="section" feature="steamerMovements">
+					<head>STEAMER MOVEMENTS.</head>
 					<p>The S.S. “Creole Prince" left London on Saturday with passengers and general
 						cargo for Malta and Alexandria.</p>
 					<p>The S.S. "Spartan Prince" arrived in Man- chester from Alexandria yesterday.
@@ -523,7 +559,8 @@
 					<p>The Ellerman S.S. “Fabian” from Alexan- dria, arrived at Liverpool on
 						Sunday.</p>
 				</div>
-				<div type="section" feature="notesPortSaid"><head>NOTES FROM PORT SAID.</head>
+				<div type="section" feature="notesPortSaid">
+					<head>NOTES FROM PORT SAID.</head>
 					<div type="item">
 						<head>BAD WEATHER.</head>
 						<byline>(From our Correspondent).</byline>
@@ -609,8 +646,9 @@
 				</div>
 			</div>
 			<pb n="4"/>
-            <div type="page" n="4">
-				<div type="section" xml:lang="fr" feature="shippingMovements"><head>MOUVEMENT MARITIME DU PORT D’ALEXANDRIE</head>
+			<div type="page" n="4">
+				<div type="section" xml:lang="fr" feature="shippingMovements">
+					<head>MOUVEMENT MARITIME DU PORT D’ALEXANDRIE</head>
 					<head>ARRIVÈES</head>
 					<dateline>29 avril</dateline>
 					<p>Constantinople et Pirée; 40 h., vap. ang. Is- mailieh, cap. Gatteschi, ton.
@@ -640,7 +678,7 @@
 					<p>Marseille et Naples; 3 j., vap. all. Hohenzol- lern, cap. Pesch, ton. 3320, à
 						Schoeller.</p>
 				</div>
-				<div type="item">
+				<div type="item" feature="notice">
 					<head>Société Anonyme des Eaux de Tantah.</head>
 					<head>AVIS</head>
 					<p>Les porteurs d’actions de la Société Anonyme des Eaux de Tantah sont informés
@@ -663,7 +701,7 @@
 						Avril 1905. 25874-21</p>
 				</div>
 				<div type="section" xml:lang="fr" feature="bureauPlacement">
-                    <head>Société Internationale des Employes D'ALEXANDRIE</head>
+					<head>Société Internationale des Employes D'ALEXANDRIE</head>
 					<head>Siege Social : Rue Mosquée Attarine No. 21 BUREAU DE PLACEMENT Offres
 						d'emplois</head>
 					<p>BONNE MAIS0N d'Alexandrie demande: 1. un employé connaissant bien la
@@ -742,7 +780,7 @@
 						L’Administrateur délégué | Joseph A. Cattaui Bei. ' Le Caire, le 30 avril
 						1905. 25875.2*-1</p>
 				</div>
-				<div type="item">
+				<div type="item" feature="notice">
 					<head>Administration des Chemins de Fer, des Télégraphes et du Port
 						d’Alexandrie.</head>
 					<head>AVIS</head>
@@ -763,7 +801,7 @@
 					<p>Le Caire, le 22 avril 1905.</p>
 					<p>25842-6-5</p>
 				</div>
-				<div type="item">
+				<div type="item" feature="notice">
 					<head>AVIS</head>
 					<p>Le Conseil d'Administration a l'honneur de porter à la connaissance du Public
 						qu’à partir du ler Mai 1905, le bureau télégraphique de la gare de Sabaiya
@@ -781,7 +819,7 @@
 						Liverpool 16 22 Manchester 19 - Glasgow 19 - Other Professional Offices -
 						52</p>
 				</div>
-				<div type="item">
+				<div type="item" feature="notice">
 					<head>National Bank of Egypt.</head>
 					<head>AVIS AUX ACTIONNAIRES.</head>
 					<p>Messieurs les actionnaires de la National Bank of Egypt sout convoqués en
@@ -809,49 +847,101 @@
 						tontes leurs actions. Le Gouverneur: Elwin Palmer.</p>
 					<p>Le Caire, le 5 Avril 1905. 25717-12.A-12</p>
 				</div>
-				<div type="section" feature="passList"><head>PASSENGER LISTS.</head>
+				<div type="section" feature="passList">
+					<head>PASSENGER LISTS.</head>
 					<head>Arrivals.</head>
-					<p>Le paquebot "Memfi”, de la Cie Florio Ru- battino arrivé Dimanche de Gênes
-						avait à bord: MM. le baron Acton, consul général d’Italie à Alexandrie, V.
-						Musarelli, A. Venanzetti, Rev. P. G. Vescov, J. Hermann, A. Nicolaïdes,
-						Mala- goli, Cie Magnani (39), Aubasman et fam., ing. et Mme Dessalles,
-						Fossati et comp., Mme A. Boccasino, P. Berganzio, V. Zaffagni, Elias Esber
-						et 48 passagers de 3me classe.</p>
-					<p>Le paquebot "Semiramis”, du Lloyd Autri- chien arrivé ce matin de Trieste
-						avait à bord: M. Fischer, Mme Pauletich, M. Gijna, M. Braun, M. Levi, M.
-						Kaiserworth, M. Müller, M. Sternberg, Mme Deutsch et 1 enfant, M. Bellmann,
-						M. Mayer, M. Sandrecski, Mme Loeher, M. Matatia, M. Werner, M. Stangen, M.
-						Preis, M. Petzold, M. Schmelzer, M. Miske, M. Grundmann, M. Blaskes, M.
-						Fuchs, M. Heilbrom, Mme Scagliarini et fils, M. L. Asser, M. Singer et 9
+					<p>Le paquebot <name>"Memfi"</name>, de la Cie Florio Rubattino arrivé Dimanche
+						de Gênes avait à bord:</p>
+					<p><persName>MM. le baron Acton, consul général d’Italie à
+						Alexandrie</persName>, <persName>V. Musarelli</persName>, <persName>A.
+							Venanzetti</persName>, <persName>Rev. P. G. Vescov</persName>,
+							<persName>J. Hermann</persName>, <persName>A. Nicolaïdes</persName>,
+							<persName>Malagoli</persName>, <persName>Cie Magnani (39)</persName>,
+							<persName>Aubasman et fam.</persName>, <persName>ing. et Mme
+							Dessalles</persName>, <persName>Fossati et comp.</persName>,
+							<persName>Mme A. Boccasino</persName>, <persName>P.
+						Berganzio</persName>, <persName>V. Zaffagni</persName>, Elias Esber et 48
+						passagers de 3me classe.</p>
+					<p>Le paquebot <name>"Semiramis"</name>, du Lloyd Autrichien arrivé ce matin de
+						Trieste avait à bord:</p>
+					<p><persName>M. Fischer</persName>, <persName>Mme. Pauletich</persName>,
+							<persName>M. Gijna</persName>, <persName>M. Braun</persName>,
+							<persName>M. Levi</persName>, <persName>M. Kaiserworth</persName>,
+							<persName>M. Müller</persName>, <persName>M. Sternberg</persName>,
+							<persName>Mme Deutsch et 1 enfant</persName>, <persName>M.
+							Bellmann</persName>, <persName>M. Mayer</persName>, <persName>M.
+							Sandrecski</persName>, <persName>Mme. Loeher</persName>, <persName>M.
+							Matatia</persName>, <persName>M. Werner</persName>, <persName>M.
+							Stangen</persName>, <persName>M. Preis</persName>, <persName>M.
+							Petzold</persName>, <persName>M. Schmelzer</persName>, <persName>M.
+							Miske</persName>, <persName>M. Grundmann</persName>, <persName>M.
+							Blaskes</persName>, <persName>M. Fuchs</persName>, <persName>M.
+							Heilbrom</persName>, <persName>Mme Scagliarini et fils</persName>,
+							<persName>M. L. Asser</persName>, <persName>M. Singer</persName> et 9
 						passagers de 3me classe.</p>
 					<p>Departures.</p>
-					<p>Le paquebot Halsburg du Lloyd Autrichien parti samedi pour Trieste avait à
-						bord: M. Aziz Arié, M. et Mme Blumenthal, Rev. Bird et 2 Compagnons, M. et
-						Mme E.V. Bird, M. et Mme P. Boromeo, Rev. Bourdonne, Mlle Boll, M. Dahan,
-						Mme Dienesch et fille, M. L. Droz, M. et Mme Graham, Mme Glavani, M. Emil
-						Hein, Mme Alice Heller, M. Max Haupe, M. le Bimbachi Hughes, Rev. Hardy, Mme
-						Hardy, M. Hanter Jones, Mme Kall, M. J. Lombard, M. et Mme Marcus, M. le Dr.
-						Magnus, Famille Matossian, S.E. lo Ghazi Moukhtar Pacha, M. F.G. Morgan,
-						Consul d'Amérique, M. Morducovich, Mme Naeff et fils, Mme E. Paese, M. Piero
-						Pirelli, Mme Vve D. Pollak et 2 filles, M. Piha et enfant, Rev. Em. Polit,
-						Mme Pidgeon, M. le Conseiller de Prell, M. et Mme W.D. Roche, Mlle Robino,
-						M. Max Shüller, M. Schubert, M. G.J. Sondys, M. de Schlözer, M. S. Talamas
-						Bey et 1 de famille, M. W. Tilche, M. P. de Vitesse, Mlle Vandagnotti, M.
-						Wurm, M. et Mme Wild, M. H. Carter Wilson, M. Wakeham, Mme B. de Zoltan,
-						gouvernante et enfant, Mlle A. Bosshardt, Mme Biancardi et 3 enfants, M. R.
-						Blaschke, M. R Braunstein, Mme Marie Ebner, M. et Mme Dresing, M. et Mme
-						Hamza, M, F. Ilg, M. F. Munch, M. A. Mieli, Mme Neumann, M. le Dr. Neumann,
-						Mme Prechal, Mme B. Popper, M. Rapp, M. E. Stark, M. À. Stadler, M. David
-						Schild, M. F. Schweissthal, M. B. Tuis, M. Jos. Wagner, 6 femmes de chambre,
-						3 valets, et 34 passagers 3em. class.</p>
-					<p>Le paquebot “Bosforo" de la Cie Florio Rubattino parti hier pour Venise avait
-						à bord: Chev. A. N. Lucchose, Lattes, Com. Fiore, G. Cafiero, Fanny Muller
-						et fils, fam. Chalom, G. Morandi, F. Ganzoni et fam., Mme Gunn et bébé, M.
-						et Mme G. Meregalli, Mme Pizzsgalli et fils, Mme Haselden et 2 bébés, F.
-						Casari, L Candellari, Mme Moditz, Coenazzo, M. et Mme Bortolotti, Comtesse
-						Zogheb et fille, Villemin et fam., Raman, L di Benedetto, G. d'Anna, baron
-						Munch, M. et Mme P. Avorga A Nadenna, Rais, et 21 passagers de 3me
-						classe.</p>
+					<p>Le paquebot <name>Halsburg</name> du Lloyd Autrichien parti samedi pour
+						Trieste avait à bord: </p>
+					<p><persName>M. Aziz Arié</persName>, <persName>M. et Mme Blumenthal</persName>,
+							<persName>Rev. Bird et 2 Compagnons</persName>, <persName>M. et Mme E.V.
+							Bird</persName>, <persName>M. et Mme P. Boromeo</persName>,
+							<persName>Rev. Bourdonne</persName>, <persName>Mlle. Boll</persName>,
+							<persName>M. Dahan</persName>, <persName>Mme Dienesch et
+							fille</persName>, <persName>M. L. Droz</persName>, <persName>M. et Mme
+							Graham</persName>, <persName>Mme. Glavani</persName>, <persName>M. Emil
+							Hein</persName>, <persName>Mme Alice Heller</persName>, <persName>M. Max
+							Haupe</persName>, <persName>M. le Bimbachi Hughes</persName>,
+							<persName>Rev. Hardy</persName>, <persName>Mme Hardy</persName>,
+							<persName>M. Hanter Jones</persName>, <persName>Mme. Kall</persName>,
+							<persName>M. J. Lombard</persName>, <persName>M. et Mme
+							Marcus</persName>, <persName>M. le Dr. Magnus</persName>,
+							<persName>Famille Matossian</persName>, <persName>S.E. lo Ghazi Moukhtar
+							Pacha</persName>, <persName>M. F.G. Morgan, Consul
+						d'Amérique</persName>, <persName>M. Morducovich</persName>, <persName>Mme
+							Naeff et fils</persName>, <persName>Mme E. Paese</persName>,
+							<persName>M. Piero Pirelli</persName>, <persName>Mme Vve D. Pollak et 2
+							filles</persName>, <persName>M. Piha et enfant</persName>,
+							<persName>Rev. Em. Polit</persName>, <persName>Mme Pidgeon</persName>,
+							<persName>M. le Conseiller de Prell</persName>, <persName>M. et Mme W.D.
+							Roche</persName>, <persName>Mlle. Robino</persName>, <persName>M. Max
+							Shüller</persName>, <persName>M. Schubert</persName>, <persName>M. G.J.
+							Sondys</persName>, <persName>M. de Schlözer</persName>, <persName>M. S.
+							Talamas Bey et 1 de famille</persName>, <persName>M. W.
+							Tilche</persName>, <persName>M. P. de Vitesse</persName>,
+							<persName>Mlle. Vandagnotti</persName>, <persName>M. Wurm</persName>,
+							<persName>M. et Mme Wild</persName>, <persName>M. H. Carter
+							Wilson</persName>, <persName>M. Wakeham</persName>, <persName>Mme B. de
+							Zoltan, gouvernante et enfant</persName>, <persName>Mlle A.
+							Bosshardt</persName>, <persName>Mme Biancardi et 3 enfants</persName>,
+							<persName>M. R. Blaschke</persName>, <persName>M. R
+							Braunstein</persName>, <persName>Mme Marie Ebner</persName>,
+							<persName>M. et Mme Dresing</persName>, <persName>M. et Mme
+							Hamza</persName>, <persName>M. F. Ilg</persName>, <persName>M. F.
+							Munch</persName>, <persName>M. A. Mieli</persName>, <persName>Mme.
+							Neumann</persName>, <persName>M. le Dr. Neumann</persName>,
+							<persName>Mme Prechal</persName>, <persName>Mme B. Popper</persName>,
+							<persName>M. Rapp</persName>, <persName>M. E. Stark</persName>,
+							<persName>M. À. Stadler</persName>, <persName>M. David
+						Schild</persName>, <persName>M. F. Schweissthal</persName>, <persName>M. B.
+							Tuis</persName>, <persName>M. Jos. Wagner</persName>, 6 femmes de
+						chambre, 3 valets, et 34 passagers 3em. class.</p>
+					<p>Le paquebot <name>"Bosforo"</name> de la Cie Florio Rubattino parti hier pour
+						Venise avait à bord: </p>
+					<p><persName>Chev. A. N. Lucchose</persName>, <persName>Lattes</persName>,
+							<persName>Com. Fiore</persName>, <persName>G. Cafiero</persName>,
+							<persName>Fanny Muller et fils</persName>, <persName>fam.
+							Chalom</persName>, <persName>G. Morandi</persName>, <persName>F. Ganzoni
+							et fam.</persName>, <persName>Mme Gunn et bébé</persName>, <persName>M.
+							et Mme G. Meregalli</persName>, <persName>Mme Pizzsgalli et
+							fils</persName>, <persName>Mme Haselden et 2 bébés</persName>,
+							<persName>F. Casari</persName>, <persName>L Candellari</persName>,
+							<persName>Mme. Moditz</persName>, <persName>Coenazzo</persName>,
+							<persName>M. et Mme Bortolotti</persName>, <persName>Comtesse Zogheb et
+							fille</persName>, <persName>Villemin et fam.</persName>,
+							<persName>Raman</persName>, <persName>L di Benedetto</persName>,
+							<persName>G. d'Anna</persName>, <persName>baron Munch</persName>,
+							<persName>M. et Mme P. Avorga A Nadenna</persName>,
+							<persName>Rais</persName>, et 21 passagers de 3me classe.</p>
 				</div>
 				<div type="item">
 					<head>BOURSE KHEDIVIALE</head>
@@ -1644,7 +1734,8 @@
 					<p>Arrivages du jour, balles 17,000 </p>
 					<p>Contre même jour, l’année dernière, balles 6,000</p>
 				</div>
-				<div type="section" xml:lang="fr" feature="bulletinBourse"><head>BULLETIN DE LA BOURSE</head>
+				<div type="section" xml:lang="fr" feature="bulletinBourse">
+					<head>BULLETIN DE LA BOURSE</head>
 					<p>(Autourd’hui à midi et demie) On a débuté ferme, mais sans beaucoup
 						d’affaires.</p>
 					<p>En hausse la Banque Nationale atteint 27 3/8, l'Agricole 13 5/8, la Land Bank
@@ -2295,7 +2386,7 @@
 				</div>
 			</div>
 			<pb n="5"/>
-            <div type="page" n="5">
+			<div type="page" n="5">
 				<div type="item">
 					<head>ALEXANDRIA SPORTING CLUB</head>
 					<head>FIRST SUMMER MEETING.</head>
@@ -2618,7 +2709,7 @@
 						avoid delay and error in the delivery of correspondence.</p>
 				</div>
 				<div type="section" feature="prepaidAdvertisements">
-                     <head>Cheap Prepaid Advertisements.</head>
+					<head>Cheap Prepaid Advertisements.</head>
 					<p>Under this heading advertisements are in- serted at the following rates :—
 							<table rows="3" cols="7">
 							<row role="label">
@@ -2711,51 +2802,52 @@
 				</div>
 			</div>
 			<pb n="6"/>
-            <div type="page" n="6">
+			<div type="page" n="6">
 				<div type="item" feature="exportManifests" status="verified">
 					<head>EXPORT MANIFESTS</head>
-				<p>For LONDON, by the S.S. “Whitgift", sailed on the 21st April:</p>
-							<p>Hadjes &amp; Co., 1,000 bags onions</p>
-							<p>R. Mordo, 2,100 „ „</p>
-							<p>J. Riches &amp; Co., 898 „ „</p>
-							<p>H. Stavrides, 1,500 „ „</p>
-							<p>C. Parissis, 1,294 „ „</p>
-							<p>E. Oyler, 426 „ „</p>
-							<p>R. J. Florent, 500 „ „</p>
-							<p>Champagnes fr., 1,326 „ „</p>
-							<p>E. A. O'Kelly &amp; Co., 333 „ „</p>
-							<p>A. Hess &amp; Co., 2,100 „ „</p>
-							<p>L. A. Johnson, 2,754 „ „</p>
-							<p>L. Onoforio, 880 „ „</p>
-							<p>F.J. Andres, 124 „ „</p>
-							<p>M. Osman, 1,601 „ „</p>
-							<p>H. Deghem, 1,011 „ „</p>
-							<p>Behrend &amp; Co., 1,030 tons cotton seed</p>
-							<p>Moursi Bros., 262 „ „ </p>
-							<p>Behren &amp; Co., 996 bags oil cake</p>
-							<p>Kafr-el-Zayat Cot. Co. Ltd, 9,208 „ „ </p>
-							<p>Sucreries et Raffi., 20,500 bags sugar</p>
-							<p>Kafr-el-Zayat Cot. Co. Ltd, 313 barrels black grease</p>
-							<p>Hadjes &amp; Co., 874 bags bones, 5 bales dry hides, 46 bags horns</p>
-							<p>N. Pappa, 20 empty firkins, 161 cases empty bottles, 39 cases empty tins</p>
-							<p>G. G. Perdicachi, 16 packages quails</p>
-							<p>N. G. Candioglu, 21 „ „</p>
-							<p>G. D. Pappa &amp; Hannah Saleh, 64 „ „</p>
-							<p>Alex. Bonded Warehouse, 10 bales old rags and cloths, 7 packages curios and effects</p>
-							<p>E. Hatoun, 6 pack curios &amp; effects</p>
-							<p>J. B. Caffari, 25 „ „ </p>
-							<p>Thos. Cook &amp; Son, 208 „ „ </p>
-							<p>Henriques, 1 „ „ </p>
-							<p>J. Ross &amp; Co., 19 „ „ </p>
-							<p>L. Heller, 250 casks molasses</p>
-							<p>Kraft &amp; Naggiar, 12 bags senna</p>
-							<p>Salonica Cigarettes Co., 2 cases cigarettes </p>
-							<p>Y. Théophile &amp; Co., 1 bale carpet</p>
-							<p>Hochapfeld, 1 bundle cloths</p>
-							<p>H. Barudi Bey, 2 cases opium</p>
-							<p>Carver Bros. &amp; Co. Ltd, 2 bags cotton seed</p>
-						
-				
+					<p>For LONDON, by the S.S. “Whitgift", sailed on the 21st April:</p>
+					<p>Hadjes &amp; Co., 1,000 bags onions</p>
+					<p>R. Mordo, 2,100 „ „</p>
+					<p>J. Riches &amp; Co., 898 „ „</p>
+					<p>H. Stavrides, 1,500 „ „</p>
+					<p>C. Parissis, 1,294 „ „</p>
+					<p>E. Oyler, 426 „ „</p>
+					<p>R. J. Florent, 500 „ „</p>
+					<p>Champagnes fr., 1,326 „ „</p>
+					<p>E. A. O'Kelly &amp; Co., 333 „ „</p>
+					<p>A. Hess &amp; Co., 2,100 „ „</p>
+					<p>L. A. Johnson, 2,754 „ „</p>
+					<p>L. Onoforio, 880 „ „</p>
+					<p>F.J. Andres, 124 „ „</p>
+					<p>M. Osman, 1,601 „ „</p>
+					<p>H. Deghem, 1,011 „ „</p>
+					<p>Behrend &amp; Co., 1,030 tons cotton seed</p>
+					<p>Moursi Bros., 262 „ „ </p>
+					<p>Behren &amp; Co., 996 bags oil cake</p>
+					<p>Kafr-el-Zayat Cot. Co. Ltd, 9,208 „ „ </p>
+					<p>Sucreries et Raffi., 20,500 bags sugar</p>
+					<p>Kafr-el-Zayat Cot. Co. Ltd, 313 barrels black grease</p>
+					<p>Hadjes &amp; Co., 874 bags bones, 5 bales dry hides, 46 bags horns</p>
+					<p>N. Pappa, 20 empty firkins, 161 cases empty bottles, 39 cases empty tins</p>
+					<p>G. G. Perdicachi, 16 packages quails</p>
+					<p>N. G. Candioglu, 21 „ „</p>
+					<p>G. D. Pappa &amp; Hannah Saleh, 64 „ „</p>
+					<p>Alex. Bonded Warehouse, 10 bales old rags and cloths, 7 packages curios and
+						effects</p>
+					<p>E. Hatoun, 6 pack curios &amp; effects</p>
+					<p>J. B. Caffari, 25 „ „ </p>
+					<p>Thos. Cook &amp; Son, 208 „ „ </p>
+					<p>Henriques, 1 „ „ </p>
+					<p>J. Ross &amp; Co., 19 „ „ </p>
+					<p>L. Heller, 250 casks molasses</p>
+					<p>Kraft &amp; Naggiar, 12 bags senna</p>
+					<p>Salonica Cigarettes Co., 2 cases cigarettes </p>
+					<p>Y. Théophile &amp; Co., 1 bale carpet</p>
+					<p>Hochapfeld, 1 bundle cloths</p>
+					<p>H. Barudi Bey, 2 cases opium</p>
+					<p>Carver Bros. &amp; Co. Ltd, 2 bags cotton seed</p>
+
+
 					<p>Pour TRIESTE, par le bateau autr. "Vesta”, parti le 21 avril:</p>
 					<p>B. Barki, 30 balles coton</p>
 					<p>J. C. Baines &amp; Co., 32 „ „</p>
@@ -2777,7 +2869,8 @@
 					<p>G. D. Kaniskeri, 999 „ „</p>
 					<p>Fili Facchini, 908 „ „</p>
 					<p>C. Parissis, 997 „ „</p>
-					<p>Pour BRINDISI et TRIESTE, par le bateau autrichien "Cleopatra" parti le 33 avril:</p>
+					<p>Pour BRINDISI et TRIESTE, par le bateau autrichien "Cleopatra" parti le 33
+						avril:</p>
 					<p>G. Riecken, 30 balles coton</p>
 					<p>Peel &amp; Co., 67 „ „</p>
 					<p>J. Planta &amp; Ca. 107 „ „</p>
@@ -2816,10 +2909,10 @@
 					<p>Pour TREBIZONDE, par le bateau ottoman “Costantinos” parti le 25 avril</p>
 					<p>Divers, 129 balles peaux, 18 balles sacs vides 395 sacs riz, 100 sacs
 						oignons, 100 sacs natron, 53 barils vides</p>
-					
-						<p>Pour BRINDISI et TRIESTE, par le bateau autr. "Saturno", parti le
-							26 avril:</p>
-						<p>R. &amp; O. Lindemann, 153 balles coton</p>
+
+					<p>Pour BRINDISI et TRIESTE, par le bateau autr. "Saturno", parti le 26
+						avril:</p>
+					<p>R. &amp; O. Lindemann, 153 balles coton</p>
 					<p>Peel &amp; Co., 160 „ „</p>
 					<p>Mohr &amp; Fenderl, 32 „ „</p>
 					<p>Choremi, Benachi &amp; Co., 61 „ „</p>
@@ -2843,66 +2936,63 @@
 					<p>A Grioni, 1,000 „ „</p>
 					<p>L. Tolentino 584 „ „</p>
 				</div>
-					<div type="item">
-						<head>REUTER’S TELEGRAMS CLOSING REPORTS</head>
-						<p>Liverpool, April 29, 12.45 p.m. Sales of the day bales 7,000 of which
-							Egyptian “ 300 American (new crop) Maize Spot per cental 4/2 Amer.
-							futures (May-June) 4.05 “ “ (Sept-Oct.) 4.12 American Middling 4.20
-							Egypt, fully good fair, delivery(May) 6 34/64 “ “ “ “ “ (June)6 32/64 “
-							“ “ “ “ (July)6 27/64 “ “ “ “ “ (Nov.)6 14/64 Egypt Brown fair per lb.
-							d. 5 11/16 “ “ good fair 6 8/16 “ “ good 7 4/16 “ fully good fair 6
-							12/16 Egyptian Saidi Beans new (per 480 lbs.) 27/9 Cotton Weekly total
-							sales bales 42,000 “ On speculation ........ “ 2,000 “ For export
-							............ “ 2,500 “ Forwarded to consumers “ 90,000 “ Total
-							Import........ “ 110,000 “ Actual export “ 5,000 “ “ Stock............ “
-							820,000 “ East India afloat....... “ 5,000 “ American afloat....... “
-							220,000 Egyptian Cotton On speculation “ 150 “ “ Weekly sales “ 2,600 “
-							“ Stock “ 56,000 “ “ Forwarded to consumers “ 7,500 “ “ Actual Export “
-							1,800 “ “ Import “ 12,000</p>
-					</div>
-					<div type="item">
-						<dateline>New-York, April 29.</dateline>
-						<p>Spot Cotton..................... 7.85 American Futures (May).............
-							7.48 “ “ (June)...... 7.88 “ “ (September).... 7.53 Cable transfers
-							....... ...dol. 4.86 3/4 Cotton day’s receipts at all U.S. Ports bales
-							28,000 Liverpool, April 29. American futures (May-June) ........ 4.05
-							London, April 29. Private discount (8 month bills) ... 2 1/4 % Bar
-							Silver (per oz d.)... ....... 26 7/16 Consols (May)
-							...................... 90 1/4 Rio Tinto.......... ... ........ 61 7/8
-							Rand Mines New .......... ... ... 10 5/8 Egyptian Unified ............
-							106 3/4 “ Railway ... ......... 101 1/2 “ Domain.....................
-							105 — Ottoman Defence .............. 102 1/2 Turkish
-							Unified.............. 87 1/4 Italian Rents 4 % ................ 104 3/4
-							Ottoman Bank........ .............. 14 — National Bank of
-							Egypt............. 27 1/4 Daira Sanieh ... ............ 100 1/2 New
-							Daira........................... 28 5/8 Greek Monopole...............
-							... 51 — Greek Rent 4 % ... ... ....... 33 3/4 Chartereds of S. Africa
-							........., 1 15/16 Agricultural Bank ................ 13 3/8 Nile Valley
-							Gold Mine ... New ... 2 1/4 New Egyptians .......... ... 1 5/8 Delta
-							Light (Bearer shares) - - Egypt cot seed to Hull (Apr ) 5 7/16 buyers
-							German Beet Sugar (April) ... 12/10 3/4 Paris, April 29. Lots Turcs..
-							... . ... ... . 135 — Crédit Lyonnais ........' ....... 1123 — Ottoman
-							Bank................. ... 604 — Cheques on London....... ... 25.13 1/2
-							Sugar White Na 8 (April) ... . 37 — Crédit Foncier Egyptien..........
-							825 — Banque d'Athènes (nouvelleusance) 118 —</p>
-					</div>
-					<div type="item">
-						<head>TELEGRAMME HAVAS BOURSE du 29 avril 1905 COURS DES VALEURS A TERME,
-							CLOTURE</head>
-						<head>PARIS</head>
-						<p>Rente Francaise 3 %........ Fr. 99 05 Actions deSnex.............. “ 4350
-							— Lots Tnros.................. “ 135 — Tnro Unifid.......... ” 88 77
-							Dette Egyptienne Unifiée.. “ 108 45 Daïra Sanieh ............ “ 100 80
-							Crédit Foncier Egyptien ” 825 — Extérieur espagnol.......... “ 90 35
-							Obl. Banqnue Nat. de Grèce “ - - Banque d'Athènes, nouvelles
-							actions................... “ 119 — Métropolitain “ - — Russe consolidé “
-							86 70 Sosnowice “ - - Change sur Londres ” 25 13 1/2 Sucre No 3
-							disponible ..... “ - - Sucre No 3 livrable le 4 de mars LONDRES
-							Consolidés anglais.......... £ 90 1/4 Escomptes—Paris 3, Londres 2 1/2,
-							Berlin 3.</p>
-					</div>
+				<div type="item">
+					<head>REUTER’S TELEGRAMS CLOSING REPORTS</head>
+					<p>Liverpool, April 29, 12.45 p.m. Sales of the day bales 7,000 of which
+						Egyptian “ 300 American (new crop) Maize Spot per cental 4/2 Amer. futures
+						(May-June) 4.05 “ “ (Sept-Oct.) 4.12 American Middling 4.20 Egypt, fully
+						good fair, delivery(May) 6 34/64 “ “ “ “ “ (June)6 32/64 “ “ “ “ “ (July)6
+						27/64 “ “ “ “ “ (Nov.)6 14/64 Egypt Brown fair per lb. d. 5 11/16 “ “ good
+						fair 6 8/16 “ “ good 7 4/16 “ fully good fair 6 12/16 Egyptian Saidi Beans
+						new (per 480 lbs.) 27/9 Cotton Weekly total sales bales 42,000 “ On
+						speculation ........ “ 2,000 “ For export ............ “ 2,500 “ Forwarded
+						to consumers “ 90,000 “ Total Import........ “ 110,000 “ Actual export “
+						5,000 “ “ Stock............ “ 820,000 “ East India afloat....... “ 5,000 “
+						American afloat....... “ 220,000 Egyptian Cotton On speculation “ 150 “ “
+						Weekly sales “ 2,600 “ “ Stock “ 56,000 “ “ Forwarded to consumers “ 7,500 “
+						“ Actual Export “ 1,800 “ “ Import “ 12,000</p>
 				</div>
-		
+				<div type="item">
+					<dateline>New-York, April 29.</dateline>
+					<p>Spot Cotton..................... 7.85 American Futures (May).............
+						7.48 “ “ (June)...... 7.88 “ “ (September).... 7.53 Cable transfers .......
+						...dol. 4.86 3/4 Cotton day’s receipts at all U.S. Ports bales 28,000
+						Liverpool, April 29. American futures (May-June) ........ 4.05 London, April
+						29. Private discount (8 month bills) ... 2 1/4 % Bar Silver (per oz d.)...
+						....... 26 7/16 Consols (May) ...................... 90 1/4 Rio
+						Tinto.......... ... ........ 61 7/8 Rand Mines New .......... ... ... 10 5/8
+						Egyptian Unified ............ 106 3/4 “ Railway ... ......... 101 1/2 “
+						Domain..................... 105 — Ottoman Defence .............. 102 1/2
+						Turkish Unified.............. 87 1/4 Italian Rents 4 % ................ 104
+						3/4 Ottoman Bank........ .............. 14 — National Bank of
+						Egypt............. 27 1/4 Daira Sanieh ... ............ 100 1/2 New
+						Daira........................... 28 5/8 Greek Monopole............... ... 51
+						— Greek Rent 4 % ... ... ....... 33 3/4 Chartereds of S. Africa ........., 1
+						15/16 Agricultural Bank ................ 13 3/8 Nile Valley Gold Mine ...
+						New ... 2 1/4 New Egyptians .......... ... 1 5/8 Delta Light (Bearer shares)
+						- - Egypt cot seed to Hull (Apr ) 5 7/16 buyers German Beet Sugar (April)
+						... 12/10 3/4 Paris, April 29. Lots Turcs.. ... . ... ... . 135 — Crédit
+						Lyonnais ........' ....... 1123 — Ottoman Bank................. ... 604 —
+						Cheques on London....... ... 25.13 1/2 Sugar White Na 8 (April) ... . 37 —
+						Crédit Foncier Egyptien.......... 825 — Banque d'Athènes (nouvelleusance)
+						118 —</p>
+				</div>
+				<div type="item">
+					<head>TELEGRAMME HAVAS BOURSE du 29 avril 1905 COURS DES VALEURS A TERME,
+						CLOTURE</head>
+					<head>PARIS</head>
+					<p>Rente Francaise 3 %........ Fr. 99 05 Actions deSnex.............. “ 4350 —
+						Lots Tnros.................. “ 135 — Tnro Unifid.......... ” 88 77 Dette
+						Egyptienne Unifiée.. “ 108 45 Daïra Sanieh ............ “ 100 80 Crédit
+						Foncier Egyptien ” 825 — Extérieur espagnol.......... “ 90 35 Obl. Banqnue
+						Nat. de Grèce “ - - Banque d'Athènes, nouvelles actions................... “
+						119 — Métropolitain “ - — Russe consolidé “ 86 70 Sosnowice “ - - Change sur
+						Londres ” 25 13 1/2 Sucre No 3 disponible ..... “ - - Sucre No 3 livrable le
+						4 de mars LONDRES Consolidés anglais.......... £ 90 1/4 Escomptes—Paris 3,
+						Londres 2 1/2, Berlin 3.</p>
+				</div>
+			</div>
+
 		</body>
 	</text>
 </TEI>
