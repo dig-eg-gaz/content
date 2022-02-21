@@ -24,8 +24,17 @@
     <xsl:template match="tei:fileDesc">
         <xsl:apply-templates/>
     </xsl:template>
-    <xsl:template match="tei:titleStmt"/>
+    <xsl:template match="tei:titleStmt/tei:title[@type='main']">
+        <h1><xsl:apply-templates/></h1>
+    </xsl:template>
+    <xsl:template match="tei:editor">
+        <h2>Editor: <xsl:apply-templates/></h2>
+    </xsl:template>
+    <xsl:template match="tei:principal"/>
     <xsl:template match="tei:edititionStmt"/>
+    <xsl:template match="tei:editionStmt/tei:edition/tei:gloss">
+        <h2>Completeness (1=basic, 2=fair, 3=good): <xsl:apply-templates/></h2>
+    </xsl:template>
     <xsl:template match="tei:publicationStmt/tei:publisher"/>
     <xsl:template match="tei:publicationStmt/tei:pubPlace"/>
     <xsl:template match="tei:edition/tei:date"/>
@@ -35,35 +44,51 @@
     <xsl:template match="tei:bibl">
         <xsl:apply-templates/>
     </xsl:template>
-    <xsl:template match="tei:title">
-        <h1><xsl:apply-templates/></h1>
-    </xsl:template>
+    <xsl:template match="tei:title"/>
     <xsl:template match="tei:bibl/tei:date">
-        <h2><xsl:apply-templates/></h2>
+        <h2>Issue of <xsl:apply-templates/></h2>
+    </xsl:template>
+    <xsl:template match="tei:extent">
+        <h2>Length: <xsl:apply-templates/></h2>
     </xsl:template>
     <!-- ************************************************ -->
     <!-- ********* specifications for divs/heads ******** -->
     <!-- ************************************************ -->
-    <xsl:template match="tei:text/body">
-        <div><xsl:apply-templates/></div>
+    <xsl:template match="tei:text/tei:body/tei:div[@n>1]">
+        <div class="page"><xsl:apply-templates/></div>
     </xsl:template>
-    <xsl:template match="tei:div[@type='masthead']">
-        <div class="masthead"><xsl:apply-templates/></div>
+    <xsl:template match="tei:text/tei:body/tei:div[@n=1]">
+        <div class="page1"><xsl:apply-templates/></div>
     </xsl:template>
-    <xsl:template match="tei:div[@type='masthead']/tei:head">
-        <h2 class="masthead"><xsl:apply-templates/></h2>
+    <xsl:template match="tei:head"> 
+        <hr size="2" width="50%" color="black"/>
+        <h2><xsl:apply-templates/></h2>
     </xsl:template>
-    <xsl:template match="tei:div[@type='masthead']/tei:head[@type='sub']">
-        <h3 class="masthead"><xsl:apply-templates/></h3>
+    <xsl:template match="tei:div[@type='nameplate']">
+        <div class="nameplate"><xsl:apply-templates/></div>
     </xsl:template>
-    <xsl:template match="tei:div[@scope='advertisement']">
+    <xsl:template match="tei:div[@type='nameplate']/tei:head">
+        <h2 class="nameplate"><xsl:apply-templates/></h2>
+    </xsl:template>
+    <xsl:template match="tei:div[@type='nameplate']/tei:head[@type='sub']">
+        <h3 class="nameplate"><xsl:apply-templates/></h3>
+    </xsl:template>
+    <xsl:template match="tei:div[@type='section']">
+        <div class="section"><xsl:apply-templates/></div>
+    </xsl:template>
+    <xsl:template match="tei:div[@type='advert']">
         <div class="advert"><xsl:apply-templates/></div>
     </xsl:template>
-    <xsl:template match="tei:div[@scope='advertisement']/tei:head">
+    <xsl:template match="tei:div[@type='advert']/tei:head">
         <h3 class="advert"><xsl:apply-templates/></h3>
     </xsl:template>
     <xsl:template match="tei:p">
         <p><xsl:apply-templates/></p>
+    </xsl:template>
+    <xsl:template match="tei:pb">
+        <hr size="8" width="90%" color="red"/>  
+        <h2>Page <xsl:value-of select="@n"/></h2>
+        <hr size="8" width="90%" color="red"/>  
     </xsl:template>
     <!-- ************************************************ -->
     <!-- *********** specifications for tables ********** -->
@@ -93,5 +118,4 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
-    <!-- July 3 1905 -->
 </xsl:stylesheet>

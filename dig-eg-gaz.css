@@ -3,7 +3,31 @@ html {
     padding:0;
     margin-left:20px;
     margin-right:40px;
-    font-size:14pt;
+    font-size:12pt;
+}
+div.nameplate {
+    border: 2px solid black;
+    padding:25px;
+    background-color: #e6ebef;
+    text-align:center;
+    width:100%;
+    border-collapse: collapse;  
+    column-span: all;
+}
+div.page1 {
+  border: 15px solid black;
+  padding: 25px;
+  margin: 20px;
+  columns: 2 250px;
+}
+div.page {
+  border: 15px solid black;
+  padding: 25px;
+  margin: 20px;
+  columns: 3 250px;
+}
+p {
+    text-align: justify;
 }
 h1 {
     text-align:center;
@@ -11,13 +35,25 @@ h1 {
 h2 {
     text-align:center;
 }
-div.masthead {
-    text-align:center;
+div.item {
+-webkit-column-break-inside: avoid;
+          page-break-inside: avoid;
+               break-inside: avoid;
+               }
+div.section {
+  border: 5px solid black;
+  padding: 5px;
+  
 }
 div.advert {
-    border: 5px solid black;
+    border: 2px solid black;
+    padding: 5px;
     background-color: #CEB888;
 }
 table {
     width:100%;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid black;
 }
