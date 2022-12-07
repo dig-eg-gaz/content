@@ -1617,100 +1617,141 @@
                     <p>MEAT DISHES, SOUPS, FISH, CHEESE, CURRIS, GAME, POULTRY AND SALADS.</p>
                     <p>The original and genuine Worchestershire.</p>
                 </div>
-                <div type="item">
-                    <head>DAILY WEATHER REPORT ALEXANDRIA</head>
-                    <p>Kom-el-Nadours Observatory.
-                        Direction of wind
-                        Force of Anemometer...
-                        8.W.
-                        15
-                        State of Sea.
-                        Barometer corrected..
-                        Evaporation.
-                        State of Clouds.
-                        -Slight 758.7
-                        1/4 clouded
-                        Max. Temp. in the shade.
-                        90
-                        During 34 hours
-                        Min.
-                        do.
-                        do.
-                        28.3
-                        Ending 8 a.m.
-                        Heal of the sun
-                        Humidity of the air
-                        Moon rises 5.8 p.m.
-                        68
-                        50
-                        2.44 a.m.
-                        REMARKS
-                        There is no change in the weather conditions. This morning opened dull with a strongish 8. W. breeze and a steady barometer.</p>
-                    <p>OTHER STATIONS.
-                        OBSERVATIONS BY SURVEY DEPARTMENT For the 24 hours ending 8 a.m. yesterday.
-                        Max. Min.
-                        MAX.
-                        Min.
-                        Stations. temp.
-                        temp. Stations
-                        temp
-                        temp
-                        in the
-                        in the
-                        in the
-                        in the
-                        shade.
-                        shade.
-                        shade,
-                        shad
-                        Port Bail...
-                        30
-                        23 Merowe.
-                        21 Ashers.
-                        Helouan.. 97
-                        25
-                        Sunkin
-                        Ghizeh..
-                        37
-                        22
-                        Khartoum..
-                        32
-                        38
-                        21
-                        Kamala..
-                        41
-                        25
-                        Wad Madani.
-                        Wady Halfs.. 42
-                        26
-                        Dosim
-                        FOREIGN STATIONS.
-                        Barum. Wind Temp. Staleol
-                        Stations
-                        Bos
-                        Trieste..
-                        764.0 Calm 24
-                        Calm
-                        Malta.
-                        Light
-                        27
-                        Morler.
-                        Brindisi.
-                        760,9
-                        Moder
-                        Hough
-                        thens
-                        7582
-                        Light
-                        27
-                        Rather
-                        rough
-                        76% 4
-                        Very
-                        32
-                        Stight
-                        light
-                    </p>
+                <div type="section" feature="weather">
+                    <head>DAILY WEATHER REPORT</head>
+                    <p>OBSERVATIONS BY THE SURVEY DEPARTMENT.</p>
+                    <div type="subsection">
+                        <table rend="frame" xml:id="deg-ta-dawr01">
+                            <head>ALEXANDRIA<lb/>Kom-el-Nadoura Observatory.</head>
+                            <row>
+                                <cell cols="2">Direction of wind</cell>
+                                <cell>S.W.</cell>
+                            </row>
+                            <row>
+                                <cell cols="2">Force of Anemometer</cell>
+                                <cell><measure>15</measure></cell>
+                            </row>
+                            <row>
+                                <cell cols="2">State of Sea</cell>
+                                <cell>Slight</cell>
+                            </row>
+                            <row>
+                                <cell cols="2">Barometer corrected</cell>
+                                <cell><measure>758.7</measure></cell>
+                            </row>
+                            <row>
+                                <cell cols="2">Evaporation</cell>
+                                <cell>4</cell>
+                            </row>
+                            <row>
+                                <cell cols="2">State of Clouds</cell>
+                                <cell>¼ clouded</cell>
+                            </row>
+                            <row>
+                                <cell rows="4">During 24 hours ending 8 a.m.</cell>
+                                <cell>Max. Temp in the shade</cell>
+                                <cell><measure unit="dC">30</measure></cell>
+                            </row>
+                            <row>
+                                <cell>Min. Temp in the shade</cell>
+                                <cell><measure unit="dC">23.7</measure></cell>
+                            </row>
+                            <row>
+                                <cell>Humidity of the air</cell>
+                                <cell><measure type="percentage">69</measure></cell>
+                            </row>
+                            <row>
+                                <cell>Heat of the sun</cell>
+                                <cell><measure>50</measure></cell>
+                            </row>
+                            <row>
+                                <cell cols="2">Moon rises</cell>
+                                <cell>5.21 p.m.</cell>
+                            </row>
+                            <row>
+                                <cell cols="2">,, sets</cell>
+                                <cell>2.44 a.m.</cell>
+                            </row>
+                        </table>
+                        <p>REMARKS.</p>
+                        <p>There is no change in weather conditions. This morning opened dull with a
+                            strongish S.W. breeze and a steady barometer.</p>
+                        <table cols="3" xml:id="deg-ta-dawr02">
+                            <head>OTHER STATIONS.</head>
+                            <head type="sub">OBSERVATIONS BY SURVEY DEPARTMENT.</head>
+                            <head type="sub">For the 24 hours ending 8 a.m. Yesterday</head>
+                            <row role="label">
+                                <cell>Stations.</cell>
+                                <cell>Max. temp. in the shade.</cell>
+                                <cell>Min temp. in the shade.</cell>
+                            </row>
+                            <row>
+                                <cell>Port Said</cell>
+                                <cell><measure unit="dC">30</measure></cell>
+                                <cell><measure unit="dC">23</measure></cell>
+                            </row>
+                            <row>
+                                <cell>Suez</cell>
+                                <cell><measure unit="dC">36</measure></cell>
+                                <cell><measure unit="dC">21</measure></cell>
+                            </row>
+                            <row>
+                                <cell>Cairo Halouan</cell>
+                                <cell><measure unit="dC">37</measure></cell>
+                                <cell><measure unit="dC">22</measure></cell>
+                            </row>
+                            <row>
+                                <cell>Cairo Ghizeh</cell>
+                                <cell><measure unit="dC">34</measure></cell>
+                                <cell><measure unit="dC">21</measure></cell>
+                            </row>
+                            <row>
+                                <cell>Assiout</cell>
+                                <cell><measure unit="dC">41</measure></cell>
+                                <cell><measure unit="dC">35</measure></cell>
+                            </row>
+                            <row>
+                                <cell>Assouan</cell>
+                                <cell><measure unit="dC">42</measure></cell>
+                                <cell><measure unit="dC">24</measure></cell>
+                            </row>
+                            <row>
+                                <cell>Wady Halfa</cell>
+                                <cell><measure unit="dC">42</measure></cell>
+                                <cell><measure unit="dC">24</measure></cell>
+                            </row>
+                            <row>
+                                <cell>Merowe</cell>
+                                <cell><measure unit="dC">42</measure></cell>
+                                <cell><measure unit="dC">18</measure></cell>
+                            </row>
+                            <row>
+                                <cell>Atbara</cell>
+                                <cell><measure unit="dC">40</measure></cell>
+                                <cell><measure unit="dC">24</measure></cell>
+                            </row>
+                            <row>
+                                <cell>Suakin</cell>
+                                <cell><measure unit="dC">35</measure></cell>
+                                <cell><measure unit="dC">23</measure></cell>
+                            </row>
+                            <row>
+                                <cell>Khartoum</cell>
+                                <cell><measure unit="dC">39</measure></cell>
+                                <cell><measure unit="dC">26</measure></cell>
+                            </row>
+                            <row>
+                                <cell>Wad Medani</cell>
+                                <cell><measure unit="dC">37</measure></cell>
+                                <cell><measure unit="dC">22</measure></cell>
+                            </row>
+                            <row>
+                                <cell>Duam</cell>
+                                <cell><measure unit="dC">36</measure></cell>
+                                <cell><measure unit="dC">25</measure></cell>
+                            </row>
+                        </table>
+                    </div>
                 </div>
                 <div type="advert" xml:id="deg-ad-hob01">
                     <p>Try<lb/>Howie's Butter</p>
@@ -1896,16 +1937,194 @@
                         and Gestion of Electricity. Lane's Producers are available for Land, River
                         or Ocean Service. Agente required. Address Howard Lann, 195 Eland Street,
                         Birmingham, England. 30796-51-13-907 </p></div>
-               
+               <cb n="2"/>
+                <div type="item"><head>THE BOURSE AND BANKING COMPANY OF EGYPT LTD.
+                </head></div>
+                <div type="item">
+                    <head> HOW MEETINGS ARE CONVENED
+                    </head>   
+                    <p> "La Reforme '' yesterday published a Notice d of an extraordinary meeting of the above Company to be held on the 29th. inst at 4 o'clock in the afternoon, for the purpose of considering and if thought fit passing an extraordinary resolution having for its object the voluntary wind- ring up of the Company.
+                        In reference to the above Notice we would remark that we seriously question whether the publication of this Notice in a single journal in this city is in compliance with the Act, which requires that seven clear days' notice of a meeting shall be given to shareholders, and we hope that in view of the extraordinary career of this company the shareholders will reject the proposal for voluntary liquidation and insist on a compulsory liquidation under order of the Court.
+                        Gore-Browne says in his "Handy Book of Joint Stock Companies" -
+                        Section 145 of the companies act, 1862, provides that the voluntary winding up of a company shall not be a bar to the right of any creditor of such company to have the same wound up by the Court if the Court is of opinion that the rights of such creditors will be prejudiced by a voluntary winding up, and it follows by inference that an order will not be made unless such prejudice is shown, and this rule prevails even when the voluntary winding up is commenced after the presentation of the petition. Even on a shareholder's petition if the voluntary, liquidation was pro- eured by the preponderating influence and evotes of persons whose conduct requires investigation, or was begun with a view to a specific object which had failed, a compulsory order may be made; and the rule as to pre- judice has also been extended by the Court of Appeal to the case of a petition by a share- holder, so that if the Court is satisfied that the continuance of the voluntary winding up is likely to prejudice the shareholders, and that benefit would result from a winding up by the Court, a compulsory onder may be made.``
+                    </p></div>
+                <div type="item">
+                    <head> GOVERNORSHIP OF LEBANON.
+                    </head>   <p>TO THE EDITOR OF THE "EGYPTIAN GAZETTE.</p>
+                    <p>" Dear Sir,To call no man happy till be is dead" is an excellent maxim, and there is another which your Beyront correspondent would seem to have forgotten-viz-"To call no administrator successful till he has ceased to administer." "Imperial Capax nisi imperasset "has been the epitaph of many a governor of promise, with all due deference to the opinions of your correspondent I should urge your readers to reserve their judgement as to Yusuf Pasha's o capabilities. At Constantinople the future governor of Mount Lebanon was known as a capable protocol list-what we should in England describe as a first-class clerk in the Foreign Office and as a very pleasant and courteous gentleman.. It may be that he possesses the qualities necessary for his new -post-if so so much the better for him and for this province. But it is a trifle early to beland Muzaffer Pasha's successor on the strength of his future achievements and a trifle unsafe to prophesy.
+                        </p><p>I am Sir,
+                        Damascus, August 12.
+                        Faithfully yours GAEL
+                    </p></div>
+                <div type="item"><head>OBITUARY</head></div>
+                <div type="item">
+                    <head> RIZK BEY SIDHOM.</head>   
+                    <p>It is with the deepest regret that we record the death of Rizk Bey Sidhom, an inspector of the Customs Administration, which occurred yesterday as the result of a tramway accident. Rirk Bey joined the Customs Administration at an early age, and by his energy, diligence, and capacity he earned the respect of his superiors, by whom his work, which soon raised him to an inspectorship, was greatly appreciated. His death is a real loss to the Administration, in which he would undoubtedly have risen to higher posts, had he not been No suddenly cut off. We tender to his family our heartfelt condolences in their sad bereavement of one whom they lose in so sudden and painful
+                        a manner.
+                    </p></div>
+                <div type="item">
+                    <head> NAMAT HANEM MOHAMED.</head>   
+                    <p> We greatly regret to announce the death of Namat-Hanem, daughter of Hafez Bey Mo hamed, Sub-Governor of Alexandria, at the early age of thirteen.
+                        The family of Hafez Bey will proceed with the body to Cairo at five o'clock this afternoon, and the funeral cortège will leave the family residence in Sharia Abdin at nine o'clock tomorrow morning.
+                        We offer to Hafez Bey Mohamed and his family our sincere condolences in their sad loss.
+                    </p></div>
+                <div type="item"><head>PERSONAL AND SOCIAL
+                </head></div>
+                <div type="item">
+                    <head> Mazloum Pasha, Minister of Finance, has returned to Alexandria from Cairo.
+                    </head>   
+                    <p>Mr. and Mrs. Borton Bey have left for Cyprus. Mr. Borton expects to return in a fortnight and Mrs. Borton will probably remain away until October.
+                    </p></div>             
+               <cb n="3"/>              
+                        <div type="item"><head>EGYPTIANS IN EUROPE.</head></div>       
+                <div type="item">
+                    <head> ATTA BET'S INTERVIEWS.
+                    </head>   
+                    <p> Interviewed by a representative of "la Presse, Paris, Atts Bey Hasi Baid
+                        "Among certain journalists who have interviewed ase, some have wrongly interpreted my thoughts; for example, the articles of the "Depřebe Coloniale and the "Pall Mall Gazette" present on several points sech also late contraindications that anyone reading these two newspapers would be completely bewildered, and could not form an opinion of any true) ideas. The "Diplebe Coloniale alone has faithfully interpreted my thoughts. I will, for the
+                        readers on the "Press"remark on severs tactitades contained in
+                        article
+                        the "Pall Mall Gazette," inexactitudes which
+                        prove without doubt that I could not have been the direct cause of sending it to the journal, of which the language is not even familiar to me. The "Pall Mall Gazette" has
+                        say "I live under the English flag"
+                        these words, for all the world knows, that in virtue of the treaties always in force, Egypt is so much considered as an Ottoman country that all the squadrons of the world hoist its fag when anchored in Egyptian waters. I have not said that I desired to solicit a t a titled official for an audience with King Edward, but I did ak, in a purely private conversation with the reporter of the journal what would be the bet means of obtaining the favour of an interview with
+                        of parallel which established between Egypt and Afghanistan 1 said "If Egypt can not have an autonomous Government, it would be its advantage that the interference of England should limit itself to a a moral protection, such as she exercises in Afghanistan After these explanations on the necessary points, I can up in a few words my dearest wishes for Egypt. I would like Egypt belonging to the Egyptians, and always be an integral part of the Empire of our Saltan Abdul Hamid, Caliph of Islam.
+                    </p></div>
+                <div type="item"><head>EUROPEAN AND NATIVE
+                </head></div>
+                <div type="item">
+                    <head> INSULT FORCIBLY RESENTED.
+                    </head>   
+                    <p> On Monday evening, an Englishman, named Lionel Stephenson, accompanied by his little brother, while bathing is the El Barrad canal at Shoubra, were insulted, without the least provocation, by two natives, who were also bathing in the canal. According to report, the terms employed were such that no respecting person could possibly ignore and all and threats being unavailing. Stephenson sent I his brother to their home, which was close at hand, to fetch his gun, the intention of frightening the natives rather than for active use. When the gun was eventually forthcoming, however, the desired effect was not produced, but seemed to aggravate natives to further and more outrageous language, Losing all I control over himself, Stephenson fired upon one of his insalters, named Hasan Masson, wounding him there severely. The police at length appeared on the seene and the wounded man was conveyed to hospital, where 20 days medical treatment will be necessary, while Stephenson was arrested and handed over to the British Consular authorities to be dealt with.
+                    </p></div>
+                <div type="item">
+                    <head> FUNCTIONARIES AND PARTISANS.
+                        
+                    </head> <p>(From "Al Watan")
+                    </p>  
+                    <p> "We are now living under the sword of Damocles owing to the pernicious habit which has become the governing rule among the functionaries of our Government. Our officials of all grades and denominations are now engrossed with party politics almost without a single exception; and our public offices are party clubs where the merits of different newspapers and the political questions of the day are discussed from day to day. It is really impossible to find an employé of the Government now who is not a hot partisan or who thinks of doing his official duties before giving his opinion on political questions. So far has the evil grown that those among our public servants whose duties forbid partisanship are among the most notorious leaders of political parties. That this state of affairs is a danger to public security no one here or elsewhere can deny.
+                        We have always thought that the permanent officials of the Government ought to be above party quarrels and that the higher officials of the various departments of State ought to make this principle clear to all their subordinates. The Government employé who belongs to any party is a nuisance to which we have never referred with praise. But when that employé is a Nationalist against the Government of the day he is a monstrosity and a vicious growth which is not allowed to exist in most civilised countries. We call the attention of the authorities to this grave evil and trust that instructions will be issued in all departments on this head."
+                    </p></div>
+                <div type="item">
+                    <head> Important Sale of Indian Timber
+                        
+                    </head>   
+                    <p> Thirty five logs of choice varieties of Indian Timber will be sold by Public Auction at Saez on Wednesday August 28th at 8.30a.m. Specifications of Timber can be obtained
+                        from:
+                        30789-6-3
+                        G. BETTS &amp; Co.
+                        Suez
+                    </p></div>
+                <cb n="4"/>
+                <div type="item"><head>TRAMCAR FATALITIES</head></div>
+                <div type="item"><head>THREE DEATHS YESTERDAY.
+                </head><p>The number of inhabitants of this city, and also of Calies, killed during the year on the electric trays is becoming a serious sedal to which we trust the Government will not remain blind. Yesterday three deaths from gateway accidents were recorded, and in two of these cases the responsibility of the wallman will have to be determined
+                    On the Alexandria-Ramleh lise a manD WA ran over at Cathy and killed instantaneously on the town line over close to the Ramleh station and almost est in tes: and we also regent to report that Rick Bey Sidhon, Customs Inspector, while dismounting from a tram in motion to recover his umbrella slipped under the tran and was killed on the spot. The last mentioned accident, perhaps, an only be attributed to the rashness of the vietis, but is the former instances the reliability of the wattans must be disproved Even, should, however, there waltza be esserstel of all possibility, can the public ep the companies concerned from Mae Why, the police are asking, do not the tramway companies is guards in front of the trams, and why does the Government overlook the absence of such a scary and aniveral peaction 1 Apparently the speed at which the tra travel is left entirely to the discretion of the wallman, for there appear to be no speed regulations or a maxim limit even for the busiest parts of the tows
+                    Without going so far as to condems the avenge wattan as incompetent, we shall at any rate have the sympathy of the public in denouncing him as garelous and inattestive to his duties, for we have selves witment And we have repired many commupon, the manner in which he is wont to chat with
+                    any individual, on occasions tore his head towards the back of the car, and merely content himself with loosely clanging the bell, while the car was welling at anything up to top speed.
+                    This morning we received a visit from subscriber who informed of the Chally fatality and at the same time told us that the other day, while travelling on a car with some Indies, such inattention as we refer to made many of the passengers extremely nervous, and the only response offered to the complaint made by the ladies to the inspector (perhaps controller is the tere used by the company) was a shrug of the shores: Maleesh!
+                    Mach fault, too, is to be found with the hasty manner in which the conductors restart the tramars at the fixed halts Accidents secure,
+                    and not a few are but narrowly averted, by the hasty starting of tnm, and the trams have frequently to be pulled up a second time to allow a passenger to dismount owing to the earlene of the conductor is not seeing "all clear before blowing his whistle Iris, therefore, high time that the tramway epanion take better steps to minimise the possibilities of fatalities and minor accidents, ad that the Government sees that the safety of the public is provided for in this respect.
+                </p></div>
+                <div type="item"><head>THE YEMEN SITUATION.
+                </head></div>
+                <div type="item"><head>TROUBLE IN SANA.
+                </head><p>(Fox or own correspondent)
+                </p><p>Aden, August 14. This year's situation is worse than ever. Adrines from there state that a tiny has broken among a portion of the garrison at Sara, who want to leave for their boges) before their period if service has expired. Having been refused, they are said to have treated the people at Bana in the same manner as the time expired troops did at Oldrids last month. They have noted the peoples' goods, and the latter have had to mort to fore and drive them out of Baza
+                    Abdulla Pasha, the Arbreler of Beni Kais district, is reported to have been adopted by
+                    the rebels
+                    In a previous letter I stated that the Mab wait district which lies about 2 days' from Hodeida had been attacked by the rebels Advices this week state that when the Turks head of the attack four battalion with field gus arrived at Mahwait, and meeting the rebels a very sharp engagement ensued in which the rebels lost about four hundred details of Turkish loses have not yet been.
+                </p></div>
+                <div type="item"><head>STEAMER MOVEMENTS
+                    
+                </head><p>The Moss liner "Rameses" ailed from Malta yesterday at noon and is dee here or Friday erning with pareng, mails and green
+                    The Brace liner "Mount Lebanon milel last night for Tripoli, Barbery, to load a mango of grass for Glasgow.
+                    The Prince liner "Allo Prince" arrived this morning from Antwerp and London. The Prince
+                    The
+                    Boottish Prince called
+                    this moving for Syria. evening and is dee here on Friday with pas
+                    Pritet Malta Monday
+                    
+                </p></div>
+                <div type="advert">
+                    <head>WINDSOR HOTEL</head>
+                    <p>Facing the Sea on the New Quay of Alexandria</p>
+                    <p>FIRST-CLASS HOTEL</p>
+                    <p>Lately Built and Furnished.</p>
+                    <p>TERMS P.T. 50 PER DAY,</p>
+                </div>
+                <cb n="5"/>
+                <div type="item"><head>QUESTIONS MUNICIPALES.
+                </head></div>
+                <div type="item"><head>BAINS DE MER
+                    
+                </head><p>La série macabre des noyades continue dans notre bonne ville. Il ne se passe guère de jour sans que les vagues rejettent an rivage quelque nouveau cadavre, soit au Port-Est soit sur la côte de Ramleh. Et s'il est vrai que les esprits des disparus aient l'habitude d'errer dans les endroits où la mort s'est produite, les côtes alexandrines doivent être peuplées d'ombres, assez nombreuses bientôt pour cerner la Muni- cipalité et hanter ce palais si convoité par nos édiles. Ceux-ci, en effet, sont les vrais responsables de tant de deuils. Ils assistent impassibles depuis 5 ou 6 ans au fléau qui nous coûte plus de vies que la peste ou le choléra la plage du Port-Est, autrefois couverte de bains (il y en avait cinq) n'en a plus aucun et les demandes qui sont faites par des particuliers pour en construire sont régulièrement repoussées
+                    Il en résulte que le pauvre public, celui qui n'a ni le temps ni l'argent pour aller à San Stefano on au Mec, se jette à l'eau au premier endroit venn. On se rend aussi un phare, au risque de chavirer dans la traversée ou de se noyer dans quelque tourbillon. Nous comprenons à la rigueur que nos conseillers s'occupent d'autre chose que des intérêts de la ville; nous leur passons volontiers certains esprits coûteux pour les contribuables. Mais sapristi! quand il s'agit de la vie du peuple, ils se trémoussent un peu. Sur toute la côte où se passent quotidiennement des tragédies, on n'a pris aucun moyen pratique pour sauver les personnes en danger. Et lorsque des particuliers demandent à construire des bains, la Municipalité, qui devrait donner des primes aux entrepreneurs pour multiplier autant que possible de pareils établissements, oppose au contraire une attitude constamment hostile. Et voilà pourquoi tant de gens se noient! On en vient à se demander si une collectivité peut impunément sacrifier tant de vies humaines et en l'espèce si la Municipalité par son désintéressement de la question n'encourt pas une responsabilité non seulement torale, ce qui est certain, mais encore matérielle à l'égard des parents des victimes.
+                </p></div>
+                <div type="item"><head>STATUE DE MOHAMED ALY
+                    
+                </head><p>Nos édiles, qui n'ont pas le loisir de s'oo- caper de bains, de loyers ou d'hygiène, portent toute leur attention sur un sujet plus digne de leurs réflexions. Il s'agit de transférer au Jardin Français la statue de Mohamed Aly, qui se trouve au milieu de la place des Consuls. Le libérateur de l'Egypte, dont l'allure martiale fait si bel effet sur cette place qu'il a tracée lui-même et qui est la seule ici digne de ce nom a dû frémir de l'ingratitude des Alexandrias, lui qui tant fait pour le relèvement et la prospérité de leur ville. Voilà qu'on lui assigne un emplacement subalterne.
+                    Quel crime a-t-il donc commis pour qu'on lui inflige une pareille humiliation? Il est figé par son cheval de bronze depuis bientôt un siècle. Mais c'est là son crime sans doute; il n'a pas besoin d'être arrosé, ni éponteté, il ne fournit prétexte à aucun crédit, le malben- reux ! Et n'est-ce pas le rôle de la Municipalité de voter des crédits ! Enfin le voilà pincé. On va le descendre, et rondement. Cela coûte 1600 livres.
+                    Qui va prendre sa place, c'est ce que tout le monde se demande. Nos conseillers qui ont voté son transfert ont déjà fixé leur choix, cela est probable. Mais, à moins d'y mettre Alexandre, tout autre paraîtra bien petit. Il y a comme cela de lourdes successions. Peu importe donc, le sujet A défaut d'autre on y installera un conseiller municipal. L'essentiel est de voter un crédit pour une nouvelle statue.
+                </p></div>
+                <div type="item"><head>VENTILATION DES ÉGOUTS
+                    
+                    
+                </head><p>Dans la dernière séance de la Commission Municipale, on a voté à cet effet un crédit de 3000 livres, à prélever sur le crédit global de 19000 livres affecté à la ventilation des égouts. Aux explications demandées par un membre, l'Administration s'est bornée à répondre que les études nécessaires étaient déjà faites par les services et qu'il n'y avait pas lieu de s'inquiéter sur les conséquences hygiéniques du système proposé. Autant dire qu'on demandait un vote à l'aveuglette, ce qui a d'ailleurs été accordé
+                    La Commission a donc voté le crédit, sans qu'un rapport lui soit soumis sur la question. Nous n'aurions pas en la matière des objections bien graves à faire, si les services à la compé tences desquels on nous livre sans contrôle n'avaient pas déjà échoué à plusieurs reprises dans des essais analogues de ventilation. Peut- être le nouveau système est-il meilleur et répond-il mieux aux exigences de la santé publique. Nous voulons le croire, mais dans ce cas qu'est-ce qui empêche donc la Municipalité de nous faire connaître en quoi consiste ce nouveau système 1 Après tant d'échecs, il ne serait que juste de sa part de procéder avec plus de réserve et de prudence qu'elle ne l'a fait jusqu'ici. En tous cas, la Commission nous donne une piètre idée de son caractère en votant un crédit sans exiger au préalable un rapport qui lui expose le projet auquel le crédit qu'elle vote est destiné.
+                </p></div>
+                <div type="item"><head>LA QUESTION DES LOYERS
+                    
+                    
+                </head><p>Nous avons dit au début que la Municipalité n'avait pas le temps de s'occuper de la question des loyers. Or, non seulement elle ne fait rien pour diminuer la crise qui pèse si lourdement sur la classe des travailleurs, mais encore elle se dérobe à ce que les Municipalités civilisées d'Europe considèrent comme un de leurs devoirs et non, des moindres. Veiller à ce que la population ouvrière puisse être logée dans des habitations hygiéniques et d'un loyer abordable
+                </p></div>
                 
-               
-               
-               
-              
+                <cb n="6"/>
+                <div type="item"><p>est l'une des préoccupations principales de tous les hommes actuels de gouvernement depuis le pouvoir central le plat petite municipalité. Nos conseillers ne se blâment pas de s'en douter. Nous ne sommes pas de crax qui roulent qu'on peut du jour Lendemain faire hésiter les loyers, if y's une loi d'offre et de demande q
+                    être évitée. Ce que nous voudrione seligent de la Municipalité d'et qu'ell la crise as lies de
+                    Fatter
+                    Par maine sur les mes
+                    a donation qu'elle empla
+                    rien lui
+                    bâtir et leur transformation partielle des phases tandis qu'elle retient les actes, elle n'est pas étrangère à la baisse récente des terrils et la crise financière qui a fait limité D'autre part, elle a reth avait faite as public d'e route de Mex donner en échange. Quant à la Côlon des Locataires, elle la leader de belle pro régulièrement sans effet. Nous l'avons dit nous ne deciandos pas de cadeaux à M nicipalité; qu'elle nous lale seulement nous avions et qu'elle cesse de contrat par son attitude systématique à la base
+                    que
+                    des
+                    loyers.
+                </p></div>
+                <div type="item"><head>BULLETIN DE LA BOURSE</head><p>(Ajda 11. 1/2) </p>
+                    <p>L'allure de ce ignatia w's pas différé de celles, are cette différence goe is
+                        baisse ne s'est acentale que partiellement et que certaines valeurs sont en
+                        reprise. Il est évident que tissot tendance glad plus claires encore pest
+                        être moins importantes elles ont porté principalement sur PUnit de Batt
+                        Cotton Ginners, l'Agricole et la National Bank La reprise de la National
+                        Bank de 3/4 7/8 cédée à une demande provenant du Caim L'Agricole at samy
+                        plus ferme à 7 13/16 En revanche, la Delta Light a perda 1 1/2, la Dars 1/4
+                        &amp; 12 1/4 et Obligation ancienne Crédit Poncler 1 frade à 297. En baisse
+                        également les Dividendes Tramways d'Alexandrie de 300 à 298 et le Banco di
+                        Roma de 105 à 104 1/2 Parmi les petites valeurs, la Cassa di Booste Béchir
+                        de 40 à 38, l'investissement de 9/16 3/2 la Building Lands de 2 1/2 &amp; 2
+                        7/16, l'Aboukir de 29 à 28. l'Allotement de 22/8423/4 le et de 80 à 65 PT.
+                        la part de fondateur les Cotton Ginners d de 1 3/8 1 1/4/Unitel de 3/8 11/32
+                        l'action et de 2 sée à 2 vonden is part de fondateur, les Rita de 11/16
+                        &amp; 4% Les Jouissance ax de Caire ont progressé, de 195 à 200, les Boomers
+                        de 25. 30, la Land Bank de 6 7/8 à 15/16 et les Estates de 23,32 vendeurs à
+                        23/32 achète Le reste de la côte demeure n'a changements an contraire, Il
+                        parait que le rétablissement a Chié marché à terme, tel de moins qu'ils so
+                        rencontre de nombreux posts per les principes agente de la Capitale général
+                        de petite courtiers qui se sout offrant comme garantie de leur opérations
+                        dépôt qu'ils possèdent au sein de l'Ariston dépôt d'environ 400 livres. Dans
+                        ces conditions, il est possible que l'évitement de marché à terme soit
+                        retardé jusqu'à ce qu'une nouvelle nidation ait réuni la majorité des
+                        affaires La Boone and Banking et décide Portrait du jour. Voici qu'elle
+                        publie maintenant en avis pour convoquer une allée of nérale eo date de 29
+                        court à Effet de Tiq- der Ilya diligent de l'avis de convocation que nous
+                        croyons les fa d'y renvoyer nos lecteurs Mais, en fait de liquidation, et
+                        bien bonne pourquoi alon avoir mis sens des dessous toute la ville
+                        Alexandrie, si on devait aboutir à en pareil estat 1 </p></div>
+                <div type="item"><head>Notices to Advertiser.</head>
+                    <p>The "Egyptian Gazette" has given no advertising agency or company in Egypt any monopoly or exclusive right to act as advertising Agents on its behalf. Advertisements of every description are received at the offices of the "Gazette" from advertisers direct.</p>
+                </div>
                 
-                
-                
-             
             </div>
             <pb n="4"/>
             <div type="page" n="4"> 
