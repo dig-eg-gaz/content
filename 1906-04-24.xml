@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://raw.githubusercontent.com/dig-eg-gaz/resources/master/out/egSchema.rnc" type="application/relax-ng-compact-syntax"?>
 <?xml-stylesheet type="text/xsl" href="dig-eg-gaz.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
@@ -33,7 +33,8 @@
     <text>
         <body>
             <pb n="1"/>
-            <div type="page" n="1" facs="https://archive.org/details/egyptian-gazette-1906-04-24/mode/1up">
+            <div type="page" n="1"
+                facs="https://archive.org/details/egyptian-gazette-1906-04-24/mode/1up">
                 <div type="nameplate">
                     <head>THE EGYPTIAN GAZETTE</head>
                     <!-- Enter issue number, date, and correct number of pages -->
@@ -1095,7 +1096,8 @@
                 </div>
             </div>
             <pb n="2"/>
-            <div type="page" n="2" facs="https://archive.org/details/egyptian-gazette-1906-04-24/page/n1/mode/1up">
+            <div type="page" n="2"
+                facs="https://archive.org/details/egyptian-gazette-1906-04-24/page/n1/mode/1up">
                 <cols n="6"/>
                 <cb n="1"/>
                 <div type="advert" xml:id="deg-ad-ric01">
@@ -1481,60 +1483,84 @@
                 </div>
             </div>
             <pb n="3"/>
-            <div type="page" n="3" facs="https://archive.org/details/egyptian-gazette-1906-04-24/page/n2/mode/1up">
+            <div type="page" n="3"
+                facs="https://archive.org/details/egyptian-gazette-1906-04-24/page/n2/mode/1up">
                 <cols n="6"/>
                 <cb n="1"/>
-              <div type="section" feature="specialCables"><div type="item">
-                    <head>ALDERSHOT RAGGING CASE. SENTENCES ON OFFICERS.</head>
-                    <byline>( Gazette's Special Service )</byline>
-                    <dateline>London, Monday. </dateline>
-                    <p>The sentences in the Aldershot ragging case have been given. Colonel Cuthbert
-                        is placed on half pay, Captain Stracey removed from the adjutancy and
-                        severely censored, and the others have been severely censured and their
-                        leave stopped for periods ranging from six to twelve months, and they are
-                        also superseded for promotion. </p>
+                <div type="section" feature="specialCables">
+                    <div type="item">
+                        <head>ALDERSHOT RAGGING CASE. SENTENCES ON OFFICERS.</head>
+                        <byline>( Gazette's Special Service )</byline>
+                        <dateline>London, Monday. </dateline>
+                        <p>The sentences in the Aldershot ragging case have been given. Colonel
+                            Cuthbert is placed on half pay, Captain Stracey removed from the
+                            adjutancy and severely censored, and the others have been severely
+                            censured and their leave stopped for periods ranging from six to twelve
+                            months, and they are also superseded for promotion. </p>
+                    </div>
+                    <!-- American Stocks & Shares table needed -->
                 </div>
-                <!-- American Stocks & Shares table needed --></div>
                 <div type="section" feature="local">
                     <head>LOCAL AND GENERAL.</head>
-                    <div type="item"><head>Mena House. </head>
-                    <p>Mena House Hotel will close for the season on the 1st of May. </p>
-                    </div><div type="item"><head>Egyptian Estates Co. </head>
-                    <p>The shares of this company are now all quoted on the Bourse ex-oonpon. </p>
-                    </div><div type="item"> <head>New Post Office. </head>
-                    <p>A post office for the exchange of correspondance, parcel and money order
-                        service has been opened at Bab el Khalk (Cairo). </p>
-                    </div><div type="item">  <head>Public Health Department. </head>
-                    <p>M. Denis E. Zoulas, physician, and Messrs. Zia Mohamed, Monssa Yacoub, and
-                        Christo Oconomopoulo, pharmacists, have been anthorised to practise in
-                        Egypt. </p>
-                    </div><div type="item">  <head>Englishwoman's Mysterious Death. </head>
-                    <p>The oourt of enquiry into the circumstances attending the death of Miss
-                        Jessie Brown did not terminate yesterday and was adjourned until Thursday
-                        next for farther evidence.</p>
-                    </div><div type="item">  <head>Imperial Ottoman Bank. </head>
-                    <p>Our Constantinople Correspondent states that the Imperial Ottoman Bank has
-                        opened a branch at Tripoli in Africa, and appointed to it M.
-                        Christodonlidès, sub-director of the bank at Aleppo. </p>
-                    </div><div type="item">    <head>Garrison Church. </head>
-                    <p>During the absence of Rev. F. B. N. Norman Lee, C.F., who left Alexandria on
-                        Friday, the clergy of St Mark's and All Saints' are responsible for Sunday
-                        and week-day duty at the garrison church. </p>
-                    </div><div type="item">  <head>Ariston Aerated Water Co. </head>
-                    <p>This company have taken up the sole agency of Simpson's well known Honse of
-                        Lords' whisky, which is recommended by all the medical papers as a healthy
-                        and invigorating drink. </p>
-                    </div><div type="item">   <head>New Egyptian Companies. </head>
-                    <p>Four new companies were authorised by the Council of Ministers yesterday.
-                        These are the Artificial Stone Company, the Grandes Garages d'Egypte, the
-                        Cairo Suburban Building Land, and the Excelsior Hotels Company. </p>
-                    </div><div type="item">  <head>Concert. </head>
-                    <p>We may remind our readers of the concert to be given tomorrow evening in the
-                        saloons of Shepheard's Hotel, in aid of the Soldiers and Sailors' Families
-                        Association. The concert is under the distinguished patronage of the Rt.
-                        Hon. the Earl of Cromer. Major-General Sir P. R Wingate Pacha,
-                        Brigadier-Gen. G. M Bullock, and Idris Ragheb Pacha. </p>
-                </div></div>
+                    <div type="item">
+                        <head>Mena House. </head>
+                        <p>Mena House Hotel will close for the season on the 1st of May. </p>
+                    </div>
+                    <div type="item">
+                        <head>Egyptian Estates Co. </head>
+                        <p>The shares of this company are now all quoted on the Bourse ex-oonpon.
+                        </p>
+                    </div>
+                    <div type="item">
+                        <head>New Post Office. </head>
+                        <p>A post office for the exchange of correspondance, parcel and money order
+                            service has been opened at Bab el Khalk (Cairo). </p>
+                    </div>
+                    <div type="item">
+                        <head>Public Health Department. </head>
+                        <p>M. Denis E. Zoulas, physician, and Messrs. Zia Mohamed, Monssa Yacoub,
+                            and Christo Oconomopoulo, pharmacists, have been anthorised to practise
+                            in Egypt. </p>
+                    </div>
+                    <div type="item">
+                        <head>Englishwoman's Mysterious Death. </head>
+                        <p>The oourt of enquiry into the circumstances attending the death of Miss
+                            Jessie Brown did not terminate yesterday and was adjourned until
+                            Thursday next for farther evidence.</p>
+                    </div>
+                    <div type="item">
+                        <head>Imperial Ottoman Bank. </head>
+                        <p>Our Constantinople Correspondent states that the Imperial Ottoman Bank
+                            has opened a branch at Tripoli in Africa, and appointed to it M.
+                            Christodonlidès, sub-director of the bank at Aleppo. </p>
+                    </div>
+                    <div type="item">
+                        <head>Garrison Church. </head>
+                        <p>During the absence of Rev. F. B. N. Norman Lee, C.F., who left Alexandria
+                            on Friday, the clergy of St Mark's and All Saints' are responsible for
+                            Sunday and week-day duty at the garrison church. </p>
+                    </div>
+                    <div type="item">
+                        <head>Ariston Aerated Water Co. </head>
+                        <p>This company have taken up the sole agency of Simpson's well known Honse
+                            of Lords' whisky, which is recommended by all the medical papers as a
+                            healthy and invigorating drink. </p>
+                    </div>
+                    <div type="item">
+                        <head>New Egyptian Companies. </head>
+                        <p>Four new companies were authorised by the Council of Ministers yesterday.
+                            These are the Artificial Stone Company, the Grandes Garages d'Egypte,
+                            the Cairo Suburban Building Land, and the Excelsior Hotels Company. </p>
+                    </div>
+                    <div type="item">
+                        <head>Concert. </head>
+                        <p>We may remind our readers of the concert to be given tomorrow evening in
+                            the saloons of Shepheard's Hotel, in aid of the Soldiers and Sailors'
+                            Families Association. The concert is under the distinguished patronage
+                            of the Rt. Hon. the Earl of Cromer. Major-General Sir P. R Wingate
+                            Pacha, Brigadier-Gen. G. M Bullock, and Idris Ragheb Pacha. </p>
+                    </div>
+                </div>
                 <div type="section" feature="social">
                     <head>PERSONAL AND SOCIAL</head>
                     <p>According to papers to hand this morning. Prince Djemil Toussoum has left
@@ -1817,69 +1843,87 @@
                 <cb n="5"/>
                 <div type="item" feature="notesPortSaid">
                     <head>NOTES FROM PORT SAID</head>
-               <div type="item">    <head>WHERE EAST MEETS WEST.</head>
-                    <p>(From our Cob respondent). </p>
-                    <p>Port Said, Sunday. </p>
-                    <p>To anyone who is fond of studying the characteristics of different
-                        nationalities, Port Said offers a field of observation as interesting as any
-                        in the world. Here East meets West— here we have types of all the world and
-                        his wife. In nothing is this more noticeable than in times of festivity and
-                        holiday. At the recent Easter celebrations, whilst the Latin races vied with
-                        each other in their enthusiastic celebration of religious ritual and
-                        ceremonies, the Anglo Saxons, though not unmindful of the origin of the
-                        festival, made less parade, and supplemented it by indulgence in their
-                        national games. In the celebration of Shem el-Necsim there was the usual
-                        exodus of the native populace to the "Sweet Wateis," where many Europeans
-                        also foregathered in the afternoon. Port Said Music. </p>
-                    <p>The Port Said bands discoursed mnsio whilst old and young enjoyed wandering
-                        through the plantation. It is m fortunate that the French name of one of the
-                        bands has so suggestive an English sound, giving an opportunity for the
-                        amateur humourist to make facetious remarks at the expense, not of the band,
-                        bat of their own reputation for wit. However, its mnsio in no way belies its
-                        title, and we understand that in the near future the Lyre intends still
-                        farther to enhance its reputation by the introduction of some new blood and
-                        new orchestral music. </p>
-               </div><div type="item">    <p>Naval "At Home " </p>
-                    <p>Capt Weymouth and the officers of H.M.S. Minerva held an "At Home" on Easter
-                        Monday, which was largely attended and pronounced to be a great success.
-                        Among those present were the Consol-Genera], Mr. Cameron, Sohaloh Bey,
-                        Dickson Bey, Rev. Canon, Mrs. and Miss Strange, Mr. and Mrs. Tweedie, Mr.
-                        and Mrs. Broatch, Mr. Cyril Broatch, Mrs. and the Misses Guy, Mr. and Mrs.
-                        Roger, Mrs. Caffey and Miss O'Connor, Dr. and Mrs. Purdy, Dr. Meade, Dr. and
-                        Mrs. Stam^fl, Mrs. Snr.w, Mr. and Mrs. Delaney, Misses Stifle and Horner, M.
-                        and Mme. Riohe, M. Guérin, Miss Pem- berton, Mr. Tarrell, Mr. Ingram, Mr.
-                        Harwood, and others. </p>
-               </div><div type="item">     <p>The Floating Dock. </p>
-                    <p>The fbating dock, Admiral Dewey, was safely berth'd yesterday morning. It
-                        will be a feat of some magnitude to get the huge structure through the
-                        Canal, requiring the removal of bnoys and even widening in part!. Owing to
-                        the season of monsoons commenoiog, probably the dook will be placed in the
-                        Bitter Lake for some time. </p>
-               </div><div type="item">    <p>Souvenirs of Vesuvius, </p>
-                    <p>Souvenirs of the eruption of Vesuvius were brought to Port Said by the German
-                        steamer Rood, in the shape of ashes collected on the deck during her stay at
-                        Naples. </p>
-               </div><div type="item">    <p>Order at Port Said. </p>
-                    <p>The police of the town have gained great kudos for the management of the
-                        unmerons fêtes and the maintenance of order. Port Said by night is as safe
-                        as Port Said bg day. There is really very little orime in the town,
-                        considering the temptations of a large port, where there is little
-                        restriction on the landing of un- desirables, who have been cleared out of
-                        other Levantine ports. </p>
-               </div><div type="item">   <p>Approach of Summer. </p>
-                    <p>The town is beginning to take on a summer- like appearance, bathing-houses
-                        being rapidly moved up on the beach. Swimming and diving enthusiasts will
-                        have to find a new place, as owing to the widening of the harbour the old
-                        bathing location has been dismantled. </p>
-               </div><div type="item">    <p>Sport. </p>
-                    <p>Some of the sporting element have already oommenced cricket, the mnoh-played
-                        football and hookey now being things of the past. Tennis, however, is as
-                        popular as ever, and will probably be oarried on right through the sommer. </p>
-               </div><div type="item">   <p>Freemasonry. </p>
-                    <p>The Aooient Order of Freemasons held a banquet last night, Mr. Tweedie,
-                        Worshipful Master, being in the chair, supported by Past- Master Swallow and
-                        the officers, visitor0, and friends. </p>
-                </div></div>
+                    <div type="item">
+                        <head>WHERE EAST MEETS WEST.</head>
+                        <p>(From our Cob respondent). </p>
+                        <p>Port Said, Sunday. </p>
+                        <p>To anyone who is fond of studying the characteristics of different
+                            nationalities, Port Said offers a field of observation as interesting as
+                            any in the world. Here East meets West— here we have types of all the
+                            world and his wife. In nothing is this more noticeable than in times of
+                            festivity and holiday. At the recent Easter celebrations, whilst the
+                            Latin races vied with each other in their enthusiastic celebration of
+                            religious ritual and ceremonies, the Anglo Saxons, though not unmindful
+                            of the origin of the festival, made less parade, and supplemented it by
+                            indulgence in their national games. In the celebration of Shem el-Necsim
+                            there was the usual exodus of the native populace to the "Sweet Wateis,"
+                            where many Europeans also foregathered in the afternoon. Port Said
+                            Music. </p>
+                        <p>The Port Said bands discoursed mnsio whilst old and young enjoyed
+                            wandering through the plantation. It is m fortunate that the French name
+                            of one of the bands has so suggestive an English sound, giving an
+                            opportunity for the amateur humourist to make facetious remarks at the
+                            expense, not of the band, bat of their own reputation for wit. However,
+                            its mnsio in no way belies its title, and we understand that in the near
+                            future the Lyre intends still farther to enhance its reputation by the
+                            introduction of some new blood and new orchestral music. </p>
+                    </div>
+                    <div type="item">
+                        <p>Naval "At Home " </p>
+                        <p>Capt Weymouth and the officers of H.M.S. Minerva held an "At Home" on
+                            Easter Monday, which was largely attended and pronounced to be a great
+                            success. Among those present were the Consol-Genera], Mr. Cameron,
+                            Sohaloh Bey, Dickson Bey, Rev. Canon, Mrs. and Miss Strange, Mr. and
+                            Mrs. Tweedie, Mr. and Mrs. Broatch, Mr. Cyril Broatch, Mrs. and the
+                            Misses Guy, Mr. and Mrs. Roger, Mrs. Caffey and Miss O'Connor, Dr. and
+                            Mrs. Purdy, Dr. Meade, Dr. and Mrs. Stam^fl, Mrs. Snr.w, Mr. and Mrs.
+                            Delaney, Misses Stifle and Horner, M. and Mme. Riohe, M. Guérin, Miss
+                            Pem- berton, Mr. Tarrell, Mr. Ingram, Mr. Harwood, and others. </p>
+                    </div>
+                    <div type="item">
+                        <p>The Floating Dock. </p>
+                        <p>The fbating dock, Admiral Dewey, was safely berth'd yesterday morning. It
+                            will be a feat of some magnitude to get the huge structure through the
+                            Canal, requiring the removal of bnoys and even widening in part!. Owing
+                            to the season of monsoons commenoiog, probably the dook will be placed
+                            in the Bitter Lake for some time. </p>
+                    </div>
+                    <div type="item">
+                        <p>Souvenirs of Vesuvius, </p>
+                        <p>Souvenirs of the eruption of Vesuvius were brought to Port Said by the
+                            German steamer Rood, in the shape of ashes collected on the deck during
+                            her stay at Naples. </p>
+                    </div>
+                    <div type="item">
+                        <p>Order at Port Said. </p>
+                        <p>The police of the town have gained great kudos for the management of the
+                            unmerons fêtes and the maintenance of order. Port Said by night is as
+                            safe as Port Said bg day. There is really very little orime in the town,
+                            considering the temptations of a large port, where there is little
+                            restriction on the landing of un- desirables, who have been cleared out
+                            of other Levantine ports. </p>
+                    </div>
+                    <div type="item">
+                        <p>Approach of Summer. </p>
+                        <p>The town is beginning to take on a summer- like appearance,
+                            bathing-houses being rapidly moved up on the beach. Swimming and diving
+                            enthusiasts will have to find a new place, as owing to the widening of
+                            the harbour the old bathing location has been dismantled. </p>
+                    </div>
+                    <div type="item">
+                        <p>Sport. </p>
+                        <p>Some of the sporting element have already oommenced cricket, the
+                            mnoh-played football and hookey now being things of the past. Tennis,
+                            however, is as popular as ever, and will probably be oarried on right
+                            through the sommer. </p>
+                    </div>
+                    <div type="item">
+                        <p>Freemasonry. </p>
+                        <p>The Aooient Order of Freemasons held a banquet last night, Mr. Tweedie,
+                            Worshipful Master, being in the chair, supported by Past- Master Swallow
+                            and the officers, visitor0, and friends. </p>
+                    </div>
+                </div>
                 <div type="item" feature="notesSuakin">
                     <head>NOTES FROM SUAKIN</head>
                     <byline>(From our Correspondent). </byline>
@@ -1987,100 +2031,125 @@
                 <!-- EDEN PALACE HOTEL AD NEEDED -->
             </div>
             <pb n="4"/>
-            <div type="page" n="4" facs="https://archive.org/details/egyptian-gazette-1906-04-24/page/n3/mode/1up">
+            <div type="page" n="4"
+                facs="https://archive.org/details/egyptian-gazette-1906-04-24/page/n3/mode/1up">
                 <cols n="6"/>
                 <cb n="1"/>
                 <div type="section" feature="wire">
                     <head>TO-DAY'S TELEGRAMS</head>
                     <div type="item">
                         <head>ANGLO THIBETAN TREATY.<lb/>CHINESE PROTECTORATE RECOGNISED</head>
-                        <div type="cable"><dateline>Shanghai, April 23.</dateline>
-                        <p>The Anglo-Thibetan treaty signed at Peking provides the recognition of a
-                            Chinese pro- tectorate over Thibet : Great Britain does not interfere
-                            internally unless other Powers do ; China opens some Thibetan markets to
-                            Indian trade, and gives Great Britain the preference regarding the
-                            railway concessions : 2.400,000 taels, the expenses of the Yonnghnsband
-                            mission, are to be paid., (Reufe)</p></div>
+                        <div type="cable">
+                            <dateline>Shanghai, April 23.</dateline>
+                            <p>The Anglo-Thibetan treaty signed at Peking provides the recognition
+                                of a Chinese pro- tectorate over Thibet : Great Britain does not
+                                interfere internally unless other Powers do ; China opens some
+                                Thibetan markets to Indian trade, and gives Great Britain the
+                                preference regarding the railway concessions : 2.400,000 taels, the
+                                expenses of the Yonnghnsband mission, are to be paid., (Reufe)</p>
+                        </div>
                     </div>
                     <div type="item">
                         <head>EUROPE TO PERSIAN GULF<lb/>NEW GERMAN LINE OF STEAMER</head>
-                        <div type="cable"><dateline>Hamburg, April 23.</dateline>
-                        <p>The Hamburg-Amerika line of steamers will annonnce shortly the
-                            inauguration of a new service from Europe to the Persian Golf. (Reuter)
-                        </p></div>
+                        <div type="cable">
+                            <dateline>Hamburg, April 23.</dateline>
+                            <p>The Hamburg-Amerika line of steamers will annonnce shortly the
+                                inauguration of a new service from Europe to the Persian Golf.
+                                (Reuter) </p>
+                        </div>
                     </div>
                     <div type="item">
                         <head>The Natal Troubles<lb/>PREMIER AND IMPERIAL GOVERNMENT</head>
-                        <div type="cable"><dateline>Durban, April 23.</dateline>
-                        <p>Natal is recruiting a thousand mounted native scouts. </p>
-                        <p>The Premier of Natal, in addressing his constituents, rejeoted altogether
-                            the idea that the requisitioning of the assistance of Imperial troops
-                            entitled the Imperial Government to take the settlement out of the hands
-                            of the Natal Government. (Reuter) </p></div>
+                        <div type="cable">
+                            <dateline>Durban, April 23.</dateline>
+                            <p>Natal is recruiting a thousand mounted native scouts. </p>
+                            <p>The Premier of Natal, in addressing his constituents, rejeoted
+                                altogether the idea that the requisitioning of the assistance of
+                                Imperial troops entitled the Imperial Government to take the
+                                settlement out of the hands of the Natal Government. (Reuter) </p>
+                        </div>
                     </div>
                     <div type="item">
                         <head>SAN FRANCISCO FIRE<lb/>RENEWED OUTBREAK</head>
                         <div type="cable">
-                        <dateline>San Francisco, April 23.</dateline><p>Processes of restoration have already begun. Up
-                            to now about 500 bodies have been recovered but the extent of the
-                            mortality remains quite uncertain ; competent valuers estimate the total
-                            losses at, approximately, £60,000,000 of which £35,000,000 is covered by
-                            insurance. A noteworthy fact is that the steelbuilt skyscrapers,
-                            including the famous Call building, are unhurt exteriorly, though
-                            gutted. A renewed outbreak of the fire has taken place here: the docks
-                            are threatened. (R.)</p>
+                            <dateline>San Francisco, April 23.</dateline>
+                            <p>Processes of restoration have already begun. Up to now about 500
+                                bodies have been recovered but the extent of the mortality remains
+                                quite uncertain ; competent valuers estimate the total losses at,
+                                approximately, £60,000,000 of which £35,000,000 is covered by
+                                insurance. A noteworthy fact is that the steelbuilt skyscrapers,
+                                including the famous Call building, are unhurt exteriorly, though
+                                gutted. A renewed outbreak of the fire has taken place here: the
+                                docks are threatened. (R.)</p>
                         </div>
                     </div>
                     <div type="item">
                         <head>FRENCH STRIKE DISTURBANCES<lb/>JEWELLERS NOW OUT</head>
-                        <div type="cable"><dateline>Paris, April 23.</dateline>
-                        <p>Numerous arrests are now being made in the Lens district : the rioters
-                            seem overawed by the display of force. ( Reuter) </p>
+                        <div type="cable">
+                            <dateline>Paris, April 23.</dateline>
+                            <p>Numerous arrests are now being made in the Lens district : the
+                                rioters seem overawed by the display of force. ( Reuter) </p>
                         </div>
                         <div type="cable">
-                        <dateline>Lens, April 23.</dateline><p>Forty arrests have been made among the strikers. (Hamas) </p>
+                            <dateline>Lens, April 23.</dateline>
+                            <p>Forty arrests have been made among the strikers. (Hamas) </p>
                         </div>
                         <div type="cable">
-                        <dateline>Paris, April 23.</dateline><p>Six thousand working jewellers have gone out on strike. ( Havat </p></div>
+                            <dateline>Paris, April 23.</dateline>
+                            <p>Six thousand working jewellers have gone out on strike. ( Havat </p>
+                        </div>
                     </div>
                     <div type="item">
                         <head>POSTAL CONGRESS.<lb/>ABYSSINIA'S STATUS.</head>
-                        <div type="cable"><dateline>Rome, April 23.</dateline>
-                        <p>Abyssinia has been granted a deliberative status at the Postal Congress
-                            in view of her impending entry into the Union, while China, which is not
-                            entering at present, has only a consultative status. (Reuter) </p></div>
+                        <div type="cable">
+                            <dateline>Rome, April 23.</dateline>
+                            <p>Abyssinia has been granted a deliberative status at the Postal
+                                Congress in view of her impending entry into the Union, while China,
+                                which is not entering at present, has only a consultative status.
+                                (Reuter) </p>
+                        </div>
                     </div>
                     <div type="item">
                         <head>LANCASHIRE COTTON SPINNERS.<lb/>VOTE IN FAVOUR OF STRIKE.</head>
-                        <div type="cable"><dateline>London, April 23.</dateline>
-                        <p>Ninety-seven per cent, of 120,000 Lanca shire spinners and oardroom
-                            workers involved in the dispute have voted in favour of a strike, if
-                            their demands are refused. It is believed that the employers will
-                            resist, unless the scheme for the automatic regulation of wages be
-                            simultaneously arranged. (Reuter)</p></div>
+                        <div type="cable">
+                            <dateline>London, April 23.</dateline>
+                            <p>Ninety-seven per cent, of 120,000 Lanca shire spinners and oardroom
+                                workers involved in the dispute have voted in favour of a strike, if
+                                their demands are refused. It is believed that the employers will
+                                resist, unless the scheme for the automatic regulation of wages be
+                                simultaneously arranged. (Reuter)</p>
+                        </div>
                     </div>
                     <div type="item">
                         <head>COTTON FIRE ON SHIP.</head>
-                        <div type="cable"><dateline>Bremen, April 23.</dateline>
-                        <p>Three thousand bales of ootton have been burned in the between decks of
-                            the S.S. Bisohoff. (Haros)</p></div>
+                        <div type="cable">
+                            <dateline>Bremen, April 23.</dateline>
+                            <p>Three thousand bales of ootton have been burned in the between decks
+                                of the S.S. Bisohoff. (Haros)</p>
+                        </div>
                     </div>
                     <div type="item">
                         <head>EGYPTIAN RINCE ASHORE.</head>
-                        <div type="cable"><dateline>Malta, April 23.</dateline>
-                        <p>The S.S. Egyptian Prince is ashore here. The passengers have been landed.
-                            (Reuter)</p></div>
+                        <div type="cable">
+                            <dateline>Malta, April 23.</dateline>
+                            <p>The S.S. Egyptian Prince is ashore here. The passengers have been
+                                landed. (Reuter)</p>
+                        </div>
                     </div>
                     <div type="item">
                         <head>KING EDWARD A GREEK ADMIRAL.</head>
-                        <div type="cable"><dateline>Athens, April 23.</dateline>
-                        <p>King George has appointed King Edward an Admiral of the Greek fleet.
-                            (Reuter)</p></div>
+                        <div type="cable">
+                            <dateline>Athens, April 23.</dateline>
+                            <p>King George has appointed King Edward an Admiral of the Greek fleet.
+                                (Reuter)</p>
+                        </div>
                     </div>
                     <div type="item">
                         <head>SWEDISH PRINCE BORN.</head>
-                        <div type="cable"><dateline>Stockholm, April 23.</dateline>
-                        <p>Princess Adolph of Sweden has been delivered of a son. (Remter,</p></div>
+                        <div type="cable">
+                            <dateline>Stockholm, April 23.</dateline>
+                            <p>Princess Adolph of Sweden has been delivered of a son. (Remter,</p>
+                        </div>
                     </div>
                 </div>
                 <cb n="2"/>
@@ -2449,10 +2518,10 @@
                     <p>The eloring meeting of tht season took place on Friday, 20th iost., in
                         splendid weather. H.K the Moudir and all the well-known resi- dents were
                         present, together with many visitors from the neighbouring provinces. Every
-                        available inch in the three eutioeares was occupied, whilst the free
-                        portion of the ground was thronged with infereitedspeoUtorsto the num- ber
-                        of two thon'and at least. Entries were nameroos, so mooh so that the first
-                        race on the oard, the Fellaheen Stakes, had to be duplicated, and daring tbe
+                        available inch in the three eutioeares was occupied, whilst the free portion
+                        of the ground was thronged with infereitedspeoUtorsto the num- ber of two
+                        thon'and at least. Entries were nameroos, so mooh so that the first race on
+                        the oard, the Fellaheen Stakes, had to be duplicated, and daring tbe
                         afternoon sevunty-five herse took part in the five events. The racing was
                         good and the addi- tion of a few gymkhana events added a touch of f i rolity
                         to an already interesting pro- gramme. The events of the day.rz., the Minieh
@@ -2529,7 +2598,8 @@
                 </div>
             </div>
             <pb n="5"/>
-            <div type="page" n="5" facs="https://archive.org/details/egyptian-gazette-1906-04-24/page/n4/mode/1up">
+            <div type="page" n="5"
+                facs="https://archive.org/details/egyptian-gazette-1906-04-24/page/n4/mode/1up">
                 <div type="item">
                     <cols n="6"/>
                     <cb n="1"/>
@@ -3219,7 +3289,8 @@
                 </div>
             </div>
             <pb n="6"/>
-            <div type="page" n="6" facs="https://archive.org/details/egyptian-gazette-1906-04-24/page/n5/mode/1up">
+            <div type="page" n="6"
+                facs="https://archive.org/details/egyptian-gazette-1906-04-24/page/n5/mode/1up">
                 <cols n="6"/>
                 <cb n="1"/>
                 <div type="item" feature="bulletinBourse">
@@ -3337,93 +3408,93 @@
                 <!-- Need Berlitz School of Languages -->
                 <cb n="2"/>
                 <div type="item" feature="exportManifests" status="verified">
-          <head>Export Manifests</head>
-          <note>ERRATUM.- In our issue of 20th instant please read "bags onions" instead of
-            "bales cotton" (Habsburg manifest).</note>
-          <p>For LIVERPOOL, by the S.S. "Menes," sailed on the 12th April:</p>
-          <p>Peel &amp; Co., 59 bales cotton</p>
-          <p>G. Frauger &amp; Co., 35 „ „</p>
-          <p>Moursi Bros., 55 „ „</p>
-          <p>G. Riecken, 15 „ „</p>
-          <p>Bustros &amp; Huri, 66 „ „</p>
-          <p>Behor Barki, 35 „ „</p>
-          <p>R. &amp; O. Lindemann, 100 „ „</p>
-          <p>Choremi, Benachi &amp; Co., 87 „ „</p>
-          <p>452 bales cotton</p>
-          <p>A. Panzieri 4,998 bags onions</p>
-          <p>Bustros &amp; Huri, 3,344 „ „</p>
-          <p>G. D. Kaniskeri, 4,262 „ „</p>
-          <p>L. Onofrio 740 „ „</p>
-          <p>Nasr-el-Buhi, 530 „ „</p>
-          <p>Hassan Deghem, 500 „ „</p>
-          <p>Bank of Egypt Ltd, 315 „ „</p>
-          <p>Aly Muh. Saleh, 2,413 „ „</p>
-          <p>Glover Hill &amp; Co., 6,000 „ „</p>
-          <p>H. Stavrides, 800 „ „</p>
-          <p>A. Abou Youssef &amp; Son, 2,189 „ „</p>
-          <p>S. G. Violara 3,770 „ „</p>
-          <p>J. &amp; A. Abouchanab, 1,534 bags oil cake</p>
-          <p>B. Hazan &amp; Co., 1 case cigarettes</p>
-          <p>Stern frères 2 packages effects</p>
-          <p>Thos. Cook &amp; Son, 17 packages effects</p>
-          <p>Various 4 packages sundries</p>
-          <p>For HULL, by the S.S. "Mœris," sailed on the 14th April:</p>
-          <p>G. M. Ades, 1,570 bags onions</p>
-          <p>L. Onofrio 500 „ „</p>
-          <p>Nasr-el-Buhi, 1,384 „ „</p>
-          <p>I. Deff, 16,005 „ „</p>
-          <p>Hassan Deghem, 1,790 „ „</p>
-          <p>A. Dahan, 967 „ „</p>
-          <p>Aly Moh. Saleh, 2,391 „ „</p>
-          <p>Glover Hill &amp; Co., 588 „ „</p>
-          <p>H. Stavrides, 540 bags onions</p>
-          <p>O. L. Levick, 2,056 „ „</p>
-          <p>Moh. Deff, 290 „ „</p>
-          <p>G. D. Kaniskeri 4,236 „ „</p>
-          <p>A. Youssef &amp; Son, 1,054 „ „</p>
-          <p>Bustros &amp; Huri, 5,067 „ „</p>
-          <p>C. Parissis, 2,026 „ „</p>
-          <p>S. G. Violara, 3,003 „ „</p>
-          <p>Anglo Egyptian Bank 410 tons cotton seed</p>
-          <p>Kafr-el-Zayat Cotton Co., 1,347 bags oil cake</p>
-          <p>Behrend &amp; Co., 250 bags sugar</p>
-          <p>B. Ghellini &amp; Co., 50 bales hide cutting, 30 bales rags</p>
-          <p>Ibrahim Ahmed 49 packages quails</p>
-          <p xml:id="docs-internal-guid-52c89d18-7fff-b968-02f7-1b6bf99c1b44"> For London,
-            by tha 3.8. Ellenia, sailed on the 18th April :</p>
-          <p>Bebrend &amp; Co., 3,027 bags onions</p>
-          <p>Mob. H. el Cherif, 5,853 „</p>
-          <p>Nasr-el-Babi, 607</p>
-          <p>L. Onofrio, 500</p>
-          <p>A. Dahan, 1,042</p>
-          <p>H. Stavrides, 460</p>
-          <p>Mob. Deff 1,366</p>
-          <p>J. Groppi, 300</p>
-          <p>Aly Moh. Saleh, 1,589</p>
-          <p>C. Parissis, 1,669</p>
-          <p>H. Deghem, 1,011</p>
-          <p>Bastros &amp; Hari, 3,600</p>
-          <p>A. Youssef &amp; Son, 3,424</p>
-          <p>J. Thomas, 1,239</p>
-          <p>L. A. Johnson, 607</p>
-          <p>E. Toriel &amp; Sons, 1,036</p>
-          <p>S. G. Violara, 3000</p>
-          <p>Kafr-el-Zayat Cotton Co.; 6 729 bags oil cake</p>
-          <p>Egyptian Salt Soda Co., 15,030 bags oil cake</p>
-          <p>Barker &amp; Co., 1,020 tons cotton seed</p>
-          <p>Behrend &amp; Co., 1,500 bags sugar</p>
-          <p>L. Heller, 590 barrels molasses</p>
-          <p>Anglo-Egyptian Bank, 88 bags gum</p>
-          <p>A. Arbib &amp; Sons, 80 bales bides</p>
-          <p>Hadjes &amp; Co., 69 bales skins</p>
-          <p>G. Morris, 1 bale bides</p>
-          <p>A. Sefi &amp; Co., 2 bales hides</p>
-          <p>J. Rɔss &amp; Co., 22 cases horns and skins, 1 case typewriter, 5 packages
-            effects</p>
-          <p>N. E. Tamvaco, 1 busket rice, 2 packages effects</p>
-          <p>Salonica Cigarettes &amp; Co., 4 cases cigarettes</p>
-          <p>Various, 22 packages sundries</p>
-        </div>
+                    <head>Export Manifests</head>
+                    <note>ERRATUM.- In our issue of 20th instant please read "bags onions" instead
+                        of "bales cotton" (Habsburg manifest).</note>
+                    <p>For LIVERPOOL, by the S.S. "Menes," sailed on the 12th April:</p>
+                    <p>Peel &amp; Co., 59 bales cotton</p>
+                    <p>G. Frauger &amp; Co., 35 „ „</p>
+                    <p>Moursi Bros., 55 „ „</p>
+                    <p>G. Riecken, 15 „ „</p>
+                    <p>Bustros &amp; Huri, 66 „ „</p>
+                    <p>Behor Barki, 35 „ „</p>
+                    <p>R. &amp; O. Lindemann, 100 „ „</p>
+                    <p>Choremi, Benachi &amp; Co., 87 „ „</p>
+                    <p>452 bales cotton</p>
+                    <p>A. Panzieri 4,998 bags onions</p>
+                    <p>Bustros &amp; Huri, 3,344 „ „</p>
+                    <p>G. D. Kaniskeri, 4,262 „ „</p>
+                    <p>L. Onofrio 740 „ „</p>
+                    <p>Nasr-el-Buhi, 530 „ „</p>
+                    <p>Hassan Deghem, 500 „ „</p>
+                    <p>Bank of Egypt Ltd, 315 „ „</p>
+                    <p>Aly Muh. Saleh, 2,413 „ „</p>
+                    <p>Glover Hill &amp; Co., 6,000 „ „</p>
+                    <p>H. Stavrides, 800 „ „</p>
+                    <p>A. Abou Youssef &amp; Son, 2,189 „ „</p>
+                    <p>S. G. Violara 3,770 „ „</p>
+                    <p>J. &amp; A. Abouchanab, 1,534 bags oil cake</p>
+                    <p>B. Hazan &amp; Co., 1 case cigarettes</p>
+                    <p>Stern frères 2 packages effects</p>
+                    <p>Thos. Cook &amp; Son, 17 packages effects</p>
+                    <p>Various 4 packages sundries</p>
+                    <p>For HULL, by the S.S. "Mœris," sailed on the 14th April:</p>
+                    <p>G. M. Ades, 1,570 bags onions</p>
+                    <p>L. Onofrio 500 „ „</p>
+                    <p>Nasr-el-Buhi, 1,384 „ „</p>
+                    <p>I. Deff, 16,005 „ „</p>
+                    <p>Hassan Deghem, 1,790 „ „</p>
+                    <p>A. Dahan, 967 „ „</p>
+                    <p>Aly Moh. Saleh, 2,391 „ „</p>
+                    <p>Glover Hill &amp; Co., 588 „ „</p>
+                    <p>H. Stavrides, 540 bags onions</p>
+                    <p>O. L. Levick, 2,056 „ „</p>
+                    <p>Moh. Deff, 290 „ „</p>
+                    <p>G. D. Kaniskeri 4,236 „ „</p>
+                    <p>A. Youssef &amp; Son, 1,054 „ „</p>
+                    <p>Bustros &amp; Huri, 5,067 „ „</p>
+                    <p>C. Parissis, 2,026 „ „</p>
+                    <p>S. G. Violara, 3,003 „ „</p>
+                    <p>Anglo Egyptian Bank 410 tons cotton seed</p>
+                    <p>Kafr-el-Zayat Cotton Co., 1,347 bags oil cake</p>
+                    <p>Behrend &amp; Co., 250 bags sugar</p>
+                    <p>B. Ghellini &amp; Co., 50 bales hide cutting, 30 bales rags</p>
+                    <p>Ibrahim Ahmed 49 packages quails</p>
+                    <p xml:id="docs-internal-guid-52c89d18-7fff-b968-02f7-1b6bf99c1b44"> For London,
+                        by tha 3.8. Ellenia, sailed on the 18th April :</p>
+                    <p>Bebrend &amp; Co., 3,027 bags onions</p>
+                    <p>Mob. H. el Cherif, 5,853 „</p>
+                    <p>Nasr-el-Babi, 607</p>
+                    <p>L. Onofrio, 500</p>
+                    <p>A. Dahan, 1,042</p>
+                    <p>H. Stavrides, 460</p>
+                    <p>Mob. Deff 1,366</p>
+                    <p>J. Groppi, 300</p>
+                    <p>Aly Moh. Saleh, 1,589</p>
+                    <p>C. Parissis, 1,669</p>
+                    <p>H. Deghem, 1,011</p>
+                    <p>Bastros &amp; Hari, 3,600</p>
+                    <p>A. Youssef &amp; Son, 3,424</p>
+                    <p>J. Thomas, 1,239</p>
+                    <p>L. A. Johnson, 607</p>
+                    <p>E. Toriel &amp; Sons, 1,036</p>
+                    <p>S. G. Violara, 3000</p>
+                    <p>Kafr-el-Zayat Cotton Co.; 6 729 bags oil cake</p>
+                    <p>Egyptian Salt Soda Co., 15,030 bags oil cake</p>
+                    <p>Barker &amp; Co., 1,020 tons cotton seed</p>
+                    <p>Behrend &amp; Co., 1,500 bags sugar</p>
+                    <p>L. Heller, 590 barrels molasses</p>
+                    <p>Anglo-Egyptian Bank, 88 bags gum</p>
+                    <p>A. Arbib &amp; Sons, 80 bales bides</p>
+                    <p>Hadjes &amp; Co., 69 bales skins</p>
+                    <p>G. Morris, 1 bale bides</p>
+                    <p>A. Sefi &amp; Co., 2 bales hides</p>
+                    <p>J. Rɔss &amp; Co., 22 cases horns and skins, 1 case typewriter, 5 packages
+                        effects</p>
+                    <p>N. E. Tamvaco, 1 busket rice, 2 packages effects</p>
+                    <p>Salonica Cigarettes &amp; Co., 4 cases cigarettes</p>
+                    <p>Various, 22 packages sundries</p>
+                </div>
                 <div type="item" xml:lang="fr" xml:id="deg-el-cotn01">
                     <head>COTON</head>
                     <p>Exportation du mois de juin 1905</p>
@@ -5700,7 +5771,8 @@
                 </div>
             </div>
             <pb n="7"/>
-            <div type="page" n="7" facs="https://archive.org/details/egyptian-gazette-1906-04-24/page/n6/mode/1up">
+            <div type="page" n="7"
+                facs="https://archive.org/details/egyptian-gazette-1906-04-24/page/n6/mode/1up">
                 <cols n="6"/>
                 <cb n="1"/>
                 <div type="item">
@@ -6203,7 +6275,8 @@
                 </div>
             </div>
             <pb n="8"/>
-            <div type="page" n="8" facs="https://archive.org/details/egyptian-gazette-1906-04-24/page/n7/mode/1up">
+            <div type="page" n="8"
+                facs="https://archive.org/details/egyptian-gazette-1906-04-24/page/n7/mode/1up">
                 <cols n="4"/>
                 <cb n="1"/>
                 <div type="item" xml:lang="fr" xml:id="deg-el-noli01">
